@@ -1,0 +1,901 @@
+lead_id,company,name_key,account_id,method
+LEAD-70001,"IronMedia , Inc.",ironmedia,ACC-1112,exact
+LEAD-70002,UNION BANK LLC,unionbank,ACC-1059,exact
+LEAD-70003,WESTBROOK SYSTEMS,westbrooksystems,ACC-1018,group suffix
+LEAD-70004,Solstice Financial,solsticefinancial,ACC-1066,exact
+LEAD-70005,Pinnacle Bank Inc.,pinnaclebank,ACC-1016,exact
+LEAD-70006,Brightwater Financial,brightwaterfinancial,ACC-1042,exact
+LEAD-70007,north airlines,northairlines,ACC-1039,exact
+LEAD-70008,LUMEN PAYMENTS Ltd.,lumenpayments,ACC-1061,exact
+LEAD-70009,NorthPayments,northpayments,ACC-1015,exact
+LEAD-70010,iron media Inc,ironmedia,ACC-1112,exact
+LEAD-70011, Vertex Retail Group  ,vertexretailgroup,ACC-1004,exact
+LEAD-70012,meridian health,meridianhealth,ACC-1030,exact
+LEAD-70013,Quill Energy Incorporated,quillenergy,ACC-1086,exact
+LEAD-70014,COBALT STORS Ltd.,cobaltstors,ACC-1006,AI
+LEAD-70015,BrightwaterHoldings Inc,brightwaterholdings,ACC-1005,exact
+LEAD-70016,"Vertex Holdings , Inc.",vertexholdings,ACC-1073,exact
+LEAD-70017,"VANTAGE MUTUAL , Inc.",vantagemutual,ACC-1022,exact
+LEAD-70018, Meridian Payments  ,meridianpayments,ACC-1097,exact
+LEAD-70019,"Thornton Bank , Inc.",thorntonbank,ACC-1058,exact
+LEAD-70020,VERTEX STORES,vertexstores,ACC-1000,exact
+LEAD-70021,BLUE TELECOM Inc.,bluetelecom,ACC-1062,exact
+LEAD-70022,CASCADE RETAIL GROUP Ltd.,cascaderetailgroup,ACC-1014,exact
+LEAD-70023,VERTEX SYSTEMS,vertexsystems,ACC-1009,exact
+LEAD-70024,"Everline Stores , Inc.",everlinestores,ACC-1010,exact
+LEAD-70025,QUILL LOGISTICS Inc,quilllogistics,ACC-1057,exact
+LEAD-70026, Pinnacle Payments  ,pinnaclepayments,ACC-1067,exact
+LEAD-70027, Everline Media Inc.  ,everlinemedia,ACC-1047,exact
+LEAD-70028,Union Retail Group Inc.,unionretailgroup,ACC-1071,exact
+LEAD-70029, LUMEN BANK  ,lumenbank,ACC-1053,exact
+LEAD-70030,QUILL FINANCIAL,quillfinancial,ACC-1060,group suffix
+LEAD-70031, Thornton Systems  ,thorntonsystems,ACC-1119,exact
+LEAD-70032,Zenith Systems,zenithsystems,ACC-1035,exact
+LEAD-70033,Cascade Airlines,cascadeairlines,ACC-1044,exact
+LEAD-70034,"Everline Stores , nc.",everlinestoresnc,ACC-1010,AI
+LEAD-70035,harbor financial LLC,harborfinancial,ACC-1036,exact
+LEAD-70036,Brightwater Financial,brightwaterfinancial,ACC-1042,exact
+LEAD-70037, Westbrook Systems  ,westbrooksystems,ACC-1018,group suffix
+LEAD-70038,Everline Logistics Incorporated,everlinelogistics,ACC-1092,exact
+LEAD-70039, Dunmore Holdings  ,dunmoreholdings,ACC-1111,exact
+LEAD-70040, quill media  ,quillmedia,,AI: no match
+LEAD-70041,granite energy Ltd,graniteenergy,ACC-1024,exact
+LEAD-70042,Iron Logistics Ltd,ironlogistics,,AI: no match
+LEAD-70043,IRON HOLDINGS,ironholdings,ACC-1054,group suffix
+LEAD-70044,"LUMEN HEALTH , Inc.",lumenhealth,ACC-1013,exact
+LEAD-70045,Union Airlines,unionairlines,ACC-1048,exact
+LEAD-70046,Westbrook Logistics Incorporated,westbrooklogistics,ACC-1107,exact
+LEAD-70047,North Retail Group,northretailgroup,ACC-1101,exact
+LEAD-70048,THORNTON TELECOM,thorntontelecom,ACC-1017,exact
+LEAD-70049,GRANITE ENERGY,graniteenergy,ACC-1024,exact
+LEAD-70050,Dunmre Financial,dunmrefinancial,ACC-1099,AI
+LEAD-70051,BRIGHTWATER PAYMENTS Ltd.,brightwaterpayments,,AI: no match
+LEAD-70052, Alder Health Inc.  ,alderhealth,ACC-1075,exact
+LEAD-70053,Dunmore Media,dunmoremedia,ACC-1087,group suffix
+LEAD-70054,Meridian Energy Inc.,meridianenergy,ACC-1104,exact
+LEAD-70055,Vantage Stores,vantagestores,ACC-1114,exact
+LEAD-70056,vertex retail group Inc,vertexretailgroup,ACC-1004,exact
+LEAD-70057,SOLSTICE MEDIA Incorporated,solsticemedia,ACC-1070,exact
+LEAD-70058, vertex holdings  ,vertexholdings,ACC-1073,exact
+LEAD-70059,Vertex Airines,vertexairines,ACC-1037,AI
+LEAD-70060,"Everline Financial , Inc.",everlinefinancial,ACC-1110,exact
+LEAD-70061,Harbor Financial Ltd,harborfinancial,ACC-1036,exact
+LEAD-70062,VANTAGE STORES Incorporated,vantagestores,ACC-1114,exact
+LEAD-70063,WESTBROOK SYSTEMS Ltd.,westbrooksystems,ACC-1018,group suffix
+LEAD-70064,Vertex Retail Group Inc,vertexretailgroup,ACC-1004,exact
+LEAD-70065, Alder Health  ,alderhealth,ACC-1075,exact
+LEAD-70066,IRON SYSTEMS Inc.,ironsystems,ACC-1049,exact
+LEAD-70067,"Blue Bank , Inc.",bluebank,ACC-1045,exact
+LEAD-70068,North Payments Incorporated,northpayments,ACC-1015,exact
+LEAD-70069,"Solstice Telecom , Inc.",solsticetelecom,ACC-1029,exact
+LEAD-70070,SOLSTICE BANK,solsticebank,,AI: no match
+LEAD-70071,CobaltEnergy Ltd.,cobaltenergy,ACC-1011,exact
+LEAD-70072,Everline Stores LLC,everlinestores,ACC-1010,exact
+LEAD-70073,"Vantage Stores , Inc.",vantagestores,ACC-1114,exact
+LEAD-70074,Cascade Airlines,cascadeairlines,ACC-1044,exact
+LEAD-70075,Dunmore Bank,dunmorebank,ACC-1041,exact
+LEAD-70076,brightwater holdings,brightwaterholdings,ACC-1005,exact
+LEAD-70077,Alder Health,alderhealth,ACC-1075,exact
+LEAD-70078,Westbrook Stores,westbrookstores,ACC-1100,exact
+LEAD-70079,North Payments,northpayments,ACC-1015,exact
+LEAD-70080,UNION AILINES,unionailines,ACC-1048,AI
+LEAD-70081,dunmore financial,dunmorefinancial,ACC-1099,exact
+LEAD-70082," Dunmore Stores , Inc.  ",dunmorestores,,AI: no match
+LEAD-70083,Thornton Payments Inc,thorntonpayments,ACC-1023,exact
+LEAD-70084,Brightwater Airlines Ltd,brightwaterairlines,,AI: no match
+LEAD-70085,Redwood Payments,redwoodpayments,ACC-1077,exact
+LEAD-70086, Cobalt Stores LLC  ,cobaltstores,ACC-1006,exact
+LEAD-70087,Vantage Stores Incorporated,vantagestores,ACC-1114,exact
+LEAD-70088,VANTAGE TELECOM Inc.,vantagetelecom,ACC-1116,exact
+LEAD-70089,Cascade Energy Inc,cascadeenergy,ACC-1068,group suffix
+LEAD-70090,VantageHoldings,vantageholdings,ACC-1095,exact
+LEAD-70091,Alder Insuance,alderinsuance,ACC-1118,AI
+LEAD-70092,"REDWOOD HOLDINGS , Inc.",redwoodholdings,ACC-1020,exact
+LEAD-70093,North Bank,northbank,ACC-1098,group suffix
+LEAD-70094,Quill Bank Inc,quillbank,ACC-1008,exact
+LEAD-70095,REDWOOD PAYMENTS,redwoodpayments,ACC-1077,exact
+LEAD-70096,Lumen Financial Inc.,lumenfinancial,ACC-1065,exact
+LEAD-70097,BRIGHTWATER HOLDINGS,brightwaterholdings,ACC-1005,exact
+LEAD-70098,Thornton Payments Inc,thorntonpayments,ACC-1023,exact
+LEAD-70099,Zeith Holdings Ltd.,zeithholdings,ACC-1094,AI
+LEAD-70100,Cascade Energy LLC,cascadeenergy,ACC-1068,group suffix
+LEAD-70101,REDWOOD PAYMENTS,redwoodpayments,ACC-1077,exact
+LEAD-70102,Cascade Stores,cascadestores,ACC-1040,exact
+LEAD-70103,HARBO FINANCIAL,harbofinancial,ACC-1036,AI
+LEAD-70104, Redwood Retail Group Ltd  ,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70105,Meridian Payments,meridianpayments,ACC-1097,exact
+LEAD-70106,BlueLogistics Ltd,bluelogistics,ACC-1019,exact
+LEAD-70107,thornton systes Ltd.,thorntonsystes,ACC-1119,AI
+LEAD-70108,Thornton Logistics LLC,thorntonlogistics,ACC-1028,exact
+LEAD-70109, Solstice Financial Inc.  ,solsticefinancial,ACC-1066,exact
+LEAD-70110,MERIDIAN HEALTH nc,meridianhealthnc,ACC-1030,AI
+LEAD-70111,VANTAGE STORES Incorporated,vantagestores,ACC-1114,exact
+LEAD-70112,lumen financial Ltd,lumenfinancial,ACC-1065,exact
+LEAD-70113,VertexHoldings Inc.,vertexholdings,ACC-1073,exact
+LEAD-70114,Iron Systems,ironsystems,ACC-1049,exact
+LEAD-70115,HARBOR TELECOM,harbortelecom,ACC-1033,exact
+LEAD-70116,ALDER LOGISTICS,alderlogistics,ACC-1064,exact
+LEAD-70117,Quill Energy,quillenergy,ACC-1086,exact
+LEAD-70118, Vantage Holdings  ,vantageholdings,ACC-1095,exact
+LEAD-70119,Thornton Logistics,thorntonlogistics,ACC-1028,exact
+LEAD-70120,"Meridian Stores , Inc.",meridianstores,ACC-1043,group suffix
+LEAD-70121,solstice stores LLC,solsticestores,ACC-1056,exact
+LEAD-70122,IronSystems,ironsystems,ACC-1049,exact
+LEAD-70123,VERTEX AIRLINES,vertexairlines,ACC-1037,exact
+LEAD-70124, DUNMORE HOLDINGS  ,dunmoreholdings,ACC-1111,exact
+LEAD-70125,MERIDIAN HEALTH Incorporated,meridianhealth,ACC-1030,exact
+LEAD-70126, Sable Financial Inc.  ,sablefinancial,ACC-1055,exact
+LEAD-70127,Meridian Logistics,meridianlogistics,,AI: no match
+LEAD-70128,Iron Mutual Ltd.,ironmutual,ACC-1001,exact
+LEAD-70129,north holdings LLC,northholdings,ACC-1082,exact
+LEAD-70130,ZenithHoldings,zenithholdings,ACC-1094,exact
+LEAD-70131,Everline Media,everlinemedia,ACC-1047,exact
+LEAD-70132,Harbor Systems Ltd,harborsystems,ACC-1034,group suffix
+LEAD-70133,BLUE HOLDINGS,blueholdings,ACC-1032,exact
+LEAD-70134,CascadeLogistics,cascadelogistics,ACC-1069,group suffix
+LEAD-70135,CASCADE SYSTEMS Inc.,cascadesystems,,AI: no match
+LEAD-70136,Everline Logistics Inc,everlinelogistics,ACC-1092,exact
+LEAD-70137,North Logistics Inc,northlogistics,ACC-1050,exact
+LEAD-70138,Lumen Bank Inc.,lumenbank,ACC-1053,exact
+LEAD-70139,vantage media,vantagemedia,ACC-1002,exact
+LEAD-70140,Zenith Holdings,zenithholdings,ACC-1094,exact
+LEAD-70141,vantage media,vantagemedia,ACC-1002,exact
+LEAD-70142,Dunmore Holdings,dunmoreholdings,ACC-1111,exact
+LEAD-70143,Meridian Helth,meridianhelth,ACC-1030,AI
+LEAD-70144,DunmoreBank Ltd,dunmorebank,ACC-1041,exact
+LEAD-70145,meridian holdings,meridianholdings,,AI: no match
+LEAD-70146,solstice systems Inc,solsticesystems,,AI: no match
+LEAD-70147,union airlines Incorporated,unionairlines,ACC-1048,exact
+LEAD-70148,Quill Financial,quillfinancial,ACC-1060,group suffix
+LEAD-70149,Solstice Media Ltd.,solsticemedia,ACC-1070,exact
+LEAD-70150,Zenith Holdings Inc,zenithholdings,ACC-1094,exact
+LEAD-70151, Blue Holdings  ,blueholdings,ACC-1032,exact
+LEAD-70152,harbor logistics,harborlogistics,ACC-1046,exact
+LEAD-70153,Everline Media,everlinemedia,ACC-1047,exact
+LEAD-70154,HARBOR TEECOM Ltd.,harborteecom,ACC-1033,AI
+LEAD-70155,Harbor Logistics,harborlogistics,ACC-1046,exact
+LEAD-70156,COBALT PAYMENTS Inc.,cobaltpayments,ACC-1117,exact
+LEAD-70157,DunmoreSystems,dunmoresystems,ACC-1063,exact
+LEAD-70158,"SOLSTICE FINANCIAL , Inc.",solsticefinancial,ACC-1066,exact
+LEAD-70159,PINNACLE BANK,pinnaclebank,ACC-1016,exact
+LEAD-70160,ZenithRetailGroup LLC,zenithretailgroup,ACC-1084,exact
+LEAD-70161,WESTBROOK LOGISTICS,westbrooklogistics,ACC-1107,exact
+LEAD-70162,CascadeLogistics Inc.,cascadelogistics,ACC-1069,group suffix
+LEAD-70163,North Retail Group,northretailgroup,ACC-1101,exact
+LEAD-70164,Iron Holdings,ironholdings,ACC-1054,group suffix
+LEAD-70165,Vertex Payments,vertexpayments,,AI: no match
+LEAD-70166,Dunmore Media Incorporated,dunmoremedia,ACC-1087,group suffix
+LEAD-70167,Blue Bank,bluebank,ACC-1045,exact
+LEAD-70168,north insurance,northinsurance,,AI: no match
+LEAD-70169,"thornton telecom , Inc.",thorntontelecom,ACC-1017,exact
+LEAD-70170,NORTH PAYMENTS,northpayments,ACC-1015,exact
+LEAD-70171,Pinnacle Insurance,pinnacleinsurance,ACC-1052,exact
+LEAD-70172,Brightwater Holdings,brightwaterholdings,ACC-1005,exact
+LEAD-70173,ThorntonPayments,thorntonpayments,ACC-1023,exact
+LEAD-70174,pinnacle payments,pinnaclepayments,ACC-1067,exact
+LEAD-70175,EVERLINE ENRGY,everlineenrgy,ACC-1113,AI
+LEAD-70176,Merdian Airlines,merdianairlines,ACC-1074,AI
+LEAD-70177,SOLSTICE TELECOM,solsticetelecom,ACC-1029,exact
+LEAD-70178,Meridian Eergy,meridianeergy,ACC-1104,AI
+LEAD-70179,"GRANITE AIRLINES , Inc.",graniteairlines,ACC-1103,exact
+LEAD-70180,WestbrookTelecom Inc.,westbrooktelecom,ACC-1115,exact
+LEAD-70181, Everline Airlines Inc.  ,everlineairlines,ACC-1026,exact
+LEAD-70182,QUILL LOGISTICS,quilllogistics,ACC-1057,exact
+LEAD-70183,Sable Financial,sablefinancial,ACC-1055,exact
+LEAD-70184,cascade energy,cascadeenergy,ACC-1068,group suffix
+LEAD-70185,union bank,unionbank,ACC-1059,exact
+LEAD-70186,Zenith Media Inc,zenithmedia,ACC-1109,exact
+LEAD-70187,Redwood Payments Inc.,redwoodpayments,ACC-1077,exact
+LEAD-70188,Union Systems Ltd.,unionsystems,ACC-1088,exact
+LEAD-70189,COBALT MEDIA,cobaltmedia,ACC-1108,exact
+LEAD-70190,Cobalt Payments,cobaltpayments,ACC-1117,exact
+LEAD-70191,north financial Inc,northfinancial,ACC-1105,exact
+LEAD-70192,WESTBROOK BANK,westbrookbank,,AI: no match
+LEAD-70193,"EverlineFinancial , Inc.",everlinefinancial,ACC-1110,exact
+LEAD-70194,Meridian Health,meridianhealth,ACC-1030,exact
+LEAD-70195,North Payments Incorporated,northpayments,ACC-1015,exact
+LEAD-70196,Cascade Retail Group Ltd.,cascaderetailgroup,ACC-1014,exact
+LEAD-70197,Meridian Stores,meridianstores,ACC-1043,group suffix
+LEAD-70198,Dunmore Financial,dunmorefinancial,ACC-1099,exact
+LEAD-70199,NorthLogistics,northlogistics,ACC-1050,exact
+LEAD-70200,north logistics Inc,northlogistics,ACC-1050,exact
+LEAD-70201, ZENITH SYSTEMS Inc  ,zenithsystems,ACC-1035,exact
+LEAD-70202,Pinnacle Bank Inc.,pinnaclebank,ACC-1016,exact
+LEAD-70203,Lumen Bank,lumenbank,ACC-1053,exact
+LEAD-70204,BLUE BANK Ld.,bluebankld,ACC-1045,AI
+LEAD-70205,Everline Airlines LLC,everlineairlines,ACC-1026,exact
+LEAD-70206,VANTAGE TELECOM Ltd.,vantagetelecom,ACC-1116,exact
+LEAD-70207,Cascade Media,cascademedia,,AI: no match
+LEAD-70208,vertex stores,vertexstores,ACC-1000,exact
+LEAD-70209,Iron Holdings Inc.,ironholdings,ACC-1054,group suffix
+LEAD-70210,Westbrook Stores,westbrookstores,ACC-1100,exact
+LEAD-70211,UnionBank,unionbank,ACC-1059,exact
+LEAD-70212,Dunmore Financial Incorporated,dunmorefinancial,ACC-1099,exact
+LEAD-70213," CASCADE AIRLINES , Inc.  ",cascadeairlines,ACC-1044,exact
+LEAD-70214,vertex stores,vertexstores,ACC-1000,exact
+LEAD-70215,Cascade Logistics,cascadelogistics,ACC-1069,group suffix
+LEAD-70216,"Pinnacle Mutual , Inc.",pinnaclemutual,ACC-1096,exact
+LEAD-70217,CASCADE ENERGY,cascadeenergy,ACC-1068,group suffix
+LEAD-70218,Cobalt Energy LLC,cobaltenergy,ACC-1011,exact
+LEAD-70219,Blue Logistics Ltd,bluelogistics,ACC-1019,exact
+LEAD-70220,Vertex Airlnes,vertexairlnes,ACC-1037,AI
+LEAD-70221,dunmore media Inc,dunmoremedia,ACC-1087,group suffix
+LEAD-70222,"Union Systems , Inc.",unionsystems,ACC-1088,exact
+LEAD-70223,Westbrook Stores,westbrookstores,ACC-1100,exact
+LEAD-70224,AlderInsurance LLC,alderinsurance,ACC-1118,exact
+LEAD-70225,North inancial,northinancial,ACC-1105,AI
+LEAD-70226,Solstice Telecom,solsticetelecom,ACC-1029,exact
+LEAD-70227,Dunmore Bank LLC,dunmorebank,ACC-1041,exact
+LEAD-70228, vertex systems  ,vertexsystems,ACC-1009,exact
+LEAD-70229," GRANITE LOGISTICS , Inc.  ",granitelogistics,,AI: no match
+LEAD-70230,Union Airlines Inc.,unionairlines,ACC-1048,exact
+LEAD-70231,WESTBROOK INSURANCE,westbrookinsurance,ACC-1027,exact
+LEAD-70232,WestbrookHealth Ltd.,westbrookhealth,ACC-1091,exact
+LEAD-70233,Blue Bank,bluebank,ACC-1045,exact
+LEAD-70234,REDWOOD FINANCIAL,redwoodfinancial,,AI: no match
+LEAD-70235,vantage stores Incorporated,vantagestores,ACC-1114,exact
+LEAD-70236,SableFinancial Inc.,sablefinancial,ACC-1055,exact
+LEAD-70237,Harbor Financial Inc,harborfinancial,ACC-1036,exact
+LEAD-70238,Redwood Retail Group,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70239,Lumen Health,lumenhealth,ACC-1013,exact
+LEAD-70240,Thornton Payments Ltd,thorntonpayments,ACC-1023,exact
+LEAD-70241,Cascade Logistics Ltd.,cascadelogistics,ACC-1069,group suffix
+LEAD-70242,North Telecom Inc,northtelecom,ACC-1085,exact
+LEAD-70243, Vantage Telecom Ltd.  ,vantagetelecom,ACC-1116,exact
+LEAD-70244,Brightwater Airlines,brightwaterairlines,,AI: no match
+LEAD-70245,Lumen Payments Inc,lumenpayments,ACC-1061,exact
+LEAD-70246,"thornton payments , Inc.",thorntonpayments,ACC-1023,exact
+LEAD-70247, PINNACLE MUTUAL Ltd.  ,pinnaclemutual,ACC-1096,exact
+LEAD-70248,VANTAGE STORES Inc,vantagestores,ACC-1114,exact
+LEAD-70249,Brightwater Airlines,brightwaterairlines,,AI: no match
+LEAD-70250, Iron Holdings  ,ironholdings,ACC-1054,group suffix
+LEAD-70251,LUMEN HELTH,lumenhelth,ACC-1013,AI
+LEAD-70252,Cobalt Media,cobaltmedia,ACC-1108,exact
+LEAD-70253,"Union Retail Group , Inc.",unionretailgroup,ACC-1071,exact
+LEAD-70254,Blue Hldings Ltd.,bluehldings,ACC-1032,AI
+LEAD-70255,Brightwater Holdings,brightwaterholdings,ACC-1005,exact
+LEAD-70256,Zenit Media,zenitmedia,ACC-1109,AI
+LEAD-70257,Vantage Stores Inc.,vantagestores,ACC-1114,exact
+LEAD-70258,Harbor Financial LLC,harborfinancial,ACC-1036,exact
+LEAD-70259,Union Bank,unionbank,ACC-1059,exact
+LEAD-70260,"SolsticeTelecom , Inc.",solsticetelecom,ACC-1029,exact
+LEAD-70261,"Thornton Bank , Inc.",thorntonbank,ACC-1058,exact
+LEAD-70262,Meridian Energy LLC,meridianenergy,ACC-1104,exact
+LEAD-70263,Thornton Logistics,thorntonlogistics,ACC-1028,exact
+LEAD-70264,Dunmore Telecom,dunmoretelecom,ACC-1090,group suffix
+LEAD-70265,NorthFinancial,northfinancial,ACC-1105,exact
+LEAD-70266,EVERLINE SYSTEMS,everlinesystems,,AI: no match
+LEAD-70267,Dunmore Holdings Incorpoated,dunmoreholdingsincorpoated,ACC-1111,AI
+LEAD-70268,WestbrookPayments,westbrookpayments,ACC-1093,exact
+LEAD-70269,Thornton Bank Ltd.,thorntonbank,ACC-1058,exact
+LEAD-70270,blue holdings Incorporated,blueholdings,ACC-1032,exact
+LEAD-70271,vantage media,vantagemedia,ACC-1002,exact
+LEAD-70272,WestbrookHelth,westbrookhelth,ACC-1091,AI
+LEAD-70273,CASCADE AIRLINES Incorporated,cascadeairlines,ACC-1044,exact
+LEAD-70274,BlueBak Incorporated,bluebak,ACC-1045,AI
+LEAD-70275,dunmore holdings,dunmoreholdings,ACC-1111,exact
+LEAD-70276,"Everline Financial , Inc.",everlinefinancial,ACC-1110,exact
+LEAD-70277,Cobalt Payments,cobaltpayments,ACC-1117,exact
+LEAD-70278,Brightwater Mutual,brightwatermutual,ACC-1076,exact
+LEAD-70279,Harbor Financial,harborfinancial,ACC-1036,exact
+LEAD-70280,REDWOOD RETAIL GROUP,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70281,IRON MUTUAL Incorporated,ironmutual,ACC-1001,exact
+LEAD-70282, Zenith Retail Group Ltd  ,zenithretailgroup,ACC-1084,exact
+LEAD-70283,Lumen Financial,lumenfinancial,ACC-1065,exact
+LEAD-70284, Harbor Financial  ,harborfinancial,ACC-1036,exact
+LEAD-70285,Vantage Holdings,vantageholdings,ACC-1095,exact
+LEAD-70286,"Brightwater Mutual , Inc.",brightwatermutual,ACC-1076,exact
+LEAD-70287,CASCADE STORES,cascadestores,ACC-1040,exact
+LEAD-70288,Vertex Media,vertexmedia,ACC-1079,exact
+LEAD-70289,VANTAGE FINANCIAL,vantagefinancial,,AI: no match
+LEAD-70290,ALDER LOGISTICS LLC,alderlogistics,ACC-1064,exact
+LEAD-70291,Brightwater Mutual,brightwatermutual,ACC-1076,exact
+LEAD-70292,Cobalt Energy Ltd,cobaltenergy,ACC-1011,exact
+LEAD-70293,Meridian Energy Ltd.,meridianenergy,ACC-1104,exact
+LEAD-70294,Cobalt Stores LLC,cobaltstores,ACC-1006,exact
+LEAD-70295,EverlineStores,everlinestores,ACC-1010,exact
+LEAD-70296,Dunmore Holdings,dunmoreholdings,ACC-1111,exact
+LEAD-70297,vantage mutual Ltd.,vantagemutual,ACC-1022,exact
+LEAD-70298,NORTH SYSTEMS,northsystems,ACC-1080,exact
+LEAD-70299,Zenith Media Inc.,zenithmedia,ACC-1109,exact
+LEAD-70300,Westbrook Insurance,westbrookinsurance,ACC-1027,exact
+LEAD-70301, Iron Logistics  ,ironlogistics,,AI: no match
+LEAD-70302,PINNACLE BANK,pinnaclebank,ACC-1016,exact
+LEAD-70303,Cobalt Bank,cobaltbank,ACC-1083,exact
+LEAD-70304,Zenith Systems Incorporated,zenithsystems,ACC-1035,exact
+LEAD-70305,vantage stores Inc,vantagestores,ACC-1114,exact
+LEAD-70306,WESTBROOK PAYMENTS Ltd,westbrookpayments,ACC-1093,exact
+LEAD-70307,Westbrook Telecom Inc,westbrooktelecom,ACC-1115,exact
+LEAD-70308,Vertex Bank,vertexbank,ACC-1051,exact
+LEAD-70309,Vantage Holdings LLC,vantageholdings,ACC-1095,exact
+LEAD-70310,westbrook health Inc,westbrookhealth,ACC-1091,exact
+LEAD-70311,Zenith Media,zenithmedia,ACC-1109,exact
+LEAD-70312, Harbor Systems LLC  ,harborsystems,ACC-1034,group suffix
+LEAD-70313,PinnacleInsurance,pinnacleinsurance,ACC-1052,exact
+LEAD-70314,Vertex Airlines Ltd.,vertexairlines,ACC-1037,exact
+LEAD-70315,North Holdings LLC,northholdings,ACC-1082,exact
+LEAD-70316,VERTEX STORES,vertexstores,ACC-1000,exact
+LEAD-70317,thornton bank,thorntonbank,ACC-1058,exact
+LEAD-70318,Iron Systems Ltd.,ironsystems,ACC-1049,exact
+LEAD-70319,Brightwater Insurance LLC,brightwaterinsurance,ACC-1038,exact
+LEAD-70320,COBALT BANK,cobaltbank,ACC-1083,exact
+LEAD-70321,"Pinnacle Bank , Inc.",pinnaclebank,ACC-1016,exact
+LEAD-70322,WESTBROOK STORES Ltd,westbrookstores,ACC-1100,exact
+LEAD-70323,"Brightwater Stores , Inc.",brightwaterstores,,AI: no match
+LEAD-70324,"Cobalt Ban , Inc.",cobaltban,ACC-1083,AI
+LEAD-70325, North Retail Grou  ,northretailgrou,ACC-1101,AI
+LEAD-70326,LumenFinancial Inc.,lumenfinancial,ACC-1065,exact
+LEAD-70327,alder logistics,alderlogistics,ACC-1064,exact
+LEAD-70328,LumenPayments LLC,lumenpayments,ACC-1061,exact
+LEAD-70329,Vantage Media,vantagemedia,ACC-1002,exact
+LEAD-70330,dunmore financial Inc.,dunmorefinancial,ACC-1099,exact
+LEAD-70331,Iron Media,ironmedia,ACC-1112,exact
+LEAD-70332,Cobalt Telecom,cobalttelecom,ACC-1089,exact
+LEAD-70333,North Holdings Ltd.,northholdings,ACC-1082,exact
+LEAD-70334,Iron Mutual,ironmutual,ACC-1001,exact
+LEAD-70335,pinnacle bank Inc.,pinnaclebank,ACC-1016,exact
+LEAD-70336,SOLSTICE ENERGY,solsticeenergy,,AI: no match
+LEAD-70337,"NORTH SYSTMS , Inc.",northsystms,ACC-1080,AI
+LEAD-70338,North Retail Group Ltd,northretailgroup,ACC-1101,exact
+LEAD-70339, NORTH BANK  ,northbank,ACC-1098,group suffix
+LEAD-70340,pinnacle insurance Incorporated,pinnacleinsurance,ACC-1052,exact
+LEAD-70341,Everline Stores Ltd,everlinestores,ACC-1010,exact
+LEAD-70342,thornton bank,thorntonbank,ACC-1058,exact
+LEAD-70343,Zenith Mutual,zenithmutual,ACC-1007,exact
+LEAD-70344,zenith holdings LLC,zenithholdings,ACC-1094,exact
+LEAD-70345, Cascade Airlines Ltd.  ,cascadeairlines,ACC-1044,exact
+LEAD-70346,Solstice Telecom Ltd.,solsticetelecom,ACC-1029,exact
+LEAD-70347,Blue Logistics Inc,bluelogistics,ACC-1019,exact
+LEAD-70348,quill financial Inc,quillfinancial,ACC-1060,group suffix
+LEAD-70349,CascadeLogistics Ltd,cascadelogistics,ACC-1069,group suffix
+LEAD-70350,UnionSystems Incorporated,unionsystems,ACC-1088,exact
+LEAD-70351,Cobalt Energy,cobaltenergy,ACC-1011,exact
+LEAD-70352,Everline Energy,everlineenergy,ACC-1113,exact
+LEAD-70353,Dunmore Financial Ltd.,dunmorefinancial,ACC-1099,exact
+LEAD-70354,Solstice Media Ltd.,solsticemedia,ACC-1070,exact
+LEAD-70355,NORTH PAYMENTS Incorporated,northpayments,ACC-1015,exact
+LEAD-70356,North Logistics,northlogistics,ACC-1050,exact
+LEAD-70357,meridian logistics,meridianlogistics,,AI: no match
+LEAD-70358,COBALT TELECOM Inc,cobalttelecom,ACC-1089,exact
+LEAD-70359, COBALT INSURANCE  ,cobaltinsurance,,AI: no match
+LEAD-70360,QuillBank,quillbank,ACC-1008,exact
+LEAD-70361,Westbrook Bank Ltd,westbrookbank,,AI: no match
+LEAD-70362,Sable Media Ltd,sablemedia,,AI: no match
+LEAD-70363,"pinnacle payments , Inc.",pinnaclepayments,ACC-1067,exact
+LEAD-70364,Thornton Bank Ltd.,thorntonbank,ACC-1058,exact
+LEAD-70365, Westbrook Telecm  ,westbrooktelecm,ACC-1115,AI
+LEAD-70366,Lumen Health Incorporated,lumenhealth,ACC-1013,exact
+LEAD-70367,ZENITH HOLINGS,zenithholings,ACC-1094,AI
+LEAD-70368,thornton telecom LLC,thorntontelecom,ACC-1017,exact
+LEAD-70369,Cobalt Payments,cobaltpayments,ACC-1117,exact
+LEAD-70370,Brightwater Financial Inc,brightwaterfinancial,ACC-1042,exact
+LEAD-70371,ThorntonPayments LLC,thorntonpayments,ACC-1023,exact
+LEAD-70372,Meridian Airlines,meridianairlines,ACC-1074,exact
+LEAD-70373,granite energy,graniteenergy,ACC-1024,exact
+LEAD-70374,Cobalt Media LLC,cobaltmedia,ACC-1108,exact
+LEAD-70375, Brightwater Financial  ,brightwaterfinancial,ACC-1042,exact
+LEAD-70376,westbrook payments Ltd,westbrookpayments,ACC-1093,exact
+LEAD-70377,VertexTelecom,vertextelecom,,AI: no match
+LEAD-70378,Cascade Retail Group,cascaderetailgroup,ACC-1014,exact
+LEAD-70379,Brightwater Holdings,brightwaterholdings,ACC-1005,exact
+LEAD-70380,iron bank,ironbank,ACC-1078,exact
+LEAD-70381, Vertex Media  ,vertexmedia,ACC-1079,exact
+LEAD-70382,Zenith Holdings Ltd,zenithholdings,ACC-1094,exact
+LEAD-70383,Dunmore Financial,dunmorefinancial,ACC-1099,exact
+LEAD-70384,Cascade Retail Group,cascaderetailgroup,ACC-1014,exact
+LEAD-70385, ThorntonLogistics Inc.  ,thorntonlogistics,ACC-1028,exact
+LEAD-70386,BLUE TELECOM,bluetelecom,ACC-1062,exact
+LEAD-70387,Zenith Mutual,zenithmutual,ACC-1007,exact
+LEAD-70388,MERIDIAN AIRLINES Ltd,meridianairlines,ACC-1074,exact
+LEAD-70389,VERTEX AIRLINES,vertexairlines,ACC-1037,exact
+LEAD-70390,"North Systems , Inc.",northsystems,ACC-1080,exact
+LEAD-70391, Blue Logistics LLC  ,bluelogistics,ACC-1019,exact
+LEAD-70392,EVELINE LOGISTICS Ltd,evelinelogistics,ACC-1092,AI
+LEAD-70393,Westbrook Payments Inc.,westbrookpayments,ACC-1093,exact
+LEAD-70394,Brightwater Insurance Ltd.,brightwaterinsurance,ACC-1038,exact
+LEAD-70395,Redwood Retail Group Inc,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70396,MERIDIAN HEALTH,meridianhealth,ACC-1030,exact
+LEAD-70397, HARBOR TELECOM  ,harbortelecom,ACC-1033,exact
+LEAD-70398,Pinnacle Bank,pinnaclebank,ACC-1016,exact
+LEAD-70399,Westbrook Telecom Incorporated,westbrooktelecom,ACC-1115,exact
+LEAD-70400,COBALT STORES Inc,cobaltstores,ACC-1006,exact
+LEAD-70401," Redwood Insurance , Inc.  ",redwoodinsurance,ACC-1003,exact
+LEAD-70402, Blue Insurance Incorporated  ,blueinsurance,ACC-1102,exact
+LEAD-70403,"ZENITH SYSTEMS , Inc.",zenithsystems,ACC-1035,exact
+LEAD-70404,Zenith Retai Group Ltd.,zenithretaigroup,ACC-1084,AI
+LEAD-70405,HARBOR TELECOM Inc,harbortelecom,ACC-1033,exact
+LEAD-70406,Iron Holdings LLC,ironholdings,ACC-1054,group suffix
+LEAD-70407, BrightwaterHoldings  ,brightwaterholdings,ACC-1005,exact
+LEAD-70408,Zenith Systems Inc.,zenithsystems,ACC-1035,exact
+LEAD-70409,North Holdings Inc,northholdings,ACC-1082,exact
+LEAD-70410,Redwood Insurance,redwoodinsurance,ACC-1003,exact
+LEAD-70411,CascadeAirlines,cascadeairlines,ACC-1044,exact
+LEAD-70412,SolsticeTelecom Inc.,solsticetelecom,ACC-1029,exact
+LEAD-70413,Iron Mutual,ironmutual,ACC-1001,exact
+LEAD-70414,Thornton Bank Ltd.,thorntonbank,ACC-1058,exact
+LEAD-70415,everline media,everlinemedia,ACC-1047,exact
+LEAD-70416,VERTEX HOLDINGS,vertexholdings,ACC-1073,exact
+LEAD-70417,Thornton Bank,thorntonbank,ACC-1058,exact
+LEAD-70418,Westbrook Logistics Ltd,westbrooklogistics,ACC-1107,exact
+LEAD-70419,brightwater financial,brightwaterfinancial,ACC-1042,exact
+LEAD-70420, Meridian Energy  ,meridianenergy,ACC-1104,exact
+LEAD-70421,Alder Hodings Ltd.,alderhodings,,AI: no match
+LEAD-70422,"Solstice Telecom , Inc.",solsticetelecom,ACC-1029,exact
+LEAD-70423,Vertex Media Ltd,vertexmedia,ACC-1079,exact
+LEAD-70424,Harbor Financial,harborfinancial,ACC-1036,exact
+LEAD-70425,"Cascade Airlines , Inc.",cascadeairlines,ACC-1044,exact
+LEAD-70426,Vertex Retail Group Inc,vertexretailgroup,ACC-1004,exact
+LEAD-70427, Vantage Stores  ,vantagestores,ACC-1114,exact
+LEAD-70428,Thornton Systems Inc,thorntonsystems,ACC-1119,exact
+LEAD-70429,north bank,northbank,ACC-1098,group suffix
+LEAD-70430,Brightwater Holdings Ltd.,brightwaterholdings,ACC-1005,exact
+LEAD-70431, SOLSTICE MEDIA Incorporated  ,solsticemedia,ACC-1070,exact
+LEAD-70432,Meridian Energy Incorporated,meridianenergy,ACC-1104,exact
+LEAD-70433,Brightwater Mutual Inc.,brightwatermutual,ACC-1076,exact
+LEAD-70434,Sable Financial,sablefinancial,ACC-1055,exact
+LEAD-70435,Vantage Mutual,vantagemutual,ACC-1022,exact
+LEAD-70436, Dunmore Stores  ,dunmorestores,,AI: no match
+LEAD-70437,alder health,alderhealth,ACC-1075,exact
+LEAD-70438,ZenithMedia,zenithmedia,ACC-1109,exact
+LEAD-70439,PINACLE PAYMENTS Inc.,pinaclepayments,ACC-1067,AI
+LEAD-70440,"everline health , Inc.",everlinehealth,,AI: no match
+LEAD-70441,Redwood Insurance,redwoodinsurance,ACC-1003,exact
+LEAD-70442,Cobalt Energy Ltd,cobaltenergy,ACC-1011,exact
+LEAD-70443,"Vertex Media , Inc.",vertexmedia,ACC-1079,exact
+LEAD-70444, GraniteAirlines  ,graniteairlines,ACC-1103,exact
+LEAD-70445,Solstice Telecom,solsticetelecom,ACC-1029,exact
+LEAD-70446,Iron Media Inc.,ironmedia,ACC-1112,exact
+LEAD-70447,everline financial,everlinefinancial,ACC-1110,exact
+LEAD-70448,Quill Logistics,quilllogistics,ACC-1057,exact
+LEAD-70449,everline payments,everlinepayments,,AI: no match
+LEAD-70450,Brightwater Financial Ltd,brightwaterfinancial,ACC-1042,exact
+LEAD-70451,ZENITH HOLDINGS LLC,zenithholdings,ACC-1094,exact
+LEAD-70452,Quill Bank Inc,quillbank,ACC-1008,exact
+LEAD-70453, Meridian Energy  ,meridianenergy,ACC-1104,exact
+LEAD-70454,Zenith Energy,zenithenergy,ACC-1012,exact
+LEAD-70455,Thornton Bank,thorntonbank,ACC-1058,exact
+LEAD-70456,Union Retail Group,unionretailgroup,ACC-1071,exact
+LEAD-70457,Blue Holdings Incorporated,blueholdings,ACC-1032,exact
+LEAD-70458,everline stores,everlinestores,ACC-1010,exact
+LEAD-70459,Brightwater Insurance,brightwaterinsurance,ACC-1038,exact
+LEAD-70460, Alder Health Inc  ,alderhealth,ACC-1075,exact
+LEAD-70461,Granite Energy LLC,graniteenergy,ACC-1024,exact
+LEAD-70462,Meridian Payents,meridianpayents,ACC-1097,AI
+LEAD-70463, Thornton Telecom  ,thorntontelecom,ACC-1017,exact
+LEAD-70464,NORTH PAYMENTS Ltd.,northpayments,ACC-1015,exact
+LEAD-70465,Vertex Bank,vertexbank,ACC-1051,exact
+LEAD-70466,VERTEX BANK,vertexbank,ACC-1051,exact
+LEAD-70467,"CascadeRetailGroup , Inc.",cascaderetailgroup,ACC-1014,exact
+LEAD-70468,"LumenFinancial , Inc.",lumenfinancial,ACC-1065,exact
+LEAD-70469,Alder Health,alderhealth,ACC-1075,exact
+LEAD-70470,Redwood Payments Ltd,redwoodpayments,ACC-1077,exact
+LEAD-70471,EVERLINE FINANCIAL,everlinefinancial,ACC-1110,exact
+LEAD-70472,IRON STORES,ironstores,,AI: no match
+LEAD-70473,MeridianAirlines,meridianairlines,ACC-1074,exact
+LEAD-70474,Union Retail Group Ltd.,unionretailgroup,ACC-1071,exact
+LEAD-70475,VERTEX MEDIA Inc.,vertexmedia,ACC-1079,exact
+LEAD-70476,PINNACLE RETAIL GROUP Inc.,pinnacleretailgroup,,AI: no match
+LEAD-70477,zenith holdings Inc,zenithholdings,ACC-1094,exact
+LEAD-70478,VANTAGE TELECOM,vantagetelecom,ACC-1116,exact
+LEAD-70479,everline financial,everlinefinancial,ACC-1110,exact
+LEAD-70480,Westbrook Payments,westbrookpayments,ACC-1093,exact
+LEAD-70481,Vantage Mutual Ltd,vantagemutual,ACC-1022,exact
+LEAD-70482,Dunmore Systems Inc.,dunmoresystems,ACC-1063,exact
+LEAD-70483,Redwood Payments,redwoodpayments,ACC-1077,exact
+LEAD-70484,Cobalt Holdings,cobaltholdings,,AI: no match
+LEAD-70485,Cascade Bank,cascadebank,,AI: no match
+LEAD-70486,CobaltPayments Inc,cobaltpayments,ACC-1117,exact
+LEAD-70487,Cascade Logistics LLC,cascadelogistics,ACC-1069,group suffix
+LEAD-70488,Sable Stores,sablestores,,AI: no match
+LEAD-70489,North Holdings,northholdings,ACC-1082,exact
+LEAD-70490,Vertex Holdings,vertexholdings,ACC-1073,exact
+LEAD-70491,BLUE BANK,bluebank,ACC-1045,exact
+LEAD-70492, North Holdings Ltd.  ,northholdings,ACC-1082,exact
+LEAD-70493,ZENITH HOLDINGS Incorporated,zenithholdings,ACC-1094,exact
+LEAD-70494,vantage stores,vantagestores,ACC-1114,exact
+LEAD-70495,Solstice Financial,solsticefinancial,ACC-1066,exact
+LEAD-70496,RedwoodInsurance,redwoodinsurance,ACC-1003,exact
+LEAD-70497,Everline Telecom Ltd,everlinetelecom,ACC-1106,exact
+LEAD-70498,Zenith Media Inc.,zenithmedia,ACC-1109,exact
+LEAD-70499,NorthPayments,northpayments,ACC-1015,exact
+LEAD-70500,"Westbrook Health , Inc.",westbrookhealth,ACC-1091,exact
+LEAD-70501,Vertex Airlines Inc.,vertexairlines,ACC-1037,exact
+LEAD-70502, harbor telecom  ,harbortelecom,ACC-1033,exact
+LEAD-70503, redwood insurance Inc.  ,redwoodinsurance,ACC-1003,exact
+LEAD-70504,Union Retail Group Inc.,unionretailgroup,ACC-1071,exact
+LEAD-70505,Union Stores Incorporated,unionstores,ACC-1031,exact
+LEAD-70506,Quill Payments,quillpayments,ACC-1025,exact
+LEAD-70507,Brightwater Insurance Ltd.,brightwaterinsurance,ACC-1038,exact
+LEAD-70508,Quill Energy Incorporated,quillenergy,ACC-1086,exact
+LEAD-70509,Zenith Systems,zenithsystems,ACC-1035,exact
+LEAD-70510, Vantage Stores  ,vantagestores,ACC-1114,exact
+LEAD-70511,WESTBROOK PAYMENTS Inc.,westbrookpayments,ACC-1093,exact
+LEAD-70512,Iron Systems LLC,ironsystems,ACC-1049,exact
+LEAD-70513,Blue Holdings,blueholdings,ACC-1032,exact
+LEAD-70514,Cascade Airlines,cascadeairlines,ACC-1044,exact
+LEAD-70515,HARBOR HLDINGS,harborhldings,,AI: no match
+LEAD-70516, EverlineMedia  ,everlinemedia,ACC-1047,exact
+LEAD-70517,Meridian Airlines Ltd,meridianairlines,ACC-1074,exact
+LEAD-70518, Everline Logistics  ,everlinelogistics,ACC-1092,exact
+LEAD-70519,Vertex Bank,vertexbank,ACC-1051,exact
+LEAD-70520,lumen payments,lumenpayments,ACC-1061,exact
+LEAD-70521,Cobalt Media Inc,cobaltmedia,ACC-1108,exact
+LEAD-70522,Zenith Systems Ltd,zenithsystems,ACC-1035,exact
+LEAD-70523,COBALT MEDIA Ltd,cobaltmedia,ACC-1108,exact
+LEAD-70524,Solstice Media Inc,solsticemedia,ACC-1070,exact
+LEAD-70525,THORNTON SYSTEMS Inc.,thorntonsystems,ACC-1119,exact
+LEAD-70526,Iron Media Ltd,ironmedia,ACC-1112,exact
+LEAD-70527,"UnionBank , Inc.",unionbank,ACC-1059,exact
+LEAD-70528,Vertex Airlines,vertexairlines,ACC-1037,exact
+LEAD-70529,QUILL BANK,quillbank,ACC-1008,exact
+LEAD-70530,meridian energy,meridianenergy,ACC-1104,exact
+LEAD-70531,"Vantage Retail Group , Inc.",vantageretailgroup,,AI: no match
+LEAD-70532,Redwood Retail Group,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70533,Zenith Media,zenithmedia,ACC-1109,exact
+LEAD-70534,North Retail Group,northretailgroup,ACC-1101,exact
+LEAD-70535,"WesbrookLogistics , Inc.",wesbrooklogistics,ACC-1107,AI
+LEAD-70536,Harbor elecom,harborelecom,ACC-1033,AI
+LEAD-70537,GRANITE AIRLINES Ltd,graniteairlines,ACC-1103,exact
+LEAD-70538, NORTH TELECOM  ,northtelecom,ACC-1085,exact
+LEAD-70539,Cobalt Stores Ltd,cobaltstores,ACC-1006,exact
+LEAD-70540,Granite Airlines Inc,graniteairlines,ACC-1103,exact
+LEAD-70541,IronHoldings Ltd.,ironholdings,ACC-1054,group suffix
+LEAD-70542,Cobalt Bank,cobaltbank,ACC-1083,exact
+LEAD-70543, Meridian Stores  ,meridianstores,ACC-1043,group suffix
+LEAD-70544,Westbrook Payments,westbrookpayments,ACC-1093,exact
+LEAD-70545,Everline Stores Ltd,everlinestores,ACC-1010,exact
+LEAD-70546,"Cascade Logistics , Inc.",cascadelogistics,ACC-1069,group suffix
+LEAD-70547,RedwoodRetailGroup,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70548,Cobalt Stores,cobaltstores,ACC-1006,exact
+LEAD-70549,EVERLINE FINANCIAL Incorporated,everlinefinancial,ACC-1110,exact
+LEAD-70550,Cascade Logistics Inc.,cascadelogistics,ACC-1069,group suffix
+LEAD-70551,harbor financial,harborfinancial,ACC-1036,exact
+LEAD-70552,LUMEN MUUAL Inc,lumenmuual,,AI: no match
+LEAD-70553,Ble Insurance,bleinsurance,ACC-1102,person (review)
+LEAD-70554,Vertex Media Ltd.,vertexmedia,ACC-1079,exact
+LEAD-70555,WESTBROOK HEALTH,westbrookhealth,ACC-1091,exact
+LEAD-70556,north telecom Ltd,northtelecom,ACC-1085,exact
+LEAD-70557,Vantage Telecom Ltd.,vantagetelecom,ACC-1116,exact
+LEAD-70558,COBLT MEDIA,cobltmedia,ACC-1108,AI
+LEAD-70559,Harbor Financial Ltd,harborfinancial,ACC-1036,exact
+LEAD-70560,Vantage Media,vantagemedia,ACC-1002,exact
+LEAD-70561,REDWOOD INSURANCE,redwoodinsurance,ACC-1003,exact
+LEAD-70562,Iron Mutual Incorporated,ironmutual,ACC-1001,exact
+LEAD-70563,Redwood Insurance Ltd.,redwoodinsurance,ACC-1003,exact
+LEAD-70564,North Logistics,northlogistics,ACC-1050,exact
+LEAD-70565, Cobalt Bank  ,cobaltbank,ACC-1083,exact
+LEAD-70566,"Westbrook Logistics , Inc.",westbrooklogistics,ACC-1107,exact
+LEAD-70567,Redwood Insurance,redwoodinsurance,ACC-1003,exact
+LEAD-70568,Quill Logistics,quilllogistics,ACC-1057,exact
+LEAD-70569, CascadeRetailGroup Ltd  ,cascaderetailgroup,ACC-1014,exact
+LEAD-70570,Blue Logistics Ltd,bluelogistics,ACC-1019,exact
+LEAD-70571,Dunmore oldings,dunmoreoldings,ACC-1111,AI
+LEAD-70572,Zenith Media,zenithmedia,ACC-1109,exact
+LEAD-70573,Pinnacle Mutual,pinnaclemutual,ACC-1096,exact
+LEAD-70574,DUNMORE TELECOM,dunmoretelecom,ACC-1090,group suffix
+LEAD-70575,NORTH TELECOM Incorporated,northtelecom,ACC-1085,exact
+LEAD-70576,SOLSTICE ELECOM,solsticeelecom,ACC-1029,AI
+LEAD-70577,Lumen Bank,lumenbank,ACC-1053,exact
+LEAD-70578,Dunmore Payments,dunmorepayments,ACC-1021,exact
+LEAD-70579,DUNMORE TELECOM,dunmoretelecom,ACC-1090,group suffix
+LEAD-70580,VERTEX HOLDINGS,vertexholdings,ACC-1073,exact
+LEAD-70581,DUNMORE MDIA Inc.,dunmoremdia,ACC-1087,AI
+LEAD-70582,HARBOR FINANCIAL,harborfinancial,ACC-1036,exact
+LEAD-70583,Zenith Holdings,zenithholdings,ACC-1094,exact
+LEAD-70584,THORNTON TELECOM Ltd.,thorntontelecom,ACC-1017,exact
+LEAD-70585,Dunmore Holdings LLC,dunmoreholdings,ACC-1111,exact
+LEAD-70586,North Telecom,northtelecom,ACC-1085,exact
+LEAD-70587,Cobalt Telecom,cobalttelecom,ACC-1089,exact
+LEAD-70588,Harbo Telecom,harbotelecom,,AI: no match
+LEAD-70589,QuillEnergy,quillenergy,ACC-1086,exact
+LEAD-70590,WESTBROOK LOGISTICS,westbrooklogistics,ACC-1107,exact
+LEAD-70591,Solstice Bank,solsticebank,,AI: no match
+LEAD-70592,EVERLINE LOGISTICS Inc.,everlinelogistics,ACC-1092,exact
+LEAD-70593,Everline Media Ic.,everlinemediaic,ACC-1047,AI
+LEAD-70594,"Granite Airlines , Inc.",graniteairlines,ACC-1103,exact
+LEAD-70595,cascade retail group,cascaderetailgroup,ACC-1014,exact
+LEAD-70596,Harbor Financial,harborfinancial,ACC-1036,exact
+LEAD-70597,Quill Energy,quillenergy,ACC-1086,exact
+LEAD-70598,Zenith Systems Inc,zenithsystems,ACC-1035,exact
+LEAD-70599,Cobalt Payments,cobaltpayments,ACC-1117,exact
+LEAD-70600,Zenith Holdings,zenithholdings,ACC-1094,exact
+LEAD-70601,Cascad Energy,cascadenergy,ACC-1068,AI
+LEAD-70602,"Everline Stores , Inc.",everlinestores,ACC-1010,exact
+LEAD-70603,Everline Media Inc,everlinemedia,ACC-1047,exact
+LEAD-70604,EverlineStores,everlinestores,ACC-1010,exact
+LEAD-70605,Everline Airlines Inc,everlineairlines,ACC-1026,exact
+LEAD-70606,GRANITE PAYMENTS,granitepayments,,AI: no match
+LEAD-70607,DUNMORE PAYMENTS,dunmorepayments,ACC-1021,exact
+LEAD-70608,DUNMOR TELECOM Inc,dunmortelecom,ACC-1090,AI
+LEAD-70609,Westbrok Telecom,westbroktelecom,ACC-1115,AI
+LEAD-70610,Granite Financial,granitefinancial,,AI: no match
+LEAD-70611,harbor telecom Ltd,harbortelecom,ACC-1033,exact
+LEAD-70612,ZENITH HOLDINGS Inc.,zenithholdings,ACC-1094,exact
+LEAD-70613,North Airlines Incorporated,northairlines,ACC-1039,exact
+LEAD-70614,BRIGHTWATER INSURANCE,brightwaterinsurance,ACC-1038,exact
+LEAD-70615,Westbrook Telecom LLC,westbrooktelecom,ACC-1115,exact
+LEAD-70616, Vertex Retail Group Icorporated  ,vertexretailgroupicorporated,ACC-1004,AI
+LEAD-70617," Westbrook Telecom , Inc.  ",westbrooktelecom,ACC-1115,exact
+LEAD-70618,NORTH HOLDINGS,northholdings,ACC-1082,exact
+LEAD-70619,Pinnacle Bank Ltd.,pinnaclebank,ACC-1016,exact
+LEAD-70620,Zenith Energy,zenithenergy,ACC-1012,exact
+LEAD-70621,Westbrook Logistics,westbrooklogistics,ACC-1107,exact
+LEAD-70622,Everline Airlines Incorporated,everlineairlines,ACC-1026,exact
+LEAD-70623, Quill Bank  ,quillbank,ACC-1008,exact
+LEAD-70624,Iron Media,ironmedia,ACC-1112,exact
+LEAD-70625,Dunmore Telecom,dunmoretelecom,ACC-1090,group suffix
+LEAD-70626,everline telecom Incorporated,everlinetelecom,ACC-1106,exact
+LEAD-70627,Union ank,unionank,ACC-1059,AI
+LEAD-70628,WESTBROOK PAYMENTS Inc.,westbrookpayments,ACC-1093,exact
+LEAD-70629,Union Retail Group Ltd.,unionretailgroup,ACC-1071,exact
+LEAD-70630,THORNTON STORES Ltd,thorntonstores,,AI: no match
+LEAD-70631,"Lumen Financial , Inc.",lumenfinancial,ACC-1065,exact
+LEAD-70632,Vantage Mutual,vantagemutual,ACC-1022,exact
+LEAD-70633, HARBOR FINANCIAL  ,harborfinancial,ACC-1036,exact
+LEAD-70634,Brightwater Health Incorporated,brightwaterhealth,,AI: no match
+LEAD-70635,brightwater mutual,brightwatermutual,ACC-1076,exact
+LEAD-70636,Meridian Health Inc.,meridianhealth,ACC-1030,exact
+LEAD-70637,Cobalt Energy Ltd,cobaltenergy,ACC-1011,exact
+LEAD-70638,Pinnacle Bank,pinnaclebank,ACC-1016,exact
+LEAD-70639,Dunmore Telecom Incorporated,dunmoretelecom,ACC-1090,group suffix
+LEAD-70640,Blue Telecom,bluetelecom,ACC-1062,exact
+LEAD-70641,Harbor Health,harborhealth,,AI: no match
+LEAD-70642,"Harbor Logistics , Inc.",harborlogistics,ACC-1046,exact
+LEAD-70643, Harbor Logistics Inc.  ,harborlogistics,ACC-1046,exact
+LEAD-70644,Quill Bank,quillbank,ACC-1008,exact
+LEAD-70645,Everline Bank Ltd,everlinebank,ACC-1072,exact
+LEAD-70646,vantage telecom LLC,vantagetelecom,ACC-1116,exact
+LEAD-70647, Vertex Bank Ltd.  ,vertexbank,ACC-1051,exact
+LEAD-70648,Iron Sysems Ltd.,ironsysems,ACC-1049,AI
+LEAD-70649,Zenit Media,zenitmedia,ACC-1109,AI
+LEAD-70650,Dunmore Financial Ltd.,dunmorefinancial,ACC-1099,exact
+LEAD-70651, Cobalt Media  ,cobaltmedia,ACC-1108,exact
+LEAD-70652," Lumen Mutual , Inc.  ",lumenmutual,,AI: no match
+LEAD-70653,Redwood Holdings Inc,redwoodholdings,ACC-1020,exact
+LEAD-70654,Westbrook Health Inc.,westbrookhealth,ACC-1091,exact
+LEAD-70655,QUILL LOGISTICS Incorporated,quilllogistics,ACC-1057,exact
+LEAD-70656,SOLSTICE INSURANCE LLC,solsticeinsurance,,AI: no match
+LEAD-70657,Redwood Insurance LLC,redwoodinsurance,ACC-1003,exact
+LEAD-70658,NOTH PAYMENTS,nothpayments,ACC-1015,AI
+LEAD-70659,THORNTON PAYMENTS Ltd.,thorntonpayments,ACC-1023,exact
+LEAD-70660,North Systems LLC,northsystems,ACC-1080,exact
+LEAD-70661,Blue Holdings,blueholdings,ACC-1032,exact
+LEAD-70662,COBALT HEALTH,cobalthealth,,AI: no match
+LEAD-70663, Westbrook Payments LLC  ,westbrookpayments,ACC-1093,exact
+LEAD-70664,Dunmore Mdia,dunmoremdia,ACC-1087,AI
+LEAD-70665,Blue Logistics,bluelogistics,ACC-1019,exact
+LEAD-70666,CASCADE AIRLINES,cascadeairlines,ACC-1044,exact
+LEAD-70667,Solstice Telecom Inc.,solsticetelecom,ACC-1029,exact
+LEAD-70668,Blue Logistics,bluelogistics,ACC-1019,exact
+LEAD-70669,Zenith Energy Ltd.,zenithenergy,ACC-1012,exact
+LEAD-70670,Redwood Payments,redwoodpayments,ACC-1077,exact
+LEAD-70671,Cobalt Bank Inc.,cobaltbank,ACC-1083,exact
+LEAD-70672,Vantage Media,vantagemedia,ACC-1002,exact
+LEAD-70673,BlueBank Inc.,bluebank,ACC-1045,exact
+LEAD-70674,cascade airlines,cascadeairlines,ACC-1044,exact
+LEAD-70675,NorthMutual,northmutual,,AI: no match
+LEAD-70676,Zenith Energy,zenithenergy,ACC-1012,exact
+LEAD-70677,Zenith Retail Group Ltd.,zenithretailgroup,ACC-1084,exact
+LEAD-70678,MERIDIAN PAYMENTS Incorporated,meridianpayments,ACC-1097,exact
+LEAD-70679,Blue Holdings Ltd.,blueholdings,ACC-1032,exact
+LEAD-70680,Cascade Airlines Incorporated,cascadeairlines,ACC-1044,exact
+LEAD-70681,thornton systems,thorntonsystems,ACC-1119,exact
+LEAD-70682,"Vantage Stores , Inc.",vantagestores,ACC-1114,exact
+LEAD-70683, Westbrook Payments  ,westbrookpayments,ACC-1093,exact
+LEAD-70684,WestbrookLogistics,westbrooklogistics,ACC-1107,exact
+LEAD-70685,Thornton Bank,thorntonbank,ACC-1058,exact
+LEAD-70686,North Airlines,northairlines,ACC-1039,exact
+LEAD-70687,Redwood Retail Group Inc,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70688,LUMEN BANK,lumenbank,ACC-1053,exact
+LEAD-70689,Westrook Systems,westrooksystems,ACC-1018,AI
+LEAD-70690,Lumen Systems,lumensystems,,AI: no match
+LEAD-70691,North Logistics LLC,northlogistics,ACC-1050,exact
+LEAD-70692,Everline Financial Ltd.,everlinefinancial,ACC-1110,exact
+LEAD-70693, GRANITE AIRLINES  ,graniteairlines,ACC-1103,exact
+LEAD-70694,EVERLINE AIRLINES Inc,everlineairlines,ACC-1026,exact
+LEAD-70695,"meridian systems , Inc.",meridiansystems,,AI: no match
+LEAD-70696,VERTEX RETAIL GROUP Incorporated,vertexretailgroup,ACC-1004,exact
+LEAD-70697,Solstice Telecom LLC,solsticetelecom,ACC-1029,exact
+LEAD-70698,BLUE HOLDINGS Ltd.,blueholdings,ACC-1032,exact
+LEAD-70699, Thornton Energy  ,thorntonenergy,,AI: no match
+LEAD-70700,vertex airlines,vertexairlines,ACC-1037,exact
+LEAD-70701,ZENITH SYSTEMS,zenithsystems,ACC-1035,exact
+LEAD-70702, REDWOOD SYSTEMS  ,redwoodsystems,,AI: no match
+LEAD-70703,VERTEX BANK,vertexbank,ACC-1051,exact
+LEAD-70704,PinnaclePayments,pinnaclepayments,ACC-1067,exact
+LEAD-70705,Union Telecom,uniontelecom,,AI: no match
+LEAD-70706,PINNACLE PAYMENTS Inc,pinnaclepayments,ACC-1067,exact
+LEAD-70707,Vantage Holdings,vantageholdings,ACC-1095,exact
+LEAD-70708,WestbrookLogistics,westbrooklogistics,ACC-1107,exact
+LEAD-70709,Cascade Retail Group,cascaderetailgroup,ACC-1014,exact
+LEAD-70710, alder media Inc.  ,aldermedia,,AI: no match
+LEAD-70711,North Systems LLC,northsystems,ACC-1080,exact
+LEAD-70712,Granite Systems,granitesystems,,AI: no match
+LEAD-70713,Vantage Media Inc.,vantagemedia,ACC-1002,exact
+LEAD-70714,"EVERLINE STORES , Inc.",everlinestores,ACC-1010,exact
+LEAD-70715,WESTBROOK INSURANCE,westbrookinsurance,ACC-1027,exact
+LEAD-70716,lumen payments Inc,lumenpayments,ACC-1061,exact
+LEAD-70717,Lumen Bank Inc,lumenbank,ACC-1053,exact
+LEAD-70718,Dunore Media Ltd.,dunoremedia,ACC-1087,AI
+LEAD-70719,Vantag Holdings,vantagholdings,ACC-1095,AI
+LEAD-70720,Dunmore Telecom,dunmoretelecom,ACC-1090,group suffix
+LEAD-70721, Union Retail Group LLC  ,unionretailgroup,ACC-1071,exact
+LEAD-70722,Union Health,unionhealth,,AI: no match
+LEAD-70723,Harbor Systems,harborsystems,ACC-1034,group suffix
+LEAD-70724,Redwood Retail Group,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70725, zenith halth  ,zenithhalth,,AI: no match
+LEAD-70726,Westbrook Payments Ltd.,westbrookpayments,ACC-1093,exact
+LEAD-70727,UNION SYSTEMS,unionsystems,ACC-1088,exact
+LEAD-70728,DunmoreFinancal,dunmorefinancal,ACC-1099,AI
+LEAD-70729,NorthLogistics,northlogistics,ACC-1050,exact
+LEAD-70730, BlueTelecom  ,bluetelecom,ACC-1062,exact
+LEAD-70731,Thornton Telecom Ltd,thorntontelecom,ACC-1017,exact
+LEAD-70732,Solstice Telecom,solsticetelecom,ACC-1029,exact
+LEAD-70733,Granite Energy Inc.,graniteenergy,ACC-1024,exact
+LEAD-70734,Thornton Payments Ltd.,thorntonpayments,ACC-1023,exact
+LEAD-70735,Thornton Telecom Ltd.,thorntontelecom,ACC-1017,exact
+LEAD-70736,Quill Holdings Inc,quillholdings,,AI: no match
+LEAD-70737,REDWOOD RETAIL GROUP Inc,redwoodretailgroup,ACC-1081,group suffix
+LEAD-70738,Cascade Retail Group Ltd.,cascaderetailgroup,ACC-1014,exact
+LEAD-70739,MERIDIAN STORES,meridianstores,ACC-1043,group suffix
+LEAD-70740,Thornton Logistics Inc.,thorntonlogistics,ACC-1028,exact
+LEAD-70741,Meridian Payments,meridianpayments,ACC-1097,exact
+LEAD-70742,MERIDIAN ENERGY,meridianenergy,ACC-1104,exact
+LEAD-70743,Zenith Energy,zenithenergy,ACC-1012,exact
+LEAD-70744,QUILL FINANCIAL,quillfinancial,ACC-1060,group suffix
+LEAD-70745,brightwater financial,brightwaterfinancial,ACC-1042,exact
+LEAD-70746,quill logistics Inc,quilllogistics,ACC-1057,exact
+LEAD-70747,"Everline Bank , Inc.",everlinebank,ACC-1072,exact
+LEAD-70748,ZENITH TELECOM,zenithtelecom,,AI: no match
+LEAD-70749,COBALT PAYMENTS,cobaltpayments,ACC-1117,exact
+LEAD-70750, Brightwater Holdings  ,brightwaterholdings,ACC-1005,exact
+LEAD-70751, LumenPayments  ,lumenpayments,ACC-1061,exact
+LEAD-70752,Iron Mutual,ironmutual,ACC-1001,exact
+LEAD-70753,Thornton Energy Ltd.,thorntonenergy,,AI: no match
+LEAD-70754,westbrook insurance,westbrookinsurance,ACC-1027,exact
+LEAD-70755,Thornton Payments,thorntonpayments,ACC-1023,exact
+LEAD-70756,Lumen Systems Ltd,lumensystems,,AI: no match
+LEAD-70757,Lumen Payments Inc.,lumenpayments,ACC-1061,exact
+LEAD-70758,Meridian Health,meridianhealth,ACC-1030,exact
+LEAD-70759,HARBOR LOGISTICS,harborlogistics,ACC-1046,exact
+LEAD-70760,Everline Bank,everlinebank,ACC-1072,exact
+LEAD-70761,meridian media Inc,meridianmedia,,AI: no match
+LEAD-70762,Alder Health,alderhealth,ACC-1075,exact
+LEAD-70763,Cobalt Bank LLC,cobaltbank,ACC-1083,exact
+LEAD-70764,Cobalt Bank Ltd,cobaltbank,ACC-1083,exact
+LEAD-70765,Sable Financial,sablefinancial,ACC-1055,exact
+LEAD-70766,AlderHealth,alderhealth,ACC-1075,exact
+LEAD-70767,iron systems Inc,ironsystems,ACC-1049,exact
+LEAD-70768, north financial  ,northfinancial,ACC-1105,exact
+LEAD-70769,MERIDIAN PAYMENTS,meridianpayments,ACC-1097,exact
+LEAD-70770,cascade airlines Ltd,cascadeairlines,ACC-1044,exact
+LEAD-70771,Everline Retal Group,everlineretalgroup,,AI: no match
+LEAD-70772, Dunmore Telecom Incorporated  ,dunmoretelecom,ACC-1090,group suffix
+LEAD-70773, union retail group  ,unionretailgroup,ACC-1071,exact
+LEAD-70774,NORTH HOLDINGS,northholdings,ACC-1082,exact
+LEAD-70775,westbrook telecom Ltd,westbrooktelecom,ACC-1115,exact
+LEAD-70776,North Airlines LLC,northairlines,ACC-1039,exact
+LEAD-70777,union airlines Inc,unionairlines,ACC-1048,exact
+LEAD-70778,Quill Financial,quillfinancial,ACC-1060,group suffix
+LEAD-70779,"Meridian Airlines , Inc.",meridianairlines,ACC-1074,exact
+LEAD-70780,Thornton Telecom Incorporated,thorntontelecom,ACC-1017,exact
+LEAD-70781,Westbrook Health Ltd.,westbrookhealth,ACC-1091,exact
+LEAD-70782,Everline Financial Inc,everlinefinancial,ACC-1110,exact
+LEAD-70783,Vantage Media LC,vantagemedialc,ACC-1002,AI
+LEAD-70784,"Granite Logistics , Inc.",granitelogistics,,AI: no match
+LEAD-70785,Vertex Holdings LLC,vertexholdings,ACC-1073,exact
+LEAD-70786,RedwoodHoldings,redwoodholdings,ACC-1020,exact
+LEAD-70787,iro financial Inc,irofinancial,,AI: no match
+LEAD-70788,"QuillEnergy , Inc.",quillenergy,ACC-1086,exact
+LEAD-70789,Everline Bank LLC,everlinebank,ACC-1072,exact
+LEAD-70790,Vantage Mutual Inc,vantagemutual,ACC-1022,exact
+LEAD-70791, Noth Financial  ,nothfinancial,ACC-1105,AI
+LEAD-70792,"North Logistics , Inc.",northlogistics,ACC-1050,exact
+LEAD-70793,thornton systems,thorntonsystems,ACC-1119,exact
+LEAD-70794,MERIDIAN EALTH,meridianealth,ACC-1030,AI
+LEAD-70795,Quill Energy Incorporated,quillenergy,ACC-1086,exact
+LEAD-70796,BlueTeecom,blueteecom,ACC-1062,AI
+LEAD-70797,lumen payments,lumenpayments,ACC-1061,exact
+LEAD-70798,Lumen Health Incorporated,lumenhealth,ACC-1013,exact
+LEAD-70799,Quill Health Inc,quillhealth,,AI: no match
+LEAD-70800,"Harbor Health , Inc.",harborhealth,,AI: no match
+LEAD-70801,Pinnacle Airlines,pinnacleairlines,,AI: no match
+LEAD-70802,DunmoreSystems Incorporated,dunmoresystems,ACC-1063,exact
+LEAD-70803,Alder Inurance,alderinurance,ACC-1118,AI
+LEAD-70804,"COBALT PAYMENTS , Inc.",cobaltpayments,ACC-1117,exact
+LEAD-70805,Union Airlines,unionairlines,ACC-1048,exact
+LEAD-70806,"Cacade Stores , Inc.",cacadestores,ACC-1040,AI
+LEAD-70807,Thornton Health,thorntonhealth,,AI: no match
+LEAD-70808,north payments Incorporated,northpayments,ACC-1015,exact
+LEAD-70809,Dunmore Payments Inc.,dunmorepayments,ACC-1021,exact
+LEAD-70810,everline energy nc.,everlineenergync,ACC-1113,AI
+LEAD-70811,Blue Bank,bluebank,ACC-1045,exact
+LEAD-70812,Solstice Logistics,solsticelogistics,,AI: no match
+LEAD-70813, Solstice Financial  ,solsticefinancial,ACC-1066,exact
+LEAD-70814,Westrook Payments LLC,westrookpayments,ACC-1093,AI
+LEAD-70815,Solstice Stores Ltd,solsticestores,ACC-1056,exact
+LEAD-70816,IronSystems,ironsystems,ACC-1049,exact
+LEAD-70817,Harbor Finncial Ltd,harborfinncial,ACC-1036,AI
+LEAD-70818,REDWOOD HOLDINGS Ltd.,redwoodholdings,ACC-1020,exact
+LEAD-70819,Brightwater Insurance,brightwaterinsurance,ACC-1038,exact
+LEAD-70820, Iron Systems Inc  ,ironsystems,ACC-1049,exact
+LEAD-70821,QUILL BANK LLC,quillbank,ACC-1008,exact
+LEAD-70822,Dunmore Holdings,dunmoreholdings,ACC-1111,exact
+LEAD-70823, Vertex Insurance  ,vertexinsurance,,AI: no match
+LEAD-70824,Redwood Insurance,redwoodinsurance,ACC-1003,exact
+LEAD-70825,VantageMutual,vantagemutual,ACC-1022,exact
+LEAD-70826,IRON SYTEMS,ironsytems,ACC-1049,AI
+LEAD-70827,Blue Holdings,blueholdings,ACC-1032,exact
+LEAD-70828,MERIDIAN HEALTH Ltd,meridianhealth,ACC-1030,exact
+LEAD-70829,Solstice Insurace,solsticeinsurace,,AI: no match
+LEAD-70830,Quill Retail Group,quillretailgroup,,AI: no match
+LEAD-70831,"zenith energy , Inc.",zenithenergy,ACC-1012,exact
+LEAD-70832,Vantage Payments,vantagepayments,,AI: no match
+LEAD-70833,Westbrook Systems Ltd.,westbrooksystems,ACC-1018,group suffix
+LEAD-70834,CobaltTelecom,cobalttelecom,ACC-1089,exact
+LEAD-70835,Meridian Airlines,meridianairlines,ACC-1074,exact
+LEAD-70836,Cascade Retail Group Ltd.,cascaderetailgroup,ACC-1014,exact
+LEAD-70837, brightwater financial  ,brightwaterfinancial,ACC-1042,exact
+LEAD-70838,PinnacleAirlines,pinnacleairlines,,AI: no match
+LEAD-70839,EVERLINE MEDIA Ltd.,everlinemedia,ACC-1047,exact
+LEAD-70840,COBALT ENERG LLC,cobaltenerg,ACC-1011,AI
+LEAD-70841,Vertex Stores,vertexstores,ACC-1000,exact
+LEAD-70842,North Bank Incorporated,northbank,ACC-1098,group suffix
+LEAD-70843,CobaltEnergy,cobaltenergy,ACC-1011,exact
+LEAD-70844, iron holdings  ,ironholdings,ACC-1054,group suffix
+LEAD-70845,BLU HOLDINGS,bluholdings,ACC-1032,AI
+LEAD-70846,WESTBROOK HEALTH,westbrookhealth,ACC-1091,exact
+LEAD-70847,"QUILL FINANCIAL , Inc.",quillfinancial,ACC-1060,group suffix
+LEAD-70848,Vertex Retail Group LLC,vertexretailgroup,ACC-1004,exact
+LEAD-70849,Cascade Retail Group Incorporated,cascaderetailgroup,ACC-1014,exact
+LEAD-70850,Cobalt Media,cobaltmedia,ACC-1108,exact
+LEAD-70851,Iron Systems Inc,ironsystems,ACC-1049,exact
+LEAD-70852,Vertex Stores,vertexstores,ACC-1000,exact
+LEAD-70853,THORNTON LOGISTICS,thorntonlogistics,ACC-1028,exact
+LEAD-70854,Granite Airlines,graniteairlines,ACC-1103,exact
+LEAD-70855,"Harbor Systems , Inc.",harborsystems,ACC-1034,group suffix
+LEAD-70856,Cascade Stores Inc.,cascadestores,ACC-1040,exact
+LEAD-70857,IronHealth Ltd.,ironhealth,,AI: no match
+LEAD-70858,PINNACLE INSURANCE Ltd.,pinnacleinsurance,ACC-1052,exact
+LEAD-70859,Cascade Stores,cascadestores,ACC-1040,exact
+LEAD-70860,Redwood Holdings,redwoodholdings,ACC-1020,exact
+LEAD-70861,UnionBank,unionbank,ACC-1059,exact
+LEAD-70862,"Solstice Telecom , Inc.",solsticetelecom,ACC-1029,exact
+LEAD-70863,Cobalt Payments,cobaltpayments,ACC-1117,exact
+LEAD-70864,EVERLINE STORES Inc,everlinestores,ACC-1010,exact
+LEAD-70865,Sable Holdings,sableholdings,,AI: no match
+LEAD-70866,north telecom,northtelecom,ACC-1085,exact
+LEAD-70867,Iron Media,ironmedia,ACC-1112,exact
+LEAD-70868,north logistics Ltd,northlogistics,ACC-1050,exact
+LEAD-70869,REDWOOD HOLDINGS,redwoodholdings,ACC-1020,exact
+LEAD-70870,Meridian Airlines Incorporated,meridianairlines,ACC-1074,exact
+LEAD-70871,Granite Airlines,graniteairlines,ACC-1103,exact
+LEAD-70872,Solstice Stores,solsticestores,ACC-1056,exact
+LEAD-70873,Everline Telecom Inc.,everlinetelecom,ACC-1106,exact
+LEAD-70874, Cobalt Payments  ,cobaltpayments,ACC-1117,exact
+LEAD-70875,PINNACLE INSURANCE,pinnacleinsurance,ACC-1052,exact
+LEAD-70876, Solstice Financial  ,solsticefinancial,ACC-1066,exact
+LEAD-70877,Iron Holdings LLC,ironholdings,ACC-1054,group suffix
+LEAD-70878,redwood insurance,redwoodinsurance,ACC-1003,exact
+LEAD-70879,North Logistics Incorporated,northlogistics,ACC-1050,exact
+LEAD-70880, Cacade Retail Group  ,cacaderetailgroup,ACC-1014,AI
+LEAD-70881,westbrook ealth,westbrookealth,ACC-1091,AI
+LEAD-70882,Dunmore Payments,dunmorepayments,ACC-1021,exact
+LEAD-70883, Quill Payments  ,quillpayments,ACC-1025,exact
+LEAD-70884,Lumen Financial,lumenfinancial,ACC-1065,exact
+LEAD-70885,Iron Bank LLC,ironbank,ACC-1078,exact
+LEAD-70886,Westbrook Stores,westbrookstores,ACC-1100,exact
+LEAD-70887,MeridianEnergy,meridianenergy,ACC-1104,exact
+LEAD-70888,Cobalt Payments,cobaltpayments,ACC-1117,exact
+LEAD-70889,Iron Systems,ironsystems,ACC-1049,exact
+LEAD-70890,COBALT TELECOM,cobalttelecom,ACC-1089,exact
+LEAD-70891,ZenithHoldings Ltd.,zenithholdings,ACC-1094,exact
+LEAD-70892,ZenithEnergy,zenithenergy,ACC-1012,exact
+LEAD-70893,Westbrook Telecom Ltd.,westbrooktelecom,ACC-1115,exact
+LEAD-70894,blue logistics LLC,bluelogistics,ACC-1019,exact
+LEAD-70895,Dunmore Systems LLC,dunmoresystems,ACC-1063,exact
+LEAD-70896, Sable Payments  ,sablepayments,,AI: no match
+LEAD-70897, Granite Bank Ltd.  ,granitebank,,AI: no match
+LEAD-70898,Vantage Mutual,vantagemutual,ACC-1022,exact
+LEAD-70899,Thornton Telecom Incorporated,thorntontelecom,ACC-1017,exact
+LEAD-70900, North Systems  ,northsystems,ACC-1080,exact

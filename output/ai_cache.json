@@ -1,0 +1,1778 @@
+{
+ "d22a92932347237dc699cbfda95fbd534a4334dd5bf0dc4741b820b107417bb5": {
+  "account_id": "ACC-1006",
+  "confidence": 0.95,
+  "reason": "Exact match for brand and business line despite minor typos.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "20ae11ebf9d0e63a3daf53bcdca2a0b643824c9e58bd7924e0b930d0fc07f4de": {
+  "account_id": "ACC-1010",
+  "confidence": 0.95,
+  "reason": "Matches brand and business line with minor suffix typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f49e409f746f8179b9099c20468b59422065e2ad958beaa7e93869fdaaf23fc4": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No candidate matches the media business line for Quill.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "03303435a768bb275762defc83a4c9d653ee001d968c335ef63305503d3af1b9": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No account matches Iron Logistics in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "abae9befc72cf01d43c0843600c91a0b0ae3522485bb6663e2cc617db49fcc3e": {
+  "account_id": "ACC-1099",
+  "confidence": 0.95,
+  "reason": "Matches brand and financial business line despite typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a834b4027926688de69f63a850f2e068f43004cff695c3598f7a601d517762f7": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No matching payments business line found for Brightwater.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6ecf8c51da54e987bd48c3df69a2ed5a230f3b33b3540202691bfbf1e49f3574": {
+  "account_id": "ACC-1037",
+  "confidence": 0.95,
+  "reason": "Matches Vertex Airlines despite minor spelling error.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "e111cbd51ad8f878dd31dddfa295bd8c1fd46dc4d7e30304f4905f1cb1849e96": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No account matches Solstice Bank in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6727cbcc48efb930b65c1525e8d9cfd5415f619b0d17800d5ccffe0bc4a17c6e": {
+  "account_id": "ACC-1048",
+  "confidence": 0.95,
+  "reason": "Matches Union Airlines with minor spelling error.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "aab7a0cb2201a5ec6f2f0b8ef882312883744ec4a8a17a5974d9ff396ca2e257": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No account matches Dunmore Stores; candidates have different business lines.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b5593d50725b094adf305fa9259f7e725f900cccb131df7fa59368b9573145fc": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching business line available for Brightwater Airlines.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9e203fbb8ae988bcbd6c7b8b1072149be34ca295c32240dfcea047859868daab": {
+  "account_id": "ACC-1118",
+  "confidence": 0.95,
+  "reason": "Alder Insurance matches Alder Insuance with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "50b6c8374901a9414c51069073ccc157a9f0394f45ea081e51b2a76bb9f6e4b9": {
+  "account_id": "ACC-1094",
+  "confidence": 0.9,
+  "reason": "Zenith Holdings matches Zeith Holdings with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d41768e67ae3153cd82db278d5f33b53dbcb82846173bb8aeca62645f540d68c": {
+  "account_id": "ACC-1036",
+  "confidence": 0.95,
+  "reason": "Harbor Financial matches HARBO FINANCIAL with missing r.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "02f994fa5860112bf083d54252460ad7a0194e2bb88f50d5d474a873f0666ea4": {
+  "account_id": "ACC-1119",
+  "confidence": 0.95,
+  "reason": "Thornton Systems matches thornton systes with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c42ff8bd3ad651b411b810f3e5bd20c26d2ddbf2d8d0448c34216c77476487b6": {
+  "account_id": "ACC-1030",
+  "confidence": 0.95,
+  "reason": "Meridian Health matches MERIDIAN HEALTH nc with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3b743ec19905d930a7f8ba5c486bdff421941fdb67af2ac4765980dc7a90dcb3": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Meridian Logistics account found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "97ca0b966bbe85564f0281f15b0d7d8578c068af77973f6b95712615e4dff821": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact Cascade Systems match; different lines present.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0e69bfe8a8b7782c57fc4f3a0aa1a7a36917771df928cd64d14ad1c2a0c156e0": {
+  "account_id": "ACC-1030",
+  "confidence": 0.95,
+  "reason": "Meridian Health matches Meridian Helth with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cd5c9e9fb4539a11acb9f51018da0d30f3db113cf6b7d47b352cb1dec1b15f5a": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Meridian Holdings account found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7ec6cf51159aae509a799d8ee1cd2075e025db79956823c70cf2760343a848c1": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact brand and business line match in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ca52b003cb91ff1ef35cb76b2a59739361a4f9d1019f75a5d3e432840785bc2b": {
+  "account_id": "ACC-1033",
+  "confidence": 0.95,
+  "reason": "Harbor Telecom Ltd. matches typo in company name.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "108a065d72f383da6d67905919208b90cd0c37df65f167150dd345916891e665": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Vertex Payments has no matching business line candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "81fe7d99aecc5635ae3a792626dc0f4e22215c0043bae889698b772819fb1cee": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching North Insurance account found.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f1286f9c8b7baf7421642262b9e6bac4f854c25f231fc708d75a588ded9d3594": {
+  "account_id": "ACC-1113",
+  "confidence": 0.95,
+  "reason": "Everline Energy Inc. matches lead with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "83f184a34bf2d8762eaabc10c1e09b820b4603f73a237beb2c2a3b23fa56c2fd": {
+  "account_id": "ACC-1074",
+  "confidence": 0.95,
+  "reason": "Meridian Airlines matches typo Merdian Airlines.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ee21799654b7a1df9f32611105b3d2462f4a7ac630edda9b73f1527a076755c0": {
+  "account_id": "ACC-1104",
+  "confidence": 0.95,
+  "reason": "Meridian Energy Incorporated matches typo Meridian Eergy.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d80f26ad2988ddf37e8b14af1126b88f7cc7f70939a70cd837c49dc9f6159db1": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Westbrook Bank account in candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "71ae1ff175583ae9f40b2c4d05f633cdd31c7d25e7040d2385b32c4686efa19a": {
+  "account_id": "ACC-1045",
+  "confidence": 0.9,
+  "reason": "Blue Bank LLC matches Blue Bank Ld.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3240d3110ca91c0cdd20a2b4c1e1d1486c265009f1318fff7c1e3eef68f68a8f": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Cascade Media account in candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cb2e41ed27f5b299d414fa93b8e3071e5d98bb416798a4e7225ca0b0f7988bab": {
+  "account_id": "ACC-1037",
+  "confidence": 0.95,
+  "reason": "Vertex Airlines Ltd. matches Vertex Airlnes closely in name and industry.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d22619accc01fe2e1809e78cd11edd2edd46dbb3dfa6335c235da2f0980a748d": {
+  "account_id": "ACC-1105",
+  "confidence": 0.95,
+  "reason": "North Financial LLC matches North inancial with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "32f472d2ba09bfa4401c31f3814f862f5b4e7fc61b06833ca37571bec3595de7": {
+  "account_id": null,
+  "confidence": 0.8,
+  "reason": "Granite Logistics is absent from the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "27e075e2045e2af9f9e0ee2a8b616a38c4b74ef60adb9fd86fc499ae5ff88977": {
+  "account_id": null,
+  "confidence": 0.8,
+  "reason": "Redwood Financial is absent from the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1bdbd89758ee9c60dff7992d306591e9c602e9ece50bdf1643113e929d71b3b6": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "Brightwater Airlines has no matching airline account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "09b48e4f5e3543f6eb7007c13639d2ee027cec9e92695ea148f736700d9310c5": {
+  "account_id": "ACC-1013",
+  "confidence": 0.95,
+  "reason": "Lumen Health matches LUMEN HELTH with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "bba6e05bb79c22968fb899c276339c86ed2aa280c242ecfa17a7960252a4e881": {
+  "account_id": "ACC-1032",
+  "confidence": 0.95,
+  "reason": "Blue Holdings Ltd matches Blue Hldings Ltd. with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "31cb8cbb257ea88392906955e119ab076a83432a8c3479addc8386569aacfbb2": {
+  "account_id": "ACC-1109",
+  "confidence": 0.9,
+  "reason": "Zenit Media matches Zenith Media LLC with spelling variation.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a95f40a19b4e4b7fb484fa272032b64e0c391cadc038431250d18384f85d0a44": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "Everline Systems is absent from the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0ceb527291197634ff6df77f7920e6c6a29ee448040c27057ad7b6096e560fde": {
+  "account_id": "ACC-1111",
+  "confidence": 0.95,
+  "reason": "Exact brand and business line match with minor suffix typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "91e4a0e4fcbf963885814bc2ec4db3d7bf6dabb995e6585a773f54c578da6f97": {
+  "account_id": "ACC-1091",
+  "confidence": 0.95,
+  "reason": "Matches brand name with typo in health and correct suffix.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cbbbcd1d853f38d0b96dd7a3bef326a0ff18cfcd52a8e396452b50de04f3739d": {
+  "account_id": "ACC-1045",
+  "confidence": 0.8,
+  "reason": "BlueBak clearly refers to Blue Bank.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a4190c658179919a65f3fd6e6ccb35b52d603d4868c7b9c75cf973a87fbb622b": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching vantage financial account exists in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "566329fd0156d807fd44cbf9402e7ad3e0d321a35feeb426b463be225f2a23ce": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Iron Logistics has no matching account in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "68baad83eea2e843cde5cd3c26b145150ba77b5058b59007c6dd6c08d3c715bd": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Brightwater Stores account is present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "29d4dc5e0163abfda4ad4b15f97aa461a850b1befdeaa1ae28abb978be7d6e31": {
+  "account_id": "ACC-1083",
+  "confidence": 0.95,
+  "reason": "Cobalt Ban matches Cobalt Bank.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7f4115e0ab0751154a287a97367d82d52cb374746dd84560506c86ce2ac278c7": {
+  "account_id": "ACC-1101",
+  "confidence": 0.95,
+  "reason": "North Retail Grou matches North Retail Group Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9e9441b5065cfb1ccad739054c06b4854ecc7d2909e2ee55294db126ae46912e": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Solstice Energy has no exact business line match in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9b60b82464752ee5558cbd34a20779628cf939b02a5c024922b1393d8ee3f1a9": {
+  "account_id": "ACC-1080",
+  "confidence": 0.95,
+  "reason": "NORTH SYSTMS matches North Systems Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f45f17c673fe5afb21d32f6c652cdcc4052d8e2096f9b4f201dce2021d3328c3": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching logistics account with the same brand.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cd2149f6153aa1ef37948ac433727d5f2db4591ab277ccbc978d7f0316d41d29": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No insurance account exists for Cobalt, only stores.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8655f638aad9a012050a01558a6d2721325d2115a2337f55847c9b634559277c": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Westbrook Bank account in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d9398d34523ec3b0211b822bbf01f7caca6af7fc64b83fcc931185ef4b687a87": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Sable Media account in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "941327f888b51a0380894f28f5383bcffdc412aba3cb5bba90fbd4619e2ff50e": {
+  "account_id": "ACC-1115",
+  "confidence": 0.95,
+  "reason": "Clear typo in Westbrook Telecm matching Westbrook Telecom Inc.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "dabe84a1c5bbb9789acb3e3bb2698a146da07235369255031e4e56602ec81cc5": {
+  "account_id": "ACC-1094",
+  "confidence": 0.95,
+  "reason": "Zenith Holings matches Zenith Holdings with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "48f00a41823b35bc701b7b8cf29125fc99091735be41f15ecdad67abcc4ecdaa": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Vertex Telecom account found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "230d0e92cd22041bc8549d32d5b4e43f9ae845ddd26b4f62d5b4749806e04b1c": {
+  "account_id": "ACC-1092",
+  "confidence": 0.95,
+  "reason": "EVELINE LOGISTICS matches Everline Logistics Incorporated.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "422add9bbeafdbbcd1e68e26f5597e61033f5087807ddb8445ad3c698b3fd686": {
+  "account_id": "ACC-1084",
+  "confidence": 0.98,
+  "reason": "Exact match for Zenith Retail Group Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4b188cd15421d3cd4e4c6f7d6355247fc22701320bb5d3b88194631d5678d160": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Alder Holdings account in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2c7cea0a5941c2061ea8c2d74735faf78f2b531aba9f51d75a94376cfe340d2b": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account with the same business line exists.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cb2429b3916b80cfe8324a0e1b6d5410a9e6f267ff7d7e754f844833effe0e24": {
+  "account_id": "ACC-1067",
+  "confidence": 0.95,
+  "reason": "Pinnacle Payments Ltd. matches brand and business line despite typos.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "45dd50fb2d3501731735fd4e40aabf033911a3d2a6897590146e710db5702e0e": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No health business line account available in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4feb11288ede32aa6d4fe31593c66581fc8eeb9eaf4d70fef9340af7e0de092b": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Everline payments account found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "474b4194cc2d635468084f3ea40f3af5fc3acf821c977bad0c7a656f858ab20b": {
+  "account_id": "ACC-1097",
+  "confidence": 0.95,
+  "reason": "Meridian Payments matches brand and business line with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "5935c516fbccff07145f5291f3d51957364a68625ba6a4df574d2afc4a41365f": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Iron Stores account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "425549c11e47e49abf49f60fea764bbee7eb8e39a6b02fedf43783cf21c80661": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Pinnacle Retail Group account exists in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "625158b74a0c0ec2171f9cec5d96d68fd576b45de91336bc394fbaab66e4230c": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Cobalt Holdings account exists in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "51d9d6a80f3666b8208c0693ffb81d5893b60c18d509e700b83dd57eaf099320": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Cascade Bank account exists in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8f1819b7ae5c975dd73955d15a5d50b8bf0b934c958f1e2b18ae8ded47152f8e": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Sable Stores account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d43201f37927d56c7184139e70e46840bfa3d7c130d8c3973497682af93fef04": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found among candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "056c03db0d78be705ab8f373b998710ce168a231ee3456c495564d497a7a92b8": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand in candidates; Vantagewise does not match.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "137235544f877d58e245187ce8312860fce89982b9e87ea5fbfcc3626a0e48d3": {
+  "account_id": "ACC-1107",
+  "confidence": 0.95,
+  "reason": "Wesbrook Logistics matches Westbrook Logistics Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "59e67e897c98f69efb4b43399eacacbe6dc29cbeaf70043b0831b1bdff1d039f": {
+  "account_id": "ACC-1033",
+  "confidence": 0.95,
+  "reason": "Harbor elecom matches Harbor Telecom Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "aba057969fe92ac45e5138dcb696a1c0f662331bef075fbb1e43ac7ddcd2319d": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact matching mutual company exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d9596a6ea30861bab2a405d1af8806a7d30e2d82d678c9f94ef17e514ffa8a70": {
+  "account_id": "ACC-1102",
+  "confidence": 0.9,
+  "reason": "Ble Insurance matches Blue Insurance Inc.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "97440c0513a55a0302f015c55faa7a62311002d7ccb9b04a67d4e5d88647a261": {
+  "account_id": "ACC-1108",
+  "confidence": 0.95,
+  "reason": "COBLT MEDIA matches Cobalt Media Inc.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0ea5c6259c03c0a5f0a4df04b6a8ca9ec1850cbba15c47f2558d2ba37e3aa918": {
+  "account_id": "ACC-1111",
+  "confidence": 0.95,
+  "reason": "Dunmore oldings matches Dunmore Holdings LLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4d5fe86466666427c6688d9eb62ab1198f2adb0d33d66f47e1d49099559debeb": {
+  "account_id": "ACC-1029",
+  "confidence": 0.95,
+  "reason": "SOLSTICE ELECOM matches Solstice Telecom Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6a9340f717662dd27d98e329a5c141c31885bdba2dc8b55442721a5b2f08b567": {
+  "account_id": "ACC-1087",
+  "confidence": 0.95,
+  "reason": "DUNMORE MDIA matches Dunmore Media Group.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d4b14b93947872f3ccb4d0bddbb502730b48b4267baf1feebfe53d1713563796": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c42dd52afd966797d828a9572081829970092c363455e68203b78b6e0e4b8e43": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching business line for Solstice Bank.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4de8db17b3b24093297d602139fed36d2dc1b2756f3c2661591912cc2769df39": {
+  "account_id": "ACC-1047",
+  "confidence": 0.95,
+  "reason": "Everline Media Inc matches closely with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0800830dac69fd196b91533523a6f4b9fc0313cf0d0d35c3870a6ba6fc7bea22": {
+  "account_id": "ACC-1068",
+  "confidence": 0.95,
+  "reason": "Cascade Energy Group matches Cascad Energy.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "afbb3508f26838ef27fb205995668e0ae8f62d777a00ec18e3012a4663dd783c": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Payments has no matching candidate account.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d6f1ad06819243da261ae906547fa4cb346b01343c14d7c65c72184297ab94fd": {
+  "account_id": "ACC-1090",
+  "confidence": 0.95,
+  "reason": "Dunmore Telecom Group matches Dunmor Telecom Inc.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9c2cd7d85bf4d77adaea3476e3cf7f454574fb9d8a672b6198607a1dd92a6c38": {
+  "account_id": "ACC-1115",
+  "confidence": 0.95,
+  "reason": "Westbrook Telecom Inc matches Westbrok Telecom.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "49d59d8f155b3955a6be1788adda4776bb6a73c78cf93de0768d50b649824aa1": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Financial has no matching account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "26277d3323bddc6a7b142bf35da29dcb59eadffdaf236022dbf752650f39e510": {
+  "account_id": "ACC-1004",
+  "confidence": 0.98,
+  "reason": "Vertex Retail Group Inc matches closely with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "aae257ea9eb0944fb303c23212b2eec57ca4c257f1bc1e06301be5f4e03c2d84": {
+  "account_id": "ACC-1059",
+  "confidence": 0.95,
+  "reason": "Union Bank LLC matches Union ank with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8908e59623ebb64268a80cc75d670208131b8848350beef12120ad53708fd81d": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account with the exact brand and business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c6696239212518ff247a61e7154893b021be56556a9e19108967e4d2a8218df0": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact business line match for Brightwater Health.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "832df3dfbdd263dd89ca8fb1ab44f6d425b198747940dd422165bb3b700c1734": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Harbor Health account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ed8f45a010d22957ace8d07676ad237f907b16e9f1edd7310b1ad89a9baebadf": {
+  "account_id": "ACC-1049",
+  "confidence": 0.9,
+  "reason": "Iron Systems matches Iron Sysems Ltd. with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f3d4fb43a71cd2c6e1c99164c9732792a992f65daa5c8a4664b530ff86ff27bc": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Lumen Mutual account in candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2bcc72841ae9b89df4a8aadfb2047e5a8ff8b1fcbce0439cabf90e735983770b": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Solstice Insurance account in candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "869164a829b8910c5dd317ea30a1a3dd9c9af7e39394cb782e8b26bb5c5c3189": {
+  "account_id": "ACC-1015",
+  "confidence": 0.8,
+  "reason": "NOTH PAYMENTS likely refers to North Payments Inc.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4a74374c02f63de7730a08785a642bb6032399607dad4c8f7f09b06a8bdf83d3": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Cobalt Health account in candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "82055092ac3ff1223e8d692c69c5cd9cc626a3a060e51cac8d0bdd1aea64a0f2": {
+  "account_id": "ACC-1087",
+  "confidence": 0.9,
+  "reason": "Dunmore Mdia matches Dunmore Media Group with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4080f0253a1ee61bb3187be58df63a5643dec91f6a8f507cc3f9fd565781989b": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a53108ff56a04d39d30d6472e2c022790c6c21f83a27f3f4e9e685a0674db7fd": {
+  "account_id": "ACC-1018",
+  "confidence": 0.95,
+  "reason": "Westrook Systems matches Westbrook Systems Group with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d61d87a694601f4924cc3534f4f6a997db361a6d03a15dfd82b81c176fd49b5f": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Lumen Systems is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c6e191423d153ad0f748b04dc9b6c8fc85d53f9d9540b7ae0d8fe0050f7fcc06": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Meridian Systems is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6d6f6941548553b7133373f05e27e1fd284845edbbb8000eb47e086f9396bfd7": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Thornton Energy is not in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7be59565b0265ea5453be515859551e3e977d390749b68e13e3d3821b6240887": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Redwood Systems is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7ae770c584131affe37670eeb8fbe49fce5c3e4ed89eb09979788c2d00c6ceaa": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Union Telecom is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ba594d04bdadf7f96fc6d7d26d57d92aefeacdb83d9e38546dea60cc93507e36": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Alder Media is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "77009669b25a64795da3ece3c323b15058701ea73140972e18289d36ac5ef638": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Systems is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "5c8b98f1d19401e3dce5a2e44b7951c68a64a33a02f8f5ee3d6be6ea229aaff2": {
+  "account_id": "ACC-1087",
+  "confidence": 0.95,
+  "reason": "Dunore Media matches Dunmore Media Group allowing minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2a594bd54714de5a28827f5fa4bcf13312bb4306fd62dc44600852a4f64e2ff1": {
+  "account_id": "ACC-1095",
+  "confidence": 0.95,
+  "reason": "Vantag Holdings matches Vantage Holdings PLC with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cf360fa2718abdd2321b69d4ad8cc5f278c9681089998bc5fab688bd76658b56": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No account matches Union Health business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1b9eced0c8d4a01ff8ea19ec27c2a9a11e79e56c556f8e853cc8450b97744c97": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Zenith health/medical account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8f3ca723765ab322ee34e1de3dfbbb28066411afe893f7911e26d4eccef3c628": {
+  "account_id": "ACC-1099",
+  "confidence": 0.95,
+  "reason": "DunmoreFinancal clearly matches Dunmore Financial PLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "70df57459cf97c24096f1a20ae7aaa9b9edbd5a4108253178bdd9f1fc49bf773": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Quill Holdings is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3691ab0d09cd82f18a0cf3d7b027c78cc373ecab8adf3cd782508ca28abe464e": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Zenith Telecom is not in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d34b8a7c0ec982c5f9184111eb246bf93b523dee68cf457095eae433c2368859": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Thornton Energy is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "97b2a46bd128554ce8111b5791bef49fb23efba11f78b769631140c2eda0e8f1": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Lumen Systems is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8c70617d7b9d6b089fba73a99eb8f00a30729b804849208efc4992296751a0f2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Meridian Media is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a6325c5a8355393ff1ec6b75fb73b8b2cf1ed5690ce5dc0bb26f9cada12dd6ea": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Everline Retail Group is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "79683741d349298e076baffb4bc92fbfa2554a362e57de089f686efcc05ec1fb": {
+  "account_id": "ACC-1002",
+  "confidence": 0.95,
+  "reason": "Vantage Media Inc. matches Vantage Media LC closely.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "640e7098f5949fdc37fd575056591a60d75504b82e67631a6ec4c67f3389ca48": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "Granite Logistics is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7088071b4701e57ba238d65c456e45750c62b13df9d4e0a8a87b7347a4f63fca": {
+  "account_id": null,
+  "confidence": 0.8,
+  "reason": "Ambiguous match; no candidate clearly corresponds to iro financial.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b549f279a0498e90a6f1f47dd4a5ac7f9728a177866ea3c1e0b84fc32e602c11": {
+  "account_id": "ACC-1105",
+  "confidence": 0.9,
+  "reason": "Noth Financial clearly matches North Financial LLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "17756108c8339c17cd23295a23fabf4eca185fa2f0b9ff03265d635ad65e9674": {
+  "account_id": "ACC-1030",
+  "confidence": 0.95,
+  "reason": "MERIDIAN EALTH is a typo for Meridian Health Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "62fafc8bd88a5c4a8ff5b8b1945e2eba92d2c950265020366cce0fbb965abd08": {
+  "account_id": "ACC-1062",
+  "confidence": 0.95,
+  "reason": "BlueTeecom is a clear typo for Blue Telecom Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "541d0fc081d81dcaab58ca256ac37bbc0ab31ca96434b27438d4dfa4a09f5b30": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "Quill Health Inc is not in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "74ee06d31f824165c3d73f2c2a51a044191194c3a7b361f98f62eb2c4f136080": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "Harbor Health is not present in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1b24196dfea3571d1bd4036191e247922668621a02c0f6172ca30012f44a2585": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "Pinnacle Airlines has no exact matching account candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "93c2285bf03737b30cae2b6947dbe84c84db85a2e1dd44393cd410b42ecd5a1a": {
+  "account_id": "ACC-1118",
+  "confidence": 0.95,
+  "reason": "Alder Inurance is a typo for Alder Insurance LLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2431a75e5266dfb9042c34fda1d0f33695109660227889705ff8a1a6632194b3": {
+  "account_id": "ACC-1040",
+  "confidence": 0.95,
+  "reason": "Matches brand Cascade Stores with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7ea0b18f731443ae3a87d33ba232d0ad98a8c12e29d7b16864ec59edf8256a0e": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching business line for Thornton Health.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3203fa82658e006e8bb4b0eb9e557f83b8d2c95786c47e5acef69a9361a347e3": {
+  "account_id": "ACC-1113",
+  "confidence": 0.95,
+  "reason": "Matches Everline Energy Inc with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6fc10801e4267f2808909d2592de1d9fc9b7923fec1a27db9bbfe9521e2bc051": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Solstice Logistics has no matching account candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "fee76c5dc42a8b538039dd4d50047ea483348578842b16732fe60f7edfe63ccc": {
+  "account_id": "ACC-1093",
+  "confidence": 0.95,
+  "reason": "Matches Westbrook Payments Inc with slight typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "69177a797abb3f62c4b3864e4556347f0b55dff5de14d1c8a9aa064cca0cd18e": {
+  "account_id": "ACC-1036",
+  "confidence": 0.95,
+  "reason": "Matches Harbor Financial with typo in Finncial.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9f81780bed6a47f85fbb7c15ca35794de375337828180c0edbc153b8c8bd8845": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Vertex Insurance has no exact matching account.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "41d1e85024be29540b1a1b788385143fdc8ae3fa560441ee53d794b33782baeb": {
+  "account_id": "ACC-1049",
+  "confidence": 0.95,
+  "reason": "Matches Iron Systems with typo in SYTEMS.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d77e8acbddd1f5a92d52dcb4638ecfef91383898064fae2ebb5cc9e0a35b4f99": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Solstice Insurance has no matching insurance account.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1dde0b7e13345d6bc58e607c60baaf13184642fb9c9e24939cc68c8cdd652748": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Quill Retail Group has no matching candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "236b236038dde72b7e9bc5ff9b8d3d37478b846be0f8df668f19e310ff089a70": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account with the same brand and business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "e998854cab6938b92c26da9dbed01897f6658885abf050ec4f8efb293dbf8a3b": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account for Pinnacle Airlines in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ba6f82d6b3300e19f556ee15d80d7c348b301201f44cdd31aeab337f70b7ccde": {
+  "account_id": "ACC-1011",
+  "confidence": 0.95,
+  "reason": "Exact match for brand and energy business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b6ee5027e00808ddbf5bf0d574707d4329769056972f2073de961d5ba545b8ab": {
+  "account_id": "ACC-1032",
+  "confidence": 0.9,
+  "reason": "Blue Holdings matches BLU HOLDINGS allowing spelling variant.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4286d6e63c7a1be6c4075ba76ac047f296892f7e11c365e5b7aabab62d03add1": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Iron Health account is missing from candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b9fa629011e4971901847088d97f23daa36367514eda5e64bcab075d25a9c06a": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account for Sable Holdings.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4dc780e2830aed4cd17519c90fcdfcf21c369a1e8db3bb8de9ca1231a4fbee60": {
+  "account_id": "ACC-1014",
+  "confidence": 0.9,
+  "reason": "Cascade Retail Group matches with typo in lead name.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1e31a818e48b9abb38913cd2d2f3940f1ab82d9750bb8d4abb0d8566609d6a31": {
+  "account_id": "ACC-1091",
+  "confidence": 0.9,
+  "reason": "Westbrook Health Inc matches westbrook ealth with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3bc876b175b340ea060b19881d9726183563dcfac8416b5cf7f2d29cb3f9f3e5": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account for Sable Payments.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8d244954aebcef9610ba964bf2a8c160e31872080b5f8b9c16c95138c8a1e0e0": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Bank account is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d22a92932347237dc699cbfda95fbd534a4334dd5bf0dc4741b820b107417bb5:2": {
+  "account_id": "ACC-1006",
+  "confidence": 0.95,
+  "reason": "Exact match for brand and business line despite minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "20ae11ebf9d0e63a3daf53bcdca2a0b643824c9e58bd7924e0b930d0fc07f4de:2": {
+  "account_id": "ACC-1010",
+  "confidence": 0.95,
+  "reason": "Matches brand and business line with a minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f49e409f746f8179b9099c20468b59422065e2ad958beaa7e93869fdaaf23fc4:2": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No matching business line available for Quill media.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "03303435a768bb275762defc83a4c9d653ee001d968c335ef63305503d3af1b9:2": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No candidate account matches Iron Logistics.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "abae9befc72cf01d43c0843600c91a0b0ae3522485bb6663e2cc617db49fcc3e:2": {
+  "account_id": "ACC-1099",
+  "confidence": 0.95,
+  "reason": "Matches brand and financial business line despite typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a834b4027926688de69f63a850f2e068f43004cff695c3598f7a601d517762f7:2": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No matching payments business line found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6ecf8c51da54e987bd48c3df69a2ed5a230f3b33b3540202691bfbf1e49f3574:2": {
+  "account_id": "ACC-1037",
+  "confidence": 0.95,
+  "reason": "Matches Vertex Airlines with a minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "e111cbd51ad8f878dd31dddfa295bd8c1fd46dc4d7e30304f4905f1cb1849e96:2": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No Solstice Bank account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6727cbcc48efb930b65c1525e8d9cfd5415f619b0d17800d5ccffe0bc4a17c6e:2": {
+  "account_id": "ACC-1048",
+  "confidence": 0.95,
+  "reason": "Matches Union Airlines with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "aab7a0cb2201a5ec6f2f0b8ef882312883744ec4a8a17a5974d9ff396ca2e257:2": {
+  "account_id": null,
+  "confidence": 0.9,
+  "reason": "No matching stores account for Dunmore in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b5593d50725b094adf305fa9259f7e725f900cccb131df7fa59368b9573145fc:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand and business line in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9e203fbb8ae988bcbd6c7b8b1072149be34ca295c32240dfcea047859868daab:2": {
+  "account_id": "ACC-1118",
+  "confidence": 0.95,
+  "reason": "Minor typo in insurance, matches Alder Insurance LLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "50b6c8374901a9414c51069073ccc157a9f0394f45ea081e51b2a76bb9f6e4b9:2": {
+  "account_id": "ACC-1094",
+  "confidence": 0.85,
+  "reason": "Zeith is a typo for Zenith Holdings.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d41768e67ae3153cd82db278d5f33b53dbcb82846173bb8aeca62645f540d68c:2": {
+  "account_id": "ACC-1036",
+  "confidence": 0.9,
+  "reason": "Harbo Financial matches Harbor Financial Incorporated.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "02f994fa5860112bf083d54252460ad7a0194e2bb88f50d5d474a873f0666ea4:2": {
+  "account_id": "ACC-1119",
+  "confidence": 0.95,
+  "reason": "Thornton systes matches Thornton Systems LLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c42ff8bd3ad651b411b810f3e5bd20c26d2ddbf2d8d0448c34216c77476487b6:2": {
+  "account_id": "ACC-1030",
+  "confidence": 0.9,
+  "reason": "Meridian health nc matches Meridian Health Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3b743ec19905d930a7f8ba5c486bdff421941fdb67af2ac4765980dc7a90dcb3:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Meridian Logistics has no matching Meridian Logistics candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "97ca0b966bbe85564f0281f15b0d7d8578c068af77973f6b95712615e4dff821:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Cascade Systems does not match Cascade Logistics or Stores.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0e69bfe8a8b7782c57fc4f3a0aa1a7a36917771df928cd64d14ad1c2a0c156e0:2": {
+  "account_id": "ACC-1030",
+  "confidence": 0.95,
+  "reason": "Meridian Helth is a typo for Meridian Health Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cd5c9e9fb4539a11acb9f51018da0d30f3db113cf6b7d47b352cb1dec1b15f5a:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Meridian Holdings account exists in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7ec6cf51159aae509a799d8ee1cd2075e025db79956823c70cf2760343a848c1:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact matching brand and business line found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ca52b003cb91ff1ef35cb76b2a59739361a4f9d1019f75a5d3e432840785bc2b:2": {
+  "account_id": "ACC-1033",
+  "confidence": 0.95,
+  "reason": "Harbor Telecom matches typo HARBOR TEECOM Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "108a065d72f383da6d67905919208b90cd0c37df65f167150dd345916891e665:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Vertex Payments has no exact matching payments account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "81fe7d99aecc5635ae3a792626dc0f4e22215c0043bae889698b772819fb1cee:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "North Insurance is not present in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f1286f9c8b7baf7421642262b9e6bac4f854c25f231fc708d75a588ded9d3594:2": {
+  "account_id": "ACC-1113",
+  "confidence": 0.95,
+  "reason": "Everline Energy Inc matches EVERLINE ENRGY with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "83f184a34bf2d8762eaabc10c1e09b820b4603f73a237beb2c2a3b23fa56c2fd:2": {
+  "account_id": "ACC-1074",
+  "confidence": 0.95,
+  "reason": "Meridian Airlines matches Merdian Airlines with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ee21799654b7a1df9f32611105b3d2462f4a7ac630edda9b73f1527a076755c0:2": {
+  "account_id": "ACC-1104",
+  "confidence": 0.95,
+  "reason": "Meridian Energy Incorporated matches Meridian Eergy with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d80f26ad2988ddf37e8b14af1126b88f7cc7f70939a70cd837c49dc9f6159db1:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Westbrook Bank has no exact matching bank account.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "71ae1ff175583ae9f40b2c4d05f633cdd31c7d25e7040d2385b32c4686efa19a:2": {
+  "account_id": "ACC-1045",
+  "confidence": 0.95,
+  "reason": "Blue Bank LLC matches BLUE BANK Ld.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3240d3110ca91c0cdd20a2b4c1e1d1486c265009f1318fff7c1e3eef68f68a8f:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Cascade Media has no matching media account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cb2e41ed27f5b299d414fa93b8e3071e5d98bb416798a4e7225ca0b0f7988bab:2": {
+  "account_id": "ACC-1037",
+  "confidence": 0.95,
+  "reason": "Vertex Airlines Ltd. matches Vertex Airlnes closely in name and industry.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d22619accc01fe2e1809e78cd11edd2edd46dbb3dfa6335c235da2f0980a748d:2": {
+  "account_id": "ACC-1105",
+  "confidence": 0.95,
+  "reason": "North Financial LLC matches North inancial with a missing letter.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "32f472d2ba09bfa4401c31f3814f862f5b4e7fc61b06833ca37571bec3595de7:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact matching brand in logistics candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "27e075e2045e2af9f9e0ee2a8b616a38c4b74ef60adb9fd86fc499ae5ff88977:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Redwood Financial account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1bdbd89758ee9c60dff7992d306591e9c602e9ece50bdf1643113e929d71b3b6:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Brightwater Airlines account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "09b48e4f5e3543f6eb7007c13639d2ee027cec9e92695ea148f736700d9310c5:2": {
+  "account_id": "ACC-1013",
+  "confidence": 0.95,
+  "reason": "Lumen Health matches LUMEN HELTH with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "bba6e05bb79c22968fb899c276339c86ed2aa280c242ecfa17a7960252a4e881:2": {
+  "account_id": "ACC-1032",
+  "confidence": 0.95,
+  "reason": "Blue Holdings Ltd matches Blue Hldings Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "31cb8cbb257ea88392906955e119ab076a83432a8c3479addc8386569aacfbb2:2": {
+  "account_id": "ACC-1109",
+  "confidence": 0.9,
+  "reason": "Zenith Media matches Zenit Media with spelling variant.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a95f40a19b4e4b7fb484fa272032b64e0c391cadc038431250d18384f85d0a44:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Everline Systems account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0ceb527291197634ff6df77f7920e6c6a29ee448040c27057ad7b6096e560fde:2": {
+  "account_id": "ACC-1111",
+  "confidence": 0.95,
+  "reason": "Exact match for brand and business line despite suffix typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "91e4a0e4fcbf963885814bc2ec4db3d7bf6dabb995e6585a773f54c578da6f97:2": {
+  "account_id": "ACC-1091",
+  "confidence": 0.95,
+  "reason": "Clear typo in health brand name.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cbbbcd1d853f38d0b96dd7a3bef326a0ff18cfcd52a8e396452b50de04f3739d:2": {
+  "account_id": "ACC-1045",
+  "confidence": 0.9,
+  "reason": "BlueBak with missing letters matches Blue Bank.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a4190c658179919a65f3fd6e6ccb35b52d603d4868c7b9c75cf973a87fbb622b:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Vantage Financial account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "566329fd0156d807fd44cbf9402e7ad3e0d321a35feeb426b463be225f2a23ce:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Iron Logistics is not present in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "68baad83eea2e843cde5cd3c26b145150ba77b5058b59007c6dd6c08d3c715bd:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Brightwater Stores account exists among candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "29d4dc5e0163abfda4ad4b15f97aa461a850b1befdeaa1ae28abb978be7d6e31:2": {
+  "account_id": "ACC-1083",
+  "confidence": 0.95,
+  "reason": "Cobalt Ban matches Cobalt Bank.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7f4115e0ab0751154a287a97367d82d52cb374746dd84560506c86ce2ac278c7:2": {
+  "account_id": "ACC-1101",
+  "confidence": 0.95,
+  "reason": "North Retail Grou clearly matches North Retail Group.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9e9441b5065cfb1ccad739054c06b4854ecc7d2909e2ee55294db126ae46912e:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Solstice Energy has no matching energy account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9b60b82464752ee5558cbd34a20779628cf939b02a5c024922b1393d8ee3f1a9:2": {
+  "account_id": "ACC-1080",
+  "confidence": 0.95,
+  "reason": "North Systms matches North Systems Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f45f17c673fe5afb21d32f6c652cdcc4052d8e2096f9b4f201dce2021d3328c3:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching logistics account with the name meridian exists.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cd2149f6153aa1ef37948ac433727d5f2db4591ab277ccbc978d7f0316d41d29:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching insurance account for cobalt exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8655f638aad9a012050a01558a6d2721325d2115a2337f55847c9b634559277c:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching bank account for Westbrook exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d9398d34523ec3b0211b822bbf01f7caca6af7fc64b83fcc931185ef4b687a87:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Sable Media account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "941327f888b51a0380894f28f5383bcffdc412aba3cb5bba90fbd4619e2ff50e:2": {
+  "account_id": "ACC-1115",
+  "confidence": 0.95,
+  "reason": "Westbrook Telecm matches Westbrook Telecom Inc with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "dabe84a1c5bbb9789acb3e3bb2698a146da07235369255031e4e56602ec81cc5:2": {
+  "account_id": "ACC-1094",
+  "confidence": 0.95,
+  "reason": "ZENITH HOLINGS matches Zenith Holdings with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "48f00a41823b35bc701b7b8cf29125fc99091735be41f15ecdad67abcc4ecdaa:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Vertex Telecom account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "230d0e92cd22041bc8549d32d5b4e43f9ae845ddd26b4f62d5b4749806e04b1c:2": {
+  "account_id": "ACC-1092",
+  "confidence": 0.95,
+  "reason": "EVELINE LOGISTICS matches Everline Logistics Incorporated with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "422add9bbeafdbbcd1e68e26f5597e61033f5087807ddb8445ad3c698b3fd686:2": {
+  "account_id": "ACC-1084",
+  "confidence": 0.98,
+  "reason": "Zenith Retai Group Ltd. matches Zenith Retail Group Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4b188cd15421d3cd4e4c6f7d6355247fc22701320bb5d3b88194631d5678d160:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Alder Holdings account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2c7cea0a5941c2061ea8c2d74735faf78f2b531aba9f51d75a94376cfe340d2b:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching business line available for Dunmore stores.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cb2429b3916b80cfe8324a0e1b6d5410a9e6f267ff7d7e754f844833effe0e24:2": {
+  "account_id": "ACC-1067",
+  "confidence": 0.95,
+  "reason": "Brand typo and suffix difference, same business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "45dd50fb2d3501731735fd4e40aabf033911a3d2a6897590146e710db5702e0e:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No health account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4feb11288ede32aa6d4fe31593c66581fc8eeb9eaf4d70fef9340af7e0de092b:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No payments account available for Everline.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "474b4194cc2d635468084f3ea40f3af5fc3acf821c977bad0c7a656f858ab20b:2": {
+  "account_id": "ACC-1097",
+  "confidence": 0.9,
+  "reason": "Typo in payments brand name, exact match otherwise.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "5935c516fbccff07145f5291f3d51957364a68625ba6a4df574d2afc4a41365f:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No iron stores account available.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "425549c11e47e49abf49f60fea764bbee7eb8e39a6b02fedf43783cf21c80661:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Pinnacle Retail Group account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "625158b74a0c0ec2171f9cec5d96d68fd576b45de91336bc394fbaab66e4230c:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact brand match for Cobalt Holdings.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "51d9d6a80f3666b8208c0693ffb81d5893b60c18d509e700b83dd57eaf099320:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Cascade Bank account available.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8f1819b7ae5c975dd73955d15a5d50b8bf0b934c958f1e2b18ae8ded47152f8e:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Sable Stores account available.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d43201f37927d56c7184139e70e46840bfa3d7c130d8c3973497682af93fef04:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "056c03db0d78be705ab8f373b998710ce168a231ee3456c495564d497a7a92b8:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "137235544f877d58e245187ce8312860fce89982b9e87ea5fbfcc3626a0e48d3:2": {
+  "account_id": "ACC-1107",
+  "confidence": 0.95,
+  "reason": "Clear typo in Westbrook Logistics Ltd.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "59e67e897c98f69efb4b43399eacacbe6dc29cbeaf70043b0831b1bdff1d039f:2": {
+  "account_id": "ACC-1033",
+  "confidence": 0.9,
+  "reason": "Matches Harbor Telecom Ltd with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "aba057969fe92ac45e5138dcb696a1c0f662331bef075fbb1e43ac7ddcd2319d:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching mutual insurance company account exists.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d9596a6ea30861bab2a405d1af8806a7d30e2d82d678c9f94ef17e514ffa8a70:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Ble Insurance does not match Blue Insurance.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "97440c0513a55a0302f015c55faa7a62311002d7ccb9b04a67d4e5d88647a261:2": {
+  "account_id": "ACC-1108",
+  "confidence": 0.95,
+  "reason": "Matches Cobalt Media Inc with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0ea5c6259c03c0a5f0a4df04b6a8ca9ec1850cbba15c47f2558d2ba37e3aa918:2": {
+  "account_id": "ACC-1111",
+  "confidence": 0.95,
+  "reason": "Dunmore oldings matches Dunmore Holdings LLC.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4d5fe86466666427c6688d9eb62ab1198f2adb0d33d66f47e1d49099559debeb:2": {
+  "account_id": "ACC-1029",
+  "confidence": 0.95,
+  "reason": "Matches Solstice Telecom Ltd with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6a9340f717662dd27d98e329a5c141c31885bdba2dc8b55442721a5b2f08b567:2": {
+  "account_id": "ACC-1087",
+  "confidence": 0.95,
+  "reason": "Dunmore MDIA matches Dunmore Media Group.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d4b14b93947872f3ccb4d0bddbb502730b48b4267baf1feebfe53d1713563796:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c42dd52afd966797d828a9572081829970092c363455e68203b78b6e0e4b8e43:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching business line for Solstice Bank.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4de8db17b3b24093297d602139fed36d2dc1b2756f3c2661591912cc2769df39:2": {
+  "account_id": "ACC-1047",
+  "confidence": 0.95,
+  "reason": "Everline Media Inc matches closely with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "0800830dac69fd196b91533523a6f4b9fc0313cf0d0d35c3870a6ba6fc7bea22:2": {
+  "account_id": "ACC-1068",
+  "confidence": 0.95,
+  "reason": "Cascade Energy Group matches Cascad Energy.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "afbb3508f26838ef27fb205995668e0ae8f62d777a00ec18e3012a4663dd783c:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Payments not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d6f1ad06819243da261ae906547fa4cb346b01343c14d7c65c72184297ab94fd:2": {
+  "account_id": "ACC-1090",
+  "confidence": 0.95,
+  "reason": "Dunmore Telecom Group matches DUNMOR TELECOM Inc.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9c2cd7d85bf4d77adaea3476e3cf7f454574fb9d8a672b6198607a1dd92a6c38:2": {
+  "account_id": "ACC-1115",
+  "confidence": 0.95,
+  "reason": "Westbrook Telecom Inc matches Westbrok Telecom.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "49d59d8f155b3955a6be1788adda4776bb6a73c78cf93de0768d50b649824aa1:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Financial has no matching candidate account.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "26277d3323bddc6a7b142bf35da29dcb59eadffdaf236022dbf752650f39e510:2": {
+  "account_id": "ACC-1004",
+  "confidence": 0.95,
+  "reason": "Vertex Retail Group Inc matches Vertex Retail Group Icorporated.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "aae257ea9eb0944fb303c23212b2eec57ca4c257f1bc1e06301be5f4e03c2d84:2": {
+  "account_id": "ACC-1059",
+  "confidence": 0.95,
+  "reason": "Union Bank LLC matches Union ank with typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8908e59623ebb64268a80cc75d670208131b8848350beef12120ad53708fd81d:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account with the exact brand and business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c6696239212518ff247a61e7154893b021be56556a9e19108967e4d2a8218df0:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact business line match for Brightwater Health.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "832df3dfbdd263dd89ca8fb1ab44f6d425b198747940dd422165bb3b700c1734:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact business line match for Harbor Health.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ed8f45a010d22957ace8d07676ad237f907b16e9f1edd7310b1ad89a9baebadf:2": {
+  "account_id": "ACC-1049",
+  "confidence": 0.9,
+  "reason": "Iron Systems matches lead typo Iron Sysems.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "f3d4fb43a71cd2c6e1c99164c9732792a992f65daa5c8a4664b530ff86ff27bc:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Lumen Mutual account found.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2bcc72841ae9b89df4a8aadfb2047e5a8ff8b1fcbce0439cabf90e735983770b:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Solstice Insurance account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "869164a829b8910c5dd317ea30a1a3dd9c9af7e39394cb782e8b26bb5c5c3189:2": {
+  "account_id": "ACC-1015",
+  "confidence": 0.8,
+  "reason": "North Payments matches NOTH PAYMENTS with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4a74374c02f63de7730a08785a642bb6032399607dad4c8f7f09b06a8bdf83d3:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Cobalt Health account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "82055092ac3ff1223e8d692c69c5cd9cc626a3a060e51cac8d0bdd1aea64a0f2:2": {
+  "account_id": "ACC-1087",
+  "confidence": 0.95,
+  "reason": "Dunmore Media Group matches Dunmore Mdia.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4080f0253a1ee61bb3187be58df63a5643dec91f6a8f507cc3f9fd565781989b:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching brand found in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a53108ff56a04d39d30d6472e2c022790c6c21f83a27f3f4e9e685a0674db7fd:2": {
+  "account_id": "ACC-1018",
+  "confidence": 0.95,
+  "reason": "Westrook Systems matches Westbrook Systems Group with a minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d61d87a694601f4924cc3534f4f6a997db361a6d03a15dfd82b81c176fd49b5f:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Lumen Systems has no matching account in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "c6e191423d153ad0f748b04dc9b6c8fc85d53f9d9540b7ae0d8fe0050f7fcc06:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Meridian Systems has no exact matching business line in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6d6f6941548553b7133373f05e27e1fd284845edbbb8000eb47e086f9396bfd7:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Thornton Energy has no matching energy account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7be59565b0265ea5453be515859551e3e977d390749b68e13e3d3821b6240887:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Redwood Systems has no matching Redwood account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7ae770c584131affe37670eeb8fbe49fce5c3e4ed89eb09979788c2d00c6ceaa:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Union Telecom has no matching telecom account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ba594d04bdadf7f96fc6d7d26d57d92aefeacdb83d9e38546dea60cc93507e36:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Alder Media has no matching media account in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "77009669b25a64795da3ece3c323b15058701ea73140972e18289d36ac5ef638:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Systems has no matching account in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "5c8b98f1d19401e3dce5a2e44b7951c68a64a33a02f8f5ee3d6be6ea229aaff2:2": {
+  "account_id": "ACC-1087",
+  "confidence": 0.9,
+  "reason": "Dunore Media matches Dunmore Media Group allowing for typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2a594bd54714de5a28827f5fa4bcf13312bb4306fd62dc44600852a4f64e2ff1:2": {
+  "account_id": "ACC-1095",
+  "confidence": 0.95,
+  "reason": "Vantag Holdings matches Vantage Holdings PLC with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "cf360fa2718abdd2321b69d4ad8cc5f278c9681089998bc5fab688bd76658b56:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No account matches Union Health business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1b9eced0c8d4a01ff8ea19ec27c2a9a11e79e56c556f8e853cc8450b97744c97:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Zenith health/medical account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8f3ca723765ab322ee34e1de3dfbbb28066411afe893f7911e26d4eccef3c628:2": {
+  "account_id": "ACC-1099",
+  "confidence": 0.95,
+  "reason": "DunmoreFinancal matches Dunmore Financial PLC with slight typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "70df57459cf97c24096f1a20ae7aaa9b9edbd5a4108253178bdd9f1fc49bf773:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Quill Holdings account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3691ab0d09cd82f18a0cf3d7b027c78cc373ecab8adf3cd782508ca28abe464e:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Zenith Telecom account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d34b8a7c0ec982c5f9184111eb246bf93b523dee68cf457095eae433c2368859:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Thornton Energy account exists in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "97b2a46bd128554ce8111b5791bef49fb23efba11f78b769631140c2eda0e8f1:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Lumen Systems account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8c70617d7b9d6b089fba73a99eb8f00a30729b804849208efc4992296751a0f2:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Meridian Media account exists in the candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "a6325c5a8355393ff1ec6b75fb73b8b2cf1ed5690ce5dc0bb26f9cada12dd6ea:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Everline Retail Group account exists in the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "79683741d349298e076baffb4bc92fbfa2554a362e57de089f686efcc05ec1fb:2": {
+  "account_id": "ACC-1002",
+  "confidence": 0.9,
+  "reason": "Vantage Media Inc. matches Vantage Media LC closely.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "640e7098f5949fdc37fd575056591a60d75504b82e67631a6ec4c67f3389ca48:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Logistics has no matching candidate in the list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7088071b4701e57ba238d65c456e45750c62b13df9d4e0a8a87b7347a4f63fca:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Brand name 'iro' is too ambiguous and lacks matching candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b549f279a0498e90a6f1f47dd4a5ac7f9728a177866ea3c1e0b84fc32e602c11:2": {
+  "account_id": "ACC-1105",
+  "confidence": 0.8,
+  "reason": "Noth Financial matches North Financial LLC with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "17756108c8339c17cd23295a23fabf4eca185fa2f0b9ff03265d635ad65e9674:2": {
+  "account_id": "ACC-1030",
+  "confidence": 0.9,
+  "reason": "MERIDIAN EALTH matches Meridian Health Ltd. with a missing letter.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "62fafc8bd88a5c4a8ff5b8b1945e2eba92d2c950265020366cce0fbb965abd08:2": {
+  "account_id": "ACC-1062",
+  "confidence": 0.9,
+  "reason": "BlueTeecom matches Blue Telecom Ltd with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "541d0fc081d81dcaab58ca256ac37bbc0ab31ca96434b27438d4dfa4a09f5b30:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Quill Health Inc has no exact business line match.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "74ee06d31f824165c3d73f2c2a51a044191194c3a7b361f98f62eb2c4f136080:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Harbor Health Inc has no matching health account candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1b24196dfea3571d1bd4036191e247922668621a02c0f6172ca30012f44a2585:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Pinnacle Airlines has no matching airlines account candidate.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "93c2285bf03737b30cae2b6947dbe84c84db85a2e1dd44393cd410b42ecd5a1a:2": {
+  "account_id": "ACC-1118",
+  "confidence": 0.9,
+  "reason": "Alder Inurance matches Alder Insurance LLC with a typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "2431a75e5266dfb9042c34fda1d0f33695109660227889705ff8a1a6632194b3:2": {
+  "account_id": "ACC-1040",
+  "confidence": 0.95,
+  "reason": "Brand and business line match with minor typo.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "7ea0b18f731443ae3a87d33ba232d0ad98a8c12e29d7b16864ec59edf8256a0e:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account for Thornton Health in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3203fa82658e006e8bb4b0eb9e557f83b8d2c95786c47e5acef69a9361a347e3:2": {
+  "account_id": "ACC-1113",
+  "confidence": 0.95,
+  "reason": "Exact match for brand and energy business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "6fc10801e4267f2808909d2592de1d9fc9b7923fec1a27db9bbfe9521e2bc051:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Solstice Logistics account found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "fee76c5dc42a8b538039dd4d50047ea483348578842b16732fe60f7edfe63ccc:2": {
+  "account_id": "ACC-1093",
+  "confidence": 0.95,
+  "reason": "Brand typo and business line match Westbrook Payments.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "69177a797abb3f62c4b3864e4556347f0b55dff5de14d1c8a9aa064cca0cd18e:2": {
+  "account_id": "ACC-1036",
+  "confidence": 0.95,
+  "reason": "Brand typo 'Finncial' matches Harbor Financial.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "9f81780bed6a47f85fbb7c15ca35794de375337828180c0edbc153b8c8bd8845:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Vertex Insurance account available in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "41d1e85024be29540b1a1b788385143fdc8ae3fa560441ee53d794b33782baeb:2": {
+  "account_id": "ACC-1049",
+  "confidence": 0.95,
+  "reason": "Typo in 'SYTEMS' matches Iron Systems account.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "d77e8acbddd1f5a92d52dcb4638ecfef91383898064fae2ebb5cc9e0a35b4f99:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Solstice Insurance account present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1dde0b7e13345d6bc58e607c60baaf13184642fb9c9e24939cc68c8cdd652748:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No Quill Retail Group account in candidate list.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "236b236038dde72b7e9bc5ff9b8d3d37478b846be0f8df668f19e310ff089a70:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching account with the same brand and business line.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "e998854cab6938b92c26da9dbed01897f6658885abf050ec4f8efb293dbf8a3b:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No matching Pinnacle Airlines account found in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "ba6f82d6b3300e19f556ee15d80d7c348b301201f44cdd31aeab337f70b7ccde:2": {
+  "account_id": "ACC-1011",
+  "confidence": 0.95,
+  "reason": "Exact brand and business line match with minor abbreviation difference.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b6ee5027e00808ddbf5bf0d574707d4329769056972f2073de961d5ba545b8ab:2": {
+  "account_id": "ACC-1032",
+  "confidence": 0.9,
+  "reason": "BLU matches Blue Holdings with spelling variant.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4286d6e63c7a1be6c4075ba76ac047f296892f7e11c365e5b7aabab62d03add1:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Iron Health account is missing from candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "b9fa629011e4971901847088d97f23daa36367514eda5e64bcab075d25a9c06a:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "No exact matching account for Sable Holdings.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "4dc780e2830aed4cd17519c90fcdfcf21c369a1e8db3bb8de9ca1231a4fbee60:2": {
+  "account_id": "ACC-1014",
+  "confidence": 0.9,
+  "reason": "Name has typo 'Cacade' instead of 'Cascade'.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "1e31a818e48b9abb38913cd2d2f3940f1ab82d9750bb8d4abb0d8566609d6a31:2": {
+  "account_id": "ACC-1091",
+  "confidence": 0.95,
+  "reason": "Typo in 'ealth' instead of 'health' for Westbrook Health.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "3bc876b175b340ea060b19881d9726183563dcfac8416b5cf7f2d29cb3f9f3e5:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Sable Payments account is not present in candidates.",
+  "model": "gemini-3.5-flash-lite"
+ },
+ "8d244954aebcef9610ba964bf2a8c160e31872080b5f8b9c16c95138c8a1e0e0:2": {
+  "account_id": null,
+  "confidence": 0.0,
+  "reason": "Granite Bank account is missing from the candidates.",
+  "model": "gemini-3.5-flash-lite"
+ }
+}

@@ -1,0 +1,315 @@
+opportunity_id,account_id,opportunity_name,amount,currency,stage,type,close_date,owner,created_date
+OPP-5195,ACC-1078,Iron Bank - New Business 2024,83200.00,USD,Closed Won,New Business,2024-01-31,l.fischer,2023-10-29
+OPP-5130,ACC-1051,Vertex Bank - Upsell 2025,1500.00,USD,Closed Won,Upsell,2025-07-27,a.mor,2025-05-12
+OPP-5041,ACC-1016,Pinnacle Bank - New Business 2025,53900.00,USD,Closed Lost,New Business,2025-12-02,d.shani,2025-06-29
+OPP-5110,ACC-1044,Cascade Airlines - New Business 2024,680400.00,USD,Closed Lost,New Business,2024-03-05,j.pereira,2023-10-06
+OPP-5014,ACC-1006,Cobalt Stores - New Business 2024,14400.00,GBP,Closed Won,New Business,2024-07-16,d.shani,2024-04-15
+OPP-5272,ACC-1102,Blue Insurance - New Business 2024,187500.00,USD,Closed Won,New Business,2024-01-03,s.avidan,2023-09-07
+OPP-5088,ACC-1034,Harbor Systems - New Business 2024,36400.00,EUR,Closed Won,New Business,2024-08-11,r.castillo,2024-05-06
+OPP-5306,ACC-1116,Vantage Telecom - New Business 2024,275900.00,GBP,Closed Lost,New Business,2024-06-24,s.avidan,2024-04-23
+OPP-5095,ACC-1038,Brightwater Insurance - New Business 2024,39300.00,GBP,Closed Won,New Business,2024-06-07,a.mor,2024-03-28
+OPP-5234,ACC-1090,Dunmore Telecom - Upsell 2025,27400.00,USD,Closed Won,Upsell,2025-06-26,j.pereira,2024-12-21
+OPP-5226,ACC-1088,Union Systems - New Business 2025,116100.00,USD,Closed Won,New Business,2025-06-03,m.tanaka,2024-11-27
+OPP-5189,ACC-1075,Alder Health - New Business 2024,13900.00,USD,Closed Won,New Business,2024-01-29,l.fischer,2023-12-10
+OPP-5247,ACC-1094,Zenith Holdings - Renewal 2024,20600.00,USD,Closed Won,Renewal,2024-09-10,m.tanaka,2024-07-14
+OPP-5131,ACC-1051,Vertex Bank - Renewal 2025,37300.00,USD,Closed Won,Renewal,2025-10-17,d.shani,2025-09-10
+OPP-5051,ACC-1020,Redwood Holdings - New Business 2025,168700.00,USD,Closed Lost,New Business,2025-02-09,r.castillo,2024-11-11
+OPP-5019,ACC-1008,Quill Bank - New Business 2025,50800.00,USD,Closed Won,New Business,2025-03-10,a.mor,2025-02-04
+OPP-5213,ACC-1084,Zenith Retail Group - New Business 2024,11900.00,USD,Closed Lost,New Business,2024-03-11,r.castillo,2023-11-26
+OPP-5108,ACC-1042,Brightwater Financial - New Business 2026,27100.00,USD,Closed Won,New Business,2026-03-27,r.castillo,2026-01-16
+OPP-5071,ACC-1028,Thornton Logistics - Renewal 2026,156500.00,EUR,Closed Won,Renewal,2026-02-21,d.shani,2025-09-24
+OPP-5288,ACC-1109,Zenith Media - New Business 2025,109100.00,GBP,Closed Won,New Business,2025-08-22,j.pereira,2025-02-21
+OPP-5068,ACC-1028,Thornton Logistics - New Business 2025,76500.00,EUR,Closed Lost,New Business,2025-06-19,m.tanaka,2025-01-03
+OPP-5292,ACC-1110,Everline Financial - Renewal 2025,346500.00,GBP,Closed Won,Renewal,2025-11-01,j.pereira,2025-09-01
+OPP-5074,ACC-1029,Solstice Telecom - Upsell 2025,14700.00,GBP,Closed Lost,Upsell,2025-01-20,d.shani,2024-10-18
+OPP-5179,ACC-1072,Everline Bank - New Business 2026,28300.00,USD,Closed Lost,New Business,2026-04-19,k.obrien,2026-02-10
+OPP-5235,ACC-1091,Westbrook Health - New Business 2024,175800.00,EUR,Closed Won,New Business,2024-08-03,s.avidan,2024-05-24
+OPP-5132,ACC-1052,Pinnacle Insurance - New Business 2025,699900.00,USD,Closed Won,New Business,2025-11-13,a.mor,2025-05-10
+OPP-5161,ACC-1066,Solstice Financial - New Business 2024,121700.00,USD,Closed Won,New Business,2024-04-10,r.castillo,2023-11-10
+OPP-5280,ACC-1105,North Financial - New Business 2024,68800.00,GBP,Closed Won,New Business,2024-09-02,j.pereira,2024-05-14
+OPP-5258,ACC-1097,Meridian Payments - New Business 2025,594500.00,GBP,Closed Lost,New Business,2025-02-04,s.avidan,2024-07-12
+OPP-5021,ACC-1008,Quill Bank - Renewal 2025,152600.00,EUR,Closed Won,Renewal,2025-05-06,d.shani,2025-03-04
+OPP-5127,ACC-1050,North Logistics - New Business 2024,555000.00,USD,Closed Won,New Business,2024-09-29,s.avidan,2024-08-22
+OPP-5294,ACC-1112,Iron Media - New Business 2024,42000.00,USD,Closed Lost,New Business,2024-05-24,d.shani,2024-01-19
+OPP-5001,ACC-1000,Vertex Stores - New Business 2025,29600.00,USD,Closed Won,New Business,2025-03-22,a.mor,2025-01-17
+OPP-5072,ACC-1029,Solstice Telecom - New Business 2024,120300.00,GBP,Closed Lost,New Business,2024-06-13,a.mor,2024-02-18
+OPP-5138,ACC-1054,Iron Holdings - Upsell 2025,16400.00,USD,Closed Lost,Upsell,2025-06-01,s.avidan,2025-02-25
+OPP-5309,ACC-1118,Alder Insurance - New Business 2024,166800.00,USD,Closed Won,New Business,2024-01-21,r.castillo,2023-11-17
+OPP-5012,ACC-1005,Brightwater Holdings - Renewal 2025,863200.00,EUR,Closed Lost,Renewal,2025-09-20,a.mor,2025-08-05
+OPP-5263,ACC-1099,Dunmore Financial - New Business 2024,88400.00,EUR,Closed Won,New Business,2024-04-01,m.tanaka,2023-10-27
+OPP-5284,ACC-1107,Westbrook Logistics - New Business 2024,530400.00,USD,Closed Lost,New Business,2024-02-05,a.mor,2023-10-09
+OPP-5100,ACC-1039,North Airlines - New Business 2025,37900.00,GBP,Closed Won,New Business,2025-11-25,d.shani,2025-05-14
+OPP-5224,ACC-1087,Dunmore Media - New Business 2025,6500.00,EUR,Closed Won,New Business,2025-11-02,j.pereira,2025-08-12
+OPP-5285,ACC-1108,Cobalt Media - New Business 2025,40300.00,GBP,Closed Lost,New Business,2025-01-15,m.tanaka,2024-08-30
+OPP-5206,ACC-1081,Redwood Retail Group - New Business 2025,136900.00,USD,Closed Won,New Business,2025-07-08,s.avidan,2025-02-22
+OPP-5246,ACC-1094,Zenith Holdings - New Business 2024,44600.00,USD,Closed Won,New Business,2024-08-03,k.obrien,2024-01-28
+OPP-5290,ACC-1109,Zenith Media - Renewal 2025,59500.00,GBP,Closed Lost,Renewal,2025-09-05,j.pereira,2025-03-25
+OPP-5279,ACC-1104,Meridian Energy - Renewal 2026,164100.00,USD,Closed Won,Renewal,2026-03-10,j.pereira,2025-12-24
+OPP-5254,ACC-1095,Vantage Holdings - Upsell 2026,216100.00,USD,Closed Won,Upsell,2026-03-26,j.pereira,2025-10-22
+OPP-5119,ACC-1047,Everline Media - Renewal 2025,67100.00,USD,Closed Won,Renewal,2025-06-01,d.shani,2024-12-13
+OPP-5176,ACC-1071,Union Retail Group - New Business 2026,298700.00,EUR,Closed Won,New Business,2026-03-15,k.obrien,2025-11-22
+OPP-5118,ACC-1047,Everline Media - New Business 2025,122100.00,USD,Closed Won,New Business,2025-04-18,m.tanaka,2025-02-09
+OPP-5260,ACC-1097,Meridian Payments - New Business 2026,324800.00,GBP,Closed Won,New Business,2026-04-20,r.castillo,2026-01-21
+OPP-5188,ACC-1074,Meridian Airlines - Upsell 2026,163900.00,USD,Closed Lost,Upsell,2026-05-16,m.tanaka,2026-02-12
+OPP-5203,ACC-1080,North Systems - Upsell 2025,11300.00,USD,Closed Won,Upsell,2025-11-04,k.obrien,2025-10-02
+OPP-5155,ACC-1063,Dunmore Systems - Renewal 2025,14200.00,USD,Closed Won,Renewal,2025-03-23,m.tanaka,2024-11-07
+OPP-5208,ACC-1083,Cobalt Bank - New Business 2024,71300.00,USD,Closed Won,New Business,2024-04-15,k.obrien,2024-03-14
+OPP-5082,ACC-1032,Blue Holdings - New Business 2024,7400.00,USD,Closed Lost,New Business,2024-09-04,r.castillo,2024-07-03
+OPP-5287,ACC-1109,Zenith Media - New Business 2025,114300.00,USD,Closed Lost,New Business,2025-04-22,r.castillo,2024-12-17
+OPP-5204,ACC-1081,Redwood Retail Group - New Business 2024,585500.00,USD,Closed Won,New Business,2024-01-13,a.mor,2023-11-05
+OPP-5079,ACC-1030,Meridian Health - Renewal 2025,345700.00,USD,Closed Won,Renewal,2025-11-07,a.mor,2025-04-28
+OPP-5267,ACC-1100,Westbrook Stores - Renewal 2025,7900.00,USD,Closed Lost,Renewal,2025-12-27,d.shani,2025-10-17
+OPP-5209,ACC-1083,Cobalt Bank - Upsell 2025,11600.00,USD,Closed Won,Upsell,2025-08-11,k.obrien,2025-05-08
+OPP-5207,ACC-1082,North Holdings - New Business 2026,373700.00,USD,Closed Won,New Business,2026-05-26,l.fischer,2026-03-29
+OPP-5026,ACC-1011,Cobalt Energy - Renewal 2024,40500.00,USD,Closed Won,Renewal,2024-09-06,d.shani,2024-04-13
+OPP-5283,ACC-1106,Everline Telecom - Upsell 2025,68700.00,USD,Closed Won,Upsell,2025-11-28,d.shani,2025-06-21
+OPP-5266,ACC-1100,Westbrook Stores - New Business 2024,17500.00,USD,Closed Won,New Business,2024-09-22,d.shani,2024-04-24
+OPP-5032,ACC-1013,Lumen Health - Renewal 2025,868700.00,USD,Closed Won,Renewal,2025-09-09,k.obrien,2025-02-12
+OPP-5039,ACC-1016,Pinnacle Bank - New Business 2025,160200.00,USD,Closed Lost,New Business,2025-05-16,j.pereira,2025-04-09
+OPP-5112,ACC-1045,Blue Bank - New Business 2025,21700.00,USD,Closed Won,New Business,2025-02-15,k.obrien,2024-11-05
+OPP-5276,ACC-1103,Granite Airlines - New Business 2026,514400.00,GBP,Closed Won,New Business,2026-03-19,j.pereira,2025-11-24
+OPP-5281,ACC-1106,Everline Telecom - New Business 2025,138500.00,USD,Closed Won,New Business,2025-04-22,j.pereira,2025-02-16
+OPP-5089,ACC-1034,Harbor Systems - Renewal 2026,32200.00,GBP,Closed Won,Renewal,2026-02-18,m.tanaka,2025-09-19
+OPP-5029,ACC-1012,Zenith Energy - Renewal 2026,52600.00,USD,Closed Won,Renewal,2026-05-08,j.pereira,2026-04-05
+OPP-5181,ACC-1073,Vertex Holdings - New Business 2024,148000.00,USD,Closed Lost,New Business,2024-05-18,a.mor,2023-12-05
+OPP-5297,ACC-1113,Everline Energy - New Business 2024,121400.00,USD,Closed Lost,New Business,2024-01-18,r.castillo,2023-09-29
+OPP-5210,ACC-1083,Cobalt Bank - Renewal 2025,185600.00,USD,Closed Won,Renewal,2025-11-15,a.mor,2025-07-17
+OPP-5103,ACC-1041,Dunmore Bank - New Business 2024,635700.00,USD,Closed Won,New Business,2024-03-01,m.tanaka,2023-09-28
+OPP-5066,ACC-1027,Westbrook Insurance - New Business 2024,119100.00,USD,Closed Won,New Business,2024-08-07,r.castillo,2024-02-26
+OPP-5038,ACC-1015,North Payments - Renewal 2025,302000.00,USD,Closed Won,Renewal,2025-04-12,j.pereira,2024-12-25
+OPP-5018,ACC-1007,Zenith Mutual - Renewal 2026,11100.00,USD,Closed Lost,Renewal,2026-05-16,a.mor,2025-11-11
+OPP-5308,ACC-1117,Cobalt Payments - New Business 2025,36000.00,USD,Closed Won,New Business,2025-12-19,k.obrien,2025-09-06
+OPP-5049,ACC-1019,Blue Logistics - Upsell 2025,9500.00,USD,Closed Won,Upsell,2025-02-11,m.tanaka,2024-11-05
+OPP-5055,ACC-1021,Dunmore Payments - Renewal 2025,134400.00,USD,Closed Lost,Renewal,2025-05-25,m.tanaka,2025-01-16
+OPP-5062,ACC-1024,Granite Energy - Renewal 2025,56800.00,USD,Closed Lost,Renewal,2025-07-27,d.shani,2025-01-16
+OPP-5124,ACC-1048,Union Airlines - Renewal 2026,161500.00,EUR,Closed Won,Renewal,2026-02-05,l.fischer,2025-09-27
+OPP-5180,ACC-1073,Vertex Holdings - New Business 2024,45500.00,USD,Closed Lost,New Business,2024-01-14,m.tanaka,2023-10-30
+OPP-5218,ACC-1085,North Telecom - New Business 2024,46700.00,USD,Closed Lost,New Business,2024-12-06,m.tanaka,2024-06-21
+OPP-5271,ACC-1101,North Retail Group - Upsell 2024,4900.00,USD,Closed Won,Upsell,2024-08-09,s.avidan,2024-07-03
+OPP-5273,ACC-1102,Blue Insurance - Renewal 2025,246700.00,USD,Closed Lost,Renewal,2025-09-23,r.castillo,2025-05-02
+OPP-5163,ACC-1067,Pinnacle Payments - Upsell 2025,20700.00,GBP,Closed Won,Upsell,2025-01-27,k.obrien,2024-08-12
+OPP-5078,ACC-1030,Meridian Health - Upsell 2024,220100.00,USD,Closed Won,Upsell,2024-12-08,s.avidan,2024-08-15
+OPP-5056,ACC-1021,Dunmore Payments - Upsell 2025,65700.00,USD,Closed Lost,Upsell,2025-11-20,d.shani,2025-05-19
+OPP-5016,ACC-1006,Cobalt Stores - Renewal 2025,25700.00,GBP,Closed Won,Renewal,2025-12-28,s.avidan,2025-10-01
+OPP-5046,ACC-1017,Thornton Telecom - Upsell 2026,13400.00,USD,Closed Won,Upsell,2026-01-01,k.obrien,2025-10-27
+OPP-5156,ACC-1064,Alder Logistics - New Business 2025,8000.00,USD,Closed Won,New Business,2025-03-27,k.obrien,2024-11-13
+OPP-5042,ACC-1017,Thornton Telecom - New Business 2024,35900.00,GBP,Closed Lost,New Business,2024-03-14,r.castillo,2024-01-07
+OPP-5232,ACC-1090,Dunmore Telecom - New Business 2024,33800.00,USD,Closed Won,New Business,2024-05-11,d.shani,2023-12-22
+OPP-5238,ACC-1092,Everline Logistics - New Business 2024,723200.00,USD,Closed Lost,New Business,2024-03-08,a.mor,2024-01-18
+OPP-5153,ACC-1063,Dunmore Systems - New Business 2024,6500.00,USD,Closed Won,New Business,2024-10-12,m.tanaka,2024-08-14
+OPP-5289,ACC-1109,Zenith Media - Upsell 2025,9600.00,USD,Closed Lost,Upsell,2025-08-23,m.tanaka,2025-07-15
+OPP-5302,ACC-1114,Vantage Stores - Renewal 2025,657700.00,USD,Closed Lost,Renewal,2025-02-15,j.pereira,2024-09-28
+OPP-5080,ACC-1031,Union Stores - New Business 2024,628900.00,EUR,Closed Won,New Business,2024-04-03,a.mor,2023-09-10
+OPP-5050,ACC-1020,Redwood Holdings - New Business 2024,157700.00,USD,Closed Won,New Business,2024-08-22,m.tanaka,2024-05-06
+OPP-5107,ACC-1042,Brightwater Financial - New Business 2025,35100.00,GBP,Closed Lost,New Business,2025-08-28,d.shani,2025-04-21
+OPP-5052,ACC-1020,Redwood Holdings - Renewal 2025,76700.00,USD,Closed Won,Renewal,2025-03-29,s.avidan,2024-12-07
+OPP-5020,ACC-1008,Quill Bank - Renewal 2025,38700.00,GBP,Closed Won,Renewal,2025-04-14,a.mor,2025-01-15
+OPP-5264,ACC-1099,Dunmore Financial - Upsell 2026,26300.00,GBP,Closed Lost,Upsell,2026-01-09,j.pereira,2025-08-03
+OPP-5104,ACC-1041,Dunmore Bank - Upsell 2024,134300.00,USD,Closed Won,Upsell,2024-08-15,r.castillo,2024-01-30
+OPP-5269,ACC-1101,North Retail Group - New Business 2024,28300.00,USD,Closed Won,New Business,2024-01-20,j.pereira,2023-11-21
+OPP-5061,ACC-1024,Granite Energy - New Business 2024,96500.00,USD,Closed Won,New Business,2024-06-10,k.obrien,2024-04-13
+OPP-5094,ACC-1037,Vertex Airlines - New Business 2026,55100.00,USD,Closed Lost,New Business,2026-05-17,k.obrien,2026-02-09
+OPP-5102,ACC-1040,Cascade Stores - New Business 2025,174400.00,GBP,Closed Lost,New Business,2025-03-20,m.tanaka,2024-10-23
+OPP-5150,ACC-1062,Blue Telecom - New Business 2025,256100.00,USD,Closed Lost,New Business,2025-03-05,m.tanaka,2024-08-23
+OPP-5198,ACC-1078,Iron Bank - Renewal 2026,87600.00,USD,Closed Lost,Renewal,2026-01-01,a.mor,2025-10-06
+OPP-5217,ACC-1084,Zenith Retail Group - Upsell 2025,8100.00,EUR,Closed Won,Upsell,2025-10-12,m.tanaka,2025-04-11
+OPP-5229,ACC-1089,Cobalt Telecom - New Business 2024,50200.00,USD,Closed Won,New Business,2024-03-26,l.fischer,2023-12-22
+OPP-5151,ACC-1062,Blue Telecom - New Business 2025,899800.00,USD,Closed Lost,New Business,2025-06-27,l.fischer,2025-03-16
+OPP-5076,ACC-1030,Meridian Health - New Business 2024,506700.00,USD,Closed Won,New Business,2024-06-28,s.avidan,2023-12-23
+OPP-5027,ACC-1011,Cobalt Energy - Renewal 2026,45400.00,USD,Closed Lost,Renewal,2026-02-25,m.tanaka,2025-08-13
+OPP-5160,ACC-1065,Lumen Financial - New Business 2025,17100.00,USD,Closed Lost,New Business,2025-03-05,j.pereira,2024-12-30
+OPP-5182,ACC-1073,Vertex Holdings - New Business 2025,171600.00,USD,Closed Won,New Business,2025-02-01,l.fischer,2024-12-04
+OPP-5212,ACC-1083,Cobalt Bank - Upsell 2026,8800.00,USD,Closed Won,Upsell,2026-02-24,s.avidan,2025-10-15
+OPP-5007,ACC-1003,Redwood Insurance - Upsell 2025,5100.00,USD,Closed Lost,Upsell,2025-04-14,d.shani,2024-11-30
+OPP-5097,ACC-1038,Brightwater Insurance - Renewal 2025,176500.00,EUR,Closed Won,Renewal,2025-08-10,m.tanaka,2025-07-06
+OPP-5241,ACC-1092,Everline Logistics - Upsell 2025,214500.00,USD,Closed Won,Upsell,2025-09-03,k.obrien,2025-07-06
+OPP-5099,ACC-1039,North Airlines - New Business 2024,34300.00,USD,Closed Won,New Business,2024-02-01,j.pereira,2023-09-25
+OPP-5002,ACC-1000,Vertex Stores - Renewal 2025,12500.00,USD,Closed Won,Renewal,2025-11-10,l.fischer,2025-05-29
+OPP-5230,ACC-1089,Cobalt Telecom - Renewal 2026,40600.00,USD,Closed Lost,Renewal,2026-05-28,d.shani,2026-01-23
+OPP-5136,ACC-1054,Iron Holdings - New Business 2024,35400.00,USD,Closed Won,New Business,2024-02-21,d.shani,2023-10-11
+OPP-5084,ACC-1033,Harbor Telecom - New Business 2024,10500.00,USD,Closed Lost,New Business,2024-08-01,a.mor,2024-04-30
+OPP-5162,ACC-1067,Pinnacle Payments - New Business 2025,42800.00,USD,Closed Won,New Business,2025-01-19,k.obrien,2024-08-28
+OPP-5135,ACC-1053,Lumen Bank - Upsell 2025,62000.00,GBP,Closed Lost,Upsell,2025-05-30,m.tanaka,2025-04-04
+OPP-5036,ACC-1015,North Payments - New Business 2025,228200.00,USD,Closed Lost,New Business,2025-02-04,r.castillo,2024-12-16
+OPP-5098,ACC-1038,Brightwater Insurance - Upsell 2026,54900.00,GBP,Closed Won,Upsell,2026-02-06,m.tanaka,2025-07-26
+OPP-5149,ACC-1061,Lumen Payments - New Business 2025,239700.00,GBP,Closed Lost,New Business,2025-09-30,d.shani,2025-04-11
+OPP-5073,ACC-1029,Solstice Telecom - New Business 2024,47600.00,USD,Closed Won,New Business,2024-10-19,k.obrien,2024-06-15
+OPP-5063,ACC-1025,Quill Payments - New Business 2025,170300.00,USD,Closed Won,New Business,2025-10-26,l.fischer,2025-06-13
+OPP-5167,ACC-1069,Cascade Logistics - New Business 2025,10200.00,EUR,Closed Won,New Business,2025-04-24,k.obrien,2024-09-29
+OPP-5300,ACC-1113,Everline Energy - New Business 2026,70200.00,USD,Closed Won,New Business,2026-04-26,s.avidan,2026-01-13
+OPP-5111,ACC-1044,Cascade Airlines - New Business 2026,281700.00,USD,Closed Lost,New Business,2026-04-26,k.obrien,2026-01-27
+OPP-5239,ACC-1092,Everline Logistics - New Business 2025,576700.00,USD,Closed Lost,New Business,2025-02-24,k.obrien,2024-09-23
+OPP-5220,ACC-1086,Quill Energy - New Business 2024,87500.00,USD,Closed Won,New Business,2024-10-26,d.shani,2024-07-01
+OPP-5255,ACC-1096,Pinnacle Mutual - New Business 2024,41000.00,USD,Closed Lost,New Business,2024-05-19,k.obrien,2023-11-25
+OPP-5201,ACC-1079,Vertex Media - Renewal 2026,43200.00,GBP,Closed Won,Renewal,2026-01-30,d.shani,2025-12-05
+OPP-5299,ACC-1113,Everline Energy - Renewal 2025,77500.00,GBP,Closed Lost,Renewal,2025-07-10,m.tanaka,2024-12-26
+OPP-5170,ACC-1070,Solstice Media - New Business 2024,6200.00,USD,Closed Lost,New Business,2024-06-09,r.castillo,2023-11-30
+OPP-5193,ACC-1077,Redwood Payments - New Business 2025,116200.00,GBP,Closed Won,New Business,2025-01-18,m.tanaka,2024-07-10
+OPP-5013,ACC-1006,Cobalt Stores - New Business 2024,11700.00,EUR,Closed Won,New Business,2024-02-18,a.mor,2023-09-01
+OPP-5243,ACC-1093,Westbrook Payments - New Business 2024,133700.00,USD,Closed Lost,New Business,2024-06-23,j.pereira,2024-05-24
+OPP-5117,ACC-1046,Harbor Logistics - Upsell 2026,2900.00,EUR,Closed Lost,Upsell,2026-06-14,k.obrien,2025-12-08
+OPP-5053,ACC-1021,Dunmore Payments - New Business 2024,127300.00,USD,Closed Won,New Business,2024-11-19,a.mor,2024-09-07
+OPP-5145,ACC-1058,Thornton Bank - Upsell 2025,7300.00,EUR,Closed Won,Upsell,2025-08-28,m.tanaka,2025-04-27
+OPP-5064,ACC-1026,Everline Airlines - New Business 2025,111000.00,EUR,Closed Lost,New Business,2025-12-22,a.mor,2025-08-25
+OPP-5311,ACC-1119,Thornton Systems - New Business 2024,32800.00,USD,Closed Won,New Business,2024-11-05,k.obrien,2024-09-03
+OPP-5085,ACC-1033,Harbor Telecom - New Business 2024,38900.00,USD,Closed Won,New Business,2024-11-12,r.castillo,2024-06-20
+OPP-5113,ACC-1045,Blue Bank - New Business 2025,11100.00,EUR,Closed Won,New Business,2025-09-13,a.mor,2025-05-17
+OPP-5054,ACC-1021,Dunmore Payments - Renewal 2025,167100.00,USD,Closed Lost,Renewal,2025-01-15,m.tanaka,2024-11-15
+OPP-5304,ACC-1115,Westbrook Telecom - New Business 2025,119000.00,USD,Closed Won,New Business,2025-01-14,l.fischer,2024-08-15
+OPP-5194,ACC-1077,Redwood Payments - Renewal 2025,41300.00,USD,Closed Won,Renewal,2025-11-24,s.avidan,2025-06-02
+OPP-5242,ACC-1092,Everline Logistics - Renewal 2025,389100.00,EUR,Closed Won,Renewal,2025-11-02,m.tanaka,2025-09-25
+OPP-5196,ACC-1078,Iron Bank - Upsell 2025,60400.00,USD,Closed Won,Upsell,2025-06-20,d.shani,2025-03-10
+OPP-5178,ACC-1072,Everline Bank - New Business 2024,42500.00,GBP,Closed Lost,New Business,2024-07-13,d.shani,2024-06-04
+OPP-5295,ACC-1112,Iron Media - New Business 2025,40200.00,USD,Closed Lost,New Business,2025-07-16,a.mor,2025-04-13
+OPP-5275,ACC-1103,Granite Airlines - New Business 2025,410400.00,EUR,Closed Lost,New Business,2025-03-15,k.obrien,2025-01-31
+OPP-5047,ACC-1018,Westbrook Systems - New Business 2024,11800.00,USD,Closed Won,New Business,2024-04-11,d.shani,2023-09-15
+OPP-5120,ACC-1047,Everline Media - Renewal 2025,78900.00,EUR,Closed Lost,Renewal,2025-07-06,r.castillo,2025-01-03
+OPP-5192,ACC-1076,Brightwater Mutual - New Business 2024,38400.00,GBP,Closed Won,New Business,2024-06-14,m.tanaka,2023-12-24
+OPP-5115,ACC-1046,Harbor Logistics - Renewal 2024,33100.00,EUR,Closed Won,Renewal,2024-10-11,m.tanaka,2024-03-22
+OPP-5125,ACC-1049,Iron Systems - New Business 2024,137300.00,USD,Closed Won,New Business,2024-07-14,a.mor,2024-05-07
+OPP-5086,ACC-1033,Harbor Telecom - Renewal 2025,35700.00,USD,Closed Lost,Renewal,2025-05-02,r.castillo,2024-12-07
+OPP-5312,ACC-1119,Thornton Systems - Renewal 2025,15200.00,USD,Closed Lost,Renewal,2025-06-18,s.avidan,2024-12-01
+OPP-5075,ACC-1029,Solstice Telecom - Upsell 2026,18300.00,GBP,Closed Lost,Upsell,2026-06-09,s.avidan,2026-04-30
+OPP-5090,ACC-1035,Zenith Systems - New Business 2026,7500.00,USD,Closed Won,New Business,2026-04-20,a.mor,2025-12-16
+OPP-5190,ACC-1075,Alder Health - Renewal 2024,10600.00,USD,Closed Won,Renewal,2024-04-23,s.avidan,2023-10-24
+OPP-5262,ACC-1098,North Bank - Renewal 2025,35100.00,USD,Closed Won,Renewal,2025-02-18,k.obrien,2024-09-16
+OPP-5175,ACC-1071,Union Retail Group - New Business 2025,798700.00,EUR,Closed Lost,New Business,2025-04-24,s.avidan,2024-09-29
+OPP-5128,ACC-1051,Vertex Bank - New Business 2024,12900.00,USD,Closed Lost,New Business,2024-10-01,j.pereira,2024-08-10
+OPP-5034,ACC-1014,Cascade Retail Group - Upsell 2026,55600.00,USD,Closed Won,Upsell,2026-06-05,r.castillo,2026-03-22
+OPP-5240,ACC-1092,Everline Logistics - New Business 2025,785400.00,USD,Closed Won,New Business,2025-06-07,d.shani,2024-12-14
+OPP-5087,ACC-1033,Harbor Telecom - Renewal 2026,7900.00,USD,Closed Won,Renewal,2026-01-11,k.obrien,2025-09-08
+OPP-5158,ACC-1064,Alder Logistics - Upsell 2026,17900.00,USD,Closed Won,Upsell,2026-03-29,l.fischer,2025-09-02
+OPP-5159,ACC-1065,Lumen Financial - New Business 2024,24500.00,GBP,Closed Lost,New Business,2024-11-21,r.castillo,2024-05-06
+OPP-5298,ACC-1113,Everline Energy - New Business 2024,98800.00,EUR,Closed Won,New Business,2024-07-18,s.avidan,2024-05-10
+OPP-5146,ACC-1059,Union Bank - New Business 2024,169800.00,USD,Closed Won,New Business,2024-02-05,s.avidan,2023-08-18
+OPP-5291,ACC-1110,Everline Financial - New Business 2024,749400.00,EUR,Closed Won,New Business,2024-06-09,k.obrien,2024-01-24
+OPP-5278,ACC-1104,Meridian Energy - New Business 2024,105100.00,USD,Closed Won,New Business,2024-09-19,s.avidan,2024-08-16
+OPP-5199,ACC-1078,Iron Bank - Renewal 2026,145900.00,USD,Closed Won,Renewal,2026-01-15,m.tanaka,2025-11-28
+OPP-5093,ACC-1037,Vertex Airlines - New Business 2024,141400.00,USD,Closed Lost,New Business,2024-10-06,r.castillo,2024-04-20
+OPP-5154,ACC-1063,Dunmore Systems - Renewal 2025,38400.00,USD,Closed Lost,Renewal,2025-03-04,d.shani,2024-12-06
+OPP-5249,ACC-1094,Zenith Holdings - Renewal 2025,16100.00,EUR,Closed Won,Renewal,2025-04-28,d.shani,2025-02-17
+OPP-5092,ACC-1037,Vertex Airlines - New Business 2024,48500.00,USD,Closed Lost,New Business,2024-05-02,k.obrien,2024-03-31
+OPP-5296,ACC-1112,Iron Media - New Business 2026,15800.00,USD,Closed Lost,New Business,2026-03-06,r.castillo,2025-12-10
+OPP-5286,ACC-1108,Cobalt Media - New Business 2026,43900.00,EUR,Closed Won,New Business,2026-01-22,k.obrien,2025-09-02
+OPP-5231,ACC-1089,Cobalt Telecom - Upsell 2026,84000.00,USD,Closed Won,Upsell,2026-06-13,r.castillo,2026-05-06
+OPP-5183,ACC-1073,Vertex Holdings - Upsell 2025,21300.00,USD,Closed Won,Upsell,2025-04-08,d.shani,2024-10-13
+OPP-5164,ACC-1068,Cascade Energy - New Business 2025,144400.00,USD,Closed Won,New Business,2025-02-08,j.pereira,2024-08-13
+OPP-5282,ACC-1106,Everline Telecom - Renewal 2025,59800.00,USD,Closed Won,Renewal,2025-09-04,d.shani,2025-05-01
+OPP-5307,ACC-1116,Vantage Telecom - New Business 2025,330900.00,GBP,Closed Won,New Business,2025-02-08,k.obrien,2024-11-29
+OPP-5077,ACC-1030,Meridian Health - Renewal 2024,603300.00,USD,Closed Lost,Renewal,2024-10-20,d.shani,2024-04-11
+OPP-5228,ACC-1089,Cobalt Telecom - New Business 2024,42500.00,USD,Closed Lost,New Business,2024-03-24,j.pereira,2023-12-10
+OPP-5186,ACC-1074,Meridian Airlines - Renewal 2025,459600.00,USD,Closed Won,Renewal,2025-03-25,s.avidan,2024-09-09
+OPP-5003,ACC-1001,Iron Mutual - New Business 2024,152200.00,GBP,Closed Lost,New Business,2024-10-11,l.fischer,2024-04-01
+OPP-5168,ACC-1069,Cascade Logistics - Renewal 2026,6900.00,USD,Closed Won,Renewal,2026-01-25,d.shani,2025-10-10
+OPP-5022,ACC-1008,Quill Bank - New Business 2026,37400.00,EUR,Closed Won,New Business,2026-06-15,r.castillo,2026-03-07
+OPP-5301,ACC-1114,Vantage Stores - New Business 2024,540000.00,USD,Closed Won,New Business,2024-05-27,l.fischer,2023-11-25
+OPP-5305,ACC-1115,Westbrook Telecom - Upsell 2025,35600.00,USD,Closed Won,Upsell,2025-08-17,s.avidan,2025-02-08
+OPP-5233,ACC-1090,Dunmore Telecom - Renewal 2025,145800.00,USD,Closed Won,Renewal,2025-03-02,s.avidan,2024-08-08
+OPP-5123,ACC-1048,Union Airlines - Upsell 2025,58900.00,GBP,Closed Won,Upsell,2025-10-20,a.mor,2025-05-01
+OPP-5205,ACC-1081,Redwood Retail Group - Upsell 2025,131000.00,USD,Closed Won,Upsell,2025-07-07,j.pereira,2025-05-17
+OPP-5017,ACC-1007,Zenith Mutual - New Business 2024,25600.00,USD,Closed Won,New Business,2024-08-26,s.avidan,2024-01-30
+OPP-5143,ACC-1057,Quill Logistics - New Business 2024,61100.00,USD,Closed Won,New Business,2024-03-29,a.mor,2023-12-25
+OPP-5202,ACC-1080,North Systems - New Business 2024,91500.00,USD,Closed Won,New Business,2024-05-27,a.mor,2024-02-17
+OPP-5114,ACC-1046,Harbor Logistics - New Business 2024,26900.00,GBP,Closed Won,New Business,2024-09-15,l.fischer,2024-04-20
+OPP-5059,ACC-1023,Thornton Payments - New Business 2024,13600.00,USD,Closed Lost,New Business,2024-01-18,k.obrien,2023-08-02
+OPP-5277,ACC-1104,Meridian Energy - New Business 2024,110600.00,USD,Closed Lost,New Business,2024-06-20,s.avidan,2024-04-26
+OPP-5274,ACC-1103,Granite Airlines - New Business 2025,265800.00,GBP,Closed Lost,New Business,2025-01-15,r.castillo,2024-12-10
+OPP-5058,ACC-1023,Thornton Payments - New Business 2024,11800.00,USD,Closed Lost,New Business,2024-01-15,m.tanaka,2023-09-07
+OPP-5257,ACC-1096,Pinnacle Mutual - Upsell 2025,8600.00,USD,Closed Won,Upsell,2025-10-01,k.obrien,2025-05-31
+OPP-5139,ACC-1055,Sable Financial - New Business 2024,38600.00,USD,Closed Won,New Business,2024-03-01,d.shani,2023-10-18
+OPP-5187,ACC-1074,Meridian Airlines - Renewal 2025,878300.00,USD,Closed Won,Renewal,2025-06-01,a.mor,2024-11-25
+OPP-5219,ACC-1085,North Telecom - New Business 2025,133900.00,USD,Closed Won,New Business,2025-03-26,s.avidan,2024-12-18
+OPP-5236,ACC-1091,Westbrook Health - Upsell 2025,67600.00,EUR,Closed Won,Upsell,2025-06-12,s.avidan,2025-03-31
+OPP-5152,ACC-1062,Blue Telecom - New Business 2026,649500.00,USD,Closed Won,New Business,2026-06-05,d.shani,2026-04-19
+OPP-5004,ACC-1002,Vantage Media - New Business 2025,42000.00,USD,Closed Lost,New Business,2025-01-18,k.obrien,2024-08-25
+OPP-5065,ACC-1026,Everline Airlines - New Business 2026,115500.00,EUR,Closed Lost,New Business,2026-06-16,l.fischer,2026-02-26
+OPP-5116,ACC-1046,Harbor Logistics - Upsell 2026,11400.00,EUR,Closed Won,Upsell,2026-04-08,s.avidan,2025-12-05
+OPP-5261,ACC-1098,North Bank - New Business 2024,59400.00,USD,Closed Won,New Business,2024-12-20,r.castillo,2024-07-15
+OPP-5256,ACC-1096,Pinnacle Mutual - New Business 2025,37700.00,USD,Closed Won,New Business,2025-09-16,d.shani,2025-06-30
+OPP-5227,ACC-1088,Union Systems - Upsell 2026,10700.00,USD,Closed Won,Upsell,2026-01-06,j.pereira,2025-06-24
+OPP-5215,ACC-1084,Zenith Retail Group - Renewal 2024,13200.00,GBP,Closed Won,Renewal,2024-08-22,a.mor,2024-07-14
+OPP-5211,ACC-1083,Cobalt Bank - Upsell 2026,36900.00,USD,Closed Won,Upsell,2026-02-23,r.castillo,2025-10-03
+OPP-5101,ACC-1040,Cascade Stores - New Business 2024,95300.00,EUR,Closed Lost,New Business,2024-01-09,l.fischer,2023-07-06
+OPP-5008,ACC-1004,Vertex Retail Group - New Business 2025,851000.00,EUR,Closed Won,New Business,2025-10-05,j.pereira,2025-06-13
+OPP-5044,ACC-1017,Thornton Telecom - Upsell 2025,2300.00,USD,Closed Won,Upsell,2025-08-14,a.mor,2025-02-03
+OPP-5024,ACC-1010,Everline Stores - New Business 2025,39900.00,USD,Closed Won,New Business,2025-01-16,m.tanaka,2024-10-18
+OPP-5244,ACC-1093,Westbrook Payments - New Business 2025,123500.00,USD,Closed Won,New Business,2025-06-12,r.castillo,2025-03-01
+OPP-5223,ACC-1086,Quill Energy - Upsell 2025,51600.00,USD,Closed Lost,Upsell,2025-05-28,r.castillo,2025-01-19
+OPP-5251,ACC-1095,Vantage Holdings - New Business 2024,628800.00,USD,Closed Lost,New Business,2024-06-11,k.obrien,2024-02-17
+OPP-5216,ACC-1084,Zenith Retail Group - Renewal 2025,14200.00,GBP,Closed Won,Renewal,2025-03-18,j.pereira,2025-02-01
+OPP-5031,ACC-1013,Lumen Health - New Business 2025,614500.00,USD,Closed Won,New Business,2025-06-22,k.obrien,2024-12-06
+OPP-5067,ACC-1027,Westbrook Insurance - Upsell 2025,27900.00,EUR,Closed Won,Upsell,2025-02-13,r.castillo,2024-08-03
+OPP-5144,ACC-1058,Thornton Bank - New Business 2025,30800.00,EUR,Closed Won,New Business,2025-04-12,j.pereira,2024-10-09
+OPP-5005,ACC-1003,Redwood Insurance - New Business 2024,36000.00,USD,Closed Won,New Business,2024-03-20,d.shani,2023-08-23
+OPP-5184,ACC-1074,Meridian Airlines - New Business 2024,819000.00,USD,Closed Lost,New Business,2024-07-23,a.mor,2024-03-31
+OPP-5172,ACC-1070,Solstice Media - Upsell 2025,1700.00,USD,Closed Lost,Upsell,2025-09-18,d.shani,2025-03-27
+OPP-5048,ACC-1019,Blue Logistics - New Business 2024,12200.00,USD,Closed Won,New Business,2024-01-07,a.mor,2023-07-13
+OPP-5142,ACC-1056,Solstice Stores - Upsell 2025,196300.00,USD,Closed Lost,Upsell,2025-07-21,j.pereira,2025-05-15
+OPP-5173,ACC-1070,Solstice Media - Upsell 2025,10100.00,USD,Closed Lost,Upsell,2025-11-22,k.obrien,2025-09-01
+OPP-5121,ACC-1047,Everline Media - Upsell 2026,56400.00,USD,Closed Lost,Upsell,2026-05-20,r.castillo,2026-03-07
+OPP-5105,ACC-1041,Dunmore Bank - Renewal 2025,527500.00,USD,Closed Won,Renewal,2025-03-20,m.tanaka,2024-09-09
+OPP-5165,ACC-1069,Cascade Logistics - New Business 2024,36500.00,USD,Closed Lost,New Business,2024-06-06,d.shani,2024-04-24
+OPP-5006,ACC-1003,Redwood Insurance - Renewal 2024,8000.00,USD,Closed Won,Renewal,2024-03-26,l.fischer,2024-02-03
+OPP-5025,ACC-1011,Cobalt Energy - New Business 2024,16400.00,USD,Closed Won,New Business,2024-02-11,r.castillo,2023-12-01
+OPP-5259,ACC-1097,Meridian Payments - New Business 2025,597900.00,EUR,Closed Lost,New Business,2025-12-11,l.fischer,2025-11-09
+OPP-5133,ACC-1052,Pinnacle Insurance - Renewal 2026,143200.00,USD,Closed Lost,Renewal,2026-05-03,k.obrien,2026-03-14
+OPP-5081,ACC-1031,Union Stores - New Business 2025,746600.00,USD,Closed Won,New Business,2025-09-18,d.shani,2025-08-13
+OPP-5140,ACC-1056,Solstice Stores - New Business 2024,471900.00,EUR,Closed Lost,New Business,2024-07-12,k.obrien,2024-04-20
+OPP-5096,ACC-1038,Brightwater Insurance - Renewal 2025,51000.00,USD,Closed Lost,Renewal,2025-05-04,d.shani,2024-12-29
+OPP-5252,ACC-1095,Vantage Holdings - New Business 2025,228500.00,USD,Closed Lost,New Business,2025-06-20,d.shani,2025-04-21
+OPP-5237,ACC-1091,Westbrook Health - Upsell 2025,60000.00,USD,Closed Won,Upsell,2025-09-29,k.obrien,2025-07-26
+OPP-5265,ACC-1099,Dunmore Financial - Renewal 2026,60200.00,GBP,Closed Lost,Renewal,2026-04-20,d.shani,2025-09-25
+OPP-5166,ACC-1069,Cascade Logistics - New Business 2025,33500.00,GBP,Closed Won,New Business,2025-04-08,d.shani,2024-10-08
+OPP-5030,ACC-1013,Lumen Health - New Business 2025,513500.00,USD,Closed Lost,New Business,2025-03-29,s.avidan,2025-01-01
+OPP-5253,ACC-1095,Vantage Holdings - New Business 2025,487600.00,USD,Closed Won,New Business,2025-10-21,m.tanaka,2025-08-28
+OPP-5314,ACC-1033,Harbor Telecom - New Business 2024,38900.00,USD,Closed Won,New Business,2024-11-12,r.castillo,2024-06-20
+OPP-5147,ACC-1059,Union Bank - Renewal 2025,75100.00,USD,Closed Won,Renewal,2025-11-23,a.mor,2025-05-19
+OPP-5250,ACC-1094,Zenith Holdings - Upsell 2026,16300.00,USD,Closed Won,Upsell,2026-02-09,a.mor,2025-08-06
+OPP-5134,ACC-1053,Lumen Bank - New Business 2025,111600.00,EUR,Closed Won,New Business,2025-04-29,a.mor,2024-12-28
+OPP-5083,ACC-1033,Harbor Telecom - New Business 2024,12500.00,USD,Closed Lost,New Business,2024-01-11,l.fischer,2023-11-18
+OPP-5169,ACC-1070,Solstice Media - New Business 2024,32500.00,USD,Closed Lost,New Business,2024-03-16,r.castillo,2024-01-14
+OPP-5057,ACC-1022,Vantage Mutual - New Business 2025,525200.00,USD,Closed Won,New Business,2025-01-04,j.pereira,2024-09-26
+OPP-5045,ACC-1017,Thornton Telecom - Upsell 2025,18500.00,GBP,Closed Won,Upsell,2025-09-20,s.avidan,2025-06-09
+OPP-5106,ACC-1042,Brightwater Financial - New Business 2025,27900.00,EUR,Closed Lost,New Business,2025-04-08,l.fischer,2024-12-12
+OPP-5313,ACC-1119,Thornton Systems - Renewal 2026,19100.00,USD,Closed Won,Renewal,2026-05-04,k.obrien,2025-10-10
+OPP-5225,ACC-1088,Union Systems - New Business 2024,174800.00,USD,Closed Lost,New Business,2024-04-29,s.avidan,2024-03-10
+OPP-5091,ACC-1036,Harbor Financial - New Business 2024,20100.00,EUR,Closed Won,New Business,2024-01-04,m.tanaka,2023-08-28
+OPP-5191,ACC-1075,Alder Health - New Business 2025,40000.00,USD,Closed Lost,New Business,2025-06-14,j.pereira,2024-12-20
+OPP-5310,ACC-1118,Alder Insurance - Upsell 2024,20600.00,USD,Closed Won,Upsell,2024-08-24,k.obrien,2024-04-07
+OPP-5069,ACC-1028,Thornton Logistics - New Business 2025,59400.00,USD,Closed Won,New Business,2025-10-25,s.avidan,2025-07-11
+OPP-5200,ACC-1079,Vertex Media - New Business 2025,109000.00,GBP,Closed Won,New Business,2025-05-18,d.shani,2024-11-28
+OPP-5037,ACC-1015,North Payments - New Business 2025,599800.00,USD,Closed Won,New Business,2025-02-22,l.fischer,2024-12-08
+OPP-5129,ACC-1051,Vertex Bank - New Business 2025,38000.00,USD,Closed Won,New Business,2025-05-27,a.mor,2025-04-07
+OPP-5011,ACC-1005,Brightwater Holdings - New Business 2025,163700.00,USD,Closed Lost,New Business,2025-02-24,k.obrien,2024-10-16
+OPP-5023,ACC-1009,Vertex Systems - New Business 2024,23900.00,USD,Closed Lost,New Business,2024-02-01,l.fischer,2023-10-03
+OPP-5157,ACC-1064,Alder Logistics - New Business 2026,28000.00,USD,Closed Lost,New Business,2026-02-26,r.castillo,2026-01-07
+OPP-5015,ACC-1006,Cobalt Stores - New Business 2025,44100.00,EUR,Closed Won,New Business,2025-01-29,k.obrien,2024-08-19
+OPP-5035,ACC-1015,North Payments - New Business 2024,183100.00,USD,Closed Lost,New Business,2024-07-20,d.shani,2024-05-09
+OPP-5245,ACC-1093,Westbrook Payments - Upsell 2025,26700.00,USD,Closed Won,Upsell,2025-08-01,k.obrien,2025-06-28
+OPP-5293,ACC-1111,Dunmore Holdings - New Business 2024,134400.00,USD,Closed Won,New Business,2024-09-27,r.castillo,2024-04-08
+OPP-5214,ACC-1084,Zenith Retail Group - New Business 2024,38100.00,GBP,Closed Won,New Business,2024-06-04,l.fischer,2023-12-02
+OPP-5009,ACC-1005,Brightwater Holdings - New Business 2024,596300.00,GBP,Closed Won,New Business,2024-06-16,d.shani,2024-01-29
+OPP-5028,ACC-1012,Zenith Energy - New Business 2024,94000.00,USD,Closed Won,New Business,2024-05-22,m.tanaka,2024-03-25
+OPP-5177,ACC-1072,Everline Bank - New Business 2024,39400.00,EUR,Closed Lost,New Business,2024-05-22,s.avidan,2024-01-19
+OPP-5060,ACC-1024,Granite Energy - New Business 2024,116400.00,USD,Closed Lost,New Business,2024-03-10,j.pereira,2023-10-30
+OPP-5270,ACC-1101,North Retail Group - Upsell 2024,17600.00,USD,Closed Won,Upsell,2024-07-11,j.pereira,2024-04-19
+OPP-5070,ACC-1028,Thornton Logistics - New Business 2025,82600.00,EUR,Closed Won,New Business,2025-11-19,d.shani,2025-04-23
+OPP-5043,ACC-1017,Thornton Telecom - New Business 2025,14200.00,USD,Closed Won,New Business,2025-06-19,s.avidan,2025-01-07
+OPP-5040,ACC-1016,Pinnacle Bank - New Business 2025,88500.00,USD,Closed Won,New Business,2025-11-09,l.fischer,2025-08-09
+OPP-5185,ACC-1074,Meridian Airlines - New Business 2025,281400.00,USD,Closed Won,New Business,2025-02-14,a.mor,2024-12-18
+OPP-5122,ACC-1048,Union Airlines - New Business 2024,30200.00,USD,Closed Won,New Business,2024-07-15,j.pereira,2024-02-22
+OPP-5126,ACC-1049,Iron Systems - New Business 2025,170100.00,USD,Closed Won,New Business,2025-03-20,d.shani,2025-01-13
+OPP-5197,ACC-1078,Iron Bank - Renewal 2025,89900.00,USD,Closed Lost,Renewal,2025-06-23,s.avidan,2025-02-14
+OPP-5221,ACC-1086,Quill Energy - Renewal 2025,159500.00,GBP,Closed Won,Renewal,2025-03-24,a.mor,2024-10-30
+OPP-5303,ACC-1115,Westbrook Telecom - New Business 2024,158800.00,USD,Closed Lost,New Business,2024-02-18,m.tanaka,2024-01-13
+OPP-5222,ACC-1086,Quill Energy - New Business 2025,111900.00,EUR,Closed Won,New Business,2025-05-09,d.shani,2024-10-14
+OPP-5137,ACC-1054,Iron Holdings - Upsell 2024,14400.00,USD,Closed Lost,Upsell,2024-03-19,l.fischer,2023-11-15
+OPP-5171,ACC-1070,Solstice Media - New Business 2024,43400.00,USD,Closed Won,New Business,2024-12-03,d.shani,2024-10-15
+OPP-5268,ACC-1100,Westbrook Stores - New Business 2026,41100.00,USD,Closed Lost,New Business,2026-05-02,r.castillo,2025-11-09
+OPP-5010,ACC-1005,Brightwater Holdings - Upsell 2025,111200.00,EUR,Closed Lost,Upsell,2025-02-15,m.tanaka,2025-01-06
+OPP-5248,ACC-1094,Zenith Holdings - Renewal 2025,39500.00,GBP,Closed Won,Renewal,2025-01-04,s.avidan,2024-09-20
+OPP-5174,ACC-1071,Union Retail Group - New Business 2025,255000.00,GBP,Closed Lost,New Business,2025-02-18,s.avidan,2025-01-11
+OPP-5033,ACC-1014,Cascade Retail Group - New Business 2024,887700.00,USD,Closed Won,New Business,2024-06-15,a.mor,2024-01-25
+OPP-5109,ACC-1043,Meridian Stores - New Business 2024,7800.00,USD,Closed Won,New Business,2024-01-09,a.mor,2023-10-18
+OPP-5148,ACC-1060,Quill Financial - New Business 2026,347300.00,USD,Closed Won,New Business,2026-01-17,m.tanaka,2025-07-01
+OPP-5141,ACC-1056,Solstice Stores - New Business 2025,536800.00,EUR,Closed Won,New Business,2025-06-14,m.tanaka,2025-01-26
