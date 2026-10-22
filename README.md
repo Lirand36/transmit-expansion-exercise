@@ -13,7 +13,7 @@ Open these files in any browser:
 | `submission/index.html` | **Start here.** Presentation, data model, AI component, data-quality memo, and how I used AI. |
 | `demo/index.html` | The Q1 plan. Move a lever and the plan updates instantly. |
 
-## Run it (Python 3.10 or newer)
+## Run it (Python 3.9 or newer)
 
 ```bash
 pip install -r requirements.txt
