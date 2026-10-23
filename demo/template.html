@@ -56,7 +56,7 @@ nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: 
 button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .sub-h { color: var(--muted); margin: 2px 0 0; font-size: 0.98rem; }
-.summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-top: 18px; }
+.summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-top: 18px; max-width: 520px; }
 .summary > div { background: var(--surface); padding: 12px 16px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .summary b { font: 700 1.5rem/1.2 var(--font-display); }
 .summary .note { font-size: 0.8rem; }
@@ -120,7 +120,7 @@ td.act { white-space: nowrap; font-weight: 600; }
   <header>
     <span class="eyebrow">GTM planning · data as of <span id="asof"></span></span>
     <h1>Q1 2027 Expansion Priorities</h1>
-    <p class="sub-h">Four revenue plays. Named accounts. Clear owners. Explicit validation steps.</p>
+    <p class="sub-h">Four plays. Named accounts. Clear owners.</p>
   </header>
 
   <div class="summary" id="summary"></div>
@@ -130,7 +130,7 @@ td.act { white-space: nowrap; font-weight: 600; }
     <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
     <div class="bench">Peer price
       <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
-      <span class="note">What similar customers pay per active user. Median = a typical peer; Cautious = the cheapest quarter of peers. Changes plays 01 and 04.</span>
+      <span class="note">Median = typical peer · Cautious = cheapest 25%</span>
     </div>
   </div>
 
@@ -143,14 +143,14 @@ td.act { white-space: nowrap; font-weight: 600; }
   </div>
 
   <div class="card list">
-    <div class="card-head"><h2>Data to fix: part of the plan</h2><span class="note">Each one unblocks a play</span></div>
+    <div class="card-head"><h2>Data fixes</h2></div>
     <div class="scroll">
       <table class="fixes">
         <thead><tr><th>What's broken</th><th>Unblocks</th><th>Owner</th><th>Due</th><th>Done when</th></tr></thead>
         <tbody>
-          <tr><td>No contract end dates in the CRM</td><td>03 Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Every won deal has a start and end date</td></tr>
-          <tr><td>Product used with no current contract on record</td><td>04 Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each account marked paying, missing deal, or free</td></tr>
-          <tr><td>Paying accounts with no product usage linked</td><td>Revenue protection</td><td>Customer Success</td><td class="due">18 Dec 2026</td><td>Each account linked to its tenant, or confirmed unused</td></tr>
+          <tr><td>No contract end dates in the CRM</td><td>03 Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Every deal has dates</td></tr>
+          <tr><td>Usage with no contract</td><td>04 Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each marked: paying, missing deal, or free</td></tr>
+          <tr><td>Paying accounts with no usage</td><td>Revenue protection</td><td>Customer Success</td><td class="due">18 Dec 2026</td><td>Each linked, or confirmed unused</td></tr>
         </tbody>
       </table>
     </div>
@@ -173,27 +173,20 @@ const DATA = /*DATA*/null;
   // Each play: readiness, evidence, what its $ means, next action, owner, due date, success metric.
   // Due dates for validation come from the data-quality memo; plays to act on run through Q1 2027.
   const PLAYS = [
-    { key: "price", n: "01", plays: ["price"], title: "Price to usage", ready: ["go", "Ready to act"],
-      evidence: L => `${L.length} paying accounts pay less per active user than peers in their segment (last 12 months).`,
-      lbl: "potential pricing gap per year · not guaranteed ARR",
-      next: L => `Validate the peer comparison, then build an account proposal. Start with ${L[0] ? L[0].name + " (" + money(L[0].atStake) + ")" : "the largest gap"}.`,
-      owner: "Sales (account owners)", due: "Through Q1 2027", metric: "Pricing meetings held → expansion opportunities opened → closed won", action: "Pricing proposal" },
+    { key: "price", n: "01", plays: ["price"], title: "Price to usage", ready: ["go", "Ready"],
+      evidence: () => "They pay less per user than peers.", lbl: "pricing gap / year",
+      next: L => L[0] ? `Pricing proposal. Start: ${L[0].name.split(" ").slice(0, 2).join(" ")} (${money(L[0].atStake)}).` : "Pricing proposal.",
+      owner: "Sales · Q1 2027", metric: "Meetings → opportunities → won", action: "Pricing proposal" },
     { key: "land", n: "02", plays: ["land"], title: "Land and expand", ready: ["process", "CS process"], count: true,
-      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of past expansion deals opened within 90 days of the first deal. That's timing, not a promise each new customer expands.`,
-      lbl: "landed in the last 12 months, not expanded yet",
-      next: () => "Expansion discovery call with each. Then a CRM task on every new deal: discovery call by day 90.",
-      owner: "Customer Success", due: "Within 90 days of signing", metric: "Calls held on time → opportunities opened → expansion closed", action: "Discovery call" },
-    { key: "renewal", n: "03", plays: ["renewal"], title: "Q1 expansion window", ready: ["check", "Validate first"], count: true,
-      evidence: L => `${L.length} customers signed ${money(L.reduce((a, r) => a + r.atStake, 0))} of deals in Q1 2026. Q1 2027 may bring renewal talks, if the contracts are annual.`,
-      lbl: "accounts to validate · not proven opportunities",
-      next: () => "Confirm end date, renewal status and owner. Only then put expansion on the renewal agenda.",
-      owner: "RevOps, then Sales + CS", due: "Dates confirmed by 29 Jan 2027", metric: "Accounts confirmed for Q1 renewal → expansion added to the renewal", action: "Confirm end date" },
-    { key: "recover", n: "04", plays: ["contract", "winback"], title: "Recover revenue", ready: ["check", "Reconcile first"],
-      evidence: L => `They use the product without a current contract. It may be unbilled revenue, approved free use, a test setup, or a mapping error.`,
-      lbl: "estimated usage value at peer pricing · pending entitlement and billing validation",
-      split: L => [["contract", "Uncontracted usage"], ["winback", "Post-churn usage"]].map(([k, t]) => { const g = L.filter(r => r.play === k); return `<span><b>${t}:</b> ${g.length} accounts · ${money(g.reduce((a, r) => a + r.atStake, 0))}</span>`; }).join(""),
-      next: () => "Finance and RevOps reconcile contract, entitlement and billing. No sales outreach before that.",
-      owner: "RevOps + Finance, then CS", due: "Reconciled by 29 Jan 2027", metric: "Each account resolved: paying, missing deal, or free → contracts signed", action: "Reconcile contract" },
+      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of expansions start within 90 days of landing.`, lbl: "landed, not expanded",
+      next: () => "Discovery call by day 90.", owner: "Customer Success · day 90", metric: "Calls held → opportunities", action: "Discovery call" },
+    { key: "renewal", n: "03", plays: ["renewal"], title: "Q1 expansion window", ready: ["check", "Validate"], count: true,
+      evidence: L => `Signed ${money(L.reduce((a, r) => a + r.atStake, 0))} in Q1 2026.`, lbl: "to validate",
+      next: () => "Confirm renewal dates first.", owner: "RevOps · 29 Jan 2027", metric: "Dates confirmed → expansion on renewal agenda", action: "Confirm end date" },
+    { key: "recover", n: "04", plays: ["contract", "winback"], title: "Recover revenue", ready: ["check", "Reconcile"],
+      evidence: () => "They use us without a contract.", lbl: "usage at peer price",
+      split: L => `${L.filter(r => r.play === "contract").length} no contract · ${L.filter(r => r.play === "winback").length} after lost renewal`,
+      next: () => "Reconcile billing. No selling yet.", owner: "RevOps + Finance · 29 Jan 2027", metric: "Each account resolved", action: "Reconcile contract" },
   ];
   const RISK = { key: "risk", plays: ["risk"], title: "Revenue protection: paid, but no usage", count: false,
     action: "Diagnose usage", lbl: "paid so far" };
@@ -210,11 +203,8 @@ const DATA = /*DATA*/null;
 
     // Summary: scope of the work, not money
     $("summary").innerHTML = [
-      [PLAYS.length, "Revenue plays", "separate motions, separate owners"],
-      [ids(rows.filter(r => r.play !== "risk")), "Accounts in a play", "each named in the list below"],
-      [3, "Data blockers", "with owner, due date, done-when"],
-      ["Separate", "Forecast", "not comparable with play values"],
-    ].map(([v, t, n]) => `<div><span class="eyebrow">${t}</span><b>${v}</b><span class="note">${n}</span></div>`).join("");
+      [PLAYS.length, "Plays"], [ids(rows.filter(r => r.play !== "risk")), "Accounts"], [3, "Data fixes"],
+    ].map(([v, t]) => `<div><span class="eyebrow">${t}</span><b>${v}</b></div>`).join("");
 
     const opt = (key, v, label) => {
       const g = all.filter(r => r.play !== "risk" && (key === "region" ? (F.segment === "all" || r.segment === F.segment) : (F.region === "all" || r.region === F.region)) && (v === "all" || r[key] === v));
@@ -228,16 +218,15 @@ const DATA = /*DATA*/null;
       const L = of(p);
       return `<button class="play" data-k="${p.key}" aria-pressed="${F.play === p.key}">
         <span class="top"><h3><span>${p.n}</span>${p.title}</h3><span class="ready ${p.ready[0]}">${p.ready[1]}</span></span>
-        <span>${esc(p.evidence(L))}</span>
         <span class="value"><span class="usd">${p.count ? L.length + " accounts" : money(sum(L))}</span><span class="lbl">${p.count ? "" : L.length + " accounts · "}${p.lbl}</span></span>
-        ${p.split ? `<span class="split">${p.split(L)}</span>` : ""}
-        <dl><dt>Next</dt><dd>${esc(p.next(L))}</dd><dt>Owner</dt><dd>${p.owner} · ${p.due}</dd><dt>Success</dt><dd>${p.metric}</dd></dl></button>`;
+        <span>${esc(p.evidence(L))}${p.split ? ` <span class="meta">${p.split(L)}</span>` : ""}</span>
+        <dl><dt>Next</dt><dd>${esc(p.next(L))}</dd><dt>Owner</dt><dd>${p.owner}</dd><dt>Success</dt><dd>${p.metric}</dd></dl></button>`;
     }).join("");
 
     const R = of(RISK);
     $("risk").setAttribute("aria-pressed", F.play === "risk");
-    $("risk").innerHTML = `<div><span class="eyebrow">Revenue protection · not an expansion play</span>
-      <p><b>${R.length} paying accounts show no product usage linked.</b> That's not yet proof they don't use us: the account-to-tenant link may be wrong. Customer Success + RevOps diagnose usage by 18 Dec 2026, before their renewals.</p></div>
+    $("risk").innerHTML = `<div><span class="eyebrow">Revenue protection</span>
+      <p><b>${R.length} paying accounts show no usage.</b> Product link may be wrong. Customer Success · 18 Dec 2026.</p></div>
       <div><div class="usd">${money(sum(R))}</div><div class="meta">paid so far</div></div>`;
 
     // The accounts behind the selected play
@@ -257,7 +246,7 @@ const DATA = /*DATA*/null;
     }).join("") || '<tr><td colspan="8" class="note">No accounts in this filter.</td></tr>';
 
     const b = Object.entries(DATA.bookedByQuarter).slice(-3).map(([, v]) => money(v));
-    $("foot").textContent = `Forecast, kept separate: a historical model estimates about ${money(DATA.facts.forecast)} of new expansion pipeline from its top accounts, but it predicts little better than chance. For scale, the whole company booked ${b.join(", ")} of expansion in the last three quarters. Play values are opportunities and risks, not forecasts, and are never added up.`;
+    $("foot").textContent = `Play values are not forecasts and are not added up. Forecast (separate, weak model): ~${money(DATA.facts.forecast)} pipeline. Expansion booked ${b.join(", ")} in the last three quarters.`;
   }
 
   $("plays").addEventListener("click", e => { const b = e.target.closest(".play"); if (b) { F.play = b.dataset.k; render(); } });
