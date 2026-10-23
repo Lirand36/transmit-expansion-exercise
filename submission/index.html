@@ -159,7 +159,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
           <dl class="defs">
             <dt>Expansion</dt><dd>Upsells and new deals with current customers. Renewals don't count.</dd>
             <dt>Next quarter</dt><dd>Q1 2027, January to March.</dd>
-            <dt>Pipeline</dt><dd>New pipeline we can create. The CRM shows no open deals, so today's pipeline can't be known. I've asked Max about it.</dd>
+            <dt>Pipeline</dt><dd>New pipeline we can create. The CRM export holds closed deals only (Max confirmed), so today's pipeline can't be known.</dd>
             <dt>Win rate</dt><dd>47 of 69 expansion deals won, Mar 2024 to Jun 2026.</dd>
             <dt>Prediction</dt><dd>Can history predict who expands? No, we tested it. So we prioritize on facts and sales logic, and Q1 is the test.</dd>
           </dl>
@@ -470,7 +470,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
         <table class="memo">
           <thead><tr><th>What's broken</th><th>What the plan does now</th><th>Fix at the source</th><th>Owner</th><th>Due</th></tr></thead>
           <tbody>
-            <tr><td><b>No open deals in the CRM export</b>, and it stops on 16 Jun 2026. The brief says it holds open deals too.</td><td>Sizes the pipeline we could <i>create</i> in Q1, not what exists today.</td><td>Export open deals too, and pull daily.</td><td>RevOps</td><td class="due">13 Nov 2026</td></tr>
+            <tr><td><b>No open deals in the CRM export</b>, and it stops on 16 Jun 2026. Max confirmed it's a closed-only extract.</td><td>Sizes the pipeline we could <i>create</i> in Q1, not what exists today.</td><td>Export open deals too, and pull daily.</td><td>RevOps</td><td class="due">13 Nov 2026</td></tr>
             <tr><td><b>Customers using the product with no contract on record.</b> 12 never had a won deal. 7 more lost their last renewal.</td><td>Ranked like everyone else, marked “RevOps: confirm contract”.</td><td>No product access without a live contract in the CRM.</td><td>RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
             <tr><td><b>21 accounts with no product link.</b> 19 of them have paid us. 2 have no deals and no usage.</td><td>Usage left blank, never guessed. Shown as a risk.</td><td>Product link required when an account goes live.</td><td>Customer Success</td><td class="due">18 Dec 2026</td></tr>
             <tr><td><b>Lead company names typed freely.</b> 150 of 900 don't match an account exactly.</td><td>Code matches the clear ones, AI the messy ones, a person the unsure ones.</td><td>Match by email domain on the form.</td><td>Marketing Ops</td><td class="due">29 Jan 2027</td></tr>
