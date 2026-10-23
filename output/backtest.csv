@@ -1,0 +1,572 @@
+as_of,account_id,account_name,score,intent_0_100,headroom_0_100,momentum_0_100,depth_0_100,expanded
+2025-10-31,ACC-1001,Iron Mutual Inc.,90.7,99.0,90.0,92.0,72.0,False
+2025-10-31,ACC-1112,Iron Media Incorporated,82.1,82.0,90.0,73.0,73.0,False
+2025-10-31,ACC-1058,Thornton Bank Ltd,81.0,96.0,65.0,96.0,68.0,False
+2025-10-31,ACC-1071,Union Retail Group Ltd.,78.2,73.0,90.0,85.0,56.0,False
+2025-10-31,ACC-1095,Vantage Holdings PLC,76.8,91.0,71.0,79.0,55.0,False
+2025-10-31,ACC-1079,Vertex Media PLC,75.4,96.0,67.0,93.0,29.0,False
+2025-10-31,ACC-1023,Thornton Payments Ltd,74.9,82.0,90.0,87.0,11.0,False
+2025-10-31,ACC-1065,Lumen Financial PLC,74.7,91.0,90.0,67.0,9.0,False
+2025-10-31,ACC-1083,Cobalt Bank Incorporated,74.7,82.0,68.0,83.0,65.0,False
+2025-10-31,ACC-1107,Westbrook Logistics Ltd.,73.6,82.0,90.0,76.0,13.0,False
+2025-10-31,ACC-1000,Vertex Stores LLC,72.2,73.0,70.0,61.0,87.0,False
+2025-10-31,ACC-1036,Harbor Financial Incorporated,71.8,91.0,64.0,95.0,22.0,False
+2025-10-31,ACC-1119,Thornton Systems LLC,71.4,82.0,58.0,74.0,75.0,False
+2025-10-31,ACC-1103,Granite Airlines Ltd,71.0,73.0,90.0,45.0,48.0,False
+2025-10-31,ACC-1060,Quill Financial Group,70.8,73.0,90.0,34.0,58.0,False
+2025-10-31,ACC-1097,Meridian Payments,70.7,82.0,90.0,60.0,10.0,False
+2025-10-31,ACC-1108,Cobalt Media Inc,70.7,61.0,90.0,70.0,49.0,False
+2025-10-31,ACC-1104,Meridian Energy Incorporated,68.1,61.0,66.0,59.0,99.0,False
+2025-10-31,ACC-1044,Cascade Airlines Ltd,67.2,45.0,90.0,81.0,52.0,False
+2025-10-31,ACC-1010,Everline Stores Inc.,64.8,91.0,36.0,57.0,79.0,False
+2025-10-31,ACC-1012,Zenith Energy PLC,64.0,61.0,73.0,88.0,26.0,False
+2025-10-31,ACC-1011,Cobalt Energy LLC,63.2,98.0,21.0,46.0,98.0,False
+2025-10-31,ACC-1041,Dunmore Bank Inc,96.0,96.0,,,,False
+2025-10-31,ACC-1014,Cascade Retail Group,91.0,91.0,,,,False
+2025-10-31,ACC-1015,North Payments Inc,82.0,82.0,,,,False
+2025-10-31,ACC-1032,Blue Holdings Ltd,78.0,96.0,90.0,8.0,78.0,False
+2025-10-31,ACC-1100,Westbrook Stores Incorporated,63.2,61.0,75.0,21.0,83.0,True
+2025-10-31,ACC-1019,Blue Logistics Inc.,61.0,61.0,,,,False
+2025-10-31,ACC-1029,Solstice Telecom Ltd.,61.0,61.0,,,,False
+2025-10-31,ACC-1075,Alder Health Ltd.,60.4,100.0,56.0,9.0,30.0,False
+2025-10-31,ACC-1077,Redwood Payments LLC,59.0,61.0,49.0,97.0,40.0,False
+2025-10-31,ACC-1067,Pinnacle Payments Ltd.,58.8,61.0,42.0,78.0,74.0,False
+2025-10-31,ACC-1022,Vantage Mutual Ltd,58.7,61.0,57.0,77.0,39.0,False
+2025-10-31,ACC-1111,Dunmore Holdings LLC,58.2,45.0,55.0,84.0,71.0,False
+2025-10-31,ACC-1115,Westbrook Telecom Inc,57.4,61.0,26.0,89.0,91.0,False
+2025-10-31,ACC-1068,Cascade Energy Group,57.1,82.0,19.0,65.0,80.0,False
+2025-10-31,ACC-1080,North Systems Ltd,56.6,61.0,61.0,62.0,31.0,False
+2025-10-31,ACC-1063,Dunmore Systems,55.0,0.0,77.0,91.0,96.0,False
+2025-10-31,ACC-1092,Everline Logistics Incorporated,54.5,61.0,54.0,90.0,5.0,False
+2025-10-31,ACC-1057,Quill Logistics Incorporated,54.1,45.0,62.0,52.0,59.0,False
+2025-10-31,ACC-1002,Vantage Media Inc.,54.0,45.0,90.0,43.0,2.0,False
+2025-10-31,ACC-1017,Thornton Telecom,53.6,82.0,46.0,17.0,42.0,False
+2025-10-31,ACC-1066,Solstice Financial Inc.,53.6,96.0,37.0,20.0,27.0,False
+2025-10-31,ACC-1114,Vantage Stores Ltd,52.8,61.0,69.0,35.0,14.0,False
+2025-10-31,ACC-1026,Everline Airlines LLC,51.9,0.0,90.0,36.0,100.0,False
+2025-10-31,ACC-1118,Alder Insurance LLC,51.7,45.0,45.0,68.0,67.0,False
+2025-10-31,ACC-1053,Lumen Bank LLC,51.4,61.0,44.0,63.0,35.0,False
+2025-10-31,ACC-1094,Zenith Holdings,50.1,82.0,14.0,86.0,24.0,False
+2025-10-31,ACC-1033,Harbor Telecom Ltd.,49.7,73.0,28.0,4.0,92.0,False
+2025-10-31,ACC-1009,Vertex Systems Ltd,49.6,0.0,90.0,98.0,23.0,False
+2025-10-31,ACC-1106,Everline Telecom LLC,49.1,45.0,38.0,37.0,97.0,False
+2025-10-31,ACC-1102,Blue Insurance Inc,49.0,0.0,90.0,32.0,85.0,False
+2025-10-31,ACC-1064,Alder Logistics Inc.,48.7,0.0,80.0,49.0,89.0,True
+2025-10-31,ACC-1110,Everline Financial Inc.,48.5,61.0,40.0,71.0,17.0,False
+2025-10-31,ACC-1042,Brightwater Financial,47.8,0.0,90.0,55.0,54.0,False
+2025-10-31,ACC-1089,Cobalt Telecom Inc,46.4,0.0,76.0,66.0,66.0,False
+2025-10-31,ACC-1004,Vertex Retail Group Inc,45.8,61.0,32.0,28.0,60.0,False
+2025-10-31,ACC-1037,Vertex Airlines Ltd.,45.8,0.0,90.0,7.0,88.0,False
+2025-10-31,ACC-1061,Lumen Payments Ltd,45.8,0.0,90.0,26.0,69.0,False
+2025-10-31,ACC-1028,Thornton Logistics Inc.,45.0,45.0,,,,False
+2025-10-31,ACC-1069,Cascade Logistics Group,45.0,45.0,,,,False
+2025-10-31,ACC-1098,North Bank Group,45.0,61.0,53.0,31.0,3.0,False
+2025-10-31,ACC-1056,Solstice Stores PLC,44.7,0.0,72.0,94.0,36.0,False
+2025-10-31,ACC-1105,North Financial LLC,44.3,0.0,74.0,53.0,70.0,False
+2025-10-31,ACC-1048,Union Airlines Incorporated,44.2,0.0,63.0,64.0,84.0,False
+2025-10-31,ACC-1086,Quill Energy Ltd,44.2,91.0,4.0,10.0,63.0,False
+2025-10-31,ACC-1073,Vertex Holdings Ltd,43.6,45.0,15.0,56.0,95.0,False
+2025-10-31,ACC-1043,Meridian Stores Group,43.1,0.0,79.0,75.0,28.0,False
+2025-10-31,ACC-1099,Dunmore Financial PLC,41.3,73.0,33.0,22.0,6.0,False
+2025-10-31,ACC-1020,Redwood Holdings Ltd.,40.7,82.0,6.0,25.0,41.0,False
+2025-10-31,ACC-1031,Union Stores Inc,40.7,82.0,3.0,11.0,62.0,False
+2025-10-31,ACC-1018,Westbrook Systems Group,40.2,0.0,78.0,5.0,81.0,False
+2025-10-31,ACC-1101,North Retail Group Ltd.,40.1,61.0,9.0,14.0,90.0,False
+2025-10-31,ACC-1081,Redwood Retail Group Group,40.0,61.0,20.0,58.0,20.0,False
+2025-10-31,ACC-1087,Dunmore Media Group,39.1,0.0,90.0,19.0,32.0,False
+2025-10-31,ACC-1054,Iron Holdings Group,38.7,82.0,17.0,6.0,21.0,False
+2025-10-31,ACC-1090,Dunmore Telecom Group,38.4,61.0,2.0,23.0,86.0,False
+2025-10-31,ACC-1046,Harbor Logistics Incorporated,37.9,45.0,8.0,72.0,57.0,True
+2025-10-31,ACC-1039,North Airlines Inc.,37.3,0.0,51.0,69.0,61.0,False
+2025-10-31,ACC-1047,Everline Media Inc,37.1,61.0,23.0,18.0,33.0,False
+2025-10-31,ACC-1051,Vertex Bank Inc.,36.8,73.0,11.0,15.0,34.0,False
+2025-10-31,ACC-1025,Quill Payments PLC,36.0,0.0,48.0,82.0,46.0,False
+2025-10-31,ACC-1024,Granite Energy LLC,34.8,45.0,27.0,48.0,16.0,False
+2025-10-31,ACC-1021,Dunmore Payments Inc,34.6,0.0,60.0,54.0,37.0,False
+2025-10-31,ACC-1093,Westbrook Payments Inc.,33.6,45.0,34.0,39.0,1.0,False
+2025-10-31,ACC-1050,North Logistics Inc,32.2,0.0,41.0,100.0,19.0,False
+2025-10-31,ACC-1088,Union Systems PLC,31.1,0.0,52.0,41.0,45.0,False
+2025-10-31,ACC-1034,Harbor Systems Group,30.9,45.0,39.0,3.0,7.0,False
+2025-10-31,ACC-1084,Zenith Retail Group Ltd.,30.8,0.0,18.0,99.0,64.0,False
+2025-10-31,ACC-1038,Brightwater Insurance Inc,30.4,45.0,10.0,27.0,47.0,False
+2025-10-31,ACC-1113,Everline Energy Inc.,27.7,0.0,59.0,29.0,18.0,True
+2025-10-31,ACC-1027,Westbrook Insurance,26.6,0.0,30.0,13.0,94.0,False
+2025-10-31,ACC-1070,Solstice Media Ltd,25.1,0.0,43.0,16.0,51.0,False
+2025-10-31,ACC-1006,Cobalt Stores Inc.,23.4,0.0,13.0,33.0,93.0,False
+2025-10-31,ACC-1007,Zenith Mutual Ltd.,23.4,0.0,47.0,42.0,4.0,False
+2025-10-31,ACC-1030,Meridian Health Ltd.,22.7,0.0,22.0,47.0,53.0,False
+2025-10-31,ACC-1059,Union Bank LLC,22.0,0.0,25.0,44.0,44.0,False
+2025-10-31,ACC-1045,Blue Bank LLC,21.7,0.0,35.0,38.0,25.0,False
+2025-10-31,ACC-1109,Zenith Media LLC,21.0,0.0,24.0,2.0,82.0,False
+2025-10-31,ACC-1074,Meridian Airlines,19.8,0.0,7.0,40.0,76.0,False
+2025-10-31,ACC-1013,Lumen Health,19.7,0.0,16.0,51.0,43.0,False
+2025-10-31,ACC-1078,Iron Bank Incorporated,17.4,0.0,12.0,80.0,8.0,False
+2025-10-31,ACC-1003,Redwood Insurance Ltd.,16.7,0.0,31.0,1.0,38.0,False
+2025-10-31,ACC-1096,Pinnacle Mutual PLC,16.4,0.0,29.0,30.0,12.0,False
+2025-10-31,ACC-1049,Iron Systems,15.5,0.0,1.0,24.0,77.0,False
+2025-10-31,ACC-1076,Brightwater Mutual Incorporated,5.8,0.0,5.0,12.0,15.0,False
+2025-10-31,ACC-1005,Brightwater Holdings Ltd,0.0,0.0,,,,False
+2025-10-31,ACC-1008,Quill Bank PLC,0.0,0.0,,,,False
+2025-10-31,ACC-1055,Sable Financial Inc.,0.0,0.0,,,,False
+2025-10-31,ACC-1085,North Telecom Incorporated,0.0,0.0,,,,False
+2025-10-31,ACC-1091,Westbrook Health Inc,0.0,0.0,,,,False
+2025-10-31,ACC-1116,Vantage Telecom,0.0,0.0,,,,False
+2025-11-30,ACC-1095,Vantage Holdings PLC,84.4,93.0,74.0,89.0,84.0,False
+2025-11-30,ACC-1103,Granite Airlines Ltd,82.9,77.0,91.0,69.0,92.0,False
+2025-11-30,ACC-1119,Thornton Systems LLC,79.5,96.0,60.0,79.0,87.0,False
+2025-11-30,ACC-1000,Vertex Stores LLC,76.0,96.0,62.0,53.0,85.0,False
+2025-11-30,ACC-1058,Thornton Bank Ltd,75.6,93.0,65.0,84.0,51.0,False
+2025-11-30,ACC-1012,Zenith Energy PLC,73.3,62.0,75.0,92.0,77.0,False
+2025-11-30,ACC-1104,Meridian Energy Incorporated,72.4,77.0,67.0,49.0,98.0,False
+2025-11-30,ACC-1048,Union Airlines Incorporated,71.6,62.0,68.0,80.0,94.0,False
+2025-11-30,ACC-1060,Quill Financial Group,70.9,77.0,91.0,42.0,39.0,False
+2025-11-30,ACC-1097,Meridian Payments,70.7,99.0,91.0,26.0,2.0,False
+2025-11-30,ACC-1001,Iron Mutual Inc.,69.3,62.0,91.0,82.0,23.0,False
+2025-11-30,ACC-1100,Westbrook Stores Incorporated,69.0,86.0,71.0,15.0,79.0,False
+2025-11-30,ACC-1071,Union Retail Group Ltd.,68.7,62.0,91.0,91.0,10.0,False
+2025-11-30,ACC-1080,North Systems Ltd,68.7,86.0,58.0,63.0,59.0,False
+2025-11-30,ACC-1061,Lumen Payments Ltd,68.6,77.0,91.0,51.0,14.0,False
+2025-11-30,ACC-1010,Everline Stores Inc.,68.4,93.0,41.0,61.0,82.0,False
+2025-11-30,ACC-1023,Thornton Payments Ltd,68.2,62.0,91.0,72.0,26.0,False
+2025-11-30,ACC-1067,Pinnacle Payments Ltd.,68.1,77.0,46.0,94.0,73.0,False
+2025-11-30,ACC-1079,Vertex Media PLC,67.5,45.0,69.0,93.0,91.0,False
+2025-11-30,ACC-1110,Everline Financial Inc.,66.4,96.0,29.0,96.0,55.0,False
+2025-11-30,ACC-1111,Dunmore Holdings LLC,66.4,77.0,54.0,65.0,72.0,False
+2025-11-30,ACC-1057,Quill Logistics Incorporated,66.0,77.0,63.0,30.0,83.0,False
+2025-11-30,ACC-1065,Lumen Financial PLC,65.8,45.0,91.0,88.0,33.0,False
+2025-11-30,ACC-1008,Quill Bank PLC,86.0,86.0,,,,False
+2025-11-30,ACC-1015,North Payments Inc,86.0,86.0,,,,False
+2025-11-30,ACC-1016,Pinnacle Bank Inc,86.0,86.0,,,,False
+2025-11-30,ACC-1014,Cascade Retail Group,77.0,77.0,,,,False
+2025-11-30,ACC-1108,Cobalt Media Inc,65.8,62.0,91.0,70.0,12.0,False
+2025-11-30,ACC-1032,Blue Holdings Ltd,65.1,86.0,91.0,4.0,17.0,False
+2025-11-30,ACC-1075,Alder Health Ltd.,64.2,96.0,55.0,22.0,54.0,False
+2025-11-30,ACC-1036,Harbor Financial Incorporated,62.8,62.0,66.0,99.0,21.0,False
+2025-11-30,ACC-1019,Blue Logistics Inc.,62.0,62.0,,,,False
+2025-11-30,ACC-1029,Solstice Telecom Ltd.,62.0,62.0,,,,False
+2025-11-30,ACC-1041,Dunmore Bank Inc,62.0,62.0,,,,False
+2025-11-30,ACC-1002,Vantage Media Inc.,61.4,45.0,91.0,74.0,18.0,False
+2025-11-30,ACC-1044,Cascade Airlines Ltd,60.8,45.0,91.0,56.0,32.0,False
+2025-11-30,ACC-1089,Cobalt Telecom Inc,60.6,45.0,76.0,58.0,64.0,False
+2025-11-30,ACC-1011,Cobalt Energy LLC,60.5,93.0,22.0,35.0,100.0,False
+2025-11-30,ACC-1094,Zenith Holdings,59.8,100.0,13.0,90.0,45.0,False
+2025-11-30,ACC-1077,Redwood Payments LLC,59.0,62.0,44.0,86.0,60.0,False
+2025-11-30,ACC-1083,Cobalt Bank Incorporated,58.7,86.0,20.0,68.0,76.0,False
+2025-11-30,ACC-1068,Cascade Energy Group,58.6,86.0,25.0,52.0,80.0,False
+2025-11-30,ACC-1009,Vertex Systems Ltd,58.2,0.0,91.0,98.0,78.0,False
+2025-11-30,ACC-1105,North Financial LLC,58.0,62.0,73.0,41.0,31.0,False
+2025-11-30,ACC-1115,Westbrook Telecom Inc,57.9,62.0,31.0,73.0,96.0,False
+2025-11-30,ACC-1022,Vantage Mutual Ltd,56.7,62.0,61.0,75.0,16.0,False
+2025-11-30,ACC-1114,Vantage Stores Ltd,55.8,62.0,70.0,20.0,44.0,False
+2025-11-30,ACC-1070,Solstice Media Ltd,55.1,86.0,45.0,14.0,48.0,False
+2025-11-30,ACC-1053,Lumen Bank LLC,54.7,62.0,51.0,48.0,53.0,False
+2025-11-30,ACC-1063,Dunmore Systems,54.6,0.0,77.0,87.0,97.0,False
+2025-11-30,ACC-1026,Everline Airlines LLC,53.6,0.0,91.0,46.0,99.0,False
+2025-11-30,ACC-1112,Iron Media Incorporated,53.6,0.0,91.0,71.0,74.0,False
+2025-11-30,ACC-1017,Thornton Telecom,53.4,77.0,49.0,33.0,29.0,False
+2025-11-30,ACC-1092,Everline Logistics Incorporated,52.2,62.0,43.0,81.0,22.0,False
+2025-11-30,ACC-1102,Blue Insurance Inc,51.6,0.0,91.0,67.0,65.0,False
+2025-11-30,ACC-1033,Harbor Telecom Ltd.,51.4,77.0,28.0,5.0,93.0,False
+2025-11-30,ACC-1098,North Bank Group,51.4,62.0,57.0,60.0,5.0,False
+2025-11-30,ACC-1042,Brightwater Financial,47.6,0.0,91.0,77.0,28.0,False
+2025-11-30,ACC-1043,Meridian Stores Group,47.6,0.0,79.0,64.0,69.0,False
+2025-11-30,ACC-1047,Everline Media Inc,46.6,77.0,27.0,10.0,58.0,False
+2025-11-30,ACC-1064,Alder Logistics Inc.,45.9,0.0,81.0,29.0,88.0,True
+2025-11-30,ACC-1005,Brightwater Holdings Ltd,45.0,45.0,,,,False
+2025-11-30,ACC-1028,Thornton Logistics Inc.,45.0,45.0,,,,False
+2025-11-30,ACC-1091,Westbrook Health Inc,45.0,45.0,,,,False
+2025-11-30,ACC-1107,Westbrook Logistics Ltd.,44.6,0.0,91.0,76.0,9.0,False
+2025-11-30,ACC-1004,Vertex Retail Group Inc,44.4,45.0,37.0,39.0,66.0,False
+2025-11-30,ACC-1086,Quill Energy Ltd,43.8,96.0,4.0,19.0,40.0,False
+2025-11-30,ACC-1087,Dunmore Media Group,42.6,0.0,80.0,16.0,81.0,False
+2025-11-30,ACC-1073,Vertex Holdings Ltd,42.4,45.0,18.0,47.0,89.0,False
+2025-11-30,ACC-1006,Cobalt Stores Inc.,41.8,62.0,14.0,31.0,70.0,False
+2025-11-30,ACC-1093,Westbrook Payments Inc.,41.2,62.0,38.0,37.0,4.0,False
+2025-11-30,ACC-1018,Westbrook Systems Group,41.1,0.0,78.0,6.0,86.0,False
+2025-11-30,ACC-1037,Vertex Airlines Ltd.,41.0,0.0,91.0,12.0,49.0,False
+2025-11-30,ACC-1090,Dunmore Telecom Group,41.0,62.0,3.0,32.0,90.0,False
+2025-11-30,ACC-1046,Harbor Logistics Incorporated,40.6,45.0,8.0,85.0,62.0,True
+2025-11-30,ACC-1056,Solstice Stores PLC,40.5,0.0,72.0,95.0,7.0,False
+2025-11-30,ACC-1054,Iron Holdings Group,39.9,86.0,16.0,13.0,15.0,False
+2025-11-30,ACC-1027,Westbrook Insurance,37.6,45.0,32.0,8.0,63.0,False
+2025-11-30,ACC-1118,Alder Insurance LLC,35.6,0.0,52.0,78.0,38.0,False
+2025-11-30,ACC-1051,Vertex Bank Inc.,35.0,62.0,11.0,11.0,52.0,False
+2025-11-30,ACC-1038,Brightwater Insurance Inc,34.6,45.0,12.0,27.0,71.0,False
+2025-11-30,ACC-1021,Dunmore Payments Inc,34.4,0.0,64.0,38.0,42.0,False
+2025-11-30,ACC-1074,Meridian Airlines,34.0,45.0,9.0,54.0,47.0,True
+2025-11-30,ACC-1020,Redwood Holdings Ltd.,33.2,62.0,7.0,40.0,20.0,False
+2025-11-30,ACC-1034,Harbor Systems Group,32.7,45.0,39.0,3.0,19.0,False
+2025-11-30,ACC-1088,Union Systems PLC,32.2,0.0,56.0,28.0,56.0,False
+2025-11-30,ACC-1050,North Logistics Inc,31.5,0.0,48.0,97.0,1.0,False
+2025-11-30,ACC-1106,Everline Telecom LLC,30.2,0.0,30.0,36.0,95.0,False
+2025-11-30,ACC-1109,Zenith Media LLC,28.7,45.0,26.0,1.0,25.0,False
+2025-11-30,ACC-1025,Quill Payments PLC,28.6,0.0,53.0,59.0,8.0,False
+2025-11-30,ACC-1113,Everline Energy Inc.,27.8,0.0,59.0,18.0,30.0,True
+2025-11-30,ACC-1007,Zenith Mutual Ltd.,27.1,0.0,47.0,25.0,46.0,False
+2025-11-30,ACC-1084,Zenith Retail Group Ltd.,26.6,0.0,23.0,100.0,24.0,False
+2025-11-30,ACC-1096,Pinnacle Mutual PLC,26.3,0.0,34.0,62.0,34.0,False
+2025-11-30,ACC-1099,Dunmore Financial PLC,22.7,0.0,40.0,55.0,3.0,False
+2025-11-30,ACC-1039,North Airlines Inc.,22.6,0.0,17.0,44.0,67.0,False
+2025-11-30,ACC-1078,Iron Bank Incorporated,21.8,0.0,15.0,83.0,27.0,False
+2025-11-30,ACC-1024,Granite Energy LLC,21.7,0.0,33.0,57.0,11.0,False
+2025-11-30,ACC-1045,Blue Bank LLC,20.4,0.0,36.0,17.0,35.0,False
+2025-11-30,ACC-1013,Lumen Health,19.2,0.0,21.0,66.0,13.0,False
+2025-11-30,ACC-1066,Solstice Financial Inc.,19.0,0.0,42.0,23.0,6.0,False
+2025-11-30,ACC-1003,Redwood Insurance Ltd.,18.7,0.0,35.0,7.0,36.0,False
+2025-11-30,ACC-1059,Union Bank LLC,18.2,0.0,19.0,34.0,43.0,False
+2025-11-30,ACC-1081,Redwood Retail Group Group,18.2,0.0,24.0,24.0,41.0,False
+2025-11-30,ACC-1076,Brightwater Mutual Incorporated,17.0,0.0,5.0,45.0,57.0,False
+2025-11-30,ACC-1030,Meridian Health Ltd.,15.8,0.0,10.0,21.0,61.0,False
+2025-11-30,ACC-1101,North Retail Group Ltd.,13.6,0.0,6.0,2.0,75.0,False
+2025-11-30,ACC-1049,Iron Systems,12.4,0.0,1.0,43.0,37.0,False
+2025-11-30,ACC-1031,Union Stores Inc,12.2,0.0,2.0,9.0,68.0,False
+2025-11-30,ACC-1052,Pinnacle Insurance Ltd,0.0,0.0,,,,False
+2025-11-30,ACC-1055,Sable Financial Inc.,0.0,0.0,,,,False
+2025-11-30,ACC-1069,Cascade Logistics Group,0.0,0.0,,,,False
+2025-11-30,ACC-1085,North Telecom Incorporated,0.0,0.0,,,,False
+2025-11-30,ACC-1116,Vantage Telecom,0.0,0.0,,,,False
+2025-12-31,ACC-1048,Union Airlines Incorporated,80.5,87.0,68.0,83.0,92.0,False
+2025-12-31,ACC-1001,Iron Mutual Inc.,78.5,60.0,91.0,92.0,79.0,False
+2025-12-31,ACC-1023,Thornton Payments Ltd,76.4,74.0,91.0,79.0,45.0,False
+2025-12-31,ACC-1108,Cobalt Media Inc,76.2,74.0,91.0,74.0,49.0,False
+2025-12-31,ACC-1058,Thornton Bank Ltd,74.0,87.0,65.0,87.0,52.0,False
+2025-12-31,ACC-1095,Vantage Holdings PLC,74.0,74.0,74.0,71.0,77.0,False
+2025-12-31,ACC-1071,Union Retail Group Ltd.,73.4,87.0,91.0,65.0,9.0,False
+2025-12-31,ACC-1044,Cascade Airlines Ltd,72.8,74.0,91.0,66.0,34.0,False
+2025-12-31,ACC-1112,Iron Media Incorporated,72.4,41.0,91.0,75.0,100.0,False
+2025-12-31,ACC-1000,Vertex Stores LLC,71.6,87.0,63.0,84.0,43.0,False
+2025-12-31,ACC-1061,Lumen Payments Ltd,71.6,74.0,91.0,73.0,19.0,False
+2025-12-31,ACC-1043,Meridian Stores Group,70.3,87.0,80.0,52.0,27.0,False
+2025-12-31,ACC-1103,Granite Airlines Ltd,69.9,41.0,91.0,69.0,89.0,False
+2025-12-31,ACC-1111,Dunmore Holdings LLC,68.4,87.0,57.0,46.0,74.0,False
+2025-12-31,ACC-1036,Harbor Financial Incorporated,68.0,60.0,67.0,100.0,57.0,False
+2025-12-31,ACC-1097,Meridian Payments,67.4,87.0,91.0,26.0,8.0,False
+2025-12-31,ACC-1119,Thornton Systems LLC,67.4,60.0,62.0,93.0,72.0,False
+2025-12-31,ACC-1002,Vantage Media Inc.,66.5,60.0,91.0,67.0,24.0,False
+2025-12-31,ACC-1057,Quill Logistics Incorporated,65.7,74.0,61.0,35.0,88.0,False
+2025-12-31,ACC-1107,Westbrook Logistics Ltd.,65.4,41.0,91.0,77.0,51.0,False
+2025-12-31,ACC-1080,North Systems Ltd,65.2,60.0,59.0,76.0,81.0,False
+2025-12-31,ACC-1065,Lumen Financial PLC,64.2,41.0,91.0,99.0,21.0,False
+2025-12-31,ACC-1011,Cobalt Energy LLC,63.8,99.0,23.0,61.0,80.0,False
+2025-12-31,ACC-1008,Quill Bank PLC,87.0,87.0,,,,True
+2025-12-31,ACC-1015,North Payments Inc,87.0,87.0,,,,False
+2025-12-31,ACC-1016,Pinnacle Bank Inc,87.0,87.0,,,,False
+2025-12-31,ACC-1029,Solstice Telecom Ltd.,87.0,87.0,,,,False
+2025-12-31,ACC-1014,Cascade Retail Group,74.0,74.0,,,,True
+2025-12-31,ACC-1032,Blue Holdings Ltd,67.4,87.0,91.0,12.0,22.0,False
+2025-12-31,ACC-1087,Dunmore Media Group,64.4,87.0,79.0,4.0,38.0,False
+2025-12-31,ACC-1079,Vertex Media PLC,63.8,41.0,69.0,78.0,91.0,False
+2025-12-31,ACC-1050,North Logistics Inc,63.6,87.0,51.0,97.0,5.0,False
+2025-12-31,ACC-1018,Westbrook Systems Group,63.1,60.0,77.0,3.0,98.0,False
+2025-12-31,ACC-1100,Westbrook Stores Incorporated,63.1,87.0,71.0,11.0,41.0,False
+2025-12-31,ACC-1060,Quill Financial Group,62.7,60.0,91.0,55.0,11.0,False
+2025-12-31,ACC-1068,Cascade Energy Group,62.6,87.0,27.0,56.0,95.0,False
+2025-12-31,ACC-1110,Everline Financial Inc.,62.4,97.0,30.0,89.0,31.0,False
+2025-12-31,ACC-1083,Cobalt Bank Incorporated,61.8,87.0,21.0,63.0,97.0,False
+2025-12-31,ACC-1075,Alder Health Ltd.,61.0,97.0,54.0,25.0,29.0,False
+2025-12-31,ACC-1077,Redwood Payments LLC,61.0,60.0,47.0,91.0,66.0,False
+2025-12-31,ACC-1052,Pinnacle Insurance Ltd,60.0,60.0,,,,False
+2025-12-31,ACC-1117,Cobalt Payments Ltd.,60.0,60.0,,,,False
+2025-12-31,ACC-1105,North Financial LLC,58.9,74.0,72.0,45.0,7.0,False
+2025-12-31,ACC-1022,Vantage Mutual Ltd,57.9,60.0,60.0,41.0,65.0,False
+2025-12-31,ACC-1070,Solstice Media Ltd,56.9,87.0,43.0,20.0,56.0,False
+2025-12-31,ACC-1104,Meridian Energy Incorporated,56.4,60.0,66.0,43.0,39.0,False
+2025-12-31,ACC-1094,Zenith Holdings,56.1,100.0,14.0,62.0,46.0,False
+2025-12-31,ACC-1102,Blue Insurance Inc,56.0,0.0,91.0,94.0,67.0,False
+2025-12-31,ACC-1046,Harbor Logistics Incorporated,55.4,74.0,9.0,98.0,78.0,False
+2025-12-31,ACC-1084,Zenith Retail Group Ltd.,54.2,60.0,24.0,96.0,69.0,False
+2025-12-31,ACC-1086,Quill Energy Ltd,54.0,97.0,7.0,23.0,94.0,False
+2025-12-31,ACC-1026,Everline Airlines LLC,53.9,0.0,91.0,72.0,75.0,False
+2025-12-31,ACC-1009,Vertex Systems Ltd,53.3,0.0,91.0,80.0,63.0,False
+2025-12-31,ACC-1067,Pinnacle Payments Ltd.,52.0,41.0,45.0,82.0,64.0,False
+2025-12-31,ACC-1098,North Bank Group,51.6,60.0,55.0,48.0,28.0,False
+2025-12-31,ACC-1092,Everline Logistics Incorporated,51.1,60.0,44.0,58.0,40.0,False
+2025-12-31,ACC-1063,Dunmore Systems,51.0,0.0,78.0,90.0,68.0,False
+2025-12-31,ACC-1012,Zenith Energy PLC,50.4,0.0,73.0,81.0,85.0,False
+2025-12-31,ACC-1089,Cobalt Telecom Inc,49.3,41.0,75.0,40.0,18.0,False
+2025-12-31,ACC-1064,Alder Logistics Inc.,48.4,0.0,81.0,38.0,96.0,True
+2025-12-31,ACC-1115,Westbrook Telecom Inc,48.4,41.0,34.0,64.0,84.0,False
+2025-12-31,ACC-1010,Everline Stores Inc.,48.3,41.0,41.0,44.0,87.0,False
+2025-12-31,ACC-1013,Lumen Health,48.2,87.0,20.0,60.0,12.0,False
+2025-12-31,ACC-1074,Meridian Airlines,47.6,74.0,10.0,86.0,35.0,True
+2025-12-31,ACC-1004,Vertex Retail Group Inc,44.6,41.0,39.0,57.0,54.0,False
+2025-12-31,ACC-1051,Vertex Bank Inc.,44.6,87.0,11.0,14.0,55.0,False
+2025-12-31,ACC-1003,Redwood Insurance Ltd.,44.1,60.0,32.0,8.0,71.0,False
+2025-12-31,ACC-1066,Solstice Financial Inc.,43.5,60.0,42.0,39.0,13.0,False
+2025-12-31,ACC-1038,Brightwater Insurance Inc,43.3,60.0,12.0,31.0,90.0,False
+2025-12-31,ACC-1017,Thornton Telecom,43.1,60.0,46.0,24.0,16.0,False
+2025-12-31,ACC-1114,Vantage Stores Ltd,42.6,0.0,70.0,28.0,93.0,False
+2025-12-31,ACC-1090,Dunmore Telecom Group,42.1,60.0,5.0,30.0,99.0,False
+2025-12-31,ACC-1042,Brightwater Financial,41.8,0.0,91.0,51.0,15.0,False
+2025-12-31,ACC-1047,Everline Media Inc,41.2,60.0,26.0,13.0,61.0,True
+2025-12-31,ACC-1005,Brightwater Holdings Ltd,41.0,41.0,,,,False
+2025-12-31,ACC-1056,Solstice Stores PLC,41.0,0.0,76.0,95.0,1.0,False
+2025-12-31,ACC-1091,Westbrook Health Inc,41.0,41.0,,,,False
+2025-12-31,ACC-1116,Vantage Telecom,41.0,41.0,,,,False
+2025-12-31,ACC-1088,Union Systems PLC,40.8,41.0,56.0,36.0,10.0,False
+2025-12-31,ACC-1021,Dunmore Payments Inc,38.8,0.0,64.0,47.0,62.0,False
+2025-12-31,ACC-1073,Vertex Holdings Ltd,38.6,41.0,18.0,37.0,83.0,False
+2025-12-31,ACC-1034,Harbor Systems Group,38.2,41.0,36.0,5.0,70.0,False
+2025-12-31,ACC-1093,Westbrook Payments Inc.,36.2,41.0,40.0,49.0,3.0,False
+2025-12-31,ACC-1006,Cobalt Stores Inc.,33.9,60.0,4.0,18.0,59.0,False
+2025-12-31,ACC-1037,Vertex Airlines Ltd.,33.9,0.0,91.0,10.0,4.0,False
+2025-12-31,ACC-1099,Dunmore Financial PLC,33.5,41.0,38.0,33.0,6.0,False
+2025-12-31,ACC-1020,Redwood Holdings Ltd.,32.4,60.0,8.0,34.0,23.0,False
+2025-12-31,ACC-1118,Alder Insurance LLC,32.4,0.0,52.0,59.0,36.0,False
+2025-12-31,ACC-1053,Lumen Bank LLC,32.2,0.0,49.0,68.0,32.0,False
+2025-12-31,ACC-1007,Zenith Mutual Ltd.,31.8,0.0,48.0,42.0,58.0,False
+2025-12-31,ACC-1096,Pinnacle Mutual PLC,30.2,0.0,37.0,85.0,30.0,False
+2025-12-31,ACC-1109,Zenith Media LLC,30.0,41.0,25.0,2.0,44.0,False
+2025-12-31,ACC-1027,Westbrook Insurance,29.7,41.0,31.0,16.0,14.0,False
+2025-12-31,ACC-1025,Quill Payments PLC,29.6,0.0,53.0,54.0,20.0,False
+2025-12-31,ACC-1039,North Airlines Inc.,28.1,0.0,19.0,70.0,73.0,False
+2025-12-31,ACC-1113,Everline Energy Inc.,26.3,0.0,58.0,7.0,33.0,True
+2025-12-31,ACC-1078,Iron Bank Incorporated,26.2,0.0,17.0,88.0,47.0,False
+2025-12-31,ACC-1106,Everline Telecom LLC,24.5,0.0,28.0,22.0,76.0,False
+2025-12-31,ACC-1033,Harbor Telecom Ltd.,24.4,0.0,29.0,9.0,86.0,False
+2025-12-31,ACC-1054,Iron Holdings Group,22.2,41.0,15.0,15.0,2.0,False
+2025-12-31,ACC-1024,Granite Energy LLC,22.0,0.0,33.0,53.0,17.0,False
+2025-12-31,ACC-1045,Blue Bank LLC,21.0,0.0,35.0,21.0,37.0,False
+2025-12-31,ACC-1081,Redwood Retail Group Group,20.8,0.0,22.0,27.0,60.0,False
+2025-12-31,ACC-1059,Union Bank LLC,16.1,0.0,16.0,17.0,53.0,False
+2025-12-31,ACC-1076,Brightwater Mutual Incorporated,15.8,0.0,2.0,19.0,82.0,False
+2025-12-31,ACC-1030,Meridian Health Ltd.,12.6,0.0,13.0,29.0,25.0,False
+2025-12-31,ACC-1049,Iron Systems,11.4,0.0,1.0,32.0,42.0,False
+2025-12-31,ACC-1031,Union Stores Inc,9.1,0.0,3.0,6.0,48.0,False
+2025-12-31,ACC-1101,North Retail Group Ltd.,6.1,0.0,6.0,1.0,26.0,False
+2025-12-31,ACC-1019,Blue Logistics Inc.,0.0,0.0,,,,False
+2025-12-31,ACC-1028,Thornton Logistics Inc.,0.0,0.0,,,,False
+2025-12-31,ACC-1041,Dunmore Bank Inc,0.0,0.0,,,,False
+2025-12-31,ACC-1055,Sable Financial Inc.,0.0,0.0,,,,False
+2025-12-31,ACC-1069,Cascade Logistics Group,0.0,0.0,,,,False
+2025-12-31,ACC-1085,North Telecom Incorporated,0.0,0.0,,,,False
+2026-01-31,ACC-1023,Thornton Payments Ltd,81.4,98.0,92.0,76.0,23.0,False
+2026-01-31,ACC-1036,Harbor Financial Incorporated,76.9,74.0,69.0,84.0,95.0,False
+2026-01-31,ACC-1002,Vantage Media Inc.,75.6,74.0,92.0,47.0,70.0,False
+2026-01-31,ACC-1095,Vantage Holdings PLC,75.4,59.0,75.0,96.0,94.0,False
+2026-01-31,ACC-1071,Union Retail Group Ltd.,75.2,96.0,92.0,60.0,3.0,False
+2026-01-31,ACC-1097,Meridian Payments,74.6,96.0,92.0,23.0,36.0,False
+2026-01-31,ACC-1048,Union Airlines Incorporated,74.0,87.0,68.0,97.0,35.0,False
+2026-01-31,ACC-1058,Thornton Bank Ltd,73.8,87.0,70.0,92.0,34.0,False
+2026-01-31,ACC-1009,Vertex Systems Ltd,71.4,40.0,92.0,82.0,86.0,False
+2026-01-31,ACC-1107,Westbrook Logistics Ltd.,70.4,40.0,92.0,83.0,78.0,False
+2026-01-31,ACC-1044,Cascade Airlines Ltd,69.0,59.0,92.0,48.0,60.0,False
+2026-01-31,ACC-1043,Meridian Stores Group,68.8,87.0,82.0,35.0,29.0,False
+2026-01-31,ACC-1111,Dunmore Holdings LLC,68.1,87.0,57.0,52.0,66.0,False
+2026-01-31,ACC-1061,Lumen Payments Ltd,68.0,74.0,92.0,62.0,4.0,False
+2026-01-31,ACC-1010,Everline Stores Inc.,67.8,87.0,45.0,51.0,93.0,False
+2026-01-31,ACC-1112,Iron Media Incorporated,67.5,40.0,92.0,80.0,62.0,False
+2026-01-31,ACC-1000,Vertex Stores LLC,67.2,87.0,65.0,49.0,44.0,False
+2026-01-31,ACC-1067,Pinnacle Payments Ltd.,64.9,74.0,54.0,79.0,55.0,False
+2026-01-31,ACC-1080,North Systems Ltd,63.4,59.0,62.0,87.0,53.0,False
+2026-01-31,ACC-1079,Vertex Media PLC,63.3,40.0,59.0,93.0,98.0,False
+2026-01-31,ACC-1050,North Logistics Inc,62.9,87.0,46.0,69.0,40.0,False
+2026-01-31,ACC-1053,Lumen Bank LLC,62.8,59.0,51.0,81.0,81.0,False
+2026-01-31,ACC-1119,Thornton Systems LLC,62.2,59.0,66.0,67.0,56.0,False
+2026-01-31,ACC-1014,Cascade Retail Group,98.0,98.0,,,,True
+2026-01-31,ACC-1008,Quill Bank PLC,87.0,87.0,,,,True
+2026-01-31,ACC-1069,Cascade Logistics Group,87.0,87.0,,,,False
+2026-01-31,ACC-1117,Cobalt Payments Ltd.,87.0,87.0,,,,False
+2026-01-31,ACC-1018,Westbrook Systems Group,71.9,87.0,79.0,2.0,90.0,False
+2026-01-31,ACC-1032,Blue Holdings Ltd,66.7,87.0,92.0,16.0,11.0,False
+2026-01-31,ACC-1037,Vertex Airlines Ltd.,66.2,87.0,92.0,22.0,2.0,False
+2026-01-31,ACC-1087,Dunmore Media Group,65.6,87.0,81.0,3.0,42.0,False
+2026-01-31,ACC-1100,Westbrook Stores Incorporated,65.4,99.0,73.0,4.0,31.0,False
+2026-01-31,ACC-1108,Cobalt Media Inc,62.1,40.0,71.0,75.0,80.0,False
+2026-01-31,ACC-1065,Lumen Financial PLC,59.5,0.0,92.0,100.0,82.0,False
+2026-01-31,ACC-1016,Pinnacle Bank Inc,59.0,59.0,,,,False
+2026-01-31,ACC-1019,Blue Logistics Inc.,59.0,59.0,,,,False
+2026-01-31,ACC-1029,Solstice Telecom Ltd.,59.0,59.0,,,,True
+2026-01-31,ACC-1052,Pinnacle Insurance Ltd,59.0,59.0,,,,False
+2026-01-31,ACC-1011,Cobalt Energy LLC,58.7,87.0,28.0,40.0,83.0,False
+2026-01-31,ACC-1070,Solstice Media Ltd,58.4,87.0,44.0,11.0,73.0,False
+2026-01-31,ACC-1114,Vantage Stores Ltd,57.8,40.0,67.0,36.0,100.0,False
+2026-01-31,ACC-1068,Cascade Energy Group,57.6,59.0,27.0,91.0,92.0,False
+2026-01-31,ACC-1022,Vantage Mutual Ltd,57.4,59.0,55.0,28.0,89.0,False
+2026-01-31,ACC-1105,North Financial LLC,57.4,74.0,72.0,26.0,16.0,False
+2026-01-31,ACC-1001,Iron Mutual Inc.,56.2,0.0,92.0,89.0,71.0,False
+2026-01-31,ACC-1103,Granite Airlines Ltd,55.7,0.0,92.0,73.0,84.0,False
+2026-01-31,ACC-1092,Everline Logistics Incorporated,55.6,59.0,42.0,68.0,67.0,False
+2026-01-31,ACC-1003,Redwood Insurance Ltd.,53.8,87.0,33.0,5.0,74.0,False
+2026-01-31,ACC-1057,Quill Logistics Incorporated,53.7,59.0,61.0,46.0,32.0,False
+2026-01-31,ACC-1013,Lumen Health,53.1,87.0,18.0,58.0,51.0,False
+2026-01-31,ACC-1042,Brightwater Financial,51.8,0.0,92.0,74.0,57.0,False
+2026-01-31,ACC-1104,Meridian Energy Incorporated,51.8,59.0,64.0,53.0,5.0,False
+2026-01-31,ACC-1046,Harbor Logistics Incorporated,51.6,74.0,14.0,94.0,45.0,False
+2026-01-31,ACC-1115,Westbrook Telecom Inc,51.6,40.0,35.0,90.0,79.0,False
+2026-01-31,ACC-1012,Zenith Energy PLC,51.2,0.0,76.0,77.0,87.0,False
+2026-01-31,ACC-1074,Meridian Airlines,50.4,74.0,11.0,86.0,52.0,True
+2026-01-31,ACC-1102,Blue Insurance Inc,50.3,0.0,92.0,95.0,26.0,False
+2026-01-31,ACC-1110,Everline Financial Inc.,50.3,87.0,25.0,59.0,15.0,False
+2026-01-31,ACC-1077,Redwood Payments LLC,50.2,40.0,47.0,85.0,47.0,False
+2026-01-31,ACC-1094,Zenith Holdings,50.2,100.0,20.0,33.0,22.0,False
+2026-01-31,ACC-1026,Everline Airlines LLC,49.6,0.0,92.0,88.0,28.0,False
+2026-01-31,ACC-1084,Zenith Retail Group Ltd.,49.6,59.0,32.0,99.0,19.0,False
+2026-01-31,ACC-1063,Dunmore Systems,49.2,0.0,80.0,64.0,77.0,False
+2026-01-31,ACC-1099,Dunmore Financial PLC,48.0,74.0,36.0,55.0,8.0,False
+2026-01-31,ACC-1089,Cobalt Telecom Inc,47.6,40.0,74.0,24.0,27.0,False
+2026-01-31,ACC-1047,Everline Media Inc,46.6,74.0,26.0,34.0,43.0,True
+2026-01-31,ACC-1066,Solstice Financial Inc.,45.7,59.0,42.0,57.0,12.0,False
+2026-01-31,ACC-1039,North Airlines Inc.,43.4,59.0,23.0,61.0,37.0,False
+2026-01-31,ACC-1021,Dunmore Payments Inc,43.2,0.0,63.0,66.0,75.0,False
+2026-01-31,ACC-1093,Westbrook Payments Inc.,43.0,40.0,38.0,41.0,64.0,False
+2026-01-31,ACC-1064,Alder Logistics Inc.,42.7,0.0,83.0,42.0,49.0,False
+2026-01-31,ACC-1056,Solstice Stores PLC,42.6,0.0,77.0,98.0,6.0,False
+2026-01-31,ACC-1004,Vertex Retail Group Inc,42.4,74.0,31.0,31.0,7.0,False
+2026-01-31,ACC-1088,Union Systems PLC,42.0,40.0,49.0,54.0,18.0,False
+2026-01-31,ACC-1073,Vertex Holdings Ltd,41.6,59.0,15.0,29.0,76.0,False
+2026-01-31,ACC-1059,Union Bank LLC,40.2,59.0,16.0,25.0,68.0,False
+2026-01-31,ACC-1005,Brightwater Holdings Ltd,40.0,40.0,,,,False
+2026-01-31,ACC-1091,Westbrook Health Inc,40.0,40.0,,,,False
+2026-01-31,ACC-1116,Vantage Telecom,40.0,40.0,,,,False
+2026-01-31,ACC-1076,Brightwater Mutual Incorporated,38.8,59.0,7.0,8.0,97.0,False
+2026-01-31,ACC-1090,Dunmore Telecom Group,38.2,59.0,4.0,45.0,63.0,False
+2026-01-31,ACC-1096,Pinnacle Mutual PLC,36.8,0.0,39.0,63.0,91.0,False
+2026-01-31,ACC-1051,Vertex Bank Inc.,36.0,59.0,13.0,14.0,58.0,False
+2026-01-31,ACC-1086,Quill Energy Ltd,34.1,40.0,6.0,32.0,88.0,False
+2026-01-31,ACC-1007,Zenith Mutual Ltd.,33.8,0.0,56.0,56.0,39.0,False
+2026-01-31,ACC-1038,Brightwater Insurance Inc,33.5,40.0,12.0,37.0,65.0,False
+2026-01-31,ACC-1060,Quill Financial Group,33.3,0.0,78.0,30.0,10.0,False
+2026-01-31,ACC-1113,Everline Energy Inc.,33.3,0.0,58.0,18.0,69.0,False
+2026-01-31,ACC-1118,Alder Insurance LLC,33.3,0.0,48.0,72.0,38.0,False
+2026-01-31,ACC-1027,Westbrook Insurance,33.2,59.0,30.0,13.0,1.0,False
+2026-01-31,ACC-1083,Cobalt Bank Incorporated,32.6,0.0,22.0,70.0,96.0,False
+2026-01-31,ACC-1109,Zenith Media LLC,32.5,59.0,21.0,6.0,24.0,False
+2026-01-31,ACC-1081,Redwood Retail Group Group,32.4,40.0,19.0,19.0,59.0,False
+2026-01-31,ACC-1075,Alder Health Ltd.,32.1,0.0,60.0,20.0,54.0,False
+2026-01-31,ACC-1025,Quill Payments PLC,31.6,0.0,53.0,78.0,9.0,False
+2026-01-31,ACC-1098,North Bank Group,31.1,0.0,52.0,38.0,48.0,False
+2026-01-31,ACC-1006,Cobalt Stores Inc.,30.2,59.0,8.0,12.0,33.0,False
+2026-01-31,ACC-1024,Granite Energy LLC,28.6,0.0,34.0,65.0,46.0,False
+2026-01-31,ACC-1034,Harbor Systems Group,28.0,0.0,37.0,1.0,99.0,False
+2026-01-31,ACC-1054,Iron Holdings Group,24.4,40.0,17.0,10.0,20.0,False
+2026-01-31,ACC-1017,Thornton Telecom,23.8,0.0,42.0,44.0,17.0,False
+2026-01-31,ACC-1033,Harbor Telecom Ltd.,22.2,0.0,24.0,7.0,85.0,False
+2026-01-31,ACC-1101,North Retail Group Ltd.,21.6,40.0,9.0,9.0,21.0,False
+2026-01-31,ACC-1045,Blue Bank LLC,21.0,0.0,40.0,17.0,30.0,False
+2026-01-31,ACC-1106,Everline Telecom LLC,18.7,0.0,29.0,43.0,14.0,False
+2026-01-31,ACC-1078,Iron Bank Incorporated,17.5,0.0,2.0,71.0,41.0,False
+2026-01-31,ACC-1020,Redwood Holdings Ltd.,15.7,0.0,5.0,21.0,72.0,False
+2026-01-31,ACC-1031,Union Stores Inc,12.4,0.0,3.0,15.0,61.0,False
+2026-01-31,ACC-1030,Meridian Health Ltd.,11.3,0.0,10.0,27.0,25.0,False
+2026-01-31,ACC-1049,Iron Systems,8.1,0.0,1.0,39.0,13.0,False
+2026-01-31,ACC-1015,North Payments Inc,0.0,0.0,,,,False
+2026-01-31,ACC-1028,Thornton Logistics Inc.,0.0,0.0,,,,False
+2026-01-31,ACC-1041,Dunmore Bank Inc,0.0,0.0,,,,False
+2026-01-31,ACC-1055,Sable Financial Inc.,0.0,0.0,,,,False
+2026-01-31,ACC-1085,North Telecom Incorporated,0.0,0.0,,,,False
+2026-02-28,ACC-1023,Thornton Payments Ltd,85.9,98.0,92.0,78.0,51.0,False
+2026-02-28,ACC-1036,Harbor Financial Incorporated,83.0,98.0,69.0,71.0,93.0,False
+2026-02-28,ACC-1071,Union Retail Group Ltd.,76.9,93.0,92.0,59.0,22.0,False
+2026-02-28,ACC-1058,Thornton Bank Ltd,75.8,87.0,70.0,91.0,48.0,False
+2026-02-28,ACC-1063,Dunmore Systems,72.6,62.0,81.0,77.0,73.0,False
+2026-02-28,ACC-1044,Cascade Airlines Ltd,72.2,62.0,92.0,62.0,60.0,False
+2026-02-28,ACC-1050,North Logistics Inc,71.8,93.0,46.0,69.0,85.0,False
+2026-02-28,ACC-1119,Thornton Systems LLC,71.6,95.0,67.0,67.0,32.0,False
+2026-02-28,ACC-1114,Vantage Stores Ltd,71.3,62.0,68.0,76.0,96.0,False
+2026-02-28,ACC-1095,Vantage Holdings PLC,71.1,62.0,76.0,90.0,62.0,False
+2026-02-28,ACC-1026,Everline Airlines LLC,70.7,62.0,92.0,94.0,18.0,False
+2026-02-28,ACC-1002,Vantage Media Inc.,70.6,80.0,92.0,17.0,52.0,False
+2026-02-28,ACC-1107,Westbrook Logistics Ltd.,69.8,38.0,92.0,85.0,77.0,False
+2026-02-28,ACC-1009,Vertex Systems Ltd,68.9,38.0,92.0,75.0,81.0,False
+2026-02-28,ACC-1037,Vertex Airlines Ltd.,68.0,87.0,92.0,31.0,5.0,False
+2026-02-28,ACC-1108,Cobalt Media Inc,68.0,38.0,74.0,95.0,97.0,False
+2026-02-28,ACC-1043,Meridian Stores Group,66.2,87.0,82.0,43.0,4.0,False
+2026-02-28,ACC-1010,Everline Stores Inc.,66.1,87.0,47.0,48.0,80.0,False
+2026-02-28,ACC-1022,Vantage Mutual Ltd,63.6,62.0,58.0,46.0,98.0,False
+2026-02-28,ACC-1093,Westbrook Payments Inc.,63.0,95.0,39.0,53.0,54.0,False
+2026-02-28,ACC-1053,Lumen Bank LLC,62.2,62.0,48.0,68.0,90.0,False
+2026-02-28,ACC-1042,Brightwater Financial,62.1,38.0,92.0,42.0,69.0,False
+2026-02-28,ACC-1112,Iron Media Incorporated,61.5,38.0,92.0,66.0,41.0,False
+2026-02-28,ACC-1085,North Telecom Incorporated,100.0,100.0,,,,False
+2026-02-28,ACC-1014,Cascade Retail Group,98.0,98.0,,,,True
+2026-02-28,ACC-1069,Cascade Logistics Group,87.0,87.0,,,,False
+2026-02-28,ACC-1032,Blue Holdings Ltd,68.9,87.0,92.0,23.0,19.0,False
+2026-02-28,ACC-1018,Westbrook Systems Group,68.6,87.0,79.0,4.0,66.0,False
+2026-02-28,ACC-1087,Dunmore Media Group,65.3,95.0,80.0,10.0,17.0,False
+2026-02-28,ACC-1019,Blue Logistics Inc.,62.0,62.0,,,,False
+2026-02-28,ACC-1029,Solstice Telecom Ltd.,62.0,62.0,,,,True
+2026-02-28,ACC-1052,Pinnacle Insurance Ltd,62.0,62.0,,,,False
+2026-02-28,ACC-1091,Westbrook Health Inc,62.0,62.0,,,,False
+2026-02-28,ACC-1117,Cobalt Payments Ltd.,62.0,62.0,,,,False
+2026-02-28,ACC-1100,Westbrook Stores Incorporated,60.8,87.0,71.0,2.0,35.0,False
+2026-02-28,ACC-1111,Dunmore Holdings LLC,60.8,62.0,61.0,84.0,34.0,False
+2026-02-28,ACC-1067,Pinnacle Payments Ltd.,60.4,62.0,54.0,60.0,72.0,False
+2026-02-28,ACC-1092,Everline Logistics Incorporated,60.0,62.0,42.0,74.0,83.0,False
+2026-02-28,ACC-1098,North Bank Group,60.0,62.0,56.0,34.0,91.0,False
+2026-02-28,ACC-1003,Redwood Insurance Ltd.,59.2,95.0,34.0,5.0,89.0,False
+2026-02-28,ACC-1057,Quill Logistics Incorporated,58.6,62.0,62.0,70.0,31.0,False
+2026-02-28,ACC-1001,Iron Mutual Inc.,58.2,0.0,92.0,89.0,84.0,False
+2026-02-28,ACC-1097,Meridian Payments,57.9,38.0,92.0,37.0,46.0,False
+2026-02-28,ACC-1065,Lumen Financial PLC,57.5,0.0,92.0,98.0,71.0,False
+2026-02-28,ACC-1068,Cascade Energy Group,56.8,62.0,28.0,83.0,86.0,False
+2026-02-28,ACC-1105,North Financial LLC,56.8,62.0,72.0,36.0,30.0,False
+2026-02-28,ACC-1115,Westbrook Telecom Inc,56.0,38.0,42.0,100.0,87.0,False
+2026-02-28,ACC-1083,Cobalt Bank Incorporated,55.6,62.0,21.0,82.0,95.0,False
+2026-02-28,ACC-1061,Lumen Payments Ltd,55.2,38.0,92.0,57.0,8.0,False
+2026-02-28,ACC-1118,Alder Insurance LLC,55.2,62.0,51.0,65.0,39.0,False
+2026-02-28,ACC-1099,Dunmore Financial PLC,54.8,80.0,37.0,45.0,47.0,False
+2026-02-28,ACC-1048,Union Airlines Incorporated,54.5,62.0,32.0,88.0,56.0,False
+2026-02-28,ACC-1046,Harbor Logistics Incorporated,54.4,80.0,16.0,81.0,58.0,False
+2026-02-28,ACC-1013,Lumen Health,53.8,87.0,20.0,35.0,74.0,False
+2026-02-28,ACC-1103,Granite Airlines Ltd,52.6,0.0,92.0,58.0,78.0,False
+2026-02-28,ACC-1084,Zenith Retail Group Ltd.,51.2,62.0,35.0,99.0,16.0,False
+2026-02-28,ACC-1077,Redwood Payments LLC,49.6,38.0,49.0,92.0,36.0,False
+2026-02-28,ACC-1102,Blue Insurance Inc,48.4,0.0,92.0,93.0,15.0,False
+2026-02-28,ACC-1110,Everline Financial Inc.,48.3,87.0,27.0,54.0,2.0,False
+2026-02-28,ACC-1060,Quill Financial Group,48.1,38.0,78.0,40.0,10.0,False
+2026-02-28,ACC-1045,Blue Bank LLC,48.0,62.0,40.0,27.0,55.0,False
+2026-02-28,ACC-1011,Cobalt Energy LLC,47.7,62.0,30.0,63.0,40.0,False
+2026-02-28,ACC-1074,Meridian Airlines,46.7,62.0,11.0,73.0,68.0,False
+2026-02-28,ACC-1066,Solstice Financial Inc.,46.5,62.0,44.0,56.0,7.0,False
+2026-02-28,ACC-1056,Solstice Stores PLC,45.4,0.0,77.0,97.0,26.0,False
+2026-02-28,ACC-1033,Harbor Telecom Ltd.,44.8,62.0,24.0,16.0,82.0,False
+2026-02-28,ACC-1088,Union Systems PLC,44.6,38.0,52.0,38.0,49.0,False
+2026-02-28,ACC-1027,Westbrook Insurance,44.5,80.0,33.0,32.0,1.0,False
+2026-02-28,ACC-1059,Union Bank LLC,44.4,62.0,18.0,15.0,94.0,False
+2026-02-28,ACC-1094,Zenith Holdings,44.2,80.0,19.0,51.0,13.0,False
+2026-02-28,ACC-1039,North Airlines Inc.,44.1,62.0,25.0,80.0,11.0,False
+2026-02-28,ACC-1070,Solstice Media Ltd,43.8,62.0,45.0,14.0,28.0,False
+2026-02-28,ACC-1073,Vertex Holdings Ltd,43.8,80.0,15.0,13.0,57.0,False
+2026-02-28,ACC-1080,North Systems Ltd,43.8,0.0,65.0,96.0,44.0,False
+2026-02-28,ACC-1064,Alder Logistics Inc.,42.6,0.0,83.0,47.0,43.0,False
+2026-02-28,ACC-1012,Zenith Energy PLC,42.2,0.0,75.0,61.0,45.0,False
+2026-02-28,ACC-1004,Vertex Retail Group Inc,41.6,62.0,31.0,22.0,38.0,False
+2026-02-28,ACC-1079,Vertex Media PLC,41.6,0.0,60.0,72.0,65.0,False
+2026-02-28,ACC-1021,Dunmore Payments Inc,41.2,0.0,66.0,79.0,42.0,False
+2026-02-28,ACC-1104,Meridian Energy Incorporated,41.1,38.0,64.0,33.0,3.0,False
+2026-02-28,ACC-1051,Vertex Bank Inc.,39.0,62.0,14.0,8.0,75.0,False
+2026-02-28,ACC-1089,Cobalt Telecom Inc,38.6,0.0,73.0,24.0,63.0,True
+2026-02-28,ACC-1047,Everline Media Inc,38.3,62.0,26.0,41.0,9.0,True
+2026-02-28,ACC-1005,Brightwater Holdings Ltd,38.0,38.0,,,,False
+2026-02-28,ACC-1116,Vantage Telecom,38.0,38.0,,,,False
+2026-02-28,ACC-1113,Everline Energy Inc.,36.8,0.0,59.0,29.0,79.0,False
+2026-02-28,ACC-1096,Pinnacle Mutual PLC,36.2,0.0,42.0,55.0,88.0,False
+2026-02-28,ACC-1025,Quill Payments PLC,36.0,0.0,57.0,86.0,21.0,False
+2026-02-28,ACC-1030,Meridian Health Ltd.,36.0,62.0,12.0,44.0,23.0,False
+2026-02-28,ACC-1000,Vertex Stores LLC,35.6,0.0,63.0,26.0,64.0,False
+2026-02-28,ACC-1076,Brightwater Mutual Incorporated,35.6,62.0,6.0,3.0,76.0,False
+2026-02-28,ACC-1081,Redwood Retail Group Group,32.4,38.0,22.0,49.0,27.0,False
+2026-02-28,ACC-1109,Zenith Media LLC,31.1,38.0,23.0,12.0,53.0,False
+2026-02-28,ACC-1024,Granite Energy LLC,30.4,0.0,36.0,52.0,67.0,False
+2026-02-28,ACC-1007,Zenith Mutual Ltd.,29.8,0.0,55.0,64.0,6.0,False
+2026-02-28,ACC-1101,North Retail Group Ltd.,26.6,38.0,9.0,9.0,59.0,False
+2026-02-28,ACC-1038,Brightwater Insurance Inc,26.2,38.0,10.0,39.0,24.0,False
+2026-02-28,ACC-1054,Iron Holdings Group,25.8,38.0,17.0,7.0,37.0,False
+2026-02-28,ACC-1075,Alder Health Ltd.,23.2,0.0,53.0,6.0,25.0,False
+2026-02-28,ACC-1017,Thornton Telecom,22.0,0.0,38.0,25.0,33.0,False
+2026-02-28,ACC-1086,Quill Energy Ltd,21.1,0.0,5.0,30.0,99.0,False
+2026-02-28,ACC-1034,Harbor Systems Group,19.7,0.0,13.0,1.0,100.0,False
+2026-02-28,ACC-1031,Union Stores Inc,17.5,0.0,2.0,20.0,92.0,False
+2026-02-28,ACC-1106,Everline Telecom LLC,17.3,0.0,29.0,28.0,20.0,False
+2026-02-28,ACC-1078,Iron Bank Incorporated,15.9,0.0,3.0,87.0,12.0,False
+2026-02-28,ACC-1006,Cobalt Stores Inc.,15.0,0.0,8.0,11.0,70.0,False
+2026-02-28,ACC-1020,Redwood Holdings Ltd.,14.4,0.0,7.0,19.0,61.0,False
+2026-02-28,ACC-1090,Dunmore Telecom Group,8.9,0.0,4.0,21.0,29.0,False
+2026-02-28,ACC-1049,Iron Systems,5.2,0.0,1.0,18.0,14.0,False
+2026-02-28,ACC-1008,Quill Bank PLC,0.0,0.0,,,,True
+2026-02-28,ACC-1015,North Payments Inc,0.0,0.0,,,,False
+2026-02-28,ACC-1016,Pinnacle Bank Inc,0.0,0.0,,,,False
+2026-02-28,ACC-1028,Thornton Logistics Inc.,0.0,0.0,,,,False
+2026-02-28,ACC-1041,Dunmore Bank Inc,0.0,0.0,,,,False
+2026-02-28,ACC-1055,Sable Financial Inc.,0.0,0.0,,,,False

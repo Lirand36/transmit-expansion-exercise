@@ -36,6 +36,10 @@ python run.py
 
 **A deeper change to try:** switch the AI off (`ai.enabled: false` in `config.yaml`) and run again. Leads with messy names are no longer tied to accounts, so 2 accounts drop out of the Q1 list, 2 others come in, and the pipeline moves from $1.60M to $1.74M. Set it back to `true` and run again to return to the plan.
 
+## How well does the ranking predict?
+
+`python backtest.py` rebuilds the same signals and score at each month end from Oct 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.51, where 0.5 is a coin flip. Only 10 accounts expanded in that window, too few to learn weights from, so the ranking rests on business logic. Details per account are in `output/backtest.csv`.
+
 ## If the run stops
 
 When the AI is unsure about a lead, the run stops before building a new plan. Open `data/review_queue.csv`, set `status` to `decided` and fill `decided_account_id` (leave it blank for "not a customer"), `decided_by` and `decided_on`. Then run again. Each decision is saved and reused.
@@ -45,6 +49,7 @@ When the AI is unsure about a lead, the run stops before building a new plan. Op
 ```
 config.yaml         every assumption, in one place
 run.py              runs the whole pipeline
+backtest.py         tests the ranking against past expansion deals
 src/                clean, check, match (code + AI), signals, score, export
 data/raw/           the 4 CSVs as received
 data/lead_labels.csv    answer list used to measure the AI
