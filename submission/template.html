@@ -159,7 +159,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
           <dl class="defs">
             <dt>Expansion</dt><dd>Upsells and new deals with current customers. Renewals don't count.</dd>
             <dt>Next quarter</dt><dd>Q1 2027, January to March.</dd>
-            <dt>Pipeline</dt><dd>New pipeline we can create. The CRM export holds closed deals only (Max confirmed), so today's pipeline can't be known.</dd>
+            <dt>Pipeline</dt><dd>New pipeline we can create in Q1.</dd>
             <dt>Win rate</dt><dd>47 of 69 expansion deals won, Mar 2024 to Jun 2026.</dd>
             <dt>Prediction</dt><dd>Can history predict who expands? No, we tested it. So we prioritize on facts and sales logic, and Q1 is the test.</dd>
           </dl>
@@ -205,11 +205,10 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
 
         <article class="slide">
           <span class="q">What the data can't tell us</span>
-          <h3>Four gaps, each with an owner and a date</h3>
+          <h3>Three gaps, each with an owner and a date</h3>
           <div class="scroll">
             <table>
               <tbody>
-                <tr><td><b>No open deals in the CRM.</b> We can't say how much pipeline exists today.</td><td class="own">RevOps</td><td class="due">13 Nov 2026</td></tr>
                 <tr><td><b>19 customers use us with no contract on record.</b> Free use, or a missing deal?</td><td class="own">RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
                 <tr><td><b>42 of 125 demo requests never became MQLs.</b> Our strongest leads aren't routed.</td><td class="own">Marketing Ops</td><td class="due">30 Nov 2026</td></tr>
                 <tr><td><b>21 accounts have no product link.</b> Their usage is unknown.</td><td class="own">Customer Success</td><td class="due">18 Dec 2026</td></tr>
@@ -351,7 +350,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
           <thead><tr><th>Table</th><th>One row =</th><th>Why it's built this way</th></tr></thead>
           <tbody>
             <tr><td>Accounts</td><td>one account</td><td>From the CRM. The list of customers.</td></tr>
-            <tr><td>Deals</td><td>one deal, as it looked on the day we saved it</td><td>From the CRM. Saved every month, so open deals and lost renewals stay visible. Today's export has closed deals only.</td></tr>
+            <tr><td>Deals</td><td>one deal, as it looked on the day we saved it</td><td>From the CRM. Saved every month, so every change, like a lost renewal, stays visible.</td></tr>
             <tr><td>Leads</td><td>one lead</td><td>From the marketing platform, as they arrive.</td></tr>
             <tr><td>Product usage</td><td>one customer in one month</td><td>From the product itself, as it arrives.</td></tr>
             <tr><td>Account ↔ product</td><td>one account linked to its product login</td><td>21 accounts have no link today. A fix is made once and kept.</td></tr>
@@ -470,7 +469,6 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
         <table class="memo">
           <thead><tr><th>What's broken</th><th>What the plan does now</th><th>Fix at the source</th><th>Owner</th><th>Due</th></tr></thead>
           <tbody>
-            <tr><td><b>No open deals in the CRM export</b>, and it stops on 16 Jun 2026. Max confirmed it's a closed-only extract.</td><td>Sizes the pipeline we could <i>create</i> in Q1, not what exists today.</td><td>Export open deals too, and pull daily.</td><td>RevOps</td><td class="due">13 Nov 2026</td></tr>
             <tr><td><b>Customers using the product with no contract on record.</b> 12 never had a won deal. 7 more lost their last renewal.</td><td>Ranked like everyone else, marked “RevOps: confirm contract”.</td><td>No product access without a live contract in the CRM.</td><td>RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
             <tr><td><b>21 accounts with no product link.</b> 19 of them have paid us. 2 have no deals and no usage.</td><td>Usage left blank, never guessed. Shown as a risk.</td><td>Product link required when an account goes live.</td><td>Customer Success</td><td class="due">18 Dec 2026</td></tr>
             <tr><td><b>Lead company names typed freely.</b> 150 of 900 don't match an account exactly.</td><td>Code matches the clear ones, AI the messy ones, a person the unsure ones.</td><td>Match by email domain on the form.</td><td>Marketing Ops</td><td class="due">29 Jan 2027</td></tr>
@@ -486,8 +484,6 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
     <div class="card" style="margin-top:20px">
       <h2>What we refused to answer</h2>
       <div class="qa">
-        <span class="q">How much pipeline do we have today?</span>
-        <p>Not answerable: the CRM export has no open deals. We answer how much we could create in Q1 ($1.6M on 24 accounts) instead.</p>
         <span class="q">Are the 19 customers with no contract on record (12 + 7) using us for free?</span>
         <p>We can't tell a free user from a deal missing in the CRM. Both are money, so we flag them and don't claim lost revenue.</p>
         <span class="q">Which accounts will expand on their own?</span>

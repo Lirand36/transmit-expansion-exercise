@@ -405,7 +405,6 @@ const DATA = /*DATA*/null;
     $("actions").innerHTML = [
       ready ? `<li><b>Sales:</b> open expansion opportunities on the ${ready} ready accounts (${money(P.pipeline - P.unconfirmed)}).</li>` : "",
       conf.length ? `<li><b>RevOps:</b> confirm the contract on ${conf.length} accounts (${money(P.unconfirmed)}) that use the product with no current contract on record, before sales calls them.</li>` : "",
-      `<li><b>RevOps:</b> check the CRM for deals already open on these accounts. Our CRM export shows closed deals only, up to Jun 2026.</li>`,
     ].join("");
 
     // Changed vs base plan
