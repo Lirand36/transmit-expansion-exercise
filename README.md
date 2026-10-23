@@ -2,16 +2,17 @@
 
 GTM Engineer take-home exercise, Transmit Security.
 
-**The answer:** four plays for Q1 2027, each with named accounts, $ at stake and an owner. $5.9M is on the table, and $2.6M comes up for renewal.
+**The answer:** two plays to act on now, two to validate first, and one revenue risk to protect. Each has named accounts, an owner, a next action, and a $ figure that says what it measures.
 
-| Play | Owner | Accounts | $ at stake |
-| --- | --- | --- | --- |
-| Price to usage: they pay less per active user than peers | Sales | 19 | $1.6M gap to peer price, per year |
-| Land and expand: landed in the last 12 months, not expanded yet | Customer Success | 12 | $1.2M, one typical expansion deal each |
-| Expand at renewal: deals from Q1 2026 come up again | Sales + CS | 20 | $2.6M renewing |
-| Recover revenue: use the product without a current contract | RevOps + Finance, CS | 19 | $3.1M usage at peer price, per year |
+| Group | Play | Owner | Accounts | $ figure |
+| --- | --- | --- | --- | --- |
+| Act now | Price to usage | Sales | 19 | $1.6M gap to peer pricing per year |
+| Act now | Land and expand | Customer Success | 12 | landed in the last 12 months, not expanded yet |
+| Validate first | Q1 expansion window | Sales + CS | 20 | $2.6M prior contract value, not expansion value |
+| Validate first | Recover revenue | RevOps + Finance + CS | 19 | $3.1M usage value at peer pricing |
+| Protect | Paid, but no usage | CS + RevOps | 19 | $7.5M paid so far, at risk at renewal |
 
-$ at stake is money on the table, not a forecast. For scale, expansion booked $223k to $391k a quarter.
+The figures measure different things, so they are never added up, and none is a forecast. For scale, expansion booked $223k to $391k a quarter.
 
 ## Open it (no install)
 
@@ -20,7 +21,7 @@ Open these files in any browser:
 | File | What it is |
 | --- | --- |
 | `submission/index.html` | **Start here.** Presentation, data model, AI component, data-quality memo, and how I used AI. |
-| `demo/index.html` | The Q1 plan: four plays, their accounts and owners. |
+| `demo/index.html` | The Q1 plan: the plays, their accounts, owners and next actions. |
 
 ## Run it (Python 3.9 or newer)
 
@@ -31,7 +32,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-`run.py` rebuilds everything from the 4 CSVs in `data/raw/`: data checks, lead matching, account signals, the four plays, and both pages. Refresh the browser to see the result. Each run prints what moved since the last run.
+`run.py` rebuilds everything from the 4 CSVs in `data/raw/`: data checks, lead matching, account signals, the plays, and both pages. Refresh the browser to see the result. Each run prints what moved since the last run.
 
 **No API key needed.** The AI's answers are saved in `output/ai_cache.json`, so a run reuses them. A key is only needed when new lead names appear: set `GEMINI_API_KEY` first. To run without the AI, set `ai.enabled: false` in `config.yaml`.
 
@@ -42,7 +43,7 @@ python run.py
 | Peer price (median or cautious), region and segment | Buttons on the plan page |
 | Peer price, months of spend used, the target quarter, currency rates, AI on or off | `config.yaml`, then `python run.py` |
 
-**A change to try live:** set `plays.benchmark: low` in `config.yaml` and run again. Peers are then the cheapest quarter of customers, so the price gaps shrink and $ on the table drops from $5.9M to $4.0M. Set it back to `median` to return to the plan.
+**A change to try live:** set `plays.benchmark: low` in `config.yaml` and run again. Peers are then the cheapest quarter of customers, so price to usage drops from $1.6M to $0.4M and recover revenue from $3.1M to $2.1M. Set it back to `median` to return to the plan.
 
 ## Why plays, not a predictive score
 

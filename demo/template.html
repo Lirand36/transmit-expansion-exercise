@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* A CRO work plan: four plays, the money in each, who owns it. Accounts one click away. */
+/* A CRO work plan: plays grouped by how sure we are, what each $ figure means, who owns it. Accounts one click away. */
 :root {
   --bg: #f4f6f9;
   --surface: #ffffff;
@@ -64,7 +64,15 @@ button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-v
 .seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
 .seg .num { font-size: 0.72rem; opacity: 0.8; margin-left: 4px; }
 
-.plays { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
+.group { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.group-head { display: flex; flex-direction: column; gap: 2px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
+.group-head.validate { border-color: var(--warn); } .group-head.protect { border-color: var(--muted); }
+.group-head b { font: 700 0.95rem var(--font-display); }
+.play .tag { align-self: flex-start; font-size: 0.72rem; font-weight: 600; padding: 1px 8px; border-radius: 99px; background: var(--t3-soft); color: var(--muted); }
+.play .sub { font-size: 0.78rem; color: var(--muted); }
+.play .next { font-size: 0.84rem; border-top: 1px dashed var(--line); padding-top: 6px; }
+.fixes td.due { white-space: nowrap; font-family: var(--font-data); }
 .play { text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
   padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; cursor: pointer; min-width: 0; }
 .play:hover { border-color: var(--accent); }
@@ -72,9 +80,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-v
 .play .who { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
 .play h3 { font: 600 1.05rem var(--font-display); margin: 0; }
 .play .usd { font: 700 1.7rem/1.1 var(--font-display); color: var(--accent); }
-.play .n { font-size: 0.85rem; color: var(--muted); }
 .play .why { font-size: 0.86rem; }
-.play .flag { font-size: 0.8rem; color: var(--warn); }
 
 .bar { display: flex; gap: 12px 24px; flex-wrap: wrap; align-items: center; justify-content: space-between; font-size: 0.86rem; }
 .risk { color: var(--warn); max-width: 80ch; }
@@ -95,9 +101,8 @@ td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
 .list { margin-top: 20px; }
 .foot { margin-top: 14px; }
 
-@media (max-width: 960px) { .plays { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 960px) { .groups { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 520px) {
-  .plays { grid-template-columns: minmax(0, 1fr); }
   .headline { font-size: 1.25rem; }
   .answer { padding: 18px 16px; }
 }
@@ -115,9 +120,9 @@ td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
       <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
     </div>
     <p class="headline" id="headline"></p>
-    <div class="plays" id="plays"></div>
+    <div class="groups" id="plays"></div>
     <div class="bar">
-      <span class="risk" id="risk"></span>
+      <span class="note">Each $ figure measures something different, so they are never added up. None is a forecast.</span>
       <span class="lever">Peer price
         <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
       </span>
@@ -130,6 +135,19 @@ td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
       <table>
         <thead><tr><th>#</th><th>Account</th><th>Why</th><th class="r">Active users</th><th>Owner</th><th class="r" id="usd-head">$ at stake</th></tr></thead>
         <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card list">
+    <div class="card-head"><h2>Data to fix: part of the plan</h2><span class="note">Each one unblocks a play</span></div>
+    <div class="scroll">
+      <table class="fixes">
+        <thead><tr><th>What's broken</th><th>Unblocks</th><th>Owner</th><th>Due</th><th>Done when</th></tr></thead>
+        <tbody>
+          <tr><td>No contract end dates in the CRM</td><td>Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Every won deal has a start and end date</td></tr>
+          <tr><td>Product used with no current contract on record</td><td>Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each account marked paying, missing deal, or free</td></tr>
+          <tr><td>Paying accounts with no product usage linked</td><td>Paid, but no usage</td><td>Customer Success</td><td class="due">18 Dec 2026</td><td>Each account linked to its tenant, or confirmed unused</td></tr>
+        </tbody>
       </table>
     </div>
   </div>
@@ -147,21 +165,34 @@ const DATA = /*DATA*/null;
   const short = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k" : String(Math.round(n));
   $("asof").textContent = new Date(DATA.asOf + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
-  const within6 = Math.round(DATA.facts.expansionWithin6Months * 100);
-  // The four plays. "recover" joins two tracks: contract check and win-back. Renewal $ is revenue coming up, not added to the total.
+  const pct = v => Math.round(v * 100) + "%";
+  const GROUPS = [
+    { key: "now", title: "Act now", note: "Opportunities the data supports today", cls: "" },
+    { key: "validate", title: "Validate, then act", note: "Money that needs checking first", cls: "validate" },
+    { key: "protect", title: "Protect revenue", note: "Before renewals", cls: "protect" },
+  ];
+  // Each play: its evidence, what its $ means, and the next action. Built from the rows so filters and peer price apply.
   const PLAYS = [
-    { key: "price", plays: ["price"], title: "Price to usage", who: "Sales",
-      why: "They pay less per active user than peers in their segment.", step: "Next step: pricing conversation, biggest gap first.",
-      usd: "Gap to peer price, per year", inTotal: true },
-    { key: "land", plays: ["land"], title: "Land and expand", who: "Customer Success",
-      why: `${within6}% of past expansion deals opened within 6 months of the first deal.`, step: "Next step: expansion call. From now on, every new customer gets one by day 90.",
-      usd: "One typical expansion deal", inTotal: true },
-    { key: "renewal", plays: ["renewal"], title: "Expand at renewal", who: "Sales + Customer Success",
-      why: "Their deals from Q1 2026 come up again in Q1 2027.", flag: "No contract end date in the CRM: confirm the dates.",
-      step: "Next step: put expansion on the renewal agenda.", usd: "Revenue renewing", inTotal: false },
-    { key: "recover", plays: ["contract", "winback"], title: "Recover revenue", who: "RevOps + Finance, CS",
-      why: "They use the product without a current contract.", flag: "Either the CRM is missing deals, or they use us for free.",
-      step: "Next step: RevOps confirms contracts; Customer Success wins back lost renewals.", usd: "Usage at peer price, per year", inTotal: true },
+    { key: "price", group: "now", n: "01", plays: ["price"], title: "Price to usage", who: "Sales", tag: "Commercial expansion",
+      usd: "Gap to peer pricing, per year", sub: "Gap to peer pricing per year · not forecast revenue",
+      evidence: L => `${L.length} paying accounts pay less per active user than peers in their segment.`,
+      next: L => L.length ? `Validate pricing comparability, then build account proposals. Start with ${L[0].name} (${money(L[0].atStake)}).` : "" },
+    { key: "land", group: "now", n: "02", plays: ["land"], title: "Land and expand", who: "Customer Success", tag: "Early expansion motion", count: true,
+      usd: "Typical expansion deal", sub: "Landed in the last 12 months, not expanded yet",
+      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of past expansion deals opened within 90 days of the first deal, ${pct(DATA.facts.expansionWithin6Months)} within 6 months.`,
+      next: () => "Expansion discovery call for each. From now on, every new customer gets one within 90 days of signing." },
+    { key: "renewal", group: "validate", n: "03", plays: ["renewal"], title: "Q1 expansion window", who: "Sales + Customer Success", tag: "Validate dates",
+      usd: "Prior contract value", sub: "Prior contract value of the cohort · not expansion value",
+      evidence: L => `${L.length} customers signed deals in Q1 2026, so Q1 2027 may bring renewal talks.`,
+      next: () => "Verify contract end dates, renewal status and owner, then put expansion on the renewal agenda." },
+    { key: "recover", group: "validate", n: "04", plays: ["contract", "winback"], title: "Recover revenue", who: "RevOps + Finance + CS", tag: "Reconcile first",
+      usd: "Usage value at peer pricing", sub: "Usage value at peer pricing · to be validated",
+      evidence: L => `${L.filter(r => r.play === "contract").length} accounts use the product with no recorded deal; ${L.filter(r => r.play === "winback").length} lost their renewal but are still active.`,
+      next: () => "Reconcile contracts, billing and tenant ownership before any sales outreach." },
+    { key: "risk", group: "protect", n: "Risk", plays: ["risk"], title: "Paid, but no usage", who: "Customer Success + RevOps", tag: "Revenue at risk",
+      usd: "Paid so far", sub: "Paid so far · at risk at renewal",
+      evidence: L => `${L.length} paying accounts show no product usage at all.`,
+      next: () => "Fix the product link and check real adoption before their renewals." },
   ];
   let F = { region: "all", segment: "all", bench: DATA.benchmark, play: "price" };
 
@@ -182,26 +213,24 @@ const DATA = /*DATA*/null;
     $("f-seg").innerHTML = [["all", "All segments"], ["Enterprise", "Enterprise"], ["Mid-Market", "Mid-Market"], ["SMB", "SMB"]].map(([v, l]) => opt("segment", v, l)).join("");
     document.querySelectorAll("#bench button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F.bench));
 
-    // Headline: the money on the table (renewal revenue not added, it's already ours)
-    const total = sum(PLAYS.filter(p => p.inTotal).flatMap(of));
     const scope = [F.segment !== "all" ? F.segment : "", F.region !== "all" ? F.region : ""].filter(Boolean).join(" ");
-    const renewing = sum(of(PLAYS.find(p => !p.inTotal)));
-    $("headline").innerHTML = `Q1 2027: four plays on <b>${ids(rows)}${scope ? " " + esc(scope) : ""} accounts</b>. <b>${money(total)}</b> is on the table, and ${money(renewing)} comes up for renewal.`;
+    $("headline").innerHTML = `Q1 2027${scope ? " · " + esc(scope) : ""}: <b>two plays to act on now</b>, two to validate first, and one revenue risk to protect.`;
 
-    $("plays").innerHTML = PLAYS.map(p => {
-      const list = of(p);
+    const card = p => {
+      const L = of(p);
       return `<button class="play" data-k="${p.key}" aria-pressed="${F.play === p.key}">
-        <span class="who">${p.who}</span><h3>${p.title}</h3>
-        <span class="usd">${money(sum(list))}</span><span class="n">${list.length} accounts · ${p.usd.toLowerCase()}</span>
-        <span class="why">${p.why}</span>${p.flag ? `<span class="flag">⚠ ${p.flag}</span>` : ""}</button>`;
-    }).join("");
-
-    $("risk").textContent = `⚠ Also: ${DATA.noUsage.accounts} paying accounts (${money(DATA.noUsage.paidUsd)} paid so far) show no product usage. Customer Success fixes the product link before their renewals.`;
+        <span class="who">${p.n} · ${p.who}</span><h3>${p.title}</h3><span class="tag">${p.tag}</span>
+        <span class="why">${p.evidence(L)}</span>
+        <span class="usd">${p.count ? L.length + " accounts" : money(sum(L))}</span><span class="sub">${p.sub}</span>
+        <span class="next"><b>Next:</b> ${esc(p.next(L))}</span></button>`;
+    };
+    $("plays").innerHTML = GROUPS.map(g => `<div class="group"><div class="group-head ${g.cls}"><b>${g.title}</b><span class="note">${g.note}</span></div>
+      ${PLAYS.filter(p => p.group === g.key).map(card).join("")}</div>`).join("");
 
     // The accounts behind the selected play
     const P = PLAYS.find(p => p.key === F.play), list = of(P);
-    $("list-title").textContent = `${P.title}: ${list.length} accounts · ${money(sum(list))}`;
-    $("list-step").textContent = P.step;
+    $("list-title").textContent = `${P.title}: ${list.length} accounts` + (P.count ? "" : ` · ${money(sum(list))}`);
+    $("list-step").textContent = P.sub;
     $("usd-head").textContent = P.usd;
     $("rows").innerHTML = list.map((r, i) => {
       const trend = r.growth == null ? "" : `<span class="trend ${r.growth >= 0 ? "up" : "down"}">${r.growth >= 0 ? "▲" : "▼"}${Math.abs(Math.round(r.growth * 100))}%</span>`;
@@ -214,7 +243,7 @@ const DATA = /*DATA*/null;
     }).join("") || '<tr><td colspan="6" class="note">No accounts in this filter.</td></tr>';
 
     const b = Object.entries(DATA.bookedByQuarter).slice(-3).map(([, v]) => money(v));
-    $("foot").textContent = `$ at stake is money on the table, not a forecast. For scale: expansion booked ${b.join(", ")} in each of the last three quarters.`;
+    $("foot").textContent = `Forecast context: a historical model estimates about ${money(DATA.facts.forecast)} of new expansion pipeline from its top accounts, but it predicts little better than chance. For scale, the whole company booked ${b.join(", ")} of expansion in the last three quarters. The plays above are opportunities and risks, not forecasts.`;
   }
 
   $("plays").addEventListener("click", e => { const b = e.target.closest(".play"); if (b) { F.play = b.dataset.k; render(); } });

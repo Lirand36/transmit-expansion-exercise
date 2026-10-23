@@ -82,7 +82,11 @@ def main():
     for name, g in p.groupby("play", sort=False):
         print(f"  {name:<9} {len(g):>3} accounts  ${g['at_stake'].sum():>12,.0f}")
 
-    export_demo.run(tables, matches, sig, by_bench, hist, plays.facts(tables["opportunities"]), result, cfg,
+    # Forecast context: the score's top 20% x typical expansion deal x share of customers who open one a quarter
+    mid = sizes[sizes["basis"] == "converted to USD"].set_index("segment")["mid"]
+    forecast = float(ranked.loc[ranked["tier"] == 1, "segment"].map(mid).sum() * hist["opp_rate"])
+    print(f"  Forecast context (score's top 20%, past rates): ${forecast:,.0f} of expansion pipeline")
+    export_demo.run(tables, matches, sig, by_bench, hist, {**plays.facts(tables["opportunities"]), "forecast": forecast}, result, cfg,
                     BASE / "output" / "demo_data.json")
     print("\nPlan data written to output/demo_data.json")
     runpy.run_path(str(BASE / "demo" / "build_page.py"))
@@ -100,8 +104,10 @@ def show_moves(p):
         print(f"  + {name} joins {play}")
     for play, name in sorted(key(old) - key(p)):
         print(f"  - {name} leaves {play}")
-    o, n = old[old["play"] != "renewal"]["at_stake"].sum(), p[p["play"] != "renewal"]["at_stake"].sum()
-    print(f"  On the table: ${o:,.0f} -> ${n:,.0f}")
+    for play in p["play"].unique():
+        o, n = old.loc[old["play"] == play, "at_stake"].sum(), p.loc[p["play"] == play, "at_stake"].sum()
+        if round(o) != round(n):
+            print(f"  {play}: ${o:,.0f} -> ${n:,.0f}")
 
 
 if __name__ == "__main__":

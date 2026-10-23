@@ -1,14 +1,15 @@
-"""Step 5: the Q1 plan as plays. Each play = one fact from the data, named accounts, $ at stake, an owner.
+"""Step 5: the Q1 plan as plays. Each play = one fact from the data, named accounts, a $ figure, an owner.
 
-$ at stake is money on the table, not a forecast:
+The $ figures measure different things, so they are never added up. None is a forecast:
 Price to usage      paying customers who pay less per active user than peers in their segment (last 12 months).
                     $ = (peer $ per user - their $ per user) x active users.
-Expand at renewal   paying customers whose deals closed in the same quarter a year before the target quarter.
-                    $ = what those deals were worth (the revenue that comes up again).
+Q1 expansion window paying customers whose deals closed in the same quarter a year before the target quarter.
+                    $ = what those deals were worth (prior contract value, not expansion value).
 Land and expand     customers who landed in the last 12 months, haven't expanded yet and aren't in play 1.
-                    $ = one typical past expansion deal in their segment.
+                    Shown as a count of accounts; sorted by one typical past expansion deal in their segment.
 Recover revenue     accounts using the product with no won deal (contract check) or after a lost renewal (win-back).
-                    $ = their active users x peer $ per user.
+                    $ = their active users x peer $ per user (to be validated).
+Risk                paying accounts with no product usage linked. $ = what they paid so far.
 The peer benchmark is the segment median by default, or the 25th percentile (config: plays.benchmark).
 """
 
@@ -35,7 +36,7 @@ def run(sig, opps, sizes, cfg):
         rows.append({"play": "price", "account_id": a, "at_stake": v,
                      "fact": f"Pays ${per_user[a]:.2f} per active user; peers pay ${bench[exp.at[a, 'segment']]:.2f}"})
 
-    # 2. Expand at renewal: deals won in the target quarter, one year earlier
+    # 2. Q1 expansion window: deals won in the target quarter, one year earlier
     q_start = pd.Timestamp(cfg["dates"]["target_quarter_start"]) - pd.DateOffset(years=1)
     q_end = pd.Timestamp(cfg["dates"]["target_quarter_end"]) - pd.DateOffset(years=1)
     won = opps[opps["stage"] == "Closed Won"]
@@ -62,6 +63,11 @@ def run(sig, opps, sizes, cfg):
             rows.append({"play": track, "account_id": a, "at_stake": bench[r["segment"]] * r["mau_now"],
                          "fact": why + (f" ({r['last_deal']})" if pd.notna(r["last_deal"]) else "")})
 
+    # Risk: paying accounts with no usage linked
+    for a, r in s[s["flag_no_usage"]].iterrows():
+        rows.append({"play": "risk", "account_id": a, "at_stake": r["paid_to_date_usd"],
+                     "fact": "No usage linked" + (f" (last deal: {r['last_deal']})" if pd.notna(r["last_deal"]) else "")})
+
     out = pd.DataFrame(rows)
     out = out.merge(sig[["account_id", "account_name", "segment", "region"]], on="account_id")
     out["at_stake"] = out["at_stake"].round()
@@ -71,7 +77,8 @@ def run(sig, opps, sizes, cfg):
 
 
 def facts(opps):
-    """Two facts the page quotes: how soon after landing expansion happens, and the expansion run rate."""
+    """Facts the page quotes: how soon after landing expansion happens."""
     e = opps[opps["is_expansion"]]
     days = (e["created_date"] - e["first_win_date"]).dt.days
-    return {"expansionWithin6Months": float((days <= 182).mean()), "expansionDeals": int(len(e))}
+    return {"expansionWithin90Days": float((days <= 90).mean()), "expansionWithin6Months": float((days <= 182).mean()),
+            "expansionDeals": int(len(e))}

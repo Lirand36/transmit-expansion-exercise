@@ -16,5 +16,5 @@ step,table,action,rows_before,rows_after,detail
 15,leads,review table,1,0,"0 open, 1 decided by a person"
 16,signals,build one row per account,120,120,97 expansion; 12 contract check; 7 win-back; 19 no usage; 12 shrinking
 17,score,score and tier accounts,120,97,"Tier 1: 19, Tier 2: 29, Tier 3: 49"
-18,plays,build the Q1 plays,120,70,"contract: 12 accounts $1,566,457, land: 12 accounts $1,203,810, price: 19 accounts $1,625,405, renewal: 20 accounts $2,584,070, winback: 7 accounts $1,537,891"
-19,plays,build the Q1 plays,120,64,"contract: 12 accounts $970,630, land: 15 accounts $1,429,380, price: 10 accounts $379,632, renewal: 20 accounts $2,584,070, winback: 7 accounts $1,173,099"
+18,plays,build the Q1 plays,120,89,"contract: 12 accounts $1,566,457, land: 12 accounts $1,203,810, price: 19 accounts $1,625,405, renewal: 20 accounts $2,584,070, risk: 19 accounts $7,466,790, winback: 7 accounts $1,537,891"
+19,plays,build the Q1 plays,120,83,"contract: 12 accounts $970,630, land: 15 accounts $1,429,380, price: 10 accounts $379,632, renewal: 20 accounts $2,584,070, risk: 19 accounts $7,466,790, winback: 7 accounts $1,173,099"
