@@ -33,24 +33,27 @@ signals:
     Webinar: 0.25                   # low: attended content
     Conference: 0.25                # low: badge scan or booth visit
     Content Download: 0.25          # low: research
+  intent_full_points: 3             # intent = points / 3, capped at 100 (one demo request = 33, three or more = 100)
+  headroom_months: 12               # headroom uses what the account paid in the last 12 months, not lifetime
   momentum_months: 3                # user growth measured over the last 3 months
   shrinking_months: 6               # "at risk" flag looks at the last 6 months
   shrinking_threshold: -0.05        # MAU down 5% or more in 6 months = at risk
 
 scoring:
-  weights:                          # how much each signal counts in the score (must add up to 1)
+  weights:                          # how much each signal counts (judgment calls, not proven by data; must add up to 1)
     intent: 0.35
     headroom: 0.35
     momentum: 0.15
     depth: 0.15
   tier1_top_share: 0.20             # top 20% of scores = Tier 1
   tier2_next_share: 0.30            # next 30% = Tier 2, the rest Tier 3
-  include_confirm_contract: true    # rank the accounts that use the product but show no won deal
   no_usage_max_tier: 2              # paying accounts with no usage can't reach Tier 1 (we can't see their use)
   shrinking_max_tier: 2             # shrinking accounts can't reach Tier 1
 
 pipeline:
   deal_size: mid                    # low (25th percentile), mid (median) or high (75th percentile)
+  opp_rate_quarters: 4              # "share of accounts that open a deal" = customers who opened an expansion deal
+                                    # in a quarter, averaged over the last 4 full quarters in the CRM
 
 company_suffixes:                   # legal suffixes removed before matching company names
   - inc

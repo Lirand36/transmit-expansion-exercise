@@ -1,4 +1,4 @@
-// Scoring engine for the live demo page. Same rules as src/signals.py (headroom, intent) and src/score.py.
+// Scoring engine for the live demo page. Same rules as src/signals.py (headroom, intent) and src/score.py (score, tiers, funnel).
 // Kept as a pure function so it can be tested against the Python output (demo/test_engine.js).
 
 // Python and pandas round halves to even; match that so tiers agree exactly.
@@ -34,14 +34,13 @@ function pctRank(values) {
 
 function compute(data, s) {
   const all = data.accounts;
-  const paid = a => (s.convert ? a.paidUsd : a.paidRaw);
 
-  // Headroom: segment median $ per user / account $ per user (signals.py)
+  // Headroom: segment median $ per user / account $ per user, from spend in the last 12 months (signals.py)
+  const paid = a => (s.convert ? a.paidRecentUsd : a.paidRecentRaw);
   const perUser = all.map(a => (a.mau ? paid(a) / a.mau : null));
   const segMedian = {};
   for (const seg of ["Enterprise", "Mid-Market", "SMB"]) {
-    const v = all.map((a, i) => (a.won > 0 && a.segment === seg && perUser[i] !== null ? perUser[i] : null))
-      .filter(x => x !== null);
+    const v = all.map((a, i) => (a.segment === seg && perUser[i] > 0 ? perUser[i] : null)).filter(x => x !== null);
     segMedian[seg] = median(v);
   }
 
@@ -50,18 +49,15 @@ function compute(data, s) {
       .reduce((t, [src, n]) => t + n * (s.sourceWeights[src] !== undefined ? s.sourceWeights[src] : 0.5), 0);
     const headroom = perUser[i] !== null && perUser[i] > 0 ? segMedian[a.segment] / perUser[i] : null;
     return { ...a, intent, headroom };
-  }).filter(a => a.inScope && (s.includeConfirm || !a.confirm));
-
-  // Using the product with $0 paid on record = the most headroom possible (score.py)
-  const maxHead = Math.max(...rows.map(r => r.headroom).filter(v => v !== null));
-  rows.forEach(r => { if (r.confirm) r.headroom = maxHead; });
+  }).filter(a => a.inScope);
 
   const cols = { intent: "intent", headroom: "headroom", momentum: "momentum", depth: "depth" };
   for (const [name, col] of Object.entries(cols)) {
     const p = pctRank(rows.map(r => r[col]));
     rows.forEach((r, i) => { r[name + "100"] = p[i] === null ? null : roundHalfEven(p[i] * 100, 0); });
   }
-  rows.forEach(r => { if (r.intent === 0) r.intent100 = 0; });
+  // Intent counts leads: points / intentFull, capped at 100 (score.py)
+  rows.forEach(r => { r.intent100 = roundHalfEven(Math.min(r.intent / s.intentFull, 1) * 100, 0); });
 
   rows.forEach(r => {
     let num = 0, den = 0;
@@ -88,13 +84,21 @@ function compute(data, s) {
   rows.forEach(r => { r.deal = sizes[r.segment][s.dealSize]; r.dealLow = sizes[r.segment].low; r.dealHigh = sizes[r.segment].high; });
   rows.sort((a, b) => a.tier - b.tier || b.score - a.score);
 
+  // Funnel (score.py): accounts x share that open a deal x deal size = pipeline; x win rate = bookings;
+  // the share that closes inside Q1 comes from past deal cycles
+  const h = data.history;
+  const oppRate = s.oppRate != null ? s.oppRate : h.oppRate;
+  const win = s.winRate != null ? s.winRate : data.winRate;
   const sum = (tier, key) => rows.filter(r => r.tier === tier).reduce((t, r) => t + r[key], 0);
-  const pipeline = [1, 2].map(t => ({
-    tier: t, accounts: rows.filter(r => r.tier === t).length,
-    pipeline: sum(t, "deal"), low: sum(t, "dealLow"), high: sum(t, "dealHigh"),
-    expected: sum(t, "deal") * (s.winRate != null ? s.winRate : data.winRate),
-    unconfirmed: rows.filter(r => r.tier === t && (r.confirm || r.lapsed)).reduce((x, r) => x + r.deal, 0),
-  }));
+  const pipeline = [1, 2].map(t => {
+    const ifAll = sum(t, "deal"), created = ifAll * oppRate;
+    return {
+      tier: t, accounts: rows.filter(r => r.tier === t).length, deals: rows.filter(r => r.tier === t).length * oppRate,
+      ifAll, pipeline: created, bookings: created * win, bookingsQ1: created * win * h.closeInQuarter,
+      low: sum(t, "dealLow") * oppRate, high: sum(t, "dealHigh") * oppRate,
+      enterprise: rows.filter(r => r.tier === t && r.segment === "Enterprise").reduce((x, r) => x + r.deal, 0) * oppRate,
+    };
+  });
   return { rows, pipeline };
 }
 

@@ -1,10 +1,12 @@
-"""Step 4: score every in-scope account, put it in a tier, and size the Q1 pipeline.
+"""Step 4: score every expansion account, put it in a tier, and forecast Q1 through the funnel.
 
-Score    each signal becomes 0-100 (its rank among in-scope accounts), then a weighted average.
-         A missing signal is left out and the other weights are scaled up, so nobody is punished for a blank.
+Score    intent = weighted leads / 3, capped at 100. Headroom, momentum, depth = rank among expansion accounts, 0-100.
+         Then a weighted average. The weights are judgment calls. A missing signal is left out and the
+         other weights are scaled up, so nobody is punished for a blank.
 Tiers    top 20% = Tier 1, next 30% = Tier 2, rest = Tier 3. Two caps: no usage data or shrinking use -> Tier 2 at most.
-Pipeline one expansion deal per account, sized at what past expansion deals in its segment closed at.
-         Shown both ways: currency converted to USD, and amounts as recorded.
+Funnel   accounts worked x share that open a deal (history) x deal size = pipeline created.
+         Pipeline x win rate = bookings; the share that closes inside Q1 comes from past deal cycles.
+         Deal size = what past expansion deals in the segment closed at, converted to USD or as recorded.
 """
 
 import pandas as pd
@@ -19,15 +21,12 @@ SIZE_PCT = {"low": 0.25, "mid": 0.50, "high": 0.75}
 def score(sig, cfg):
     sc = cfg["scoring"]
     s = sig.copy()
-    scope = s["in_scope"] & (sc["include_confirm_contract"] | ~s["flag_confirm_contract"])
-    s = s[scope].copy()
-
-    # Using the product but $0 paid on record = the most headroom possible
-    s.loc[s["flag_confirm_contract"], "headroom_ratio"] = s["headroom_ratio"].max()
+    s = s[s["in_scope"]].copy()
 
     for name, col in SIGNALS.items():
         s[f"{name}_0_100"] = (s[col].rank(pct=True) * 100).round(0)
-    s.loc[s["intent_points"] == 0, "intent_0_100"] = 0  # no recent leads = no intent
+    # Intent counts leads instead of ranking them: most accounts have 0 or 1 lead, so a rank would overstate small gaps
+    s["intent_0_100"] = (s["intent_points"] / cfg["signals"]["intent_full_points"]).clip(upper=1).mul(100).round(0)
 
     w = pd.Series(sc["weights"])
     parts = s[[f"{n}_0_100" for n in w.index]]
@@ -68,16 +67,42 @@ def deal_sizes(opps, sig):
     return pd.DataFrame(rows), win_rate
 
 
-def pipeline(ranked, sizes, win_rate, cfg):
+def history(opps, cfg):
+    """What the CRM says about the funnel: how often a customer opens an expansion deal in a quarter,
+    how long deals take, and what expansion has booked per quarter (the run rate to reconcile against)."""
+    exp = opps[opps["is_expansion"]]
+    won = opps[opps["stage"] == "Closed Won"]
+    last_full = (opps["created_date"].max() + pd.Timedelta(days=1)).to_period("Q") - 1
+    quarters = pd.period_range(end=last_full, periods=cfg["pipeline"]["opp_rate_quarters"], freq="Q")
+    rows = []
+    for q in quarters:
+        customers = won.loc[won["close_date"] < q.start_time, "account_id"].unique()
+        opened = exp[exp["created_date"].between(q.start_time, q.end_time) & exp["account_id"].isin(customers)]
+        rows.append({"quarter": str(q), "customers": len(customers), "opened": opened["account_id"].nunique()})
+    rate = pd.DataFrame(rows)
+    # Share of a quarter's new pipeline that also closes in that quarter: a deal with a c-day cycle,
+    # created on a random day of a 90-day quarter, closes inside it with chance (90 - c) / 90.
+    exp_won = exp[exp["stage"] == "Closed Won"]
+    cycle = (exp_won["close_date"] - exp_won["created_date"]).dt.days
+    booked = exp_won.groupby(exp_won["close_date"].dt.to_period("Q"))["amount_usd"].sum()
+    return {"opp_rate": rate["opened"].sum() / rate["customers"].sum(), "opp_rate_by_quarter": rate,
+            "cycle_days": float(cycle.median()), "close_in_quarter": float(((90 - cycle).clip(lower=0) / 90).mean()),
+            "booked_by_quarter": {str(q): float(v) for q, v in booked.items()}}
+
+
+def pipeline(ranked, sizes, win_rate, hist, cfg):
+    """Tier 1 and 2 through the funnel: accounts -> deals opened -> pipeline -> bookings in Q1 and later."""
     size = cfg["pipeline"]["deal_size"]
     rows = []
     for basis, sz in sizes.groupby("basis"):
         per_seg = sz.set_index("segment")
         for tier in [1, 2]:
             accts = ranked[ranked["tier"] == tier]
-            value = accts["segment"].map(per_seg[size]).sum()
+            if_all = accts["segment"].map(per_seg[size]).sum()  # if every account opened a deal
+            created = if_all * hist["opp_rate"]
             rows.append({"basis": basis, "tier": tier, "accounts": len(accts),
-                         "pipeline": round(value), "expected_bookings": round(value * win_rate),
-                         "low": round(accts["segment"].map(per_seg["low"]).sum()),
-                         "high": round(accts["segment"].map(per_seg["high"]).sum())})
+                         "deals_opened": round(len(accts) * hist["opp_rate"], 1),
+                         "pipeline": round(created), "bookings_total": round(created * win_rate),
+                         "bookings_q1": round(created * win_rate * hist["close_in_quarter"]),
+                         "if_every_account_opens": round(if_all)})
     return pd.DataFrame(rows)

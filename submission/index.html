@@ -106,7 +106,7 @@ table.memo td { line-height: 1.45; }
 .ask { margin: 0; padding: 12px 16px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; max-width: 70ch; }
 dl.defs { display: grid; grid-template-columns: max-content 1fr; gap: 12px 24px; margin: 0; font-size: 1.02rem; }
 dl.defs dt { font-weight: 600; } dl.defs dd { margin: 0; max-width: 62ch; }
-.lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
 .lane { border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 8px; }
 .lane.go { border-color: var(--accent); }
 .lane b { font: 700 1.35rem var(--font-display); }
@@ -144,13 +144,13 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
 
         <article class="slide">
           <span class="q">Q1 2027 expansion plan</span>
-          <h3>Work 24 accounts in Q1 to create $1.6M of expansion pipeline.</h3>
+          <h3>Work 19 accounts in Q1. At past rates, 1 to 2 open a deal: $64k of pipeline.</h3>
           <div class="kpis">
-            <div><b>$1.6M</b><span>pipeline to create<br>range $1.1M to $2.3M</span></div>
-            <div><b>$1.1M</b><span>expected bookings<br>at our 68% expansion win rate</span></div>
-            <div><b>24</b><span>accounts<br>6 Enterprise, 13 Mid-Market, 5 SMB</span></div>
+            <div><b>19</b><span>accounts to work<br>2 Enterprise, 12 Mid-Market, 5 SMB</span></div>
+            <div><b>$64k</b><span>new pipeline at past rates<br>each extra deal opened adds about $45k</span></div>
+            <div><b>$297k</b><span>a quarter from all customers, same math<br>actual: $223k to $391k a quarter</span></div>
           </div>
-          <p class="ask"><b>Decision today:</b> approve the 24 accounts and the two lanes on slide 3.</p>
+          <p class="ask"><b>Decision today:</b> approve the 19 accounts and the three tracks on slide 3, and set the Q1 target for how many of them open a deal.</p>
         </article>
 
         <article class="slide">
@@ -159,27 +159,32 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
           <dl class="defs">
             <dt>Expansion</dt><dd>Upsells and new deals with current customers. Renewals don't count.</dd>
             <dt>Next quarter</dt><dd>Q1 2027, January to March.</dd>
-            <dt>Pipeline</dt><dd>New pipeline we can create in Q1.</dd>
-            <dt>Win rate</dt><dd>47 of 69 expansion deals won, Mar 2024 to Jun 2026.</dd>
-            <dt>Prediction</dt><dd>Can history predict who expands? No, we tested it. So we prioritize on facts and sales logic, and Q1 is the test.</dd>
+            <dt>Forecast</dt><dd>Accounts worked → 7.5% open a deal (last 4 quarters) → pipeline → 68% won → 11% of it closes inside Q1. Deals take about 4 months.</dd>
+            <dt>Check</dt><dd>The same math on all 97 paying customers gives $297k a quarter. Expansion actually booked $223k to $391k a quarter.</dd>
+            <dt>Prediction</dt><dd>Can history predict who expands? Barely, we tested it. So we prioritize on facts and sales logic, and Q1 is the test.</dd>
           </dl>
         </article>
 
         <article class="slide">
           <span class="q">The decision</span>
-          <h3>Two lanes: sell now, or confirm the contract first</h3>
+          <h3>Three tracks, three owners</h3>
           <div class="lanes">
             <div class="lane go">
-              <span class="who">Sales · now</span>
-              <b>14 accounts · $861k</b>
-              <p>Open expansion opportunities in January.</p>
-              <p class="sub">Biggest: Vantage Holdings, Solstice Stores, Quill Financial ($176k each).</p>
+              <span class="who">Sales · expand</span>
+              <b>19 accounts</b>
+              <p>Paying customers. Open expansion talks in January, the 4 demo requests first.</p>
+              <p class="sub">Biggest if opened: Everline Logistics and Vantage Holdings ($176k each).</p>
             </div>
             <div class="lane check">
-              <span class="who">RevOps · first</span>
-              <b>10 accounts · $738k</b>
-              <p>They use the product with no current contract on record. Confirm before sales calls.</p>
-              <p class="sub">7 never had a won deal. 3 lost their renewal and later asked us for a demo: Blue Insurance, Vantage Stores, Dunmore Financial. Treat those as win-backs.</p>
+              <span class="who">RevOps with Finance · confirm</span>
+              <b>12 accounts</b>
+              <p>They use the product, but the CRM shows no won deal. Confirm what they pay before anyone sells.</p>
+            </div>
+            <div class="lane check">
+              <span class="who">Customer Success · win back</span>
+              <b>7 accounts</b>
+              <p>They lost their last renewal but still use the product. Win the renewal first.</p>
+              <p class="sub">Largest: Blue Insurance and Vantage Stores.</p>
             </div>
           </div>
         </article>
@@ -191,12 +196,12 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
             <table>
               <thead><tr><th>If we…</th><th class="r">Pipeline</th><th class="r">Bookings</th></tr></thead>
               <tbody>
-                <tr class="base"><td>Base plan: 24 accounts</td><td class="num">$1.60M</td><td class="num">$1.09M</td></tr>
-                <tr><td>Work 30 accounts</td><td class="num">$2.05M</td><td class="num">$1.40M</td></tr>
-                <tr><td>Work 15 accounts</td><td class="num">$0.87M</td><td class="num">$0.60M</td></tr>
-                <tr><td>Use last 12 months' win rate (74%)</td><td class="num">$1.60M</td><td class="num">$1.18M</td></tr>
-                <tr><td>Leave out accounts with no won deal</td><td class="num">$1.71M</td><td class="num">$1.17M</td></tr>
-                <tr><td>Size deals conservatively / ambitiously</td><td class="num">$1.12M / $2.31M</td><td class="num">$0.76M / $1.57M</td></tr>
+                <tr class="base"><td>Base plan: 19 accounts, 7.5% open a deal</td><td class="num">$64k</td><td class="num">$44k</td></tr>
+                <tr><td>1 in 4 accounts open a deal</td><td class="num">$215k</td><td class="num">$146k</td></tr>
+                <tr><td>1 in 2 accounts open a deal</td><td class="num">$430k</td><td class="num">$293k</td></tr>
+                <tr><td>Work 30 accounts / 15 accounts</td><td class="num">$127k / $46k</td><td class="num">$87k / $32k</td></tr>
+                <tr><td>Use last 12 months' win rate (74%)</td><td class="num">$64k</td><td class="num">$48k</td></tr>
+                <tr><td>Size deals conservatively / ambitiously</td><td class="num">$42k / $103k</td><td class="num">$29k / $70k</td></tr>
               </tbody>
             </table>
           </div>
@@ -250,9 +255,10 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
           <div class="scroll">
             <table>
               <tbody>
-                <tr><td>Approve the 24 accounts and the two lanes</td><td class="own">CRO</td></tr>
-                <tr><td>Open expansion opportunities on the 14 ready accounts</td><td class="own">Account owners</td></tr>
-                <tr><td>Confirm contracts on the 10, then hand them to sales</td><td class="own">RevOps</td></tr>
+                <tr><td>Approve the 19 accounts, the three tracks and the Q1 target</td><td class="own">CRO</td></tr>
+                <tr><td>Open expansion talks on the 19, demo requests first</td><td class="own">Account owners</td></tr>
+                <tr><td>Confirm contracts on the 12, then hand them to sales</td><td class="own">RevOps with Finance</td></tr>
+                <tr><td>Win back the 7 lost renewals</td><td class="own">Customer Success</td></tr>
                 <tr><td>Route demo requests from customers to the account owner</td><td class="own">Marketing Ops</td></tr>
                 <tr><td>Run the plan monthly and send it into the CRM</td><td class="own">GTM Engineering</td></tr>
               </tbody>
@@ -469,7 +475,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
         <table class="memo">
           <thead><tr><th>What's broken</th><th>What the plan does now</th><th>Fix at the source</th><th>Owner</th><th>Due</th></tr></thead>
           <tbody>
-            <tr><td><b>Customers using the product with no contract on record.</b> 12 never had a won deal. 7 more lost their last renewal.</td><td>Ranked like everyone else, marked “RevOps: confirm contract”.</td><td>No product access without a live contract in the CRM.</td><td>RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
+            <tr><td><b>Customers using the product with no contract on record.</b> 12 never had a won deal. 7 more lost their last renewal.</td><td>Kept out of the expansion list. The 12 go to a contract check, the 7 to win-back.</td><td>No product access without a live contract in the CRM.</td><td>RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
             <tr><td><b>21 accounts with no product link.</b> 19 of them have paid us. 2 have no deals and no usage.</td><td>Usage left blank, never guessed. Shown as a risk.</td><td>Product link required when an account goes live.</td><td>Customer Success</td><td class="due">18 Dec 2026</td></tr>
             <tr><td><b>Lead company names typed freely.</b> 150 of 900 don't match an account exactly.</td><td>Code matches the clear ones, AI the messy ones, a person the unsure ones.</td><td>Match by email domain on the form.</td><td>Marketing Ops</td><td class="due">29 Jan 2027</td></tr>
             <tr><td><b>MQL date can't be trusted.</b> 59 of 93 outbound leads have one (outbound is never MQL'd). 42 of 125 demo requests never got one.</td><td>MQL ignored. Leads weighted by source instead.</td><td>Fix the scoring and routing rules. Demo requests first.</td><td>Marketing Ops</td><td class="due">30 Nov 2026</td></tr>
@@ -487,7 +493,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
         <span class="q">Are the 19 customers with no contract on record (12 + 7) using us for free?</span>
         <p>We can't tell a free user from a deal missing in the CRM. Both are money, so we flag them and don't claim lost revenue.</p>
         <span class="q">Which accounts will expand on their own?</span>
-        <p>Nothing in the data predicts it better than chance. We tested usage, leads, demo requests, segment and timing against past expansion deals. So the plan prioritizes on facts and sales logic, and Q1 is the test.</p>
+        <p>Nothing in the data predicts it reliably. We tested the ranking against past expansion deals: it does only slightly better than chance, on too few deals to trust. So the plan prioritizes on facts and sales logic, and Q1 is the test.</p>
         <span class="q">Why do existing customers ask for a demo?</span>
         <p>The leads file has no job title or product of interest. The plan names the person who asked, so the rep can find out.</p>
       </div>

@@ -2,7 +2,9 @@
 
 GTM Engineer take-home exercise, Transmit Security.
 
-**The answer:** work 24 accounts in Q1 to create about $1.6M of expansion pipeline (range $1.1M to $2.3M), or about $1.1M in expected bookings.
+**The answer:** work 19 paying customers for expansion in Q1. At past rates (7.5% of customers open an expansion deal in a quarter) that is 1 to 2 deals, about $64k of new pipeline and $44k of bookings, mostly closing in Q2. Each extra account that opens a deal adds about $45k. Two more tracks run beside it: a contract check on 12 accounts that use the product with no won deal (RevOps with Finance), and a win-back of 7 that lost their renewal (Customer Success).
+
+**The check:** the same math on all 97 paying customers gives $297k a quarter. Expansion actually booked $223k, $391k and $263k in the last three quarters.
 
 ## Open it (no install)
 
@@ -30,15 +32,15 @@ python run.py
 
 | What | Where |
 | --- | --- |
-| Accounts the team can work, deal size, win rate, accounts with no won deal, region and segment | Levers on the plan page |
+| Accounts the team can work, share that open a deal, deal size, win rate, region and segment | Levers on the plan page |
 | How much each signal and each lead source counts, currency conversion on or off | "How we rank" tab on the plan page |
-| Currency rates, how far back leads count, what counts as shrinking use, AI on or off | `config.yaml`, then `python run.py` |
+| Currency rates, how far back leads count, how many leads make full intent, months of spend used for headroom, what counts as shrinking use, AI on or off | `config.yaml`, then `python run.py` |
 
-**A deeper change to try:** switch the AI off (`ai.enabled: false` in `config.yaml`) and run again. Leads with messy names are no longer tied to accounts, so 2 accounts drop out of the Q1 list, 2 others come in, and the pipeline moves from $1.60M to $1.74M. Set it back to `true` and run again to return to the plan.
+**A deeper change to try:** switch the AI off (`ai.enabled: false` in `config.yaml`) and run again. Leads with messy names are no longer tied to accounts, so Cascade Energy Group and Westbrook Telecom drop out of the Q1 list, Everline Stores and Harbor Logistics come in, and the pipeline moves from $64k to $61k. Set it back to `true` and run again to return to the plan.
 
 ## How well does the ranking predict?
 
-`python backtest.py` rebuilds the same signals and score at each month end from Jul 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.51, where 0.5 is a coin flip. 21 expansion deals on 18 accounts fall in that window. The other 48 came before product usage data starts (Apr 2025), so they can't be tested. The ranking therefore rests on business logic, and Q1 is the real test. Details per account are in `output/backtest.csv`.
+`python backtest.py` rebuilds the same signals and score at each month end from Jul 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.56, where 0.5 is a coin flip. Headroom alone scores 0.64 and depth 0.60; intent (0.52) and momentum (0.47) show no edge. Only 15 accounts expanded in that window, too few to set the weights from data, so the weights are judgment calls and Q1 is the real test. Expansion deals before Jul 2025 can't be tested: usage data starts in Apr 2025. Details per account are in `output/backtest.csv`.
 
 ## If the run stops
 

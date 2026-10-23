@@ -116,6 +116,16 @@ td.r, th.r { text-align: right; }
 td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
 .acct { font-weight: 600; }
 .meta { color: var(--muted); font-size: 0.8rem; }
+.funnel { display: flex; flex-wrap: wrap; gap: 6px 4px; align-items: center; font-size: 0.86rem; }
+.funnel span { background: var(--t3-soft); padding: 3px 10px; border-radius: 6px; white-space: nowrap; }
+.funnel span b { font-family: var(--font-data); font-weight: 600; }
+.funnel i { color: var(--muted); font-style: normal; }
+.tracks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 20px; }
+.tracks ul { list-style: none; margin: 0; padding: 4px 18px 14px; }
+.tracks li { padding: 8px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.tracks li:last-child { border-bottom: 0; }
+.tracks .why { padding: 10px 18px 0; margin: 0; font-size: 0.86rem; max-width: 70ch; }
+@media (max-width: 760px) { .tracks { grid-template-columns: minmax(0, 1fr); } }
 .pill { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 1px 8px; border-radius: 99px; background: var(--warn-soft); color: var(--warn); margin-top: 4px; white-space: nowrap; }
 details.more { margin-top: 20px; }
 details.more > summary { cursor: pointer; list-style: none; padding: 14px 18px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
@@ -181,10 +191,11 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <p class="headline" id="headline"></p>
       <div class="kpis">
         <div><span class="eyebrow">Accounts to work</span><span class="big" id="k-accts"></span><span class="small" id="k-mix"></span></div>
-        <div><span class="eyebrow">Pipeline to create</span><span class="big accent num" id="k-pipe"></span><span class="small" id="k-range"></span></div>
-        <div><span class="eyebrow">Expected bookings</span><span class="big num" id="k-book"></span><span class="small" id="k-rate"></span></div>
-        <div><span class="eyebrow">Confirm contract first</span><span class="big warn num" id="k-conf"></span><span class="small" id="k-conf2"></span></div>
+        <div><span class="eyebrow">New pipeline in Q1</span><span class="big accent num" id="k-pipe"></span><span class="small" id="k-range"></span></div>
+        <div><span class="eyebrow">Bookings from it</span><span class="big num" id="k-book"></span><span class="small" id="k-rate"></span></div>
+        <div><span class="eyebrow">Check: all customers, same math</span><span class="big num" id="k-base"></span><span class="small" id="k-base2"></span></div>
       </div>
+      <div class="funnel" id="funnel" aria-label="Forecast steps"></div>
       <div>
         <span class="eyebrow">Suggested actions</span>
         <ol class="actions" id="actions"></ol>
@@ -211,11 +222,9 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <span class="note" id="win-note"></span>
       </div>
       <div class="lever">
-        <span class="lbl">Accounts with no won deal on record</span>
-        <div class="seg" role="group" aria-label="Accounts with no won deal on record" id="confirm">
-          <button data-v="1">Include</button><button data-v="0">Leave out</button>
-        </div>
-        <span class="note">They use the product, but the CRM shows no won deal.</span>
+        <label for="opp">Accounts that open a deal <span class="val" id="opp-v"></span></label>
+        <input type="range" id="opp" min="0" max="60" step="0.5">
+        <span class="note" id="opp-note"></span>
       </div>
       <div class="moved">
         <span class="eyebrow">Changed vs base plan</span>
@@ -232,9 +241,23 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       </div>
       <div class="scroll">
         <table>
-          <thead><tr><th>#</th><th>Account</th><th>Why now</th><th class="r" title="Total of all won deals on record (new business, upsells, renewals). Not yearly revenue.">Total bought so far</th><th class="r" title="Active users in Sep 2026, and the change over 3 months">Active users</th><th title="Rep on the account's latest deal">Owner</th><th>Next step</th><th class="r" title="Typical past expansion deal in the same segment">Deal value</th></tr></thead>
+          <thead><tr><th>#</th><th>Account</th><th>Why now</th><th class="r" title="Won deals closed in the last 12 months. Lifetime total below.">Paid, last 12 months</th><th class="r" title="Active users in Sep 2026, and the change over 3 months">Active users</th><th title="Rep on the account's latest deal">Owner</th><th>Next step</th><th class="r" title="Typical past expansion deal in the same segment, if this account opens one">Deal if opened</th></tr></thead>
           <tbody id="rows"></tbody>
         </table>
+      </div>
+    </div>
+
+    <!-- 4. The two other tracks -->
+    <div class="tracks">
+      <div class="card">
+        <div class="card-head"><h2 id="c-title"></h2><span class="note">Owner: RevOps with Finance</span></div>
+        <p class="why">They use the product, but the CRM shows no won deal. Confirm what they pay before anyone sells to them.</p>
+        <ul id="c-list"></ul>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2 id="w-title"></h2><span class="note">Owner: Customer Success</span></div>
+        <p class="why">Their last renewal was lost, yet they still use the product. Win the renewal back first; expansion comes after.</p>
+        <ul id="w-list"></ul>
       </div>
     </div>
   </section>
@@ -254,7 +277,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
           <label class="toggle"><input type="checkbox" id="convert"><span>Convert currencies to USD<br><span class="note">GBP and EUR deals converted at planning rates.</span></span></label>
         </div>
         <div class="explain">
-          <p>Accounts are ranked on four signals. The more weight a signal has, the more it decides who makes the Q1 list. Accounts with shrinking usage or no usage data never make the list.</p>
+          <p>Paying customers are ranked on four signals. The more weight a signal has, the more it decides who makes the Q1 list. The weights are judgment calls: past data is too thin to set them, so Q1 results will. Accounts with shrinking usage or no usage data never make the list.</p>
           <div class="sigs" id="sigs"></div>
           <div class="moved" style="border-top:0;padding-top:0"><span class="eyebrow">Changed vs base plan</span><div class="list" id="moved2"></div></div>
         </div>
@@ -272,7 +295,8 @@ const DATA = /*DATA*/null;
 (function () {
   const D = DATA.defaults;
   const fresh = () => ({ weights: { ...D.weights }, sourceWeights: { ...D.sourceWeights }, tier1: D.tier1, tier2: D.tier2,
-    includeConfirm: D.includeConfirm, convert: D.convert, dealSize: D.dealSize, tier1Count: null, winRate: DATA.winRate });
+    intentFull: D.intentFull, convert: D.convert, dealSize: D.dealSize, tier1Count: null, winRate: DATA.winRate,
+    oppRate: DATA.history.oppRate });
   const $ = id => document.getElementById(id);
   const money = v => v >= 1e6 ? "$" + (v / 1e6).toFixed(2) + "M" : "$" + Math.round(v / 1000) + "k";
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -293,17 +317,19 @@ const DATA = /*DATA*/null;
   const freshPlan = () => ({ ...fresh(), tier1Count: BASE_CAP });
   let S = freshPlan();
   let F = { region: "all", segment: "all" };
-  const W = DATA.winBasis;
+  const W = DATA.winBasis, H = DATA.history;
+  const pct = v => (Math.round(v * 1000) / 10) + "%";
 
   const U = DATA.usageMonths;
   const SEG_WORD = { Enterprise: "Enterprise", "Mid-Market": "Mid-Market", SMB: "SMB" };
   const fmt = n => Math.round(n).toLocaleString("en-US");
   const short = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k" : String(Math.round(n));
-  const strong = (r, k) => r[k + "100"] !== null && r[k + "100"] >= 60;
+  // Strong = top 40% on a ranked signal; for intent, one demo request or more (33 points)
+  const strong = (r, k) => r[k + "100"] !== null && r[k + "100"] >= (k === "intent" ? 33 : 60);
 
   // Each tag carries its own evidence.
   function tagList(r, w) {
-    const ks = SIGNALS.filter(k => strong(r, k) && !(k === "headroom" && r.confirm))
+    const ks = SIGNALS.filter(k => strong(r, k))
       .sort((a, b) => r[b + "100"] * w[b] - r[a + "100"] * w[a]).slice(0, 3);
     return ks.map(k => {
       if (k === "intent") {
@@ -312,7 +338,7 @@ const DATA = /*DATA*/null;
         if (demo) return ["Demo request", `${demo.who} asked for a demo on ${demo.date}.` + (others.length ? ` Also: ${others.join(", ")}.` : "")];
         return ["Recent interest", `${r.touches.length} touch${r.touches.length > 1 ? "es" : ""} in the last 90 days: ${others.join(", ")}.`];
       }
-      if (k === "headroom") return ["Underpaying", `Spends ${Math.round((1 - 1 / r.headroom) * 100)}% less per active user than a typical ${SEG_WORD[r.segment]} customer.`];
+      if (k === "headroom") return ["Underpaying", `Paid ${Math.round((1 - 1 / r.headroom) * 100)}% less per active user in the last 12 months than a typical ${SEG_WORD[r.segment]} customer.`];
       if (k === "momentum") return ["Usage growing", `Active users ${fmt(r.mauPrev)} in ${U.prev} to ${fmt(r.mau)} in ${U.now} (+${Math.round(r.momentum * 100)}%).`];
       return ["Heavy API use", `${fmt(r.depth)} API calls per active user per month, more than ${r.depth100}% of accounts.`];
     });
@@ -320,18 +346,17 @@ const DATA = /*DATA*/null;
   const tags = (r, w) => tagList(r, w).map(([t, tip]) => `<span class="tag" tabindex="0" data-tip="${esc(tip)}">${t}</span>`).join("") || '<span class="note">Solid overall</span>';
 
   function nextStep(r) {
-    if (r.confirm || r.lapsed) return '<span class="step warn">RevOps: confirm contract</span>';
     if (r.touches.some(t => t.source === "Website Demo Request")) return '<span class="step">Follow up on demo</span>';
     return '<span class="step">Open expansion talk</span>';
   }
 
   function rowHtml(r, i, w) {
-    const won = S.convert ? r.paidUsd : r.paidRaw;
+    const recent = S.convert ? r.paidRecentUsd : r.paidRecentRaw, life = S.convert ? r.paidUsd : r.paidRaw;
     const trend = r.momentum === null ? "" : `<span class="trend ${r.momentum >= 0 ? "up" : "down"}">${r.momentum >= 0 ? "▲" : "▼"}${Math.abs(Math.round(r.momentum * 100))}%</span>`;
     return `<tr><td class="rank">${i + 1}</td>
       <td><div class="acct">${esc(r.name)}</div><div class="meta">${esc(r.segment)} · ${esc(r.region)}</div></td>
       <td><span class="tags">${tags(r, w)}</span></td>
-      <td class="r num">${won > 0 ? money(won) : '<span class="none">None on record</span>'}${r.lapsed ? `<div class="none">Renewal lost ${r.lapsed}</div>` : ""}</td>
+      <td class="r num">${recent > 0 ? money(recent) : '<span class="none">None</span>'}<div class="meta">${money(life)} lifetime</div></td>
       <td class="r num">${r.mau ? short(r.mau) + trend : "–"}</td>
       <td class="step">${esc(r.owner)}</td>
       <td>${nextStep(r)}</td>
@@ -339,14 +364,14 @@ const DATA = /*DATA*/null;
   }
 
   const SIG_TEXT = {
-    intent: ["Intent", "Recent interest from the account. A demo request counts most."],
-    headroom: ["Headroom", "Spends less per active user than similar customers, so there is room to grow the contract."],
+    intent: ["Intent", "Recent leads from the account, counted: one demo request = 33, three or more = 100."],
+    headroom: ["Headroom", "Paid less per active user in the last 12 months than similar customers, so there is room to grow the contract."],
     momentum: ["Momentum", "Active users growing over the last 3 months."],
     depth: ["Depth", "Heavy API use. The product is built into how they work."],
   };
   function sigCards(t1, w) {
     $("sigs").innerHTML = SIGNALS.map(k => {
-      const n = t1.filter(r => strong(r, k) && !(k === "headroom" && r.confirm)).length;
+      const n = t1.filter(r => strong(r, k)).length;
       return `<div class="sig"><span class="w">${Math.round(w[k] * 100)}%</span><b>${SIG_TEXT[k][0]}</b><span>${SIG_TEXT[k][1]}</span>
         <span class="n">Strong in ${n} of the ${t1.length} Q1 accounts</span></div>`;
     }).join("");
@@ -357,9 +382,11 @@ const DATA = /*DATA*/null;
     $("win").value = Math.round(S.winRate * 100); $("win-v").textContent = Math.round(S.winRate * 100) + "%";
     $("win-note").textContent = `${W.won} of ${W.deals} expansion deals won, ${W.from} to ${W.to}. Last 12 months: ${Math.round(W.last12 * 100)}%.`;
     const sz = DATA.sizes[S.convert ? "converted to USD" : "as recorded"];
-    $("size-note").textContent = `Per account: Enterprise ${money(sz.Enterprise[S.dealSize])}, Mid-Market ${money(sz["Mid-Market"][S.dealSize])}, SMB ${money(sz.SMB[S.dealSize])}.`;
+    $("size-note").textContent = `Per account: Enterprise ${money(sz.Enterprise[S.dealSize])}, Mid-Market ${money(sz["Mid-Market"][S.dealSize])}, SMB ${money(sz.SMB[S.dealSize])}. Enterprise rests on only ${sz.Enterprise.deals} past deals.`;
     document.querySelectorAll("#size button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === S.dealSize));
-    document.querySelectorAll("#confirm button").forEach(b => b.setAttribute("aria-pressed", (b.dataset.v === "1") === S.includeConfirm));
+    $("opp").value = Math.round(S.oppRate * 200) / 2; $("opp-v").textContent = pct(S.oppRate);
+    const q = H.oppRateByQuarter, qc = q.reduce((a, x) => a + x.customers, 0), qo = q.reduce((a, x) => a + x.opened, 0);
+    $("opp-note").textContent = `History: ${pct(qo / qc)} of customers opened an expansion deal in a quarter (${qo} of ${qc}, ${q[0].quarter} to ${q[q.length - 1].quarter}). The CRM export has closed deals only, so this is a floor.`;
     const w = norm(S);
     for (const [id, key] of [["f-region", "region"], ["f-seg", "segment"]])
       document.querySelectorAll(`#${id} button`).forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F[key]));
@@ -375,43 +402,58 @@ const DATA = /*DATA*/null;
     const all1 = res.rows.filter(r => r.tier === 1);
     const pick = r => (F.region === "all" || r.region === F.region) && (F.segment === "all" || r.segment === F.segment);
     const t1 = all1.filter(pick);
-    const conf = t1.filter(r => r.confirm || r.lapsed);
     const tot = key => t1.reduce((a, r) => a + r[key], 0);
-    const P = { accounts: t1.length, pipeline: tot("deal"), low: tot("dealLow"), high: tot("dealHigh"),
-                expected: tot("deal") * S.winRate, unconfirmed: conf.reduce((a, r) => a + r.deal, 0) };
+    // Same funnel as engine.js, on the filtered accounts
+    const ifAll = tot("deal"), pipe = ifAll * S.oppRate, book = pipe * S.winRate, bookQ1 = book * H.closeInQuarter;
+    const ent = t1.filter(r => r.segment === "Enterprise").reduce((a, r) => a + r.deal, 0);
+    const perDeal = t1.length ? ifAll / t1.length : 0;
     const scope = [F.segment !== "all" ? F.segment : "", F.region !== "all" ? F.region : ""].filter(Boolean).join(" ");
 
-    // Filter buttons carry the money, so they double as the breakdown
+    // Filter buttons carry the account count, so they double as the breakdown
     const opt = (key, v, label) => {
       const g = all1.filter(r => (key === "region" ? (F.segment === "all" || r.segment === F.segment) : (F.region === "all" || r.region === F.region)) && (v === "all" || r[key] === v));
-      return `<button data-v="${v}">${label}<span class="num">${money(g.reduce((a, r) => a + r.deal, 0))}</span></button>`;
+      return `<button data-v="${v}">${label}<span class="num">${g.length}</span></button>`;
     };
     $("f-region").innerHTML = [["all", "All regions"], ["NA", "NA"], ["EMEA", "EMEA"], ["APAC", "APAC"]].map(([v, l]) => opt("region", v, l)).join("");
     $("f-seg").innerHTML = [["all", "All segments"], ["Enterprise", "Enterprise"], ["Mid-Market", "Mid-Market"], ["SMB", "SMB"]].map(([v, l]) => opt("segment", v, l)).join("");
 
     // The answer
-    $("headline").innerHTML = `Work these <b>${P.accounts}${scope ? " " + esc(scope) : ""} accounts</b> for expansion in Q1 2027. They could create about <b>${money(P.pipeline)}</b> of pipeline and <b>${money(P.expected)}</b> in bookings.`;
-    $("k-accts").textContent = P.accounts;
+    const deals = t1.length * S.oppRate;
+    $("headline").innerHTML = `Work these <b>${t1.length}${scope ? " " + esc(scope) : ""} accounts</b> in Q1 2027. At past rates about <b>${deals.toFixed(1)}</b> open a deal: <b>${money(pipe)}</b> of new pipeline and <b>${money(book)}</b> in bookings. Each extra account that opens a deal adds about ${money(perDeal)}.`;
+    $("k-accts").textContent = t1.length;
     $("k-mix").textContent = ["Enterprise", "Mid-Market", "SMB"].map(s => `${t1.filter(r => r.segment === s).length} ${s === "Enterprise" ? "Ent" : s === "Mid-Market" ? "Mid-Mkt" : s}`).join(" · ");
-    $("k-pipe").textContent = money(P.pipeline);
-    $("k-range").textContent = `${money(P.low)} to ${money(P.high)} depending on deal size`;
-    $("k-book").textContent = money(P.expected);
-    $("k-rate").textContent = `at a ${Math.round(S.winRate * 100)}% win rate`;
-    $("k-conf").textContent = conf.length ? money(P.unconfirmed) : "$0";
-    $("k-conf2").textContent = conf.length ? `${conf.length} accounts use the product with no current contract on record` : "No such accounts in the plan";
+    $("k-pipe").textContent = money(pipe);
+    $("k-range").textContent = `${money(ifAll)} if every account opens a deal` + (ent ? `. Enterprise is ${Math.round(ent / ifAll * 100)}% of it` : "");
+    $("k-book").textContent = money(book);
+    $("k-rate").textContent = `${money(bookQ1)} inside Q1, the rest in Q2: deals take about ${Math.round(H.cycleDays / 30)} months`;
+    // Run-rate check: every paying customer through the same funnel, vs what expansion actually booked
+    const allRows = res.rows, booked = Object.entries(H.bookedByQuarter).slice(-3);
+    const baseBook = allRows.reduce((a, r) => a + r.deal, 0) * S.oppRate * S.winRate;
+    $("k-base").textContent = money(baseBook) + " a quarter";
+    $("k-base2").textContent = `${allRows.length} paying customers at the same rates. Actual: ${booked.map(([q, v], i) => money(v) + " in " + q.replace(/^20(\d\d)(Q\d)$/, "$2 '$1") + (i === booked.length - 1 ? " (to mid-June)" : "")).join(", ")}.`;
+    $("funnel").innerHTML = `<span><b>${t1.length}</b> accounts</span><i>→</i><span><b>${deals.toFixed(1)}</b> open a deal (${pct(S.oppRate)})</span><i>→</i><span><b>${money(pipe)}</b> pipeline</span><i>→</i><span><b>${money(book)}</b> won (${Math.round(S.winRate * 100)}%)</span><i>→</i><span><b>${money(bookQ1)}</b> closes in Q1 (${Math.round(H.closeInQuarter * 100)}%)</span>`;
+
+    // The other two tracks (same region and segment filters)
+    const track = k => DATA.accounts.filter(a => a.track === k && pick(a));
+    const trackList = list => list.map(a => `<li><span><span class="acct">${esc(a.name)}</span><div class="meta">${esc(a.segment)} · ${esc(a.region)} · ${a.mau ? short(a.mau) + " active users" : "no usage"}</div></span><span class="meta">${a.lastDeal ? "Last deal: " + esc(a.lastDeal) : "No deal on record"}</span></li>`).join("") || '<li class="note">None in this filter</li>';
+    const cList = track("contract"), wList = track("winback");
+    $("c-title").textContent = `Contract check: ${cList.length} accounts`;
+    $("w-title").textContent = `Win-back: ${wList.length} accounts`;
+    $("c-list").innerHTML = trackList(cList);
+    $("w-list").innerHTML = trackList(wList);
 
     // Suggested actions
-    const ready = t1.length - conf.length;
     $("actions").innerHTML = [
-      ready ? `<li><b>Sales:</b> open expansion opportunities on the ${ready} ready accounts (${money(P.pipeline - P.unconfirmed)}).</li>` : "",
-      conf.length ? `<li><b>RevOps:</b> confirm the contract on ${conf.length} accounts (${money(P.unconfirmed)}) that use the product with no current contract on record, before sales calls them.</li>` : "",
+      t1.length ? `<li><b>Sales:</b> open expansion talks on the ${t1.length} accounts below. Start with the demo requests.</li>` : "",
+      cList.length ? `<li><b>RevOps with Finance:</b> confirm the contract on ${cList.length} accounts that use the product with no won deal on record.</li>` : "",
+      wList.length ? `<li><b>Customer Success:</b> win back ${wList.length} accounts that lost a renewal but still use the product.</li>` : "",
     ].join("");
 
     // Changed vs base plan
     const was = new Set(base.rows.filter(r => r.tier === 1).map(r => r.id)), now = new Set(t1.map(r => r.id));
     const names = new Map([...base.rows, ...res.rows].map(r => [r.id, r.name]));
     const chips = [];
-    const dp = p1.pipeline - base.pipeline[0].pipeline, db = p1.expected - base.pipeline[0].expected;
+    const dp = p1.pipeline - base.pipeline[0].pipeline, db = p1.bookings - base.pipeline[0].bookings;
     if (Math.abs(dp) >= 1) chips.push(`<span class="chip ${dp > 0 ? "up" : "down"}">Pipeline ${dp > 0 ? "+" : "−"}${money(Math.abs(dp))}</span>`);
     if (Math.abs(db) >= 1) chips.push(`<span class="chip ${db > 0 ? "up" : "down"}">Bookings ${db > 0 ? "+" : "−"}${money(Math.abs(db))}</span>`);
     [...now].filter(id => !was.has(id)).forEach(id => chips.push(`<span class="chip up">+ ${esc(names.get(id))}</span>`));
@@ -420,7 +462,7 @@ const DATA = /*DATA*/null;
     sigCards(all1, w);
 
     // The list
-    $("list-title").textContent = `The ${P.accounts}${scope ? " " + scope : ""} accounts to work in Q1`;
+    $("list-title").textContent = `Expansion: the ${t1.length}${scope ? " " + scope : ""} accounts to work in Q1`;
     $("rows").innerHTML = t1.map((r, i) => rowHtml(r, i, w)).join("");
 
 
@@ -437,7 +479,7 @@ const DATA = /*DATA*/null;
   $("cap").addEventListener("input", e => { S.tier1Count = +e.target.value; render(); });
   $("win").addEventListener("input", e => { S.winRate = +e.target.value / 100; render(); });
   $("size").addEventListener("click", e => { if (e.target.dataset.v) { S.dealSize = e.target.dataset.v; render(); } });
-  $("confirm").addEventListener("click", e => { if (e.target.dataset.v) { S.includeConfirm = e.target.dataset.v === "1"; render(); } });
+  $("opp").addEventListener("input", e => { S.oppRate = +e.target.value / 100; render(); });
   for (const k of SIGNALS) $("w-" + k).addEventListener("input", e => { S.weights[k] = +e.target.value / 100; render(); });
   $("f-region").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.region = b.dataset.v; render(); } });
   $("f-seg").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.segment = b.dataset.v; render(); } });

@@ -8,7 +8,7 @@ SOURCES = ["Website Demo Request", "Outbound Reply", "Partner Referral", "Review
            "Webinar", "Conference", "Content Download"]
 
 
-def run(t, matches, sig, sizes, win_rate, checks, cfg, path):
+def run(t, matches, sig, sizes, win_rate, hist, checks, cfg, path):
     as_of = pd.Timestamp(cfg["dates"]["as_of"])
     window = cfg["signals"]["intent_window_days"]
     l = t["leads"].merge(matches[["lead_id", "account_id"]], on="lead_id").dropna(subset=["account_id"])
@@ -26,6 +26,9 @@ def run(t, matches, sig, sizes, win_rate, checks, cfg, path):
     won = o[(o["stage"] == "Closed Won") & (o["close_date"] <= as_of)]
     paid_raw = won.groupby("account_id")["amount"].sum()
     paid_usd = won.groupby("account_id")["amount_usd"].sum()
+    recent = won[won["close_date"] > as_of - pd.DateOffset(months=cfg["signals"]["headroom_months"])]
+    recent_raw = recent.groupby("account_id")["amount"].sum()
+    recent_usd = recent.groupby("account_id")["amount_usd"].sum()
     # Owner = the rep on the account's most recent deal (the CRM has no account owner field)
     owner = o[o["close_date"] <= as_of].sort_values("close_date").groupby("account_id")["owner"].last()
 
@@ -36,6 +39,7 @@ def run(t, matches, sig, sizes, win_rate, checks, cfg, path):
         accounts.append({
             "id": a, "name": r["account_name"], "segment": r["segment"], "region": r["region"],
             "won": int(r["won_deals"]), "paidUsd": float(paid_usd.get(a, 0.0)), "paidRaw": float(paid_raw.get(a, 0.0)),
+            "paidRecentUsd": float(recent_usd.get(a, 0.0)), "paidRecentRaw": float(recent_raw.get(a, 0.0)),
             "mau": num(r["mau_now"]), "momentum": num(r["momentum_3m"]), "depth": num(r["depth_api_per_user"]),
             "leads": {s: int(by_source.loc[a, s]) if a in by_source.index and s in by_source.columns else 0
                       for s in SOURCES},
@@ -43,18 +47,22 @@ def run(t, matches, sig, sizes, win_rate, checks, cfg, path):
             "owner": owner.get(a, ""),
             "mauPrev": None if pd.isna(r["momentum_3m"]) else round(r["mau_now"] / (1 + r["momentum_3m"])),
             "lapsed": r["lapsed_renewal_date"].strftime("%b %Y") if r["flag_lapsed_renewal"] else None,
-            "inScope": bool(r["in_scope"]), "confirm": bool(r["flag_confirm_contract"]),
+            "lastDeal": None if pd.isna(r["last_deal"]) else r["last_deal"],
+            "track": r["track"], "inScope": bool(r["in_scope"]), "confirm": bool(r["flag_confirm_contract"]),
             "noUsage": bool(r["flag_no_usage"]), "shrinking": bool(r["flag_shrinking"]),
         })
     data = {
         "asOf": cfg["dates"]["as_of"],
         "defaults": {"weights": cfg["scoring"]["weights"], "sourceWeights": cfg["signals"]["lead_source_weight"],
                      "tier1": cfg["scoring"]["tier1_top_share"], "tier2": cfg["scoring"]["tier2_next_share"],
-                     "includeConfirm": cfg["scoring"]["include_confirm_contract"],
+                     "intentFull": cfg["signals"]["intent_full_points"],
                      "convert": cfg["currency"]["convert_to_usd"], "dealSize": cfg["pipeline"]["deal_size"]},
         "sizes": {b: {r["segment"]: {k: r[k] for k in ["low", "mid", "high"]} | {"deals": int(r["deals"])}
                       for _, r in g.iterrows()} for b, g in sizes.groupby("basis")},
         "winRate": win_rate,
+        "history": {"oppRate": hist["opp_rate"], "cycleDays": hist["cycle_days"],
+                    "closeInQuarter": hist["close_in_quarter"], "bookedByQuarter": hist["booked_by_quarter"],
+                    "oppRateByQuarter": hist["opp_rate_by_quarter"].to_dict("records")},
         "usageMonths": {"now": month_label(months[-1]), "prev": month_label(months[-1 - k])},
         "winBasis": win_basis(o, as_of),
         "checks": checks.fillna("").astype(str).to_dict("records"),

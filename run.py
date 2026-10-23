@@ -65,7 +65,8 @@ def main():
     print("\n5. Score, tiers and Q1 2027 pipeline")
     ranked = score.score(sig, cfg)
     sizes, win_rate = score.deal_sizes(tables["opportunities"], sig)
-    pipe = score.pipeline(ranked, sizes, win_rate, cfg)
+    hist = score.history(tables["opportunities"], cfg)
+    pipe = score.pipeline(ranked, sizes, win_rate, hist, cfg)
     show_moves(ranked, pipe)
     ranked.to_csv(BASE / "output" / "ranking.csv", index=False)
     sizes.to_csv(BASE / "output" / "deal_sizes.csv", index=False)
@@ -73,13 +74,17 @@ def main():
     log.save(BASE / "logs" / "transform_log.csv")
 
     cols = ["account_name", "segment", "score", "intent_0_100", "headroom_0_100", "momentum_0_100",
-            "depth_0_100", "flag_confirm_contract"]
+            "depth_0_100"]
     print("\nTier 1 accounts:")
     print(ranked[ranked["tier"] == 1][cols].to_string(index=False))
-    print(f"\nDeal size used: {cfg['pipeline']['deal_size']}. Expansion win rate: {win_rate:.0%}")
+    print(f"\nDeal size used: {cfg['pipeline']['deal_size']}. Expansion win rate: {win_rate:.0%}. "
+          f"Customers opening an expansion deal per quarter: {hist['opp_rate']:.1%}. "
+          f"Median cycle {hist['cycle_days']:.0f} days, so {hist['close_in_quarter']:.0%} of a quarter's new pipeline closes in it.")
     print(pipe.to_string(index=False))
+    for track, who in [("contract", "Contract check (RevOps with Finance)"), ("winback", "Win-back (Customer Success)")]:
+        print(f"\n{who}: " + ", ".join(sig.loc[sig["track"] == track, "account_name"]))
 
-    export_demo.run(tables, matches, sig, sizes, win_rate, result, cfg, BASE / "output" / "demo_data.json")
+    export_demo.run(tables, matches, sig, sizes, win_rate, hist, result, cfg, BASE / "output" / "demo_data.json")
     print("\nDemo data written to output/demo_data.json")
     runpy.run_path(str(BASE / "demo" / "build_page.py"))
 

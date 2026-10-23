@@ -14,5 +14,5 @@ step,table,action,rows_before,rows_after,detail
 13,leads,match leads to accounts in code,900,900,"exact: 689, unmatched (to AI step): 150, group suffix: 61"
 14,leads,AI step: match leftover leads,150,150,"gemini-3.5-flash-lite; two answers agree on 149 of 150; no match: 82, match: 67, needs review: 1"
 15,leads,review table,1,0,"0 open, 1 decided by a person"
-16,signals,build one row per account,120,120,118 in scope; 12 confirm-contract; 7 lapsed renewal; 19 no usage; 12 shrinking
-17,score,score and tier accounts,120,118,"Tier 1: 24, Tier 2: 35, Tier 3: 59"
+16,signals,build one row per account,120,120,97 expansion; 12 contract check; 7 win-back; 19 no usage; 12 shrinking
+17,score,score and tier accounts,120,97,"Tier 1: 19, Tier 2: 29, Tier 3: 49"
