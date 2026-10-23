@@ -26,7 +26,9 @@ def run(t, matches, sig, plays_by_bench, hist, facts, checks, cfg, path):
         return [{"play": r["play"], "id": r["account_id"], "name": r["account_name"], "segment": r["segment"],
                  "region": r["region"], "atStake": float(r["at_stake"]), "fact": r["fact"],
                  "owner": owner.get(r["account_id"], ""), "users": num(s.at[r["account_id"], "mau_now"]),
-                 "growth": num(s.at[r["account_id"], "momentum_3m"]), "demo": demo_note.get(r["account_id"])}
+                 "growth": num(s.at[r["account_id"], "momentum_3m"]), "demo": demo_note.get(r["account_id"]),
+                 "perUser": num(r.get("per_user")), "peerPerUser": num(r.get("peer_per_user")),
+                 "paid12m": num(r.get("paid_12m"))}
                 for _, r in p.iterrows()]
 
     no_usage = s[s["flag_no_usage"]]

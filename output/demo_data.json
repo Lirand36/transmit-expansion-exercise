@@ -14,7 +14,10 @@
     "owner": "d.shani",
     "users": 106453.0,
     "growth": 0.07854023768756146,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -27,7 +30,10 @@
     "owner": "k.obrien",
     "users": 52421.0,
     "growth": 0.12752731652757454,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -40,7 +46,10 @@
     "owner": "l.fischer",
     "users": 42970.0,
     "growth": 0.11500337329389176,
-    "demo": "Omer Okafor asked for a demo on 16 Jul 2026"
+    "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -53,7 +62,10 @@
     "owner": "a.mor",
     "users": 35831.0,
     "growth": -0.020903923926112178,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -66,7 +78,10 @@
     "owner": "l.fischer",
     "users": 25117.0,
     "growth": 0.139299646194321,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -79,7 +94,10 @@
     "owner": "k.obrien",
     "users": 16239.0,
     "growth": 0.08723888591322981,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -92,7 +110,10 @@
     "owner": "k.obrien",
     "users": 11682.0,
     "growth": 0.09177570093457943,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -105,7 +126,10 @@
     "owner": "k.obrien",
     "users": 5562.0,
     "growth": 0.07250289240262253,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -118,7 +142,10 @@
     "owner": "r.castillo",
     "users": 2557.0,
     "growth": 0.20727101038715778,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -131,7 +158,10 @@
     "owner": "j.pereira",
     "users": 2531.0,
     "growth": 0.11008771929824568,
-    "demo": "Greta Ueda asked for a demo on 13 Aug 2026"
+    "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -144,7 +174,10 @@
     "owner": "l.fischer",
     "users": 2338.0,
     "growth": 0.14664051005394807,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -157,7 +190,10 @@
     "owner": "r.castillo",
     "users": 1252.0,
     "growth": -0.011058451816745696,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -170,7 +206,10 @@
     "owner": "j.pereira",
     "users": 61867.0,
     "growth": 0.023999867586937507,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -183,7 +222,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -196,7 +238,10 @@
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -209,7 +254,10 @@
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -222,7 +270,10 @@
     "owner": "r.castillo",
     "users": 42760.0,
     "growth": -0.04530130165888946,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -235,7 +286,10 @@
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -248,7 +302,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -261,7 +318,10 @@
     "owner": "l.fischer",
     "users": 29540.0,
     "growth": 0.08217020185368362,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -274,7 +334,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -287,7 +350,10 @@
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -300,7 +366,10 @@
     "owner": "j.pereira",
     "users": 1038.0,
     "growth": -0.02259887005649719,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -313,7 +382,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "price",
@@ -326,7 +398,10 @@
     "owner": "m.tanaka",
     "users": 184073.0,
     "growth": 0.2500203726843049,
-    "demo": null
+    "demo": null,
+    "perUser": 2.3252187990634154,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 428010.00000000006
    },
    {
     "play": "price",
@@ -339,7 +414,10 @@
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": 1.3359023763648041,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 56160.0
    },
    {
     "play": "price",
@@ -352,7 +430,10 @@
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": 3.9484020109525093,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 703700.0
    },
    {
     "play": "price",
@@ -365,7 +446,10 @@
     "owner": "s.avidan",
     "users": 37247.0,
     "growth": 0.26997170036482654,
-    "demo": null
+    "demo": null,
+    "perUser": 1.1088141326818268,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 41300.0
    },
    {
     "play": "price",
@@ -378,7 +462,10 @@
     "owner": "j.pereira",
     "users": 37918.0,
     "growth": 0.1044828289301214,
-    "demo": "Nikhil Moreau asked for a demo on 15 Aug 2026"
+    "demo": "Nikhil Moreau asked for a demo on 15 Aug 2026",
+    "perUser": 1.3872039664539269,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 52600.0
    },
    {
     "play": "price",
@@ -391,7 +478,10 @@
     "owner": "k.obrien",
     "users": 26850.0,
     "growth": 0.16779749478079342,
-    "demo": null
+    "demo": null,
+    "perUser": 0.4208566108007449,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 11300.0
    },
    {
     "play": "price",
@@ -404,7 +494,10 @@
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": 3.9822501490620557,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 347300.0
    },
    {
     "play": "price",
@@ -417,7 +510,10 @@
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": 0.6618420238757964,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 10700.0
    },
    {
     "play": "price",
@@ -430,7 +526,10 @@
     "owner": "j.pereira",
     "users": 101934.0,
     "growth": 0.18674179803013025,
-    "demo": null
+    "demo": null,
+    "perUser": 4.419035846724351,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 450450.0
    },
    {
     "play": "price",
@@ -443,7 +542,10 @@
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": 2.6865090403337972,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 48290.00000000001
    },
    {
     "play": "price",
@@ -456,7 +558,10 @@
     "owner": "d.shani",
     "users": 19819.0,
     "growth": 0.0643359647709576,
-    "demo": null
+    "demo": null,
+    "perUser": 3.4663706544225237,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 68700.0
    },
    {
     "play": "price",
@@ -469,7 +574,10 @@
     "owner": "m.tanaka",
     "users": 5253.0,
     "growth": 0.2830972154372251,
-    "demo": null
+    "demo": null,
+    "perUser": 1.6961736150770987,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 8910.0
    },
    {
     "play": "price",
@@ -482,7 +590,10 @@
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": 3.8791051880057115,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 16300.0
    },
    {
     "play": "price",
@@ -495,7 +606,10 @@
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": 4.701596113809854,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 27100.0
    },
    {
     "play": "price",
@@ -508,7 +622,10 @@
     "owner": "l.fischer",
     "users": 3396.0,
     "growth": 0.0,
-    "demo": null
+    "demo": null,
+    "perUser": 3.680800942285041,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 12500.0
    },
    {
     "play": "price",
@@ -521,7 +638,10 @@
     "owner": "k.obrien",
     "users": 3738.0,
     "growth": 0.07321274763135222,
-    "demo": null
+    "demo": null,
+    "perUser": 5.109684323167469,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 19100.0
    },
    {
     "play": "price",
@@ -534,7 +654,10 @@
     "owner": "s.avidan",
     "users": 14157.0,
     "growth": 0.017537554804858857,
-    "demo": null
+    "demo": null,
+    "perUser": 4.958677685950414,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 70200.0
    },
    {
     "play": "price",
@@ -547,7 +670,10 @@
     "owner": "k.obrien",
     "users": 2052.0,
     "growth": -0.02285714285714291,
-    "demo": null
+    "demo": null,
+    "perUser": 4.1910331384015596,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 8600.0
    },
    {
     "play": "price",
@@ -560,7 +686,10 @@
     "owner": "k.obrien",
     "users": 1840.0,
     "growth": 0.0741389375364856,
-    "demo": null
+    "demo": null,
+    "perUser": 6.815217391304349,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 12540.000000000002
    },
    {
     "play": "renewal",
@@ -573,7 +702,10 @@
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -586,7 +718,10 @@
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -599,7 +734,10 @@
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -612,7 +750,10 @@
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -625,7 +766,10 @@
     "owner": "l.fischer",
     "users": 30211.0,
     "growth": 0.1596867682622547,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -638,7 +782,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -651,7 +798,10 @@
     "owner": "j.pereira",
     "users": 19104.0,
     "growth": -0.016322537459451114,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -664,7 +814,10 @@
     "owner": "m.tanaka",
     "users": 11214.0,
     "growth": 0.15560593569661996,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -677,7 +830,10 @@
     "owner": "m.tanaka",
     "users": 9761.0,
     "growth": -0.03718682185835476,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -690,7 +846,10 @@
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -703,7 +862,10 @@
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -716,7 +878,10 @@
     "owner": "s.avidan",
     "users": 25169.0,
     "growth": 0.1415030160097963,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -729,7 +894,10 @@
     "owner": "m.tanaka",
     "users": 1220.0,
     "growth": -0.09293680297397766,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -742,7 +910,10 @@
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -755,7 +926,10 @@
     "owner": "l.fischer",
     "users": 2176.0,
     "growth": 0.06823760432007853,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -768,7 +942,10 @@
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -781,7 +958,10 @@
     "owner": "k.obrien",
     "users": 1908.0,
     "growth": -0.043609022556390986,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -794,7 +974,10 @@
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -807,7 +990,10 @@
     "owner": "k.obrien",
     "users": 980.0,
     "growth": -0.06577693040991417,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -820,7 +1006,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -833,7 +1022,10 @@
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -846,7 +1038,10 @@
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -859,7 +1054,10 @@
     "owner": "j.pereira",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -872,7 +1070,10 @@
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -885,7 +1086,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -898,7 +1102,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -911,7 +1118,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -924,7 +1134,10 @@
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -937,7 +1150,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -950,7 +1166,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -963,7 +1182,10 @@
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -976,7 +1198,10 @@
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Paula Costa asked for a demo on 20 Jul 2026"
+    "demo": "Paula Costa asked for a demo on 20 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -989,7 +1214,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1002,7 +1230,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1015,7 +1246,10 @@
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026"
+    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1028,7 +1262,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1041,7 +1278,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1054,7 +1294,10 @@
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1067,7 +1310,10 @@
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1080,7 +1326,10 @@
     "owner": "r.castillo",
     "users": 194387.0,
     "growth": 0.2010689239704655,
-    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026"
+    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1093,7 +1342,10 @@
     "owner": "j.pereira",
     "users": 87751.0,
     "growth": 0.09991225871145648,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1106,7 +1358,10 @@
     "owner": "d.shani",
     "users": 9310.0,
     "growth": 0.0028005170185265715,
-    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026"
+    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1119,7 +1374,10 @@
     "owner": "d.shani",
     "users": 8674.0,
     "growth": -0.005503324925475783,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1132,7 +1390,10 @@
     "owner": "j.pereira",
     "users": 6553.0,
     "growth": -0.09812826864849988,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1145,7 +1406,10 @@
     "owner": "m.tanaka",
     "users": 1952.0,
     "growth": 0.04051172707889128,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1158,7 +1422,10 @@
     "owner": "a.mor",
     "users": 1609.0,
     "growth": 0.005624999999999991,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    }
   ],
   "low": [
@@ -1173,7 +1440,10 @@
     "owner": "d.shani",
     "users": 106453.0,
     "growth": 0.07854023768756146,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1186,7 +1456,10 @@
     "owner": "k.obrien",
     "users": 52421.0,
     "growth": 0.12752731652757454,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1199,7 +1472,10 @@
     "owner": "a.mor",
     "users": 35831.0,
     "growth": -0.020903923926112178,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1212,7 +1488,10 @@
     "owner": "l.fischer",
     "users": 42970.0,
     "growth": 0.11500337329389176,
-    "demo": "Omer Okafor asked for a demo on 16 Jul 2026"
+    "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1225,7 +1504,10 @@
     "owner": "l.fischer",
     "users": 25117.0,
     "growth": 0.139299646194321,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1238,7 +1520,10 @@
     "owner": "k.obrien",
     "users": 5562.0,
     "growth": 0.07250289240262253,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1251,7 +1536,10 @@
     "owner": "k.obrien",
     "users": 16239.0,
     "growth": 0.08723888591322981,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1264,7 +1552,10 @@
     "owner": "k.obrien",
     "users": 11682.0,
     "growth": 0.09177570093457943,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1277,7 +1568,10 @@
     "owner": "r.castillo",
     "users": 2557.0,
     "growth": 0.20727101038715778,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1290,7 +1584,10 @@
     "owner": "j.pereira",
     "users": 2531.0,
     "growth": 0.11008771929824568,
-    "demo": "Greta Ueda asked for a demo on 13 Aug 2026"
+    "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1303,7 +1600,10 @@
     "owner": "l.fischer",
     "users": 2338.0,
     "growth": 0.14664051005394807,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1316,7 +1616,10 @@
     "owner": "r.castillo",
     "users": 1252.0,
     "growth": -0.011058451816745696,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1329,7 +1632,10 @@
     "owner": "j.pereira",
     "users": 61867.0,
     "growth": 0.023999867586937507,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1342,7 +1648,10 @@
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1355,7 +1664,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1368,7 +1680,10 @@
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1381,7 +1696,10 @@
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1394,7 +1712,10 @@
     "owner": "r.castillo",
     "users": 42760.0,
     "growth": -0.04530130165888946,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1407,7 +1728,10 @@
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1420,7 +1744,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1433,7 +1760,10 @@
     "owner": "l.fischer",
     "users": 29540.0,
     "growth": 0.08217020185368362,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1446,7 +1776,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1459,7 +1792,10 @@
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1472,7 +1808,10 @@
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1485,7 +1824,10 @@
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1498,7 +1840,10 @@
     "owner": "j.pereira",
     "users": 1038.0,
     "growth": -0.02259887005649719,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1511,7 +1856,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "price",
@@ -1524,7 +1872,10 @@
     "owner": "m.tanaka",
     "users": 184073.0,
     "growth": 0.2500203726843049,
-    "demo": null
+    "demo": null,
+    "perUser": 2.3252187990634154,
+    "peerPerUser": 3.9822501490620557,
+    "paid12m": 428010.00000000006
    },
    {
     "play": "price",
@@ -1537,7 +1888,10 @@
     "owner": "k.obrien",
     "users": 26850.0,
     "growth": 0.16779749478079342,
-    "demo": null
+    "demo": null,
+    "perUser": 0.4208566108007449,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 11300.0
    },
    {
     "play": "price",
@@ -1550,7 +1904,10 @@
     "owner": "m.tanaka",
     "users": 5253.0,
     "growth": 0.2830972154372251,
-    "demo": null
+    "demo": null,
+    "perUser": 1.6961736150770987,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 8910.0
    },
    {
     "play": "price",
@@ -1563,7 +1920,10 @@
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": 0.6618420238757964,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 10700.0
    },
    {
     "play": "price",
@@ -1576,7 +1936,10 @@
     "owner": "s.avidan",
     "users": 37247.0,
     "growth": 0.26997170036482654,
-    "demo": null
+    "demo": null,
+    "perUser": 1.1088141326818268,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 41300.0
    },
    {
     "play": "price",
@@ -1589,7 +1952,10 @@
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": 3.9484020109525093,
+    "peerPerUser": 3.9822501490620557,
+    "paid12m": 703700.0
    },
    {
     "play": "price",
@@ -1602,7 +1968,10 @@
     "owner": "l.fischer",
     "users": 3396.0,
     "growth": 0.0,
-    "demo": null
+    "demo": null,
+    "perUser": 3.680800942285041,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 12500.0
    },
    {
     "play": "price",
@@ -1615,7 +1984,10 @@
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": 3.8791051880057115,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 16300.0
    },
    {
     "play": "price",
@@ -1628,7 +2000,10 @@
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": 1.3359023763648041,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 56160.0
    },
    {
     "play": "price",
@@ -1641,7 +2016,10 @@
     "owner": "k.obrien",
     "users": 2052.0,
     "growth": -0.02285714285714291,
-    "demo": null
+    "demo": null,
+    "perUser": 4.1910331384015596,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 8600.0
    },
    {
     "play": "renewal",
@@ -1654,7 +2032,10 @@
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1667,7 +2048,10 @@
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1680,7 +2064,10 @@
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1693,7 +2080,10 @@
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1706,7 +2096,10 @@
     "owner": "l.fischer",
     "users": 30211.0,
     "growth": 0.1596867682622547,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1719,7 +2112,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1732,7 +2128,10 @@
     "owner": "j.pereira",
     "users": 19104.0,
     "growth": -0.016322537459451114,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1745,7 +2144,10 @@
     "owner": "m.tanaka",
     "users": 11214.0,
     "growth": 0.15560593569661996,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1758,7 +2160,10 @@
     "owner": "m.tanaka",
     "users": 9761.0,
     "growth": -0.03718682185835476,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1771,7 +2176,10 @@
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1784,7 +2192,10 @@
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1797,7 +2208,10 @@
     "owner": "s.avidan",
     "users": 25169.0,
     "growth": 0.1415030160097963,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1810,7 +2224,10 @@
     "owner": "m.tanaka",
     "users": 1220.0,
     "growth": -0.09293680297397766,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1823,7 +2240,10 @@
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1836,7 +2256,10 @@
     "owner": "l.fischer",
     "users": 2176.0,
     "growth": 0.06823760432007853,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1849,7 +2272,10 @@
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1862,7 +2288,10 @@
     "owner": "k.obrien",
     "users": 1908.0,
     "growth": -0.043609022556390986,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1875,7 +2304,10 @@
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1888,7 +2320,10 @@
     "owner": "k.obrien",
     "users": 980.0,
     "growth": -0.06577693040991417,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1901,7 +2336,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1914,7 +2352,10 @@
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1927,7 +2368,10 @@
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1940,7 +2384,10 @@
     "owner": "j.pereira",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1953,7 +2400,10 @@
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1966,7 +2416,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1979,7 +2432,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1992,7 +2448,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2005,7 +2464,10 @@
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2018,7 +2480,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2031,7 +2496,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2044,7 +2512,10 @@
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2057,7 +2528,10 @@
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Paula Costa asked for a demo on 20 Jul 2026"
+    "demo": "Paula Costa asked for a demo on 20 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2070,7 +2544,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2083,7 +2560,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2096,7 +2576,10 @@
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026"
+    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2109,7 +2592,10 @@
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2122,7 +2608,10 @@
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2135,7 +2624,10 @@
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2148,7 +2640,10 @@
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2161,7 +2656,10 @@
     "owner": "r.castillo",
     "users": 194387.0,
     "growth": 0.2010689239704655,
-    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026"
+    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2174,7 +2672,10 @@
     "owner": "j.pereira",
     "users": 87751.0,
     "growth": 0.09991225871145648,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2187,7 +2688,10 @@
     "owner": "d.shani",
     "users": 9310.0,
     "growth": 0.0028005170185265715,
-    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026"
+    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2200,7 +2704,10 @@
     "owner": "d.shani",
     "users": 8674.0,
     "growth": -0.005503324925475783,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2213,7 +2720,10 @@
     "owner": "j.pereira",
     "users": 6553.0,
     "growth": -0.09812826864849988,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2226,7 +2736,10 @@
     "owner": "m.tanaka",
     "users": 1952.0,
     "growth": 0.04051172707889128,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2239,7 +2752,10 @@
     "owner": "a.mor",
     "users": 1609.0,
     "growth": 0.005624999999999991,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    }
   ]
  },

@@ -33,7 +33,8 @@ def run(sig, opps, sizes, cfg):
     # 1. Price to usage
     gap = (exp["segment"].map(bench) - per_user) * exp["mau_now"]
     for a, v in gap[gap > 0].items():
-        rows.append({"play": "price", "account_id": a, "at_stake": v,
+        rows.append({"play": "price", "account_id": a, "at_stake": v, "per_user": per_user[a],
+                     "peer_per_user": bench[exp.at[a, "segment"]], "paid_12m": exp.at[a, "paid_recent_usd"],
                      "fact": f"Pays ${per_user[a]:.2f} per active user; peers pay ${bench[exp.at[a, 'segment']]:.2f}"})
 
     # 2. Q1 expansion window: deals won in the target quarter, one year earlier

@@ -1,10 +1,10 @@
-<title>Expansion Priorities Q1 2027</title>
+<title>Q1 2027 Expansion Priorities</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* A CRO work plan: plays grouped by how sure we are, what each $ figure means, who owns it. Accounts one click away. */
+/* A CRO work plan: four plays with readiness, owners, due dates and success metrics; risk kept apart; accounts one click away. */
 :root {
   --bg: #f4f6f9;
   --surface: #ffffff;
@@ -55,36 +55,44 @@ nav.tabs button { font: 600 0.9rem var(--font-body); color: var(--muted); backgr
 nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
 button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.answer { padding: 22px 24px; display: flex; flex-direction: column; gap: 18px; }
-.headline { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.3; font-weight: 600; margin: 0; text-wrap: balance; }
-.headline b { color: var(--accent); font-weight: 700; }
-.filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.sub-h { color: var(--muted); margin: 2px 0 0; font-size: 0.98rem; }
+.summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-top: 18px; }
+.summary > div { background: var(--surface); padding: 12px 16px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.summary b { font: 700 1.5rem/1.2 var(--font-display); }
+.summary .note { font-size: 0.8rem; }
+.controls { display: flex; gap: 10px 16px; flex-wrap: wrap; align-items: center; margin-top: 18px; }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; flex-wrap: wrap; }
 .seg button { font: 500 0.82rem var(--font-body); background: var(--surface); color: var(--muted); border: 0; padding: 6px 11px; cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
 .seg .num { font-size: 0.72rem; opacity: 0.8; margin-left: 4px; }
+.bench { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 0.84rem; color: var(--muted); margin-left: auto; }
+.bench .note { max-width: 46ch; }
 
-.groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
-.group { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-.group-head { display: flex; flex-direction: column; gap: 2px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
-.group-head.validate { border-color: var(--warn); } .group-head.protect { border-color: var(--muted); }
-.group-head b { font: 700 0.95rem var(--font-display); }
-.play .tag { align-self: flex-start; font-size: 0.72rem; font-weight: 600; padding: 1px 8px; border-radius: 99px; background: var(--t3-soft); color: var(--muted); }
-.play .sub { font-size: 0.78rem; color: var(--muted); }
-.play .next { font-size: 0.84rem; border-top: 1px dashed var(--line); padding-top: 6px; }
-.fixes td.due { white-space: nowrap; font-family: var(--font-data); }
-.play { text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
-  padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; cursor: pointer; min-width: 0; }
+.plays { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+.play { text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; cursor: pointer; min-width: 0; }
 .play:hover { border-color: var(--accent); }
-.play[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
-.play .who { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
-.play h3 { font: 600 1.05rem var(--font-display); margin: 0; }
+.play[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.play .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.play h3 { font: 600 1.1rem var(--font-display); margin: 0; }
+.play h3 span { color: var(--muted); font-weight: 500; margin-right: 6px; }
+.ready { font-size: 0.72rem; font-weight: 600; padding: 2px 9px; border-radius: 99px; white-space: nowrap; }
+.ready.go { background: var(--good-soft); color: var(--good); }
+.ready.check { background: var(--warn-soft); color: var(--warn); }
+.ready.process { background: var(--accent-soft); color: var(--accent); }
+.play .value { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .play .usd { font: 700 1.7rem/1.1 var(--font-display); color: var(--accent); }
-.play .why { font-size: 0.86rem; }
+.play .lbl { font-size: 0.8rem; color: var(--muted); }
+.play .split { display: flex; gap: 6px 16px; flex-wrap: wrap; font-size: 0.84rem; }
+.play dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 0.86rem; border-top: 1px dashed var(--line); padding-top: 8px; }
+.play dt { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 2px; }
+.play dd { margin: 0; }
 
-.bar { display: flex; gap: 12px 24px; flex-wrap: wrap; align-items: center; justify-content: space-between; font-size: 0.86rem; }
-.risk { color: var(--warn); max-width: 80ch; }
-.lever { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; color: var(--muted); }
+.risk { margin-top: 16px; background: var(--surface); border: 1px dashed var(--warn); border-radius: 12px; padding: 14px 18px;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 18px; align-items: center; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+.risk[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--warn); }
+.risk .usd { font: 700 1.5rem var(--font-display); color: var(--warn); text-align: right; }
+.risk p { margin: 0; font-size: 0.88rem; }
 
 .scroll { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
@@ -93,60 +101,56 @@ td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: t
 tr:last-child td { border-bottom: 0; }
 td.r, th.r { text-align: right; }
 td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
+td.act { white-space: nowrap; font-weight: 600; }
 .acct { font-weight: 600; }
 .meta { color: var(--muted); font-size: 0.8rem; }
 .demo { font-size: 0.8rem; color: var(--good); }
 .trend { font-size: 0.75rem; margin-left: 4px; }
 .trend.up { color: var(--good); } .trend.down { color: var(--warn); }
 .list { margin-top: 20px; }
-.foot { margin-top: 14px; }
+.card-head a { font-size: 0.82rem; color: var(--accent); font-weight: 600; text-decoration: none; }
+.fixes td.due { white-space: nowrap; font-family: var(--font-data); }
+.foot { margin-top: 14px; max-width: 100ch; }
 
-@media (max-width: 960px) { .groups { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 520px) {
-  .headline { font-size: 1.25rem; }
-  .answer { padding: 18px 16px; }
-}
+@media (max-width: 860px) { .plays { grid-template-columns: minmax(0, 1fr); } .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); } .bench { margin-left: 0; } }
+@media (max-width: 520px) { .risk { grid-template-columns: minmax(0, 1fr); } .risk .usd { text-align: left; } }
 </style>
 
 <div class="wrap">
   <header>
-    <span class="eyebrow">Expansion plan for Q1 2027 · data as of <span id="asof"></span></span>
-    <h1>Expansion Priorities Q1 2027</h1>
+    <span class="eyebrow">GTM planning · data as of <span id="asof"></span></span>
+    <h1>Q1 2027 Expansion Priorities</h1>
+    <p class="sub-h">Four revenue plays. Named accounts. Clear owners. Explicit validation steps.</p>
   </header>
 
-  <div class="card answer" style="margin-top:20px" aria-live="polite">
-    <div class="filters">
-      <div class="seg" role="group" aria-label="Region" id="f-region"></div>
-      <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
-    </div>
-    <p class="headline" id="headline"></p>
-    <div class="groups" id="plays"></div>
-    <div class="bar">
-      <span class="note">Each $ figure measures something different, so they are never added up. None is a forecast.</span>
-      <span class="lever">Peer price
-        <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
-      </span>
+  <div class="summary" id="summary"></div>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Region" id="f-region"></div>
+    <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
+    <div class="bench">Peer price
+      <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
+      <span class="note">What similar customers pay per active user. Median = a typical peer; Cautious = the cheapest quarter of peers. Changes plays 01 and 04.</span>
     </div>
   </div>
 
+  <div class="plays" id="plays"></div>
+  <button class="risk" id="risk"></button>
+
   <div class="card list">
-    <div class="card-head"><h2 id="list-title"></h2><span class="note" id="list-step"></span></div>
-    <div class="scroll">
-      <table>
-        <thead><tr><th>#</th><th>Account</th><th>Why</th><th class="r">Active users</th><th>Owner</th><th class="r" id="usd-head">$ at stake</th></tr></thead>
-        <tbody id="rows"></tbody>
-      </table>
-    </div>
+    <div class="card-head"><h2 id="list-title"></h2><a href="../output/plays.csv" id="csv">Full list, all plays (CSV)</a></div>
+    <div class="scroll"><table><thead id="list-head"></thead><tbody id="rows"></tbody></table></div>
   </div>
+
   <div class="card list">
     <div class="card-head"><h2>Data to fix: part of the plan</h2><span class="note">Each one unblocks a play</span></div>
     <div class="scroll">
       <table class="fixes">
         <thead><tr><th>What's broken</th><th>Unblocks</th><th>Owner</th><th>Due</th><th>Done when</th></tr></thead>
         <tbody>
-          <tr><td>No contract end dates in the CRM</td><td>Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Every won deal has a start and end date</td></tr>
-          <tr><td>Product used with no current contract on record</td><td>Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each account marked paying, missing deal, or free</td></tr>
-          <tr><td>Paying accounts with no product usage linked</td><td>Paid, but no usage</td><td>Customer Success</td><td class="due">18 Dec 2026</td><td>Each account linked to its tenant, or confirmed unused</td></tr>
+          <tr><td>No contract end dates in the CRM</td><td>03 Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Every won deal has a start and end date</td></tr>
+          <tr><td>Product used with no current contract on record</td><td>04 Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each account marked paying, missing deal, or free</td></tr>
+          <tr><td>Paying accounts with no product usage linked</td><td>Revenue protection</td><td>Customer Success</td><td class="due">18 Dec 2026</td><td>Each account linked to its tenant, or confirmed unused</td></tr>
         </tbody>
       </table>
     </div>
@@ -171,7 +175,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 106453.0,
     "growth": 0.07854023768756146,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -184,7 +191,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 52421.0,
     "growth": 0.12752731652757454,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -197,7 +207,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 42970.0,
     "growth": 0.11500337329389176,
-    "demo": "Omer Okafor asked for a demo on 16 Jul 2026"
+    "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -210,7 +223,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 35831.0,
     "growth": -0.020903923926112178,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -223,7 +239,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 25117.0,
     "growth": 0.139299646194321,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -236,7 +255,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 16239.0,
     "growth": 0.08723888591322981,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -249,7 +271,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 11682.0,
     "growth": 0.09177570093457943,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -262,7 +287,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 5562.0,
     "growth": 0.07250289240262253,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -275,7 +303,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 2557.0,
     "growth": 0.20727101038715778,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -288,7 +319,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 2531.0,
     "growth": 0.11008771929824568,
-    "demo": "Greta Ueda asked for a demo on 13 Aug 2026"
+    "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -301,7 +335,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 2338.0,
     "growth": 0.14664051005394807,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -314,7 +351,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 1252.0,
     "growth": -0.011058451816745696,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -327,7 +367,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 61867.0,
     "growth": 0.023999867586937507,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -340,7 +383,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -353,7 +399,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -366,7 +415,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -379,7 +431,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 42760.0,
     "growth": -0.04530130165888946,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -392,7 +447,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -405,7 +463,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -418,7 +479,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 29540.0,
     "growth": 0.08217020185368362,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -431,7 +495,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -444,7 +511,10 @@ const DATA = {
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -457,7 +527,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 1038.0,
     "growth": -0.02259887005649719,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -470,7 +543,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "price",
@@ -483,7 +559,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 184073.0,
     "growth": 0.2500203726843049,
-    "demo": null
+    "demo": null,
+    "perUser": 2.3252187990634154,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 428010.00000000006
    },
    {
     "play": "price",
@@ -496,7 +575,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": 1.3359023763648041,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 56160.0
    },
    {
     "play": "price",
@@ -509,7 +591,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": 3.9484020109525093,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 703700.0
    },
    {
     "play": "price",
@@ -522,7 +607,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": 37247.0,
     "growth": 0.26997170036482654,
-    "demo": null
+    "demo": null,
+    "perUser": 1.1088141326818268,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 41300.0
    },
    {
     "play": "price",
@@ -535,7 +623,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 37918.0,
     "growth": 0.1044828289301214,
-    "demo": "Nikhil Moreau asked for a demo on 15 Aug 2026"
+    "demo": "Nikhil Moreau asked for a demo on 15 Aug 2026",
+    "perUser": 1.3872039664539269,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 52600.0
    },
    {
     "play": "price",
@@ -548,7 +639,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 26850.0,
     "growth": 0.16779749478079342,
-    "demo": null
+    "demo": null,
+    "perUser": 0.4208566108007449,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 11300.0
    },
    {
     "play": "price",
@@ -561,7 +655,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": 3.9822501490620557,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 347300.0
    },
    {
     "play": "price",
@@ -574,7 +671,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": 0.6618420238757964,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 10700.0
    },
    {
     "play": "price",
@@ -587,7 +687,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 101934.0,
     "growth": 0.18674179803013025,
-    "demo": null
+    "demo": null,
+    "perUser": 4.419035846724351,
+    "peerPerUser": 4.897597185785833,
+    "paid12m": 450450.0
    },
    {
     "play": "price",
@@ -600,7 +703,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": 2.6865090403337972,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 48290.00000000001
    },
    {
     "play": "price",
@@ -613,7 +719,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 19819.0,
     "growth": 0.0643359647709576,
-    "demo": null
+    "demo": null,
+    "perUser": 3.4663706544225237,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 68700.0
    },
    {
     "play": "price",
@@ -626,7 +735,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 5253.0,
     "growth": 0.2830972154372251,
-    "demo": null
+    "demo": null,
+    "perUser": 1.6961736150770987,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 8910.0
    },
    {
     "play": "price",
@@ -639,7 +751,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": 3.8791051880057115,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 16300.0
    },
    {
     "play": "price",
@@ -652,7 +767,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": 4.701596113809854,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 27100.0
    },
    {
     "play": "price",
@@ -665,7 +783,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 3396.0,
     "growth": 0.0,
-    "demo": null
+    "demo": null,
+    "perUser": 3.680800942285041,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 12500.0
    },
    {
     "play": "price",
@@ -678,7 +799,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 3738.0,
     "growth": 0.07321274763135222,
-    "demo": null
+    "demo": null,
+    "perUser": 5.109684323167469,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 19100.0
    },
    {
     "play": "price",
@@ -691,7 +815,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": 14157.0,
     "growth": 0.017537554804858857,
-    "demo": null
+    "demo": null,
+    "perUser": 4.958677685950414,
+    "peerPerUser": 5.361871002758551,
+    "paid12m": 70200.0
    },
    {
     "play": "price",
@@ -704,7 +831,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 2052.0,
     "growth": -0.02285714285714291,
-    "demo": null
+    "demo": null,
+    "perUser": 4.1910331384015596,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 8600.0
    },
    {
     "play": "price",
@@ -717,7 +847,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 1840.0,
     "growth": 0.0741389375364856,
-    "demo": null
+    "demo": null,
+    "perUser": 6.815217391304349,
+    "peerPerUser": 6.888246628131022,
+    "paid12m": 12540.000000000002
    },
    {
     "play": "renewal",
@@ -730,7 +863,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -743,7 +879,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -756,7 +895,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -769,7 +911,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -782,7 +927,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 30211.0,
     "growth": 0.1596867682622547,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -795,7 +943,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -808,7 +959,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 19104.0,
     "growth": -0.016322537459451114,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -821,7 +975,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 11214.0,
     "growth": 0.15560593569661996,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -834,7 +991,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 9761.0,
     "growth": -0.03718682185835476,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -847,7 +1007,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -860,7 +1023,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -873,7 +1039,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": 25169.0,
     "growth": 0.1415030160097963,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -886,7 +1055,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 1220.0,
     "growth": -0.09293680297397766,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -899,7 +1071,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -912,7 +1087,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 2176.0,
     "growth": 0.06823760432007853,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -925,7 +1103,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -938,7 +1119,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 1908.0,
     "growth": -0.043609022556390986,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -951,7 +1135,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -964,7 +1151,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 980.0,
     "growth": -0.06577693040991417,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -977,7 +1167,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -990,7 +1183,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1003,7 +1199,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1016,7 +1215,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1029,7 +1231,10 @@ const DATA = {
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1042,7 +1247,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1055,7 +1263,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1068,7 +1279,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1081,7 +1295,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1094,7 +1311,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1107,7 +1327,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1120,7 +1343,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1133,7 +1359,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Paula Costa asked for a demo on 20 Jul 2026"
+    "demo": "Paula Costa asked for a demo on 20 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1146,7 +1375,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1159,7 +1391,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1172,7 +1407,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026"
+    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1185,7 +1423,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1198,7 +1439,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1211,7 +1455,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -1224,7 +1471,10 @@ const DATA = {
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1237,7 +1487,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 194387.0,
     "growth": 0.2010689239704655,
-    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026"
+    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1250,7 +1503,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 87751.0,
     "growth": 0.09991225871145648,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1263,7 +1519,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 9310.0,
     "growth": 0.0028005170185265715,
-    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026"
+    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1276,7 +1535,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 8674.0,
     "growth": -0.005503324925475783,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1289,7 +1551,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 6553.0,
     "growth": -0.09812826864849988,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1302,7 +1567,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 1952.0,
     "growth": 0.04051172707889128,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -1315,7 +1583,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 1609.0,
     "growth": 0.005624999999999991,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    }
   ],
   "low": [
@@ -1330,7 +1601,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 106453.0,
     "growth": 0.07854023768756146,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1343,7 +1617,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 52421.0,
     "growth": 0.12752731652757454,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1356,7 +1633,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 35831.0,
     "growth": -0.020903923926112178,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1369,7 +1649,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 42970.0,
     "growth": 0.11500337329389176,
-    "demo": "Omer Okafor asked for a demo on 16 Jul 2026"
+    "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1382,7 +1665,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 25117.0,
     "growth": 0.139299646194321,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1395,7 +1681,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 5562.0,
     "growth": 0.07250289240262253,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1408,7 +1697,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 16239.0,
     "growth": 0.08723888591322981,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1421,7 +1713,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 11682.0,
     "growth": 0.09177570093457943,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1434,7 +1729,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 2557.0,
     "growth": 0.20727101038715778,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1447,7 +1745,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 2531.0,
     "growth": 0.11008771929824568,
-    "demo": "Greta Ueda asked for a demo on 13 Aug 2026"
+    "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1460,7 +1761,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 2338.0,
     "growth": 0.14664051005394807,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "contract",
@@ -1473,7 +1777,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 1252.0,
     "growth": -0.011058451816745696,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1486,7 +1793,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 61867.0,
     "growth": 0.023999867586937507,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1499,7 +1809,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1512,7 +1825,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1525,7 +1841,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1538,7 +1857,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1551,7 +1873,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 42760.0,
     "growth": -0.04530130165888946,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1564,7 +1889,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1577,7 +1905,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1590,7 +1921,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 29540.0,
     "growth": 0.08217020185368362,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1603,7 +1937,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1616,7 +1953,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1629,7 +1969,10 @@ const DATA = {
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1642,7 +1985,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1655,7 +2001,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 1038.0,
     "growth": -0.02259887005649719,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "land",
@@ -1668,7 +2017,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "price",
@@ -1681,7 +2033,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 184073.0,
     "growth": 0.2500203726843049,
-    "demo": null
+    "demo": null,
+    "perUser": 2.3252187990634154,
+    "peerPerUser": 3.9822501490620557,
+    "paid12m": 428010.00000000006
    },
    {
     "play": "price",
@@ -1694,7 +2049,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 26850.0,
     "growth": 0.16779749478079342,
-    "demo": null
+    "demo": null,
+    "perUser": 0.4208566108007449,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 11300.0
    },
    {
     "play": "price",
@@ -1707,7 +2065,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 5253.0,
     "growth": 0.2830972154372251,
-    "demo": null
+    "demo": null,
+    "perUser": 1.6961736150770987,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 8910.0
    },
    {
     "play": "price",
@@ -1720,7 +2081,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": 0.6618420238757964,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 10700.0
    },
    {
     "play": "price",
@@ -1733,7 +2097,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": 37247.0,
     "growth": 0.26997170036482654,
-    "demo": null
+    "demo": null,
+    "perUser": 1.1088141326818268,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 41300.0
    },
    {
     "play": "price",
@@ -1746,7 +2113,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": 3.9484020109525093,
+    "peerPerUser": 3.9822501490620557,
+    "paid12m": 703700.0
    },
    {
     "play": "price",
@@ -1759,7 +2129,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 3396.0,
     "growth": 0.0,
-    "demo": null
+    "demo": null,
+    "perUser": 3.680800942285041,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 12500.0
    },
    {
     "play": "price",
@@ -1772,7 +2145,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": 3.8791051880057115,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 16300.0
    },
    {
     "play": "price",
@@ -1785,7 +2161,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": 1.3359023763648041,
+    "peerPerUser": 1.3743785689316461,
+    "paid12m": 56160.0
    },
    {
     "play": "price",
@@ -1798,7 +2177,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 2052.0,
     "growth": -0.02285714285714291,
-    "demo": null
+    "demo": null,
+    "perUser": 4.1910331384015596,
+    "peerPerUser": 4.446314626105707,
+    "paid12m": 8600.0
    },
    {
     "play": "renewal",
@@ -1811,7 +2193,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 81856.0,
     "growth": 0.009371608957285282,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1824,7 +2209,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 87212.0,
     "growth": -0.021683773627236502,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1837,7 +2225,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 67088.0,
     "growth": 0.2580493933654622,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1850,7 +2241,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 178224.0,
     "growth": 0.1944747900567667,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1863,7 +2257,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 30211.0,
     "growth": 0.1596867682622547,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1876,7 +2273,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1889,7 +2289,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 19104.0,
     "growth": -0.016322537459451114,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1902,7 +2305,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 11214.0,
     "growth": 0.15560593569661996,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1915,7 +2321,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 9761.0,
     "growth": -0.03718682185835476,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1928,7 +2337,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 42039.0,
     "growth": 0.1930695879214439,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1941,7 +2353,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 17975.0,
     "growth": 0.12385894710516454,
-    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026"
+    "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1954,7 +2369,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": 25169.0,
     "growth": 0.1415030160097963,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1967,7 +2385,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 1220.0,
     "growth": -0.09293680297397766,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1980,7 +2401,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 5764.0,
     "growth": 0.14774990043807246,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -1993,7 +2417,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": 2176.0,
     "growth": 0.06823760432007853,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -2006,7 +2433,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 4202.0,
     "growth": 0.1750559284116331,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -2019,7 +2449,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 1908.0,
     "growth": -0.043609022556390986,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -2032,7 +2465,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 16167.0,
     "growth": 0.011322407106217902,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -2045,7 +2481,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": 980.0,
     "growth": -0.06577693040991417,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "renewal",
@@ -2058,7 +2497,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2071,7 +2513,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2084,7 +2529,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2097,7 +2545,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2110,7 +2561,10 @@ const DATA = {
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2123,7 +2577,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2136,7 +2593,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Ines Ueda asked for a demo on 21 Aug 2026"
+    "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2149,7 +2609,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2162,7 +2625,10 @@ const DATA = {
     "owner": "l.fischer",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2175,7 +2641,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2188,7 +2657,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2201,7 +2673,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2214,7 +2689,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Paula Costa asked for a demo on 20 Jul 2026"
+    "demo": "Paula Costa asked for a demo on 20 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2227,7 +2705,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2240,7 +2721,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026"
+    "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2253,7 +2737,10 @@ const DATA = {
     "owner": "s.avidan",
     "users": null,
     "growth": null,
-    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026"
+    "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2266,7 +2753,10 @@ const DATA = {
     "owner": "d.shani",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2279,7 +2769,10 @@ const DATA = {
     "owner": "k.obrien",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2292,7 +2785,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "risk",
@@ -2305,7 +2801,10 @@ const DATA = {
     "owner": "a.mor",
     "users": null,
     "growth": null,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2318,7 +2817,10 @@ const DATA = {
     "owner": "r.castillo",
     "users": 194387.0,
     "growth": 0.2010689239704655,
-    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026"
+    "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2331,7 +2833,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 87751.0,
     "growth": 0.09991225871145648,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2344,7 +2849,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 9310.0,
     "growth": 0.0028005170185265715,
-    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026"
+    "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2357,7 +2865,10 @@ const DATA = {
     "owner": "d.shani",
     "users": 8674.0,
     "growth": -0.005503324925475783,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2370,7 +2881,10 @@ const DATA = {
     "owner": "j.pereira",
     "users": 6553.0,
     "growth": -0.09812826864849988,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2383,7 +2897,10 @@ const DATA = {
     "owner": "m.tanaka",
     "users": 1952.0,
     "growth": 0.04051172707889128,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    },
    {
     "play": "winback",
@@ -2396,7 +2913,10 @@ const DATA = {
     "owner": "a.mor",
     "users": 1609.0,
     "growth": 0.005624999999999991,
-    "demo": null
+    "demo": null,
+    "perUser": null,
+    "peerPerUser": null,
+    "paid12m": null
    }
   ]
  },
@@ -2538,37 +3058,37 @@ const DATA = {
   const money = v => v >= 1e6 ? "$" + (v / 1e6).toFixed(1) + "M" : v >= 500 ? "$" + Math.round(v / 1000) + "k" : "<$1k";
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const short = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k" : String(Math.round(n));
+  const pct = v => Math.round(v * 100) + "%";
   $("asof").textContent = new Date(DATA.asOf + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
-  const pct = v => Math.round(v * 100) + "%";
-  const GROUPS = [
-    { key: "now", title: "Act now", note: "Opportunities the data supports today", cls: "" },
-    { key: "validate", title: "Validate, then act", note: "Money that needs checking first", cls: "validate" },
-    { key: "protect", title: "Protect revenue", note: "Before renewals", cls: "protect" },
-  ];
-  // Each play: its evidence, what its $ means, and the next action. Built from the rows so filters and peer price apply.
+  // Each play: readiness, evidence, what its $ means, next action, owner, due date, success metric.
+  // Due dates for validation come from the data-quality memo; plays to act on run through Q1 2027.
   const PLAYS = [
-    { key: "price", group: "now", n: "01", plays: ["price"], title: "Price to usage", who: "Sales", tag: "Commercial expansion",
-      usd: "Gap to peer pricing, per year", sub: "Gap to peer pricing per year · not forecast revenue",
-      evidence: L => `${L.length} paying accounts pay less per active user than peers in their segment.`,
-      next: L => L.length ? `Validate pricing comparability, then build account proposals. Start with ${L[0].name} (${money(L[0].atStake)}).` : "" },
-    { key: "land", group: "now", n: "02", plays: ["land"], title: "Land and expand", who: "Customer Success", tag: "Early expansion motion", count: true,
-      usd: "Typical expansion deal", sub: "Landed in the last 12 months, not expanded yet",
-      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of past expansion deals opened within 90 days of the first deal, ${pct(DATA.facts.expansionWithin6Months)} within 6 months.`,
-      next: () => "Expansion discovery call for each. From now on, every new customer gets one within 90 days of signing." },
-    { key: "renewal", group: "validate", n: "03", plays: ["renewal"], title: "Q1 expansion window", who: "Sales + Customer Success", tag: "Validate dates",
-      usd: "Prior contract value", sub: "Prior contract value of the cohort · not expansion value",
-      evidence: L => `${L.length} customers signed deals in Q1 2026, so Q1 2027 may bring renewal talks.`,
-      next: () => "Verify contract end dates, renewal status and owner, then put expansion on the renewal agenda." },
-    { key: "recover", group: "validate", n: "04", plays: ["contract", "winback"], title: "Recover revenue", who: "RevOps + Finance + CS", tag: "Reconcile first",
-      usd: "Usage value at peer pricing", sub: "Usage value at peer pricing · to be validated",
-      evidence: L => `${L.filter(r => r.play === "contract").length} accounts use the product with no recorded deal; ${L.filter(r => r.play === "winback").length} lost their renewal but are still active.`,
-      next: () => "Reconcile contracts, billing and tenant ownership before any sales outreach." },
-    { key: "risk", group: "protect", n: "Risk", plays: ["risk"], title: "Paid, but no usage", who: "Customer Success + RevOps", tag: "Revenue at risk",
-      usd: "Paid so far", sub: "Paid so far · at risk at renewal",
-      evidence: L => `${L.length} paying accounts show no product usage at all.`,
-      next: () => "Fix the product link and check real adoption before their renewals." },
+    { key: "price", n: "01", plays: ["price"], title: "Price to usage", ready: ["go", "Ready to act"],
+      evidence: L => `${L.length} paying accounts pay less per active user than peers in their segment (last 12 months).`,
+      lbl: "potential pricing gap per year · not guaranteed ARR",
+      next: L => `Validate the peer comparison, then build an account proposal. Start with ${L[0] ? L[0].name + " (" + money(L[0].atStake) + ")" : "the largest gap"}.`,
+      owner: "Sales (account owners)", due: "Through Q1 2027", metric: "Pricing meetings held → expansion opportunities opened → closed won", action: "Pricing proposal" },
+    { key: "land", n: "02", plays: ["land"], title: "Land and expand", ready: ["process", "CS process"], count: true,
+      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of past expansion deals opened within 90 days of the first deal. That's timing, not a promise each new customer expands.`,
+      lbl: "landed in the last 12 months, not expanded yet",
+      next: () => "Expansion discovery call with each. Then a CRM task on every new deal: discovery call by day 90.",
+      owner: "Customer Success", due: "Within 90 days of signing", metric: "Calls held on time → opportunities opened → expansion closed", action: "Discovery call" },
+    { key: "renewal", n: "03", plays: ["renewal"], title: "Q1 expansion window", ready: ["check", "Validate first"], count: true,
+      evidence: L => `${L.length} customers signed ${money(L.reduce((a, r) => a + r.atStake, 0))} of deals in Q1 2026. Q1 2027 may bring renewal talks, if the contracts are annual.`,
+      lbl: "accounts to validate · not proven opportunities",
+      next: () => "Confirm end date, renewal status and owner. Only then put expansion on the renewal agenda.",
+      owner: "RevOps, then Sales + CS", due: "Dates confirmed by 29 Jan 2027", metric: "Accounts confirmed for Q1 renewal → expansion added to the renewal", action: "Confirm end date" },
+    { key: "recover", n: "04", plays: ["contract", "winback"], title: "Recover revenue", ready: ["check", "Reconcile first"],
+      evidence: L => `They use the product without a current contract. It may be unbilled revenue, approved free use, a test setup, or a mapping error.`,
+      lbl: "estimated usage value at peer pricing · pending entitlement and billing validation",
+      split: L => [["contract", "Uncontracted usage"], ["winback", "Post-churn usage"]].map(([k, t]) => { const g = L.filter(r => r.play === k); return `<span><b>${t}:</b> ${g.length} accounts · ${money(g.reduce((a, r) => a + r.atStake, 0))}</span>`; }).join(""),
+      next: () => "Finance and RevOps reconcile contract, entitlement and billing. No sales outreach before that.",
+      owner: "RevOps + Finance, then CS", due: "Reconciled by 29 Jan 2027", metric: "Each account resolved: paying, missing deal, or free → contracts signed", action: "Reconcile contract" },
   ];
+  const RISK = { key: "risk", plays: ["risk"], title: "Revenue protection: paid, but no usage", count: false,
+    action: "Diagnose usage", lbl: "paid so far" };
+  const ACTION = { contract: "Confirm contract", winback: "Check entitlement" };
   let F = { region: "all", segment: "all", bench: DATA.benchmark, play: "price" };
 
   function render() {
@@ -2576,52 +3096,63 @@ const DATA = {
     const pick = r => (F.region === "all" || r.region === F.region) && (F.segment === "all" || r.segment === F.segment);
     const rows = all.filter(pick);
     const of = p => rows.filter(r => p.plays.includes(r.play)).sort((a, b) => b.atStake - a.atStake);
-    const sum = list => list.reduce((a, r) => a + r.atStake, 0);
+    const sum = L => L.reduce((a, r) => a + r.atStake, 0);
+    const ids = L => new Set(L.map(r => r.id)).size;
 
-    // Filters show account counts
-    const ids = list => new Set(list.map(r => r.id)).size;
+    // Summary: scope of the work, not money
+    $("summary").innerHTML = [
+      [PLAYS.length, "Revenue plays", "separate motions, separate owners"],
+      [ids(rows.filter(r => r.play !== "risk")), "Accounts in a play", "each named in the list below"],
+      [3, "Data blockers", "with owner, due date, done-when"],
+      ["Separate", "Forecast", "not comparable with play values"],
+    ].map(([v, t, n]) => `<div><span class="eyebrow">${t}</span><b>${v}</b><span class="note">${n}</span></div>`).join("");
+
     const opt = (key, v, label) => {
-      const g = all.filter(r => (key === "region" ? (F.segment === "all" || r.segment === F.segment) : (F.region === "all" || r.region === F.region)) && (v === "all" || r[key] === v));
+      const g = all.filter(r => r.play !== "risk" && (key === "region" ? (F.segment === "all" || r.segment === F.segment) : (F.region === "all" || r.region === F.region)) && (v === "all" || r[key] === v));
       return `<button data-v="${v}" aria-pressed="${F[key] === v}">${label}<span class="num">${ids(g)}</span></button>`;
     };
     $("f-region").innerHTML = [["all", "All regions"], ["NA", "NA"], ["EMEA", "EMEA"], ["APAC", "APAC"]].map(([v, l]) => opt("region", v, l)).join("");
     $("f-seg").innerHTML = [["all", "All segments"], ["Enterprise", "Enterprise"], ["Mid-Market", "Mid-Market"], ["SMB", "SMB"]].map(([v, l]) => opt("segment", v, l)).join("");
     document.querySelectorAll("#bench button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F.bench));
 
-    const scope = [F.segment !== "all" ? F.segment : "", F.region !== "all" ? F.region : ""].filter(Boolean).join(" ");
-    $("headline").innerHTML = `Q1 2027${scope ? " · " + esc(scope) : ""}: <b>two plays to act on now</b>, two to validate first, and one revenue risk to protect.`;
-
-    const card = p => {
+    $("plays").innerHTML = PLAYS.map(p => {
       const L = of(p);
       return `<button class="play" data-k="${p.key}" aria-pressed="${F.play === p.key}">
-        <span class="who">${p.n} · ${p.who}</span><h3>${p.title}</h3><span class="tag">${p.tag}</span>
-        <span class="why">${p.evidence(L)}</span>
-        <span class="usd">${p.count ? L.length + " accounts" : money(sum(L))}</span><span class="sub">${p.sub}</span>
-        <span class="next"><b>Next:</b> ${esc(p.next(L))}</span></button>`;
-    };
-    $("plays").innerHTML = GROUPS.map(g => `<div class="group"><div class="group-head ${g.cls}"><b>${g.title}</b><span class="note">${g.note}</span></div>
-      ${PLAYS.filter(p => p.group === g.key).map(card).join("")}</div>`).join("");
+        <span class="top"><h3><span>${p.n}</span>${p.title}</h3><span class="ready ${p.ready[0]}">${p.ready[1]}</span></span>
+        <span>${esc(p.evidence(L))}</span>
+        <span class="value"><span class="usd">${p.count ? L.length + " accounts" : money(sum(L))}</span><span class="lbl">${p.count ? "" : L.length + " accounts · "}${p.lbl}</span></span>
+        ${p.split ? `<span class="split">${p.split(L)}</span>` : ""}
+        <dl><dt>Next</dt><dd>${esc(p.next(L))}</dd><dt>Owner</dt><dd>${p.owner} · ${p.due}</dd><dt>Success</dt><dd>${p.metric}</dd></dl></button>`;
+    }).join("");
+
+    const R = of(RISK);
+    $("risk").setAttribute("aria-pressed", F.play === "risk");
+    $("risk").innerHTML = `<div><span class="eyebrow">Revenue protection · not an expansion play</span>
+      <p><b>${R.length} paying accounts show no product usage linked.</b> That's not yet proof they don't use us: the account-to-tenant link may be wrong. Customer Success + RevOps diagnose usage by 18 Dec 2026, before their renewals.</p></div>
+      <div><div class="usd">${money(sum(R))}</div><div class="meta">paid so far</div></div>`;
 
     // The accounts behind the selected play
-    const P = PLAYS.find(p => p.key === F.play), list = of(P);
-    $("list-title").textContent = `${P.title}: ${list.length} accounts` + (P.count ? "" : ` · ${money(sum(list))}`);
-    $("list-step").textContent = P.sub;
-    $("usd-head").textContent = P.usd;
+    const P = F.play === "risk" ? RISK : PLAYS.find(p => p.key === F.play), list = of(P);
+    $("list-title").textContent = `${P.n ? P.n + " " : ""}${P.title}: ${list.length} accounts`;
+    const price = P.key === "price";
+    $("list-head").innerHTML = `<tr><th>#</th><th>Account</th>${price ? '<th class="r">Paid, last 12 months</th><th class="r">Per active user</th>' : "<th>Evidence</th>"}<th class="r">Active users</th><th>Owner</th><th>Next action</th><th class="r">${price ? "Gap per year" : P.key === "land" ? "Typical deal" : P.key === "renewal" ? "Prior contract" : P.key === "risk" ? "Paid so far" : "Usage value"}</th></tr>`;
     $("rows").innerHTML = list.map((r, i) => {
       const trend = r.growth == null ? "" : `<span class="trend ${r.growth >= 0 ? "up" : "down"}">${r.growth >= 0 ? "▲" : "▼"}${Math.abs(Math.round(r.growth * 100))}%</span>`;
+      const ev = price ? `<td class="r num">${money(r.paid12m)}</td><td class="r num">$${r.perUser.toFixed(2)}<div class="meta">peers $${r.peerPerUser.toFixed(2)}</div></td>`
+                       : `<td>${esc(r.fact)}</td>`;
       return `<tr><td class="rank">${i + 1}</td>
-        <td><div class="acct">${esc(r.name)}</div><div class="meta">${esc(r.segment)} · ${esc(r.region)}</div></td>
-        <td>${esc(r.fact)}${r.demo ? `<div class="demo">${esc(r.demo)}</div>` : ""}</td>
-        <td class="r num">${r.users ? short(r.users) + trend : '<span class="meta">no data</span>'}</td>
-        <td class="meta">${esc(r.owner)}</td>
+        <td><div class="acct">${esc(r.name)}</div><div class="meta">${esc(r.segment)} · ${esc(r.region)}</div>${r.demo ? `<div class="demo">${esc(r.demo)}</div>` : ""}</td>
+        ${ev}<td class="r num">${r.users ? short(r.users) + trend : '<span class="meta">no data</span>'}</td>
+        <td class="meta">${esc(r.owner)}</td><td class="act">${ACTION[r.play] || P.action}</td>
         <td class="r num">${money(r.atStake)}</td></tr>`;
-    }).join("") || '<tr><td colspan="6" class="note">No accounts in this filter.</td></tr>';
+    }).join("") || '<tr><td colspan="8" class="note">No accounts in this filter.</td></tr>';
 
     const b = Object.entries(DATA.bookedByQuarter).slice(-3).map(([, v]) => money(v));
-    $("foot").textContent = `Forecast context: a historical model estimates about ${money(DATA.facts.forecast)} of new expansion pipeline from its top accounts, but it predicts little better than chance. For scale, the whole company booked ${b.join(", ")} of expansion in the last three quarters. The plays above are opportunities and risks, not forecasts.`;
+    $("foot").textContent = `Forecast, kept separate: a historical model estimates about ${money(DATA.facts.forecast)} of new expansion pipeline from its top accounts, but it predicts little better than chance. For scale, the whole company booked ${b.join(", ")} of expansion in the last three quarters. Play values are opportunities and risks, not forecasts, and are never added up.`;
   }
 
   $("plays").addEventListener("click", e => { const b = e.target.closest(".play"); if (b) { F.play = b.dataset.k; render(); } });
+  $("risk").addEventListener("click", () => { F.play = "risk"; render(); });
   $("f-region").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.region = b.dataset.v; render(); } });
   $("f-seg").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.segment = b.dataset.v; render(); } });
   $("bench").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.bench = b.dataset.v; render(); } });
