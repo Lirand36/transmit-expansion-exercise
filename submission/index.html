@@ -190,7 +190,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
               <p>12 use the product with no deal, 7 after a lost renewal. Finance and RevOps reconcile before anyone sells.</p>
             </div>
             <div class="lane check">
-              <span class="who">Revenue protection · GTM Engineering</span>
+              <span class="who">Revenue protection · Salesforce Architect</span>
               <b>Paid, but no usage · 19 accounts · $7.5M</b>
               <p>Not proof of non-use: the product link may be wrong. Diagnose by 18 Dec 2026, before renewals.</p>
             </div>
@@ -220,7 +220,7 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
               <tbody>
                 <tr><td><b>19 customers use us with no contract on record.</b> Free use, or a missing deal?</td><td class="own">RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
                 <tr><td><b>42 of 125 demo requests never became MQLs.</b> Our strongest leads aren't routed.</td><td class="own">Marketing Ops</td><td class="due">30 Nov 2026</td></tr>
-                <tr><td><b>21 accounts have no product link.</b> Their usage is unknown.</td><td class="own">GTM Engineering</td><td class="due">18 Dec 2026</td></tr>
+                <tr><td><b>21 accounts have no product link.</b> Their usage is unknown.</td><td class="own">Salesforce Architect</td><td class="due">18 Dec 2026</td></tr>
               </tbody>
             </table>
           </div>
@@ -262,8 +262,8 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
                 <tr><td>Approve the plays and their owners</td><td class="own">CRO</td></tr>
                 <tr><td>Validate pricing, then proposals for the 19</td><td class="own">Account owners</td></tr>
                 <tr><td>Discovery call for the 12; every new customer by day 90</td><td class="own">Customer Success</td></tr>
-                <tr><td>Confirm contract dates and contracts, by 29 Jan 2027</td><td class="own">RevOps + Finance</td></tr>
-                <tr><td>Fix the product link for 19 paying accounts, by 18 Dec 2026</td><td class="own">GTM Engineering</td></tr>
+                <tr><td>Reconcile the 19 accounts using us without a contract, by 29 Jan 2027</td><td class="own">RevOps + Finance</td></tr>
+                <tr><td>Fix the product link for 19 paying accounts, by 18 Dec 2026</td><td class="own">Salesforce Architect</td></tr>
                 <tr><td>Route demo requests from customers to the account owner</td><td class="own">Marketing Ops</td></tr>
                 <tr><td>Run the plan monthly and send it into the CRM</td><td class="own">GTM Engineering</td></tr>
               </tbody>
@@ -481,12 +481,11 @@ ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; g
           <thead><tr><th>What's broken</th><th>What the plan does now</th><th>Fix at the source</th><th>Owner</th><th>Due</th></tr></thead>
           <tbody>
             <tr><td><b>Customers using the product with no contract on record.</b> 12 never had a won deal. 7 more lost their last renewal.</td><td>Their own play: recover revenue. RevOps confirms the 12, Customer Success wins back the 7.</td><td>No product access without a live contract in the CRM.</td><td>RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
-            <tr><td><b>21 accounts with no product link.</b> 19 of them have paid us. 2 have no deals and no usage.</td><td>Usage left blank, never guessed. Shown as a risk.</td><td>Product link required when an account goes live.</td><td>GTM Engineering</td><td class="due">18 Dec 2026</td></tr>
+            <tr><td><b>21 accounts with no product link.</b> 19 of them have paid us. 2 have no deals and no usage.</td><td>Usage left blank, never guessed. Shown as a risk.</td><td>Product link required when an account goes live.</td><td>Salesforce Architect</td><td class="due">18 Dec 2026</td></tr>
             <tr><td><b>Lead company names typed freely.</b> 150 of 900 don't match an account exactly.</td><td>Code matches the clear ones, AI the messy ones, a person the unsure ones.</td><td>Match by email domain on the form.</td><td>Marketing Ops</td><td class="due">29 Jan 2027</td></tr>
             <tr><td><b>MQL date can't be trusted.</b> 59 of 93 outbound leads have one (outbound is never MQL'd). 42 of 125 demo requests never got one.</td><td>MQL ignored. Demo requests shown to the rep as a note, not scored.</td><td>Fix the scoring and routing rules. Demo requests first.</td><td>Marketing Ops</td><td class="due">30 Nov 2026</td></tr>
             <tr><td><b>Currency labels look wrong.</b> In EMEA Mid-Market, deals in GBP and USD have the same typical size (about 60k).</td><td>Converted at fixed rates. Switching it off moves the Q1 total 0.2%.</td><td>Multi-currency set up in the CRM, synced with Finance.</td><td>RevOps with Finance</td><td class="due">31 Mar 2027</td></tr>
             <tr><td><b>No account owner field.</b></td><td>Owner = rep on the account's latest closed deal.</td><td>Add an account owner.</td><td>RevOps</td><td class="due">30 Nov 2026</td></tr>
-            <tr><td><b>Contract dates not in the export.</b> Renewal timing is read from deal anniversaries.</td><td>“Q1 expansion window” starts by pulling the dates.</td><td>Add contract start and end dates to the export.</td><td>RevOps</td><td class="due">29 Jan 2027</td></tr>
             <tr><td><b>1 duplicate deal</b> (OPP-5314).</td><td>Dropped.</td><td>Duplicate rule in the CRM.</td><td>RevOps</td><td class="due">18 Dec 2026</td></tr>
           </tbody>
         </table>

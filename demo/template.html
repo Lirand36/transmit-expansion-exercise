@@ -148,9 +148,8 @@ td.act { white-space: nowrap; font-weight: 600; }
       <table class="fixes">
         <thead><tr><th>What's broken</th><th>Unblocks</th><th>Owner</th><th>Due</th><th>Done when</th></tr></thead>
         <tbody>
-          <tr><td>Contract dates not in the export</td><td>03 Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Export includes contract dates</td></tr>
           <tr><td>Usage with no contract</td><td>04 Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each marked: paying, missing deal, or free</td></tr>
-          <tr><td>Paying accounts with no usage</td><td>Revenue protection</td><td>GTM Engineering</td><td class="due">18 Dec 2026</td><td>Each linked, or confirmed unused</td></tr>
+          <tr><td>Paying accounts with no usage</td><td>Revenue protection</td><td>Salesforce Architect</td><td class="due">18 Dec 2026</td><td>Each linked, or confirmed unused</td></tr>
         </tbody>
       </table>
     </div>
@@ -203,7 +202,7 @@ const DATA = /*DATA*/null;
 
     // Summary: scope of the work, not money
     $("summary").innerHTML = [
-      [PLAYS.length, "Plays"], [ids(rows.filter(r => r.play !== "risk")), "Accounts"], [3, "Data fixes"],
+      [PLAYS.length, "Plays"], [ids(rows.filter(r => r.play !== "risk")), "Accounts"], [2, "Data fixes"],
     ].map(([v, t]) => `<div><span class="eyebrow">${t}</span><b>${v}</b></div>`).join("");
 
     const opt = (key, v, label) => {
@@ -226,7 +225,7 @@ const DATA = /*DATA*/null;
     const R = of(RISK);
     $("risk").setAttribute("aria-pressed", F.play === "risk");
     $("risk").innerHTML = `<div><span class="eyebrow">Revenue protection</span>
-      <p><b>${R.length} paying accounts show no usage.</b> Account-to-product link may be wrong. GTM Engineering · 18 Dec 2026.</p></div>
+      <p><b>${R.length} paying accounts show no usage.</b> Account-to-product link may be wrong. Salesforce Architect · 18 Dec 2026.</p></div>
       <div><div class="usd">${money(sum(R))}</div><div class="meta">paid so far</div></div>`;
 
     // The accounts behind the selected play
