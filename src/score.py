@@ -85,9 +85,11 @@ def history(opps, cfg):
     exp_won = exp[exp["stage"] == "Closed Won"]
     cycle = (exp_won["close_date"] - exp_won["created_date"]).dt.days
     booked = exp_won.groupby(exp_won["close_date"].dt.to_period("Q"))["amount_usd"].sum()
+    created = exp.groupby(exp["created_date"].dt.to_period("Q"))["amount_usd"].sum()
     return {"opp_rate": rate["opened"].sum() / rate["customers"].sum(), "opp_rate_by_quarter": rate,
             "cycle_days": float(cycle.median()), "close_in_quarter": float(((90 - cycle).clip(lower=0) / 90).mean()),
-            "booked_by_quarter": {str(q): float(v) for q, v in booked.items()}}
+            "booked_by_quarter": {str(q): float(v) for q, v in booked.items()},
+            "created_by_quarter": {str(q): float(v) for q, v in created.items()}}
 
 
 def pipeline(ranked, sizes, win_rate, hist, cfg):

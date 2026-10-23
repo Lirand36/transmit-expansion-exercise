@@ -116,6 +116,10 @@ td.r, th.r { text-align: right; }
 td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
 .acct { font-weight: 600; }
 .meta { color: var(--muted); font-size: 0.8rem; }
+.context { width: 100%; font-size: 0.9rem; }
+.context td, .context th { padding: 7px 12px 7px 0; }
+.context td.num, .context th.r { text-align: right; width: 8em; }
+.context tr.us td { font-weight: 600; color: var(--accent); }
 .todo { width: 100%; font-size: 0.92rem; }
 .todo td { padding: 9px 12px 9px 0; }
 .todo td.who { font-weight: 600; white-space: nowrap; width: 1%; }
@@ -193,6 +197,11 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <div><span class="eyebrow">Accounts to work</span><span class="big" id="k-accts"></span><span class="small" id="k-mix"></span></div>
         <div><span class="eyebrow">New pipeline in Q1</span><span class="big accent num" id="k-pipe"></span><span class="small" id="k-range"></span></div>
         <div><span class="eyebrow">Bookings from it</span><span class="big num" id="k-book"></span><span class="small" id="k-rate"></span></div>
+      </div>
+      <div>
+        <span class="eyebrow">In context</span>
+        <div class="scroll"><table class="context"><thead><tr><th></th><th class="r">New pipeline</th><th class="r">Bookings</th></tr></thead><tbody id="context"></tbody></table></div>
+        <span class="note" id="context-note"></span>
       </div>
       <div>
         <span class="eyebrow">Who does what in Q1</span>
@@ -367,6 +376,19 @@ const DATA = {
    "2025Q4": 223350.0,
    "2026Q1": 391470.0,
    "2026Q2": 263480.0
+  },
+  "createdByQuarter": {
+   "2023Q4": 14400.0,
+   "2024Q1": 134300.0,
+   "2024Q2": 56920.0,
+   "2024Q3": 331110.0,
+   "2024Q4": 454810.0,
+   "2025Q1": 671680.0,
+   "2025Q2": 780440.0,
+   "2025Q3": 1180560.0,
+   "2025Q4": 343330.0,
+   "2026Q1": 415240.0,
+   "2026Q2": 107790.0
   },
   "oppRateByQuarter": [
    {
@@ -5304,8 +5326,7 @@ function compute(data, s) {
     document.querySelectorAll("#size button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === S.dealSize));
     $("opp-v").textContent = pct(S.oppRate);
     document.querySelectorAll("#opp button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === S.oppRate));
-    const allBook = base.rows.reduce((a, r) => a + r.deal, 0) * H.oppRate * DATA.winRate;
-    $("opp-note").textContent = `Customers who opened an expansion deal in each of the last ${OPP.length} quarters. The average applied to all customers gives ${money(allBook)} a quarter, in line with actual bookings.`;
+    $("opp-note").textContent = `Share of customers who opened an expansion deal, last ${OPP.length} quarters.`;
     const w = norm(S);
     for (const [id, key] of [["f-region", "region"], ["f-seg", "segment"]])
       document.querySelectorAll(`#${id} button`).forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F[key]));
@@ -5342,6 +5363,17 @@ function compute(data, s) {
     $("k-range").textContent = `if ${pct(S.oppRate)} open a deal, as in past quarters`;
     $("k-book").textContent = money(book);
     $("k-rate").textContent = `${money(bookQ1)} in Q1, the rest in Q2`;
+
+    // In context: the plan next to all customers (same math) and what a past quarter actually did
+    const allPipe = res.rows.reduce((a, r) => a + r.deal, 0) * S.oppRate;
+    const lastQs = H.oppRateByQuarter.map(q => q.quarter);
+    const med = obj => median(lastQs.map(q => obj[q] || 0));
+    const qLabel = q => q.replace(/^20(\d\d)(Q\d)$/, "$2 '$1");
+    const crow = (cls, label, a, b) => `<tr class="${cls}"><td>${label}</td><td class="num">${money(a)}</td><td class="num">${money(b)}</td></tr>`;
+    $("context").innerHTML = crow("us", `These ${t1.length} accounts, Q1 2027`, pipe, book)
+      + crow("", `All ${res.rows.length} paying customers, same math`, allPipe, allPipe * S.winRate)
+      + crow("", "A typical past quarter, actual", med(H.createdByQuarter), med(H.bookedByQuarter));
+    $("context-note").textContent = `Typical = median of ${qLabel(lastQs[0])} to ${qLabel(lastQs[lastQs.length - 1])}, all expansion deals. Actual pipeline also includes customers who expand right after their first deal.`;
 
     // The other two tracks (same region and segment filters)
     const track = k => DATA.accounts.filter(a => a.track === k && pick(a));

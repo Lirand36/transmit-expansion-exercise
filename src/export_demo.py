@@ -61,7 +61,7 @@ def run(t, matches, sig, sizes, win_rate, hist, checks, cfg, path):
                       for _, r in g.iterrows()} for b, g in sizes.groupby("basis")},
         "winRate": win_rate,
         "history": {"oppRate": hist["opp_rate"], "cycleDays": hist["cycle_days"],
-                    "closeInQuarter": hist["close_in_quarter"], "bookedByQuarter": hist["booked_by_quarter"],
+                    "closeInQuarter": hist["close_in_quarter"], "bookedByQuarter": hist["booked_by_quarter"], "createdByQuarter": hist["created_by_quarter"],
                     "oppRateByQuarter": hist["opp_rate_by_quarter"].to_dict("records")},
         "usageMonths": {"now": month_label(months[-1]), "prev": month_label(months[-1 - k])},
         "winBasis": win_basis(o, as_of),
