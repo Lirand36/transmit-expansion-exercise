@@ -15,6 +15,8 @@ Open these files in any browser:
 
 ## Run it (Python 3.9 or newer)
 
+On a Mac, double-click `start.command`. It sets up Python the first time, rebuilds everything and opens the submission page. Or in a terminal:
+
 ```bash
 pip install -r requirements.txt
 python run.py
