@@ -17,7 +17,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -33,7 +34,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -49,7 +51,8 @@
     "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -65,7 +68,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -81,7 +85,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -97,7 +102,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -113,7 +119,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -129,7 +136,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -145,7 +153,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -161,7 +170,8 @@
     "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -177,7 +187,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -193,7 +204,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "land",
@@ -209,7 +221,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -225,7 +238,8 @@
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jun 2026"
    },
    {
     "play": "land",
@@ -241,7 +255,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -257,7 +272,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "May 2026"
    },
    {
     "play": "land",
@@ -273,7 +289,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -289,7 +306,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -305,7 +323,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -321,7 +340,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -337,7 +357,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -353,7 +374,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -369,7 +391,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -385,7 +408,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Dec 2025"
    },
    {
     "play": "price",
@@ -401,7 +425,8 @@
     "demo": null,
     "perUser": 2.3252187990634154,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 428010.00000000006
+    "paid12m": 428010.00000000006,
+    "landed": null
    },
    {
     "play": "price",
@@ -417,7 +442,8 @@
     "demo": null,
     "perUser": 1.3359023763648041,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 56160.0
+    "paid12m": 56160.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -433,7 +459,8 @@
     "demo": null,
     "perUser": 3.9484020109525093,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 703700.0
+    "paid12m": 703700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -449,7 +476,8 @@
     "demo": null,
     "perUser": 1.1088141326818268,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 41300.0
+    "paid12m": 41300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -465,7 +493,8 @@
     "demo": "Nikhil Moreau asked for a demo on 15 Aug 2026",
     "perUser": 1.3872039664539269,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 52600.0
+    "paid12m": 52600.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -481,7 +510,8 @@
     "demo": null,
     "perUser": 0.4208566108007449,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 11300.0
+    "paid12m": 11300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -497,7 +527,8 @@
     "demo": null,
     "perUser": 3.9822501490620557,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 347300.0
+    "paid12m": 347300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -513,7 +544,8 @@
     "demo": null,
     "perUser": 0.6618420238757964,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 10700.0
+    "paid12m": 10700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -529,7 +561,8 @@
     "demo": null,
     "perUser": 4.419035846724351,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 450450.0
+    "paid12m": 450450.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -545,7 +578,8 @@
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": 2.6865090403337972,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 48290.00000000001
+    "paid12m": 48290.00000000001,
+    "landed": null
    },
    {
     "play": "price",
@@ -561,7 +595,8 @@
     "demo": null,
     "perUser": 3.4663706544225237,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 68700.0
+    "paid12m": 68700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -577,7 +612,8 @@
     "demo": null,
     "perUser": 1.6961736150770987,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 8910.0
+    "paid12m": 8910.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -593,7 +629,8 @@
     "demo": null,
     "perUser": 3.8791051880057115,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 16300.0
+    "paid12m": 16300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -609,7 +646,8 @@
     "demo": null,
     "perUser": 4.701596113809854,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 27100.0
+    "paid12m": 27100.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -625,7 +663,8 @@
     "demo": null,
     "perUser": 3.680800942285041,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 12500.0
+    "paid12m": 12500.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -641,7 +680,8 @@
     "demo": null,
     "perUser": 5.109684323167469,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 19100.0
+    "paid12m": 19100.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -657,7 +697,8 @@
     "demo": null,
     "perUser": 4.958677685950414,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 70200.0
+    "paid12m": 70200.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -673,7 +714,8 @@
     "demo": null,
     "perUser": 4.1910331384015596,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 8600.0
+    "paid12m": 8600.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -689,7 +731,8 @@
     "demo": null,
     "perUser": 6.815217391304349,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 12540.000000000002
+    "paid12m": 12540.000000000002,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -705,7 +748,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -721,7 +765,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -737,7 +782,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -753,7 +799,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -769,7 +816,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -785,7 +833,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -801,7 +850,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -817,7 +867,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -833,7 +884,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -849,7 +901,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -865,7 +918,8 @@
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -881,7 +935,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -897,7 +952,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -913,7 +969,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -929,7 +986,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -945,7 +1003,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -961,7 +1020,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -977,7 +1037,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -993,7 +1054,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1009,7 +1071,8 @@
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1025,7 +1088,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1041,7 +1105,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1057,7 +1122,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1073,7 +1139,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1089,7 +1156,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1105,7 +1173,8 @@
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1121,7 +1190,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1137,7 +1207,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1153,7 +1224,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1169,7 +1241,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1185,7 +1258,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1201,7 +1275,8 @@
     "demo": "Paula Costa asked for a demo on 20 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1217,7 +1292,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1233,7 +1309,8 @@
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1249,7 +1326,8 @@
     "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1265,7 +1343,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1281,7 +1360,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1297,7 +1377,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1313,7 +1394,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1329,7 +1411,8 @@
     "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1345,7 +1428,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1361,7 +1445,8 @@
     "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1377,7 +1462,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1393,7 +1479,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1409,7 +1496,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1425,7 +1513,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    }
   ],
   "low": [
@@ -1443,7 +1532,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1459,7 +1549,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1475,7 +1566,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1491,7 +1583,8 @@
     "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1507,7 +1600,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1523,7 +1617,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1539,7 +1634,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1555,7 +1651,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1571,7 +1668,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1587,7 +1685,8 @@
     "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1603,7 +1702,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1619,7 +1719,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "land",
@@ -1635,7 +1736,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -1651,7 +1753,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jan 2026"
    },
    {
     "play": "land",
@@ -1667,7 +1770,8 @@
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jun 2026"
    },
    {
     "play": "land",
@@ -1683,7 +1787,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -1699,7 +1804,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "May 2026"
    },
    {
     "play": "land",
@@ -1715,7 +1821,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -1731,7 +1838,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -1747,7 +1855,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -1763,7 +1872,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -1779,7 +1889,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -1795,7 +1906,8 @@
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jan 2026"
    },
    {
     "play": "land",
@@ -1811,7 +1923,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -1827,7 +1940,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -1843,7 +1957,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -1859,7 +1974,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Dec 2025"
    },
    {
     "play": "price",
@@ -1875,7 +1991,8 @@
     "demo": null,
     "perUser": 2.3252187990634154,
     "peerPerUser": 3.9822501490620557,
-    "paid12m": 428010.00000000006
+    "paid12m": 428010.00000000006,
+    "landed": null
    },
    {
     "play": "price",
@@ -1891,7 +2008,8 @@
     "demo": null,
     "perUser": 0.4208566108007449,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 11300.0
+    "paid12m": 11300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -1907,7 +2025,8 @@
     "demo": null,
     "perUser": 1.6961736150770987,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 8910.0
+    "paid12m": 8910.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -1923,7 +2042,8 @@
     "demo": null,
     "perUser": 0.6618420238757964,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 10700.0
+    "paid12m": 10700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -1939,7 +2059,8 @@
     "demo": null,
     "perUser": 1.1088141326818268,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 41300.0
+    "paid12m": 41300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -1955,7 +2076,8 @@
     "demo": null,
     "perUser": 3.9484020109525093,
     "peerPerUser": 3.9822501490620557,
-    "paid12m": 703700.0
+    "paid12m": 703700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -1971,7 +2093,8 @@
     "demo": null,
     "perUser": 3.680800942285041,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 12500.0
+    "paid12m": 12500.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -1987,7 +2110,8 @@
     "demo": null,
     "perUser": 3.8791051880057115,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 16300.0
+    "paid12m": 16300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2003,7 +2127,8 @@
     "demo": null,
     "perUser": 1.3359023763648041,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 56160.0
+    "paid12m": 56160.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2019,7 +2144,8 @@
     "demo": null,
     "perUser": 4.1910331384015596,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 8600.0
+    "paid12m": 8600.0,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2035,7 +2161,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2051,7 +2178,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2067,7 +2195,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2083,7 +2212,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2099,7 +2229,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2115,7 +2246,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2131,7 +2263,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2147,7 +2280,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2163,7 +2297,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2179,7 +2314,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2195,7 +2331,8 @@
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2211,7 +2348,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2227,7 +2365,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2243,7 +2382,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2259,7 +2399,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2275,7 +2416,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2291,7 +2433,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2307,7 +2450,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2323,7 +2467,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2339,7 +2484,8 @@
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2355,7 +2501,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2371,7 +2518,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2387,7 +2535,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2403,7 +2552,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2419,7 +2569,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2435,7 +2586,8 @@
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2451,7 +2603,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2467,7 +2620,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2483,7 +2637,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2499,7 +2654,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2515,7 +2671,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2531,7 +2688,8 @@
     "demo": "Paula Costa asked for a demo on 20 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2547,7 +2705,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2563,7 +2722,8 @@
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2579,7 +2739,8 @@
     "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2595,7 +2756,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2611,7 +2773,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2627,7 +2790,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2643,7 +2807,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2659,7 +2824,8 @@
     "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2675,7 +2841,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2691,7 +2858,8 @@
     "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2707,7 +2875,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2723,7 +2892,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2739,7 +2909,8 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2755,9 +2926,15 @@
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    }
   ]
+ },
+ "peers": {
+  "Enterprise": 9,
+  "Mid-Market": 16,
+  "SMB": 15
  },
  "facts": {
   "expansionWithin90Days": 0.37681159420289856,

@@ -6,11 +6,11 @@ GTM Engineer take-home exercise, Transmit Security.
 
 | Group | Play | Owner | Accounts | $ figure |
 | --- | --- | --- | --- | --- |
-| Act now | Price to usage | Sales | 19 | $1.6M gap to peer pricing per year |
+| Act now | Price to usage | Sales | 19 | $1.6M annualized pricing gap at peer rates |
 | Act now | Land and expand | Customer Success | 12 | landed in the last 12 months, not expanded yet |
 | Validate first | Q1 expansion window | Sales + CS | 20 | $2.6M prior contract value, not expansion value |
-| Validate first | Recover revenue | RevOps + Finance + CS | 19 | $3.1M usage value at peer pricing |
-| Protect | Paid, but no usage | Salesforce Architect | 19 | $7.5M paid so far, at risk at renewal |
+| Validate first | Recover revenue | RevOps + Finance + CS | 19 | $3.1M estimated usage value at peer rates |
+| Protect | No usage currently mapped | Salesforce Architect | 19 | $7.5M paid so far, at risk at renewal |
 
 The figures measure different things, so they are never added up, and none is a forecast. For scale, expansion booked $223k to $391k a quarter.
 

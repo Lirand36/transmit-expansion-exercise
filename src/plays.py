@@ -53,7 +53,7 @@ def run(sig, opps, sizes, cfg):
     typical = sizes[sizes["basis"] == "converted to USD"].set_index("segment")["mid"]
     for a, d in landed.items():
         if a in exp.index and a not in expanded and not gap.get(a, 0) > 0:  # underpaying ones sit in play 1
-            rows.append({"play": "land", "account_id": a, "at_stake": typical[exp.at[a, "segment"]],
+            rows.append({"play": "land", "account_id": a, "at_stake": typical[exp.at[a, "segment"]], "landed": d,
                          "fact": f"First deal {d:%b %Y}, no expansion yet"})
 
     # 4. Recover revenue: contract check and win-back
@@ -74,7 +74,9 @@ def run(sig, opps, sizes, cfg):
     out["at_stake"] = out["at_stake"].round()
     log.step("plays", "build the Q1 plays", len(sig), len(out),
              ", ".join(f"{k}: {len(g)} accounts ${g['at_stake'].sum():,.0f}" for k, g in out.groupby("play")))
-    return out.sort_values(["play", "at_stake"], ascending=[True, False])
+    out = out.sort_values(["play", "at_stake"], ascending=[True, False])
+    out.attrs["peers"] = per_user.dropna().groupby(exp["segment"]).size().to_dict()  # customers behind each peer price
+    return out
 
 
 def facts(opps):

@@ -28,7 +28,8 @@ def run(t, matches, sig, plays_by_bench, hist, facts, checks, cfg, path):
                  "owner": owner.get(r["account_id"], ""), "users": num(s.at[r["account_id"], "mau_now"]),
                  "growth": num(s.at[r["account_id"], "momentum_3m"]), "demo": demo_note.get(r["account_id"]),
                  "perUser": num(r.get("per_user")), "peerPerUser": num(r.get("peer_per_user")),
-                 "paid12m": num(r.get("paid_12m"))}
+                 "paid12m": num(r.get("paid_12m")),
+                 "landed": r["landed"].strftime("%b %Y") if pd.notna(r.get("landed")) else None}
                 for _, r in p.iterrows()]
 
     no_usage = s[s["flag_no_usage"]]
@@ -37,6 +38,7 @@ def run(t, matches, sig, plays_by_bench, hist, facts, checks, cfg, path):
         "asOf": cfg["dates"]["as_of"],
         "benchmark": cfg["plays"]["benchmark"],
         "plays": {b: rows(p) for b, p in plays_by_bench.items()},
+        "peers": {k: int(v) for k, v in next(iter(plays_by_bench.values())).attrs["peers"].items()},
         "facts": facts,
         "bookedByQuarter": booked,
         "noUsage": {"accounts": int(len(no_usage)), "paidUsd": float(no_usage["paid_to_date_usd"].sum())},

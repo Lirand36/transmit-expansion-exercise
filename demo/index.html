@@ -56,23 +56,25 @@ nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: 
 button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .sub-h { color: var(--muted); margin: 2px 0 0; font-size: 0.98rem; }
-.summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-top: 18px; max-width: 520px; }
+.summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border-radius: 10px; overflow: hidden; margin-top: 18px; max-width: 640px; }
 .summary > div { background: var(--surface); padding: 12px 16px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .summary b { font: 700 1.5rem/1.2 var(--font-display); }
 .summary .note { font-size: 0.8rem; }
-.controls { display: flex; gap: 10px 16px; flex-wrap: wrap; align-items: center; margin-top: 18px; }
+.controls { display: flex; gap: 8px 12px; flex-wrap: wrap; align-items: center; padding: 10px 18px; border-bottom: 1px solid var(--line); }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; flex-wrap: wrap; }
-.seg button { font: 500 0.82rem var(--font-body); background: var(--surface); color: var(--muted); border: 0; padding: 6px 11px; cursor: pointer; }
+.seg button { font: 500 0.76rem var(--font-body); background: var(--surface); color: var(--muted); border: 0; padding: 4px 9px; cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
 .seg .num { font-size: 0.72rem; opacity: 0.8; margin-left: 4px; }
-.bench { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 0.84rem; color: var(--muted); margin-left: auto; }
+.bench { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 0.78rem; color: var(--muted); margin-left: auto; }
 .bench .note { max-width: 46ch; }
 
 .plays { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
-.play { text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+.play { text-align: left; font: inherit; color: inherit; background: var(--surface); border: 0; border-left: 3px solid transparent; border-radius: 12px;
   padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; cursor: pointer; min-width: 0; }
-.play:hover { border-color: var(--accent); }
-.play[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.play:hover { border-left-color: var(--line); }
+.play[aria-pressed="true"] { border-left-color: var(--accent); }
+.play .show { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+.play[aria-pressed="true"] .show { color: var(--accent); }
 .play .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .play h3 { font: 600 1.1rem var(--font-display); margin: 0; }
 .play h3 span { color: var(--muted); font-weight: 500; margin-right: 6px; }
@@ -84,13 +86,13 @@ button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-v
 .play .usd { font: 700 1.7rem/1.1 var(--font-display); color: var(--accent); }
 .play .lbl { font-size: 0.8rem; color: var(--muted); }
 .play .split { display: flex; gap: 6px 16px; flex-wrap: wrap; font-size: 0.84rem; }
-.play dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 0.86rem; border-top: 1px dashed var(--line); padding-top: 8px; }
+.play dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 0.86rem; padding-top: 4px; }
 .play dt { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 2px; }
 .play dd { margin: 0; }
 
-.risk { margin-top: 16px; background: var(--surface); border: 1px dashed var(--warn); border-radius: 12px; padding: 14px 18px;
+.risk { margin-top: 16px; background: var(--warn-soft); border: 0; border-left: 3px solid transparent; border-radius: 12px; padding: 14px 18px;
   display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 18px; align-items: center; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
-.risk[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--warn); }
+.risk[aria-pressed="true"] { border-left-color: var(--warn); }
 .risk .usd { font: 700 1.5rem var(--font-display); color: var(--warn); text-align: right; }
 .risk p { margin: 0; font-size: 0.88rem; }
 
@@ -125,20 +127,20 @@ td.act { white-space: nowrap; font-weight: 600; }
 
   <div class="summary" id="summary"></div>
 
-  <div class="controls">
-    <div class="seg" role="group" aria-label="Region" id="f-region"></div>
-    <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
-    <div class="bench">Peer price
-      <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
-      <span class="note">Median = typical peer · Cautious = cheapest 25%</span>
-    </div>
-  </div>
 
   <div class="plays" id="plays"></div>
   <button class="risk" id="risk"></button>
 
   <div class="card list">
     <div class="card-head"><h2 id="list-title"></h2><a href="../output/plays.csv" id="csv">Full list, all plays (CSV)</a></div>
+    <div class="controls">
+      <span class="note">Filter the whole page:</span>
+      <div class="seg" role="group" aria-label="Region" id="f-region"></div>
+      <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
+      <div class="bench">Peer price
+        <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
+      </div>
+    </div>
     <div class="scroll"><table><thead id="list-head"></thead><tbody id="rows"></tbody></table></div>
   </div>
 
@@ -177,7 +179,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -193,7 +196,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -209,7 +213,8 @@ const DATA = {
     "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -225,7 +230,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -241,7 +247,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -257,7 +264,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -273,7 +281,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -289,7 +298,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -305,7 +315,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -321,7 +332,8 @@ const DATA = {
     "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -337,7 +349,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -353,7 +366,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "land",
@@ -369,7 +383,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -385,7 +400,8 @@ const DATA = {
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jun 2026"
    },
    {
     "play": "land",
@@ -401,7 +417,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -417,7 +434,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "May 2026"
    },
    {
     "play": "land",
@@ -433,7 +451,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -449,7 +468,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -465,7 +485,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -481,7 +502,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -497,7 +519,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -513,7 +536,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -529,7 +553,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -545,7 +570,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Dec 2025"
    },
    {
     "play": "price",
@@ -561,7 +587,8 @@ const DATA = {
     "demo": null,
     "perUser": 2.3252187990634154,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 428010.00000000006
+    "paid12m": 428010.00000000006,
+    "landed": null
    },
    {
     "play": "price",
@@ -577,7 +604,8 @@ const DATA = {
     "demo": null,
     "perUser": 1.3359023763648041,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 56160.0
+    "paid12m": 56160.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -593,7 +621,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.9484020109525093,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 703700.0
+    "paid12m": 703700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -609,7 +638,8 @@ const DATA = {
     "demo": null,
     "perUser": 1.1088141326818268,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 41300.0
+    "paid12m": 41300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -625,7 +655,8 @@ const DATA = {
     "demo": "Nikhil Moreau asked for a demo on 15 Aug 2026",
     "perUser": 1.3872039664539269,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 52600.0
+    "paid12m": 52600.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -641,7 +672,8 @@ const DATA = {
     "demo": null,
     "perUser": 0.4208566108007449,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 11300.0
+    "paid12m": 11300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -657,7 +689,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.9822501490620557,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 347300.0
+    "paid12m": 347300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -673,7 +706,8 @@ const DATA = {
     "demo": null,
     "perUser": 0.6618420238757964,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 10700.0
+    "paid12m": 10700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -689,7 +723,8 @@ const DATA = {
     "demo": null,
     "perUser": 4.419035846724351,
     "peerPerUser": 4.897597185785833,
-    "paid12m": 450450.0
+    "paid12m": 450450.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -705,7 +740,8 @@ const DATA = {
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": 2.6865090403337972,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 48290.00000000001
+    "paid12m": 48290.00000000001,
+    "landed": null
    },
    {
     "play": "price",
@@ -721,7 +757,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.4663706544225237,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 68700.0
+    "paid12m": 68700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -737,7 +774,8 @@ const DATA = {
     "demo": null,
     "perUser": 1.6961736150770987,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 8910.0
+    "paid12m": 8910.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -753,7 +791,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.8791051880057115,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 16300.0
+    "paid12m": 16300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -769,7 +808,8 @@ const DATA = {
     "demo": null,
     "perUser": 4.701596113809854,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 27100.0
+    "paid12m": 27100.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -785,7 +825,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.680800942285041,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 12500.0
+    "paid12m": 12500.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -801,7 +842,8 @@ const DATA = {
     "demo": null,
     "perUser": 5.109684323167469,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 19100.0
+    "paid12m": 19100.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -817,7 +859,8 @@ const DATA = {
     "demo": null,
     "perUser": 4.958677685950414,
     "peerPerUser": 5.361871002758551,
-    "paid12m": 70200.0
+    "paid12m": 70200.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -833,7 +876,8 @@ const DATA = {
     "demo": null,
     "perUser": 4.1910331384015596,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 8600.0
+    "paid12m": 8600.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -849,7 +893,8 @@ const DATA = {
     "demo": null,
     "perUser": 6.815217391304349,
     "peerPerUser": 6.888246628131022,
-    "paid12m": 12540.000000000002
+    "paid12m": 12540.000000000002,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -865,7 +910,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -881,7 +927,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -897,7 +944,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -913,7 +961,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -929,7 +978,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -945,7 +995,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -961,7 +1012,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -977,7 +1029,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -993,7 +1046,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1009,7 +1063,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1025,7 +1080,8 @@ const DATA = {
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1041,7 +1097,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1057,7 +1114,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1073,7 +1131,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1089,7 +1148,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1105,7 +1165,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1121,7 +1182,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1137,7 +1199,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1153,7 +1216,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -1169,7 +1233,8 @@ const DATA = {
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1185,7 +1250,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1201,7 +1267,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1217,7 +1284,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1233,7 +1301,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1249,7 +1318,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1265,7 +1335,8 @@ const DATA = {
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1281,7 +1352,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1297,7 +1369,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1313,7 +1386,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1329,7 +1403,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1345,7 +1420,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1361,7 +1437,8 @@ const DATA = {
     "demo": "Paula Costa asked for a demo on 20 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1377,7 +1454,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1393,7 +1471,8 @@ const DATA = {
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1409,7 +1488,8 @@ const DATA = {
     "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1425,7 +1505,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1441,7 +1522,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1457,7 +1539,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -1473,7 +1556,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1489,7 +1573,8 @@ const DATA = {
     "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1505,7 +1590,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1521,7 +1607,8 @@ const DATA = {
     "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1537,7 +1624,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1553,7 +1641,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1569,7 +1658,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -1585,7 +1675,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    }
   ],
   "low": [
@@ -1603,7 +1694,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1619,7 +1711,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1635,7 +1728,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1651,7 +1745,8 @@ const DATA = {
     "demo": "Omer Okafor asked for a demo on 16 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1667,7 +1762,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1683,7 +1779,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1699,7 +1796,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1715,7 +1813,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1731,7 +1830,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1747,7 +1847,8 @@ const DATA = {
     "demo": "Greta Ueda asked for a demo on 13 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1763,7 +1864,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "contract",
@@ -1779,7 +1881,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "land",
@@ -1795,7 +1898,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -1811,7 +1915,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jan 2026"
    },
    {
     "play": "land",
@@ -1827,7 +1932,8 @@ const DATA = {
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jun 2026"
    },
    {
     "play": "land",
@@ -1843,7 +1949,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -1859,7 +1966,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "May 2026"
    },
    {
     "play": "land",
@@ -1875,7 +1983,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -1891,7 +2000,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -1907,7 +2017,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -1923,7 +2034,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -1939,7 +2051,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Oct 2025"
    },
    {
     "play": "land",
@@ -1955,7 +2068,8 @@ const DATA = {
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Jan 2026"
    },
    {
     "play": "land",
@@ -1971,7 +2085,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Apr 2026"
    },
    {
     "play": "land",
@@ -1987,7 +2102,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Mar 2026"
    },
    {
     "play": "land",
@@ -2003,7 +2119,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Nov 2025"
    },
    {
     "play": "land",
@@ -2019,7 +2136,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": "Dec 2025"
    },
    {
     "play": "price",
@@ -2035,7 +2153,8 @@ const DATA = {
     "demo": null,
     "perUser": 2.3252187990634154,
     "peerPerUser": 3.9822501490620557,
-    "paid12m": 428010.00000000006
+    "paid12m": 428010.00000000006,
+    "landed": null
    },
    {
     "play": "price",
@@ -2051,7 +2170,8 @@ const DATA = {
     "demo": null,
     "perUser": 0.4208566108007449,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 11300.0
+    "paid12m": 11300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2067,7 +2187,8 @@ const DATA = {
     "demo": null,
     "perUser": 1.6961736150770987,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 8910.0
+    "paid12m": 8910.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2083,7 +2204,8 @@ const DATA = {
     "demo": null,
     "perUser": 0.6618420238757964,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 10700.0
+    "paid12m": 10700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2099,7 +2221,8 @@ const DATA = {
     "demo": null,
     "perUser": 1.1088141326818268,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 41300.0
+    "paid12m": 41300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2115,7 +2238,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.9484020109525093,
     "peerPerUser": 3.9822501490620557,
-    "paid12m": 703700.0
+    "paid12m": 703700.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2131,7 +2255,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.680800942285041,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 12500.0
+    "paid12m": 12500.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2147,7 +2272,8 @@ const DATA = {
     "demo": null,
     "perUser": 3.8791051880057115,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 16300.0
+    "paid12m": 16300.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2163,7 +2289,8 @@ const DATA = {
     "demo": null,
     "perUser": 1.3359023763648041,
     "peerPerUser": 1.3743785689316461,
-    "paid12m": 56160.0
+    "paid12m": 56160.0,
+    "landed": null
    },
    {
     "play": "price",
@@ -2179,7 +2306,8 @@ const DATA = {
     "demo": null,
     "perUser": 4.1910331384015596,
     "peerPerUser": 4.446314626105707,
-    "paid12m": 8600.0
+    "paid12m": 8600.0,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2195,7 +2323,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2211,7 +2340,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2227,7 +2357,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2243,7 +2374,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2259,7 +2391,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2275,7 +2408,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2291,7 +2425,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2307,7 +2442,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2323,7 +2459,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2339,7 +2476,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2355,7 +2493,8 @@ const DATA = {
     "demo": "Nikhil Quinn asked for a demo on 12 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2371,7 +2510,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2387,7 +2527,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2403,7 +2544,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2419,7 +2561,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2435,7 +2578,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2451,7 +2595,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2467,7 +2612,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2483,7 +2629,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "renewal",
@@ -2499,7 +2646,8 @@ const DATA = {
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2515,7 +2663,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2531,7 +2680,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2547,7 +2697,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2563,7 +2714,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2579,7 +2731,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2595,7 +2748,8 @@ const DATA = {
     "demo": "Ines Ueda asked for a demo on 21 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2611,7 +2765,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2627,7 +2782,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2643,7 +2799,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2659,7 +2816,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2675,7 +2833,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2691,7 +2850,8 @@ const DATA = {
     "demo": "Paula Costa asked for a demo on 20 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2707,7 +2867,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2723,7 +2884,8 @@ const DATA = {
     "demo": "Jonas Ueda asked for a demo on 6 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2739,7 +2901,8 @@ const DATA = {
     "demo": "Clara Lindqvist asked for a demo on 1 Aug 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2755,7 +2918,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2771,7 +2935,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2787,7 +2952,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "risk",
@@ -2803,7 +2969,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2819,7 +2986,8 @@ const DATA = {
     "demo": "Marcus Haddad asked for a demo on 30 Jul 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2835,7 +3003,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2851,7 +3020,8 @@ const DATA = {
     "demo": "Marcus Farrell asked for a demo on 12 Sep 2026",
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2867,7 +3037,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2883,7 +3054,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2899,7 +3071,8 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    },
    {
     "play": "winback",
@@ -2915,9 +3088,15 @@ const DATA = {
     "demo": null,
     "perUser": null,
     "peerPerUser": null,
-    "paid12m": null
+    "paid12m": null,
+    "landed": null
    }
   ]
+ },
+ "peers": {
+  "Enterprise": 9,
+  "Mid-Market": 16,
+  "SMB": 15
  },
  "facts": {
   "expansionWithin90Days": 0.37681159420289856,
@@ -3064,17 +3243,18 @@ const DATA = {
   // Due dates for validation come from the data-quality memo; plays to act on run through Q1 2027.
   const PLAYS = [
     { key: "price", n: "01", plays: ["price"], title: "Price to usage", ready: ["go", "Ready"],
-      evidence: () => "They pay less per user than peers.", lbl: "pricing gap / year",
+      evidence: () => "They pay less per user than peers.", lbl: "annualized pricing gap at peer rates",
+      basis: () => `Peer = ${F.bench === "median" ? "median" : "cheapest 25%"} of ${DATA.peers.Enterprise} Enterprise, ${DATA.peers["Mid-Market"]} Mid-Market, ${DATA.peers.SMB} SMB customers.`,
       next: L => L[0] ? `Pricing proposal. Start: ${L[0].name.split(" ").slice(0, 2).join(" ")} (${money(L[0].atStake)}).` : "Pricing proposal.",
       owner: "Sales · Q1 2027", metric: "Meetings → opportunities → won", action: "Pricing proposal" },
     { key: "land", n: "02", plays: ["land"], title: "Land and expand", ready: ["process", "CS process"], count: true,
-      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of expansions start within 90 days of landing.`, lbl: "landed, not expanded",
-      next: () => "Discovery call by day 90.", owner: "Customer Success · day 90", metric: "Calls held → opportunities", action: "Discovery call" },
+      evidence: () => `${pct(DATA.facts.expansionWithin90Days)} of expansions start within 90 days of landing, ${pct(DATA.facts.expansionWithin6Months)} within 6 months.`, lbl: "landed in the last 12 months, not expanded",
+      next: () => "Discovery call now. Then a day-90 call for every new customer.", owner: "Customer Success · Q1 2027", metric: "Calls held → opportunities", action: "Discovery call" },
     { key: "renewal", n: "03", plays: ["renewal"], title: "Q1 expansion window", ready: ["check", "Validate"], count: true,
       evidence: L => `Signed ${money(L.reduce((a, r) => a + r.atStake, 0))} in Q1 2026.`, lbl: "to validate",
-      next: () => "Pull renewal dates from the CRM.", owner: "RevOps · 29 Jan 2027", metric: "Dates confirmed → expansion on renewal agenda", action: "Confirm end date" },
+      next: () => "Pull renewal dates from the CRM.", owner: "RevOps · 29 Jan 2027", metric: "Renewal dates confirmed → eligible accounts reviewed for expansion", action: "Confirm end date" },
     { key: "recover", n: "04", plays: ["contract", "winback"], title: "Recover revenue", ready: ["check", "Reconcile"],
-      evidence: () => "They use us without a contract.", lbl: "usage at peer price",
+      evidence: () => "Usage without a recorded contract.", lbl: "estimated usage value at peer rates",
       split: L => `${L.filter(r => r.play === "contract").length} no contract · ${L.filter(r => r.play === "winback").length} after lost renewal`,
       next: () => "Reconcile billing. No selling yet.", owner: "RevOps + Finance · 29 Jan 2027", metric: "Each account resolved", action: "Reconcile contract" },
   ];
@@ -3092,8 +3272,9 @@ const DATA = {
     const ids = L => new Set(L.map(r => r.id)).size;
 
     // Summary: scope of the work, not money
+    const by = k => PLAYS.filter(p => p.ready[0] === k).length;
     $("summary").innerHTML = [
-      [PLAYS.length, "Plays"], [ids(rows.filter(r => r.play !== "risk")), "Accounts"], [2, "Data fixes"],
+      [by("go") + by("process"), "Ready now"], [by("check"), "Validate first"], [1, "Revenue risk"], [ids(rows.filter(r => r.play !== "risk")), "Accounts"],
     ].map(([v, t]) => `<div><span class="eyebrow">${t}</span><b>${v}</b></div>`).join("");
 
     const opt = (key, v, label) => {
@@ -3109,25 +3290,26 @@ const DATA = {
       return `<button class="play" data-k="${p.key}" aria-pressed="${F.play === p.key}">
         <span class="top"><h3><span>${p.n}</span>${p.title}</h3><span class="ready ${p.ready[0]}">${p.ready[1]}</span></span>
         <span class="value"><span class="usd">${p.count ? L.length + " accounts" : money(sum(L))}</span><span class="lbl">${p.count ? "" : L.length + " accounts · "}${p.lbl}</span></span>
-        <span>${esc(p.evidence(L))}${p.split ? ` <span class="meta">${p.split(L)}</span>` : ""}</span>
-        <dl><dt>Next</dt><dd>${esc(p.next(L))}</dd><dt>Owner</dt><dd>${p.owner}</dd><dt>Success</dt><dd>${p.metric}</dd></dl></button>`;
+        <span>${esc(p.evidence(L))}${p.split ? ` <span class="meta">${p.split(L)}</span>` : ""}${p.basis ? `<br><span class="meta">${p.basis()}</span>` : ""}</span>
+        <dl><dt>Next</dt><dd>${esc(p.next(L))}</dd><dt>Owner</dt><dd>${p.owner}</dd><dt>Success</dt><dd>${p.metric}</dd></dl>
+        <span class="show">${F.play === p.key ? "Showing accounts ▾" : "Show accounts"}</span></button>`;
     }).join("");
 
     const R = of(RISK);
     $("risk").setAttribute("aria-pressed", F.play === "risk");
     $("risk").innerHTML = `<div><span class="eyebrow">Revenue protection</span>
-      <p><b>${R.length} paying accounts show no usage.</b> Account-to-product link may be wrong. Salesforce Architect · 18 Dec 2026.</p></div>
+      <p><b>${R.length} paying accounts with no usage currently mapped.</b> Account-to-product link may be wrong. Salesforce Architect · 18 Dec 2026.</p></div>
       <div><div class="usd">${money(sum(R))}</div><div class="meta">paid so far</div></div>`;
 
     // The accounts behind the selected play
     const P = F.play === "risk" ? RISK : PLAYS.find(p => p.key === F.play), list = of(P);
     $("list-title").textContent = `${P.n ? P.n + " " : ""}${P.title}: ${list.length} accounts`;
     const price = P.key === "price";
-    $("list-head").innerHTML = `<tr><th>#</th><th>Account</th>${price ? '<th class="r">Paid, last 12 months</th><th class="r">Per active user</th>' : "<th>Evidence</th>"}<th class="r">Active users</th><th>Owner</th><th>Next action</th><th class="r">${price ? "Gap per year" : P.key === "land" ? "Typical deal" : P.key === "renewal" ? "Prior contract" : P.key === "risk" ? "Paid so far" : "Usage value"}</th></tr>`;
+    $("list-head").innerHTML = `<tr><th>#</th><th>Account</th>${price ? '<th class="r">Paid, last 12 months</th><th class="r">Per active user</th>' : P.key === "land" ? "<th>Landed</th>" : "<th>Evidence</th>"}<th class="r">Active users</th><th>Owner</th><th>Next action</th><th class="r">${price ? "Gap per year" : P.key === "land" ? "Typical deal" : P.key === "renewal" ? "Prior contract" : P.key === "risk" ? "Paid so far" : "Usage value"}</th></tr>`;
     $("rows").innerHTML = list.map((r, i) => {
       const trend = r.growth == null ? "" : `<span class="trend ${r.growth >= 0 ? "up" : "down"}">${r.growth >= 0 ? "▲" : "▼"}${Math.abs(Math.round(r.growth * 100))}%</span>`;
       const ev = price ? `<td class="r num">${money(r.paid12m)}</td><td class="r num">$${r.perUser.toFixed(2)}<div class="meta">peers $${r.peerPerUser.toFixed(2)}</div></td>`
-                       : `<td>${esc(r.fact)}</td>`;
+                       : P.key === "land" ? `<td>${esc(r.landed)}</td>` : `<td>${esc(r.fact)}</td>`;
       return `<tr><td class="rank">${i + 1}</td>
         <td><div class="acct">${esc(r.name)}</div><div class="meta">${esc(r.segment)} · ${esc(r.region)}</div>${r.demo ? `<div class="demo">${esc(r.demo)}</div>` : ""}</td>
         ${ev}<td class="r num">${r.users ? short(r.users) + trend : '<span class="meta">no data</span>'}</td>
