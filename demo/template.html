@@ -210,18 +210,18 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="lever">
         <span class="lbl">Deal size</span>
         <div class="seg" role="group" aria-label="Deal size" id="size">
-          <button data-v="low">Conservative</button><button data-v="mid">Typical</button><button data-v="high">Ambitious</button>
+          <button data-v="low">Smaller</button><button data-v="mid">Typical</button><button data-v="high">Larger</button>
         </div>
         <span class="note" id="size-note"></span>
       </div>
       <div class="lever">
-        <label for="win">Win rate <span class="val" id="win-v"></span></label>
-        <input type="range" id="win" min="30" max="90" step="1">
+        <span class="lbl">Win rate <span class="val" id="win-v"></span></span>
+        <div class="seg" role="group" aria-label="Win rate" id="win"></div>
         <span class="note" id="win-note"></span>
       </div>
       <div class="lever">
-        <label for="opp">Accounts that open a deal <span class="val" id="opp-v"></span></label>
-        <input type="range" id="opp" min="0" max="60" step="0.5">
+        <span class="lbl">Accounts that open a deal <span class="val" id="opp-v"></span></span>
+        <div class="seg" role="group" aria-label="Accounts that open a deal" id="opp"></div>
         <span class="note" id="opp-note"></span>
       </div>
       <div class="moved">
@@ -316,6 +316,10 @@ const DATA = /*DATA*/null;
   let S = freshPlan();
   let F = { region: "all", segment: "all" };
   const W = DATA.winBasis, H = DATA.history;
+  // Lever choices come only from the data: worst, average and best past quarter; all-time and last-12-months win rate
+  const OPP = H.oppRateByQuarter.map(q => q.opened / q.customers);
+  const OPP_CHOICES = [["Worst quarter", Math.min(...OPP)], ["Average", H.oppRate], ["Best quarter", Math.max(...OPP)]];
+  const WIN_CHOICES = [["All history", DATA.winRate], ["Last 12 months", W.last12]];
   const pct = v => (Math.round(v * 1000) / 10) + "%";
 
   const U = DATA.usageMonths;
@@ -377,15 +381,16 @@ const DATA = /*DATA*/null;
 
   function sync() {
     $("cap").value = S.tier1Count; $("cap-v").textContent = S.tier1Count;
-    $("win").value = Math.round(S.winRate * 100); $("win-v").textContent = Math.round(S.winRate * 100) + "%";
-    $("win-note").textContent = `Past: ${W.won} of ${W.deals} expansion deals won.`;
+    $("win-v").textContent = Math.round(S.winRate * 100) + "%";
+    document.querySelectorAll("#win button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === S.winRate));
+    $("win-note").textContent = `All history: ${W.won} of ${W.deals} expansion deals won. Last 12 months: ${Math.round(W.last12 * 100)}%.`;
     const sz = DATA.sizes[S.convert ? "converted to USD" : "as recorded"];
     $("size-note").textContent = `Ent ${money(sz.Enterprise[S.dealSize])} (only ${sz.Enterprise.deals} past deals), Mid ${money(sz["Mid-Market"][S.dealSize])}, SMB ${money(sz.SMB[S.dealSize])}.`;
     document.querySelectorAll("#size button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === S.dealSize));
-    $("opp").value = Math.round(S.oppRate * 200) / 2; $("opp-v").textContent = pct(S.oppRate);
-    const q = H.oppRateByQuarter, qc = q.reduce((a, x) => a + x.customers, 0), qo = q.reduce((a, x) => a + x.opened, 0);
-    const allBook = run(S).rows.reduce((a, r) => a + r.deal, 0) * S.oppRate * S.winRate;
-    $("opp-note").textContent = `Past rate ${pct(qo / qc)}. Applied to all customers it gives ${money(allBook)} a quarter, in line with actual bookings.`;
+    $("opp-v").textContent = pct(S.oppRate);
+    document.querySelectorAll("#opp button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === S.oppRate));
+    const allBook = base.rows.reduce((a, r) => a + r.deal, 0) * H.oppRate * DATA.winRate;
+    $("opp-note").textContent = `Customers who opened an expansion deal in each of the last ${OPP.length} quarters. The average applied to all customers gives ${money(allBook)} a quarter, in line with actual bookings.`;
     const w = norm(S);
     for (const [id, key] of [["f-region", "region"], ["f-seg", "segment"]])
       document.querySelectorAll(`#${id} button`).forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F[key]));
@@ -419,7 +424,7 @@ const DATA = /*DATA*/null;
     $("k-accts").textContent = t1.length;
     $("k-mix").textContent = ["Enterprise", "Mid-Market", "SMB"].map(s => `${t1.filter(r => r.segment === s).length} ${s === "Enterprise" ? "Ent" : s === "Mid-Market" ? "Mid-Mkt" : s}`).join(" · ");
     $("k-pipe").textContent = money(pipe);
-    $("k-range").textContent = `if ${pct(S.oppRate)} open a deal (${pct(H.oppRate) === pct(S.oppRate) ? "past rate" : "past: " + pct(H.oppRate)})`;
+    $("k-range").textContent = `if ${pct(S.oppRate)} open a deal, as in past quarters`;
     $("k-book").textContent = money(book);
     $("k-rate").textContent = `${money(bookQ1)} in Q1, the rest in Q2`;
 
@@ -468,9 +473,11 @@ const DATA = /*DATA*/null;
 
   // Events
   $("cap").addEventListener("input", e => { S.tier1Count = +e.target.value; render(); });
-  $("win").addEventListener("input", e => { S.winRate = +e.target.value / 100; render(); });
+  $("win").innerHTML = WIN_CHOICES.map(([l, v]) => `<button data-v="${v}">${l}</button>`).join("");
+  $("opp").innerHTML = OPP_CHOICES.map(([l, v]) => `<button data-v="${v}">${l}</button>`).join("");
+  $("win").addEventListener("click", e => { if (e.target.dataset.v) { S.winRate = +e.target.dataset.v; render(); } });
   $("size").addEventListener("click", e => { if (e.target.dataset.v) { S.dealSize = e.target.dataset.v; render(); } });
-  $("opp").addEventListener("input", e => { S.oppRate = +e.target.value / 100; render(); });
+  $("opp").addEventListener("click", e => { if (e.target.dataset.v) { S.oppRate = +e.target.dataset.v; render(); } });
   for (const k of SIGNALS) $("w-" + k).addEventListener("input", e => { S.weights[k] = +e.target.value / 100; render(); });
   $("f-region").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.region = b.dataset.v; render(); } });
   $("f-seg").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.segment = b.dataset.v; render(); } });
