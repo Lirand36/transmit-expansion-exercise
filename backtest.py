@@ -1,8 +1,10 @@
 """How well would the ranking have picked expansion in the past?
 
-For each month end from Oct 2025 to Feb 2026, the same signals and score as the plan are rebuilt using only
+For each month end from Jul 2025 to Feb 2026, the same signals and score as the plan are rebuilt using only
 the data known on that date. Then we check which accounts had an expansion deal created in the next 90 days.
-Feb 2026 is the last date whose 90 days are fully covered by the CRM export (it ends 16 Jun 2026).
+Jul 2025 is the first date with 3 months of usage behind it (usage starts Apr 2025), and Feb 2026 the last
+whose 90 days are fully covered by the CRM export (it ends 16 Jun 2026). Expansion deals created before
+Jul 2025 can't be tested: there is no usage data from before them.
 
 AUC = the chance that an account which went on to expand scored higher than one which didn't.
 0.5 is a coin flip, 1.0 is perfect.
@@ -18,7 +20,7 @@ import yaml
 from src import ai_match, clean, match, score, signals
 
 BASE = Path(__file__).parent
-AS_OF = pd.date_range("2025-10-31", "2026-02-28", freq="ME")
+AS_OF = pd.date_range("2025-07-31", "2026-02-28", freq="ME")
 WINDOW = pd.Timedelta(days=90)
 
 

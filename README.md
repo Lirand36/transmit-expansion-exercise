@@ -38,7 +38,7 @@ python run.py
 
 ## How well does the ranking predict?
 
-`python backtest.py` rebuilds the same signals and score at each month end from Oct 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.51, where 0.5 is a coin flip. Only 10 accounts expanded in that window, too few to learn weights from, so the ranking rests on business logic. Details per account are in `output/backtest.csv`.
+`python backtest.py` rebuilds the same signals and score at each month end from Jul 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.51, where 0.5 is a coin flip. 21 expansion deals on 18 accounts fall in that window. The other 48 came before product usage data starts (Apr 2025), so they can't be tested. The ranking therefore rests on business logic, and Q1 is the real test. Details per account are in `output/backtest.csv`.
 
 ## If the run stops
 

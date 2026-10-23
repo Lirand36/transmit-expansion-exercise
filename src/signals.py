@@ -40,7 +40,8 @@ def run(t, matches, cfg):
     out["mau_now"] = mau.iloc[:, -1]
     out["momentum_3m"] = mau.iloc[:, -1] / mau.iloc[:, -1 - k] - 1
     out["depth_api_per_user"] = (api.iloc[:, -k:].sum(axis=1) / mau.iloc[:, -k:].sum(axis=1))
-    out["change_6m"] = mau.iloc[:, -1] / mau.iloc[:, -1 - s["shrinking_months"]] - 1
+    n = s["shrinking_months"]  # needs n+1 months of usage; blank when history is shorter (only happens in backtest.py)
+    out["change_6m"] = mau.iloc[:, -1] / mau.iloc[:, -1 - n] - 1 if mau.shape[1] > n else float("nan")
 
     # Headroom: segment median $ per user divided by the account's $ per user (above 1 = pays less than peers)
     per_user = out["paid_to_date_usd"] / out["mau_now"]
