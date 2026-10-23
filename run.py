@@ -10,7 +10,7 @@ from pathlib import Path
 import pandas as pd
 import yaml
 
-from src import ai_match, checks, clean, export_demo, log, match, score, signals
+from src import ai_match, checks, clean, export_demo, log, match, plays, score, signals
 
 BASE = Path(__file__).parent
 
@@ -62,54 +62,46 @@ def main():
     sig.to_csv(BASE / "output" / "account_signals.csv", index=False)
     print(log.save(BASE / "logs" / "transform_log.csv").iloc[-1]["detail"])
 
-    print("\n5. Score, tiers and Q1 2027 pipeline")
+    print("\n5. Account score (tested in backtest.py) and deal history")
     ranked = score.score(sig, cfg)
     sizes, win_rate = score.deal_sizes(tables["opportunities"], sig)
     hist = score.history(tables["opportunities"], cfg)
-    pipe = score.pipeline(ranked, sizes, win_rate, hist, cfg)
-    show_moves(ranked, pipe)
     ranked.to_csv(BASE / "output" / "ranking.csv", index=False)
     sizes.to_csv(BASE / "output" / "deal_sizes.csv", index=False)
-    pipe.to_csv(BASE / "output" / "pipeline.csv", index=False)
     log.save(BASE / "logs" / "transform_log.csv")
+    print(f"Typical expansion deal: " + ", ".join(f"{r['segment']} ${r['mid']:,.0f}" for _, r in sizes[sizes['basis'] == 'converted to USD'].iterrows()))
 
-    cols = ["account_name", "segment", "score", "intent_0_100", "headroom_0_100", "momentum_0_100",
-            "depth_0_100"]
-    print("\nTier 1 accounts:")
-    print(ranked[ranked["tier"] == 1][cols].to_string(index=False))
-    print(f"\nDeal size used: {cfg['pipeline']['deal_size']}. Expansion win rate: {win_rate:.0%}. "
-          f"Customers opening an expansion deal per quarter: {hist['opp_rate']:.1%}. "
-          f"Median cycle {hist['cycle_days']:.0f} days, so {hist['close_in_quarter']:.0%} of a quarter's new pipeline closes in it.")
-    print(pipe.to_string(index=False))
-    for track, who in [("contract", "Contract check (RevOps with Finance)"), ("winback", "Win-back (Customer Success)")]:
-        print(f"\n{who}: " + ", ".join(sig.loc[sig["track"] == track, "account_name"]))
+    print("\n6. Q1 plays")
+    by_bench = {}
+    for bench in ["median", "low"]:
+        by_bench[bench] = plays.run(sig, tables["opportunities"], sizes, {**cfg, "plays": {"benchmark": bench}})
+    p = by_bench[cfg["plays"]["benchmark"]]
+    show_moves(p)
+    p.to_csv(BASE / "output" / "plays.csv", index=False)
+    log.save(BASE / "logs" / "transform_log.csv")
+    for name, g in p.groupby("play", sort=False):
+        print(f"  {name:<9} {len(g):>3} accounts  ${g['at_stake'].sum():>12,.0f}")
 
-    export_demo.run(tables, matches, sig, sizes, win_rate, hist, result, cfg, BASE / "output" / "demo_data.json")
-    print("\nDemo data written to output/demo_data.json")
+    export_demo.run(tables, matches, sig, by_bench, hist, plays.facts(tables["opportunities"]), result, cfg,
+                    BASE / "output" / "demo_data.json")
+    print("\nPlan data written to output/demo_data.json")
     runpy.run_path(str(BASE / "demo" / "build_page.py"))
 
 
-def show_moves(ranked, pipe):
+def show_moves(p):
     """Compare with the previous run, so a live change shows what moved."""
-    last_rank, last_pipe = BASE / "output" / "ranking.csv", BASE / "output" / "pipeline.csv"
-    if not last_rank.exists():
+    last = BASE / "output" / "plays.csv"
+    if not last.exists():
         return
-    before = pd.read_csv(last_rank).set_index("account_name")["tier"]
-    after = ranked.set_index("account_name")["tier"]
-    joined = pd.concat([before.rename("before"), after.rename("after")], axis=1)
-    moved = joined[joined["before"].fillna(0) != joined["after"].fillna(0)]
-    print("\nWhat moved since the last run:")
-    if moved.empty:
-        print("  no tier changes")
-    for name, r in moved.iterrows():
-        b = "out" if pd.isna(r["before"]) else f"Tier {int(r['before'])}"
-        a = "out" if pd.isna(r["after"]) else f"Tier {int(r['after'])}"
-        print(f"  {name}: {b} -> {a}")
-    old = pd.read_csv(last_pipe)
-    for basis in pipe["basis"].unique():
-        o = old[(old["basis"] == basis) & (old["tier"] == 1)]["pipeline"].sum()
-        n = pipe[(pipe["basis"] == basis) & (pipe["tier"] == 1)]["pipeline"].sum()
-        print(f"  Tier 1 pipeline ({basis}): {o:,.0f} -> {n:,.0f}")
+    old = pd.read_csv(last)
+    print("What moved since the last run:")
+    key = lambda d: set(zip(d["play"], d["account_name"]))
+    for play, name in sorted(key(p) - key(old)):
+        print(f"  + {name} joins {play}")
+    for play, name in sorted(key(old) - key(p)):
+        print(f"  - {name} leaves {play}")
+    o, n = old[old["play"] != "renewal"]["at_stake"].sum(), p[p["play"] != "renewal"]["at_stake"].sum()
+    print(f"  On the table: ${o:,.0f} -> ${n:,.0f}")
 
 
 if __name__ == "__main__":

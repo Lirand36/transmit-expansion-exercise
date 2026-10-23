@@ -1,6 +1,6 @@
-"""How well would the ranking have picked expansion in the past?
+"""Could an account score have picked expansion in the past? (Why the plan uses plays, not a score.)
 
-For each month end from Jul 2025 to Feb 2026, the same signals and score as the plan are rebuilt using only
+For each month end from Jul 2025 to Feb 2026, the account signals and score are rebuilt using only
 the data known on that date. Then we check which accounts had an expansion deal created in the next 90 days.
 Jul 2025 is the first date with 3 months of usage behind it (usage starts Apr 2025), and Feb 2026 the last
 whose 90 days are fully covered by the CRM export (it ends 16 Jun 2026). Expansion deals created before
@@ -56,7 +56,7 @@ def main():
 
     print(f"{len(p)} account-months, {p['expanded'].sum()} went on to expand "
           f"({p.loc[p['expanded'], 'account_id'].nunique()} accounts)\n")
-    print(f"Score (the plan's ranking)  AUC {auc(p['score'], p['expanded']):.2f}")
+    print(f"Account score              AUC {auc(p['score'], p['expanded']):.2f}")
     for name in score.SIGNALS:
         print(f"  {name:<10} alone           AUC {auc(p[f'{name}_0_100'], p['expanded']):.2f}")
     top = p[p.groupby("as_of")["score"].rank(pct=True, ascending=False) <= cfg["scoring"]["tier1_top_share"]]

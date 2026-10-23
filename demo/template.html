@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* A CRO's one-page answer: the decision first, revenue levers second, the scoring machinery last and folded away. */
+/* A CRO work plan: four plays, the money in each, who owns it. Accounts one click away. */
 :root {
   --bg: #f4f6f9;
   --surface: #ffffff;
@@ -55,58 +55,31 @@ nav.tabs button { font: 600 0.9rem var(--font-body); color: var(--muted); backgr
 nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
 button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* The answer */
 .answer { padding: 22px 24px; display: flex; flex-direction: column; gap: 18px; }
-.headline { font-family: var(--font-display); font-size: 1.55rem; line-height: 1.3; font-weight: 600; max-width: 46ch; margin: 0; text-wrap: balance; }
+.headline { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.3; font-weight: 600; margin: 0; text-wrap: balance; }
 .headline b { color: var(--accent); font-weight: 700; }
-.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.kpis > div { background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.kpis .big { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
-.kpis .big.accent { color: var(--accent); }
-.kpis .big.warn { color: var(--warn); }
-.kpis .small { color: var(--muted); font-size: 0.82rem; }
-
-.filters { display: flex; gap: 10px; flex-wrap: wrap; }
-.filters .seg button .num { font-size: 0.72rem; opacity: 0.8; margin-left: 4px; }
-.actions { margin: 6px 0 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
-.actions li::marker { color: var(--accent); font-weight: 700; }
-.actions b { font-weight: 600; }
-.tags { display: flex; flex-wrap: wrap; gap: 4px; }
-.tag { font-size: 0.75rem; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; cursor: help; }
-.tag { position: relative; cursor: help; }
-.tag:hover::after, .tag:focus::after { content: attr(data-tip); position: absolute; left: 0; top: calc(100% + 6px); z-index: 5;
-  width: max-content; max-width: 280px; white-space: normal; background: var(--ink); color: var(--bg); font-size: 0.78rem;
-  line-height: 1.4; padding: 6px 9px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.18); }
-.trend { font-size: 0.75rem; margin-left: 4px; }
-.trend.up { color: var(--good); } .trend.down { color: var(--warn); }
-.step { font-size: 0.84rem; white-space: nowrap; }
-.step.warn { color: var(--warn); font-weight: 600; }
-.none { color: var(--warn); font-size: 0.84rem; }
-.sigs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.sig { border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.sig .w { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent); }
-.sig .n { font-size: 0.82rem; color: var(--muted); }
-@media (max-width: 600px) { .sigs { grid-template-columns: minmax(0, 1fr); } }
-/* Revenue levers */
-.levers { margin-top: 16px; padding: 16px 18px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 24px; }
-.lever { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
-.lever label, .lever .lbl { font-weight: 600; font-size: 0.9rem; display: flex; justify-content: space-between; gap: 8px; }
-.lever .val { font-family: var(--font-data); color: var(--accent); }
-.lever input[type=range] { width: 100%; accent-color: var(--accent); }
-.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; align-self: flex-start; flex-wrap: wrap; }
+.filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; flex-wrap: wrap; }
 .seg button { font: 500 0.82rem var(--font-body); background: var(--surface); color: var(--muted); border: 0; padding: 6px 11px; cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
-.moved { grid-column: 1 / -1; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; border-top: 1px dashed var(--line); padding-top: 12px; }
-.moved .list { flex: 1 1 260px; min-width: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-.chip { display: inline-flex; align-items: center; font-size: 0.78rem; padding: 2px 8px; border-radius: 99px; background: var(--t3-soft); white-space: nowrap; }
-.chip.up { background: var(--good-soft); color: var(--good); }
-.chip.down { background: var(--warn-soft); color: var(--warn); }
-.btn { font: 600 0.82rem var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
-.btn:hover { border-color: var(--accent); color: var(--accent); }
+.seg .num { font-size: 0.72rem; opacity: 0.8; margin-left: 4px; }
 
-/* Body */
-.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; margin-top: 20px; align-items: start; }
-.side { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.plays { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.play { text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; cursor: pointer; min-width: 0; }
+.play:hover { border-color: var(--accent); }
+.play[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
+.play .who { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+.play h3 { font: 600 1.05rem var(--font-display); margin: 0; }
+.play .usd { font: 700 1.7rem/1.1 var(--font-display); color: var(--accent); }
+.play .n { font-size: 0.85rem; color: var(--muted); }
+.play .why { font-size: 0.86rem; }
+.play .flag { font-size: 0.8rem; color: var(--warn); }
+
+.bar { display: flex; gap: 12px 24px; flex-wrap: wrap; align-items: center; justify-content: space-between; font-size: 0.86rem; }
+.risk { color: var(--warn); max-width: 80ch; }
+.lever { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; color: var(--muted); }
+
 .scroll { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
 th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; padding: 8px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
@@ -116,60 +89,16 @@ td.r, th.r { text-align: right; }
 td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
 .acct { font-weight: 600; }
 .meta { color: var(--muted); font-size: 0.8rem; }
-.context { width: 100%; font-size: 0.9rem; }
-.context td, .context th { padding: 7px 12px 7px 0; }
-.context td.num, .context th.r { text-align: right; width: 8em; }
-.context tr.us td { font-weight: 600; color: var(--accent); }
-.todo { width: 100%; font-size: 0.92rem; }
-.todo td { padding: 9px 12px 9px 0; }
-.todo td.who { font-weight: 600; white-space: nowrap; width: 1%; }
-.todo td.n { font-family: var(--font-data); text-align: right; white-space: nowrap; width: 1%; }
-.tracks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 20px; }
-.tracks ul { list-style: none; margin: 0; padding: 4px 18px 14px; }
-.tracks li { padding: 8px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.tracks li:last-child { border-bottom: 0; }
-.tracks .why { padding: 10px 18px 0; margin: 0; font-size: 0.86rem; max-width: 70ch; }
-@media (max-width: 760px) { .tracks { grid-template-columns: minmax(0, 1fr); } }
-.pill { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 1px 8px; border-radius: 99px; background: var(--warn-soft); color: var(--warn); margin-top: 4px; white-space: nowrap; }
-details.more { margin-top: 20px; }
-details.more > summary { cursor: pointer; list-style: none; padding: 14px 18px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-details.more > summary::-webkit-details-marker { display: none; }
-details.more > summary h2::before { content: "▸ "; color: var(--muted); }
-details.more[open] > summary h2::before { content: "▾ "; }
-details.more[open] > summary { border-bottom: 1px solid var(--line); }
+.demo { font-size: 0.8rem; color: var(--good); }
+.trend { font-size: 0.75rem; margin-left: 4px; }
+.trend.up { color: var(--good); } .trend.down { color: var(--warn); }
+.list { margin-top: 20px; }
+.foot { margin-top: 14px; }
 
-/* Analyst settings */
-.engine { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 0; }
-.engine .controls { padding: 16px 18px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 16px; }
-.ctl { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; align-items: center; font-size: 0.86rem; }
-.ctl input[type=range] { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
-.ctl .v { font-family: var(--font-data); font-size: 0.8rem; color: var(--muted); }
-.srcs { display: grid; grid-template-columns: 1fr auto; gap: 6px 8px; font-size: 0.82rem; align-items: center; }
-.srcs select { font: 0.8rem var(--font-data); background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 2px 4px; }
-.toggle { display: flex; gap: 10px; align-items: flex-start; font-size: 0.86rem; cursor: pointer; }
-.toggle input { margin-top: 3px; accent-color: var(--accent); }
-.engine .explain { padding: 16px 18px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
-.engine .explain p { margin: 0; max-width: 72ch; font-size: 0.88rem; }
-.bars { display: grid; grid-template-columns: repeat(4, 30px); gap: 4px; }
-.bar { height: 6px; border-radius: 3px; background: var(--t3-soft); position: relative; overflow: hidden; display: block; }
-.bar > i { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
-.bar.na { background: repeating-linear-gradient(90deg, var(--line) 0 3px, transparent 3px 6px); }
-.tier { display: inline-block; min-width: 2.2em; text-align: center; font: 600 0.74rem var(--font-data); padding: 1px 6px; border-radius: 6px; background: var(--t3-soft); color: var(--muted); }
-.tier.t1 { background: var(--accent-soft); color: var(--accent); }
-.check-pass { background: var(--good-soft); color: var(--good); }
-.check-warn { background: var(--warn-soft); color: var(--warn); }
-.check-info { background: var(--t3-soft); color: var(--muted); }
-.check-fail { background: var(--warn); color: var(--surface); }
-
-@media (max-width: 960px) {
-  .main, .engine { grid-template-columns: minmax(0, 1fr); }
-  .engine .controls { border-right: 0; border-bottom: 1px solid var(--line); }
-  .levers, .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+@media (max-width: 960px) { .plays { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) {
-  .levers { grid-template-columns: minmax(0, 1fr); }
+  .plays { grid-template-columns: minmax(0, 1fr); }
   .headline { font-size: 1.25rem; }
-  .kpis .big { font-size: 1.3rem; }
   .answer { padding: 18px 16px; }
 }
 </style>
@@ -180,338 +109,118 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
     <h1>Expansion Priorities Q1 2027</h1>
   </header>
 
-  <nav class="tabs" role="tablist">
-    <button role="tab" id="tab-plan" aria-selected="true" aria-controls="plan">Q1 plan</button>
-    <button role="tab" id="tab-method" aria-selected="false" aria-controls="method">How we rank</button>
-  </nav>
-
-  <section id="plan" role="tabpanel" aria-labelledby="tab-plan">
-    <!-- 1. The answer -->
-    <div class="card answer" aria-live="polite">
-      <div class="filters">
-        <div class="seg" role="group" aria-label="Region" id="f-region"></div>
-        <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
-      </div>
-      <p class="headline" id="headline"></p>
-      <div class="kpis">
-        <div><span class="eyebrow">Accounts to work</span><span class="big" id="k-accts"></span><span class="small" id="k-mix"></span></div>
-        <div><span class="eyebrow">New pipeline in Q1</span><span class="big accent num" id="k-pipe"></span><span class="small" id="k-range"></span></div>
-        <div><span class="eyebrow">Bookings from it</span><span class="big num" id="k-book"></span><span class="small" id="k-rate"></span></div>
-      </div>
-      <div>
-        <span class="eyebrow">In context</span>
-        <div class="scroll"><table class="context"><thead><tr><th></th><th class="r">Accounts</th><th class="r">New pipeline</th><th class="r">Bookings</th></tr></thead><tbody id="context"></tbody></table></div>
-        <span class="note" id="context-note"></span>
-      </div>
-      <div>
-        <span class="eyebrow">Who does what in Q1</span>
-        <table class="todo"><tbody id="actions"></tbody></table>
-      </div>
+  <div class="card answer" style="margin-top:20px" aria-live="polite">
+    <div class="filters">
+      <div class="seg" role="group" aria-label="Region" id="f-region"></div>
+      <div class="seg" role="group" aria-label="Segment" id="f-seg"></div>
     </div>
-
-    <!-- 2. Revenue levers -->
-    <div class="card levers" aria-label="Revenue assumptions">
-      <div class="lever">
-        <label for="cap">Accounts the team can work <span class="val" id="cap-v"></span></label>
-        <input type="range" id="cap" min="10" max="60" step="1">
-        <span class="note">Best-ranked accounts first.</span>
-      </div>
-      <div class="lever">
-        <span class="lbl">Deal size</span>
-        <div class="seg" role="group" aria-label="Deal size" id="size">
-          <button data-v="low">Smaller</button><button data-v="mid">Typical</button><button data-v="high">Larger</button>
-        </div>
-        <span class="note" id="size-note"></span>
-      </div>
-      <div class="lever">
-        <span class="lbl">Win rate <span class="val" id="win-v"></span></span>
-        <div class="seg" role="group" aria-label="Win rate" id="win"></div>
-        <span class="note" id="win-note"></span>
-      </div>
-      <div class="lever">
-        <span class="lbl">Accounts that open a deal <span class="val" id="opp-v"></span></span>
-        <div class="seg" role="group" aria-label="Accounts that open a deal" id="opp"></div>
-        <span class="note" id="opp-note"></span>
-      </div>
-      <div class="moved">
-        <span class="eyebrow">Changed vs base plan</span>
-        <div class="list" id="moved"></div>
-        <button class="btn" id="reset">Back to base plan</button>
-      </div>
+    <p class="headline" id="headline"></p>
+    <div class="plays" id="plays"></div>
+    <div class="bar">
+      <span class="risk" id="risk"></span>
+      <span class="lever">Peer price
+        <span class="seg" role="group" aria-label="Peer price" id="bench"><button data-v="median">Median</button><button data-v="low">Cautious</button></span>
+      </span>
     </div>
+  </div>
 
-    <!-- 3. The list -->
-    <div class="card" style="margin-top:20px">
-      <div class="card-head">
-        <h2 id="list-title"></h2>
-        <span class="note">Best first. Hover a tag or a column name for details.</span>
-      </div>
-      <div class="scroll">
-        <table>
-          <thead><tr><th>#</th><th>Account</th><th>Why now</th><th class="r" title="Won deals closed in the last 12 months. Lifetime total below.">Paid, last 12 months</th><th class="r" title="Active users in Sep 2026, and the change over 3 months">Active users</th><th title="Rep on the account's latest deal">Owner</th><th>Next step</th><th class="r" title="Typical past expansion deal in the same segment, if this account opens one">Deal if opened</th></tr></thead>
-          <tbody id="rows"></tbody>
-        </table>
-      </div>
+  <div class="card list">
+    <div class="card-head"><h2 id="list-title"></h2><span class="note" id="list-step"></span></div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>#</th><th>Account</th><th>Why</th><th class="r">Active users</th><th>Owner</th><th class="r" id="usd-head">$ at stake</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
     </div>
-
-    <!-- 4. The two other tracks -->
-    <div class="tracks">
-      <div class="card">
-        <div class="card-head"><h2 id="c-title"></h2><span class="note">Owner: RevOps with Finance</span></div>
-        <p class="why">They use the product, but the CRM shows no won deal. Confirm what they pay before anyone sells to them.</p>
-        <ul id="c-list"></ul>
-      </div>
-      <div class="card">
-        <div class="card-head"><h2 id="w-title"></h2><span class="note">Owner: Customer Success</span></div>
-        <p class="why">Their last renewal was lost, yet they still use the product. Win the renewal back first; expansion comes after.</p>
-        <ul id="w-list"></ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="method" role="tabpanel" aria-labelledby="tab-method" hidden>
-    <div class="card">
-      <div class="engine">
-        <div class="controls">
-          <div>
-            <span class="eyebrow">What matters most</span>
-            <div id="weights"></div>
-          </div>
-          <div>
-            <span class="eyebrow">How much each lead source counts</span>
-            <div class="srcs" id="srcs"></div>
-          </div>
-          <label class="toggle"><input type="checkbox" id="convert"><span>Convert currencies to USD<br><span class="note">GBP and EUR deals converted at planning rates.</span></span></label>
-        </div>
-        <div class="explain">
-          <p>Paying customers are ranked on four signals. The more weight a signal has, the more it decides who makes the Q1 list. The weights are judgment calls: past data is too thin to set them, so Q1 results will. Accounts with shrinking usage or no usage data never make the list.</p>
-          <div class="sigs" id="sigs"></div>
-          <div class="moved" style="border-top:0;padding-top:0"><span class="eyebrow">Changed vs base plan</span><div class="list" id="moved2"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  </div>
+  <p class="note foot" id="foot"></p>
 </div>
 
 <script>
 const DATA = /*DATA*/null;
-/*ENGINE*/
 </script>
 <script>
 (function () {
-  const D = DATA.defaults;
-  const fresh = () => ({ weights: { ...D.weights }, sourceWeights: { ...D.sourceWeights }, tier1: D.tier1, tier2: D.tier2,
-    intentFull: D.intentFull, convert: D.convert, dealSize: D.dealSize, tier1Count: null, winRate: DATA.winRate,
-    oppRate: DATA.history.oppRate });
   const $ = id => document.getElementById(id);
-  const money = v => v >= 1e6 ? "$" + (v / 1e6).toFixed(2) + "M" : "$" + Math.round(v / 1000) + "k";
+  const money = v => v >= 1e6 ? "$" + (v / 1e6).toFixed(1) + "M" : v >= 500 ? "$" + Math.round(v / 1000) + "k" : "<$1k";
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const SIGNALS = ["intent", "headroom", "momentum", "depth"];
-  const LABELS = { intent: "Intent", headroom: "Headroom", momentum: "Momentum", depth: "Depth" };
-  const asOf = new Date(DATA.asOf + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
-  $("asof").textContent = asOf;
-
-  const norm = st => {
-    const tot = Object.values(st.weights).reduce((a, b) => a + b, 0) || 1;
-    const w = {}; for (const k in st.weights) w[k] = st.weights[k] / tot;
-    return w;
-  };
-  const run = st => compute(DATA, { ...st, weights: norm(st) });
-  // Base plan = the pipeline's defaults (top 20%). After that, capacity is a fixed number of accounts the team can work.
-  const base = run(fresh());
-  const BASE_CAP = base.pipeline[0].accounts;
-  const freshPlan = () => ({ ...fresh(), tier1Count: BASE_CAP });
-  let S = freshPlan();
-  let F = { region: "all", segment: "all" };
-  const W = DATA.winBasis, H = DATA.history;
-  // Lever choices come only from the data: worst, average and best past quarter; all-time and last-12-months win rate
-  const OPP = H.oppRateByQuarter.map(q => q.opened / q.customers);
-  const OPP_CHOICES = [["Worst quarter", Math.min(...OPP)], ["Average", H.oppRate], ["Best quarter", Math.max(...OPP)]];
-  const WIN_CHOICES = [["All history", DATA.winRate], ["Last 12 months", W.last12]];
-  const pct = v => (Math.round(v * 1000) / 10) + "%";
-
-  const U = DATA.usageMonths;
-  const SEG_WORD = { Enterprise: "Enterprise", "Mid-Market": "Mid-Market", SMB: "SMB" };
-  const fmt = n => Math.round(n).toLocaleString("en-US");
   const short = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k" : String(Math.round(n));
-  // Strong = top 40% on a ranked signal; for intent, one demo request or more (33 points)
-  const strong = (r, k) => r[k + "100"] !== null && r[k + "100"] >= (k === "intent" ? 33 : 60);
+  $("asof").textContent = new Date(DATA.asOf + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
-  // Each tag carries its own evidence.
-  function tagList(r, w) {
-    const ks = SIGNALS.filter(k => strong(r, k))
-      .sort((a, b) => r[b + "100"] * w[b] - r[a + "100"] * w[a]).slice(0, 3);
-    return ks.map(k => {
-      if (k === "intent") {
-        const demo = r.touches.find(t => t.source === "Website Demo Request");
-        const others = r.touches.filter(t => t !== demo).map(t => `${t.source} (${t.date})`);
-        if (demo) return ["Demo request", `${demo.who} asked for a demo on ${demo.date}.` + (others.length ? ` Also: ${others.join(", ")}.` : "")];
-        return ["Recent interest", `${r.touches.length} touch${r.touches.length > 1 ? "es" : ""} in the last 90 days: ${others.join(", ")}.`];
-      }
-      if (k === "headroom") return ["Underpaying", `Paid ${Math.round((1 - 1 / r.headroom) * 100)}% less per active user in the last 12 months than a typical ${SEG_WORD[r.segment]} customer.`];
-      if (k === "momentum") return ["Usage growing", `Active users ${fmt(r.mauPrev)} in ${U.prev} to ${fmt(r.mau)} in ${U.now} (+${Math.round(r.momentum * 100)}%).`];
-      return ["Heavy API use", `${fmt(r.depth)} API calls per active user per month, more than ${r.depth100}% of accounts.`];
-    });
-  }
-  const tags = (r, w) => tagList(r, w).map(([t, tip]) => `<span class="tag" tabindex="0" data-tip="${esc(tip)}">${t}</span>`).join("") || '<span class="note">Solid overall</span>';
-
-  function nextStep(r) {
-    if (r.touches.some(t => t.source === "Website Demo Request")) return '<span class="step">Follow up on demo</span>';
-    return '<span class="step">Open expansion talk</span>';
-  }
-
-  function rowHtml(r, i, w) {
-    const recent = S.convert ? r.paidRecentUsd : r.paidRecentRaw, life = S.convert ? r.paidUsd : r.paidRaw;
-    const trend = r.momentum === null ? "" : `<span class="trend ${r.momentum >= 0 ? "up" : "down"}">${r.momentum >= 0 ? "▲" : "▼"}${Math.abs(Math.round(r.momentum * 100))}%</span>`;
-    return `<tr><td class="rank">${i + 1}</td>
-      <td><div class="acct">${esc(r.name)}</div><div class="meta">${esc(r.segment)} · ${esc(r.region)}</div></td>
-      <td><span class="tags">${tags(r, w)}</span></td>
-      <td class="r num">${recent > 0 ? money(recent) : '<span class="none">None</span>'}<div class="meta">${money(life)} lifetime</div></td>
-      <td class="r num">${r.mau ? short(r.mau) + trend : "–"}</td>
-      <td class="step">${esc(r.owner)}</td>
-      <td>${nextStep(r)}</td>
-      <td class="r num">${money(r.deal)}</td></tr>`;
-  }
-
-  const SIG_TEXT = {
-    intent: ["Intent", "Recent leads from the account, counted: one demo request = 33, three or more = 100."],
-    headroom: ["Headroom", "Paid less per active user in the last 12 months than similar customers, so there is room to grow the contract."],
-    momentum: ["Momentum", "Active users growing over the last 3 months."],
-    depth: ["Depth", "Heavy API use. The product is built into how they work."],
-  };
-  function sigCards(t1, w) {
-    $("sigs").innerHTML = SIGNALS.map(k => {
-      const n = t1.filter(r => strong(r, k)).length;
-      return `<div class="sig"><span class="w">${Math.round(w[k] * 100)}%</span><b>${SIG_TEXT[k][0]}</b><span>${SIG_TEXT[k][1]}</span>
-        <span class="n">Strong in ${n} of the ${t1.length} Q1 accounts</span></div>`;
-    }).join("");
-  }
-
-  function sync() {
-    $("cap").value = S.tier1Count; $("cap-v").textContent = S.tier1Count;
-    $("win-v").textContent = Math.round(S.winRate * 100) + "%";
-    document.querySelectorAll("#win button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === S.winRate));
-    $("win-note").textContent = `All history: ${W.won} of ${W.deals} expansion deals won. Last 12 months: ${Math.round(W.last12 * 100)}%.`;
-    const sz = DATA.sizes[S.convert ? "converted to USD" : "as recorded"];
-    $("size-note").textContent = `Ent ${money(sz.Enterprise[S.dealSize])} (only ${sz.Enterprise.deals} past deals), Mid ${money(sz["Mid-Market"][S.dealSize])}, SMB ${money(sz.SMB[S.dealSize])}.`;
-    document.querySelectorAll("#size button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === S.dealSize));
-    $("opp-v").textContent = pct(S.oppRate);
-    document.querySelectorAll("#opp button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === S.oppRate));
-    $("opp-note").textContent = `Share of customers who opened an expansion deal, last ${OPP.length} quarters.`;
-    const w = norm(S);
-    for (const [id, key] of [["f-region", "region"], ["f-seg", "segment"]])
-      document.querySelectorAll(`#${id} button`).forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F[key]));
-    for (const k of SIGNALS) { $("w-" + k).value = Math.round(S.weights[k] * 100); $("w-" + k + "-v").textContent = Math.round(w[k] * 100) + "%"; }
-    $("convert").checked = S.convert;
-    document.querySelectorAll("#srcs select").forEach(sel => { sel.value = String(S.sourceWeights[sel.dataset.src]); });
-  }
+  const within6 = Math.round(DATA.facts.expansionWithin6Months * 100);
+  // The four plays. "recover" joins two tracks: contract check and win-back. Renewal $ is revenue coming up, not added to the total.
+  const PLAYS = [
+    { key: "price", plays: ["price"], title: "Price to usage", who: "Sales",
+      why: "They pay less per active user than peers in their segment.", step: "Next step: pricing conversation, biggest gap first.",
+      usd: "Gap to peer price, per year", inTotal: true },
+    { key: "land", plays: ["land"], title: "Land and expand", who: "Customer Success",
+      why: `${within6}% of past expansion deals opened within 6 months of the first deal.`, step: "Next step: expansion call. From now on, every new customer gets one by day 90.",
+      usd: "One typical expansion deal", inTotal: true },
+    { key: "renewal", plays: ["renewal"], title: "Expand at renewal", who: "Sales + Customer Success",
+      why: "Their deals from Q1 2026 come up again in Q1 2027.", flag: "No contract end date in the CRM: confirm the dates.",
+      step: "Next step: put expansion on the renewal agenda.", usd: "Revenue renewing", inTotal: false },
+    { key: "recover", plays: ["contract", "winback"], title: "Recover revenue", who: "RevOps + Finance, CS",
+      why: "They use the product without a current contract.", flag: "Either the CRM is missing deals, or they use us for free.",
+      step: "Next step: RevOps confirms contracts; Customer Success wins back lost renewals.", usd: "Usage at peer price, per year", inTotal: true },
+  ];
+  let F = { region: "all", segment: "all", bench: DATA.benchmark, play: "price" };
 
   function render() {
-    const w = norm(S);
-    const res = run(S);
-    const p1 = res.pipeline[0], p2 = res.pipeline[1];
-    const all1 = res.rows.filter(r => r.tier === 1);
+    const all = DATA.plays[F.bench];
     const pick = r => (F.region === "all" || r.region === F.region) && (F.segment === "all" || r.segment === F.segment);
-    const t1 = all1.filter(pick);
-    const tot = key => t1.reduce((a, r) => a + r[key], 0);
-    // Same funnel as engine.js, on the filtered accounts
-    const ifAll = tot("deal"), pipe = ifAll * S.oppRate, book = pipe * S.winRate, bookQ1 = book * H.closeInQuarter;
-    const scope = [F.segment !== "all" ? F.segment : "", F.region !== "all" ? F.region : ""].filter(Boolean).join(" ");
+    const rows = all.filter(pick);
+    const of = p => rows.filter(r => p.plays.includes(r.play)).sort((a, b) => b.atStake - a.atStake);
+    const sum = list => list.reduce((a, r) => a + r.atStake, 0);
 
-    // Filter buttons carry the account count, so they double as the breakdown
+    // Filters show account counts
+    const ids = list => new Set(list.map(r => r.id)).size;
     const opt = (key, v, label) => {
-      const g = all1.filter(r => (key === "region" ? (F.segment === "all" || r.segment === F.segment) : (F.region === "all" || r.region === F.region)) && (v === "all" || r[key] === v));
-      return `<button data-v="${v}">${label}<span class="num">${g.length}</span></button>`;
+      const g = all.filter(r => (key === "region" ? (F.segment === "all" || r.segment === F.segment) : (F.region === "all" || r.region === F.region)) && (v === "all" || r[key] === v));
+      return `<button data-v="${v}" aria-pressed="${F[key] === v}">${label}<span class="num">${ids(g)}</span></button>`;
     };
     $("f-region").innerHTML = [["all", "All regions"], ["NA", "NA"], ["EMEA", "EMEA"], ["APAC", "APAC"]].map(([v, l]) => opt("region", v, l)).join("");
     $("f-seg").innerHTML = [["all", "All segments"], ["Enterprise", "Enterprise"], ["Mid-Market", "Mid-Market"], ["SMB", "SMB"]].map(([v, l]) => opt("segment", v, l)).join("");
+    document.querySelectorAll("#bench button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F.bench));
 
-    // The answer
-    $("headline").innerHTML = `Q1: work <b>${t1.length}${scope ? " " + esc(scope) : ""} accounts</b> for <b>${money(pipe)}</b> of new expansion pipeline.`;
-    $("k-accts").textContent = t1.length;
-    $("k-mix").textContent = ["Enterprise", "Mid-Market", "SMB"].map(s => `${t1.filter(r => r.segment === s).length} ${s === "Enterprise" ? "Ent" : s === "Mid-Market" ? "Mid-Mkt" : s}`).join(" · ");
-    $("k-pipe").textContent = money(pipe);
-    $("k-range").textContent = `if ${pct(S.oppRate)} open a deal, as in past quarters`;
-    $("k-book").textContent = money(book);
-    $("k-rate").textContent = `${money(bookQ1)} in Q1, the rest in Q2`;
+    // Headline: the money on the table (renewal revenue not added, it's already ours)
+    const total = sum(PLAYS.filter(p => p.inTotal).flatMap(of));
+    const scope = [F.segment !== "all" ? F.segment : "", F.region !== "all" ? F.region : ""].filter(Boolean).join(" ");
+    const renewing = sum(of(PLAYS.find(p => !p.inTotal)));
+    $("headline").innerHTML = `Q1 2027: four plays on <b>${ids(rows)}${scope ? " " + esc(scope) : ""} accounts</b>. <b>${money(total)}</b> is on the table, and ${money(renewing)} comes up for renewal.`;
 
-    // In context: the plan next to all customers (same math) and what a past quarter actually did
-    const allPipe = res.rows.reduce((a, r) => a + r.deal, 0) * S.oppRate;
-    const lastQs = H.oppRateByQuarter.map(q => q.quarter);
-    const med = obj => median(lastQs.map(q => obj[q] || 0));
-    const qLabel = q => q.replace(/^20(\d\d)(Q\d)$/, "$2 '$1");
-    const allBook = allPipe * S.winRate, share = (a, b) => b ? Math.round(a / b * 100) + "%" : "–";
-    const crow = (cls, label, n, a, b) => `<tr class="${cls}"><td>${label}</td><td class="num">${n}</td><td class="num">${a}</td><td class="num">${b}</td></tr>`;
-    $("context").innerHTML = crow("", "All paying customers, a quarter", res.rows.length, money(allPipe), money(allBook))
-      + crow("", `These ${t1.length} accounts, Q1 2027`, t1.length, money(pipe), money(book))
-      + crow("us", "Their share", share(t1.length, res.rows.length), share(pipe, allPipe), share(book, allBook));
-    $("context-note").textContent = `Check: a typical past quarter actually booked ${money(med(H.bookedByQuarter))} of expansion (median, ${qLabel(lastQs[0])} to ${qLabel(lastQs[lastQs.length - 1])}).`;
+    $("plays").innerHTML = PLAYS.map(p => {
+      const list = of(p);
+      return `<button class="play" data-k="${p.key}" aria-pressed="${F.play === p.key}">
+        <span class="who">${p.who}</span><h3>${p.title}</h3>
+        <span class="usd">${money(sum(list))}</span><span class="n">${list.length} accounts · ${p.usd.toLowerCase()}</span>
+        <span class="why">${p.why}</span>${p.flag ? `<span class="flag">⚠ ${p.flag}</span>` : ""}</button>`;
+    }).join("");
 
-    // The other two tracks (same region and segment filters)
-    const track = k => DATA.accounts.filter(a => a.track === k && pick(a));
-    const trackList = list => list.map(a => `<li><span><span class="acct">${esc(a.name)}</span><div class="meta">${esc(a.segment)} · ${esc(a.region)} · ${a.mau ? short(a.mau) + " active users" : "no usage"}</div></span><span class="meta">${a.lastDeal ? "Last deal: " + esc(a.lastDeal) : "No deal on record"}</span></li>`).join("") || '<li class="note">None in this filter</li>';
-    const cList = track("contract"), wList = track("winback");
-    $("c-title").textContent = `Contract check: ${cList.length} accounts`;
-    $("w-title").textContent = `Win-back: ${wList.length} accounts`;
-    $("c-list").innerHTML = trackList(cList);
-    $("w-list").innerHTML = trackList(wList);
+    $("risk").textContent = `⚠ Also: ${DATA.noUsage.accounts} paying accounts (${money(DATA.noUsage.paidUsd)} paid so far) show no product usage. Customer Success fixes the product link before their renewals.`;
 
-    // Suggested actions
-    const row = (who, what, n) => `<tr><td class="who">${who}</td><td>${what}</td><td class="n">${n}</td></tr>`;
-    $("actions").innerHTML = [
-      row("Sales", "Open expansion deals, demo requests first", `${t1.length} accounts · ${money(pipe)}`),
-      row("RevOps + Finance", "Confirm the contract: they use us, no won deal", `${cList.length} accounts`),
-      row("Customer Success", "Win back: renewal lost, still using us", `${wList.length} accounts`),
-    ].join("");
+    // The accounts behind the selected play
+    const P = PLAYS.find(p => p.key === F.play), list = of(P);
+    $("list-title").textContent = `${P.title}: ${list.length} accounts · ${money(sum(list))}`;
+    $("list-step").textContent = P.step;
+    $("usd-head").textContent = P.usd;
+    $("rows").innerHTML = list.map((r, i) => {
+      const trend = r.growth == null ? "" : `<span class="trend ${r.growth >= 0 ? "up" : "down"}">${r.growth >= 0 ? "▲" : "▼"}${Math.abs(Math.round(r.growth * 100))}%</span>`;
+      return `<tr><td class="rank">${i + 1}</td>
+        <td><div class="acct">${esc(r.name)}</div><div class="meta">${esc(r.segment)} · ${esc(r.region)}</div></td>
+        <td>${esc(r.fact)}${r.demo ? `<div class="demo">${esc(r.demo)}</div>` : ""}</td>
+        <td class="r num">${r.users ? short(r.users) + trend : '<span class="meta">no data</span>'}</td>
+        <td class="meta">${esc(r.owner)}</td>
+        <td class="r num">${money(r.atStake)}</td></tr>`;
+    }).join("") || '<tr><td colspan="6" class="note">No accounts in this filter.</td></tr>';
 
-    // Changed vs base plan
-    const was = new Set(base.rows.filter(r => r.tier === 1).map(r => r.id)), now = new Set(t1.map(r => r.id));
-    const names = new Map([...base.rows, ...res.rows].map(r => [r.id, r.name]));
-    const chips = [];
-    const dp = p1.pipeline - base.pipeline[0].pipeline, db = p1.bookings - base.pipeline[0].bookings;
-    if (Math.abs(dp) >= 1) chips.push(`<span class="chip ${dp > 0 ? "up" : "down"}">Pipeline ${dp > 0 ? "+" : "−"}${money(Math.abs(dp))}</span>`);
-    if (Math.abs(db) >= 1) chips.push(`<span class="chip ${db > 0 ? "up" : "down"}">Bookings ${db > 0 ? "+" : "−"}${money(Math.abs(db))}</span>`);
-    [...now].filter(id => !was.has(id)).forEach(id => chips.push(`<span class="chip up">+ ${esc(names.get(id))}</span>`));
-    [...was].filter(id => !now.has(id)).forEach(id => chips.push(`<span class="chip down">− ${esc(names.get(id))}</span>`));
-    $("moved").innerHTML = $("moved2").innerHTML = chips.length ? chips.join("") : '<span class="note">Base plan</span>';
-    sigCards(all1, w);
-
-    // The list
-    $("list-title").textContent = `Expansion: the ${t1.length}${scope ? " " + scope : ""} accounts to work in Q1`;
-    $("rows").innerHTML = t1.map((r, i) => rowHtml(r, i, w)).join("");
-
-
-    sync();
+    const b = Object.entries(DATA.bookedByQuarter).slice(-3).map(([, v]) => money(v));
+    $("foot").textContent = `$ at stake is money on the table, not a forecast. For scale: expansion booked ${b.join(", ")} in each of the last three quarters.`;
   }
 
-  // Analyst controls
-  $("weights").innerHTML = SIGNALS.map(k =>
-    `<div class="ctl"><label for="w-${k}">${LABELS[k]}</label><span class="v" id="w-${k}-v"></span><input type="range" id="w-${k}" min="0" max="100" step="5"></div>`).join("");
-  $("srcs").innerHTML = Object.keys(D.sourceWeights).map((src, i) =>
-    `<label for="src-${i}">${esc(src)}</label><select id="src-${i}" data-src="${esc(src)}">${[[0, "Ignore"], [0.25, "Low"], [0.5, "Medium"], [1, "High"]].map(([v, l]) => `<option value="${v}">${l}</option>`).join("")}</select>`).join("");
-
-  // Events
-  $("cap").addEventListener("input", e => { S.tier1Count = +e.target.value; render(); });
-  $("win").innerHTML = WIN_CHOICES.map(([l, v]) => `<button data-v="${v}">${l}</button>`).join("");
-  $("opp").innerHTML = OPP_CHOICES.map(([l, v]) => `<button data-v="${v}">${l}</button>`).join("");
-  $("win").addEventListener("click", e => { if (e.target.dataset.v) { S.winRate = +e.target.dataset.v; render(); } });
-  $("size").addEventListener("click", e => { if (e.target.dataset.v) { S.dealSize = e.target.dataset.v; render(); } });
-  $("opp").addEventListener("click", e => { if (e.target.dataset.v) { S.oppRate = +e.target.dataset.v; render(); } });
-  for (const k of SIGNALS) $("w-" + k).addEventListener("input", e => { S.weights[k] = +e.target.value / 100; render(); });
+  $("plays").addEventListener("click", e => { const b = e.target.closest(".play"); if (b) { F.play = b.dataset.k; render(); } });
   $("f-region").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.region = b.dataset.v; render(); } });
   $("f-seg").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.segment = b.dataset.v; render(); } });
-  $("convert").addEventListener("change", e => { S.convert = e.target.checked; render(); });
-  $("srcs").addEventListener("change", e => { S.sourceWeights[e.target.dataset.src] = +e.target.value; render(); });
-  $("reset").addEventListener("click", () => { S = freshPlan(); F = { region: "all", segment: "all" }; render(); });
-
-  // Tabs
-  const tabs = [["tab-plan", "plan"], ["tab-method", "method"]];
-  const show = id => tabs.forEach(([t, p]) => { $(t).setAttribute("aria-selected", p === id); $(p).hidden = p !== id; });
-  tabs.forEach(([t, p]) => $(t).addEventListener("click", () => show(p)));
-  if (location.hash === "#method") show("method");
-
-
+  $("bench").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { F.bench = b.dataset.v; render(); } });
   render();
 })();
 </script>

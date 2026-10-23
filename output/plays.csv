@@ -1,0 +1,71 @@
+play,account_id,at_stake,fact,account_name,segment,region
+contract,ACC-1061,521364.0,"Uses the product, no won deal on record (New Business lost, Sep 2025, $312k)",Lumen Payments Ltd,Enterprise,EMEA
+contract,ACC-1044,256737.0,"Uses the product, no won deal on record (New Business lost, Apr 2026, $282k)",Cascade Airlines Ltd,Enterprise,NA
+contract,ACC-1026,230400.0,"Uses the product, no won deal on record (New Business lost, Jun 2026, $127k)",Everline Airlines LLC,Mid-Market,EMEA
+contract,ACC-1107,175486.0,"Uses the product, no won deal on record (New Business lost, Feb 2024, $530k)",Westbrook Logistics Ltd.,Enterprise,EMEA
+contract,ACC-1001,134674.0,"Uses the product, no won deal on record (New Business lost, Oct 2024, $198k)",Iron Mutual Inc.,Mid-Market,EMEA
+contract,ACC-1037,87071.0,"Uses the product, no won deal on record (New Business lost, May 2026, $55k)",Vertex Airlines Ltd.,Mid-Market,NA
+contract,ACC-1002,62637.0,"Uses the product, no won deal on record (New Business lost, Jan 2025, $42k)",Vantage Media Inc.,Mid-Market,APAC
+contract,ACC-1023,38312.0,"Uses the product, no won deal on record (New Business lost, Jan 2024, $14k)",Thornton Payments Ltd,SMB,NA
+contract,ACC-1112,17613.0,"Uses the product, no won deal on record (New Business lost, Mar 2026, $16k)",Iron Media Incorporated,SMB,NA
+contract,ACC-1065,17434.0,"Uses the product, no won deal on record (New Business lost, Mar 2025, $17k)",Lumen Financial PLC,SMB,EMEA
+contract,ACC-1009,16105.0,"Uses the product, no won deal on record (New Business lost, Feb 2024, $24k)",Vertex Systems Ltd,SMB,NA
+contract,ACC-1032,8624.0,"Uses the product, no won deal on record (New Business lost, Sep 2024, $7k)",Blue Holdings Ltd,SMB,NA
+land,ACC-1004,175700.0,"First deal Oct 2025, no expansion yet",Vertex Retail Group Inc,Enterprise,EMEA
+land,ACC-1062,175700.0,"First deal Jun 2026, no expansion yet",Blue Telecom Ltd,Enterprise,APAC
+land,ACC-1071,175700.0,"First deal Mar 2026, no expansion yet",Union Retail Group Ltd.,Enterprise,EMEA
+land,ACC-1082,175700.0,"First deal May 2026, no expansion yet",North Holdings Ltd,Enterprise,NA
+land,ACC-1097,175700.0,"First deal Apr 2026, no expansion yet",Meridian Payments,Enterprise,EMEA
+land,ACC-1103,175700.0,"First deal Mar 2026, no expansion yet",Granite Airlines Ltd,Enterprise,EMEA
+land,ACC-1016,36900.0,"First deal Nov 2025, no expansion yet",Pinnacle Bank Inc,Mid-Market,NA
+land,ACC-1025,36900.0,"First deal Oct 2025, no expansion yet",Quill Payments PLC,Mid-Market,EMEA
+land,ACC-1028,36900.0,"First deal Oct 2025, no expansion yet",Thornton Logistics Inc.,Mid-Market,EMEA
+land,ACC-1035,12970.0,"First deal Apr 2026, no expansion yet",Zenith Systems Ltd,SMB,EMEA
+land,ACC-1087,12970.0,"First deal Nov 2025, no expansion yet",Dunmore Media Group,SMB,EMEA
+land,ACC-1117,12970.0,"First deal Dec 2025, no expansion yet",Cobalt Payments Ltd.,SMB,NA
+price,ACC-1092,473505.0,Pays $2.33 per active user; peers pay $4.90,Everline Logistics Incorporated,Enterprise,EMEA
+price,ACC-1079,169248.0,Pays $1.34 per active user; peers pay $5.36,Vertex Media PLC,Mid-Market,EMEA
+price,ACC-1095,169169.0,Pays $3.95 per active user; peers pay $4.90,Vantage Holdings PLC,Enterprise,NA
+price,ACC-1077,158414.0,Pays $1.11 per active user; peers pay $5.36,Redwood Payments LLC,Mid-Market,EMEA
+price,ACC-1012,150711.0,Pays $1.39 per active user; peers pay $5.36,Zenith Energy PLC,Mid-Market,NA
+price,ACC-1080,132666.0,Pays $0.42 per active user; peers pay $5.36,North Systems Ltd,Mid-Market,APAC
+price,ACC-1060,79829.0,Pays $3.98 per active user; peers pay $4.90,Quill Financial Group,Enterprise,NA
+price,ACC-1088,75985.0,Pays $0.66 per active user; peers pay $5.36,Union Systems PLC,Mid-Market,NA
+price,ACC-1110,48782.0,Pays $4.42 per active user; peers pay $4.90,Everline Financial Inc.,Enterprise,EMEA
+price,ACC-1108,48090.0,Pays $2.69 per active user; peers pay $5.36,Cobalt Media Inc,Mid-Market,EMEA
+price,ACC-1106,37567.0,Pays $3.47 per active user; peers pay $5.36,Everline Telecom LLC,Mid-Market,NA
+price,ACC-1084,27274.0,Pays $1.70 per active user; peers pay $6.89,Zenith Retail Group Ltd.,SMB,EMEA
+price,ACC-1094,12644.0,Pays $3.88 per active user; peers pay $6.89,Zenith Holdings,SMB,EMEA
+price,ACC-1042,12604.0,Pays $4.70 per active user; peers pay $6.89,Brightwater Financial,SMB,EMEA
+price,ACC-1000,10892.0,Pays $3.68 per active user; peers pay $6.89,Vertex Stores LLC,SMB,EMEA
+price,ACC-1119,6648.0,Pays $5.11 per active user; peers pay $6.89,Thornton Systems LLC,SMB,NA
+price,ACC-1113,5708.0,Pays $4.96 per active user; peers pay $5.36,Everline Energy Inc.,Mid-Market,EMEA
+price,ACC-1096,5535.0,Pays $4.19 per active user; peers pay $6.89,Pinnacle Mutual PLC,SMB,NA
+price,ACC-1046,134.0,Pays $6.82 per active user; peers pay $6.89,Harbor Logistics Incorporated,SMB,EMEA
+renewal,ACC-1103,668720.0,Signed New Business Mar 2026,Granite Airlines Ltd,Enterprise,EMEA
+renewal,ACC-1060,347300.0,Signed New Business Jan 2026,Quill Financial Group,Enterprise,NA
+renewal,ACC-1071,328570.0,Signed New Business Mar 2026,Union Retail Group Ltd.,Enterprise,EMEA
+renewal,ACC-1095,216100.0,Signed Upsell Mar 2026,Vantage Holdings PLC,Enterprise,NA
+renewal,ACC-1048,177650.0,Signed Renewal Feb 2026,Union Airlines Incorporated,Mid-Market,EMEA
+renewal,ACC-1028,172150.0,Signed Renewal Feb 2026,Thornton Logistics Inc.,Mid-Market,EMEA
+renewal,ACC-1104,164100.0,Signed Renewal Mar 2026,Meridian Energy Incorporated,Mid-Market,APAC
+renewal,ACC-1078,145900.0,Signed Renewal Jan 2026,Iron Bank Incorporated,Mid-Market,APAC
+renewal,ACC-1038,71370.0,Signed Upsell Feb 2026,Brightwater Insurance Inc,Mid-Market,EMEA
+renewal,ACC-1079,56160.0,Signed Renewal Jan 2026,Vertex Media PLC,Mid-Market,EMEA
+renewal,ACC-1108,48290.0,Signed New Business Jan 2026,Cobalt Media Inc,Mid-Market,EMEA
+renewal,ACC-1083,45700.0,"Signed Upsell Feb 2026, Upsell Feb 2026",Cobalt Bank Incorporated,Mid-Market,APAC
+renewal,ACC-1034,41860.0,Signed Renewal Feb 2026,Harbor Systems Group,SMB,EMEA
+renewal,ACC-1042,27100.0,Signed New Business Mar 2026,Brightwater Financial,SMB,EMEA
+renewal,ACC-1064,17900.0,Signed Upsell Mar 2026,Alder Logistics Inc.,SMB,NA
+renewal,ACC-1094,16300.0,Signed Upsell Feb 2026,Zenith Holdings,SMB,EMEA
+renewal,ACC-1017,13400.0,Signed Upsell Jan 2026,Thornton Telecom,SMB,EMEA
+renewal,ACC-1088,10700.0,Signed Upsell Jan 2026,Union Systems PLC,Mid-Market,NA
+renewal,ACC-1033,7900.0,Signed Renewal Jan 2026,Harbor Telecom Ltd.,SMB,NA
+renewal,ACC-1069,6900.0,Signed Renewal Jan 2026,Cascade Logistics Group,SMB,EMEA
+winback,ACC-1102,952029.0,"Lost its renewal, still uses the product (Renewal lost, Sep 2025, $247k)",Blue Insurance Inc,Enterprise,APAC
+winback,ACC-1114,429769.0,"Lost its renewal, still uses the product (Renewal lost, Feb 2025, $658k)",Vantage Stores Ltd,Enterprise,EMEA
+winback,ACC-1099,49919.0,"Lost its renewal, still uses the product (Renewal lost, Apr 2026, $78k)",Dunmore Financial PLC,Mid-Market,EMEA
+winback,ACC-1024,46509.0,"Lost its renewal, still uses the product (Renewal lost, Jul 2025, $57k)",Granite Energy LLC,Mid-Market,EMEA
+winback,ACC-1109,35136.0,"Lost its renewal, still uses the product (Renewal lost, Sep 2025, $77k)",Zenith Media LLC,Mid-Market,EMEA
+winback,ACC-1011,13446.0,"Lost its renewal, still uses the product (Renewal lost, Feb 2026, $45k)",Cobalt Energy LLC,SMB,NA
+winback,ACC-1007,11083.0,"Lost its renewal, still uses the product (Renewal lost, May 2026, $11k)",Zenith Mutual Ltd.,SMB,NA

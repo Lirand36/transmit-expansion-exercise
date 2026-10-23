@@ -40,8 +40,8 @@ signals:
   shrinking_threshold: -0.05        # MAU down 5% or more in 6 months = at risk
 
 scoring:
-  weights:                          # how much each signal counts (judgment calls, not proven by data; must add up to 1)
-    intent: 0.35
+  weights:                          # how much each signal counts (judgment calls, not proven by data; scaled to add up to 1)
+    intent: 0                       # leads shown as a note, not scored: on past data they did not tell expanders apart
     headroom: 0.35
     momentum: 0.15
     depth: 0.15
@@ -71,3 +71,6 @@ ai:                                 # AI step: match the leads code couldn't mat
   review_confidence: 0.50           # between this and accept: kept out of the ranking, sent to a person to review
   batch_size: 10                    # leads per request (free tier allows few requests per minute)
   prompt_version: 1                 # bump when the prompt changes, so cached answers are not reused
+
+plays:
+  benchmark: median                 # peer $ per active user: median, or low (25th percentile) for a cautious view

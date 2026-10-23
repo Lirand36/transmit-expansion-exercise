@@ -2,9 +2,16 @@
 
 GTM Engineer take-home exercise, Transmit Security.
 
-**The answer:** work 19 paying customers for expansion in Q1. At past rates (7.5% of customers open an expansion deal in a quarter) that is 1 to 2 deals, about $64k of new pipeline and $44k of bookings, mostly closing in Q2. Each extra account that opens a deal adds about $45k. Two more tracks run beside it: a contract check on 12 accounts that use the product with no won deal (RevOps with Finance), and a win-back of 7 that lost their renewal (Customer Success).
+**The answer:** four plays for Q1 2027, each with named accounts, $ at stake and an owner. $5.9M is on the table, and $2.6M comes up for renewal.
 
-**The check:** the same math on all 97 paying customers gives $297k a quarter. Expansion actually booked $223k, $391k and $263k in the last three quarters.
+| Play | Owner | Accounts | $ at stake |
+| --- | --- | --- | --- |
+| Price to usage: they pay less per active user than peers | Sales | 19 | $1.6M gap to peer price, per year |
+| Land and expand: landed in the last 12 months, not expanded yet | Customer Success | 12 | $1.2M, one typical expansion deal each |
+| Expand at renewal: deals from Q1 2026 come up again | Sales + CS | 20 | $2.6M renewing |
+| Recover revenue: use the product without a current contract | RevOps + Finance, CS | 19 | $3.1M usage at peer price, per year |
+
+$ at stake is money on the table, not a forecast. For scale, expansion booked $223k to $391k a quarter.
 
 ## Open it (no install)
 
@@ -13,7 +20,7 @@ Open these files in any browser:
 | File | What it is |
 | --- | --- |
 | `submission/index.html` | **Start here.** Presentation, data model, AI component, data-quality memo, and how I used AI. |
-| `demo/index.html` | The Q1 plan. Move a lever and the plan updates instantly. |
+| `demo/index.html` | The Q1 plan: four plays, their accounts and owners. |
 
 ## Run it (Python 3.9 or newer)
 
@@ -24,7 +31,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-`run.py` rebuilds everything from the 4 CSVs in `data/raw/`: data checks, lead matching, scoring, the plan, and both pages. Refresh the browser to see the result. Each run prints what moved since the last run.
+`run.py` rebuilds everything from the 4 CSVs in `data/raw/`: data checks, lead matching, account signals, the four plays, and both pages. Refresh the browser to see the result. Each run prints what moved since the last run.
 
 **No API key needed.** The AI's answers are saved in `output/ai_cache.json`, so a run reuses them. A key is only needed when new lead names appear: set `GEMINI_API_KEY` first. To run without the AI, set `ai.enabled: false` in `config.yaml`.
 
@@ -32,15 +39,14 @@ python run.py
 
 | What | Where |
 | --- | --- |
-| Accounts the team can work, share that open a deal, deal size, win rate, region and segment | Levers on the plan page |
-| How much each signal and each lead source counts, currency conversion on or off | "How we rank" tab on the plan page |
-| Currency rates, how far back leads count, how many leads make full intent, months of spend used for headroom, what counts as shrinking use, AI on or off | `config.yaml`, then `python run.py` |
+| Peer price (median or cautious), region and segment | Buttons on the plan page |
+| Peer price, months of spend used, the target quarter, currency rates, AI on or off | `config.yaml`, then `python run.py` |
 
-**A deeper change to try:** switch the AI off (`ai.enabled: false` in `config.yaml`) and run again. Leads with messy names are no longer tied to accounts, so Cascade Energy Group and Westbrook Telecom drop out of the Q1 list, Everline Stores and Harbor Logistics come in, and the pipeline moves from $64k to $61k. Set it back to `true` and run again to return to the plan.
+**A change to try live:** set `plays.benchmark: low` in `config.yaml` and run again. Peers are then the cheapest quarter of customers, so the price gaps shrink and $ on the table drops from $5.9M to $4.0M. Set it back to `median` to return to the plan.
 
-## How well does the ranking predict?
+## Why plays, not a predictive score
 
-`python backtest.py` rebuilds the same signals and score at each month end from Jul 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.56, where 0.5 is a coin flip. Headroom alone scores 0.64 and depth 0.60; intent (0.52) and momentum (0.47) show no edge. Only 15 accounts expanded in that window, too few to set the weights from data, so the weights are judgment calls and Q1 is the real test. Expansion deals before Jul 2025 can't be tested: usage data starts in Apr 2025. Details per account are in `output/backtest.csv`.
+`python backtest.py` rebuilds an account score at each month end from Jul 2025 to Feb 2026, using only what was known on that date, and checks who created an expansion deal in the next 90 days. Result: AUC 0.60, where 0.5 is a coin flip, on only 15 accounts that expanded. Leads alone score 0.52, so they are shown as a note, not scored. That is too weak to forecast from, so the plan is built on plays the data supports directly, and Q1 is the test. Details per account are in `output/backtest.csv`.
 
 ## If the run stops
 
@@ -52,12 +58,12 @@ When the AI is unsure about a lead, the run stops before building a new plan. Op
 config.yaml         every assumption, in one place
 run.py              runs the whole pipeline
 backtest.py         tests the ranking against past expansion deals
-src/                clean, check, match (code + AI), signals, score, export
+src/                clean, check, match (code + AI), signals, score, plays, export
 data/raw/           the 4 CSVs as received
 data/lead_labels.csv    answer list used to measure the AI
 data/review_queue.csv   leads waiting for, or decided by, a person
-output/             results of the last run (checks, matches, ranking, pipeline)
+output/             results of the last run (checks, matches, plays)
 logs/               every change made to the data, step by step
-demo/               the plan page and its scoring engine
+demo/               the plan page
 submission/         the submission page
 ```

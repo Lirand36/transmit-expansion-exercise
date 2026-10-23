@@ -90,21 +90,3 @@ def history(opps, cfg):
             "cycle_days": float(cycle.median()), "close_in_quarter": float(((90 - cycle).clip(lower=0) / 90).mean()),
             "booked_by_quarter": {str(q): float(v) for q, v in booked.items()},
             "created_by_quarter": {str(q): float(v) for q, v in created.items()}}
-
-
-def pipeline(ranked, sizes, win_rate, hist, cfg):
-    """Tier 1 and 2 through the funnel: accounts -> deals opened -> pipeline -> bookings in Q1 and later."""
-    size = cfg["pipeline"]["deal_size"]
-    rows = []
-    for basis, sz in sizes.groupby("basis"):
-        per_seg = sz.set_index("segment")
-        for tier in [1, 2]:
-            accts = ranked[ranked["tier"] == tier]
-            if_all = accts["segment"].map(per_seg[size]).sum()  # if every account opened a deal
-            created = if_all * hist["opp_rate"]
-            rows.append({"basis": basis, "tier": tier, "accounts": len(accts),
-                         "deals_opened": round(len(accts) * hist["opp_rate"], 1),
-                         "pipeline": round(created), "bookings_total": round(created * win_rate),
-                         "bookings_q1": round(created * win_rate * hist["close_in_quarter"]),
-                         "if_every_account_opens": round(if_all)})
-    return pd.DataFrame(rows)
