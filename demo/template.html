@@ -200,7 +200,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       </div>
       <div>
         <span class="eyebrow">In context</span>
-        <div class="scroll"><table class="context"><thead><tr><th></th><th class="r">New pipeline</th><th class="r">Bookings</th></tr></thead><tbody id="context"></tbody></table></div>
+        <div class="scroll"><table class="context"><thead><tr><th></th><th class="r">Accounts</th><th class="r">New pipeline</th><th class="r">Bookings</th></tr></thead><tbody id="context"></tbody></table></div>
         <span class="note" id="context-note"></span>
       </div>
       <div>
@@ -441,11 +441,12 @@ const DATA = /*DATA*/null;
     const lastQs = H.oppRateByQuarter.map(q => q.quarter);
     const med = obj => median(lastQs.map(q => obj[q] || 0));
     const qLabel = q => q.replace(/^20(\d\d)(Q\d)$/, "$2 '$1");
-    const crow = (cls, label, a, b) => `<tr class="${cls}"><td>${label}</td><td class="num">${money(a)}</td><td class="num">${money(b)}</td></tr>`;
-    $("context").innerHTML = crow("us", `These ${t1.length} accounts, Q1 2027`, pipe, book)
-      + crow("", `All ${res.rows.length} paying customers, same math`, allPipe, allPipe * S.winRate)
-      + crow("", "A typical past quarter, actual", med(H.createdByQuarter), med(H.bookedByQuarter));
-    $("context-note").textContent = `Typical = median of ${qLabel(lastQs[0])} to ${qLabel(lastQs[lastQs.length - 1])}, all expansion deals. Actual pipeline also includes customers who expand right after their first deal.`;
+    const allBook = allPipe * S.winRate, share = (a, b) => b ? Math.round(a / b * 100) + "%" : "–";
+    const crow = (cls, label, n, a, b) => `<tr class="${cls}"><td>${label}</td><td class="num">${n}</td><td class="num">${a}</td><td class="num">${b}</td></tr>`;
+    $("context").innerHTML = crow("", "All paying customers, a quarter", res.rows.length, money(allPipe), money(allBook))
+      + crow("", `These ${t1.length} accounts, Q1 2027`, t1.length, money(pipe), money(book))
+      + crow("us", "Their share", share(t1.length, res.rows.length), share(pipe, allPipe), share(book, allBook));
+    $("context-note").textContent = `Check: a typical past quarter actually booked ${money(med(H.bookedByQuarter))} of expansion (median, ${qLabel(lastQs[0])} to ${qLabel(lastQs[lastQs.length - 1])}).`;
 
     // The other two tracks (same region and segment filters)
     const track = k => DATA.accounts.filter(a => a.track === k && pick(a));
