@@ -10,7 +10,7 @@ GTM Engineer take-home exercise, Transmit Security.
 | Act now | Land and expand | Customer Success | 12 | landed in the last 12 months, not expanded yet |
 | Validate first | Q1 expansion window | Sales + CS | 20 | $2.6M prior contract value, not expansion value |
 | Validate first | Recover revenue | RevOps + Finance + CS | 19 | $3.1M usage value at peer pricing |
-| Protect | Paid, but no usage | CS + RevOps | 19 | $7.5M paid so far, at risk at renewal |
+| Protect | Paid, but no usage | GTM Engineering | 19 | $7.5M paid so far, at risk at renewal |
 
 The figures measure different things, so they are never added up, and none is a forecast. For scale, expansion booked $223k to $391k a quarter.
 

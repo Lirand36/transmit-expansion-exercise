@@ -148,9 +148,9 @@ td.act { white-space: nowrap; font-weight: 600; }
       <table class="fixes">
         <thead><tr><th>What's broken</th><th>Unblocks</th><th>Owner</th><th>Due</th><th>Done when</th></tr></thead>
         <tbody>
-          <tr><td>No contract end dates in the CRM</td><td>03 Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Every deal has dates</td></tr>
+          <tr><td>Contract dates not in the export</td><td>03 Q1 expansion window</td><td>RevOps</td><td class="due">29 Jan 2027</td><td>Export includes contract dates</td></tr>
           <tr><td>Usage with no contract</td><td>04 Recover revenue</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td><td>Each marked: paying, missing deal, or free</td></tr>
-          <tr><td>Paying accounts with no usage</td><td>Revenue protection</td><td>Customer Success</td><td class="due">18 Dec 2026</td><td>Each linked, or confirmed unused</td></tr>
+          <tr><td>Paying accounts with no usage</td><td>Revenue protection</td><td>GTM Engineering</td><td class="due">18 Dec 2026</td><td>Each linked, or confirmed unused</td></tr>
         </tbody>
       </table>
     </div>
@@ -3073,7 +3073,7 @@ const DATA = {
       next: () => "Discovery call by day 90.", owner: "Customer Success · day 90", metric: "Calls held → opportunities", action: "Discovery call" },
     { key: "renewal", n: "03", plays: ["renewal"], title: "Q1 expansion window", ready: ["check", "Validate"], count: true,
       evidence: L => `Signed ${money(L.reduce((a, r) => a + r.atStake, 0))} in Q1 2026.`, lbl: "to validate",
-      next: () => "Confirm renewal dates first.", owner: "RevOps · 29 Jan 2027", metric: "Dates confirmed → expansion on renewal agenda", action: "Confirm end date" },
+      next: () => "Pull renewal dates from the CRM.", owner: "RevOps · 29 Jan 2027", metric: "Dates confirmed → expansion on renewal agenda", action: "Confirm end date" },
     { key: "recover", n: "04", plays: ["contract", "winback"], title: "Recover revenue", ready: ["check", "Reconcile"],
       evidence: () => "They use us without a contract.", lbl: "usage at peer price",
       split: L => `${L.filter(r => r.play === "contract").length} no contract · ${L.filter(r => r.play === "winback").length} after lost renewal`,
@@ -3117,7 +3117,7 @@ const DATA = {
     const R = of(RISK);
     $("risk").setAttribute("aria-pressed", F.play === "risk");
     $("risk").innerHTML = `<div><span class="eyebrow">Revenue protection</span>
-      <p><b>${R.length} paying accounts show no usage.</b> Product link may be wrong. Customer Success · 18 Dec 2026.</p></div>
+      <p><b>${R.length} paying accounts show no usage.</b> Account-to-product link may be wrong. GTM Engineering · 18 Dec 2026.</p></div>
       <div><div class="usd">${money(sum(R))}</div><div class="meta">paid so far</div></div>`;
 
     // The accounts behind the selected play
