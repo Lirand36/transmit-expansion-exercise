@@ -59,7 +59,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-v
 .answer { padding: 22px 24px; display: flex; flex-direction: column; gap: 18px; }
 .headline { font-family: var(--font-display); font-size: 1.55rem; line-height: 1.3; font-weight: 600; max-width: 46ch; margin: 0; text-wrap: balance; }
 .headline b { color: var(--accent); font-weight: 700; }
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .kpis > div { background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .kpis .big { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
 .kpis .big.accent { color: var(--accent); }
@@ -116,10 +116,10 @@ td.r, th.r { text-align: right; }
 td.rank { color: var(--muted); font-family: var(--font-data); width: 2em; }
 .acct { font-weight: 600; }
 .meta { color: var(--muted); font-size: 0.8rem; }
-.funnel { display: flex; flex-wrap: wrap; gap: 6px 4px; align-items: center; font-size: 0.86rem; }
-.funnel span { background: var(--t3-soft); padding: 3px 10px; border-radius: 6px; white-space: nowrap; }
-.funnel span b { font-family: var(--font-data); font-weight: 600; }
-.funnel i { color: var(--muted); font-style: normal; }
+.todo { width: 100%; font-size: 0.92rem; }
+.todo td { padding: 9px 12px 9px 0; }
+.todo td.who { font-weight: 600; white-space: nowrap; width: 1%; }
+.todo td.n { font-family: var(--font-data); text-align: right; white-space: nowrap; width: 1%; }
 .tracks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 20px; }
 .tracks ul { list-style: none; margin: 0; padding: 4px 18px 14px; }
 .tracks li { padding: 8px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
@@ -193,12 +193,10 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
         <div><span class="eyebrow">Accounts to work</span><span class="big" id="k-accts"></span><span class="small" id="k-mix"></span></div>
         <div><span class="eyebrow">New pipeline in Q1</span><span class="big accent num" id="k-pipe"></span><span class="small" id="k-range"></span></div>
         <div><span class="eyebrow">Bookings from it</span><span class="big num" id="k-book"></span><span class="small" id="k-rate"></span></div>
-        <div><span class="eyebrow">Check: all customers, same math</span><span class="big num" id="k-base"></span><span class="small" id="k-base2"></span></div>
       </div>
-      <div class="funnel" id="funnel" aria-label="Forecast steps"></div>
       <div>
-        <span class="eyebrow">Suggested actions</span>
-        <ol class="actions" id="actions"></ol>
+        <span class="eyebrow">Who does what in Q1</span>
+        <table class="todo"><tbody id="actions"></tbody></table>
       </div>
     </div>
 
@@ -207,7 +205,7 @@ details.more[open] > summary { border-bottom: 1px solid var(--line); }
       <div class="lever">
         <label for="cap">Accounts the team can work <span class="val" id="cap-v"></span></label>
         <input type="range" id="cap" min="10" max="60" step="1">
-        <span class="note">Team capacity for Q1. Best-ranked accounts are picked first.</span>
+        <span class="note">Best-ranked accounts first.</span>
       </div>
       <div class="lever">
         <span class="lbl">Deal size</span>
@@ -5295,13 +5293,14 @@ function compute(data, s) {
   function sync() {
     $("cap").value = S.tier1Count; $("cap-v").textContent = S.tier1Count;
     $("win").value = Math.round(S.winRate * 100); $("win-v").textContent = Math.round(S.winRate * 100) + "%";
-    $("win-note").textContent = `${W.won} of ${W.deals} expansion deals won, ${W.from} to ${W.to}. Last 12 months: ${Math.round(W.last12 * 100)}%.`;
+    $("win-note").textContent = `Past: ${W.won} of ${W.deals} expansion deals won.`;
     const sz = DATA.sizes[S.convert ? "converted to USD" : "as recorded"];
-    $("size-note").textContent = `Per account: Enterprise ${money(sz.Enterprise[S.dealSize])}, Mid-Market ${money(sz["Mid-Market"][S.dealSize])}, SMB ${money(sz.SMB[S.dealSize])}. Enterprise rests on only ${sz.Enterprise.deals} past deals.`;
+    $("size-note").textContent = `Ent ${money(sz.Enterprise[S.dealSize])} (only ${sz.Enterprise.deals} past deals), Mid ${money(sz["Mid-Market"][S.dealSize])}, SMB ${money(sz.SMB[S.dealSize])}.`;
     document.querySelectorAll("#size button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === S.dealSize));
     $("opp").value = Math.round(S.oppRate * 200) / 2; $("opp-v").textContent = pct(S.oppRate);
     const q = H.oppRateByQuarter, qc = q.reduce((a, x) => a + x.customers, 0), qo = q.reduce((a, x) => a + x.opened, 0);
-    $("opp-note").textContent = `History: ${pct(qo / qc)} of customers opened an expansion deal in a quarter (${qo} of ${qc}, ${q[0].quarter} to ${q[q.length - 1].quarter}). The CRM export has closed deals only, so this is a floor.`;
+    const allBook = run(S).rows.reduce((a, r) => a + r.deal, 0) * S.oppRate * S.winRate;
+    $("opp-note").textContent = `Past rate ${pct(qo / qc)}. Applied to all customers it gives ${money(allBook)} a quarter, in line with actual bookings.`;
     const w = norm(S);
     for (const [id, key] of [["f-region", "region"], ["f-seg", "segment"]])
       document.querySelectorAll(`#${id} button`).forEach(b => b.setAttribute("aria-pressed", b.dataset.v === F[key]));
@@ -5320,8 +5319,6 @@ function compute(data, s) {
     const tot = key => t1.reduce((a, r) => a + r[key], 0);
     // Same funnel as engine.js, on the filtered accounts
     const ifAll = tot("deal"), pipe = ifAll * S.oppRate, book = pipe * S.winRate, bookQ1 = book * H.closeInQuarter;
-    const ent = t1.filter(r => r.segment === "Enterprise").reduce((a, r) => a + r.deal, 0);
-    const perDeal = t1.length ? ifAll / t1.length : 0;
     const scope = [F.segment !== "all" ? F.segment : "", F.region !== "all" ? F.region : ""].filter(Boolean).join(" ");
 
     // Filter buttons carry the account count, so they double as the breakdown
@@ -5333,20 +5330,13 @@ function compute(data, s) {
     $("f-seg").innerHTML = [["all", "All segments"], ["Enterprise", "Enterprise"], ["Mid-Market", "Mid-Market"], ["SMB", "SMB"]].map(([v, l]) => opt("segment", v, l)).join("");
 
     // The answer
-    const deals = t1.length * S.oppRate;
-    $("headline").innerHTML = `Work these <b>${t1.length}${scope ? " " + esc(scope) : ""} accounts</b> in Q1 2027. At past rates about <b>${deals.toFixed(1)}</b> open a deal: <b>${money(pipe)}</b> of new pipeline and <b>${money(book)}</b> in bookings. Each extra account that opens a deal adds about ${money(perDeal)}.`;
+    $("headline").innerHTML = `Q1: work <b>${t1.length}${scope ? " " + esc(scope) : ""} accounts</b> for <b>${money(pipe)}</b> of new expansion pipeline.`;
     $("k-accts").textContent = t1.length;
     $("k-mix").textContent = ["Enterprise", "Mid-Market", "SMB"].map(s => `${t1.filter(r => r.segment === s).length} ${s === "Enterprise" ? "Ent" : s === "Mid-Market" ? "Mid-Mkt" : s}`).join(" · ");
     $("k-pipe").textContent = money(pipe);
-    $("k-range").textContent = `${money(ifAll)} if every account opens a deal` + (ent ? `. Enterprise is ${Math.round(ent / ifAll * 100)}% of it` : "");
+    $("k-range").textContent = `if ${pct(S.oppRate)} open a deal (${pct(H.oppRate) === pct(S.oppRate) ? "past rate" : "past: " + pct(H.oppRate)})`;
     $("k-book").textContent = money(book);
-    $("k-rate").textContent = `${money(bookQ1)} inside Q1, the rest in Q2: deals take about ${Math.round(H.cycleDays / 30)} months`;
-    // Run-rate check: every paying customer through the same funnel, vs what expansion actually booked
-    const allRows = res.rows, booked = Object.entries(H.bookedByQuarter).slice(-3);
-    const baseBook = allRows.reduce((a, r) => a + r.deal, 0) * S.oppRate * S.winRate;
-    $("k-base").textContent = money(baseBook) + " a quarter";
-    $("k-base2").textContent = `${allRows.length} paying customers at the same rates. Actual: ${booked.map(([q, v], i) => money(v) + " in " + q.replace(/^20(\d\d)(Q\d)$/, "$2 '$1") + (i === booked.length - 1 ? " (to mid-June)" : "")).join(", ")}.`;
-    $("funnel").innerHTML = `<span><b>${t1.length}</b> accounts</span><i>→</i><span><b>${deals.toFixed(1)}</b> open a deal (${pct(S.oppRate)})</span><i>→</i><span><b>${money(pipe)}</b> pipeline</span><i>→</i><span><b>${money(book)}</b> won (${Math.round(S.winRate * 100)}%)</span><i>→</i><span><b>${money(bookQ1)}</b> closes in Q1 (${Math.round(H.closeInQuarter * 100)}%)</span>`;
+    $("k-rate").textContent = `${money(bookQ1)} in Q1, the rest in Q2`;
 
     // The other two tracks (same region and segment filters)
     const track = k => DATA.accounts.filter(a => a.track === k && pick(a));
@@ -5358,10 +5348,11 @@ function compute(data, s) {
     $("w-list").innerHTML = trackList(wList);
 
     // Suggested actions
+    const row = (who, what, n) => `<tr><td class="who">${who}</td><td>${what}</td><td class="n">${n}</td></tr>`;
     $("actions").innerHTML = [
-      t1.length ? `<li><b>Sales:</b> open expansion talks on the ${t1.length} accounts below. Start with the demo requests.</li>` : "",
-      cList.length ? `<li><b>RevOps with Finance:</b> confirm the contract on ${cList.length} accounts that use the product with no won deal on record.</li>` : "",
-      wList.length ? `<li><b>Customer Success:</b> win back ${wList.length} accounts that lost a renewal but still use the product.</li>` : "",
+      row("Sales", "Open expansion deals, demo requests first", `${t1.length} accounts · ${money(pipe)}`),
+      row("RevOps + Finance", "Confirm the contract: they use us, no won deal", `${cList.length} accounts`),
+      row("Customer Success", "Win back: renewal lost, still using us", `${wList.length} accounts`),
     ].join("");
 
     // Changed vs base plan
