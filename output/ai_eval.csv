@@ -1,0 +1,151 @@
+lead_id,company,account_id,confidence,reason,model,decision,why_review,answer_1,answer_2,true_account_id,verdict
+LEAD-70014,COBALT STORS Ltd.,ACC-1006,0.95,Exact match for brand and business line despite minor typos.,gemini-3.5-flash-lite,match,,ACC-1006,ACC-1006,ACC-1006,correct match
+LEAD-70034,"Everline Stores , nc.",ACC-1010,0.95,Matches brand and business line with minor suffix typo.,gemini-3.5-flash-lite,match,,ACC-1010,ACC-1010,ACC-1010,correct match
+LEAD-70040,quill media,,0.9,No candidate matches the media business line for Quill.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70042,Iron Logistics Ltd,,0.9,No account matches Iron Logistics in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70050,Dunmre Financial,ACC-1099,0.95,Matches brand and financial business line despite typo.,gemini-3.5-flash-lite,match,,ACC-1099,ACC-1099,ACC-1099,correct match
+LEAD-70051,BRIGHTWATER PAYMENTS Ltd.,,0.9,No matching payments business line found for Brightwater.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70059,Vertex Airines,ACC-1037,0.95,Matches Vertex Airlines despite minor spelling error.,gemini-3.5-flash-lite,match,,ACC-1037,ACC-1037,ACC-1037,correct match
+LEAD-70070,SOLSTICE BANK,,0.9,No account matches Solstice Bank in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70080,UNION AILINES,ACC-1048,0.95,Matches Union Airlines with minor spelling error.,gemini-3.5-flash-lite,match,,ACC-1048,ACC-1048,ACC-1048,correct match
+LEAD-70082,"Dunmore Stores , Inc.",,0.9,No account matches Dunmore Stores; candidates have different business lines.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70084,Brightwater Airlines Ltd,,0.0,No matching business line available for Brightwater Airlines.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70091,Alder Insuance,ACC-1118,0.95,Alder Insurance matches Alder Insuance with minor typo.,gemini-3.5-flash-lite,match,,ACC-1118,ACC-1118,ACC-1118,correct match
+LEAD-70099,Zeith Holdings Ltd.,ACC-1094,0.9,Zenith Holdings matches Zeith Holdings with typo.,gemini-3.5-flash-lite,match,,ACC-1094,ACC-1094,ACC-1094,correct match
+LEAD-70103,HARBO FINANCIAL,ACC-1036,0.95,Harbor Financial matches HARBO FINANCIAL with missing r.,gemini-3.5-flash-lite,match,,ACC-1036,ACC-1036,ACC-1036,correct match
+LEAD-70107,thornton systes Ltd.,ACC-1119,0.95,Thornton Systems matches thornton systes with typo.,gemini-3.5-flash-lite,match,,ACC-1119,ACC-1119,ACC-1119,correct match
+LEAD-70110,MERIDIAN HEALTH nc,ACC-1030,0.95,Meridian Health matches MERIDIAN HEALTH nc with typo.,gemini-3.5-flash-lite,match,,ACC-1030,ACC-1030,ACC-1030,correct match
+LEAD-70127,Meridian Logistics,,0.0,No Meridian Logistics account found in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70135,CASCADE SYSTEMS Inc.,,0.0,No exact Cascade Systems match; different lines present.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70143,Meridian Helth,ACC-1030,0.95,Meridian Health matches Meridian Helth with typo.,gemini-3.5-flash-lite,match,,ACC-1030,ACC-1030,ACC-1030,correct match
+LEAD-70145,meridian holdings,,0.0,No Meridian Holdings account found in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70146,solstice systems Inc,,0.0,No exact brand and business line match in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70154,HARBOR TEECOM Ltd.,ACC-1033,0.95,Harbor Telecom Ltd. matches typo in company name.,gemini-3.5-flash-lite,match,,ACC-1033,ACC-1033,ACC-1033,correct match
+LEAD-70165,Vertex Payments,,0.0,Vertex Payments has no matching business line candidate.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70168,north insurance,,0.0,No matching North Insurance account found.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70175,EVERLINE ENRGY,ACC-1113,0.95,Everline Energy Inc. matches lead with minor typo.,gemini-3.5-flash-lite,match,,ACC-1113,ACC-1113,ACC-1113,correct match
+LEAD-70176,Merdian Airlines,ACC-1074,0.95,Meridian Airlines matches typo Merdian Airlines.,gemini-3.5-flash-lite,match,,ACC-1074,ACC-1074,ACC-1074,correct match
+LEAD-70178,Meridian Eergy,ACC-1104,0.95,Meridian Energy Incorporated matches typo Meridian Eergy.,gemini-3.5-flash-lite,match,,ACC-1104,ACC-1104,ACC-1104,correct match
+LEAD-70192,WESTBROOK BANK,,0.0,No Westbrook Bank account in candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70204,BLUE BANK Ld.,ACC-1045,0.95,Blue Bank LLC matches BLUE BANK Ld.,gemini-3.5-flash-lite,match,,ACC-1045,ACC-1045,ACC-1045,correct match
+LEAD-70207,Cascade Media,,0.0,No Cascade Media account in candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70220,Vertex Airlnes,ACC-1037,0.95,Vertex Airlines Ltd. matches Vertex Airlnes closely in name and industry.,gemini-3.5-flash-lite,match,,ACC-1037,ACC-1037,ACC-1037,correct match
+LEAD-70225,North inancial,ACC-1105,0.95,North Financial LLC matches North inancial with minor typo.,gemini-3.5-flash-lite,match,,ACC-1105,ACC-1105,ACC-1105,correct match
+LEAD-70229,"GRANITE LOGISTICS , Inc.",,0.8,Granite Logistics is absent from the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70234,REDWOOD FINANCIAL,,0.8,Redwood Financial is absent from the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70244,Brightwater Airlines,,0.9,Brightwater Airlines has no matching airline account in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70249,Brightwater Airlines,,0.9,Brightwater Airlines has no matching airline account in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70251,LUMEN HELTH,ACC-1013,0.95,Lumen Health matches LUMEN HELTH with a typo.,gemini-3.5-flash-lite,match,,ACC-1013,ACC-1013,ACC-1013,correct match
+LEAD-70254,Blue Hldings Ltd.,ACC-1032,0.95,Blue Holdings Ltd matches Blue Hldings Ltd. with minor typo.,gemini-3.5-flash-lite,match,,ACC-1032,ACC-1032,ACC-1032,correct match
+LEAD-70256,Zenit Media,ACC-1109,0.9,Zenit Media matches Zenith Media LLC with spelling variation.,gemini-3.5-flash-lite,match,,ACC-1109,ACC-1109,ACC-1109,correct match
+LEAD-70266,EVERLINE SYSTEMS,,0.9,Everline Systems is absent from the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70267,Dunmore Holdings Incorpoated,ACC-1111,0.95,Exact brand and business line match with minor suffix typo.,gemini-3.5-flash-lite,match,,ACC-1111,ACC-1111,ACC-1111,correct match
+LEAD-70272,WestbrookHelth,ACC-1091,0.95,Matches brand name with typo in health and correct suffix.,gemini-3.5-flash-lite,match,,ACC-1091,ACC-1091,ACC-1091,correct match
+LEAD-70274,BlueBak Incorporated,ACC-1045,0.9,BlueBak with missing letters matches Blue Bank.,gemini-3.5-flash-lite,match,,ACC-1045,ACC-1045,ACC-1045,correct match
+LEAD-70289,VANTAGE FINANCIAL,,0.0,No matching vantage financial account exists in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70301,Iron Logistics,,0.0,Iron Logistics has no matching account in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70323,"Brightwater Stores , Inc.",,0.0,No Brightwater Stores account is present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70324,"Cobalt Ban , Inc.",ACC-1083,0.95,Cobalt Ban matches Cobalt Bank.,gemini-3.5-flash-lite,match,,ACC-1083,ACC-1083,ACC-1083,correct match
+LEAD-70325,North Retail Grou,ACC-1101,0.95,North Retail Grou matches North Retail Group Ltd.,gemini-3.5-flash-lite,match,,ACC-1101,ACC-1101,ACC-1101,correct match
+LEAD-70336,SOLSTICE ENERGY,,0.0,Solstice Energy has no exact business line match in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70337,"NORTH SYSTMS , Inc.",ACC-1080,0.95,NORTH SYSTMS matches North Systems Ltd.,gemini-3.5-flash-lite,match,,ACC-1080,ACC-1080,ACC-1080,correct match
+LEAD-70357,meridian logistics,,0.0,No matching logistics account with the same brand.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70359,COBALT INSURANCE,,0.0,"No insurance account exists for Cobalt, only stores.",gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70361,Westbrook Bank Ltd,,0.0,No Westbrook Bank account in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70362,Sable Media Ltd,,0.0,No Sable Media account in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70365,Westbrook Telecm,ACC-1115,0.95,Clear typo in Westbrook Telecm matching Westbrook Telecom Inc.,gemini-3.5-flash-lite,match,,ACC-1115,ACC-1115,ACC-1115,correct match
+LEAD-70367,ZENITH HOLINGS,ACC-1094,0.95,Zenith Holings matches Zenith Holdings with minor typo.,gemini-3.5-flash-lite,match,,ACC-1094,ACC-1094,ACC-1094,correct match
+LEAD-70377,VertexTelecom,,0.0,No Vertex Telecom account found in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70392,EVELINE LOGISTICS Ltd,ACC-1092,0.95,EVELINE LOGISTICS matches Everline Logistics Incorporated.,gemini-3.5-flash-lite,match,,ACC-1092,ACC-1092,ACC-1092,correct match
+LEAD-70404,Zenith Retai Group Ltd.,ACC-1084,0.98,Exact match for Zenith Retail Group Ltd.,gemini-3.5-flash-lite,match,,ACC-1084,ACC-1084,ACC-1084,correct match
+LEAD-70421,Alder Hodings Ltd.,,0.0,No Alder Holdings account in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70436,Dunmore Stores,,0.0,No matching account with the same business line exists.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70439,PINACLE PAYMENTS Inc.,ACC-1067,0.95,Pinnacle Payments Ltd. matches brand and business line despite typos.,gemini-3.5-flash-lite,match,,ACC-1067,ACC-1067,ACC-1067,correct match
+LEAD-70440,"everline health , Inc.",,0.0,No health business line account available in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70449,everline payments,,0.0,No Everline payments account found in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70462,Meridian Payents,ACC-1097,0.95,Meridian Payments matches brand and business line with a typo.,gemini-3.5-flash-lite,match,,ACC-1097,ACC-1097,ACC-1097,correct match
+LEAD-70472,IRON STORES,,0.0,No Iron Stores account exists in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70476,PINNACLE RETAIL GROUP Inc.,,0.0,No Pinnacle Retail Group account exists in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70484,Cobalt Holdings,,0.0,No Cobalt Holdings account exists in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70485,Cascade Bank,,0.0,No Cascade Bank account exists in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70488,Sable Stores,,0.0,No Sable Stores account exists in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70515,HARBOR HLDINGS,,0.0,No matching brand found among candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70531,"Vantage Retail Group , Inc.",,0.0,No matching brand in candidates; Vantagewise does not match.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70535,"WesbrookLogistics , Inc.",ACC-1107,0.95,Wesbrook Logistics matches Westbrook Logistics Ltd.,gemini-3.5-flash-lite,match,,ACC-1107,ACC-1107,ACC-1107,correct match
+LEAD-70536,Harbor elecom,ACC-1033,0.95,Harbor elecom matches Harbor Telecom Ltd.,gemini-3.5-flash-lite,match,,ACC-1033,ACC-1033,ACC-1033,correct match
+LEAD-70552,LUMEN MUUAL Inc,,0.0,No exact matching mutual company exists in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70553,Ble Insurance,ACC-1102,0.9,Ble Insurance matches Blue Insurance Inc.,gemini-3.5-flash-lite,needs review,the two answers disagree,ACC-1102,,ACC-1102,missed
+LEAD-70558,COBLT MEDIA,ACC-1108,0.95,COBLT MEDIA matches Cobalt Media Inc.,gemini-3.5-flash-lite,match,,ACC-1108,ACC-1108,ACC-1108,correct match
+LEAD-70571,Dunmore oldings,ACC-1111,0.95,Dunmore oldings matches Dunmore Holdings LLC.,gemini-3.5-flash-lite,match,,ACC-1111,ACC-1111,ACC-1111,correct match
+LEAD-70576,SOLSTICE ELECOM,ACC-1029,0.95,SOLSTICE ELECOM matches Solstice Telecom Ltd.,gemini-3.5-flash-lite,match,,ACC-1029,ACC-1029,ACC-1029,correct match
+LEAD-70581,DUNMORE MDIA Inc.,ACC-1087,0.95,DUNMORE MDIA matches Dunmore Media Group.,gemini-3.5-flash-lite,match,,ACC-1087,ACC-1087,ACC-1087,correct match
+LEAD-70588,Harbo Telecom,,0.0,No matching brand found in candidates.,gemini-3.5-flash-lite,no match,,,,ACC-1033,missed
+LEAD-70591,Solstice Bank,,0.0,No matching business line for Solstice Bank.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70593,Everline Media Ic.,ACC-1047,0.95,Everline Media Inc matches closely with minor typo.,gemini-3.5-flash-lite,match,,ACC-1047,ACC-1047,ACC-1047,correct match
+LEAD-70601,Cascad Energy,ACC-1068,0.95,Cascade Energy Group matches Cascad Energy.,gemini-3.5-flash-lite,match,,ACC-1068,ACC-1068,ACC-1068,correct match
+LEAD-70606,GRANITE PAYMENTS,,0.0,Granite Payments has no matching candidate account.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70608,DUNMOR TELECOM Inc,ACC-1090,0.95,Dunmore Telecom Group matches Dunmor Telecom Inc.,gemini-3.5-flash-lite,match,,ACC-1090,ACC-1090,ACC-1090,correct match
+LEAD-70609,Westbrok Telecom,ACC-1115,0.95,Westbrook Telecom Inc matches Westbrok Telecom.,gemini-3.5-flash-lite,match,,ACC-1115,ACC-1115,ACC-1115,correct match
+LEAD-70610,Granite Financial,,0.0,Granite Financial has no matching account in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70616,Vertex Retail Group Icorporated,ACC-1004,0.98,Vertex Retail Group Inc matches closely with typo.,gemini-3.5-flash-lite,match,,ACC-1004,ACC-1004,ACC-1004,correct match
+LEAD-70627,Union ank,ACC-1059,0.95,Union Bank LLC matches Union ank with typo.,gemini-3.5-flash-lite,match,,ACC-1059,ACC-1059,ACC-1059,correct match
+LEAD-70630,THORNTON STORES Ltd,,0.0,No matching account with the exact brand and business line.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70634,Brightwater Health Incorporated,,0.0,No exact business line match for Brightwater Health.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70641,Harbor Health,,0.0,No Harbor Health account exists in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70648,Iron Sysems Ltd.,ACC-1049,0.9,Iron Systems matches Iron Sysems Ltd. with minor typo.,gemini-3.5-flash-lite,match,,ACC-1049,ACC-1049,ACC-1049,correct match
+LEAD-70649,Zenit Media,ACC-1109,0.9,Zenit Media matches Zenith Media LLC with spelling variation.,gemini-3.5-flash-lite,match,,ACC-1109,ACC-1109,ACC-1109,correct match
+LEAD-70652,"Lumen Mutual , Inc.",,0.0,No Lumen Mutual account in candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70656,SOLSTICE INSURANCE LLC,,0.0,No Solstice Insurance account in candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70658,NOTH PAYMENTS,ACC-1015,0.8,NOTH PAYMENTS likely refers to North Payments Inc.,gemini-3.5-flash-lite,match,,ACC-1015,ACC-1015,ACC-1015,correct match
+LEAD-70662,COBALT HEALTH,,0.0,No Cobalt Health account in candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70664,Dunmore Mdia,ACC-1087,0.95,Dunmore Media Group matches Dunmore Mdia.,gemini-3.5-flash-lite,match,,ACC-1087,ACC-1087,ACC-1087,correct match
+LEAD-70675,NorthMutual,,0.0,No matching brand found in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70689,Westrook Systems,ACC-1018,0.95,Westrook Systems matches Westbrook Systems Group with a typo.,gemini-3.5-flash-lite,match,,ACC-1018,ACC-1018,ACC-1018,correct match
+LEAD-70690,Lumen Systems,,0.0,Lumen Systems is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70695,"meridian systems , Inc.",,0.0,Meridian Systems is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70699,Thornton Energy,,0.0,Thornton Energy is not in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70702,REDWOOD SYSTEMS,,0.0,Redwood Systems is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70705,Union Telecom,,0.0,Union Telecom is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70710,alder media Inc.,,0.0,Alder Media is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70712,Granite Systems,,0.0,Granite Systems is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70718,Dunore Media Ltd.,ACC-1087,0.95,Dunore Media matches Dunmore Media Group allowing minor typo.,gemini-3.5-flash-lite,match,,ACC-1087,ACC-1087,ACC-1087,correct match
+LEAD-70719,Vantag Holdings,ACC-1095,0.95,Vantag Holdings matches Vantage Holdings PLC with minor typo.,gemini-3.5-flash-lite,match,,ACC-1095,ACC-1095,ACC-1095,correct match
+LEAD-70722,Union Health,,0.0,No account matches Union Health business line.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70725,zenith halth,,0.0,No matching Zenith health/medical account in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70728,DunmoreFinancal,ACC-1099,0.95,DunmoreFinancal clearly matches Dunmore Financial PLC.,gemini-3.5-flash-lite,match,,ACC-1099,ACC-1099,ACC-1099,correct match
+LEAD-70736,Quill Holdings Inc,,0.0,Quill Holdings is not present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70748,ZENITH TELECOM,,0.0,Zenith Telecom is not in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70753,Thornton Energy Ltd.,,0.0,Thornton Energy is not present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70756,Lumen Systems Ltd,,0.0,Lumen Systems is not present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70761,meridian media Inc,,0.0,Meridian Media is not present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70771,Everline Retal Group,,0.0,Everline Retail Group is not present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70783,Vantage Media LC,ACC-1002,0.95,Vantage Media Inc. matches Vantage Media LC closely.,gemini-3.5-flash-lite,match,,ACC-1002,ACC-1002,ACC-1002,correct match
+LEAD-70784,"Granite Logistics , Inc.",,0.9,Granite Logistics is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70787,iro financial Inc,,0.8,Ambiguous match; no candidate clearly corresponds to iro financial.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70791,Noth Financial,ACC-1105,0.9,Noth Financial clearly matches North Financial LLC.,gemini-3.5-flash-lite,match,,ACC-1105,ACC-1105,ACC-1105,correct match
+LEAD-70794,MERIDIAN EALTH,ACC-1030,0.95,MERIDIAN EALTH is a typo for Meridian Health Ltd.,gemini-3.5-flash-lite,match,,ACC-1030,ACC-1030,ACC-1030,correct match
+LEAD-70796,BlueTeecom,ACC-1062,0.95,BlueTeecom is a clear typo for Blue Telecom Ltd.,gemini-3.5-flash-lite,match,,ACC-1062,ACC-1062,ACC-1062,correct match
+LEAD-70799,Quill Health Inc,,0.9,Quill Health Inc is not in the candidate list.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70800,"Harbor Health , Inc.",,0.9,Harbor Health is not present in the candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70801,Pinnacle Airlines,,0.9,Pinnacle Airlines has no exact matching account candidate.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70803,Alder Inurance,ACC-1118,0.95,Alder Inurance is a typo for Alder Insurance LLC.,gemini-3.5-flash-lite,match,,ACC-1118,ACC-1118,ACC-1118,correct match
+LEAD-70806,"Cacade Stores , Inc.",ACC-1040,0.95,Matches brand Cascade Stores with minor typo.,gemini-3.5-flash-lite,match,,ACC-1040,ACC-1040,ACC-1040,correct match
+LEAD-70807,Thornton Health,,0.0,No matching business line for Thornton Health.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70810,everline energy nc.,ACC-1113,0.95,Matches Everline Energy Inc with minor typo.,gemini-3.5-flash-lite,match,,ACC-1113,ACC-1113,ACC-1113,correct match
+LEAD-70812,Solstice Logistics,,0.0,Solstice Logistics has no matching account candidate.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70814,Westrook Payments LLC,ACC-1093,0.95,Matches Westbrook Payments Inc with slight typo.,gemini-3.5-flash-lite,match,,ACC-1093,ACC-1093,ACC-1093,correct match
+LEAD-70817,Harbor Finncial Ltd,ACC-1036,0.95,Matches Harbor Financial with typo in Finncial.,gemini-3.5-flash-lite,match,,ACC-1036,ACC-1036,ACC-1036,correct match
+LEAD-70823,Vertex Insurance,,0.0,Vertex Insurance has no exact matching account.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70826,IRON SYTEMS,ACC-1049,0.95,Matches Iron Systems with typo in SYTEMS.,gemini-3.5-flash-lite,match,,ACC-1049,ACC-1049,ACC-1049,correct match
+LEAD-70829,Solstice Insurace,,0.0,Solstice Insurance has no matching insurance account.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70830,Quill Retail Group,,0.0,Quill Retail Group has no matching candidate.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70832,Vantage Payments,,0.0,No matching account with the same brand and business line.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70838,PinnacleAirlines,,0.0,No matching account for Pinnacle Airlines in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70840,COBALT ENERG LLC,ACC-1011,0.95,Exact match for brand and energy business line.,gemini-3.5-flash-lite,match,,ACC-1011,ACC-1011,ACC-1011,correct match
+LEAD-70845,BLU HOLDINGS,ACC-1032,0.9,Blue Holdings matches BLU HOLDINGS allowing spelling variant.,gemini-3.5-flash-lite,match,,ACC-1032,ACC-1032,ACC-1032,correct match
+LEAD-70857,IronHealth Ltd.,,0.0,Iron Health account is missing from candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70865,Sable Holdings,,0.0,No matching account for Sable Holdings.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70880,Cacade Retail Group,ACC-1014,0.9,Cascade Retail Group matches with typo in lead name.,gemini-3.5-flash-lite,match,,ACC-1014,ACC-1014,ACC-1014,correct match
+LEAD-70881,westbrook ealth,ACC-1091,0.95,Typo in 'ealth' instead of 'health' for Westbrook Health.,gemini-3.5-flash-lite,match,,ACC-1091,ACC-1091,ACC-1091,correct match
+LEAD-70896,Sable Payments,,0.0,No matching account for Sable Payments.,gemini-3.5-flash-lite,no match,,,,,correct no match
+LEAD-70897,Granite Bank Ltd.,,0.0,Granite Bank account is not present in candidates.,gemini-3.5-flash-lite,no match,,,,,correct no match

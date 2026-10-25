@@ -1,0 +1,599 @@
+<title>Expansion Exercise Submission</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #f4f6f9; --surface: #ffffff; --ink: #0f1522; --muted: #5a6476; --line: #dfe4ec;
+  --accent: #1f4bd8; --accent-soft: #e6ecfd; --soft: #eceff4; --edge: #9aa6ba;
+  --good: #137a4b; --good-soft: #def4e8; --warn: #b4410a; --warn-soft: #fdebe1;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0b0f17; --surface: #131a27; --ink: #e7ebf2; --muted: #97a1b3; --line: #253045;
+    --accent: #7d97ff; --accent-soft: #1c2647; --soft: #1e2635; --edge: #5b6880; --good: #4fd193; --good-soft: #0f3324; --warn: #ff9a62; --warn-soft: #3d1f10; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #0b0f17; --surface: #131a27; --ink: #e7ebf2; --muted: #97a1b3; --line: #253045;
+  --accent: #7d97ff; --accent-soft: #1c2647; --soft: #1e2635; --edge: #5b6880; --good: #4fd193; --good-soft: #0f3324; --warn: #ff9a62; --warn-soft: #3d1f10; color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2 { font-family: var(--font-display); margin: 0; text-wrap: balance; }
+h1 { font-size: 1.6rem; } h2 { font-size: 1.1rem; }
+.eyebrow { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+nav.tabs { display: flex; gap: 4px; margin: 18px 0 20px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+nav.tabs button { font: 600 0.9rem var(--font-body); color: var(--muted); background: none; border: 0; padding: 10px 14px;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav.tabs a { margin-left: auto; align-self: center; font-size: 0.85rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.lead { max-width: 70ch; margin: 0 0 18px; }
+.diagram { padding: 16px; overflow-x: auto; }
+.diagram svg { display: block; min-width: 760px; width: 100%; height: auto; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .box.link { fill: var(--surface); stroke: var(--edge); }
+svg .src { font: 600 11px var(--font-body); fill: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+svg .box.ghost { fill: var(--soft); stroke: var(--line); }
+svg .grain.strong { font-weight: 600; fill: var(--accent); }
+svg .s { opacity: 0; transition: opacity 0.5s ease; }
+svg .s.on { opacity: 1; }
+.story-head { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; padding: 16px 18px; border-bottom: 1px solid var(--line); }
+.caption { flex: 1 1 320px; margin: 0; font-size: 1.02rem; font-weight: 500; min-height: 3em; display: flex; align-items: center; }
+.dots { display: flex; gap: 6px; }
+.dots button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font: 600 0.8rem var(--font-body); cursor: pointer; }
+.dots button[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.nav { display: flex; gap: 8px; }
+.btn { font: 600 0.85rem var(--font-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 7px 14px; border-radius: 8px; cursor: pointer; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn:disabled { opacity: 0.4; cursor: default; }
+svg .box.main { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+svg .name { font: 600 16px var(--font-display); fill: var(--ink); }
+svg .grain { font: 13px var(--font-body); fill: var(--ink); }
+svg .key { font: 12px var(--font-data); fill: var(--muted); }
+svg .col { font: 600 12px var(--font-body); fill: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+svg .edge { fill: none; stroke: var(--edge); stroke-width: 1.5; }
+svg .arrow { fill: var(--edge); }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; margin-top: 20px; }
+.card h2 { padding: 14px 18px; border-bottom: 1px solid var(--line); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.86rem; }
+th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 8px 14px; border-bottom: 1px solid var(--line); }
+td { padding: 8px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+td code { font: 500 0.82rem var(--font-data); white-space: nowrap; }
+tr.main td { background: var(--accent-soft); }
+ol.why { margin: 0; padding: 14px 18px 14px 36px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; }
+ol.why b { display: block; }
+.ai-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 20px; margin-top: 20px; }
+.qa { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; }
+.qa p { margin: 0; max-width: 70ch; }
+.qa ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.q { font: 600 0.72rem var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+.note { font-size: 0.86rem; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; padding: 16px 18px; }
+.stat b { display: block; font: 700 1.7rem var(--font-display); }
+.stat span { font-size: 0.82rem; color: var(--muted); }
+.flow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 16px 18px; font-size: 0.88rem; }
+.flow span { background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; }
+.flow span.ai { background: var(--accent-soft); border-color: var(--accent); }
+.flow i { font-style: normal; color: var(--muted); }
+tr.best td { background: var(--accent-soft); font-weight: 600; }
+td.num { font-family: var(--font-data); text-align: right; }
+.tag { font: 600 0.72rem var(--font-body); padding: 2px 8px; border-radius: 99px; background: var(--soft); color: var(--muted); white-space: nowrap; }
+.tag.built { background: var(--accent-soft); color: var(--accent); }
+.pa { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 20px; }
+.pa-item { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.pa-item p { margin: 0; max-width: 62ch; color: var(--muted); }
+.pa-item p.big { font: 600 1.08rem/1.4 var(--font-display); color: var(--ink); }
+ol.steps { margin: 0; padding: 16px 18px 16px 38px; display: flex; flex-direction: column; gap: 8px; font-size: 0.93rem; }
+.qa .q { margin-top: 4px; }
+table.ex td { padding: 6px 0; border: 0; font-size: 0.9rem; }
+table.ex td:first-child { font-family: var(--font-data); font-size: 0.82rem; white-space: nowrap; padding-right: 12px; }
+table.memo td:first-child { width: 34%; }
+table.memo td:nth-child(4) { white-space: nowrap; font-weight: 600; }
+td.due { white-space: nowrap; font-family: var(--font-data); font-size: 0.85em; text-align: right; }
+table.memo td { line-height: 1.45; }
+.deck { display: flex; flex-direction: column; }
+.slides { min-height: 420px; padding: 32px clamp(18px, 4vw, 48px); display: flex; }
+.slide { display: none; flex-direction: column; gap: 16px; width: 100%; min-width: 0; }
+.slide.on { display: flex; }
+.slide h3 { font: 700 clamp(1.4rem, 2.6vw, 2rem)/1.2 var(--font-display); margin: 0; text-wrap: balance; max-width: 30ch; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; }
+.kpis div { background: var(--soft); border-radius: 10px; padding: 16px; }
+.kpis b { display: block; font: 700 2rem var(--font-display); color: var(--accent); }
+.kpis span { font-size: 0.86rem; color: var(--muted); }
+.ask { margin: 0; padding: 12px 16px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; max-width: 70ch; }
+dl.defs { display: grid; grid-template-columns: max-content 1fr; gap: 12px 24px; margin: 0; font-size: 1.02rem; }
+dl.defs dt { font-weight: 600; } dl.defs dd { margin: 0; max-width: 62ch; }
+.cols3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 14px; }
+.col { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.col h4 { margin: 0; font: 700 0.78rem var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; padding: 6px 10px; border-radius: 6px; }
+.col.go h4 { background: var(--good-soft); color: var(--good); }
+.col.check h4 { background: var(--accent-soft); color: var(--accent); }
+.col.protect h4 { background: var(--warn-soft); color: var(--warn); }
+.play3 { border-left: 3px solid var(--line); padding: 4px 0 4px 12px; display: flex; flex-direction: column; gap: 2px; }
+.col.go .play3 { border-color: var(--good); } .col.check .play3 { border-color: var(--accent); } .col.protect .play3 { border-color: var(--warn); }
+.play3 b { font: 700 1.05rem/1.3 var(--font-display); }
+.play3 span { font-size: 0.92rem; }
+.lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 12px; }
+.lane { border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.lane.go { border-color: var(--accent); }
+.lane b { font: 700 1.05rem/1.3 var(--font-display); }
+.col .sub { color: var(--muted); font-size: 0.9rem; }
+.lane p { margin: 0; } .lane .sub { color: var(--muted); font-size: 0.9rem; }
+.who { font: 600 0.72rem var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+.slide table { font-size: 0.95rem; } .slide td { padding: 10px 14px; }
+th.r { text-align: right; }
+tr.base td { background: var(--accent-soft); font-weight: 600; }
+td.own { white-space: nowrap; font-weight: 600; color: var(--accent); text-align: right; }
+.go-plan { align-self: flex-start; text-decoration: none; }
+ul.pts { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.deck-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 18px; border-top: 1px solid var(--line); }
+#dcount { font: 500 0.85rem var(--font-data); color: var(--muted); }
+@media (max-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">GTM Engineer take-home · Transmit Security</span>
+    <h1>Expansion Exercise Submission</h1>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="deck" id="tab-deck">Presentation</button>
+    <button role="tab" aria-selected="false" aria-controls="model" id="tab-model">Data model</button>
+    <button role="tab" aria-selected="false" aria-controls="ai" id="tab-ai">AI component</button>
+    <button role="tab" aria-selected="false" aria-controls="memo" id="tab-memo">Data-quality memo</button>
+    <button role="tab" aria-selected="false" aria-controls="usage" id="tab-usage">How I used AI</button>
+    <a href="__PLAN_URL__" target="_blank" rel="noopener">Open the Q1 expansion plan ↗</a>
+  </nav>
+
+  <section id="deck" role="tabpanel" aria-labelledby="tab-deck">
+    <div class="card deck">
+      <div class="slides" id="slides">
+
+        <article class="slide">
+          <span class="q">Q1 2027 expansion plan</span>
+          <h3>Act on $1.6M now. Reconcile $3.1M. Protect $7.5M.</h3>
+          <div class="kpis">
+            <div><b>$1.6M</b><span>act now: price to usage<br>a year at peer prices</span></div>
+            <div><b>$3.1M</b><span>reconcile: recover revenue<br>usage value at peer rates</span></div>
+            <div><b>$7.5M</b><span>protect: paying customers with no usage<br>paid so far</span></div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <span class="q">What I answered</span>
+          <h3>The question, made specific</h3>
+          <dl class="defs">
+            <dt>Expansion</dt><dd>Existing customers buying more (upsells and new deals). Renewing the same contract is not expansion.</dd>
+            <dt>Next quarter</dt><dd>Q1 2027, January to March.</dd>
+            <dt>$ figures</dt><dd>Each play's $ says what it measures: a price gap, prior contract value, usage value or money at risk. For scale: expansion was $2.3M in the last 12 months, up from $885k the year before. Includes one $747k deal.</dd>
+            <dt>Peer price</dt><dd>What similar customers in the same segment pay per active user, over the last 12 months.</dd>
+            <dt>Prediction</dt><dd>Can history predict who expands? Barely, we tested it. So the plan is built on plays the data supports, and Q1 is the test.</dd>
+          </dl>
+        </article>
+
+        <article class="slide">
+          <span class="q">The decision</span>
+          <h3>Act now, validate first, protect revenue</h3>
+          <div class="cols3">
+            <div class="col go"><h4>Act now</h4>
+              <div class="play3"><b>Price to usage · +$1.6M a year</b><span>19 customers pay less than similar customers. Sales sends them pricing proposals.</span></div>
+              <div class="play3"><b>Land and expand · 12 new customers</b><span>No expansion yet. Customer Success calls each one.</span></div>
+            </div>
+            <div class="col check"><h4>Validate</h4>
+              <div class="play3"><b>Q1 expansion window · 20 customers</b><span>They signed in Q1 2026. Sales brings an expansion offer to each Q1 renewal.</span></div>
+              <div class="play3"><b>Recover revenue · $3.1M</b><span>19 customers use us without a contract. RevOps and Finance reconcile before anyone sells.</span></div>
+            </div>
+            <div class="col protect"><h4>Protect</h4>
+              <div class="play3"><b>Revenue protection · $7.5M paid</b><span>19 paying customers show no usage. Account owners check each one before renewal.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <span class="q">Change an assumption</span>
+          <h3>Two assumptions drive the numbers. Both can be changed on the page.</h3>
+          <div class="cols3">
+            <div class="col check"><h4>Who do we compare price with?</h4>
+              <div class="play3"><b>A typical customer in the segment → +$1.6M a year</b><span>from 19 customers</span></div>
+              <div class="play3"><b>Cheaper customers → +$380k a year</b><span>from 10 customers</span></div>
+              <span class="sub">Recover revenue moves with it: $3.1M → $2.1M.</span>
+            </div>
+            <div class="col check"><h4>Who counts as a new customer?</h4>
+              <div class="play3"><b>Signed in the last 12 months → 12 customers to call</b></div>
+              <div class="play3"><b>Last 6 months → 4. Last 24 months → 23.</b></div>
+            </div>
+          </div>
+          <a class="btn primary go-plan" href="__PLAN_URL__" target="_blank" rel="noopener">Try it on the page ↗</a>
+        </article>
+
+        <article class="slide">
+          <span class="q">What the data can't tell us</span>
+          <h3>Two gaps, each with an owner and a date</h3>
+          <div class="scroll">
+            <table>
+              <tbody>
+                <tr><td><b>19 customers use us with no contract on record.</b> Free use, or a missing deal?</td><td class="own">RevOps with Finance</td><td class="due">29 Jan 2027</td></tr>
+                <tr><td><b>21 accounts have no product link.</b> Their usage is unknown.</td><td class="own">Salesforce Architect</td><td class="due">18 Dec 2026</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="slide">
+          <span class="q">AI, measured</span>
+          <h3>One job: tie messy lead names to the right account</h3>
+          <div class="kpis">
+            <div><b>148 of 150</b><span>messy names<br>decided correctly</span></div>
+            <div><b>67 leads</b><span>tied to<br>48 customers</span></div>
+            <div><b>0</b><span>tied to the<br>wrong customer</span></div>
+          </div>
+          <ul class="pts">
+            <li>Unsure means “no match”: the worst case is a missed lead, never a wrong account.</li>
+            <li>A person decides the unsure ones. No new priority list until they're done.</li>
+            <li>No AI where a number becomes money.</li>
+          </ul>
+        </article>
+
+        <article class="slide">
+          <span class="q">Every month, not once</span>
+          <h3>From the systems to the plan, every month</h3>
+          <div class="flow">
+            <span>CRM · Marketing · Product</span><i>→</i>
+            <span>Pulled daily</span><i>→</i>
+            <span class="ai">One row per account per month</span><i>→</i>
+            <span>The plan page, refreshed</span>
+          </div>
+          <p class="ask">Each quarter we can check: did last quarter's picks actually expand?</p>
+        </article>
+
+        <article class="slide">
+          <span class="q">Next steps</span>
+          <h3>Who does what</h3>
+          <div class="scroll">
+            <table>
+              <tbody>
+                <tr><td>Approve the plays and their owners</td><td class="own">CRO</td></tr>
+                <tr><td>Validate pricing, then proposals for the 19</td><td class="own">Account owners</td></tr>
+                <tr><td>Discovery call for the 12; every new customer by day 90</td><td class="own">Customer Success</td></tr>
+                <tr><td>Bring an expansion offer to each Q1 renewal</td><td class="own">Sales</td></tr>
+                <tr><td>Reconcile the 19 customers with usage but no recorded contract, by 29 Jan 2027</td><td class="own">RevOps + Finance</td></tr>
+                <tr><td>Find out if the 19 paying customers with no usage use us, before renewal, by 18 Dec 2026</td><td class="own">Account owners + Salesforce Architect</td></tr>
+                <tr><td>Run the plan monthly</td><td class="own">GTM Engineering</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+      </div>
+      <div class="deck-nav">
+        <button class="btn" id="dprev">Back</button>
+        <span id="dcount" aria-live="polite"></span>
+        <button class="btn primary" id="dnext">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="model" role="tabpanel" aria-labelledby="tab-model" hidden>
+    <div class="card story">
+      <div class="story-head">
+        <div class="dots" id="dots"></div>
+        <p class="caption" id="caption" aria-live="polite"></p>
+        <div class="nav">
+          <button class="btn" id="prev">Back</button>
+          <button class="btn primary" id="next">Next</button>
+        </div>
+      </div>
+      <div class="diagram">
+        <svg viewBox="0 0 1000 470" role="img" aria-label="Data model: four sources, two link tables, an account-by-month table and a plays table">
+          <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker></defs>
+
+          <g class="s s1">
+            <text x="20" y="22" class="col">Pulled from each system, every day</text>
+            <rect class="box" x="20" y="38" width="250" height="72" rx="10"/>
+            <text x="36" y="66" class="name">Accounts</text><text x="254" y="66" class="src" text-anchor="end">CRM</text><text x="36" y="90" class="grain">1 row = one account</text>
+            <rect class="box" x="20" y="124" width="250" height="72" rx="10"/>
+            <text x="36" y="152" class="name">Deals</text><text x="254" y="152" class="src" text-anchor="end">CRM</text><text x="36" y="176" class="grain">1 row = one deal, saved every month</text>
+            <rect class="box" x="20" y="210" width="250" height="72" rx="10"/>
+            <text x="36" y="238" class="name">Leads</text><text x="254" y="238" class="src" text-anchor="end">Marketing</text><text x="36" y="262" class="grain">1 row = one lead</text>
+            <rect class="box" x="20" y="296" width="250" height="72" rx="10"/>
+            <text x="36" y="324" class="name">Product usage</text><text x="254" y="324" class="src" text-anchor="end">Product</text><text x="36" y="348" class="grain">1 row = one customer in one month</text>
+          </g>
+
+          <g class="s s2">
+            <text x="360" y="22" class="col">Links we keep</text>
+            <path class="edge" d="M270,74 H315 V115 H358" marker-end="url(#ar)"/>
+            <path class="edge" d="M270,332 H315 V145 H358" marker-end="url(#ar)"/>
+            <path class="edge" d="M270,246 H358" marker-end="url(#ar)"/>
+            <rect class="box link" x="360" y="80" width="270" height="90" rx="10"/>
+            <text x="376" y="108" class="name">Account ↔ product</text>
+            <text x="376" y="132" class="grain">1 row = one account linked to</text>
+            <text x="376" y="152" class="grain">its product login, with dates</text>
+            <rect class="box link" x="360" y="210" width="270" height="90" rx="10"/>
+            <text x="376" y="238" class="name">Lead ↔ account</text>
+            <text x="376" y="262" class="grain">1 row = which account a lead belongs</text>
+            <text x="376" y="282" class="grain">to, how sure, and who decided</text>
+          </g>
+
+          <g class="s s3">
+            <text x="715" y="22" class="col">The answer</text>
+            <path class="edge" d="M630,125 H675 V180 H713" marker-end="url(#ar)"/>
+            <path class="edge" d="M630,255 H675 V220 H713" marker-end="url(#ar)"/>
+            <path class="edge" d="M270,160 H330 V190 H713" marker-end="url(#ar)"/>
+          </g>
+
+          <g class="s s4">
+            <rect class="box ghost" x="739" y="96" width="245" height="110" rx="10"/>
+            <text x="900" y="116" class="key">Aug 2026</text>
+            <rect class="box ghost" x="727" y="108" width="245" height="110" rx="10"/>
+            <text x="888" y="128" class="key">Sep 2026</text>
+          </g>
+
+          <g class="s s3">
+            <rect class="box main" x="715" y="120" width="245" height="110" rx="10"/>
+            <text x="731" y="148" class="name">Account × month</text>
+            <text x="731" y="172" class="grain">1 row = one account in one month</text>
+            <text x="731" y="204" class="key">usage · deals · leads · flags</text>
+            <path class="edge" d="M837,230 V258" marker-end="url(#ar)"/>
+            <rect class="box main" x="715" y="260" width="245" height="110" rx="10"/>
+            <text x="731" y="288" class="name">Plays</text>
+            <text x="731" y="312" class="grain">1 row = one customer in one play,</text>
+            <text x="731" y="330" class="grain">in one month · $ · owner · next step</text>
+            <text x="731" y="356" class="grain strong">The Q1 plan reads this table</text>
+          </g>
+          <g class="s s4">
+            <text x="715" y="400" class="grain">Each month adds new rows.</text>
+            <text x="715" y="420" class="grain">Past months stay, so we can compare.</text>
+            <text x="715" y="446" class="grain strong">→ The plan page shows the latest month.</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h2>Grain: what one row means</h2>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Table</th><th>One row =</th><th>Why it's built this way</th></tr></thead>
+          <tbody>
+            <tr><td>Accounts</td><td>one account</td><td>From the CRM. The list of customers.</td></tr>
+            <tr><td>Deals</td><td>one deal, as it looked on the day we saved it</td><td>From the CRM. Saved every month, so every change, like a lost renewal, stays visible.</td></tr>
+            <tr><td>Leads</td><td>one lead</td><td>From the marketing platform, copied daily into our database.</td></tr>
+            <tr><td>Product usage</td><td>one customer in one month</td><td>From the product, copied daily into our database.</td></tr>
+            <tr><td>Account ↔ product</td><td>one account linked to its product login</td><td>21 accounts have no link today. A fix is made once and kept.</td></tr>
+            <tr><td>Lead ↔ account</td><td>one matching decision</td><td>Code, AI or a person decides, and we keep who and how sure.</td></tr>
+            <tr class="main"><td>Account × month</td><td>one account in one month</td><td>Usage, deals, leads and flags side by side. Comparing months shows who moved.</td></tr>
+            <tr class="main"><td>Plays</td><td>one customer in one play, in one month</td><td>The answer. A customer can be in two plays (16 are today). Shows whether last quarter's plays expanded.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" role="tabpanel" aria-labelledby="tab-ai" hidden>
+    <div class="card">
+      <h2>One job: tie a lead's typed company name to the right customer</h2>
+      <div class="qa">
+        <p>150 of 900 lead names have a typo or a different ending. Code can't tell a typo from a different company. The AI can.</p>
+        <table class="ex">
+          <tbody>
+            <tr><td>“Dunore Media Ltd.”</td><td>→ <b>Dunmore Media Group</b>. Same company, typo.</td></tr>
+            <tr><td>“Sable Holdings”</td><td>→ <b>Not a customer</b>. Looks like Blue Holdings Ltd, but it's a different company.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h2>Results on the 150 names code couldn't match, against a hand-checked answer list</h2>
+      <div class="stats">
+        <div class="stat"><b>148 of 150</b><span>decided correctly</span></div>
+        <div class="stat"><b>67 leads</b><span>tied to 48 customers</span></div>
+        <div class="stat"><b>81 of 81</b><span>non-customers kept out, look-alikes included</span></div>
+        <div class="stat"><b>0</b><span>tied to the wrong customer</span></div>
+      </div>
+      <p class="note" style="padding:0 18px 16px;margin:0">Plain name similarity finds 60, or ties 12 to the wrong customer when loosened. 1 unsure name went to a person.</p>
+    </div>
+
+    <div class="ai-grid">
+      <div class="card">
+        <h2>How we'd know it's wrong, 3 months on</h2>
+        <div class="qa"><ul>
+          <li><b>Ask twice.</b> The two answers agree on 149 of 150 today. A drop means something changed.</li>
+          <li><b>Reps' picks.</b> When a rep's account differs from the AI's, the lead goes to review.</li>
+        </ul></div>
+      </div>
+      <div class="card">
+        <h2>What happens when it's wrong</h2>
+        <div class="qa"><ul>
+          <li><b>Unsure = no match.</b> Worst case is a missed lead, never a wrong customer.</li>
+          <li><b>A person decides.</b> No new plan until they do.</li>
+          <li><b>AI unavailable.</b> 3 backup models are tried in order. If all fail, those leads stay unmatched and retry next run. The plan still builds from saved answers.</li>
+          <li><b>Off switch.</b> One setting turns the AI off. Messy names then simply stay out of the plan.</li>
+        </ul></div>
+      </div>
+      <div class="card">
+        <h2>Where there's no LLM</h2>
+        <div class="qa"><ul>
+          <li><b>Anywhere a number becomes money:</b> the plan's $, win rates, currency.</li>
+          <li><b>Data safety checks:</b> exact yes-or-no rules.</li>
+        </ul></div>
+      </div>
+      <div class="card">
+        <h2>What it changes</h2>
+        <div class="qa"><p>Leads land on the right customer, so marketing signals reach the plan. This quarter, 1 demo request on the plan came only through the AI (Cascad Energy).</p></div>
+      </div>
+    </div>
+
+    <div class="ai-grid">
+      <div class="card">
+        <h2>Running today</h2>
+        <div class="qa"><ul>
+          <li><b>Ask twice:</b> if the two answers differ, a person decides.</li>
+          <li><b>Review table:</b> unsure names wait for a person; the plan waits too.</li>
+          <li><b>Saved decisions:</b> each answer is reused next run.</li>
+          <li><b>Backup models</b> and an <b>off switch</b>.</li>
+          <li><b>Accuracy test</b> against the answer list (the 148 of 150).</li>
+        </ul></div>
+      </div>
+      <div class="card">
+        <h2>Needs the live CRM</h2>
+        <div class="qa"><ul>
+          <li><b>Daily alert</b> when names wait in the review table.</li>
+          <li><b>Reps' check:</b> compare the rep's hand-picked account with the AI's.</li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="memo" role="tabpanel" aria-labelledby="tab-memo" hidden>
+    <div class="card">
+      <h2>1. What's broken, and who fixes it</h2>
+      <div class="scroll">
+        <table class="memo">
+          <thead><tr><th>Broken</th><th>Patch now</th><th>Fix at the source</th><th>Owner</th><th>Due</th></tr></thead>
+          <tbody>
+            <tr><td><b>Usage with no contract on record</b><br><span class="note">12 never won a deal, 7 lost their renewal</span></td><td>Own play: Recover revenue</td><td>No access without a live contract</td><td>RevOps + Finance</td><td class="due">29 Jan 2027</td></tr>
+            <tr><td><b>21 accounts with no product link</b><br><span class="note">19 of them paid us</span></td><td>Shown as a risk, usage never guessed</td><td>Link required at go-live</td><td>Salesforce Architect</td><td class="due">18 Dec 2026</td></tr>
+            <tr><td><b>Lead names typed freely</b><br><span class="note">150 of 900 don't match exactly</span></td><td>Code, then AI, then a person</td><td>Match by email domain on the form</td><td>Marketing Ops</td><td class="due">29 Jan 2027</td></tr>
+            <tr><td><b>Outbound leads with an MQL date</b><br><span class="note">59 of 93 have one, which outbound shouldn't. Possible causes: wrong source, a duplicate lead, or a bad merge</span></td><td>MQL date not used, demo requests shown as a signal</td><td>Find the cause and clean it, so code and AI can rely on it</td><td>Marketing Ops</td><td class="due">30 Nov 2026</td></tr>
+            <tr><td><b>Currency labels look wrong</b><br><span class="note">EMEA Mid-Market GBP and USD deals are the same size</span></td><td>Converted at fixed rates</td><td>Multi-currency in the CRM, synced with Finance</td><td>RevOps + Finance</td><td class="due">31 Mar 2027</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h2>2. What we refused to answer</h2>
+      <div class="qa">
+        <span class="q">How much pipeline is it worth?</span>
+        <p>The export has no open deals and no targets. So we show $ per play, never added up, never a forecast.</p>
+        <span class="q">Are the 19 customers without a contract using us for free?</span>
+        <p>We can't tell free use from a missing deal. Flagged, not claimed as lost revenue.</p>
+        <span class="q">Who will expand on their own?</span>
+        <p>We tested it: barely better than a coin flip. So the plan is built on plays, and Q1 is the test.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h2>3. What would let us answer</h2>
+      <div class="scroll">
+        <table class="memo">
+          <thead><tr><th>Add to the export</th><th>So we can</th><th>Owner</th></tr></thead>
+          <tbody>
+            <tr><td><b>Open deals</b></td><td>Show Q1 pipeline coverage</td><td>RevOps</td></tr>
+            <tr><td><b>Targets and ARR</b></td><td>Say if $2.3M of expansion is good, and measure retention</td><td>RevOps + Finance</td></tr>
+            <tr><td><b>Loss reasons</b></td><td>Know why $1.9M of renewals was lost</td><td>RevOps</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" role="tabpanel" aria-labelledby="tab-usage" hidden>
+    <div class="card">
+      <div class="qa">
+        <span class="q">How I spent the 4 hours</span>
+        <p><b>75–80% thinking. 20–25% building.</b></p>
+        <p>Before writing any code, I sat with the question and the data. What does the data show, and what doesn't it? Which assumptions are hidden in the question? Then I shaped the answer for the person asking: a CRO, who needs three things.</p>
+        <ul>
+          <li><b>Business logic</b> they can trust</li>
+          <li><b>Where the revenue is</b></li>
+          <li><b>Decisions only a leader makes:</b> retention, sales effort, and data fixes</li>
+        </ul>
+        <p>My “CRO Reviewer” tested every step against these three. A strong base made the build faster and more accurate, with fewer rounds. What I'd do next is listed below.</p>
+        <span class="q">Tools</span>
+        <ul>
+          <li><b>Claude Code: the builder.</b> Built the pipeline and the data model, cleaned and joined the four files, and wrote the code, the plan page and this submission, one approved step at a time.</li>
+          <li><b>Gemini: the AI inside the pipeline.</b> Powers the lead-matching component: 148 of 150 messy names decided correctly.</li>
+          <li><b>ChatGPT: “CRO Reviewer”, my QA agent.</b> A devil's advocate I set up to review every version as the CRO would, for business, revenue and leadership sense. It kept the plan aimed at the main stakeholder.</li>
+        </ul>
+        <span class="q">What I delegated</span>
+        <p>The code, the pages, first drafts of the text, and a first draft of the answer list that measures the AI.</p>
+        <span class="q">What I checked myself</span>
+        <ul>
+          <li>Every assumption needed my OK before it was used. Business rules the data can't tell, like “outbound is never MQL'd”, came from me.</li>
+          <li>I asked why customers who already use the product request a demo. That surfaced 7 accounts still using us after a lost renewal.</li>
+          <li>I was the person in the loop: I decided the one lead the AI wasn't sure about.</li>
+          <li>I read every line that gets presented, looking for made-up claims and wording a CRO wouldn't follow.</li>
+        </ul>
+        <span class="q">What the AI got wrong that I caught</span>
+        <ul>
+          <li>It read blank MQL dates on outbound leads as missing data. The blank is correct. The error is the 59 outbound leads that do have one.</li>
+          <li>It scored every marketing touch. The data didn't support it (leads alone predict expansion at 0.52, a coin flip is 0.5), so only demo requests are shown, as a signal, not scored.</li>
+          <li>It kept building plan pages full of numbers, words and targets the data didn't support. I pushed it to one headline and five plays, with details on click.</li>
+          <li>It offered a statistical forecast (~$54k of pipeline) as the answer. I had it tested: barely better than a coin flip (0.60). So the plan is built on plays instead.</li>
+          <li>It claimed the plan would be pushed into the CRM as tasks. Nothing like that was built, so I had it removed.</li>
+          <li>Its first monitoring answers described processes we never agreed on. Rewritten around what we can actually run.</li>
+        </ul>
+        <span class="q">What I'd do next</span>
+        <ul>
+          <li>Pull open deals and renewal dates from the CRM. Then Q1 pipeline coverage and the Q1 expansion window become real numbers.</li>
+          <li>Pull loss reasons for the 13 lost renewals ($1.9M), to know what to fix.</li>
+          <li>Run the plan monthly. Each quarter, check whether last quarter's plays actually expanded.</li>
+          <li>Connect the AI review table's alert and the reps' check to the live CRM. These are explained today, not built.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+<script>
+document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('nav.tabs button').forEach(x => {
+    x.setAttribute('aria-selected', x === b);
+    document.getElementById(x.getAttribute('aria-controls')).hidden = x !== b;
+  });
+}));
+['model','ai','memo','usage'].forEach(t => { if (location.hash === '#' + t) document.getElementById('tab-' + t).click(); });
+(function () {
+  const slides = [...document.querySelectorAll('#slides .slide')];
+  let i = 0;
+  const show = () => {
+    slides.forEach((el, k) => el.classList.toggle('on', k === i));
+    document.getElementById('dcount').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('dprev').disabled = i === 0;
+    document.getElementById('dnext').disabled = i === slides.length - 1;
+  };
+  document.getElementById('dprev').addEventListener('click', () => { if (i) { i--; show(); } });
+  document.getElementById('dnext').addEventListener('click', () => { if (i < slides.length - 1) { i++; show(); } });
+  document.addEventListener('keydown', e => {
+    if (document.getElementById('deck').hidden) return;
+    if (e.key === 'ArrowRight' && i < slides.length - 1) { i++; show(); }
+    if (e.key === 'ArrowLeft' && i) { i--; show(); }
+  });
+  show();
+})();
+(function () {
+  const CAPTIONS = [
+    "Every day, data is copied from the CRM, the marketing platform and the product into our own database, unchanged. Today the same code runs on the 4 CSVs.",
+    "The files don't connect by themselves, so two small tables keep the links. A link is fixed once and reused every month.",
+    "Everything comes together per account per month. On top sits the plays table: one row per customer per play. The Q1 plan reads from it.",
+    "Each month adds new rows, and past months stay so we can compare. The plan page shows the latest month.",
+  ];
+  let step = 0;
+  const $ = id => document.getElementById(id);
+  $("dots").innerHTML = CAPTIONS.map((_, i) => `<button aria-label="Step ${i + 1}" data-i="${i}">${i + 1}</button>`).join("");
+  function show() {
+    document.querySelectorAll("svg .s").forEach(g => {
+      const n = +[...g.classList].find(c => /^s\d$/.test(c)).slice(1);
+      g.classList.toggle("on", n <= step + 1);
+    });
+    document.querySelectorAll("#dots button").forEach((b, i) => b.setAttribute("aria-current", i === step));
+    $("caption").textContent = CAPTIONS[step];
+    $("prev").disabled = step === 0;
+    $("next").textContent = step === CAPTIONS.length - 1 ? "Start again" : "Next";
+  }
+  $("next").addEventListener("click", () => { step = (step + 1) % CAPTIONS.length; show(); });
+  $("prev").addEventListener("click", () => { if (step) { step--; show(); } });
+  $("dots").addEventListener("click", e => { if (e.target.dataset.i) { step = +e.target.dataset.i; show(); } });
+  show();
+})();
+</script>
+</div>

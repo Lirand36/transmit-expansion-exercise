@@ -1,0 +1,243 @@
+<title>Q1 2027 Expansion Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* One screen for a CRO: a headline, five lines, everything else opens on click. */
+:root {
+  --bg: #f4f6f9; --surface: #ffffff; --ink: #0f1522; --muted: #5a6476; --line: #e3e7ee;
+  --accent: #1f4bd8; --accent-soft: #e6ecfd; --warn: #b4410a; --warn-soft: #fdebe1; --good: #137a4b; --good-soft: #def4e8;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0b0f17; --surface: #131a27; --ink: #e7ebf2; --muted: #97a1b3; --line: #253045;
+  --accent: #7d97ff; --accent-soft: #1c2647; --warn: #ff9a62; --warn-soft: #3d1f10; --good: #4fd193; --good-soft: #0f3324; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0b0f17; --surface: #131a27; --ink: #e7ebf2; --muted: #97a1b3; --line: #253045;
+  --accent: #7d97ff; --accent-soft: #1c2647; --warn: #ff9a62; --warn-soft: #3d1f10; --good: #4fd193; --good-soft: #0f3324; color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
+h1 .a { color: var(--accent); } h1 .w { color: var(--warn); }
+.eyebrow { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.small { font-size: 0.82rem; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.context { font-size: 0.95rem; color: var(--muted); }
+.context b { color: var(--ink); }
+.up { color: var(--good); font-weight: 600; }
+
+.rows { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+.row { background: var(--surface); border-radius: 12px; min-width: 0; }
+.row > button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: grid;
+  grid-template-columns: 84px minmax(0, 1fr) auto 18px; align-items: center; gap: 14px; padding: 16px 18px; }
+.row > button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 12px; }
+.tag { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 0; text-align: center; border-radius: 99px; }
+.tag.now { background: var(--good-soft); color: var(--good); }
+.tag.check { background: var(--accent-soft); color: var(--accent); }
+.tag.protect { background: var(--warn-soft); color: var(--warn); }
+.title { font: 600 1.05rem var(--font-display); }
+.title small { display: block; font: 400 0.82rem var(--font-body); color: var(--muted); }
+.val { font: 700 1.35rem var(--font-display); text-align: right; white-space: nowrap; }
+.val small { display: block; font: 400 0.74rem var(--font-body); color: var(--muted); }
+.chev { color: var(--muted); transition: transform .15s; }
+.row.open .chev { transform: rotate(90deg); }
+.body { padding: 0 18px 18px; display: none; flex-direction: column; gap: 14px; }
+.row.open .body { display: flex; }
+.facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 16px; margin: 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: 0.92rem; }
+.facts dt { color: var(--muted); font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding-top: 3px; }
+.facts dd { margin: 0; }
+.accts { display: flex; flex-direction: column; }
+.acct { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 0.9rem; }
+.acct .n { font-weight: 600; }
+.acct .m { grid-column: 1; color: var(--muted); font-size: 0.8rem; }
+.acct .demo { color: var(--good); }
+.acct .v { grid-row: 1 / span 2; grid-column: 2; align-self: center; text-align: right; }
+.links { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 0.84rem; }
+.links button, .links a { all: unset; cursor: pointer; color: var(--accent); font-weight: 600; }
+.links button:focus-visible, .links a:focus-visible { outline: 2px solid var(--accent); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { all: unset; cursor: pointer; font-size: 0.76rem; padding: 3px 9px; color: var(--muted); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+
+.knobs { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; padding: 12px 16px; border: 1px dashed var(--line); border-radius: 12px; font-size: 0.86rem; }
+.knobs .knob { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.knobs .lab { color: var(--muted); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.knobs output { font-weight: 600; min-width: 9ch; }
+.more { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+.more .row { background: transparent; border: 1px solid var(--line); }
+.more .row > button { grid-template-columns: minmax(0, 1fr) auto 18px; padding: 12px 18px; }
+.more .title { font-size: 0.95rem; }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-top: 14px; border-top: 1px solid var(--line); }
+.kpi { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.kpi b { font: 700 1.5rem var(--font-display); }
+.spark { display: flex; align-items: flex-end; gap: 3px; height: 26px; margin-top: 4px; max-width: 160px; }
+.spark i { flex: 1; background: var(--line); border-radius: 2px 2px 0 0; }
+.spark i.now { background: var(--accent); }
+.bars { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 6px 10px; align-items: center; font-size: 0.86rem; }
+.bar { height: 8px; border-radius: 3px; background: var(--accent); display: block; }
+.bar.lost { background: var(--warn); }
+.track { display: flex; gap: 2px; }
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.cols h2 { font-size: 0.9rem; margin-bottom: 8px; }
+.fix { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 0.9rem; }
+.fix .m { color: var(--muted); font-size: 0.8rem; }
+.fix .d { grid-row: 1 / span 2; grid-column: 2; text-align: right; font-size: 0.82rem; }
+
+@media (max-width: 640px) {
+  .row > button { grid-template-columns: minmax(0, 1fr) auto 14px; gap: 4px 12px; }
+  .row > button .tag { grid-column: 1 / -1; justify-self: start; padding: 2px 10px; }
+  .kpis, .cols { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Q1 2027 expansion plan</span>
+    <h1 id="headline"></h1>
+    <p class="context" id="context"></p>
+  </header>
+
+  <div class="knobs" aria-label="Assumptions">
+    <span class="knob"><span class="lab">Compare price with</span><span class="seg" id="k-peer"></span></span>
+    <span class="knob"><span class="lab">Count as new if signed within</span><span class="seg" id="k-land"></span></span>
+  </div>
+
+  <div class="rows" id="rows"></div>
+
+  <div class="more">
+    <div class="row" id="history"></div>
+    <div class="row" id="fixes"></div>
+  </div>
+
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+</script>
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const money = v => v >= 1e6 ? "$" + (v / 1e6).toFixed(1) + "M" : v >= 500 ? "$" + Math.round(v / 1000) + "k" : "<$1k";
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const pct = v => Math.round(v * 100) + "%";
+  const sum = L => L.reduce((a, r) => a + r.atStake, 0);
+  const S = DATA.summary;
+  let open = null, all = {}, rows = [];
+  // Knobs: the page redoes plays 1, 2 and 4 with the same rules as src/plays.py
+  const K = { q: DATA.benchmark === "low" ? 0.25 : 0.5, months: DATA.landMonths };
+  const quantile = (a, q) => { const v = [...a].sort((x, y) => x - y), p = (v.length - 1) * q, i = Math.floor(p); return v[i] + (v[Math.min(i + 1, v.length - 1)] - v[i]) * (p - i); };
+  function compute() {
+    const I = DATA.inputs, peer = {};
+    for (const seg of new Set(I.pool.map(r => r.segment))) peer[seg] = quantile(I.pool.filter(r => r.segment === seg).map(r => r.perUser), K.q);
+    const price = I.pool.map(r => ({ ...r, play: "price", peerPerUser: peer[r.segment], atStake: (peer[r.segment] - r.perUser) * r.users })).filter(r => r.atStake > 0);
+    const inPrice = new Set(price.map(r => r.id));
+    const [y, m, d] = DATA.asOf.split("-").map(Number);
+    const cutoff = new Date(Date.UTC(y, m - 1 - K.months, d)).toISOString().slice(0, 10);
+    const land = I.land.filter(r => r.firstWin > cutoff && !inPrice.has(r.id)).sort((a, b) => b.firstWin.localeCompare(a.firstWin)).map(r => ({ ...r, play: "land", atStake: 0 }));
+    const recover = I.recover.map(r => ({ ...r, atStake: (peer[r.segment] || 0) * r.users }));
+    rows = [...price, ...land, ...recover, ...DATA.plays.median.filter(r => r.play === "renewal" || r.play === "risk")];
+  }
+  const rowsOf = keys => rows.filter(r => keys.includes(r.play)).sort((a, b) => b.atStake - a.atStake);
+  const PEER = [[0.25, "Cheaper peers"], [0.5, "Typical peer"], [0.75, "Pricier peers"]];
+  const peerTxt = () => (PEER.find(([q]) => q === K.q) || [0, "custom"])[1].toLowerCase();
+
+  const PLAYS = [
+    { key: "price", plays: ["price"], tag: ["now", "Act now"], title: "Price to usage", sub: "Pay less per user than peers",
+      value: L => "+" + money(sum(L)), unit: "a year at peer prices",
+      why: () => `They pay less per active user than similar customers in their segment (peer price: ${peerTxt()}). The figure is what they would add a year at the peer price.`,
+      next: L => `Pricing proposal. Start with ${L[0] ? esc(L[0].name) : "the top account"}.`, owner: "Sales · Q1 2027", success: "Meetings → opportunities → won",
+      line: r => `${esc(r.segment)} · pays ${money(r.paid12m)} a year, ${Math.round((1 - r.perUser / r.peerPerUser) * 100)}% below peers`, plus: true },
+    { key: "land", plays: ["land"], tag: ["now", "Act now"], title: "Land and expand", sub: "New customers, not expanded yet",
+      value: L => L.length, unit: "customers",
+      why: () => `${pct(DATA.facts.expansionWithin90Days)} of expansions start within 90 days of landing, ${pct(DATA.facts.expansionWithin6Months)} within 6 months.`,
+      next: () => "Discovery call now. Then a day-90 call for every new customer.", owner: "Customer Success · Q1 2027", success: "Calls held → opportunities",
+      line: r => `${esc(r.segment)} · landed ${esc(r.landed)}`, noValue: true },
+    { key: "renewal", plays: ["renewal"], tag: ["check", "Validate"], title: "Q1 expansion window", sub: "Signed in Q1 2026, likely up for renewal",
+      value: L => L.length, unit: "customers",
+      why: L => `${L.length} customers signed ${money(sum(L))} in Q1 2026. A renewal is the natural moment to sell more.`,
+      next: () => "Bring an expansion offer to each Q1 renewal.", owner: "Sales · Q1 2027", success: "Renewals closed with an expansion",
+      line: r => `${esc(r.segment)} · ${esc(r.fact)}` },
+    { key: "recover", plays: ["contract", "winback"], tag: ["check", "Reconcile"], title: "Recover revenue", sub: "Usage without a recorded contract",
+      value: L => money(sum(L)), unit: "usage value at peer rates",
+      why: L => `${L.filter(r => r.play === "contract").length} customers use the product with no contract. ${L.filter(r => r.play === "winback").length} customers still use it after losing their renewal.`,
+      next: () => "Reconcile billing. No selling yet.", owner: "RevOps + Finance · 29 Jan 2027", success: "Each account resolved",
+      line: r => `${esc(r.segment)} · ${esc(r.fact)}` },
+    { key: "risk", plays: ["risk"], tag: ["protect", "Protect"], title: "Revenue protection", sub: "Paying customers with no usage",
+      value: L => money(sum(L)), unit: "paid so far",
+      why: L => `${L.length} customers paid ${money(sum(L))} but show no usage. Either they don't use us (churn risk at renewal), or their usage isn't linked.`,
+      next: () => "Find out which, for each customer, before renewal.", owner: "Account owners + Salesforce Architect · 18 Dec 2026", success: "Usage found, or a save plan in place",
+      line: r => `${esc(r.segment)} · ${esc(r.fact)}` },
+  ];
+
+  const P = k => rowsOf(PLAYS.find(p => p.key === k).plays);
+  $("context").innerHTML = `Expansion: <b>${money(S.expansionBooked.now)}</b> in the last 12 months, up from ${money(S.expansionBooked.before)} the year before. Includes one ${money(S.largestExpansion)} deal.`;
+
+  function render() {
+    compute();
+    $("k-peer").innerHTML = PEER.map(([q, t]) => `<button data-q="${q}" aria-pressed="${K.q === q}">${t}</button>`).join("");
+    $("k-land").innerHTML = [6, 12, 18, 24].map(n => `<button data-m="${n}" aria-pressed="${K.months === n}">${n} mo</button>`).join("");
+  $("headline").innerHTML = `Act on <span class="a">${money(sum(P("price")))}</span> now. Reconcile ${money(sum(P("recover")))}. Protect <span class="w">${money(sum(P("risk")))}</span>.`;
+    $("rows").innerHTML = PLAYS.map(p => {
+      const L = rowsOf(p.plays), isOpen = open === p.key, shown = all[p.key] ? L : L.slice(0, 5);
+      return `<div class="row ${isOpen ? "open" : ""}">
+        <button data-k="${p.key}" aria-expanded="${isOpen}">
+          <span class="tag ${p.tag[0]}">${p.tag[1]}</span>
+          <span class="title">${p.title}<small>${p.sub}</small></span>
+          <span class="val">${p.value(L)}<small>${p.unit}</small></span>
+          <span class="chev">›</span>
+        </button>
+        <div class="body">
+          <dl class="facts"><dt>Why</dt><dd>${p.why(L)}</dd><dt>Next</dt><dd>${p.next(L)}</dd><dt>Owner</dt><dd>${p.owner}</dd><dt>Success</dt><dd>${p.success}</dd></dl>
+          <div class="accts">${shown.map(r => `<div class="acct"><span class="n">${esc(r.name)}</span>
+            <span class="v num">${p.noValue ? "" : (p.plus ? "+" : "") + money(r.atStake)}${p.plus ? '<br><span class="m">a year</span>' : ""}</span>
+            <span class="m">${p.line(r)} · ${esc(r.owner)}${r.demo ? `<br><span class="demo">Key marketing signal: ${esc(r.demo)}</span>` : ""}</span></div>`).join("")}</div>
+          <div class="links">${L.length > 5 ? `<button data-all="${p.key}">${all[p.key] ? "Show top 5" : `Show all ${L.length}`}</button>` : ""}</div>
+        </div></div>`;
+    }).join("");
+  }
+
+  // History and data fixes: collapsed by default
+  const wl = S.winLoss, wmax = Math.max(...Object.values(wl).map(x => x.wonUsd + x.lostUsd));
+  const top = Math.max(...S.expansionByQuarter.map(q => q.usd));
+  const bars = (o, mx) => Object.entries(o).map(([k, v]) => `<span>${esc(k)}</span><span class="bar" style="width:${Math.max(2, v / mx * 100)}%"></span><span class="num">${money(v)}</span>`).join("");
+  const mx = Math.max(...Object.values(S.bySegment), ...Object.values(S.byRegion));
+  const fold = (id, title, sub, html) => {
+    $(id).innerHTML = `<button aria-expanded="false"><span class="title">${title}</span><span class="small muted">${sub}</span><span class="chev">›</span></button><div class="body">${html}</div>`;
+    $(id).querySelector("button").addEventListener("click", e => { const o = $(id).classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", o); });
+  };
+  fold("history", "Last 4 quarters", `${S.window} · closed deals`, `
+    <div class="kpis">
+      <div class="kpi"><span class="eyebrow">Expansion booked</span><b>${money(S.expansionBooked.now)}</b><span class="small muted">Year before: ${money(S.expansionBooked.before)} · incl. one ${money(S.largestExpansion)} deal</span>
+        <div class="spark">${S.expansionByQuarter.map((q, i) => `<i class="${i >= 4 ? "now" : ""}" style="height:${Math.max(6, q.usd / top * 100)}%" title="${q.q} ${money(q.usd)}"></i>`).join("")}</div></div>
+      <div class="kpi"><span class="eyebrow">Renewal $ kept</span><b>${pct(S.renewalKept.now)}</b><span class="small muted">Year before: ${pct(S.renewalKept.before)}</span></div>
+      <div class="kpi"><span class="eyebrow">Expansion win rate</span><b>${pct(S.expansionWinRate.now)}</b><span class="small muted">Year before: ${pct(S.expansionWinRate.before)}</span></div>
+    </div>
+    <div class="cols">
+      <div><h2>Expansion by segment and region</h2><div class="bars">${bars(S.bySegment, mx)}${bars(S.byRegion, mx)}</div></div>
+      <div><h2>Won vs lost</h2><div class="bars">${Object.entries(wl).map(([k, x]) => `<span>${k}</span><span class="track"><span class="bar" style="width:${x.wonUsd / wmax * 100}%"></span><span class="bar lost" style="width:${x.lostUsd / wmax * 100}%"></span></span><span class="num small">${money(x.wonUsd)} / <span style="color:var(--warn)">${money(x.lostUsd)}</span></span>`).join("")}</div></div>
+    </div>
+    <p class="small muted" style="margin:0">CRM export ends ${S.dataEnds}. Year before = 2024 Q3–2025 Q2.</p>`);
+  const FIX = [
+    ["Customers using the product with no contract", "RevOps + Finance", "29 Jan 2027", "Unblocks Recover revenue"],
+    ["Paying customers with no usage linked", "Salesforce Architect", "18 Dec 2026", "Unblocks Revenue protection"],
+  ];
+  fold("fixes", "Data fixes", `${FIX.length} items`, `<div>${FIX.map(f => `<div class="fix"><span>${f[0]}</span><span class="d">${f[1]}<br><span class="muted">${f[2]}</span></span><span class="m">${f[3]}</span></div>`).join("")}</div>`);
+
+  $("rows").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.k) open = open === b.dataset.k ? null : b.dataset.k;
+    else if (b.dataset.all) all[b.dataset.all] = !all[b.dataset.all];
+    render();
+  });
+  $("k-peer").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { K.q = +b.dataset.q; render(); } });
+  $("k-land").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { K.months = +b.dataset.m; render(); } });
+  render();
+})();
+</script>

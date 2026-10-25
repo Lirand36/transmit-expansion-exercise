@@ -1,0 +1,121 @@
+account_id,account_name,segment,region,tenant_id,created_date
+ACC-1000,Vertex Stores LLC,SMB,EMEA,tnt_636431,2021-06-04
+ACC-1001,Iron Mutual Inc.,Mid-Market,EMEA,tnt_580833,2024-10-04
+ACC-1002,Vantage Media Inc.,Mid-Market,APAC,tnt_659804,2023-12-05
+ACC-1003,Redwood Insurance Ltd.,SMB,NA,tnt_369019,2022-09-29
+ACC-1004,Vertex Retail Group Inc,Enterprise,EMEA,tnt_621442,2022-02-26
+ACC-1005,Brightwater Holdings Ltd,Enterprise,EMEA,,2021-11-16
+ACC-1006,Cobalt Stores Inc.,SMB,EMEA,tnt_163553,2024-07-05
+ACC-1007,Zenith Mutual Ltd.,SMB,NA,tnt_124127,2024-07-30
+ACC-1008,Quill Bank PLC,Mid-Market,EMEA,,2022-11-15
+ACC-1009,Vertex Systems Ltd,SMB,NA,tnt_324418,2024-05-02
+ACC-1010,Everline Stores Inc.,SMB,EMEA,tnt_720174,2023-11-13
+ACC-1011,Cobalt Energy LLC,SMB,NA,tnt_504655,2021-03-08
+ACC-1012,Zenith Energy PLC,Mid-Market,NA,tnt_471846,2024-03-13
+ACC-1013,Lumen Health,Enterprise,NA,tnt_464580,2022-11-03
+ACC-1014,Cascade Retail Group,Enterprise,NA,,2021-09-22
+ACC-1015,North Payments Inc,Enterprise,NA,,2024-08-22
+ACC-1016,Pinnacle Bank Inc,Mid-Market,NA,,2024-08-23
+ACC-1017,Thornton Telecom,SMB,EMEA,tnt_627237,2023-07-16
+ACC-1018,Westbrook Systems Group,SMB,NA,tnt_119637,2022-12-12
+ACC-1019,Blue Logistics Inc.,SMB,APAC,,2021-09-08
+ACC-1020,Redwood Holdings Ltd.,Mid-Market,NA,tnt_629256,2021-02-08
+ACC-1021,Dunmore Payments Inc,Mid-Market,NA,tnt_501311,2021-10-22
+ACC-1022,Vantage Mutual Ltd,Enterprise,APAC,tnt_675384,2023-07-31
+ACC-1023,Thornton Payments Ltd,SMB,NA,tnt_544377,2021-12-05
+ACC-1024,Granite Energy LLC,Mid-Market,EMEA,tnt_814363,2023-10-25
+ACC-1025,Quill Payments PLC,Mid-Market,EMEA,tnt_948237,2023-11-21
+ACC-1026,Everline Airlines LLC,Mid-Market,EMEA,tnt_769807,2022-06-15
+ACC-1027,Westbrook Insurance,Mid-Market,EMEA,tnt_643001,2022-05-14
+ACC-1028,Thornton Logistics Inc.,Mid-Market,EMEA,,2022-05-03
+ACC-1029,Solstice Telecom Ltd.,Mid-Market,EMEA,,2023-06-11
+ACC-1030,Meridian Health Ltd.,Enterprise,NA,tnt_349982,2022-11-16
+ACC-1031,Union Stores Inc,Enterprise,EMEA,tnt_355207,2022-01-04
+ACC-1032,Blue Holdings Ltd,SMB,NA,tnt_450313,2021-03-23
+ACC-1033,Harbor Telecom Ltd.,SMB,NA,tnt_843584,2024-09-20
+ACC-1034,Harbor Systems Group,SMB,EMEA,tnt_298166,2023-07-20
+ACC-1035,Zenith Systems Ltd,SMB,EMEA,,2024-04-30
+ACC-1036,Harbor Financial Incorporated,SMB,EMEA,tnt_563790,2022-08-06
+ACC-1037,Vertex Airlines Ltd.,Mid-Market,NA,tnt_953694,2023-02-06
+ACC-1038,Brightwater Insurance Inc,Mid-Market,EMEA,tnt_454128,2024-10-04
+ACC-1039,North Airlines Inc.,SMB,EMEA,tnt_989489,2022-12-02
+ACC-1040,Cascade Stores Ltd.,Mid-Market,EMEA,,2021-09-21
+ACC-1041,Dunmore Bank Inc,Enterprise,APAC,,2024-06-13
+ACC-1042,Brightwater Financial,SMB,EMEA,tnt_108826,2024-09-25
+ACC-1043,Meridian Stores Group,SMB,EMEA,tnt_392813,2023-09-13
+ACC-1044,Cascade Airlines Ltd,Enterprise,NA,tnt_546324,2022-01-28
+ACC-1045,Blue Bank LLC,SMB,EMEA,tnt_682322,2024-04-05
+ACC-1046,Harbor Logistics Incorporated,SMB,EMEA,tnt_506707,2024-01-12
+ACC-1047,Everline Media Inc,Mid-Market,EMEA,tnt_419351,2021-12-08
+ACC-1048,Union Airlines Incorporated,Mid-Market,EMEA,tnt_171929,2023-07-31
+ACC-1049,Iron Systems,Mid-Market,NA,tnt_971678,2022-02-12
+ACC-1050,North Logistics Inc,Enterprise,NA,tnt_250294,2022-08-10
+ACC-1051,Vertex Bank Inc.,SMB,NA,tnt_647364,2023-12-03
+ACC-1052,Pinnacle Insurance Ltd,Enterprise,APAC,,2022-02-21
+ACC-1053,Lumen Bank LLC,Mid-Market,EMEA,tnt_588343,2021-08-05
+ACC-1054,Iron Holdings Group,SMB,NA,tnt_846412,2022-01-13
+ACC-1055,Sable Financial Inc.,Mid-Market,NA,,2021-03-12
+ACC-1056,Solstice Stores PLC,Enterprise,EMEA,tnt_362221,2021-06-07
+ACC-1057,Quill Logistics Incorporated,Mid-Market,APAC,tnt_551690,2022-11-26
+ACC-1058,Thornton Bank Ltd,SMB,EMEA,tnt_536652,2022-11-30
+ACC-1059,Union Bank LLC,Mid-Market,NA,tnt_373357,2022-08-08
+ACC-1060,Quill Financial Group,Enterprise,NA,tnt_329746,2023-09-06
+ACC-1061,Lumen Payments Ltd,Enterprise,EMEA,tnt_592334,2023-11-02
+ACC-1062,Blue Telecom Ltd,Enterprise,APAC,,2024-10-29
+ACC-1063,Dunmore Systems,SMB,NA,tnt_440084,2023-04-14
+ACC-1064,Alder Logistics Inc.,SMB,NA,tnt_847097,2023-11-04
+ACC-1065,Lumen Financial PLC,SMB,EMEA,tnt_115903,2021-08-31
+ACC-1066,Solstice Financial Inc.,Mid-Market,NA,tnt_381567,2024-01-18
+ACC-1067,Pinnacle Payments Ltd.,SMB,EMEA,tnt_170829,2022-01-26
+ACC-1068,Cascade Energy Group,Mid-Market,NA,tnt_534924,2023-07-03
+ACC-1069,Cascade Logistics Group,SMB,EMEA,,2021-12-10
+ACC-1070,Solstice Media Ltd,SMB,NA,tnt_475292,2021-05-15
+ACC-1071,Union Retail Group Ltd.,Enterprise,EMEA,tnt_231248,2022-01-13
+ACC-1072,Everline Bank Ltd.,SMB,EMEA,,2023-03-12
+ACC-1073,Vertex Holdings Ltd,Mid-Market,NA,tnt_356640,2023-07-24
+ACC-1074,Meridian Airlines,Enterprise,NA,tnt_629067,2023-03-01
+ACC-1075,Alder Health Ltd.,SMB,NA,tnt_358413,2021-03-22
+ACC-1076,Brightwater Mutual Incorporated,SMB,EMEA,tnt_817385,2022-02-22
+ACC-1077,Redwood Payments LLC,Mid-Market,EMEA,tnt_619982,2024-08-27
+ACC-1078,Iron Bank Incorporated,Mid-Market,APAC,tnt_533327,2024-08-23
+ACC-1079,Vertex Media PLC,Mid-Market,EMEA,tnt_427276,2022-08-02
+ACC-1080,North Systems Ltd,Mid-Market,APAC,tnt_581332,2023-08-22
+ACC-1081,Redwood Retail Group Group,Enterprise,APAC,tnt_264570,2024-01-09
+ACC-1082,North Holdings Ltd,Enterprise,NA,,2024-04-30
+ACC-1083,Cobalt Bank Incorporated,Mid-Market,APAC,tnt_716020,2023-01-29
+ACC-1084,Zenith Retail Group Ltd.,SMB,EMEA,tnt_697591,2023-05-12
+ACC-1085,North Telecom Incorporated,Mid-Market,NA,,2022-12-08
+ACC-1086,Quill Energy Ltd,Mid-Market,EMEA,tnt_361908,2024-04-26
+ACC-1087,Dunmore Media Group,SMB,EMEA,tnt_158102,2022-01-09
+ACC-1088,Union Systems PLC,Mid-Market,NA,tnt_830440,2023-05-03
+ACC-1089,Cobalt Telecom Inc,Mid-Market,NA,tnt_479204,2022-08-01
+ACC-1090,Dunmore Telecom Group,Mid-Market,NA,tnt_956992,2022-03-05
+ACC-1091,Westbrook Health Inc,Mid-Market,EMEA,,2021-10-22
+ACC-1092,Everline Logistics Incorporated,Enterprise,EMEA,tnt_916391,2022-11-04
+ACC-1093,Westbrook Payments Inc.,Mid-Market,NA,tnt_425733,2021-08-19
+ACC-1094,Zenith Holdings,SMB,EMEA,tnt_793593,2022-11-24
+ACC-1095,Vantage Holdings PLC,Enterprise,NA,tnt_579228,2022-10-11
+ACC-1096,Pinnacle Mutual PLC,SMB,NA,tnt_503843,2022-06-01
+ACC-1097,Meridian Payments,Enterprise,EMEA,tnt_638728,2024-07-16
+ACC-1098,North Bank Group,Mid-Market,APAC,tnt_795004,2023-04-21
+ACC-1099,Dunmore Financial PLC,Mid-Market,EMEA,tnt_744269,2023-12-04
+ACC-1100,Westbrook Stores Incorporated,SMB,NA,tnt_701284,2021-09-05
+ACC-1101,North Retail Group Ltd.,SMB,NA,tnt_633345,2022-01-24
+ACC-1102,Blue Insurance Inc,Enterprise,APAC,tnt_209573,2023-07-11
+ACC-1103,Granite Airlines Ltd,Enterprise,EMEA,tnt_846603,2022-05-28
+ACC-1104,Meridian Energy Incorporated,Mid-Market,APAC,tnt_260869,2022-06-19
+ACC-1105,North Financial LLC,Mid-Market,EMEA,tnt_811494,2021-05-29
+ACC-1106,Everline Telecom LLC,Mid-Market,NA,tnt_447286,2023-01-07
+ACC-1107,Westbrook Logistics Ltd.,Enterprise,EMEA,tnt_477648,2023-06-11
+ACC-1108,Cobalt Media Inc,Mid-Market,EMEA,tnt_895708,2021-04-21
+ACC-1109,Zenith Media LLC,Mid-Market,EMEA,tnt_738968,2024-04-02
+ACC-1110,Everline Financial Inc.,Enterprise,EMEA,tnt_826247,2022-12-29
+ACC-1111,Dunmore Holdings LLC,Mid-Market,APAC,tnt_595156,2021-07-19
+ACC-1112,Iron Media Incorporated,SMB,NA,tnt_702329,2021-09-22
+ACC-1113,Everline Energy Inc.,Mid-Market,EMEA,tnt_544228,2021-04-10
+ACC-1114,Vantage Stores Ltd,Enterprise,EMEA,tnt_898961,2022-05-24
+ACC-1115,Westbrook Telecom Inc,Mid-Market,NA,tnt_631024,2023-05-26
+ACC-1116,Vantage Telecom,Enterprise,EMEA,,2022-03-18
+ACC-1117,Cobalt Payments Ltd.,SMB,NA,,2022-02-19
+ACC-1118,Alder Insurance LLC,Mid-Market,NA,tnt_218534,2024-11-01
+ACC-1119,Thornton Systems LLC,SMB,NA,tnt_598391,2023-02-05

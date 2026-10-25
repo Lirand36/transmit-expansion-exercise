@@ -1,0 +1,19 @@
+check,value,status,note
+account_id unique,0,PASS,
+opportunity_id unique,0,PASS,
+lead_id unique,0,PASS,
+usage tenant+month unique,0,PASS,
+every opp has an account,0,PASS,
+every usage row has an account,0,PASS,
+accounts without a tenant,21,WARN,no usage can be linked to these
+opp closes before it was created,0,PASS,
+MQL before lead was created,0,PASS,
+usage months per tenant,18 to 18,PASS,
+open opportunities in the CRM,0,WARN,no open pipeline is visible
+days between last CRM close and as-of date,106,WARN,CRM data ends 2026-06-16
+accounts with usage but no won deal,12,WARN,CRM may be missing deals; confirm contracts
+accounts still using after a lost renewal,7,WARN,"using the product with no current contract, or the CRM is wrong"
+paying accounts with no usage,19,WARN,"missing tenant link, not onboarded, or churned"
+outbound leads with an MQL date,59,WARN,outbound should never be MQL'd; MQL field unreliable
+demo requests never MQL'd,42 of 125,WARN,strongest lead type missed by scoring or routing
+share of opps not in USD,30%,INFO,currency labels look unreliable

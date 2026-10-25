@@ -1,0 +1,77 @@
+# Every assumption in the pipeline lives here. Change a value, rerun, see what moves.
+
+data:
+  folder: "data/raw"                # where the 4 CSVs sit, relative to this file
+  accounts: accounts.csv
+  opportunities: salesforce_opportunities.csv
+  leads: marketing_leads.csv
+  usage: product_usage.csv
+
+dates:
+  as_of: "2026-09-30"               # signals are measured up to this date (last full month of usage)
+  target_quarter_start: "2027-01-01"
+  target_quarter_end: "2027-03-31"
+
+currency:
+  convert_to_usd: true              # false = use amounts as recorded (labels look unreliable)
+  rates_to_usd:                     # approximate planning rates, not sourced from the data
+    USD: 1.00
+    GBP: 1.30
+    EUR: 1.10
+
+leads:
+  outbound_sources: ["Outbound Reply"]   # business rule: outbound leads are never MQL'd
+
+signals:
+  intent_window_days: 90            # leads counted if created in the 90 days up to as_of
+  lead_source_weight:               # how much one lead counts toward intent (business judgment, not proven by data)
+    Website Demo Request: 1.0       # high: asked us for a conversation
+    Outbound Reply: 0.5             # medium: replied, but we reached out first
+    Partner Referral: 0.5           # medium: a partner brought them; they may not have engaged yet
+    Review Site: 0.5                # medium: comparing vendors (for a customer, also a risk sign)
+    Paid Search: 0.5                # medium: searched and clicked
+    Webinar: 0.25                   # low: attended content
+    Conference: 0.25                # low: badge scan or booth visit
+    Content Download: 0.25          # low: research
+  intent_full_points: 3             # intent = points / 3, capped at 100 (one demo request = 33, three or more = 100)
+  headroom_months: 12               # headroom uses what the account paid in the last 12 months, not lifetime
+  momentum_months: 3                # user growth measured over the last 3 months
+  shrinking_months: 6               # "at risk" flag looks at the last 6 months
+  shrinking_threshold: -0.05        # MAU down 5% or more in 6 months = at risk
+
+scoring:
+  weights:                          # how much each signal counts (judgment calls, not proven by data; scaled to add up to 1)
+    intent: 0                       # leads shown as a note, not scored: on past data they did not tell expanders apart
+    headroom: 0.35
+    momentum: 0.15
+    depth: 0.15
+  tier1_top_share: 0.20             # top 20% of scores = Tier 1
+  tier2_next_share: 0.30            # next 30% = Tier 2, the rest Tier 3
+  no_usage_max_tier: 2              # paying accounts with no usage can't reach Tier 1 (we can't see their use)
+  shrinking_max_tier: 2             # shrinking accounts can't reach Tier 1
+
+pipeline:
+  deal_size: mid                    # low (25th percentile), mid (median) or high (75th percentile)
+  opp_rate_quarters: 4              # "share of accounts that open a deal" = customers who opened an expansion deal
+                                    # in a quarter, averaged over the last 4 full quarters in the CRM
+
+company_suffixes:                   # legal suffixes removed before matching company names
+  - inc
+  - llc
+  - ltd
+  - incorporated
+  - plc
+
+ai:                                 # AI step: match the leads code couldn't match
+  enabled: true                     # kill switch: false = leftovers stay unmatched, nothing else changes
+  model: gemini-3.5-flash-lite      # API key is read from the GEMINI_API_KEY environment variable, never stored
+  fallback_models: [gemini-3-flash-preview, gemini-3.1-flash-lite, gemini-3.6-flash]   # tried in order if the main model is busy
+  candidates: 5                     # code shortlists the 5 closest account names per lead; the AI picks one or none
+  accept_confidence: 0.80           # at or above: used as a match
+  review_confidence: 0.50           # between this and accept: kept out of the ranking, sent to a person to review
+  batch_size: 10                    # leads per request (free tier allows few requests per minute)
+  prompt_version: 1                 # bump when the prompt changes, so cached answers are not reused
+
+plays:
+  benchmark: median                 # peer $ per active user: low (25th percentile), median, or high (75th percentile)
+  land_months: 12                   # land and expand: customers whose first deal closed within this many months

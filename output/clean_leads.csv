@@ -1,0 +1,901 @@
+lead_id,email,first_name,last_name,company,source,created_date,mql_date,company_clean,name_key,email_domain,is_outbound,mql_date_trusted
+LEAD-70001,m.duarte@ironmediainc.com,Marcus,Duarte,"IronMedia , Inc.",Paid Search,2026-06-02,2026-07-04,"IronMedia , Inc.",ironmedia,ironmediainc.com,False,2026-07-04
+LEAD-70002,p.lindqvist@unionbankllc.com,Paula,Lindqvist,UNION BANK LLC,Conference,2025-06-14,,UNION BANK LLC,unionbank,unionbankllc.com,False,
+LEAD-70003,s.eriksen@westbrooksyste.com,Samir,Eriksen,WESTBROOK SYSTEMS,Outbound Reply,2026-03-28,2026-04-11,WESTBROOK SYSTEMS,westbrooksystems,westbrooksyste.com,True,
+LEAD-70004,r.duarte@solsticefinanc.com,Ruth,Duarte,Solstice Financial,Website Demo Request,2025-08-15,,Solstice Financial,solsticefinancial,solsticefinanc.com,False,
+LEAD-70005,t.eriksen@pinnaclebankin.com,Tomas,Eriksen,Pinnacle Bank Inc.,Content Download,2025-07-13,2025-07-13,Pinnacle Bank Inc.,pinnaclebank,pinnaclebankin.com,False,2025-07-13
+LEAD-70006,d.ivanov@brightwaterfin.com,Dana,Ivanov,Brightwater Financial,Content Download,2026-02-18,,Brightwater Financial,brightwaterfinancial,brightwaterfin.com,False,
+LEAD-70007,l.kowalski@northairlines.com,Lena,Kowalski,north airlines,Partner Referral,2026-01-26,2026-03-05,north airlines,northairlines,northairlines.com,False,2026-03-05
+LEAD-70008,o.nakamura@lumenpaymentsl.com,Omer,Nakamura,LUMEN PAYMENTS Ltd.,Conference,2025-11-27,,LUMEN PAYMENTS Ltd.,lumenpayments,lumenpaymentsl.com,False,
+LEAD-70009,s.kowalski@northpayments.com,Samir,Kowalski,NorthPayments,Website Demo Request,2026-04-27,,NorthPayments,northpayments,northpayments.com,False,
+LEAD-70010,e.haddad@ironmediainc.com,Eitan,Haddad,iron media Inc,Conference,2025-12-31,2026-01-06,iron media Inc,ironmedia,ironmediainc.com,False,2026-01-06
+LEAD-70011,n.abrams@vertexretailgr.com,Nikhil,Abrams, Vertex Retail Group  ,Paid Search,2026-01-01,,Vertex Retail Group,vertexretailgroup,vertexretailgr.com,False,
+LEAD-70012,j.gupta@meridianhealth.com,Jonas,Gupta,meridian health,Paid Search,2026-03-29,2026-05-05,meridian health,meridianhealth,meridianhealth.com,False,2026-05-05
+LEAD-70013,m.lindqvist@quillenergyinc.com,Mei,Lindqvist,Quill Energy Incorporated,Conference,2026-07-29,2026-08-03,Quill Energy Incorporated,quillenergy,quillenergyinc.com,False,2026-08-03
+LEAD-70014,a.eriksen@cobaltstorsltd.com,Aisha,Eriksen,COBALT STORS Ltd.,Website Demo Request,2026-03-01,2026-03-14,COBALT STORS Ltd.,cobaltstors,cobaltstorsltd.com,False,2026-03-14
+LEAD-70015,i.ivanov@brightwaterhol.com,Ines,Ivanov,BrightwaterHoldings Inc,Partner Referral,2025-05-23,,BrightwaterHoldings Inc,brightwaterholdings,brightwaterhol.com,False,
+LEAD-70016,i.ivanov@vertexholdings.com,Ines,Ivanov,"Vertex Holdings , Inc.",Content Download,2025-08-03,2025-08-03,"Vertex Holdings , Inc.",vertexholdings,vertexholdings.com,False,2025-08-03
+LEAD-70017,v.eriksen@vantagemutuali.com,Victor,Eriksen,"VANTAGE MUTUAL , Inc.",Conference,2025-07-06,2025-08-09,"VANTAGE MUTUAL , Inc.",vantagemutual,vantagemutuali.com,False,2025-08-09
+LEAD-70018,r.quinn@meridianpaymen.com,Ruth,Quinn, Meridian Payments  ,Paid Search,2025-07-19,2025-08-10,Meridian Payments,meridianpayments,meridianpaymen.com,False,2025-08-10
+LEAD-70019,p.moreau@thorntonbankin.com,Paula,Moreau,"Thornton Bank , Inc.",Conference,2025-09-21,2025-10-24,"Thornton Bank , Inc.",thorntonbank,thorntonbankin.com,False,2025-10-24
+LEAD-70020,a.nakamura@vertexstores.com,Aisha,Nakamura,VERTEX STORES,Conference,2025-03-27,2025-04-11,VERTEX STORES,vertexstores,vertexstores.com,False,2025-04-11
+LEAD-70021,r.silva@bluetelecominc.com,Ruth,Silva,BLUE TELECOM Inc.,Partner Referral,2026-04-21,2026-05-06,BLUE TELECOM Inc.,bluetelecom,bluetelecominc.com,False,2026-05-06
+LEAD-70022,e.bauer@cascaderetailg.com,Eitan,Bauer,CASCADE RETAIL GROUP Ltd.,Conference,2025-02-24,,CASCADE RETAIL GROUP Ltd.,cascaderetailgroup,cascaderetailg.com,False,
+LEAD-70023,d.gupta@vertexsystems.com,Dana,Gupta,VERTEX SYSTEMS,Paid Search,2025-07-29,2025-07-30,VERTEX SYSTEMS,vertexsystems,vertexsystems.com,False,2025-07-30
+LEAD-70024,l.farrell@everlinestores.com,Lena,Farrell,"Everline Stores , Inc.",Paid Search,2026-07-15,2026-07-25,"Everline Stores , Inc.",everlinestores,everlinestores.com,False,2026-07-25
+LEAD-70025,h.petrov@quilllogistics.com,Hugo,Petrov,QUILL LOGISTICS Inc,Paid Search,2025-11-28,2025-12-23,QUILL LOGISTICS Inc,quilllogistics,quilllogistics.com,False,2025-12-23
+LEAD-70026,m.kowalski@pinnaclepaymen.com,Marcus,Kowalski, Pinnacle Payments  ,Review Site,2025-10-02,,Pinnacle Payments,pinnaclepayments,pinnaclepaymen.com,False,
+LEAD-70027,g.kowalski@everlinemediai.com,Greta,Kowalski, Everline Media Inc.  ,Conference,2025-11-13,2025-12-12,Everline Media Inc.,everlinemedia,everlinemediai.com,False,2025-12-12
+LEAD-70028,i.haddad@unionretailgro.com,Ines,Haddad,Union Retail Group Inc.,Review Site,2025-12-06,2025-12-08,Union Retail Group Inc.,unionretailgroup,unionretailgro.com,False,2025-12-08
+LEAD-70029,j.farrell@lumenbank.com,Jonas,Farrell, LUMEN BANK  ,Outbound Reply,2025-01-31,,LUMEN BANK,lumenbank,lumenbank.com,True,
+LEAD-70030,n.costa@quillfinancial.com,Noa,Costa,QUILL FINANCIAL,Conference,2025-09-15,2025-10-01,QUILL FINANCIAL,quillfinancial,quillfinancial.com,False,2025-10-01
+LEAD-70031,r.kowalski@thorntonsystem.com,Ruth,Kowalski, Thornton Systems  ,Website Demo Request,2025-07-31,2025-08-31,Thornton Systems,thorntonsystems,thorntonsystem.com,False,2025-08-31
+LEAD-70032,c.kowalski@zenithsystems.com,Clara,Kowalski,Zenith Systems,Content Download,2025-07-24,2025-08-03,Zenith Systems,zenithsystems,zenithsystems.com,False,2025-08-03
+LEAD-70033,g.petrov@cascadeairline.com,Greta,Petrov,Cascade Airlines,Conference,2025-10-26,,Cascade Airlines,cascadeairlines,cascadeairline.com,False,
+LEAD-70034,g.petrov@everlinestores.com,Greta,Petrov,"Everline Stores , nc.",Paid Search,2025-09-15,2025-09-29,"Everline Stores , nc.",everlinestoresnc,everlinestores.com,False,2025-09-29
+LEAD-70035,p.lindqvist@harborfinancia.com,Priya,Lindqvist,harbor financial LLC,Webinar,2026-03-24,,harbor financial LLC,harborfinancial,harborfinancia.com,False,
+LEAD-70036,e.ivanov@brightwaterfin.com,Eitan,Ivanov,Brightwater Financial,Partner Referral,2025-01-06,2025-02-12,Brightwater Financial,brightwaterfinancial,brightwaterfin.com,False,2025-02-12
+LEAD-70037,t.moreau@westbrooksyste.com,Tomas,Moreau, Westbrook Systems  ,Paid Search,2025-03-13,2025-03-14,Westbrook Systems,westbrooksystems,westbrooksyste.com,False,2025-03-14
+LEAD-70038,n.kowalski@everlinelogist.com,Nikhil,Kowalski,Everline Logistics Incorporated,Content Download,2026-08-19,2026-09-13,Everline Logistics Incorporated,everlinelogistics,everlinelogist.com,False,2026-09-13
+LEAD-70039,h.lindqvist@dunmoreholding.com,Hugo,Lindqvist, Dunmore Holdings  ,Conference,2025-07-26,,Dunmore Holdings,dunmoreholdings,dunmoreholding.com,False,
+LEAD-70040,e.jensen@quillmedia.com,Eitan,Jensen, quill media  ,Partner Referral,2026-02-08,2026-03-16,quill media,quillmedia,quillmedia.com,False,2026-03-16
+LEAD-70041,d.gupta@graniteenergyl.com,Dana,Gupta,granite energy Ltd,Partner Referral,2026-05-21,2026-06-24,granite energy Ltd,graniteenergy,graniteenergyl.com,False,2026-06-24
+LEAD-70042,i.duarte@ironlogisticsl.com,Ines,Duarte,Iron Logistics Ltd,Website Demo Request,2026-01-17,2026-02-16,Iron Logistics Ltd,ironlogistics,ironlogisticsl.com,False,2026-02-16
+LEAD-70043,p.moreau@ironholdings.com,Priya,Moreau,IRON HOLDINGS,Review Site,2025-05-10,2025-05-21,IRON HOLDINGS,ironholdings,ironholdings.com,False,2025-05-21
+LEAD-70044,h.okafor@lumenhealthinc.com,Hugo,Okafor,"LUMEN HEALTH , Inc.",Paid Search,2025-01-08,2025-01-28,"LUMEN HEALTH , Inc.",lumenhealth,lumenhealthinc.com,False,2025-01-28
+LEAD-70045,h.petrov@unionairlines.com,Hugo,Petrov,Union Airlines,Website Demo Request,2025-05-24,2025-07-03,Union Airlines,unionairlines,unionairlines.com,False,2025-07-03
+LEAD-70046,c.costa@westbrooklogis.com,Clara,Costa,Westbrook Logistics Incorporated,Conference,2026-06-06,2026-06-08,Westbrook Logistics Incorporated,westbrooklogistics,westbrooklogis.com,False,2026-06-08
+LEAD-70047,p.eriksen@northretailgro.com,Priya,Eriksen,North Retail Group,Paid Search,2025-08-24,2025-09-18,North Retail Group,northretailgroup,northretailgro.com,False,2025-09-18
+LEAD-70048,a.jensen@thorntonteleco.com,Aisha,Jensen,THORNTON TELECOM,Webinar,2026-04-15,,THORNTON TELECOM,thorntontelecom,thorntonteleco.com,False,
+LEAD-70049,i.nakamura@graniteenergy.com,Ines,Nakamura,GRANITE ENERGY,Outbound Reply,2025-03-12,,GRANITE ENERGY,graniteenergy,graniteenergy.com,True,
+LEAD-70050,r.moreau@dunmrefinancia.com,Ruth,Moreau,Dunmre Financial,Paid Search,2026-01-20,,Dunmre Financial,dunmrefinancial,dunmrefinancia.com,False,
+LEAD-70051,p.okafor@brightwaterpay.com,Priya,Okafor,BRIGHTWATER PAYMENTS Ltd.,Outbound Reply,2025-02-04,,BRIGHTWATER PAYMENTS Ltd.,brightwaterpayments,brightwaterpay.com,True,
+LEAD-70052,l.duarte@alderhealthinc.com,Lena,Duarte, Alder Health Inc.  ,Content Download,2025-08-14,,Alder Health Inc.,alderhealth,alderhealthinc.com,False,
+LEAD-70053,e.ueda@dunmoremedia.com,Eitan,Ueda,Dunmore Media,Review Site,2026-02-04,,Dunmore Media,dunmoremedia,dunmoremedia.com,False,
+LEAD-70054,m.silva@meridianenergy.com,Marcus,Silva,Meridian Energy Inc.,Outbound Reply,2026-06-03,,Meridian Energy Inc.,meridianenergy,meridianenergy.com,True,
+LEAD-70055,p.bauer@vantagestores.com,Priya,Bauer,Vantage Stores,Conference,2026-04-02,2026-05-08,Vantage Stores,vantagestores,vantagestores.com,False,2026-05-08
+LEAD-70056,r.rosenthal@vertexretailgr.com,Ruth,Rosenthal,vertex retail group Inc,Paid Search,2026-07-16,2026-08-10,vertex retail group Inc,vertexretailgroup,vertexretailgr.com,False,2026-08-10
+LEAD-70057,p.petrov@solsticemediai.com,Priya,Petrov,SOLSTICE MEDIA Incorporated,Partner Referral,2026-02-28,2026-04-08,SOLSTICE MEDIA Incorporated,solsticemedia,solsticemediai.com,False,2026-04-08
+LEAD-70058,d.moreau@vertexholdings.com,Dana,Moreau, vertex holdings  ,Partner Referral,2026-07-15,,vertex holdings,vertexholdings,vertexholdings.com,False,
+LEAD-70059,p.abrams@vertexairines.com,Priya,Abrams,Vertex Airines,Conference,2025-03-22,,Vertex Airines,vertexairines,vertexairines.com,False,
+LEAD-70060,l.costa@everlinefinanc.com,Lena,Costa,"Everline Financial , Inc.",Website Demo Request,2025-11-14,2025-12-21,"Everline Financial , Inc.",everlinefinancial,everlinefinanc.com,False,2025-12-21
+LEAD-70061,j.okafor@harborfinancia.com,Jonas,Okafor,Harbor Financial Ltd,Conference,2025-08-29,,Harbor Financial Ltd,harborfinancial,harborfinancia.com,False,
+LEAD-70062,r.farrell@vantagestoresi.com,Ruth,Farrell,VANTAGE STORES Incorporated,Review Site,2026-07-20,,VANTAGE STORES Incorporated,vantagestores,vantagestoresi.com,False,
+LEAD-70063,t.moreau@westbrooksyste.com,Tomas,Moreau,WESTBROOK SYSTEMS Ltd.,Partner Referral,2026-01-18,,WESTBROOK SYSTEMS Ltd.,westbrooksystems,westbrooksyste.com,False,
+LEAD-70064,m.eriksen@vertexretailgr.com,Mei,Eriksen,Vertex Retail Group Inc,Paid Search,2025-08-09,2025-08-31,Vertex Retail Group Inc,vertexretailgroup,vertexretailgr.com,False,2025-08-31
+LEAD-70065,h.bauer@alderhealth.com,Hugo,Bauer, Alder Health  ,Paid Search,2026-08-31,,Alder Health,alderhealth,alderhealth.com,False,
+LEAD-70066,r.lindqvist@ironsystemsinc.com,Ruth,Lindqvist,IRON SYSTEMS Inc.,Conference,2026-05-17,2026-05-18,IRON SYSTEMS Inc.,ironsystems,ironsystemsinc.com,False,2026-05-18
+LEAD-70067,d.silva@bluebankinc.com,Dana,Silva,"Blue Bank , Inc.",Review Site,2025-06-11,,"Blue Bank , Inc.",bluebank,bluebankinc.com,False,
+LEAD-70068,v.kowalski@northpaymentsi.com,Victor,Kowalski,North Payments Incorporated,Outbound Reply,2026-08-30,2026-09-14,North Payments Incorporated,northpayments,northpaymentsi.com,True,
+LEAD-70069,i.nakamura@solsticeteleco.com,Ines,Nakamura,"Solstice Telecom , Inc.",Webinar,2025-12-17,2026-01-21,"Solstice Telecom , Inc.",solsticetelecom,solsticeteleco.com,False,2026-01-21
+LEAD-70070,l.jensen@solsticebank.com,Lena,Jensen,SOLSTICE BANK,Content Download,2026-07-26,2026-08-11,SOLSTICE BANK,solsticebank,solsticebank.com,False,2026-08-11
+LEAD-70071,a.gupta@cobaltenergylt.com,Aisha,Gupta,CobaltEnergy Ltd.,Content Download,2025-12-28,,CobaltEnergy Ltd.,cobaltenergy,cobaltenergylt.com,False,
+LEAD-70072,d.ivanov@everlinestores.com,Dana,Ivanov,Everline Stores LLC,Partner Referral,2026-06-07,2026-07-12,Everline Stores LLC,everlinestores,everlinestores.com,False,2026-07-12
+LEAD-70073,v.costa@vantagestoresi.com,Victor,Costa,"Vantage Stores , Inc.",Website Demo Request,2026-04-06,2026-05-10,"Vantage Stores , Inc.",vantagestores,vantagestoresi.com,False,2026-05-10
+LEAD-70074,p.farrell@cascadeairline.com,Priya,Farrell,Cascade Airlines,Review Site,2025-03-26,,Cascade Airlines,cascadeairlines,cascadeairline.com,False,
+LEAD-70075,a.quinn@dunmorebank.com,Aisha,Quinn,Dunmore Bank,Website Demo Request,2025-08-31,,Dunmore Bank,dunmorebank,dunmorebank.com,False,
+LEAD-70076,c.haddad@brightwaterhol.com,Clara,Haddad,brightwater holdings,Partner Referral,2025-01-08,,brightwater holdings,brightwaterholdings,brightwaterhol.com,False,
+LEAD-70077,p.kowalski@alderhealth.com,Paula,Kowalski,Alder Health,Paid Search,2025-10-13,,Alder Health,alderhealth,alderhealth.com,False,
+LEAD-70078,l.silva@westbrookstore.com,Lena,Silva,Westbrook Stores,Website Demo Request,2026-01-30,2026-03-01,Westbrook Stores,westbrookstores,westbrookstore.com,False,2026-03-01
+LEAD-70079,s.okafor@northpayments.com,Samir,Okafor,North Payments,Outbound Reply,2025-10-05,2025-10-20,North Payments,northpayments,northpayments.com,True,
+LEAD-70080,l.ueda@unionailines.com,Lena,Ueda,UNION AILINES,Outbound Reply,2025-07-25,2025-08-20,UNION AILINES,unionailines,unionailines.com,True,
+LEAD-70081,m.farrell@dunmorefinanci.com,Marcus,Farrell,dunmore financial,Website Demo Request,2026-09-12,2026-10-04,dunmore financial,dunmorefinancial,dunmorefinanci.com,False,2026-10-04
+LEAD-70082,e.bauer@dunmorestoresi.com,Eitan,Bauer," Dunmore Stores , Inc.  ",Partner Referral,2025-09-18,2025-10-19,"Dunmore Stores , Inc.",dunmorestores,dunmorestoresi.com,False,2025-10-19
+LEAD-70083,r.lindqvist@thorntonpaymen.com,Ruth,Lindqvist,Thornton Payments Inc,Conference,2026-03-24,2026-04-20,Thornton Payments Inc,thorntonpayments,thorntonpaymen.com,False,2026-04-20
+LEAD-70084,j.haddad@brightwaterair.com,Jonas,Haddad,Brightwater Airlines Ltd,Review Site,2026-03-06,,Brightwater Airlines Ltd,brightwaterairlines,brightwaterair.com,False,
+LEAD-70085,e.rosenthal@redwoodpayment.com,Eitan,Rosenthal,Redwood Payments,Partner Referral,2025-07-29,2025-09-04,Redwood Payments,redwoodpayments,redwoodpayment.com,False,2025-09-04
+LEAD-70086,n.bauer@cobaltstoresll.com,Noa,Bauer, Cobalt Stores LLC  ,Website Demo Request,2026-05-21,2026-06-20,Cobalt Stores LLC,cobaltstores,cobaltstoresll.com,False,2026-06-20
+LEAD-70087,h.ivanov@vantagestoresi.com,Hugo,Ivanov,Vantage Stores Incorporated,Content Download,2026-03-11,,Vantage Stores Incorporated,vantagestores,vantagestoresi.com,False,
+LEAD-70088,a.gupta@vantagetelecom.com,Aisha,Gupta,VANTAGE TELECOM Inc.,Review Site,2025-03-23,2025-04-16,VANTAGE TELECOM Inc.,vantagetelecom,vantagetelecom.com,False,2025-04-16
+LEAD-70089,e.farrell@cascadeenergyi.com,Eitan,Farrell,Cascade Energy Inc,Paid Search,2025-05-18,2025-05-30,Cascade Energy Inc,cascadeenergy,cascadeenergyi.com,False,2025-05-30
+LEAD-70090,a.ivanov@vantageholding.com,Aisha,Ivanov,VantageHoldings,Paid Search,2026-01-07,2026-01-12,VantageHoldings,vantageholdings,vantageholding.com,False,2026-01-12
+LEAD-70091,s.rosenthal@alderinsuance.com,Samir,Rosenthal,Alder Insuance,Review Site,2026-02-27,2026-03-05,Alder Insuance,alderinsuance,alderinsuance.com,False,2026-03-05
+LEAD-70092,r.eriksen@redwoodholding.com,Ruth,Eriksen,"REDWOOD HOLDINGS , Inc.",Paid Search,2026-07-02,,"REDWOOD HOLDINGS , Inc.",redwoodholdings,redwoodholding.com,False,
+LEAD-70093,t.lindqvist@northbank.com,Tomas,Lindqvist,North Bank,Website Demo Request,2025-05-10,,North Bank,northbank,northbank.com,False,
+LEAD-70094,h.nakamura@quillbankinc.com,Hugo,Nakamura,Quill Bank Inc,Review Site,2026-07-16,,Quill Bank Inc,quillbank,quillbankinc.com,False,
+LEAD-70095,l.bauer@redwoodpayment.com,Lena,Bauer,REDWOOD PAYMENTS,Content Download,2025-07-30,2025-08-26,REDWOOD PAYMENTS,redwoodpayments,redwoodpayment.com,False,2025-08-26
+LEAD-70096,a.quinn@lumenfinancial.com,Aisha,Quinn,Lumen Financial Inc.,Website Demo Request,2025-04-20,2025-05-27,Lumen Financial Inc.,lumenfinancial,lumenfinancial.com,False,2025-05-27
+LEAD-70097,r.bauer@brightwaterhol.com,Ruth,Bauer,BRIGHTWATER HOLDINGS,Webinar,2026-02-08,2026-03-03,BRIGHTWATER HOLDINGS,brightwaterholdings,brightwaterhol.com,False,2026-03-03
+LEAD-70098,p.kowalski@thorntonpaymen.com,Priya,Kowalski,Thornton Payments Inc,Review Site,2026-01-29,2026-02-21,Thornton Payments Inc,thorntonpayments,thorntonpaymen.com,False,2026-02-21
+LEAD-70099,n.gupta@zeithholdingsl.com,Nikhil,Gupta,Zeith Holdings Ltd.,Partner Referral,2025-10-31,,Zeith Holdings Ltd.,zeithholdings,zeithholdingsl.com,False,
+LEAD-70100,n.nakamura@cascadeenergyl.com,Noa,Nakamura,Cascade Energy LLC,Website Demo Request,2025-10-15,2025-10-26,Cascade Energy LLC,cascadeenergy,cascadeenergyl.com,False,2025-10-26
+LEAD-70101,g.gupta@redwoodpayment.com,Greta,Gupta,REDWOOD PAYMENTS,Content Download,2025-02-15,,REDWOOD PAYMENTS,redwoodpayments,redwoodpayment.com,False,
+LEAD-70102,t.moreau@cascadestores.com,Tomas,Moreau,Cascade Stores,Webinar,2026-06-28,2026-08-06,Cascade Stores,cascadestores,cascadestores.com,False,2026-08-06
+LEAD-70103,m.okafor@harbofinancial.com,Mei,Okafor,HARBO FINANCIAL,Outbound Reply,2025-12-05,2025-12-23,HARBO FINANCIAL,harbofinancial,harbofinancial.com,True,
+LEAD-70104,m.rosenthal@redwoodretailg.com,Mei,Rosenthal, Redwood Retail Group Ltd  ,Webinar,2025-07-11,2025-08-09,Redwood Retail Group Ltd,redwoodretailgroup,redwoodretailg.com,False,2025-08-09
+LEAD-70105,m.farrell@meridianpaymen.com,Mei,Farrell,Meridian Payments,Website Demo Request,2025-02-10,2025-03-22,Meridian Payments,meridianpayments,meridianpaymen.com,False,2025-03-22
+LEAD-70106,j.ivanov@bluelogisticsl.com,Jonas,Ivanov,BlueLogistics Ltd,Content Download,2026-01-18,2026-01-28,BlueLogistics Ltd,bluelogistics,bluelogisticsl.com,False,2026-01-28
+LEAD-70107,v.costa@thorntonsystes.com,Victor,Costa,thornton systes Ltd.,Website Demo Request,2026-02-10,,thornton systes Ltd.,thorntonsystes,thorntonsystes.com,False,
+LEAD-70108,j.farrell@thorntonlogist.com,Jonas,Farrell,Thornton Logistics LLC,Review Site,2025-07-15,2025-08-14,Thornton Logistics LLC,thorntonlogistics,thorntonlogist.com,False,2025-08-14
+LEAD-70109,v.jensen@solsticefinanc.com,Victor,Jensen, Solstice Financial Inc.  ,Webinar,2026-08-09,2026-09-03,Solstice Financial Inc.,solsticefinancial,solsticefinanc.com,False,2026-09-03
+LEAD-70110,t.ivanov@meridianhealth.com,Tomas,Ivanov,MERIDIAN HEALTH nc,Partner Referral,2026-02-02,2026-02-23,MERIDIAN HEALTH nc,meridianhealthnc,meridianhealth.com,False,2026-02-23
+LEAD-70111,p.costa@vantagestoresi.com,Priya,Costa,VANTAGE STORES Incorporated,Content Download,2025-04-07,,VANTAGE STORES Incorporated,vantagestores,vantagestoresi.com,False,
+LEAD-70112,m.abrams@lumenfinancial.com,Mei,Abrams,lumen financial Ltd,Website Demo Request,2025-08-12,2025-09-03,lumen financial Ltd,lumenfinancial,lumenfinancial.com,False,2025-09-03
+LEAD-70113,p.lindqvist@vertexholdings.com,Paula,Lindqvist,VertexHoldings Inc.,Paid Search,2025-07-29,2025-08-17,VertexHoldings Inc.,vertexholdings,vertexholdings.com,False,2025-08-17
+LEAD-70114,c.moreau@ironsystems.com,Clara,Moreau,Iron Systems,Outbound Reply,2025-01-31,,Iron Systems,ironsystems,ironsystems.com,True,
+LEAD-70115,h.farrell@harbortelecom.com,Hugo,Farrell,HARBOR TELECOM,Website Demo Request,2025-04-15,,HARBOR TELECOM,harbortelecom,harbortelecom.com,False,
+LEAD-70116,d.nakamura@alderlogistics.com,Dana,Nakamura,ALDER LOGISTICS,Conference,2026-03-11,,ALDER LOGISTICS,alderlogistics,alderlogistics.com,False,
+LEAD-70117,s.jensen@quillenergy.com,Samir,Jensen,Quill Energy,Content Download,2025-10-23,2025-11-16,Quill Energy,quillenergy,quillenergy.com,False,2025-11-16
+LEAD-70118,e.duarte@vantageholding.com,Eitan,Duarte, Vantage Holdings  ,Website Demo Request,2026-03-13,,Vantage Holdings,vantageholdings,vantageholding.com,False,
+LEAD-70119,r.quinn@thorntonlogist.com,Ruth,Quinn,Thornton Logistics,Outbound Reply,2026-03-02,,Thornton Logistics,thorntonlogistics,thorntonlogist.com,True,
+LEAD-70120,i.petrov@meridianstores.com,Ines,Petrov,"Meridian Stores , Inc.",Outbound Reply,2025-07-12,2025-07-13,"Meridian Stores , Inc.",meridianstores,meridianstores.com,True,
+LEAD-70121,j.abrams@solsticestores.com,Jonas,Abrams,solstice stores LLC,Conference,2026-07-11,2026-07-21,solstice stores LLC,solsticestores,solsticestores.com,False,2026-07-21
+LEAD-70122,o.silva@ironsystems.com,Omer,Silva,IronSystems,Website Demo Request,2025-06-18,2025-07-04,IronSystems,ironsystems,ironsystems.com,False,2025-07-04
+LEAD-70123,p.duarte@vertexairlines.com,Priya,Duarte,VERTEX AIRLINES,Outbound Reply,2026-06-27,2026-07-29,VERTEX AIRLINES,vertexairlines,vertexairlines.com,True,
+LEAD-70124,a.duarte@dunmoreholding.com,Aisha,Duarte, DUNMORE HOLDINGS  ,Content Download,2026-01-03,2026-01-07,DUNMORE HOLDINGS,dunmoreholdings,dunmoreholding.com,False,2026-01-07
+LEAD-70125,e.moreau@meridianhealth.com,Eitan,Moreau,MERIDIAN HEALTH Incorporated,Paid Search,2025-07-06,,MERIDIAN HEALTH Incorporated,meridianhealth,meridianhealth.com,False,
+LEAD-70126,a.farrell@sablefinancial.com,Aisha,Farrell, Sable Financial Inc.  ,Review Site,2025-06-10,2025-07-11,Sable Financial Inc.,sablefinancial,sablefinancial.com,False,2025-07-11
+LEAD-70127,j.farrell@meridianlogist.com,Jonas,Farrell,Meridian Logistics,Content Download,2025-05-17,,Meridian Logistics,meridianlogistics,meridianlogist.com,False,
+LEAD-70128,n.silva@ironmutualltd.com,Nikhil,Silva,Iron Mutual Ltd.,Outbound Reply,2025-08-15,,Iron Mutual Ltd.,ironmutual,ironmutualltd.com,True,
+LEAD-70129,m.okafor@northholdingsl.com,Marcus,Okafor,north holdings LLC,Review Site,2025-06-11,,north holdings LLC,northholdings,northholdingsl.com,False,
+LEAD-70130,n.rosenthal@zenithholdings.com,Noa,Rosenthal,ZenithHoldings,Content Download,2025-01-14,,ZenithHoldings,zenithholdings,zenithholdings.com,False,
+LEAD-70131,l.gupta@everlinemedia.com,Lena,Gupta,Everline Media,Conference,2025-12-28,,Everline Media,everlinemedia,everlinemedia.com,False,
+LEAD-70132,l.rosenthal@harborsystemsl.com,Lena,Rosenthal,Harbor Systems Ltd,Content Download,2025-04-26,,Harbor Systems Ltd,harborsystems,harborsystemsl.com,False,
+LEAD-70133,n.bauer@blueholdings.com,Noa,Bauer,BLUE HOLDINGS,Website Demo Request,2025-08-06,,BLUE HOLDINGS,blueholdings,blueholdings.com,False,
+LEAD-70134,t.abrams@cascadelogisti.com,Tomas,Abrams,CascadeLogistics,Webinar,2026-07-07,,CascadeLogistics,cascadelogistics,cascadelogisti.com,False,
+LEAD-70135,h.duarte@cascadesystems.com,Hugo,Duarte,CASCADE SYSTEMS Inc.,Review Site,2025-04-22,,CASCADE SYSTEMS Inc.,cascadesystems,cascadesystems.com,False,
+LEAD-70136,g.jensen@everlinelogist.com,Greta,Jensen,Everline Logistics Inc,Content Download,2026-06-17,,Everline Logistics Inc,everlinelogistics,everlinelogist.com,False,
+LEAD-70137,p.gupta@northlogistics.com,Paula,Gupta,North Logistics Inc,Conference,2026-02-22,2026-03-13,North Logistics Inc,northlogistics,northlogistics.com,False,2026-03-13
+LEAD-70138,s.costa@lumenbankinc.com,Samir,Costa,Lumen Bank Inc.,Webinar,2026-06-07,2026-06-28,Lumen Bank Inc.,lumenbank,lumenbankinc.com,False,2026-06-28
+LEAD-70139,m.costa@vantagemedia.com,Marcus,Costa,vantage media,Review Site,2025-01-01,2025-01-07,vantage media,vantagemedia,vantagemedia.com,False,2025-01-07
+LEAD-70140,j.gupta@zenithholdings.com,Jonas,Gupta,Zenith Holdings,Content Download,2025-04-26,2025-05-29,Zenith Holdings,zenithholdings,zenithholdings.com,False,2025-05-29
+LEAD-70141,p.abrams@vantagemedia.com,Paula,Abrams,vantage media,Webinar,2025-09-26,2025-10-31,vantage media,vantagemedia,vantagemedia.com,False,2025-10-31
+LEAD-70142,n.moreau@dunmoreholding.com,Nikhil,Moreau,Dunmore Holdings,Website Demo Request,2026-03-20,2026-04-02,Dunmore Holdings,dunmoreholdings,dunmoreholding.com,False,2026-04-02
+LEAD-70143,p.petrov@meridianhelth.com,Priya,Petrov,Meridian Helth,Paid Search,2025-01-01,2025-01-08,Meridian Helth,meridianhelth,meridianhelth.com,False,2025-01-08
+LEAD-70144,a.rosenthal@dunmorebankltd.com,Aisha,Rosenthal,DunmoreBank Ltd,Outbound Reply,2025-06-25,2025-06-30,DunmoreBank Ltd,dunmorebank,dunmorebankltd.com,True,
+LEAD-70145,a.eriksen@meridianholdin.com,Aisha,Eriksen,meridian holdings,Partner Referral,2026-05-20,,meridian holdings,meridianholdings,meridianholdin.com,False,
+LEAD-70146,e.eriksen@solsticesystem.com,Eitan,Eriksen,solstice systems Inc,Conference,2025-04-29,,solstice systems Inc,solsticesystems,solsticesystem.com,False,
+LEAD-70147,o.abrams@unionairlinesi.com,Omer,Abrams,union airlines Incorporated,Review Site,2025-11-20,2025-12-25,union airlines Incorporated,unionairlines,unionairlinesi.com,False,2025-12-25
+LEAD-70148,l.rosenthal@quillfinancial.com,Lena,Rosenthal,Quill Financial,Conference,2026-08-26,,Quill Financial,quillfinancial,quillfinancial.com,False,
+LEAD-70149,a.duarte@solsticemedial.com,Aisha,Duarte,Solstice Media Ltd.,Outbound Reply,2026-06-24,,Solstice Media Ltd.,solsticemedia,solsticemedial.com,True,
+LEAD-70150,m.jensen@zenithholdings.com,Mei,Jensen,Zenith Holdings Inc,Partner Referral,2026-02-14,2026-03-25,Zenith Holdings Inc,zenithholdings,zenithholdings.com,False,2026-03-25
+LEAD-70151,e.bauer@blueholdings.com,Eitan,Bauer, Blue Holdings  ,Outbound Reply,2025-11-26,2025-12-20,Blue Holdings,blueholdings,blueholdings.com,True,
+LEAD-70152,n.duarte@harborlogistic.com,Nikhil,Duarte,harbor logistics,Webinar,2025-01-24,,harbor logistics,harborlogistics,harborlogistic.com,False,
+LEAD-70153,r.nakamura@everlinemedia.com,Ruth,Nakamura,Everline Media,Website Demo Request,2026-06-30,,Everline Media,everlinemedia,everlinemedia.com,False,
+LEAD-70154,m.jensen@harborteecomlt.com,Mei,Jensen,HARBOR TEECOM Ltd.,Review Site,2026-02-18,2026-03-16,HARBOR TEECOM Ltd.,harborteecom,harborteecomlt.com,False,2026-03-16
+LEAD-70155,n.ivanov@harborlogistic.com,Nikhil,Ivanov,Harbor Logistics,Paid Search,2025-12-03,,Harbor Logistics,harborlogistics,harborlogistic.com,False,
+LEAD-70156,v.haddad@cobaltpayments.com,Victor,Haddad,COBALT PAYMENTS Inc.,Content Download,2026-04-23,,COBALT PAYMENTS Inc.,cobaltpayments,cobaltpayments.com,False,
+LEAD-70157,v.costa@dunmoresystems.com,Victor,Costa,DunmoreSystems,Review Site,2026-06-17,2026-07-26,DunmoreSystems,dunmoresystems,dunmoresystems.com,False,2026-07-26
+LEAD-70158,s.moreau@solsticefinanc.com,Samir,Moreau,"SOLSTICE FINANCIAL , Inc.",Partner Referral,2025-08-12,,"SOLSTICE FINANCIAL , Inc.",solsticefinancial,solsticefinanc.com,False,
+LEAD-70159,c.lindqvist@pinnaclebank.com,Clara,Lindqvist,PINNACLE BANK,Paid Search,2026-08-28,2026-10-03,PINNACLE BANK,pinnaclebank,pinnaclebank.com,False,2026-10-03
+LEAD-70160,n.duarte@zenithretailgr.com,Nikhil,Duarte,ZenithRetailGroup LLC,Webinar,2026-08-26,2026-09-19,ZenithRetailGroup LLC,zenithretailgroup,zenithretailgr.com,False,2026-09-19
+LEAD-70161,m.jensen@westbrooklogis.com,Marcus,Jensen,WESTBROOK LOGISTICS,Outbound Reply,2025-03-01,,WESTBROOK LOGISTICS,westbrooklogistics,westbrooklogis.com,True,
+LEAD-70162,r.farrell@cascadelogisti.com,Ruth,Farrell,CascadeLogistics Inc.,Paid Search,2025-04-17,,CascadeLogistics Inc.,cascadelogistics,cascadelogisti.com,False,
+LEAD-70163,t.duarte@northretailgro.com,Tomas,Duarte,North Retail Group,Review Site,2026-06-13,2026-07-09,North Retail Group,northretailgroup,northretailgro.com,False,2026-07-09
+LEAD-70164,l.haddad@ironholdings.com,Lena,Haddad,Iron Holdings,Outbound Reply,2025-05-14,,Iron Holdings,ironholdings,ironholdings.com,True,
+LEAD-70165,d.petrov@vertexpayments.com,Dana,Petrov,Vertex Payments,Review Site,2025-08-24,2025-09-15,Vertex Payments,vertexpayments,vertexpayments.com,False,2025-09-15
+LEAD-70166,p.lindqvist@dunmoremediain.com,Paula,Lindqvist,Dunmore Media Incorporated,Conference,2025-03-23,2025-04-21,Dunmore Media Incorporated,dunmoremedia,dunmoremediain.com,False,2025-04-21
+LEAD-70167,h.haddad@bluebank.com,Hugo,Haddad,Blue Bank,Content Download,2025-05-28,2025-06-24,Blue Bank,bluebank,bluebank.com,False,2025-06-24
+LEAD-70168,p.quinn@northinsurance.com,Paula,Quinn,north insurance,Website Demo Request,2025-12-05,2025-12-21,north insurance,northinsurance,northinsurance.com,False,2025-12-21
+LEAD-70169,p.okafor@thorntonteleco.com,Paula,Okafor,"thornton telecom , Inc.",Paid Search,2026-09-11,2026-10-08,"thornton telecom , Inc.",thorntontelecom,thorntonteleco.com,False,2026-10-08
+LEAD-70170,s.haddad@northpayments.com,Samir,Haddad,NORTH PAYMENTS,Review Site,2026-05-01,,NORTH PAYMENTS,northpayments,northpayments.com,False,
+LEAD-70171,r.silva@pinnacleinsura.com,Ruth,Silva,Pinnacle Insurance,Review Site,2026-06-05,2026-06-11,Pinnacle Insurance,pinnacleinsurance,pinnacleinsura.com,False,2026-06-11
+LEAD-70172,l.kowalski@brightwaterhol.com,Lena,Kowalski,Brightwater Holdings,Webinar,2026-03-14,2026-04-17,Brightwater Holdings,brightwaterholdings,brightwaterhol.com,False,2026-04-17
+LEAD-70173,i.okafor@thorntonpaymen.com,Ines,Okafor,ThorntonPayments,Review Site,2025-10-26,2025-11-10,ThorntonPayments,thorntonpayments,thorntonpaymen.com,False,2025-11-10
+LEAD-70174,t.jensen@pinnaclepaymen.com,Tomas,Jensen,pinnacle payments,Content Download,2026-06-07,2026-06-20,pinnacle payments,pinnaclepayments,pinnaclepaymen.com,False,2026-06-20
+LEAD-70175,e.rosenthal@everlineenrgy.com,Eitan,Rosenthal,EVERLINE ENRGY,Review Site,2025-02-16,,EVERLINE ENRGY,everlineenrgy,everlineenrgy.com,False,
+LEAD-70176,a.okafor@merdianairline.com,Aisha,Okafor,Merdian Airlines,Webinar,2025-04-29,,Merdian Airlines,merdianairlines,merdianairline.com,False,
+LEAD-70177,c.lindqvist@solsticeteleco.com,Clara,Lindqvist,SOLSTICE TELECOM,Website Demo Request,2026-08-01,,SOLSTICE TELECOM,solsticetelecom,solsticeteleco.com,False,
+LEAD-70178,m.nakamura@meridianeergy.com,Mei,Nakamura,Meridian Eergy,Website Demo Request,2026-04-06,2026-04-18,Meridian Eergy,meridianeergy,meridianeergy.com,False,2026-04-18
+LEAD-70179,a.kowalski@graniteairline.com,Aisha,Kowalski,"GRANITE AIRLINES , Inc.",Partner Referral,2025-04-14,,"GRANITE AIRLINES , Inc.",graniteairlines,graniteairline.com,False,
+LEAD-70180,t.silva@westbrooktelec.com,Tomas,Silva,WestbrookTelecom Inc.,Conference,2026-05-27,,WestbrookTelecom Inc.,westbrooktelecom,westbrooktelec.com,False,
+LEAD-70181,o.okafor@everlineairlin.com,Omer,Okafor, Everline Airlines Inc.  ,Website Demo Request,2026-07-16,,Everline Airlines Inc.,everlineairlines,everlineairlin.com,False,
+LEAD-70182,e.rosenthal@quilllogistics.com,Eitan,Rosenthal,QUILL LOGISTICS,Outbound Reply,2026-02-22,2026-02-26,QUILL LOGISTICS,quilllogistics,quilllogistics.com,True,
+LEAD-70183,o.farrell@sablefinancial.com,Omer,Farrell,Sable Financial,Content Download,2025-05-07,2025-05-29,Sable Financial,sablefinancial,sablefinancial.com,False,2025-05-29
+LEAD-70184,p.lindqvist@cascadeenergy.com,Priya,Lindqvist,cascade energy,Website Demo Request,2025-02-20,,cascade energy,cascadeenergy,cascadeenergy.com,False,
+LEAD-70185,m.duarte@unionbank.com,Mei,Duarte,union bank,Website Demo Request,2026-05-13,2026-05-18,union bank,unionbank,unionbank.com,False,2026-05-18
+LEAD-70186,p.ueda@zenithmediainc.com,Paula,Ueda,Zenith Media Inc,Partner Referral,2026-08-12,,Zenith Media Inc,zenithmedia,zenithmediainc.com,False,
+LEAD-70187,p.abrams@redwoodpayment.com,Priya,Abrams,Redwood Payments Inc.,Webinar,2026-01-26,,Redwood Payments Inc.,redwoodpayments,redwoodpayment.com,False,
+LEAD-70188,n.haddad@unionsystemslt.com,Nikhil,Haddad,Union Systems Ltd.,Outbound Reply,2025-07-14,2025-08-16,Union Systems Ltd.,unionsystems,unionsystemslt.com,True,
+LEAD-70189,g.farrell@cobaltmedia.com,Greta,Farrell,COBALT MEDIA,Conference,2026-04-30,,COBALT MEDIA,cobaltmedia,cobaltmedia.com,False,
+LEAD-70190,n.abrams@cobaltpayments.com,Noa,Abrams,Cobalt Payments,Review Site,2026-03-25,2026-04-26,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,2026-04-26
+LEAD-70191,m.quinn@northfinancial.com,Marcus,Quinn,north financial Inc,Paid Search,2025-11-26,,north financial Inc,northfinancial,northfinancial.com,False,
+LEAD-70192,i.petrov@westbrookbank.com,Ines,Petrov,WESTBROOK BANK,Review Site,2026-05-03,2026-05-06,WESTBROOK BANK,westbrookbank,westbrookbank.com,False,2026-05-06
+LEAD-70193,n.ivanov@everlinefinanc.com,Nikhil,Ivanov,"EverlineFinancial , Inc.",Review Site,2026-04-01,,"EverlineFinancial , Inc.",everlinefinancial,everlinefinanc.com,False,
+LEAD-70194,g.haddad@meridianhealth.com,Greta,Haddad,Meridian Health,Content Download,2026-06-08,,Meridian Health,meridianhealth,meridianhealth.com,False,
+LEAD-70195,e.costa@northpaymentsi.com,Eitan,Costa,North Payments Incorporated,Content Download,2026-06-04,2026-07-08,North Payments Incorporated,northpayments,northpaymentsi.com,False,2026-07-08
+LEAD-70196,r.jensen@cascaderetailg.com,Ruth,Jensen,Cascade Retail Group Ltd.,Review Site,2025-02-17,2025-03-05,Cascade Retail Group Ltd.,cascaderetailgroup,cascaderetailg.com,False,2025-03-05
+LEAD-70197,v.quinn@meridianstores.com,Victor,Quinn,Meridian Stores,Conference,2026-05-30,2026-06-07,Meridian Stores,meridianstores,meridianstores.com,False,2026-06-07
+LEAD-70198,m.petrov@dunmorefinanci.com,Mei,Petrov,Dunmore Financial,Conference,2025-12-07,,Dunmore Financial,dunmorefinancial,dunmorefinanci.com,False,
+LEAD-70199,m.costa@northlogistics.com,Mei,Costa,NorthLogistics,Paid Search,2025-04-30,2025-05-29,NorthLogistics,northlogistics,northlogistics.com,False,2025-05-29
+LEAD-70200,s.moreau@northlogistics.com,Samir,Moreau,north logistics Inc,Paid Search,2025-04-28,,north logistics Inc,northlogistics,northlogistics.com,False,
+LEAD-70201,m.bauer@zenithsystemsi.com,Marcus,Bauer, ZENITH SYSTEMS Inc  ,Review Site,2026-07-23,2026-08-14,ZENITH SYSTEMS Inc,zenithsystems,zenithsystemsi.com,False,2026-08-14
+LEAD-70202,d.rosenthal@pinnaclebankin.com,Dana,Rosenthal,Pinnacle Bank Inc.,Conference,2026-09-13,,Pinnacle Bank Inc.,pinnaclebank,pinnaclebankin.com,False,
+LEAD-70203,l.rosenthal@lumenbank.com,Lena,Rosenthal,Lumen Bank,Paid Search,2026-03-27,,Lumen Bank,lumenbank,lumenbank.com,False,
+LEAD-70204,s.quinn@bluebankld.com,Samir,Quinn,BLUE BANK Ld.,Review Site,2026-06-27,2026-08-04,BLUE BANK Ld.,bluebankld,bluebankld.com,False,2026-08-04
+LEAD-70205,v.duarte@everlineairlin.com,Victor,Duarte,Everline Airlines LLC,Website Demo Request,2025-01-19,2025-02-07,Everline Airlines LLC,everlineairlines,everlineairlin.com,False,2025-02-07
+LEAD-70206,h.gupta@vantagetelecom.com,Hugo,Gupta,VANTAGE TELECOM Ltd.,Partner Referral,2025-02-10,2025-03-12,VANTAGE TELECOM Ltd.,vantagetelecom,vantagetelecom.com,False,2025-03-12
+LEAD-70207,r.petrov@cascademedia.com,Ruth,Petrov,Cascade Media,Outbound Reply,2026-04-06,,Cascade Media,cascademedia,cascademedia.com,True,
+LEAD-70208,p.petrov@vertexstores.com,Paula,Petrov,vertex stores,Conference,2025-07-01,2025-07-08,vertex stores,vertexstores,vertexstores.com,False,2025-07-08
+LEAD-70209,i.ivanov@ironholdingsin.com,Ines,Ivanov,Iron Holdings Inc.,Webinar,2025-07-24,2025-08-10,Iron Holdings Inc.,ironholdings,ironholdingsin.com,False,2025-08-10
+LEAD-70210,n.abrams@westbrookstore.com,Nikhil,Abrams,Westbrook Stores,Partner Referral,2025-08-29,2025-09-13,Westbrook Stores,westbrookstores,westbrookstore.com,False,2025-09-13
+LEAD-70211,j.kowalski@unionbank.com,Jonas,Kowalski,UnionBank,Partner Referral,2026-08-13,2026-09-01,UnionBank,unionbank,unionbank.com,False,2026-09-01
+LEAD-70212,m.silva@dunmorefinanci.com,Mei,Silva,Dunmore Financial Incorporated,Review Site,2025-08-05,,Dunmore Financial Incorporated,dunmorefinancial,dunmorefinanci.com,False,
+LEAD-70213,e.nakamura@cascadeairline.com,Eitan,Nakamura," CASCADE AIRLINES , Inc.  ",Webinar,2026-06-02,,"CASCADE AIRLINES , Inc.",cascadeairlines,cascadeairline.com,False,
+LEAD-70214,o.rosenthal@vertexstores.com,Omer,Rosenthal,vertex stores,Website Demo Request,2025-11-16,,vertex stores,vertexstores,vertexstores.com,False,
+LEAD-70215,j.ueda@cascadelogisti.com,Jonas,Ueda,Cascade Logistics,Website Demo Request,2026-09-06,2026-10-08,Cascade Logistics,cascadelogistics,cascadelogisti.com,False,2026-10-08
+LEAD-70216,n.silva@pinnaclemutual.com,Nikhil,Silva,"Pinnacle Mutual , Inc.",Content Download,2026-06-03,,"Pinnacle Mutual , Inc.",pinnaclemutual,pinnaclemutual.com,False,
+LEAD-70217,t.silva@cascadeenergy.com,Tomas,Silva,CASCADE ENERGY,Review Site,2026-01-25,,CASCADE ENERGY,cascadeenergy,cascadeenergy.com,False,
+LEAD-70218,i.nakamura@cobaltenergyll.com,Ines,Nakamura,Cobalt Energy LLC,Paid Search,2025-10-25,,Cobalt Energy LLC,cobaltenergy,cobaltenergyll.com,False,
+LEAD-70219,r.haddad@bluelogisticsl.com,Ruth,Haddad,Blue Logistics Ltd,Conference,2026-01-22,2026-01-31,Blue Logistics Ltd,bluelogistics,bluelogisticsl.com,False,2026-01-31
+LEAD-70220,p.nakamura@vertexairlnes.com,Priya,Nakamura,Vertex Airlnes,Website Demo Request,2025-06-14,,Vertex Airlnes,vertexairlnes,vertexairlnes.com,False,
+LEAD-70221,p.costa@dunmoremediain.com,Paula,Costa,dunmore media Inc,Partner Referral,2025-12-25,,dunmore media Inc,dunmoremedia,dunmoremediain.com,False,
+LEAD-70222,r.duarte@unionsystemsin.com,Ruth,Duarte,"Union Systems , Inc.",Partner Referral,2026-05-17,,"Union Systems , Inc.",unionsystems,unionsystemsin.com,False,
+LEAD-70223,d.quinn@westbrookstore.com,Dana,Quinn,Westbrook Stores,Paid Search,2026-04-21,2026-04-28,Westbrook Stores,westbrookstores,westbrookstore.com,False,2026-04-28
+LEAD-70224,d.okafor@alderinsurance.com,Dana,Okafor,AlderInsurance LLC,Webinar,2025-08-17,,AlderInsurance LLC,alderinsurance,alderinsurance.com,False,
+LEAD-70225,r.abrams@northinancial.com,Ruth,Abrams,North inancial,Conference,2026-02-24,2026-04-01,North inancial,northinancial,northinancial.com,False,2026-04-01
+LEAD-70226,e.rosenthal@solsticeteleco.com,Eitan,Rosenthal,Solstice Telecom,Content Download,2025-12-11,,Solstice Telecom,solsticetelecom,solsticeteleco.com,False,
+LEAD-70227,h.silva@dunmorebankllc.com,Hugo,Silva,Dunmore Bank LLC,Outbound Reply,2025-09-09,,Dunmore Bank LLC,dunmorebank,dunmorebankllc.com,True,
+LEAD-70228,c.lindqvist@vertexsystems.com,Clara,Lindqvist, vertex systems  ,Conference,2026-01-22,2026-02-18,vertex systems,vertexsystems,vertexsystems.com,False,2026-02-18
+LEAD-70229,i.kowalski@granitelogisti.com,Ines,Kowalski," GRANITE LOGISTICS , Inc.  ",Partner Referral,2025-09-01,,"GRANITE LOGISTICS , Inc.",granitelogistics,granitelogisti.com,False,
+LEAD-70230,p.quinn@unionairlinesi.com,Priya,Quinn,Union Airlines Inc.,Review Site,2025-12-23,,Union Airlines Inc.,unionairlines,unionairlinesi.com,False,
+LEAD-70231,p.silva@westbrookinsur.com,Paula,Silva,WESTBROOK INSURANCE,Conference,2025-11-19,,WESTBROOK INSURANCE,westbrookinsurance,westbrookinsur.com,False,
+LEAD-70232,n.moreau@westbrookhealt.com,Noa,Moreau,WestbrookHealth Ltd.,Webinar,2025-03-14,2025-03-29,WestbrookHealth Ltd.,westbrookhealth,westbrookhealt.com,False,2025-03-29
+LEAD-70233,n.silva@bluebank.com,Nikhil,Silva,Blue Bank,Website Demo Request,2026-03-03,2026-04-09,Blue Bank,bluebank,bluebank.com,False,2026-04-09
+LEAD-70234,s.haddad@redwoodfinanci.com,Samir,Haddad,REDWOOD FINANCIAL,Website Demo Request,2025-04-30,,REDWOOD FINANCIAL,redwoodfinancial,redwoodfinanci.com,False,
+LEAD-70235,o.eriksen@vantagestoresi.com,Omer,Eriksen,vantage stores Incorporated,Webinar,2026-01-12,,vantage stores Incorporated,vantagestores,vantagestoresi.com,False,
+LEAD-70236,a.okafor@sablefinancial.com,Aisha,Okafor,SableFinancial Inc.,Outbound Reply,2026-07-07,,SableFinancial Inc.,sablefinancial,sablefinancial.com,True,
+LEAD-70237,c.bauer@harborfinancia.com,Clara,Bauer,Harbor Financial Inc,Conference,2025-09-09,,Harbor Financial Inc,harborfinancial,harborfinancia.com,False,
+LEAD-70238,m.quinn@redwoodretailg.com,Mei,Quinn,Redwood Retail Group,Webinar,2026-01-25,,Redwood Retail Group,redwoodretailgroup,redwoodretailg.com,False,
+LEAD-70239,c.okafor@lumenhealth.com,Clara,Okafor,Lumen Health,Conference,2025-02-24,2025-03-04,Lumen Health,lumenhealth,lumenhealth.com,False,2025-03-04
+LEAD-70240,n.moreau@thorntonpaymen.com,Nikhil,Moreau,Thornton Payments Ltd,Conference,2025-12-12,,Thornton Payments Ltd,thorntonpayments,thorntonpaymen.com,False,
+LEAD-70241,t.bauer@cascadelogisti.com,Tomas,Bauer,Cascade Logistics Ltd.,Paid Search,2025-03-27,2025-04-21,Cascade Logistics Ltd.,cascadelogistics,cascadelogisti.com,False,2025-04-21
+LEAD-70242,i.silva@northtelecomin.com,Ines,Silva,North Telecom Inc,Website Demo Request,2026-04-03,2026-04-28,North Telecom Inc,northtelecom,northtelecomin.com,False,2026-04-28
+LEAD-70243,p.costa@vantagetelecom.com,Priya,Costa, Vantage Telecom Ltd.  ,Content Download,2025-12-11,2026-01-03,Vantage Telecom Ltd.,vantagetelecom,vantagetelecom.com,False,2026-01-03
+LEAD-70244,a.jensen@brightwaterair.com,Aisha,Jensen,Brightwater Airlines,Review Site,2025-06-19,,Brightwater Airlines,brightwaterairlines,brightwaterair.com,False,
+LEAD-70245,i.gupta@lumenpaymentsi.com,Ines,Gupta,Lumen Payments Inc,Outbound Reply,2025-07-24,2025-08-21,Lumen Payments Inc,lumenpayments,lumenpaymentsi.com,True,
+LEAD-70246,l.gupta@thorntonpaymen.com,Lena,Gupta,"thornton payments , Inc.",Review Site,2025-08-29,2025-10-07,"thornton payments , Inc.",thorntonpayments,thorntonpaymen.com,False,2025-10-07
+LEAD-70247,c.ivanov@pinnaclemutual.com,Clara,Ivanov, PINNACLE MUTUAL Ltd.  ,Conference,2026-03-12,,PINNACLE MUTUAL Ltd.,pinnaclemutual,pinnaclemutual.com,False,
+LEAD-70248,c.quinn@vantagestoresi.com,Clara,Quinn,VANTAGE STORES Inc,Review Site,2025-05-24,,VANTAGE STORES Inc,vantagestores,vantagestoresi.com,False,
+LEAD-70249,p.bauer@brightwaterair.com,Priya,Bauer,Brightwater Airlines,Webinar,2026-03-08,,Brightwater Airlines,brightwaterairlines,brightwaterair.com,False,
+LEAD-70250,c.petrov@ironholdings.com,Clara,Petrov, Iron Holdings  ,Review Site,2026-04-06,,Iron Holdings,ironholdings,ironholdings.com,False,
+LEAD-70251,i.okafor@lumenhelth.com,Ines,Okafor,LUMEN HELTH,Webinar,2025-02-03,,LUMEN HELTH,lumenhelth,lumenhelth.com,False,
+LEAD-70252,m.silva@cobaltmedia.com,Mei,Silva,Cobalt Media,Website Demo Request,2025-03-26,,Cobalt Media,cobaltmedia,cobaltmedia.com,False,
+LEAD-70253,d.quinn@unionretailgro.com,Dana,Quinn,"Union Retail Group , Inc.",Paid Search,2026-04-30,2026-05-22,"Union Retail Group , Inc.",unionretailgroup,unionretailgro.com,False,2026-05-22
+LEAD-70254,c.petrov@bluehldingsltd.com,Clara,Petrov,Blue Hldings Ltd.,Outbound Reply,2025-10-11,2025-11-18,Blue Hldings Ltd.,bluehldings,bluehldingsltd.com,True,
+LEAD-70255,c.moreau@brightwaterhol.com,Clara,Moreau,Brightwater Holdings,Paid Search,2026-07-22,2026-08-12,Brightwater Holdings,brightwaterholdings,brightwaterhol.com,False,2026-08-12
+LEAD-70256,j.moreau@zenitmedia.com,Jonas,Moreau,Zenit Media,Webinar,2026-01-24,,Zenit Media,zenitmedia,zenitmedia.com,False,
+LEAD-70257,c.jensen@vantagestoresi.com,Clara,Jensen,Vantage Stores Inc.,Outbound Reply,2026-07-08,2026-08-14,Vantage Stores Inc.,vantagestores,vantagestoresi.com,True,
+LEAD-70258,a.ivanov@harborfinancia.com,Aisha,Ivanov,Harbor Financial LLC,Conference,2025-06-11,,Harbor Financial LLC,harborfinancial,harborfinancia.com,False,
+LEAD-70259,m.quinn@unionbank.com,Mei,Quinn,Union Bank,Partner Referral,2026-05-04,,Union Bank,unionbank,unionbank.com,False,
+LEAD-70260,m.duarte@solsticeteleco.com,Mei,Duarte,"SolsticeTelecom , Inc.",Partner Referral,2025-07-11,2025-07-15,"SolsticeTelecom , Inc.",solsticetelecom,solsticeteleco.com,False,2025-07-15
+LEAD-70261,s.bauer@thorntonbankin.com,Samir,Bauer,"Thornton Bank , Inc.",Paid Search,2026-08-18,,"Thornton Bank , Inc.",thorntonbank,thorntonbankin.com,False,
+LEAD-70262,p.nakamura@meridianenergy.com,Paula,Nakamura,Meridian Energy LLC,Paid Search,2025-04-23,2025-05-24,Meridian Energy LLC,meridianenergy,meridianenergy.com,False,2025-05-24
+LEAD-70263,l.ivanov@thorntonlogist.com,Lena,Ivanov,Thornton Logistics,Review Site,2025-02-21,,Thornton Logistics,thorntonlogistics,thorntonlogist.com,False,
+LEAD-70264,p.ueda@dunmoretelecom.com,Priya,Ueda,Dunmore Telecom,Content Download,2025-11-24,,Dunmore Telecom,dunmoretelecom,dunmoretelecom.com,False,
+LEAD-70265,c.gupta@northfinancial.com,Clara,Gupta,NorthFinancial,Content Download,2025-12-24,2026-01-21,NorthFinancial,northfinancial,northfinancial.com,False,2026-01-21
+LEAD-70266,n.eriksen@everlinesystem.com,Nikhil,Eriksen,EVERLINE SYSTEMS,Website Demo Request,2026-02-27,2026-02-27,EVERLINE SYSTEMS,everlinesystems,everlinesystem.com,False,2026-02-27
+LEAD-70267,m.ivanov@dunmoreholding.com,Marcus,Ivanov,Dunmore Holdings Incorpoated,Paid Search,2025-11-16,,Dunmore Holdings Incorpoated,dunmoreholdingsincorpoated,dunmoreholding.com,False,
+LEAD-70268,p.farrell@westbrookpayme.com,Priya,Farrell,WestbrookPayments,Paid Search,2026-02-05,,WestbrookPayments,westbrookpayments,westbrookpayme.com,False,
+LEAD-70269,r.okafor@thorntonbanklt.com,Ruth,Okafor,Thornton Bank Ltd.,Content Download,2026-09-11,,Thornton Bank Ltd.,thorntonbank,thorntonbanklt.com,False,
+LEAD-70270,m.quinn@blueholdingsin.com,Marcus,Quinn,blue holdings Incorporated,Partner Referral,2026-03-12,2026-04-08,blue holdings Incorporated,blueholdings,blueholdingsin.com,False,2026-04-08
+LEAD-70271,o.abrams@vantagemedia.com,Omer,Abrams,vantage media,Outbound Reply,2025-05-11,2025-06-16,vantage media,vantagemedia,vantagemedia.com,True,
+LEAD-70272,n.haddad@westbrookhelth.com,Noa,Haddad,WestbrookHelth,Conference,2025-04-14,2025-05-24,WestbrookHelth,westbrookhelth,westbrookhelth.com,False,2025-05-24
+LEAD-70273,a.gupta@cascadeairline.com,Aisha,Gupta,CASCADE AIRLINES Incorporated,Review Site,2025-06-30,,CASCADE AIRLINES Incorporated,cascadeairlines,cascadeairline.com,False,
+LEAD-70274,g.moreau@bluebakincorpo.com,Greta,Moreau,BlueBak Incorporated,Outbound Reply,2026-08-03,2026-08-11,BlueBak Incorporated,bluebak,bluebakincorpo.com,True,
+LEAD-70275,n.quinn@dunmoreholding.com,Noa,Quinn,dunmore holdings,Conference,2026-08-16,2026-09-07,dunmore holdings,dunmoreholdings,dunmoreholding.com,False,2026-09-07
+LEAD-70276,v.ueda@everlinefinanc.com,Victor,Ueda,"Everline Financial , Inc.",Website Demo Request,2026-06-25,2026-07-13,"Everline Financial , Inc.",everlinefinancial,everlinefinanc.com,False,2026-07-13
+LEAD-70277,n.duarte@cobaltpayments.com,Noa,Duarte,Cobalt Payments,Paid Search,2025-11-16,,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,
+LEAD-70278,a.duarte@brightwatermut.com,Aisha,Duarte,Brightwater Mutual,Review Site,2025-07-02,2025-07-26,Brightwater Mutual,brightwatermutual,brightwatermut.com,False,2025-07-26
+LEAD-70279,m.okafor@harborfinancia.com,Marcus,Okafor,Harbor Financial,Partner Referral,2025-05-25,2025-06-10,Harbor Financial,harborfinancial,harborfinancia.com,False,2025-06-10
+LEAD-70280,t.duarte@redwoodretailg.com,Tomas,Duarte,REDWOOD RETAIL GROUP,Webinar,2026-07-17,2026-08-17,REDWOOD RETAIL GROUP,redwoodretailgroup,redwoodretailg.com,False,2026-08-17
+LEAD-70281,p.jensen@ironmutualinco.com,Priya,Jensen,IRON MUTUAL Incorporated,Paid Search,2025-08-05,2025-08-28,IRON MUTUAL Incorporated,ironmutual,ironmutualinco.com,False,2025-08-28
+LEAD-70282,a.nakamura@zenithretailgr.com,Aisha,Nakamura, Zenith Retail Group Ltd  ,Paid Search,2025-02-05,2025-02-19,Zenith Retail Group Ltd,zenithretailgroup,zenithretailgr.com,False,2025-02-19
+LEAD-70283,n.costa@lumenfinancial.com,Nikhil,Costa,Lumen Financial,Outbound Reply,2026-05-23,,Lumen Financial,lumenfinancial,lumenfinancial.com,True,
+LEAD-70284,m.petrov@harborfinancia.com,Mei,Petrov, Harbor Financial  ,Website Demo Request,2026-02-26,,Harbor Financial,harborfinancial,harborfinancia.com,False,
+LEAD-70285,r.gupta@vantageholding.com,Ruth,Gupta,Vantage Holdings,Paid Search,2025-10-12,2025-10-25,Vantage Holdings,vantageholdings,vantageholding.com,False,2025-10-25
+LEAD-70286,j.lindqvist@brightwatermut.com,Jonas,Lindqvist,"Brightwater Mutual , Inc.",Outbound Reply,2026-04-25,2026-05-11,"Brightwater Mutual , Inc.",brightwatermutual,brightwatermut.com,True,
+LEAD-70287,m.rosenthal@cascadestores.com,Marcus,Rosenthal,CASCADE STORES,Webinar,2025-05-21,2025-06-23,CASCADE STORES,cascadestores,cascadestores.com,False,2025-06-23
+LEAD-70288,a.duarte@vertexmedia.com,Aisha,Duarte,Vertex Media,Webinar,2025-11-06,2025-12-06,Vertex Media,vertexmedia,vertexmedia.com,False,2025-12-06
+LEAD-70289,g.ueda@vantagefinanci.com,Greta,Ueda,VANTAGE FINANCIAL,Outbound Reply,2025-07-01,,VANTAGE FINANCIAL,vantagefinancial,vantagefinanci.com,True,
+LEAD-70290,v.rosenthal@alderlogistics.com,Victor,Rosenthal,ALDER LOGISTICS LLC,Paid Search,2025-01-06,2025-02-10,ALDER LOGISTICS LLC,alderlogistics,alderlogistics.com,False,2025-02-10
+LEAD-70291,p.nakamura@brightwatermut.com,Paula,Nakamura,Brightwater Mutual,Partner Referral,2026-07-01,2026-07-14,Brightwater Mutual,brightwatermutual,brightwatermut.com,False,2026-07-14
+LEAD-70292,h.ivanov@cobaltenergylt.com,Hugo,Ivanov,Cobalt Energy Ltd,Paid Search,2025-11-30,,Cobalt Energy Ltd,cobaltenergy,cobaltenergylt.com,False,
+LEAD-70293,d.farrell@meridianenergy.com,Dana,Farrell,Meridian Energy Ltd.,Review Site,2025-01-17,2025-01-25,Meridian Energy Ltd.,meridianenergy,meridianenergy.com,False,2025-01-25
+LEAD-70294,a.rosenthal@cobaltstoresll.com,Aisha,Rosenthal,Cobalt Stores LLC,Conference,2026-07-06,,Cobalt Stores LLC,cobaltstores,cobaltstoresll.com,False,
+LEAD-70295,v.eriksen@everlinestores.com,Victor,Eriksen,EverlineStores,Partner Referral,2025-09-30,2025-10-29,EverlineStores,everlinestores,everlinestores.com,False,2025-10-29
+LEAD-70296,p.kowalski@dunmoreholding.com,Priya,Kowalski,Dunmore Holdings,Paid Search,2026-03-07,2026-03-24,Dunmore Holdings,dunmoreholdings,dunmoreholding.com,False,2026-03-24
+LEAD-70297,e.gupta@vantagemutuall.com,Eitan,Gupta,vantage mutual Ltd.,Partner Referral,2026-05-28,2026-06-12,vantage mutual Ltd.,vantagemutual,vantagemutuall.com,False,2026-06-12
+LEAD-70298,j.nakamura@northsystems.com,Jonas,Nakamura,NORTH SYSTEMS,Webinar,2025-04-24,2025-05-13,NORTH SYSTEMS,northsystems,northsystems.com,False,2025-05-13
+LEAD-70299,c.rosenthal@zenithmediainc.com,Clara,Rosenthal,Zenith Media Inc.,Conference,2026-07-24,2026-08-23,Zenith Media Inc.,zenithmedia,zenithmediainc.com,False,2026-08-23
+LEAD-70300,h.farrell@westbrookinsur.com,Hugo,Farrell,Westbrook Insurance,Partner Referral,2026-02-17,,Westbrook Insurance,westbrookinsurance,westbrookinsur.com,False,
+LEAD-70301,m.okafor@ironlogistics.com,Marcus,Okafor, Iron Logistics  ,Partner Referral,2025-07-29,2025-08-10,Iron Logistics,ironlogistics,ironlogistics.com,False,2025-08-10
+LEAD-70302,p.bauer@pinnaclebank.com,Priya,Bauer,PINNACLE BANK,Paid Search,2025-11-06,,PINNACLE BANK,pinnaclebank,pinnaclebank.com,False,
+LEAD-70303,m.petrov@cobaltbank.com,Mei,Petrov,Cobalt Bank,Outbound Reply,2025-05-16,2025-05-23,Cobalt Bank,cobaltbank,cobaltbank.com,True,
+LEAD-70304,s.rosenthal@zenithsystemsi.com,Samir,Rosenthal,Zenith Systems Incorporated,Website Demo Request,2025-06-14,2025-06-29,Zenith Systems Incorporated,zenithsystems,zenithsystemsi.com,False,2025-06-29
+LEAD-70305,v.abrams@vantagestoresi.com,Victor,Abrams,vantage stores Inc,Partner Referral,2025-06-13,,vantage stores Inc,vantagestores,vantagestoresi.com,False,
+LEAD-70306,r.duarte@westbrookpayme.com,Ruth,Duarte,WESTBROOK PAYMENTS Ltd,Partner Referral,2025-01-19,,WESTBROOK PAYMENTS Ltd,westbrookpayments,westbrookpayme.com,False,
+LEAD-70307,g.okafor@westbrooktelec.com,Greta,Okafor,Westbrook Telecom Inc,Partner Referral,2025-09-30,,Westbrook Telecom Inc,westbrooktelecom,westbrooktelec.com,False,
+LEAD-70308,r.lindqvist@vertexbank.com,Ruth,Lindqvist,Vertex Bank,Webinar,2025-10-29,,Vertex Bank,vertexbank,vertexbank.com,False,
+LEAD-70309,e.abrams@vantageholding.com,Eitan,Abrams,Vantage Holdings LLC,Partner Referral,2026-07-29,,Vantage Holdings LLC,vantageholdings,vantageholding.com,False,
+LEAD-70310,n.lindqvist@westbrookhealt.com,Nikhil,Lindqvist,westbrook health Inc,Conference,2025-05-16,2025-06-13,westbrook health Inc,westbrookhealth,westbrookhealt.com,False,2025-06-13
+LEAD-70311,g.nakamura@zenithmedia.com,Greta,Nakamura,Zenith Media,Content Download,2025-01-24,2025-01-28,Zenith Media,zenithmedia,zenithmedia.com,False,2025-01-28
+LEAD-70312,r.ivanov@harborsystemsl.com,Ruth,Ivanov, Harbor Systems LLC  ,Content Download,2025-10-30,,Harbor Systems LLC,harborsystems,harborsystemsl.com,False,
+LEAD-70313,c.bauer@pinnacleinsura.com,Clara,Bauer,PinnacleInsurance,Paid Search,2025-12-18,2025-12-28,PinnacleInsurance,pinnacleinsurance,pinnacleinsura.com,False,2025-12-28
+LEAD-70314,e.ivanov@vertexairlines.com,Eitan,Ivanov,Vertex Airlines Ltd.,Webinar,2025-03-05,2025-04-08,Vertex Airlines Ltd.,vertexairlines,vertexairlines.com,False,2025-04-08
+LEAD-70315,o.ueda@northholdingsl.com,Omer,Ueda,North Holdings LLC,Partner Referral,2026-08-03,,North Holdings LLC,northholdings,northholdingsl.com,False,
+LEAD-70316,l.kowalski@vertexstores.com,Lena,Kowalski,VERTEX STORES,Outbound Reply,2025-05-22,2025-06-06,VERTEX STORES,vertexstores,vertexstores.com,True,
+LEAD-70317,t.moreau@thorntonbank.com,Tomas,Moreau,thornton bank,Outbound Reply,2025-06-04,2025-06-04,thornton bank,thorntonbank,thorntonbank.com,True,
+LEAD-70318,n.ueda@ironsystemsltd.com,Noa,Ueda,Iron Systems Ltd.,Webinar,2025-03-14,,Iron Systems Ltd.,ironsystems,ironsystemsltd.com,False,
+LEAD-70319,m.farrell@brightwaterins.com,Marcus,Farrell,Brightwater Insurance LLC,Webinar,2026-06-23,2026-07-22,Brightwater Insurance LLC,brightwaterinsurance,brightwaterins.com,False,2026-07-22
+LEAD-70320,m.duarte@cobaltbank.com,Marcus,Duarte,COBALT BANK,Webinar,2025-02-23,2025-02-27,COBALT BANK,cobaltbank,cobaltbank.com,False,2025-02-27
+LEAD-70321,j.farrell@pinnaclebankin.com,Jonas,Farrell,"Pinnacle Bank , Inc.",Partner Referral,2025-10-09,,"Pinnacle Bank , Inc.",pinnaclebank,pinnaclebankin.com,False,
+LEAD-70322,m.quinn@westbrookstore.com,Mei,Quinn,WESTBROOK STORES Ltd,Content Download,2025-07-17,2025-08-09,WESTBROOK STORES Ltd,westbrookstores,westbrookstore.com,False,2025-08-09
+LEAD-70323,s.ueda@brightwatersto.com,Samir,Ueda,"Brightwater Stores , Inc.",Outbound Reply,2025-03-06,,"Brightwater Stores , Inc.",brightwaterstores,brightwatersto.com,True,
+LEAD-70324,a.silva@cobaltbaninc.com,Aisha,Silva,"Cobalt Ban , Inc.",Partner Referral,2025-06-14,2025-06-24,"Cobalt Ban , Inc.",cobaltban,cobaltbaninc.com,False,2025-06-24
+LEAD-70325,r.duarte@northretailgro.com,Ruth,Duarte, North Retail Grou  ,Webinar,2026-01-04,,North Retail Grou,northretailgrou,northretailgro.com,False,
+LEAD-70326,n.ivanov@lumenfinancial.com,Noa,Ivanov,LumenFinancial Inc.,Partner Referral,2025-04-27,2025-05-30,LumenFinancial Inc.,lumenfinancial,lumenfinancial.com,False,2025-05-30
+LEAD-70327,m.ivanov@alderlogistics.com,Mei,Ivanov,alder logistics,Conference,2026-04-10,2026-05-03,alder logistics,alderlogistics,alderlogistics.com,False,2026-05-03
+LEAD-70328,i.farrell@lumenpaymentsl.com,Ines,Farrell,LumenPayments LLC,Content Download,2026-04-16,,LumenPayments LLC,lumenpayments,lumenpaymentsl.com,False,
+LEAD-70329,t.rosenthal@vantagemedia.com,Tomas,Rosenthal,Vantage Media,Outbound Reply,2026-08-05,2026-09-12,Vantage Media,vantagemedia,vantagemedia.com,True,
+LEAD-70330,g.abrams@dunmorefinanci.com,Greta,Abrams,dunmore financial Inc.,Paid Search,2026-08-02,,dunmore financial Inc.,dunmorefinancial,dunmorefinanci.com,False,
+LEAD-70331,a.moreau@ironmedia.com,Aisha,Moreau,Iron Media,Webinar,2026-06-15,,Iron Media,ironmedia,ironmedia.com,False,
+LEAD-70332,p.okafor@cobalttelecom.com,Priya,Okafor,Cobalt Telecom,Content Download,2025-01-08,,Cobalt Telecom,cobalttelecom,cobalttelecom.com,False,
+LEAD-70333,g.farrell@northholdingsl.com,Greta,Farrell,North Holdings Ltd.,Content Download,2025-12-17,2025-12-20,North Holdings Ltd.,northholdings,northholdingsl.com,False,2025-12-20
+LEAD-70334,g.haddad@ironmutual.com,Greta,Haddad,Iron Mutual,Outbound Reply,2025-10-30,2025-11-27,Iron Mutual,ironmutual,ironmutual.com,True,
+LEAD-70335,h.lindqvist@pinnaclebankin.com,Hugo,Lindqvist,pinnacle bank Inc.,Review Site,2025-07-16,,pinnacle bank Inc.,pinnaclebank,pinnaclebankin.com,False,
+LEAD-70336,s.duarte@solsticeenergy.com,Samir,Duarte,SOLSTICE ENERGY,Content Download,2025-11-21,2025-12-14,SOLSTICE ENERGY,solsticeenergy,solsticeenergy.com,False,2025-12-14
+LEAD-70337,a.costa@northsystmsinc.com,Aisha,Costa,"NORTH SYSTMS , Inc.",Partner Referral,2026-03-19,2026-04-04,"NORTH SYSTMS , Inc.",northsystms,northsystmsinc.com,False,2026-04-04
+LEAD-70338,o.bauer@northretailgro.com,Omer,Bauer,North Retail Group Ltd,Content Download,2025-01-17,,North Retail Group Ltd,northretailgroup,northretailgro.com,False,
+LEAD-70339,m.moreau@northbank.com,Mei,Moreau, NORTH BANK  ,Paid Search,2025-10-12,,NORTH BANK,northbank,northbank.com,False,
+LEAD-70340,o.bauer@pinnacleinsura.com,Omer,Bauer,pinnacle insurance Incorporated,Conference,2025-04-28,,pinnacle insurance Incorporated,pinnacleinsurance,pinnacleinsura.com,False,
+LEAD-70341,v.bauer@everlinestores.com,Victor,Bauer,Everline Stores Ltd,Conference,2025-02-25,2025-02-26,Everline Stores Ltd,everlinestores,everlinestores.com,False,2025-02-26
+LEAD-70342,c.bauer@thorntonbank.com,Clara,Bauer,thornton bank,Website Demo Request,2025-09-14,2025-09-25,thornton bank,thorntonbank,thorntonbank.com,False,2025-09-25
+LEAD-70343,o.jensen@zenithmutual.com,Omer,Jensen,Zenith Mutual,Partner Referral,2025-03-10,,Zenith Mutual,zenithmutual,zenithmutual.com,False,
+LEAD-70344,a.okafor@zenithholdings.com,Aisha,Okafor,zenith holdings LLC,Webinar,2026-07-10,2026-08-12,zenith holdings LLC,zenithholdings,zenithholdings.com,False,2026-08-12
+LEAD-70345,c.duarte@cascadeairline.com,Clara,Duarte, Cascade Airlines Ltd.  ,Paid Search,2025-07-28,2025-08-28,Cascade Airlines Ltd.,cascadeairlines,cascadeairline.com,False,2025-08-28
+LEAD-70346,c.kowalski@solsticeteleco.com,Clara,Kowalski,Solstice Telecom Ltd.,Website Demo Request,2025-07-27,2025-07-28,Solstice Telecom Ltd.,solsticetelecom,solsticeteleco.com,False,2025-07-28
+LEAD-70347,n.farrell@bluelogisticsi.com,Noa,Farrell,Blue Logistics Inc,Website Demo Request,2025-01-27,2025-01-28,Blue Logistics Inc,bluelogistics,bluelogisticsi.com,False,2025-01-28
+LEAD-70348,m.duarte@quillfinancial.com,Mei,Duarte,quill financial Inc,Review Site,2026-05-31,2026-07-01,quill financial Inc,quillfinancial,quillfinancial.com,False,2026-07-01
+LEAD-70349,c.moreau@cascadelogisti.com,Clara,Moreau,CascadeLogistics Ltd,Conference,2025-08-27,,CascadeLogistics Ltd,cascadelogistics,cascadelogisti.com,False,
+LEAD-70350,l.jensen@unionsystemsin.com,Lena,Jensen,UnionSystems Incorporated,Content Download,2025-07-20,,UnionSystems Incorporated,unionsystems,unionsystemsin.com,False,
+LEAD-70351,g.petrov@cobaltenergy.com,Greta,Petrov,Cobalt Energy,Outbound Reply,2026-04-29,2026-05-04,Cobalt Energy,cobaltenergy,cobaltenergy.com,True,
+LEAD-70352,e.silva@everlineenergy.com,Eitan,Silva,Everline Energy,Review Site,2026-07-17,,Everline Energy,everlineenergy,everlineenergy.com,False,
+LEAD-70353,l.bauer@dunmorefinanci.com,Lena,Bauer,Dunmore Financial Ltd.,Paid Search,2025-03-01,2025-03-14,Dunmore Financial Ltd.,dunmorefinancial,dunmorefinanci.com,False,2025-03-14
+LEAD-70354,v.ivanov@solsticemedial.com,Victor,Ivanov,Solstice Media Ltd.,Content Download,2025-05-22,,Solstice Media Ltd.,solsticemedia,solsticemedial.com,False,
+LEAD-70355,a.eriksen@northpaymentsi.com,Aisha,Eriksen,NORTH PAYMENTS Incorporated,Review Site,2025-02-07,2025-02-16,NORTH PAYMENTS Incorporated,northpayments,northpaymentsi.com,False,2025-02-16
+LEAD-70356,c.nakamura@northlogistics.com,Clara,Nakamura,North Logistics,Paid Search,2026-07-17,2026-08-16,North Logistics,northlogistics,northlogistics.com,False,2026-08-16
+LEAD-70357,p.jensen@meridianlogist.com,Paula,Jensen,meridian logistics,Conference,2025-07-07,2025-08-13,meridian logistics,meridianlogistics,meridianlogist.com,False,2025-08-13
+LEAD-70358,i.jensen@cobalttelecomi.com,Ines,Jensen,COBALT TELECOM Inc,Website Demo Request,2026-04-24,2026-06-03,COBALT TELECOM Inc,cobalttelecom,cobalttelecomi.com,False,2026-06-03
+LEAD-70359,m.petrov@cobaltinsuranc.com,Mei,Petrov, COBALT INSURANCE  ,Partner Referral,2025-04-16,,COBALT INSURANCE,cobaltinsurance,cobaltinsuranc.com,False,
+LEAD-70360,p.eriksen@quillbank.com,Priya,Eriksen,QuillBank,Paid Search,2026-03-14,,QuillBank,quillbank,quillbank.com,False,
+LEAD-70361,v.eriksen@westbrookbankl.com,Victor,Eriksen,Westbrook Bank Ltd,Website Demo Request,2025-08-26,2025-08-26,Westbrook Bank Ltd,westbrookbank,westbrookbankl.com,False,2025-08-26
+LEAD-70362,m.gupta@sablemedialtd.com,Mei,Gupta,Sable Media Ltd,Website Demo Request,2025-09-18,2025-10-22,Sable Media Ltd,sablemedia,sablemedialtd.com,False,2025-10-22
+LEAD-70363,m.nakamura@pinnaclepaymen.com,Marcus,Nakamura,"pinnacle payments , Inc.",Conference,2025-11-13,2025-11-15,"pinnacle payments , Inc.",pinnaclepayments,pinnaclepaymen.com,False,2025-11-15
+LEAD-70364,t.kowalski@thorntonbanklt.com,Tomas,Kowalski,Thornton Bank Ltd.,Partner Referral,2025-12-13,2026-01-09,Thornton Bank Ltd.,thorntonbank,thorntonbanklt.com,False,2026-01-09
+LEAD-70365,n.silva@westbrooktelec.com,Noa,Silva, Westbrook Telecm  ,Outbound Reply,2026-08-11,2026-09-10,Westbrook Telecm,westbrooktelecm,westbrooktelec.com,True,
+LEAD-70366,d.abrams@lumenhealthinc.com,Dana,Abrams,Lumen Health Incorporated,Review Site,2025-12-20,,Lumen Health Incorporated,lumenhealth,lumenhealthinc.com,False,
+LEAD-70367,t.abrams@zenithholings.com,Tomas,Abrams,ZENITH HOLINGS,Review Site,2025-11-21,2025-12-17,ZENITH HOLINGS,zenithholings,zenithholings.com,False,2025-12-17
+LEAD-70368,n.okafor@thorntonteleco.com,Nikhil,Okafor,thornton telecom LLC,Partner Referral,2026-08-15,2026-09-19,thornton telecom LLC,thorntontelecom,thorntonteleco.com,False,2026-09-19
+LEAD-70369,c.rosenthal@cobaltpayments.com,Clara,Rosenthal,Cobalt Payments,Conference,2025-06-16,2025-07-06,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,2025-07-06
+LEAD-70370,v.eriksen@brightwaterfin.com,Victor,Eriksen,Brightwater Financial Inc,Webinar,2025-05-16,2025-05-16,Brightwater Financial Inc,brightwaterfinancial,brightwaterfin.com,False,2025-05-16
+LEAD-70371,n.costa@thorntonpaymen.com,Nikhil,Costa,ThorntonPayments LLC,Webinar,2025-03-06,2025-03-16,ThorntonPayments LLC,thorntonpayments,thorntonpaymen.com,False,2025-03-16
+LEAD-70372,m.ivanov@meridianairlin.com,Marcus,Ivanov,Meridian Airlines,Content Download,2025-01-20,,Meridian Airlines,meridianairlines,meridianairlin.com,False,
+LEAD-70373,d.silva@graniteenergy.com,Dana,Silva,granite energy,Content Download,2026-08-22,2026-09-05,granite energy,graniteenergy,graniteenergy.com,False,2026-09-05
+LEAD-70374,v.rosenthal@cobaltmediallc.com,Victor,Rosenthal,Cobalt Media LLC,Paid Search,2025-03-11,2025-04-09,Cobalt Media LLC,cobaltmedia,cobaltmediallc.com,False,2025-04-09
+LEAD-70375,l.gupta@brightwaterfin.com,Lena,Gupta, Brightwater Financial  ,Conference,2025-06-04,,Brightwater Financial,brightwaterfinancial,brightwaterfin.com,False,
+LEAD-70376,g.quinn@westbrookpayme.com,Greta,Quinn,westbrook payments Ltd,Content Download,2025-11-27,2025-12-30,westbrook payments Ltd,westbrookpayments,westbrookpayme.com,False,2025-12-30
+LEAD-70377,e.okafor@vertextelecom.com,Eitan,Okafor,VertexTelecom,Content Download,2025-04-21,2025-04-29,VertexTelecom,vertextelecom,vertextelecom.com,False,2025-04-29
+LEAD-70378,p.gupta@cascaderetailg.com,Priya,Gupta,Cascade Retail Group,Website Demo Request,2026-01-26,,Cascade Retail Group,cascaderetailgroup,cascaderetailg.com,False,
+LEAD-70379,m.ivanov@brightwaterhol.com,Marcus,Ivanov,Brightwater Holdings,Webinar,2025-06-22,2025-06-30,Brightwater Holdings,brightwaterholdings,brightwaterhol.com,False,2025-06-30
+LEAD-70380,i.okafor@ironbank.com,Ines,Okafor,iron bank,Website Demo Request,2025-01-29,2025-02-03,iron bank,ironbank,ironbank.com,False,2025-02-03
+LEAD-70381,e.duarte@vertexmedia.com,Eitan,Duarte, Vertex Media  ,Paid Search,2025-03-28,,Vertex Media,vertexmedia,vertexmedia.com,False,
+LEAD-70382,s.silva@zenithholdings.com,Samir,Silva,Zenith Holdings Ltd,Paid Search,2025-07-16,2025-08-05,Zenith Holdings Ltd,zenithholdings,zenithholdings.com,False,2025-08-05
+LEAD-70383,a.moreau@dunmorefinanci.com,Aisha,Moreau,Dunmore Financial,Website Demo Request,2026-08-17,,Dunmore Financial,dunmorefinancial,dunmorefinanci.com,False,
+LEAD-70384,e.quinn@cascaderetailg.com,Eitan,Quinn,Cascade Retail Group,Website Demo Request,2025-08-08,,Cascade Retail Group,cascaderetailgroup,cascaderetailg.com,False,
+LEAD-70385,m.gupta@thorntonlogist.com,Mei,Gupta, ThorntonLogistics Inc.  ,Conference,2025-09-07,,ThorntonLogistics Inc.,thorntonlogistics,thorntonlogist.com,False,
+LEAD-70386,i.ueda@bluetelecom.com,Ines,Ueda,BLUE TELECOM,Website Demo Request,2026-08-21,2026-09-13,BLUE TELECOM,bluetelecom,bluetelecom.com,False,2026-09-13
+LEAD-70387,a.okafor@zenithmutual.com,Aisha,Okafor,Zenith Mutual,Paid Search,2025-07-05,,Zenith Mutual,zenithmutual,zenithmutual.com,False,
+LEAD-70388,l.duarte@meridianairlin.com,Lena,Duarte,MERIDIAN AIRLINES Ltd,Webinar,2025-11-26,,MERIDIAN AIRLINES Ltd,meridianairlines,meridianairlin.com,False,
+LEAD-70389,l.ivanov@vertexairlines.com,Lena,Ivanov,VERTEX AIRLINES,Website Demo Request,2026-01-27,,VERTEX AIRLINES,vertexairlines,vertexairlines.com,False,
+LEAD-70390,t.costa@northsystemsin.com,Tomas,Costa,"North Systems , Inc.",Webinar,2025-02-25,2025-03-23,"North Systems , Inc.",northsystems,northsystemsin.com,False,2025-03-23
+LEAD-70391,l.rosenthal@bluelogisticsl.com,Lena,Rosenthal, Blue Logistics LLC  ,Content Download,2026-03-31,,Blue Logistics LLC,bluelogistics,bluelogisticsl.com,False,
+LEAD-70392,l.rosenthal@evelinelogisti.com,Lena,Rosenthal,EVELINE LOGISTICS Ltd,Outbound Reply,2025-10-09,2025-11-06,EVELINE LOGISTICS Ltd,evelinelogistics,evelinelogisti.com,True,
+LEAD-70393,t.jensen@westbrookpayme.com,Tomas,Jensen,Westbrook Payments Inc.,Webinar,2025-01-13,,Westbrook Payments Inc.,westbrookpayments,westbrookpayme.com,False,
+LEAD-70394,m.rosenthal@brightwaterins.com,Mei,Rosenthal,Brightwater Insurance Ltd.,Partner Referral,2026-06-28,,Brightwater Insurance Ltd.,brightwaterinsurance,brightwaterins.com,False,
+LEAD-70395,g.silva@redwoodretailg.com,Greta,Silva,Redwood Retail Group Inc,Review Site,2026-04-17,,Redwood Retail Group Inc,redwoodretailgroup,redwoodretailg.com,False,
+LEAD-70396,a.gupta@meridianhealth.com,Aisha,Gupta,MERIDIAN HEALTH,Content Download,2025-06-19,2025-07-29,MERIDIAN HEALTH,meridianhealth,meridianhealth.com,False,2025-07-29
+LEAD-70397,d.moreau@harbortelecom.com,Dana,Moreau, HARBOR TELECOM  ,Review Site,2025-05-11,2025-05-13,HARBOR TELECOM,harbortelecom,harbortelecom.com,False,2025-05-13
+LEAD-70398,p.duarte@pinnaclebank.com,Priya,Duarte,Pinnacle Bank,Review Site,2026-06-30,,Pinnacle Bank,pinnaclebank,pinnaclebank.com,False,
+LEAD-70399,t.costa@westbrooktelec.com,Tomas,Costa,Westbrook Telecom Incorporated,Webinar,2025-07-04,2025-07-07,Westbrook Telecom Incorporated,westbrooktelecom,westbrooktelec.com,False,2025-07-07
+LEAD-70400,e.silva@cobaltstoresin.com,Eitan,Silva,COBALT STORES Inc,Partner Referral,2025-03-21,2025-04-08,COBALT STORES Inc,cobaltstores,cobaltstoresin.com,False,2025-04-08
+LEAD-70401,m.quinn@redwoodinsuran.com,Marcus,Quinn," Redwood Insurance , Inc.  ",Website Demo Request,2026-05-12,2026-05-18,"Redwood Insurance , Inc.",redwoodinsurance,redwoodinsuran.com,False,2026-05-18
+LEAD-70402,m.haddad@blueinsurancei.com,Marcus,Haddad, Blue Insurance Incorporated  ,Website Demo Request,2026-07-30,2026-08-24,Blue Insurance Incorporated,blueinsurance,blueinsurancei.com,False,2026-08-24
+LEAD-70403,l.moreau@zenithsystemsi.com,Lena,Moreau,"ZENITH SYSTEMS , Inc.",Partner Referral,2025-06-24,,"ZENITH SYSTEMS , Inc.",zenithsystems,zenithsystemsi.com,False,
+LEAD-70404,d.jensen@zenithretaigro.com,Dana,Jensen,Zenith Retai Group Ltd.,Website Demo Request,2026-04-23,2026-05-09,Zenith Retai Group Ltd.,zenithretaigroup,zenithretaigro.com,False,2026-05-09
+LEAD-70405,m.ivanov@harbortelecomi.com,Mei,Ivanov,HARBOR TELECOM Inc,Partner Referral,2026-04-17,2026-04-29,HARBOR TELECOM Inc,harbortelecom,harbortelecomi.com,False,2026-04-29
+LEAD-70406,v.nakamura@ironholdingsll.com,Victor,Nakamura,Iron Holdings LLC,Review Site,2025-02-23,,Iron Holdings LLC,ironholdings,ironholdingsll.com,False,
+LEAD-70407,e.lindqvist@brightwaterhol.com,Eitan,Lindqvist, BrightwaterHoldings  ,Review Site,2026-08-01,,BrightwaterHoldings,brightwaterholdings,brightwaterhol.com,False,
+LEAD-70408,t.ueda@zenithsystemsi.com,Tomas,Ueda,Zenith Systems Inc.,Conference,2025-12-06,2026-01-03,Zenith Systems Inc.,zenithsystems,zenithsystemsi.com,False,2026-01-03
+LEAD-70409,e.quinn@northholdingsi.com,Eitan,Quinn,North Holdings Inc,Outbound Reply,2026-08-04,2026-08-10,North Holdings Inc,northholdings,northholdingsi.com,True,
+LEAD-70410,a.rosenthal@redwoodinsuran.com,Aisha,Rosenthal,Redwood Insurance,Content Download,2026-06-25,,Redwood Insurance,redwoodinsurance,redwoodinsuran.com,False,
+LEAD-70411,v.abrams@cascadeairline.com,Victor,Abrams,CascadeAirlines,Webinar,2026-05-11,,CascadeAirlines,cascadeairlines,cascadeairline.com,False,
+LEAD-70412,n.bauer@solsticeteleco.com,Nikhil,Bauer,SolsticeTelecom Inc.,Review Site,2026-06-08,2026-07-14,SolsticeTelecom Inc.,solsticetelecom,solsticeteleco.com,False,2026-07-14
+LEAD-70413,i.farrell@ironmutual.com,Ines,Farrell,Iron Mutual,Partner Referral,2026-06-30,2026-07-16,Iron Mutual,ironmutual,ironmutual.com,False,2026-07-16
+LEAD-70414,m.duarte@thorntonbanklt.com,Mei,Duarte,Thornton Bank Ltd.,Outbound Reply,2025-12-24,,Thornton Bank Ltd.,thorntonbank,thorntonbanklt.com,True,
+LEAD-70415,t.abrams@everlinemedia.com,Tomas,Abrams,everline media,Content Download,2026-01-16,2026-01-23,everline media,everlinemedia,everlinemedia.com,False,2026-01-23
+LEAD-70416,i.kowalski@vertexholdings.com,Ines,Kowalski,VERTEX HOLDINGS,Content Download,2026-01-04,,VERTEX HOLDINGS,vertexholdings,vertexholdings.com,False,
+LEAD-70417,n.lindqvist@thorntonbank.com,Noa,Lindqvist,Thornton Bank,Website Demo Request,2025-03-03,2025-03-10,Thornton Bank,thorntonbank,thorntonbank.com,False,2025-03-10
+LEAD-70418,l.petrov@westbrooklogis.com,Lena,Petrov,Westbrook Logistics Ltd,Content Download,2026-03-21,2026-04-17,Westbrook Logistics Ltd,westbrooklogistics,westbrooklogis.com,False,2026-04-17
+LEAD-70419,p.okafor@brightwaterfin.com,Priya,Okafor,brightwater financial,Website Demo Request,2026-05-26,2026-06-06,brightwater financial,brightwaterfinancial,brightwaterfin.com,False,2026-06-06
+LEAD-70420,n.quinn@meridianenergy.com,Nikhil,Quinn, Meridian Energy  ,Conference,2025-09-09,2025-09-14,Meridian Energy,meridianenergy,meridianenergy.com,False,2025-09-14
+LEAD-70421,s.jensen@alderhodingslt.com,Samir,Jensen,Alder Hodings Ltd.,Website Demo Request,2025-07-02,2025-07-28,Alder Hodings Ltd.,alderhodings,alderhodingslt.com,False,2025-07-28
+LEAD-70422,p.rosenthal@solsticeteleco.com,Priya,Rosenthal,"Solstice Telecom , Inc.",Content Download,2025-03-28,2025-05-07,"Solstice Telecom , Inc.",solsticetelecom,solsticeteleco.com,False,2025-05-07
+LEAD-70423,g.silva@vertexmedialtd.com,Greta,Silva,Vertex Media Ltd,Website Demo Request,2026-05-03,,Vertex Media Ltd,vertexmedia,vertexmedialtd.com,False,
+LEAD-70424,m.silva@harborfinancia.com,Mei,Silva,Harbor Financial,Partner Referral,2025-08-21,,Harbor Financial,harborfinancial,harborfinancia.com,False,
+LEAD-70425,m.ueda@cascadeairline.com,Mei,Ueda,"Cascade Airlines , Inc.",Content Download,2026-08-13,,"Cascade Airlines , Inc.",cascadeairlines,cascadeairline.com,False,
+LEAD-70426,p.costa@vertexretailgr.com,Paula,Costa,Vertex Retail Group Inc,Webinar,2025-03-01,,Vertex Retail Group Inc,vertexretailgroup,vertexretailgr.com,False,
+LEAD-70427,v.petrov@vantagestores.com,Victor,Petrov, Vantage Stores  ,Outbound Reply,2025-09-11,,Vantage Stores,vantagestores,vantagestores.com,True,
+LEAD-70428,r.ivanov@thorntonsystem.com,Ruth,Ivanov,Thornton Systems Inc,Review Site,2026-02-09,,Thornton Systems Inc,thorntonsystems,thorntonsystem.com,False,
+LEAD-70429,r.ueda@northbank.com,Ruth,Ueda,north bank,Partner Referral,2026-02-28,2026-03-15,north bank,northbank,northbank.com,False,2026-03-15
+LEAD-70430,i.jensen@brightwaterhol.com,Ines,Jensen,Brightwater Holdings Ltd.,Content Download,2025-05-08,,Brightwater Holdings Ltd.,brightwaterholdings,brightwaterhol.com,False,
+LEAD-70431,p.nakamura@solsticemediai.com,Paula,Nakamura, SOLSTICE MEDIA Incorporated  ,Website Demo Request,2025-11-13,2025-11-17,SOLSTICE MEDIA Incorporated,solsticemedia,solsticemediai.com,False,2025-11-17
+LEAD-70432,n.costa@meridianenergy.com,Noa,Costa,Meridian Energy Incorporated,Content Download,2025-11-29,2025-12-11,Meridian Energy Incorporated,meridianenergy,meridianenergy.com,False,2025-12-11
+LEAD-70433,c.costa@brightwatermut.com,Clara,Costa,Brightwater Mutual Inc.,Conference,2025-06-07,2025-07-15,Brightwater Mutual Inc.,brightwatermutual,brightwatermut.com,False,2025-07-15
+LEAD-70434,n.duarte@sablefinancial.com,Nikhil,Duarte,Sable Financial,Conference,2025-05-21,2025-06-18,Sable Financial,sablefinancial,sablefinancial.com,False,2025-06-18
+LEAD-70435,a.jensen@vantagemutual.com,Aisha,Jensen,Vantage Mutual,Conference,2025-02-24,,Vantage Mutual,vantagemutual,vantagemutual.com,False,
+LEAD-70436,l.haddad@dunmorestores.com,Lena,Haddad, Dunmore Stores  ,Outbound Reply,2026-03-10,,Dunmore Stores,dunmorestores,dunmorestores.com,True,
+LEAD-70437,c.duarte@alderhealth.com,Clara,Duarte,alder health,Website Demo Request,2025-10-27,2025-11-24,alder health,alderhealth,alderhealth.com,False,2025-11-24
+LEAD-70438,n.kowalski@zenithmedia.com,Noa,Kowalski,ZenithMedia,Webinar,2025-11-30,2025-11-30,ZenithMedia,zenithmedia,zenithmedia.com,False,2025-11-30
+LEAD-70439,r.okafor@pinaclepayment.com,Ruth,Okafor,PINACLE PAYMENTS Inc.,Conference,2026-06-30,2026-07-18,PINACLE PAYMENTS Inc.,pinaclepayments,pinaclepayment.com,False,2026-07-18
+LEAD-70440,l.silva@everlinehealth.com,Lena,Silva,"everline health , Inc.",Paid Search,2025-07-06,2025-08-15,"everline health , Inc.",everlinehealth,everlinehealth.com,False,2025-08-15
+LEAD-70441,c.duarte@redwoodinsuran.com,Clara,Duarte,Redwood Insurance,Review Site,2025-12-05,2025-12-24,Redwood Insurance,redwoodinsurance,redwoodinsuran.com,False,2025-12-24
+LEAD-70442,h.okafor@cobaltenergylt.com,Hugo,Okafor,Cobalt Energy Ltd,Website Demo Request,2025-08-28,2025-09-07,Cobalt Energy Ltd,cobaltenergy,cobaltenergylt.com,False,2025-09-07
+LEAD-70443,c.farrell@vertexmediainc.com,Clara,Farrell,"Vertex Media , Inc.",Conference,2025-03-13,2025-03-24,"Vertex Media , Inc.",vertexmedia,vertexmediainc.com,False,2025-03-24
+LEAD-70444,p.abrams@graniteairline.com,Priya,Abrams, GraniteAirlines  ,Webinar,2026-05-01,2026-05-20,GraniteAirlines,graniteairlines,graniteairline.com,False,2026-05-20
+LEAD-70445,a.kowalski@solsticeteleco.com,Aisha,Kowalski,Solstice Telecom,Webinar,2026-03-31,,Solstice Telecom,solsticetelecom,solsticeteleco.com,False,
+LEAD-70446,t.gupta@ironmediainc.com,Tomas,Gupta,Iron Media Inc.,Content Download,2026-04-03,,Iron Media Inc.,ironmedia,ironmediainc.com,False,
+LEAD-70447,p.gupta@everlinefinanc.com,Paula,Gupta,everline financial,Paid Search,2025-05-02,,everline financial,everlinefinancial,everlinefinanc.com,False,
+LEAD-70448,s.haddad@quilllogistics.com,Samir,Haddad,Quill Logistics,Webinar,2026-07-05,,Quill Logistics,quilllogistics,quilllogistics.com,False,
+LEAD-70449,s.gupta@everlinepaymen.com,Samir,Gupta,everline payments,Conference,2025-06-15,,everline payments,everlinepayments,everlinepaymen.com,False,
+LEAD-70450,h.lindqvist@brightwaterfin.com,Hugo,Lindqvist,Brightwater Financial Ltd,Content Download,2026-04-11,2026-05-16,Brightwater Financial Ltd,brightwaterfinancial,brightwaterfin.com,False,2026-05-16
+LEAD-70451,i.abrams@zenithholdings.com,Ines,Abrams,ZENITH HOLDINGS LLC,Outbound Reply,2025-08-07,,ZENITH HOLDINGS LLC,zenithholdings,zenithholdings.com,True,
+LEAD-70452,p.kowalski@quillbankinc.com,Priya,Kowalski,Quill Bank Inc,Conference,2026-03-15,2026-03-15,Quill Bank Inc,quillbank,quillbankinc.com,False,2026-03-15
+LEAD-70453,m.rosenthal@meridianenergy.com,Mei,Rosenthal, Meridian Energy  ,Webinar,2025-02-21,,Meridian Energy,meridianenergy,meridianenergy.com,False,
+LEAD-70454,a.rosenthal@zenithenergy.com,Aisha,Rosenthal,Zenith Energy,Review Site,2025-09-15,2025-09-27,Zenith Energy,zenithenergy,zenithenergy.com,False,2025-09-27
+LEAD-70455,d.nakamura@thorntonbank.com,Dana,Nakamura,Thornton Bank,Outbound Reply,2025-05-15,2025-06-24,Thornton Bank,thorntonbank,thorntonbank.com,True,
+LEAD-70456,i.okafor@unionretailgro.com,Ines,Okafor,Union Retail Group,Paid Search,2025-09-16,,Union Retail Group,unionretailgroup,unionretailgro.com,False,
+LEAD-70457,n.duarte@blueholdingsin.com,Noa,Duarte,Blue Holdings Incorporated,Paid Search,2026-08-20,2026-08-30,Blue Holdings Incorporated,blueholdings,blueholdingsin.com,False,2026-08-30
+LEAD-70458,d.abrams@everlinestores.com,Dana,Abrams,everline stores,Content Download,2025-07-12,,everline stores,everlinestores,everlinestores.com,False,
+LEAD-70459,n.kowalski@brightwaterins.com,Nikhil,Kowalski,Brightwater Insurance,Conference,2025-12-29,,Brightwater Insurance,brightwaterinsurance,brightwaterins.com,False,
+LEAD-70460,t.kowalski@alderhealthinc.com,Tomas,Kowalski, Alder Health Inc  ,Outbound Reply,2025-06-06,2025-06-09,Alder Health Inc,alderhealth,alderhealthinc.com,True,
+LEAD-70461,s.farrell@graniteenergyl.com,Samir,Farrell,Granite Energy LLC,Content Download,2026-03-31,,Granite Energy LLC,graniteenergy,graniteenergyl.com,False,
+LEAD-70462,m.ueda@meridianpayent.com,Marcus,Ueda,Meridian Payents,Website Demo Request,2025-09-19,2025-09-19,Meridian Payents,meridianpayents,meridianpayent.com,False,2025-09-19
+LEAD-70463,n.farrell@thorntonteleco.com,Noa,Farrell, Thornton Telecom  ,Content Download,2025-08-25,2025-10-04,Thornton Telecom,thorntontelecom,thorntonteleco.com,False,2025-10-04
+LEAD-70464,t.quinn@northpaymentsl.com,Tomas,Quinn,NORTH PAYMENTS Ltd.,Review Site,2025-01-08,2025-01-18,NORTH PAYMENTS Ltd.,northpayments,northpaymentsl.com,False,2025-01-18
+LEAD-70465,j.petrov@vertexbank.com,Jonas,Petrov,Vertex Bank,Partner Referral,2025-12-28,,Vertex Bank,vertexbank,vertexbank.com,False,
+LEAD-70466,j.haddad@vertexbank.com,Jonas,Haddad,VERTEX BANK,Conference,2026-06-10,,VERTEX BANK,vertexbank,vertexbank.com,False,
+LEAD-70467,h.bauer@cascaderetailg.com,Hugo,Bauer,"CascadeRetailGroup , Inc.",Conference,2025-09-02,,"CascadeRetailGroup , Inc.",cascaderetailgroup,cascaderetailg.com,False,
+LEAD-70468,g.ueda@lumenfinancial.com,Greta,Ueda,"LumenFinancial , Inc.",Website Demo Request,2026-08-13,2026-08-14,"LumenFinancial , Inc.",lumenfinancial,lumenfinancial.com,False,2026-08-14
+LEAD-70469,p.abrams@alderhealth.com,Paula,Abrams,Alder Health,Content Download,2026-05-21,,Alder Health,alderhealth,alderhealth.com,False,
+LEAD-70470,h.ivanov@redwoodpayment.com,Hugo,Ivanov,Redwood Payments Ltd,Partner Referral,2026-06-02,,Redwood Payments Ltd,redwoodpayments,redwoodpayment.com,False,
+LEAD-70471,s.bauer@everlinefinanc.com,Samir,Bauer,EVERLINE FINANCIAL,Review Site,2026-03-29,2026-05-04,EVERLINE FINANCIAL,everlinefinancial,everlinefinanc.com,False,2026-05-04
+LEAD-70472,t.costa@ironstores.com,Tomas,Costa,IRON STORES,Conference,2025-06-10,2025-06-13,IRON STORES,ironstores,ironstores.com,False,2025-06-13
+LEAD-70473,m.duarte@meridianairlin.com,Marcus,Duarte,MeridianAirlines,Conference,2026-05-07,2026-06-06,MeridianAirlines,meridianairlines,meridianairlin.com,False,2026-06-06
+LEAD-70474,h.ueda@unionretailgro.com,Hugo,Ueda,Union Retail Group Ltd.,Review Site,2026-06-26,,Union Retail Group Ltd.,unionretailgroup,unionretailgro.com,False,
+LEAD-70475,d.ueda@vertexmediainc.com,Dana,Ueda,VERTEX MEDIA Inc.,Review Site,2025-08-26,,VERTEX MEDIA Inc.,vertexmedia,vertexmediainc.com,False,
+LEAD-70476,v.ivanov@pinnacleretail.com,Victor,Ivanov,PINNACLE RETAIL GROUP Inc.,Partner Referral,2025-09-10,,PINNACLE RETAIL GROUP Inc.,pinnacleretailgroup,pinnacleretail.com,False,
+LEAD-70477,s.farrell@zenithholdings.com,Samir,Farrell,zenith holdings Inc,Website Demo Request,2025-03-08,,zenith holdings Inc,zenithholdings,zenithholdings.com,False,
+LEAD-70478,l.rosenthal@vantagetelecom.com,Lena,Rosenthal,VANTAGE TELECOM,Website Demo Request,2025-01-30,2025-02-02,VANTAGE TELECOM,vantagetelecom,vantagetelecom.com,False,2025-02-02
+LEAD-70479,d.abrams@everlinefinanc.com,Dana,Abrams,everline financial,Website Demo Request,2026-02-27,2026-04-05,everline financial,everlinefinancial,everlinefinanc.com,False,2026-04-05
+LEAD-70480,c.lindqvist@westbrookpayme.com,Clara,Lindqvist,Westbrook Payments,Outbound Reply,2026-06-24,2026-08-01,Westbrook Payments,westbrookpayments,westbrookpayme.com,True,
+LEAD-70481,s.kowalski@vantagemutuall.com,Samir,Kowalski,Vantage Mutual Ltd,Outbound Reply,2026-06-17,2026-07-09,Vantage Mutual Ltd,vantagemutual,vantagemutuall.com,True,
+LEAD-70482,s.jensen@dunmoresystems.com,Samir,Jensen,Dunmore Systems Inc.,Outbound Reply,2026-08-18,2026-09-16,Dunmore Systems Inc.,dunmoresystems,dunmoresystems.com,True,
+LEAD-70483,j.jensen@redwoodpayment.com,Jonas,Jensen,Redwood Payments,Paid Search,2026-07-24,2026-08-01,Redwood Payments,redwoodpayments,redwoodpayment.com,False,2026-08-01
+LEAD-70484,h.silva@cobaltholdings.com,Hugo,Silva,Cobalt Holdings,Content Download,2025-08-10,,Cobalt Holdings,cobaltholdings,cobaltholdings.com,False,
+LEAD-70485,i.moreau@cascadebank.com,Ines,Moreau,Cascade Bank,Partner Referral,2025-10-03,2025-10-04,Cascade Bank,cascadebank,cascadebank.com,False,2025-10-04
+LEAD-70486,g.petrov@cobaltpayments.com,Greta,Petrov,CobaltPayments Inc,Review Site,2026-03-19,2026-04-27,CobaltPayments Inc,cobaltpayments,cobaltpayments.com,False,2026-04-27
+LEAD-70487,r.gupta@cascadelogisti.com,Ruth,Gupta,Cascade Logistics LLC,Partner Referral,2026-01-09,2026-01-21,Cascade Logistics LLC,cascadelogistics,cascadelogisti.com,False,2026-01-21
+LEAD-70488,e.moreau@sablestores.com,Eitan,Moreau,Sable Stores,Review Site,2025-05-27,2025-07-03,Sable Stores,sablestores,sablestores.com,False,2025-07-03
+LEAD-70489,d.ivanov@northholdings.com,Dana,Ivanov,North Holdings,Conference,2025-03-27,2025-04-04,North Holdings,northholdings,northholdings.com,False,2025-04-04
+LEAD-70490,n.nakamura@vertexholdings.com,Noa,Nakamura,Vertex Holdings,Outbound Reply,2026-02-18,,Vertex Holdings,vertexholdings,vertexholdings.com,True,
+LEAD-70491,r.abrams@bluebank.com,Ruth,Abrams,BLUE BANK,Review Site,2025-04-29,2025-05-29,BLUE BANK,bluebank,bluebank.com,False,2025-05-29
+LEAD-70492,e.petrov@northholdingsl.com,Eitan,Petrov, North Holdings Ltd.  ,Webinar,2026-05-24,2026-06-10,North Holdings Ltd.,northholdings,northholdingsl.com,False,2026-06-10
+LEAD-70493,a.gupta@zenithholdings.com,Aisha,Gupta,ZENITH HOLDINGS Incorporated,Partner Referral,2025-05-24,2025-05-30,ZENITH HOLDINGS Incorporated,zenithholdings,zenithholdings.com,False,2025-05-30
+LEAD-70494,g.quinn@vantagestores.com,Greta,Quinn,vantage stores,Review Site,2025-07-29,2025-08-16,vantage stores,vantagestores,vantagestores.com,False,2025-08-16
+LEAD-70495,p.jensen@solsticefinanc.com,Priya,Jensen,Solstice Financial,Conference,2025-07-18,2025-07-19,Solstice Financial,solsticefinancial,solsticefinanc.com,False,2025-07-19
+LEAD-70496,r.rosenthal@redwoodinsuran.com,Ruth,Rosenthal,RedwoodInsurance,Paid Search,2026-06-14,2026-07-16,RedwoodInsurance,redwoodinsurance,redwoodinsuran.com,False,2026-07-16
+LEAD-70497,c.petrov@everlineteleco.com,Clara,Petrov,Everline Telecom Ltd,Conference,2025-08-27,,Everline Telecom Ltd,everlinetelecom,everlineteleco.com,False,
+LEAD-70498,l.haddad@zenithmediainc.com,Lena,Haddad,Zenith Media Inc.,Conference,2026-09-12,2026-10-12,Zenith Media Inc.,zenithmedia,zenithmediainc.com,False,2026-10-12
+LEAD-70499,m.ivanov@northpayments.com,Mei,Ivanov,NorthPayments,Website Demo Request,2026-06-15,2026-07-16,NorthPayments,northpayments,northpayments.com,False,2026-07-16
+LEAD-70500,h.kowalski@westbrookhealt.com,Hugo,Kowalski,"Westbrook Health , Inc.",Partner Referral,2026-08-06,,"Westbrook Health , Inc.",westbrookhealth,westbrookhealt.com,False,
+LEAD-70501,r.lindqvist@vertexairlines.com,Ruth,Lindqvist,Vertex Airlines Inc.,Website Demo Request,2026-03-02,2026-04-03,Vertex Airlines Inc.,vertexairlines,vertexairlines.com,False,2026-04-03
+LEAD-70502,c.costa@harbortelecom.com,Clara,Costa, harbor telecom  ,Paid Search,2025-09-23,,harbor telecom,harbortelecom,harbortelecom.com,False,
+LEAD-70503,n.jensen@redwoodinsuran.com,Noa,Jensen, redwood insurance Inc.  ,Partner Referral,2026-01-06,,redwood insurance Inc.,redwoodinsurance,redwoodinsuran.com,False,
+LEAD-70504,r.kowalski@unionretailgro.com,Ruth,Kowalski,Union Retail Group Inc.,Partner Referral,2025-12-10,2025-12-25,Union Retail Group Inc.,unionretailgroup,unionretailgro.com,False,2025-12-25
+LEAD-70505,c.costa@unionstoresinc.com,Clara,Costa,Union Stores Incorporated,Website Demo Request,2025-08-05,,Union Stores Incorporated,unionstores,unionstoresinc.com,False,
+LEAD-70506,j.eriksen@quillpayments.com,Jonas,Eriksen,Quill Payments,Conference,2026-08-28,2026-09-04,Quill Payments,quillpayments,quillpayments.com,False,2026-09-04
+LEAD-70507,m.quinn@brightwaterins.com,Mei,Quinn,Brightwater Insurance Ltd.,Review Site,2025-04-22,,Brightwater Insurance Ltd.,brightwaterinsurance,brightwaterins.com,False,
+LEAD-70508,v.kowalski@quillenergyinc.com,Victor,Kowalski,Quill Energy Incorporated,Website Demo Request,2025-07-21,2025-08-06,Quill Energy Incorporated,quillenergy,quillenergyinc.com,False,2025-08-06
+LEAD-70509,v.jensen@zenithsystems.com,Victor,Jensen,Zenith Systems,Outbound Reply,2025-08-05,2025-08-31,Zenith Systems,zenithsystems,zenithsystems.com,True,
+LEAD-70510,t.lindqvist@vantagestores.com,Tomas,Lindqvist, Vantage Stores  ,Webinar,2026-02-27,,Vantage Stores,vantagestores,vantagestores.com,False,
+LEAD-70511,n.abrams@westbrookpayme.com,Noa,Abrams,WESTBROOK PAYMENTS Inc.,Outbound Reply,2025-03-09,,WESTBROOK PAYMENTS Inc.,westbrookpayments,westbrookpayme.com,True,
+LEAD-70512,h.gupta@ironsystemsllc.com,Hugo,Gupta,Iron Systems LLC,Outbound Reply,2026-03-02,2026-03-12,Iron Systems LLC,ironsystems,ironsystemsllc.com,True,
+LEAD-70513,l.moreau@blueholdings.com,Lena,Moreau,Blue Holdings,Conference,2025-06-03,,Blue Holdings,blueholdings,blueholdings.com,False,
+LEAD-70514,p.nakamura@cascadeairline.com,Paula,Nakamura,Cascade Airlines,Review Site,2026-08-19,2026-09-21,Cascade Airlines,cascadeairlines,cascadeairline.com,False,2026-09-21
+LEAD-70515,s.gupta@harborhldings.com,Samir,Gupta,HARBOR HLDINGS,Webinar,2025-11-21,,HARBOR HLDINGS,harborhldings,harborhldings.com,False,
+LEAD-70516,d.lindqvist@everlinemedia.com,Dana,Lindqvist, EverlineMedia  ,Partner Referral,2026-08-19,2026-08-21,EverlineMedia,everlinemedia,everlinemedia.com,False,2026-08-21
+LEAD-70517,m.duarte@meridianairlin.com,Marcus,Duarte,Meridian Airlines Ltd,Review Site,2025-12-22,,Meridian Airlines Ltd,meridianairlines,meridianairlin.com,False,
+LEAD-70518,j.kowalski@everlinelogist.com,Jonas,Kowalski, Everline Logistics  ,Website Demo Request,2026-03-30,,Everline Logistics,everlinelogistics,everlinelogist.com,False,
+LEAD-70519,c.ueda@vertexbank.com,Clara,Ueda,Vertex Bank,Content Download,2025-04-10,,Vertex Bank,vertexbank,vertexbank.com,False,
+LEAD-70520,e.okafor@lumenpayments.com,Eitan,Okafor,lumen payments,Webinar,2026-02-20,,lumen payments,lumenpayments,lumenpayments.com,False,
+LEAD-70521,p.nakamura@cobaltmediainc.com,Priya,Nakamura,Cobalt Media Inc,Review Site,2025-10-09,2025-11-03,Cobalt Media Inc,cobaltmedia,cobaltmediainc.com,False,2025-11-03
+LEAD-70522,s.jensen@zenithsystemsl.com,Samir,Jensen,Zenith Systems Ltd,Review Site,2026-09-09,,Zenith Systems Ltd,zenithsystems,zenithsystemsl.com,False,
+LEAD-70523,c.abrams@cobaltmedialtd.com,Clara,Abrams,COBALT MEDIA Ltd,Webinar,2025-05-17,,COBALT MEDIA Ltd,cobaltmedia,cobaltmedialtd.com,False,
+LEAD-70524,i.jensen@solsticemediai.com,Ines,Jensen,Solstice Media Inc,Website Demo Request,2025-07-12,2025-07-13,Solstice Media Inc,solsticemedia,solsticemediai.com,False,2025-07-13
+LEAD-70525,p.haddad@thorntonsystem.com,Paula,Haddad,THORNTON SYSTEMS Inc.,Webinar,2026-05-27,2026-06-09,THORNTON SYSTEMS Inc.,thorntonsystems,thorntonsystem.com,False,2026-06-09
+LEAD-70526,p.bauer@ironmedialtd.com,Priya,Bauer,Iron Media Ltd,Paid Search,2026-06-26,,Iron Media Ltd,ironmedia,ironmedialtd.com,False,
+LEAD-70527,r.eriksen@unionbankinc.com,Ruth,Eriksen,"UnionBank , Inc.",Paid Search,2026-01-29,2026-02-09,"UnionBank , Inc.",unionbank,unionbankinc.com,False,2026-02-09
+LEAD-70528,g.okafor@vertexairlines.com,Greta,Okafor,Vertex Airlines,Content Download,2025-03-06,,Vertex Airlines,vertexairlines,vertexairlines.com,False,
+LEAD-70529,m.silva@quillbank.com,Marcus,Silva,QUILL BANK,Website Demo Request,2025-11-06,2025-11-29,QUILL BANK,quillbank,quillbank.com,False,2025-11-29
+LEAD-70530,o.rosenthal@meridianenergy.com,Omer,Rosenthal,meridian energy,Content Download,2025-12-20,,meridian energy,meridianenergy,meridianenergy.com,False,
+LEAD-70531,m.moreau@vantageretailg.com,Marcus,Moreau,"Vantage Retail Group , Inc.",Review Site,2026-04-11,2026-04-28,"Vantage Retail Group , Inc.",vantageretailgroup,vantageretailg.com,False,2026-04-28
+LEAD-70532,o.gupta@redwoodretailg.com,Omer,Gupta,Redwood Retail Group,Content Download,2025-05-08,2025-05-27,Redwood Retail Group,redwoodretailgroup,redwoodretailg.com,False,2025-05-27
+LEAD-70533,o.okafor@zenithmedia.com,Omer,Okafor,Zenith Media,Partner Referral,2025-07-26,,Zenith Media,zenithmedia,zenithmedia.com,False,
+LEAD-70534,h.ivanov@northretailgro.com,Hugo,Ivanov,North Retail Group,Website Demo Request,2026-04-25,2026-05-11,North Retail Group,northretailgroup,northretailgro.com,False,2026-05-11
+LEAD-70535,o.rosenthal@wesbrooklogist.com,Omer,Rosenthal,"WesbrookLogistics , Inc.",Review Site,2025-08-12,,"WesbrookLogistics , Inc.",wesbrooklogistics,wesbrooklogist.com,False,
+LEAD-70536,e.gupta@harborelecom.com,Eitan,Gupta,Harbor elecom,Partner Referral,2025-02-09,,Harbor elecom,harborelecom,harborelecom.com,False,
+LEAD-70537,i.rosenthal@graniteairline.com,Ines,Rosenthal,GRANITE AIRLINES Ltd,Outbound Reply,2026-08-07,2026-08-24,GRANITE AIRLINES Ltd,graniteairlines,graniteairline.com,True,
+LEAD-70538,p.ivanov@northtelecom.com,Paula,Ivanov, NORTH TELECOM  ,Website Demo Request,2026-02-16,2026-02-26,NORTH TELECOM,northtelecom,northtelecom.com,False,2026-02-26
+LEAD-70539,p.haddad@cobaltstoreslt.com,Paula,Haddad,Cobalt Stores Ltd,Paid Search,2025-11-16,2025-12-07,Cobalt Stores Ltd,cobaltstores,cobaltstoreslt.com,False,2025-12-07
+LEAD-70540,i.silva@graniteairline.com,Ines,Silva,Granite Airlines Inc,Review Site,2025-09-15,,Granite Airlines Inc,graniteairlines,graniteairline.com,False,
+LEAD-70541,e.abrams@ironholdingslt.com,Eitan,Abrams,IronHoldings Ltd.,Paid Search,2025-09-07,2025-10-01,IronHoldings Ltd.,ironholdings,ironholdingslt.com,False,2025-10-01
+LEAD-70542,n.bauer@cobaltbank.com,Noa,Bauer,Cobalt Bank,Paid Search,2026-02-16,,Cobalt Bank,cobaltbank,cobaltbank.com,False,
+LEAD-70543,i.kowalski@meridianstores.com,Ines,Kowalski, Meridian Stores  ,Website Demo Request,2025-12-15,2026-01-01,Meridian Stores,meridianstores,meridianstores.com,False,2026-01-01
+LEAD-70544,o.quinn@westbrookpayme.com,Omer,Quinn,Westbrook Payments,Content Download,2026-07-04,2026-07-19,Westbrook Payments,westbrookpayments,westbrookpayme.com,False,2026-07-19
+LEAD-70545,d.rosenthal@everlinestores.com,Dana,Rosenthal,Everline Stores Ltd,Paid Search,2026-01-27,,Everline Stores Ltd,everlinestores,everlinestores.com,False,
+LEAD-70546,o.silva@cascadelogisti.com,Omer,Silva,"Cascade Logistics , Inc.",Outbound Reply,2026-01-21,2026-02-05,"Cascade Logistics , Inc.",cascadelogistics,cascadelogisti.com,True,
+LEAD-70547,j.quinn@redwoodretailg.com,Jonas,Quinn,RedwoodRetailGroup,Partner Referral,2026-04-08,,RedwoodRetailGroup,redwoodretailgroup,redwoodretailg.com,False,
+LEAD-70548,d.gupta@cobaltstores.com,Dana,Gupta,Cobalt Stores,Website Demo Request,2025-05-10,2025-05-25,Cobalt Stores,cobaltstores,cobaltstores.com,False,2025-05-25
+LEAD-70549,s.costa@everlinefinanc.com,Samir,Costa,EVERLINE FINANCIAL Incorporated,Content Download,2025-03-29,2025-04-07,EVERLINE FINANCIAL Incorporated,everlinefinancial,everlinefinanc.com,False,2025-04-07
+LEAD-70550,m.costa@cascadelogisti.com,Marcus,Costa,Cascade Logistics Inc.,Website Demo Request,2026-05-16,,Cascade Logistics Inc.,cascadelogistics,cascadelogisti.com,False,
+LEAD-70551,t.ueda@harborfinancia.com,Tomas,Ueda,harbor financial,Conference,2025-10-01,2025-10-23,harbor financial,harborfinancial,harborfinancia.com,False,2025-10-23
+LEAD-70552,p.lindqvist@lumenmuualinc.com,Priya,Lindqvist,LUMEN MUUAL Inc,Partner Referral,2025-03-16,,LUMEN MUUAL Inc,lumenmuual,lumenmuualinc.com,False,
+LEAD-70553,p.ueda@bleinsurance.com,Priya,Ueda,Ble Insurance,Conference,2025-04-20,2025-05-25,Ble Insurance,bleinsurance,bleinsurance.com,False,2025-05-25
+LEAD-70554,j.abrams@vertexmedialtd.com,Jonas,Abrams,Vertex Media Ltd.,Website Demo Request,2025-08-13,2025-08-22,Vertex Media Ltd.,vertexmedia,vertexmedialtd.com,False,2025-08-22
+LEAD-70555,i.abrams@westbrookhealt.com,Ines,Abrams,WESTBROOK HEALTH,Paid Search,2026-02-23,,WESTBROOK HEALTH,westbrookhealth,westbrookhealt.com,False,
+LEAD-70556,p.bauer@northtelecomlt.com,Priya,Bauer,north telecom Ltd,Website Demo Request,2026-02-28,,north telecom Ltd,northtelecom,northtelecomlt.com,False,
+LEAD-70557,s.bauer@vantagetelecom.com,Samir,Bauer,Vantage Telecom Ltd.,Webinar,2026-04-01,,Vantage Telecom Ltd.,vantagetelecom,vantagetelecom.com,False,
+LEAD-70558,h.ueda@cobltmedia.com,Hugo,Ueda,COBLT MEDIA,Content Download,2025-12-31,2026-02-02,COBLT MEDIA,cobltmedia,cobltmedia.com,False,2026-02-02
+LEAD-70559,i.gupta@harborfinancia.com,Ines,Gupta,Harbor Financial Ltd,Website Demo Request,2025-07-27,,Harbor Financial Ltd,harborfinancial,harborfinancia.com,False,
+LEAD-70560,p.eriksen@vantagemedia.com,Priya,Eriksen,Vantage Media,Paid Search,2025-12-19,2025-12-19,Vantage Media,vantagemedia,vantagemedia.com,False,2025-12-19
+LEAD-70561,o.ueda@redwoodinsuran.com,Omer,Ueda,REDWOOD INSURANCE,Review Site,2025-03-18,2025-04-16,REDWOOD INSURANCE,redwoodinsurance,redwoodinsuran.com,False,2025-04-16
+LEAD-70562,n.duarte@ironmutualinco.com,Nikhil,Duarte,Iron Mutual Incorporated,Webinar,2026-08-16,,Iron Mutual Incorporated,ironmutual,ironmutualinco.com,False,
+LEAD-70563,m.kowalski@redwoodinsuran.com,Mei,Kowalski,Redwood Insurance Ltd.,Webinar,2025-04-24,,Redwood Insurance Ltd.,redwoodinsurance,redwoodinsuran.com,False,
+LEAD-70564,g.moreau@northlogistics.com,Greta,Moreau,North Logistics,Webinar,2025-01-16,2025-02-21,North Logistics,northlogistics,northlogistics.com,False,2025-02-21
+LEAD-70565,s.okafor@cobaltbank.com,Samir,Okafor, Cobalt Bank  ,Conference,2025-07-22,,Cobalt Bank,cobaltbank,cobaltbank.com,False,
+LEAD-70566,m.bauer@westbrooklogis.com,Mei,Bauer,"Westbrook Logistics , Inc.",Outbound Reply,2025-07-11,,"Westbrook Logistics , Inc.",westbrooklogistics,westbrooklogis.com,True,
+LEAD-70567,j.costa@redwoodinsuran.com,Jonas,Costa,Redwood Insurance,Content Download,2026-07-09,,Redwood Insurance,redwoodinsurance,redwoodinsuran.com,False,
+LEAD-70568,o.petrov@quilllogistics.com,Omer,Petrov,Quill Logistics,Paid Search,2025-02-05,2025-02-08,Quill Logistics,quilllogistics,quilllogistics.com,False,2025-02-08
+LEAD-70569,m.rosenthal@cascaderetailg.com,Marcus,Rosenthal, CascadeRetailGroup Ltd  ,Conference,2025-12-17,2025-12-25,CascadeRetailGroup Ltd,cascaderetailgroup,cascaderetailg.com,False,2025-12-25
+LEAD-70570,n.haddad@bluelogisticsl.com,Nikhil,Haddad,Blue Logistics Ltd,Webinar,2025-04-16,,Blue Logistics Ltd,bluelogistics,bluelogisticsl.com,False,
+LEAD-70571,s.kowalski@dunmoreoldings.com,Samir,Kowalski,Dunmore oldings,Content Download,2025-12-17,2025-12-24,Dunmore oldings,dunmoreoldings,dunmoreoldings.com,False,2025-12-24
+LEAD-70572,p.okafor@zenithmedia.com,Priya,Okafor,Zenith Media,Conference,2025-01-05,2025-02-10,Zenith Media,zenithmedia,zenithmedia.com,False,2025-02-10
+LEAD-70573,p.eriksen@pinnaclemutual.com,Priya,Eriksen,Pinnacle Mutual,Content Download,2026-05-16,2026-05-30,Pinnacle Mutual,pinnaclemutual,pinnaclemutual.com,False,2026-05-30
+LEAD-70574,n.bauer@dunmoretelecom.com,Noa,Bauer,DUNMORE TELECOM,Conference,2025-07-15,2025-07-24,DUNMORE TELECOM,dunmoretelecom,dunmoretelecom.com,False,2025-07-24
+LEAD-70575,p.costa@northtelecomin.com,Paula,Costa,NORTH TELECOM Incorporated,Website Demo Request,2026-07-20,2026-08-29,NORTH TELECOM Incorporated,northtelecom,northtelecomin.com,False,2026-08-29
+LEAD-70576,p.costa@solsticeelecom.com,Priya,Costa,SOLSTICE ELECOM,Webinar,2025-03-10,2025-04-02,SOLSTICE ELECOM,solsticeelecom,solsticeelecom.com,False,2025-04-02
+LEAD-70577,j.eriksen@lumenbank.com,Jonas,Eriksen,Lumen Bank,Webinar,2026-05-14,2026-05-20,Lumen Bank,lumenbank,lumenbank.com,False,2026-05-20
+LEAD-70578,a.petrov@dunmorepayment.com,Aisha,Petrov,Dunmore Payments,Content Download,2026-09-13,,Dunmore Payments,dunmorepayments,dunmorepayment.com,False,
+LEAD-70579,s.eriksen@dunmoretelecom.com,Samir,Eriksen,DUNMORE TELECOM,Paid Search,2026-05-25,2026-06-23,DUNMORE TELECOM,dunmoretelecom,dunmoretelecom.com,False,2026-06-23
+LEAD-70580,j.moreau@vertexholdings.com,Jonas,Moreau,VERTEX HOLDINGS,Webinar,2026-06-25,,VERTEX HOLDINGS,vertexholdings,vertexholdings.com,False,
+LEAD-70581,p.lindqvist@dunmoremdiainc.com,Priya,Lindqvist,DUNMORE MDIA Inc.,Outbound Reply,2026-05-30,2026-05-31,DUNMORE MDIA Inc.,dunmoremdia,dunmoremdiainc.com,True,
+LEAD-70582,r.haddad@harborfinancia.com,Ruth,Haddad,HARBOR FINANCIAL,Website Demo Request,2025-03-20,,HARBOR FINANCIAL,harborfinancial,harborfinancia.com,False,
+LEAD-70583,d.petrov@zenithholdings.com,Dana,Petrov,Zenith Holdings,Paid Search,2025-11-18,,Zenith Holdings,zenithholdings,zenithholdings.com,False,
+LEAD-70584,m.moreau@thorntonteleco.com,Mei,Moreau,THORNTON TELECOM Ltd.,Outbound Reply,2025-10-24,,THORNTON TELECOM Ltd.,thorntontelecom,thorntonteleco.com,True,
+LEAD-70585,n.rosenthal@dunmoreholding.com,Nikhil,Rosenthal,Dunmore Holdings LLC,Conference,2025-10-28,2025-11-14,Dunmore Holdings LLC,dunmoreholdings,dunmoreholding.com,False,2025-11-14
+LEAD-70586,e.abrams@northtelecom.com,Eitan,Abrams,North Telecom,Website Demo Request,2026-04-17,2026-05-19,North Telecom,northtelecom,northtelecom.com,False,2026-05-19
+LEAD-70587,d.silva@cobalttelecom.com,Dana,Silva,Cobalt Telecom,Partner Referral,2025-03-14,,Cobalt Telecom,cobalttelecom,cobalttelecom.com,False,
+LEAD-70588,p.gupta@harbotelecom.com,Paula,Gupta,Harbo Telecom,Review Site,2026-04-28,2026-05-21,Harbo Telecom,harbotelecom,harbotelecom.com,False,2026-05-21
+LEAD-70589,m.duarte@quillenergy.com,Marcus,Duarte,QuillEnergy,Website Demo Request,2025-10-31,2025-11-03,QuillEnergy,quillenergy,quillenergy.com,False,2025-11-03
+LEAD-70590,p.okafor@westbrooklogis.com,Paula,Okafor,WESTBROOK LOGISTICS,Webinar,2025-12-14,,WESTBROOK LOGISTICS,westbrooklogistics,westbrooklogis.com,False,
+LEAD-70591,a.jensen@solsticebank.com,Aisha,Jensen,Solstice Bank,Outbound Reply,2026-01-07,,Solstice Bank,solsticebank,solsticebank.com,True,
+LEAD-70592,g.costa@everlinelogist.com,Greta,Costa,EVERLINE LOGISTICS Inc.,Paid Search,2026-01-18,,EVERLINE LOGISTICS Inc.,everlinelogistics,everlinelogist.com,False,
+LEAD-70593,l.nakamura@everlinemediai.com,Lena,Nakamura,Everline Media Ic.,Partner Referral,2026-05-12,,Everline Media Ic.,everlinemediaic,everlinemediai.com,False,
+LEAD-70594,j.gupta@graniteairline.com,Jonas,Gupta,"Granite Airlines , Inc.",Conference,2026-03-31,2026-04-06,"Granite Airlines , Inc.",graniteairlines,graniteairline.com,False,2026-04-06
+LEAD-70595,m.duarte@cascaderetailg.com,Mei,Duarte,cascade retail group,Content Download,2025-06-17,2025-06-26,cascade retail group,cascaderetailgroup,cascaderetailg.com,False,2025-06-26
+LEAD-70596,i.haddad@harborfinancia.com,Ines,Haddad,Harbor Financial,Review Site,2025-04-10,,Harbor Financial,harborfinancial,harborfinancia.com,False,
+LEAD-70597,p.lindqvist@quillenergy.com,Priya,Lindqvist,Quill Energy,Outbound Reply,2026-05-21,2026-05-22,Quill Energy,quillenergy,quillenergy.com,True,
+LEAD-70598,d.costa@zenithsystemsi.com,Dana,Costa,Zenith Systems Inc,Paid Search,2025-12-18,2026-01-09,Zenith Systems Inc,zenithsystems,zenithsystemsi.com,False,2026-01-09
+LEAD-70599,e.petrov@cobaltpayments.com,Eitan,Petrov,Cobalt Payments,Content Download,2026-08-27,,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,
+LEAD-70600,e.silva@zenithholdings.com,Eitan,Silva,Zenith Holdings,Website Demo Request,2025-11-21,2025-12-15,Zenith Holdings,zenithholdings,zenithholdings.com,False,2025-12-15
+LEAD-70601,a.gupta@cascadenergy.com,Aisha,Gupta,Cascad Energy,Website Demo Request,2026-08-27,2026-09-23,Cascad Energy,cascadenergy,cascadenergy.com,False,2026-09-23
+LEAD-70602,i.ueda@everlinestores.com,Ines,Ueda,"Everline Stores , Inc.",Partner Referral,2026-01-24,,"Everline Stores , Inc.",everlinestores,everlinestores.com,False,
+LEAD-70603,a.okafor@everlinemediai.com,Aisha,Okafor,Everline Media Inc,Webinar,2026-05-02,,Everline Media Inc,everlinemedia,everlinemediai.com,False,
+LEAD-70604,v.jensen@everlinestores.com,Victor,Jensen,EverlineStores,Outbound Reply,2025-02-08,,EverlineStores,everlinestores,everlinestores.com,True,
+LEAD-70605,g.eriksen@everlineairlin.com,Greta,Eriksen,Everline Airlines Inc,Review Site,2026-02-07,2026-02-27,Everline Airlines Inc,everlineairlines,everlineairlin.com,False,2026-02-27
+LEAD-70606,e.nakamura@granitepayment.com,Eitan,Nakamura,GRANITE PAYMENTS,Outbound Reply,2025-12-14,2026-01-08,GRANITE PAYMENTS,granitepayments,granitepayment.com,True,
+LEAD-70607,g.eriksen@dunmorepayment.com,Greta,Eriksen,DUNMORE PAYMENTS,Website Demo Request,2025-03-06,,DUNMORE PAYMENTS,dunmorepayments,dunmorepayment.com,False,
+LEAD-70608,n.farrell@dunmortelecomi.com,Nikhil,Farrell,DUNMOR TELECOM Inc,Conference,2025-06-01,2025-06-04,DUNMOR TELECOM Inc,dunmortelecom,dunmortelecomi.com,False,2025-06-04
+LEAD-70609,v.gupta@westbrokteleco.com,Victor,Gupta,Westbrok Telecom,Paid Search,2025-06-16,2025-07-04,Westbrok Telecom,westbroktelecom,westbrokteleco.com,False,2025-07-04
+LEAD-70610,m.ueda@granitefinanci.com,Mei,Ueda,Granite Financial,Content Download,2026-04-30,,Granite Financial,granitefinancial,granitefinanci.com,False,
+LEAD-70611,a.rosenthal@harbortelecoml.com,Aisha,Rosenthal,harbor telecom Ltd,Content Download,2025-09-21,,harbor telecom Ltd,harbortelecom,harbortelecoml.com,False,
+LEAD-70612,o.rosenthal@zenithholdings.com,Omer,Rosenthal,ZENITH HOLDINGS Inc.,Content Download,2026-03-27,,ZENITH HOLDINGS Inc.,zenithholdings,zenithholdings.com,False,
+LEAD-70613,i.farrell@northairlinesi.com,Ines,Farrell,North Airlines Incorporated,Website Demo Request,2026-03-22,2026-03-25,North Airlines Incorporated,northairlines,northairlinesi.com,False,2026-03-25
+LEAD-70614,e.ivanov@brightwaterins.com,Eitan,Ivanov,BRIGHTWATER INSURANCE,Webinar,2025-10-30,,BRIGHTWATER INSURANCE,brightwaterinsurance,brightwaterins.com,False,
+LEAD-70615,e.nakamura@westbrooktelec.com,Eitan,Nakamura,Westbrook Telecom LLC,Content Download,2025-01-20,2025-02-18,Westbrook Telecom LLC,westbrooktelecom,westbrooktelec.com,False,2025-02-18
+LEAD-70616,t.farrell@vertexretailgr.com,Tomas,Farrell, Vertex Retail Group Icorporated  ,Conference,2026-04-03,,Vertex Retail Group Icorporated,vertexretailgroupicorporated,vertexretailgr.com,False,
+LEAD-70617,i.moreau@westbrooktelec.com,Ines,Moreau," Westbrook Telecom , Inc.  ",Review Site,2025-05-03,,"Westbrook Telecom , Inc.",westbrooktelecom,westbrooktelec.com,False,
+LEAD-70618,p.duarte@northholdings.com,Paula,Duarte,NORTH HOLDINGS,Paid Search,2025-04-09,,NORTH HOLDINGS,northholdings,northholdings.com,False,
+LEAD-70619,m.kowalski@pinnaclebanklt.com,Mei,Kowalski,Pinnacle Bank Ltd.,Partner Referral,2025-01-19,2025-02-20,Pinnacle Bank Ltd.,pinnaclebank,pinnaclebanklt.com,False,2025-02-20
+LEAD-70620,h.ueda@zenithenergy.com,Hugo,Ueda,Zenith Energy,Partner Referral,2025-04-08,2025-05-08,Zenith Energy,zenithenergy,zenithenergy.com,False,2025-05-08
+LEAD-70621,e.silva@westbrooklogis.com,Eitan,Silva,Westbrook Logistics,Review Site,2025-08-12,2025-08-28,Westbrook Logistics,westbrooklogistics,westbrooklogis.com,False,2025-08-28
+LEAD-70622,m.petrov@everlineairlin.com,Mei,Petrov,Everline Airlines Incorporated,Paid Search,2026-04-26,2026-05-06,Everline Airlines Incorporated,everlineairlines,everlineairlin.com,False,2026-05-06
+LEAD-70623,h.gupta@quillbank.com,Hugo,Gupta, Quill Bank  ,Paid Search,2025-06-17,,Quill Bank,quillbank,quillbank.com,False,
+LEAD-70624,t.ivanov@ironmedia.com,Tomas,Ivanov,Iron Media,Outbound Reply,2026-04-30,2026-06-07,Iron Media,ironmedia,ironmedia.com,True,
+LEAD-70625,m.costa@dunmoretelecom.com,Marcus,Costa,Dunmore Telecom,Outbound Reply,2025-08-29,2025-09-05,Dunmore Telecom,dunmoretelecom,dunmoretelecom.com,True,
+LEAD-70626,j.moreau@everlineteleco.com,Jonas,Moreau,everline telecom Incorporated,Conference,2025-02-26,2025-03-02,everline telecom Incorporated,everlinetelecom,everlineteleco.com,False,2025-03-02
+LEAD-70627,h.abrams@unionank.com,Hugo,Abrams,Union ank,Conference,2025-04-13,2025-04-23,Union ank,unionank,unionank.com,False,2025-04-23
+LEAD-70628,t.moreau@westbrookpayme.com,Tomas,Moreau,WESTBROOK PAYMENTS Inc.,Website Demo Request,2025-06-26,,WESTBROOK PAYMENTS Inc.,westbrookpayments,westbrookpayme.com,False,
+LEAD-70629,p.rosenthal@unionretailgro.com,Priya,Rosenthal,Union Retail Group Ltd.,Content Download,2025-08-17,,Union Retail Group Ltd.,unionretailgroup,unionretailgro.com,False,
+LEAD-70630,j.eriksen@thorntonstores.com,Jonas,Eriksen,THORNTON STORES Ltd,Content Download,2026-05-11,2026-05-21,THORNTON STORES Ltd,thorntonstores,thorntonstores.com,False,2026-05-21
+LEAD-70631,e.costa@lumenfinancial.com,Eitan,Costa,"Lumen Financial , Inc.",Content Download,2025-10-12,2025-10-17,"Lumen Financial , Inc.",lumenfinancial,lumenfinancial.com,False,2025-10-17
+LEAD-70632,i.okafor@vantagemutual.com,Ines,Okafor,Vantage Mutual,Partner Referral,2025-12-27,2026-01-31,Vantage Mutual,vantagemutual,vantagemutual.com,False,2026-01-31
+LEAD-70633,p.haddad@harborfinancia.com,Priya,Haddad, HARBOR FINANCIAL  ,Content Download,2026-01-06,,HARBOR FINANCIAL,harborfinancial,harborfinancia.com,False,
+LEAD-70634,d.ivanov@brightwaterhea.com,Dana,Ivanov,Brightwater Health Incorporated,Review Site,2025-08-28,2025-09-22,Brightwater Health Incorporated,brightwaterhealth,brightwaterhea.com,False,2025-09-22
+LEAD-70635,j.bauer@brightwatermut.com,Jonas,Bauer,brightwater mutual,Outbound Reply,2026-01-17,2026-02-03,brightwater mutual,brightwatermutual,brightwatermut.com,True,
+LEAD-70636,d.quinn@meridianhealth.com,Dana,Quinn,Meridian Health Inc.,Paid Search,2025-05-15,2025-05-25,Meridian Health Inc.,meridianhealth,meridianhealth.com,False,2025-05-25
+LEAD-70637,o.jensen@cobaltenergylt.com,Omer,Jensen,Cobalt Energy Ltd,Webinar,2025-12-31,2026-01-06,Cobalt Energy Ltd,cobaltenergy,cobaltenergylt.com,False,2026-01-06
+LEAD-70638,e.ivanov@pinnaclebank.com,Eitan,Ivanov,Pinnacle Bank,Content Download,2025-05-06,2025-06-05,Pinnacle Bank,pinnaclebank,pinnaclebank.com,False,2025-06-05
+LEAD-70639,v.petrov@dunmoretelecom.com,Victor,Petrov,Dunmore Telecom Incorporated,Conference,2025-11-24,2025-11-25,Dunmore Telecom Incorporated,dunmoretelecom,dunmoretelecom.com,False,2025-11-25
+LEAD-70640,s.farrell@bluetelecom.com,Samir,Farrell,Blue Telecom,Paid Search,2025-09-22,,Blue Telecom,bluetelecom,bluetelecom.com,False,
+LEAD-70641,n.eriksen@harborhealth.com,Noa,Eriksen,Harbor Health,Review Site,2025-01-05,,Harbor Health,harborhealth,harborhealth.com,False,
+LEAD-70642,d.eriksen@harborlogistic.com,Dana,Eriksen,"Harbor Logistics , Inc.",Webinar,2025-09-30,,"Harbor Logistics , Inc.",harborlogistics,harborlogistic.com,False,
+LEAD-70643,j.silva@harborlogistic.com,Jonas,Silva, Harbor Logistics Inc.  ,Conference,2025-12-19,,Harbor Logistics Inc.,harborlogistics,harborlogistic.com,False,
+LEAD-70644,m.abrams@quillbank.com,Mei,Abrams,Quill Bank,Review Site,2026-05-15,,Quill Bank,quillbank,quillbank.com,False,
+LEAD-70645,v.eriksen@everlinebanklt.com,Victor,Eriksen,Everline Bank Ltd,Paid Search,2026-01-16,2026-02-20,Everline Bank Ltd,everlinebank,everlinebanklt.com,False,2026-02-20
+LEAD-70646,h.rosenthal@vantagetelecom.com,Hugo,Rosenthal,vantage telecom LLC,Review Site,2025-04-01,,vantage telecom LLC,vantagetelecom,vantagetelecom.com,False,
+LEAD-70647,j.farrell@vertexbankltd.com,Jonas,Farrell, Vertex Bank Ltd.  ,Webinar,2025-08-25,2025-09-01,Vertex Bank Ltd.,vertexbank,vertexbankltd.com,False,2025-09-01
+LEAD-70648,i.costa@ironsysemsltd.com,Ines,Costa,Iron Sysems Ltd.,Website Demo Request,2026-03-07,2026-03-20,Iron Sysems Ltd.,ironsysems,ironsysemsltd.com,False,2026-03-20
+LEAD-70649,v.costa@zenitmedia.com,Victor,Costa,Zenit Media,Website Demo Request,2026-04-03,,Zenit Media,zenitmedia,zenitmedia.com,False,
+LEAD-70650,h.farrell@dunmorefinanci.com,Hugo,Farrell,Dunmore Financial Ltd.,Webinar,2026-04-12,2026-04-18,Dunmore Financial Ltd.,dunmorefinancial,dunmorefinanci.com,False,2026-04-18
+LEAD-70651,t.moreau@cobaltmedia.com,Tomas,Moreau, Cobalt Media  ,Paid Search,2025-07-13,,Cobalt Media,cobaltmedia,cobaltmedia.com,False,
+LEAD-70652,m.duarte@lumenmutualinc.com,Marcus,Duarte," Lumen Mutual , Inc.  ",Outbound Reply,2025-10-08,2025-10-15,"Lumen Mutual , Inc.",lumenmutual,lumenmutualinc.com,True,
+LEAD-70653,a.gupta@redwoodholding.com,Aisha,Gupta,Redwood Holdings Inc,Review Site,2025-08-20,2025-08-23,Redwood Holdings Inc,redwoodholdings,redwoodholding.com,False,2025-08-23
+LEAD-70654,g.costa@westbrookhealt.com,Greta,Costa,Westbrook Health Inc.,Webinar,2025-06-12,,Westbrook Health Inc.,westbrookhealth,westbrookhealt.com,False,
+LEAD-70655,a.rosenthal@quilllogistics.com,Aisha,Rosenthal,QUILL LOGISTICS Incorporated,Website Demo Request,2025-05-20,,QUILL LOGISTICS Incorporated,quilllogistics,quilllogistics.com,False,
+LEAD-70656,s.farrell@solsticeinsura.com,Samir,Farrell,SOLSTICE INSURANCE LLC,Website Demo Request,2026-07-15,2026-08-01,SOLSTICE INSURANCE LLC,solsticeinsurance,solsticeinsura.com,False,2026-08-01
+LEAD-70657,n.petrov@redwoodinsuran.com,Nikhil,Petrov,Redwood Insurance LLC,Webinar,2025-05-22,,Redwood Insurance LLC,redwoodinsurance,redwoodinsuran.com,False,
+LEAD-70658,g.kowalski@nothpayments.com,Greta,Kowalski,NOTH PAYMENTS,Review Site,2025-10-15,2025-11-07,NOTH PAYMENTS,nothpayments,nothpayments.com,False,2025-11-07
+LEAD-70659,m.lindqvist@thorntonpaymen.com,Mei,Lindqvist,THORNTON PAYMENTS Ltd.,Website Demo Request,2025-01-07,2025-01-07,THORNTON PAYMENTS Ltd.,thorntonpayments,thorntonpaymen.com,False,2025-01-07
+LEAD-70660,p.eriksen@northsystemsll.com,Paula,Eriksen,North Systems LLC,Outbound Reply,2025-09-11,2025-10-04,North Systems LLC,northsystems,northsystemsll.com,True,
+LEAD-70661,t.silva@blueholdings.com,Tomas,Silva,Blue Holdings,Partner Referral,2026-02-04,2026-03-13,Blue Holdings,blueholdings,blueholdings.com,False,2026-03-13
+LEAD-70662,d.quinn@cobalthealth.com,Dana,Quinn,COBALT HEALTH,Content Download,2025-12-16,,COBALT HEALTH,cobalthealth,cobalthealth.com,False,
+LEAD-70663,j.abrams@westbrookpayme.com,Jonas,Abrams, Westbrook Payments LLC  ,Content Download,2025-04-04,2025-05-06,Westbrook Payments LLC,westbrookpayments,westbrookpayme.com,False,2025-05-06
+LEAD-70664,p.bauer@dunmoremdia.com,Priya,Bauer,Dunmore Mdia,Partner Referral,2025-12-08,2025-12-09,Dunmore Mdia,dunmoremdia,dunmoremdia.com,False,2025-12-09
+LEAD-70665,v.duarte@bluelogistics.com,Victor,Duarte,Blue Logistics,Outbound Reply,2025-09-27,2025-10-16,Blue Logistics,bluelogistics,bluelogistics.com,True,
+LEAD-70666,t.petrov@cascadeairline.com,Tomas,Petrov,CASCADE AIRLINES,Paid Search,2025-12-06,2025-12-23,CASCADE AIRLINES,cascadeairlines,cascadeairline.com,False,2025-12-23
+LEAD-70667,v.jensen@solsticeteleco.com,Victor,Jensen,Solstice Telecom Inc.,Conference,2026-07-05,2026-07-18,Solstice Telecom Inc.,solsticetelecom,solsticeteleco.com,False,2026-07-18
+LEAD-70668,s.farrell@bluelogistics.com,Samir,Farrell,Blue Logistics,Outbound Reply,2025-02-20,2025-02-28,Blue Logistics,bluelogistics,bluelogistics.com,True,
+LEAD-70669,n.haddad@zenithenergylt.com,Noa,Haddad,Zenith Energy Ltd.,Review Site,2026-04-28,2026-05-03,Zenith Energy Ltd.,zenithenergy,zenithenergylt.com,False,2026-05-03
+LEAD-70670,a.jensen@redwoodpayment.com,Aisha,Jensen,Redwood Payments,Review Site,2025-10-06,2025-10-10,Redwood Payments,redwoodpayments,redwoodpayment.com,False,2025-10-10
+LEAD-70671,o.rosenthal@cobaltbankinc.com,Omer,Rosenthal,Cobalt Bank Inc.,Partner Referral,2025-02-25,2025-03-08,Cobalt Bank Inc.,cobaltbank,cobaltbankinc.com,False,2025-03-08
+LEAD-70672,l.duarte@vantagemedia.com,Lena,Duarte,Vantage Media,Conference,2026-01-03,,Vantage Media,vantagemedia,vantagemedia.com,False,
+LEAD-70673,o.abrams@bluebankinc.com,Omer,Abrams,BlueBank Inc.,Outbound Reply,2026-02-27,,BlueBank Inc.,bluebank,bluebankinc.com,True,
+LEAD-70674,p.ivanov@cascadeairline.com,Priya,Ivanov,cascade airlines,Content Download,2026-04-30,2026-05-02,cascade airlines,cascadeairlines,cascadeairline.com,False,2026-05-02
+LEAD-70675,n.eriksen@northmutual.com,Nikhil,Eriksen,NorthMutual,Content Download,2025-11-26,2025-12-10,NorthMutual,northmutual,northmutual.com,False,2025-12-10
+LEAD-70676,n.petrov@zenithenergy.com,Nikhil,Petrov,Zenith Energy,Website Demo Request,2026-05-12,2026-06-16,Zenith Energy,zenithenergy,zenithenergy.com,False,2026-06-16
+LEAD-70677,l.lindqvist@zenithretailgr.com,Lena,Lindqvist,Zenith Retail Group Ltd.,Paid Search,2025-12-08,,Zenith Retail Group Ltd.,zenithretailgroup,zenithretailgr.com,False,
+LEAD-70678,p.nakamura@meridianpaymen.com,Paula,Nakamura,MERIDIAN PAYMENTS Incorporated,Website Demo Request,2025-11-28,2025-12-10,MERIDIAN PAYMENTS Incorporated,meridianpayments,meridianpaymen.com,False,2025-12-10
+LEAD-70679,e.rosenthal@blueholdingslt.com,Eitan,Rosenthal,Blue Holdings Ltd.,Paid Search,2026-01-28,,Blue Holdings Ltd.,blueholdings,blueholdingslt.com,False,
+LEAD-70680,r.okafor@cascadeairline.com,Ruth,Okafor,Cascade Airlines Incorporated,Webinar,2026-04-21,2026-04-29,Cascade Airlines Incorporated,cascadeairlines,cascadeairline.com,False,2026-04-29
+LEAD-70681,p.haddad@thorntonsystem.com,Priya,Haddad,thornton systems,Website Demo Request,2025-09-22,2025-10-26,thornton systems,thorntonsystems,thorntonsystem.com,False,2025-10-26
+LEAD-70682,v.rosenthal@vantagestoresi.com,Victor,Rosenthal,"Vantage Stores , Inc.",Review Site,2025-03-23,,"Vantage Stores , Inc.",vantagestores,vantagestoresi.com,False,
+LEAD-70683,p.gupta@westbrookpayme.com,Paula,Gupta, Westbrook Payments  ,Conference,2025-09-08,,Westbrook Payments,westbrookpayments,westbrookpayme.com,False,
+LEAD-70684,m.silva@westbrooklogis.com,Mei,Silva,WestbrookLogistics,Conference,2025-01-04,,WestbrookLogistics,westbrooklogistics,westbrooklogis.com,False,
+LEAD-70685,m.rosenthal@thorntonbank.com,Mei,Rosenthal,Thornton Bank,Conference,2025-08-16,,Thornton Bank,thorntonbank,thorntonbank.com,False,
+LEAD-70686,a.rosenthal@northairlines.com,Aisha,Rosenthal,North Airlines,Outbound Reply,2025-07-08,2025-07-29,North Airlines,northairlines,northairlines.com,True,
+LEAD-70687,j.ivanov@redwoodretailg.com,Jonas,Ivanov,Redwood Retail Group Inc,Partner Referral,2025-08-25,2025-08-29,Redwood Retail Group Inc,redwoodretailgroup,redwoodretailg.com,False,2025-08-29
+LEAD-70688,d.jensen@lumenbank.com,Dana,Jensen,LUMEN BANK,Partner Referral,2025-09-19,2025-09-30,LUMEN BANK,lumenbank,lumenbank.com,False,2025-09-30
+LEAD-70689,a.farrell@westrooksystem.com,Aisha,Farrell,Westrook Systems,Review Site,2025-12-06,2025-12-15,Westrook Systems,westrooksystems,westrooksystem.com,False,2025-12-15
+LEAD-70690,n.nakamura@lumensystems.com,Nikhil,Nakamura,Lumen Systems,Webinar,2025-06-11,2025-06-19,Lumen Systems,lumensystems,lumensystems.com,False,2025-06-19
+LEAD-70691,i.lindqvist@northlogistics.com,Ines,Lindqvist,North Logistics LLC,Content Download,2025-02-21,,North Logistics LLC,northlogistics,northlogistics.com,False,
+LEAD-70692,p.kowalski@everlinefinanc.com,Priya,Kowalski,Everline Financial Ltd.,Paid Search,2026-05-28,,Everline Financial Ltd.,everlinefinancial,everlinefinanc.com,False,
+LEAD-70693,a.lindqvist@graniteairline.com,Aisha,Lindqvist, GRANITE AIRLINES  ,Paid Search,2026-03-13,2026-04-16,GRANITE AIRLINES,graniteairlines,graniteairline.com,False,2026-04-16
+LEAD-70694,m.bauer@everlineairlin.com,Marcus,Bauer,EVERLINE AIRLINES Inc,Partner Referral,2025-01-03,,EVERLINE AIRLINES Inc,everlineairlines,everlineairlin.com,False,
+LEAD-70695,a.moreau@meridiansystem.com,Aisha,Moreau,"meridian systems , Inc.",Review Site,2025-08-25,,"meridian systems , Inc.",meridiansystems,meridiansystem.com,False,
+LEAD-70696,n.kowalski@vertexretailgr.com,Noa,Kowalski,VERTEX RETAIL GROUP Incorporated,Paid Search,2026-06-16,2026-07-15,VERTEX RETAIL GROUP Incorporated,vertexretailgroup,vertexretailgr.com,False,2026-07-15
+LEAD-70697,e.haddad@solsticeteleco.com,Eitan,Haddad,Solstice Telecom LLC,Review Site,2025-10-09,,Solstice Telecom LLC,solsticetelecom,solsticeteleco.com,False,
+LEAD-70698,n.jensen@blueholdingslt.com,Noa,Jensen,BLUE HOLDINGS Ltd.,Conference,2026-03-17,,BLUE HOLDINGS Ltd.,blueholdings,blueholdingslt.com,False,
+LEAD-70699,i.ivanov@thorntonenergy.com,Ines,Ivanov, Thornton Energy  ,Paid Search,2026-03-31,2026-04-07,Thornton Energy,thorntonenergy,thorntonenergy.com,False,2026-04-07
+LEAD-70700,d.costa@vertexairlines.com,Dana,Costa,vertex airlines,Conference,2026-08-10,2026-08-19,vertex airlines,vertexairlines,vertexairlines.com,False,2026-08-19
+LEAD-70701,m.duarte@zenithsystems.com,Marcus,Duarte,ZENITH SYSTEMS,Partner Referral,2025-09-11,,ZENITH SYSTEMS,zenithsystems,zenithsystems.com,False,
+LEAD-70702,n.ivanov@redwoodsystems.com,Noa,Ivanov, REDWOOD SYSTEMS  ,Website Demo Request,2025-02-07,2025-02-07,REDWOOD SYSTEMS,redwoodsystems,redwoodsystems.com,False,2025-02-07
+LEAD-70703,i.bauer@vertexbank.com,Ines,Bauer,VERTEX BANK,Webinar,2025-10-30,2025-11-27,VERTEX BANK,vertexbank,vertexbank.com,False,2025-11-27
+LEAD-70704,m.ueda@pinnaclepaymen.com,Marcus,Ueda,PinnaclePayments,Paid Search,2026-01-19,2026-02-06,PinnaclePayments,pinnaclepayments,pinnaclepaymen.com,False,2026-02-06
+LEAD-70705,m.petrov@uniontelecom.com,Marcus,Petrov,Union Telecom,Website Demo Request,2026-05-01,,Union Telecom,uniontelecom,uniontelecom.com,False,
+LEAD-70706,h.bauer@pinnaclepaymen.com,Hugo,Bauer,PINNACLE PAYMENTS Inc,Review Site,2025-05-02,,PINNACLE PAYMENTS Inc,pinnaclepayments,pinnaclepaymen.com,False,
+LEAD-70707,m.abrams@vantageholding.com,Mei,Abrams,Vantage Holdings,Paid Search,2025-09-20,,Vantage Holdings,vantageholdings,vantageholding.com,False,
+LEAD-70708,d.quinn@westbrooklogis.com,Dana,Quinn,WestbrookLogistics,Outbound Reply,2026-06-12,2026-07-15,WestbrookLogistics,westbrooklogistics,westbrooklogis.com,True,
+LEAD-70709,n.rosenthal@cascaderetailg.com,Nikhil,Rosenthal,Cascade Retail Group,Outbound Reply,2025-11-02,,Cascade Retail Group,cascaderetailgroup,cascaderetailg.com,True,
+LEAD-70710,e.lindqvist@aldermediainc.com,Eitan,Lindqvist, alder media Inc.  ,Conference,2026-06-18,,alder media Inc.,aldermedia,aldermediainc.com,False,
+LEAD-70711,g.quinn@northsystemsll.com,Greta,Quinn,North Systems LLC,Partner Referral,2025-11-08,2025-11-21,North Systems LLC,northsystems,northsystemsll.com,False,2025-11-21
+LEAD-70712,i.jensen@granitesystems.com,Ines,Jensen,Granite Systems,Paid Search,2025-12-10,,Granite Systems,granitesystems,granitesystems.com,False,
+LEAD-70713,s.rosenthal@vantagemediain.com,Samir,Rosenthal,Vantage Media Inc.,Conference,2026-03-10,2026-04-07,Vantage Media Inc.,vantagemedia,vantagemediain.com,False,2026-04-07
+LEAD-70714,s.rosenthal@everlinestores.com,Samir,Rosenthal,"EVERLINE STORES , Inc.",Content Download,2025-10-10,,"EVERLINE STORES , Inc.",everlinestores,everlinestores.com,False,
+LEAD-70715,n.lindqvist@westbrookinsur.com,Nikhil,Lindqvist,WESTBROOK INSURANCE,Webinar,2026-01-19,,WESTBROOK INSURANCE,westbrookinsurance,westbrookinsur.com,False,
+LEAD-70716,i.petrov@lumenpaymentsi.com,Ines,Petrov,lumen payments Inc,Review Site,2025-11-04,,lumen payments Inc,lumenpayments,lumenpaymentsi.com,False,
+LEAD-70717,n.lindqvist@lumenbankinc.com,Nikhil,Lindqvist,Lumen Bank Inc,Partner Referral,2026-01-13,,Lumen Bank Inc,lumenbank,lumenbankinc.com,False,
+LEAD-70718,e.ueda@dunoremedialtd.com,Eitan,Ueda,Dunore Media Ltd.,Conference,2025-01-11,2025-02-19,Dunore Media Ltd.,dunoremedia,dunoremedialtd.com,False,2025-02-19
+LEAD-70719,i.lindqvist@vantagholdings.com,Ines,Lindqvist,Vantag Holdings,Webinar,2025-10-08,,Vantag Holdings,vantagholdings,vantagholdings.com,False,
+LEAD-70720,j.haddad@dunmoretelecom.com,Jonas,Haddad,Dunmore Telecom,Review Site,2026-06-08,2026-07-07,Dunmore Telecom,dunmoretelecom,dunmoretelecom.com,False,2026-07-07
+LEAD-70721,p.rosenthal@unionretailgro.com,Priya,Rosenthal, Union Retail Group LLC  ,Paid Search,2026-05-15,2026-05-25,Union Retail Group LLC,unionretailgroup,unionretailgro.com,False,2026-05-25
+LEAD-70722,p.haddad@unionhealth.com,Priya,Haddad,Union Health,Website Demo Request,2025-10-07,2025-10-18,Union Health,unionhealth,unionhealth.com,False,2025-10-18
+LEAD-70723,a.farrell@harborsystems.com,Aisha,Farrell,Harbor Systems,Webinar,2026-09-13,2026-10-13,Harbor Systems,harborsystems,harborsystems.com,False,2026-10-13
+LEAD-70724,c.abrams@redwoodretailg.com,Clara,Abrams,Redwood Retail Group,Content Download,2026-03-12,,Redwood Retail Group,redwoodretailgroup,redwoodretailg.com,False,
+LEAD-70725,m.costa@zenithhalth.com,Mei,Costa, zenith halth  ,Partner Referral,2025-06-22,2025-07-13,zenith halth,zenithhalth,zenithhalth.com,False,2025-07-13
+LEAD-70726,s.bauer@westbrookpayme.com,Samir,Bauer,Westbrook Payments Ltd.,Website Demo Request,2026-02-03,2026-03-06,Westbrook Payments Ltd.,westbrookpayments,westbrookpayme.com,False,2026-03-06
+LEAD-70727,v.bauer@unionsystems.com,Victor,Bauer,UNION SYSTEMS,Webinar,2025-12-15,,UNION SYSTEMS,unionsystems,unionsystems.com,False,
+LEAD-70728,e.petrov@dunmorefinanca.com,Eitan,Petrov,DunmoreFinancal,Content Download,2025-08-18,2025-09-06,DunmoreFinancal,dunmorefinancal,dunmorefinanca.com,False,2025-09-06
+LEAD-70729,n.abrams@northlogistics.com,Noa,Abrams,NorthLogistics,Outbound Reply,2025-12-01,,NorthLogistics,northlogistics,northlogistics.com,True,
+LEAD-70730,o.abrams@bluetelecom.com,Omer,Abrams, BlueTelecom  ,Website Demo Request,2026-06-18,,BlueTelecom,bluetelecom,bluetelecom.com,False,
+LEAD-70731,a.gupta@thorntonteleco.com,Aisha,Gupta,Thornton Telecom Ltd,Webinar,2025-09-11,,Thornton Telecom Ltd,thorntontelecom,thorntonteleco.com,False,
+LEAD-70732,o.duarte@solsticeteleco.com,Omer,Duarte,Solstice Telecom,Partner Referral,2025-06-17,,Solstice Telecom,solsticetelecom,solsticeteleco.com,False,
+LEAD-70733,p.bauer@graniteenergyi.com,Priya,Bauer,Granite Energy Inc.,Webinar,2025-08-30,2025-09-29,Granite Energy Inc.,graniteenergy,graniteenergyi.com,False,2025-09-29
+LEAD-70734,e.kowalski@thorntonpaymen.com,Eitan,Kowalski,Thornton Payments Ltd.,Review Site,2026-06-07,2026-07-15,Thornton Payments Ltd.,thorntonpayments,thorntonpaymen.com,False,2026-07-15
+LEAD-70735,h.bauer@thorntonteleco.com,Hugo,Bauer,Thornton Telecom Ltd.,Review Site,2026-07-24,2026-08-06,Thornton Telecom Ltd.,thorntontelecom,thorntonteleco.com,False,2026-08-06
+LEAD-70736,n.bauer@quillholdingsi.com,Nikhil,Bauer,Quill Holdings Inc,Conference,2026-05-11,2026-05-27,Quill Holdings Inc,quillholdings,quillholdingsi.com,False,2026-05-27
+LEAD-70737,d.lindqvist@redwoodretailg.com,Dana,Lindqvist,REDWOOD RETAIL GROUP Inc,Partner Referral,2025-03-20,2025-04-22,REDWOOD RETAIL GROUP Inc,redwoodretailgroup,redwoodretailg.com,False,2025-04-22
+LEAD-70738,o.rosenthal@cascaderetailg.com,Omer,Rosenthal,Cascade Retail Group Ltd.,Paid Search,2026-01-14,,Cascade Retail Group Ltd.,cascaderetailgroup,cascaderetailg.com,False,
+LEAD-70739,j.farrell@meridianstores.com,Jonas,Farrell,MERIDIAN STORES,Webinar,2025-05-30,2025-06-25,MERIDIAN STORES,meridianstores,meridianstores.com,False,2025-06-25
+LEAD-70740,e.haddad@thorntonlogist.com,Eitan,Haddad,Thornton Logistics Inc.,Outbound Reply,2025-02-04,2025-03-12,Thornton Logistics Inc.,thorntonlogistics,thorntonlogist.com,True,
+LEAD-70741,n.okafor@meridianpaymen.com,Noa,Okafor,Meridian Payments,Webinar,2025-04-01,,Meridian Payments,meridianpayments,meridianpaymen.com,False,
+LEAD-70742,s.duarte@meridianenergy.com,Samir,Duarte,MERIDIAN ENERGY,Content Download,2025-09-22,2025-10-01,MERIDIAN ENERGY,meridianenergy,meridianenergy.com,False,2025-10-01
+LEAD-70743,m.ivanov@zenithenergy.com,Marcus,Ivanov,Zenith Energy,Review Site,2025-06-02,,Zenith Energy,zenithenergy,zenithenergy.com,False,
+LEAD-70744,g.abrams@quillfinancial.com,Greta,Abrams,QUILL FINANCIAL,Partner Referral,2025-10-12,2025-10-15,QUILL FINANCIAL,quillfinancial,quillfinancial.com,False,2025-10-15
+LEAD-70745,p.silva@brightwaterfin.com,Paula,Silva,brightwater financial,Conference,2025-03-05,2025-03-15,brightwater financial,brightwaterfinancial,brightwaterfin.com,False,2025-03-15
+LEAD-70746,p.abrams@quilllogistics.com,Paula,Abrams,quill logistics Inc,Webinar,2025-10-17,2025-11-02,quill logistics Inc,quilllogistics,quilllogistics.com,False,2025-11-02
+LEAD-70747,j.abrams@everlinebankin.com,Jonas,Abrams,"Everline Bank , Inc.",Review Site,2026-08-03,2026-08-28,"Everline Bank , Inc.",everlinebank,everlinebankin.com,False,2026-08-28
+LEAD-70748,m.ueda@zenithtelecom.com,Marcus,Ueda,ZENITH TELECOM,Review Site,2025-02-03,2025-03-08,ZENITH TELECOM,zenithtelecom,zenithtelecom.com,False,2025-03-08
+LEAD-70749,l.haddad@cobaltpayments.com,Lena,Haddad,COBALT PAYMENTS,Review Site,2025-08-09,2025-09-08,COBALT PAYMENTS,cobaltpayments,cobaltpayments.com,False,2025-09-08
+LEAD-70750,m.nakamura@brightwaterhol.com,Marcus,Nakamura, Brightwater Holdings  ,Content Download,2025-11-17,,Brightwater Holdings,brightwaterholdings,brightwaterhol.com,False,
+LEAD-70751,a.nakamura@lumenpayments.com,Aisha,Nakamura, LumenPayments  ,Conference,2025-02-27,2025-03-21,LumenPayments,lumenpayments,lumenpayments.com,False,2025-03-21
+LEAD-70752,g.moreau@ironmutual.com,Greta,Moreau,Iron Mutual,Partner Referral,2025-08-31,,Iron Mutual,ironmutual,ironmutual.com,False,
+LEAD-70753,e.bauer@thorntonenergy.com,Eitan,Bauer,Thornton Energy Ltd.,Website Demo Request,2026-01-26,2026-02-12,Thornton Energy Ltd.,thorntonenergy,thorntonenergy.com,False,2026-02-12
+LEAD-70754,h.duarte@westbrookinsur.com,Hugo,Duarte,westbrook insurance,Outbound Reply,2025-03-24,,westbrook insurance,westbrookinsurance,westbrookinsur.com,True,
+LEAD-70755,v.farrell@thorntonpaymen.com,Victor,Farrell,Thornton Payments,Website Demo Request,2026-01-13,,Thornton Payments,thorntonpayments,thorntonpaymen.com,False,
+LEAD-70756,a.duarte@lumensystemslt.com,Aisha,Duarte,Lumen Systems Ltd,Conference,2025-12-12,,Lumen Systems Ltd,lumensystems,lumensystemslt.com,False,
+LEAD-70757,m.duarte@lumenpaymentsi.com,Marcus,Duarte,Lumen Payments Inc.,Paid Search,2026-05-09,2026-05-17,Lumen Payments Inc.,lumenpayments,lumenpaymentsi.com,False,2026-05-17
+LEAD-70758,j.haddad@meridianhealth.com,Jonas,Haddad,Meridian Health,Paid Search,2026-08-17,,Meridian Health,meridianhealth,meridianhealth.com,False,
+LEAD-70759,t.jensen@harborlogistic.com,Tomas,Jensen,HARBOR LOGISTICS,Website Demo Request,2026-06-13,,HARBOR LOGISTICS,harborlogistics,harborlogistic.com,False,
+LEAD-70760,i.duarte@everlinebank.com,Ines,Duarte,Everline Bank,Review Site,2025-04-13,2025-05-14,Everline Bank,everlinebank,everlinebank.com,False,2025-05-14
+LEAD-70761,h.lindqvist@meridianmediai.com,Hugo,Lindqvist,meridian media Inc,Review Site,2025-02-26,,meridian media Inc,meridianmedia,meridianmediai.com,False,
+LEAD-70762,m.silva@alderhealth.com,Marcus,Silva,Alder Health,Website Demo Request,2025-08-07,2025-08-11,Alder Health,alderhealth,alderhealth.com,False,2025-08-11
+LEAD-70763,t.moreau@cobaltbankllc.com,Tomas,Moreau,Cobalt Bank LLC,Paid Search,2025-10-14,2025-11-02,Cobalt Bank LLC,cobaltbank,cobaltbankllc.com,False,2025-11-02
+LEAD-70764,o.jensen@cobaltbankltd.com,Omer,Jensen,Cobalt Bank Ltd,Review Site,2025-10-15,,Cobalt Bank Ltd,cobaltbank,cobaltbankltd.com,False,
+LEAD-70765,g.ueda@sablefinancial.com,Greta,Ueda,Sable Financial,Paid Search,2025-07-10,2025-07-29,Sable Financial,sablefinancial,sablefinancial.com,False,2025-07-29
+LEAD-70766,v.okafor@alderhealth.com,Victor,Okafor,AlderHealth,Paid Search,2026-03-15,,AlderHealth,alderhealth,alderhealth.com,False,
+LEAD-70767,m.abrams@ironsystemsinc.com,Marcus,Abrams,iron systems Inc,Website Demo Request,2025-02-02,,iron systems Inc,ironsystems,ironsystemsinc.com,False,
+LEAD-70768,v.moreau@northfinancial.com,Victor,Moreau, north financial  ,Content Download,2025-06-23,2025-07-30,north financial,northfinancial,northfinancial.com,False,2025-07-30
+LEAD-70769,m.quinn@meridianpaymen.com,Mei,Quinn,MERIDIAN PAYMENTS,Conference,2026-01-31,2026-02-25,MERIDIAN PAYMENTS,meridianpayments,meridianpaymen.com,False,2026-02-25
+LEAD-70770,n.silva@cascadeairline.com,Nikhil,Silva,cascade airlines Ltd,Outbound Reply,2026-04-14,2026-05-04,cascade airlines Ltd,cascadeairlines,cascadeairline.com,True,
+LEAD-70771,e.gupta@everlineretalg.com,Eitan,Gupta,Everline Retal Group,Website Demo Request,2025-08-21,2025-08-28,Everline Retal Group,everlineretalgroup,everlineretalg.com,False,2025-08-28
+LEAD-70772,g.gupta@dunmoretelecom.com,Greta,Gupta, Dunmore Telecom Incorporated  ,Conference,2025-07-18,2025-07-28,Dunmore Telecom Incorporated,dunmoretelecom,dunmoretelecom.com,False,2025-07-28
+LEAD-70773,e.rosenthal@unionretailgro.com,Eitan,Rosenthal, union retail group  ,Content Download,2026-01-18,2026-01-22,union retail group,unionretailgroup,unionretailgro.com,False,2026-01-22
+LEAD-70774,e.abrams@northholdings.com,Eitan,Abrams,NORTH HOLDINGS,Conference,2025-10-28,2025-11-08,NORTH HOLDINGS,northholdings,northholdings.com,False,2025-11-08
+LEAD-70775,e.okafor@westbrooktelec.com,Eitan,Okafor,westbrook telecom Ltd,Content Download,2025-12-21,2026-01-10,westbrook telecom Ltd,westbrooktelecom,westbrooktelec.com,False,2026-01-10
+LEAD-70776,t.abrams@northairlinesl.com,Tomas,Abrams,North Airlines LLC,Review Site,2026-04-18,,North Airlines LLC,northairlines,northairlinesl.com,False,
+LEAD-70777,p.duarte@unionairlinesi.com,Priya,Duarte,union airlines Inc,Paid Search,2026-04-19,2026-04-27,union airlines Inc,unionairlines,unionairlinesi.com,False,2026-04-27
+LEAD-70778,t.lindqvist@quillfinancial.com,Tomas,Lindqvist,Quill Financial,Content Download,2026-02-14,,Quill Financial,quillfinancial,quillfinancial.com,False,
+LEAD-70779,v.quinn@meridianairlin.com,Victor,Quinn,"Meridian Airlines , Inc.",Partner Referral,2025-03-02,2025-03-12,"Meridian Airlines , Inc.",meridianairlines,meridianairlin.com,False,2025-03-12
+LEAD-70780,m.okafor@thorntonteleco.com,Marcus,Okafor,Thornton Telecom Incorporated,Website Demo Request,2025-03-23,2025-03-24,Thornton Telecom Incorporated,thorntontelecom,thorntonteleco.com,False,2025-03-24
+LEAD-70781,m.haddad@westbrookhealt.com,Mei,Haddad,Westbrook Health Ltd.,Content Download,2025-11-23,2025-12-19,Westbrook Health Ltd.,westbrookhealth,westbrookhealt.com,False,2025-12-19
+LEAD-70782,t.bauer@everlinefinanc.com,Tomas,Bauer,Everline Financial Inc,Paid Search,2025-10-20,2025-11-01,Everline Financial Inc,everlinefinancial,everlinefinanc.com,False,2025-11-01
+LEAD-70783,g.ivanov@vantagemedialc.com,Greta,Ivanov,Vantage Media LC,Conference,2026-06-02,2026-06-09,Vantage Media LC,vantagemedialc,vantagemedialc.com,False,2026-06-09
+LEAD-70784,m.gupta@granitelogisti.com,Mei,Gupta,"Granite Logistics , Inc.",Conference,2025-02-27,2025-03-27,"Granite Logistics , Inc.",granitelogistics,granitelogisti.com,False,2025-03-27
+LEAD-70785,m.quinn@vertexholdings.com,Marcus,Quinn,Vertex Holdings LLC,Conference,2025-11-13,2025-12-02,Vertex Holdings LLC,vertexholdings,vertexholdings.com,False,2025-12-02
+LEAD-70786,p.ivanov@redwoodholding.com,Priya,Ivanov,RedwoodHoldings,Webinar,2025-04-08,2025-05-02,RedwoodHoldings,redwoodholdings,redwoodholding.com,False,2025-05-02
+LEAD-70787,v.duarte@irofinancialin.com,Victor,Duarte,iro financial Inc,Conference,2025-10-16,2025-10-25,iro financial Inc,irofinancial,irofinancialin.com,False,2025-10-25
+LEAD-70788,o.abrams@quillenergyinc.com,Omer,Abrams,"QuillEnergy , Inc.",Content Download,2025-11-29,,"QuillEnergy , Inc.",quillenergy,quillenergyinc.com,False,
+LEAD-70789,p.lindqvist@everlinebankll.com,Paula,Lindqvist,Everline Bank LLC,Conference,2025-03-21,,Everline Bank LLC,everlinebank,everlinebankll.com,False,
+LEAD-70790,n.okafor@vantagemutuali.com,Nikhil,Okafor,Vantage Mutual Inc,Outbound Reply,2025-09-11,2025-09-20,Vantage Mutual Inc,vantagemutual,vantagemutuali.com,True,
+LEAD-70791,i.gupta@nothfinancial.com,Ines,Gupta, Noth Financial  ,Conference,2025-02-23,2025-03-17,Noth Financial,nothfinancial,nothfinancial.com,False,2025-03-17
+LEAD-70792,n.jensen@northlogistics.com,Noa,Jensen,"North Logistics , Inc.",Outbound Reply,2025-12-30,2026-02-08,"North Logistics , Inc.",northlogistics,northlogistics.com,True,
+LEAD-70793,v.nakamura@thorntonsystem.com,Victor,Nakamura,thornton systems,Partner Referral,2025-11-19,2025-12-08,thornton systems,thorntonsystems,thorntonsystem.com,False,2025-12-08
+LEAD-70794,l.bauer@meridianealth.com,Lena,Bauer,MERIDIAN EALTH,Review Site,2026-06-16,,MERIDIAN EALTH,meridianealth,meridianealth.com,False,
+LEAD-70795,a.gupta@quillenergyinc.com,Aisha,Gupta,Quill Energy Incorporated,Webinar,2025-05-22,2025-06-03,Quill Energy Incorporated,quillenergy,quillenergyinc.com,False,2025-06-03
+LEAD-70796,p.petrov@blueteecom.com,Paula,Petrov,BlueTeecom,Conference,2025-09-01,2025-09-24,BlueTeecom,blueteecom,blueteecom.com,False,2025-09-24
+LEAD-70797,e.rosenthal@lumenpayments.com,Eitan,Rosenthal,lumen payments,Review Site,2025-03-31,,lumen payments,lumenpayments,lumenpayments.com,False,
+LEAD-70798,g.duarte@lumenhealthinc.com,Greta,Duarte,Lumen Health Incorporated,Partner Referral,2025-12-29,2026-01-17,Lumen Health Incorporated,lumenhealth,lumenhealthinc.com,False,2026-01-17
+LEAD-70799,n.moreau@quillhealthinc.com,Noa,Moreau,Quill Health Inc,Paid Search,2025-08-05,,Quill Health Inc,quillhealth,quillhealthinc.com,False,
+LEAD-70800,m.nakamura@harborhealthin.com,Mei,Nakamura,"Harbor Health , Inc.",Conference,2026-06-11,,"Harbor Health , Inc.",harborhealth,harborhealthin.com,False,
+LEAD-70801,j.okafor@pinnacleairlin.com,Jonas,Okafor,Pinnacle Airlines,Website Demo Request,2025-03-30,2025-05-08,Pinnacle Airlines,pinnacleairlines,pinnacleairlin.com,False,2025-05-08
+LEAD-70802,p.petrov@dunmoresystems.com,Paula,Petrov,DunmoreSystems Incorporated,Partner Referral,2025-06-08,,DunmoreSystems Incorporated,dunmoresystems,dunmoresystems.com,False,
+LEAD-70803,l.duarte@alderinurance.com,Lena,Duarte,Alder Inurance,Outbound Reply,2025-01-23,,Alder Inurance,alderinurance,alderinurance.com,True,
+LEAD-70804,c.okafor@cobaltpayments.com,Clara,Okafor,"COBALT PAYMENTS , Inc.",Webinar,2025-09-17,,"COBALT PAYMENTS , Inc.",cobaltpayments,cobaltpayments.com,False,
+LEAD-70805,r.farrell@unionairlines.com,Ruth,Farrell,Union Airlines,Partner Referral,2026-05-16,,Union Airlines,unionairlines,unionairlines.com,False,
+LEAD-70806,t.moreau@cacadestoresin.com,Tomas,Moreau,"Cacade Stores , Inc.",Partner Referral,2026-04-29,,"Cacade Stores , Inc.",cacadestores,cacadestoresin.com,False,
+LEAD-70807,e.ueda@thorntonhealth.com,Eitan,Ueda,Thornton Health,Review Site,2025-03-04,2025-04-07,Thornton Health,thorntonhealth,thorntonhealth.com,False,2025-04-07
+LEAD-70808,s.abrams@northpaymentsi.com,Samir,Abrams,north payments Incorporated,Content Download,2026-04-22,2026-05-26,north payments Incorporated,northpayments,northpaymentsi.com,False,2026-05-26
+LEAD-70809,s.haddad@dunmorepayment.com,Samir,Haddad,Dunmore Payments Inc.,Outbound Reply,2026-06-06,,Dunmore Payments Inc.,dunmorepayments,dunmorepayment.com,True,
+LEAD-70810,p.duarte@everlineenergy.com,Paula,Duarte,everline energy nc.,Review Site,2026-04-08,,everline energy nc.,everlineenergync,everlineenergy.com,False,
+LEAD-70811,h.jensen@bluebank.com,Hugo,Jensen,Blue Bank,Webinar,2026-03-23,2026-04-24,Blue Bank,bluebank,bluebank.com,False,2026-04-24
+LEAD-70812,o.haddad@solsticelogist.com,Omer,Haddad,Solstice Logistics,Outbound Reply,2026-05-11,2026-05-24,Solstice Logistics,solsticelogistics,solsticelogist.com,True,
+LEAD-70813,t.jensen@solsticefinanc.com,Tomas,Jensen, Solstice Financial  ,Webinar,2026-04-27,2026-05-26,Solstice Financial,solsticefinancial,solsticefinanc.com,False,2026-05-26
+LEAD-70814,p.lindqvist@westrookpaymen.com,Priya,Lindqvist,Westrook Payments LLC,Partner Referral,2025-01-06,2025-02-02,Westrook Payments LLC,westrookpayments,westrookpaymen.com,False,2025-02-02
+LEAD-70815,d.kowalski@solsticestores.com,Dana,Kowalski,Solstice Stores Ltd,Partner Referral,2025-04-08,,Solstice Stores Ltd,solsticestores,solsticestores.com,False,
+LEAD-70816,l.rosenthal@ironsystems.com,Lena,Rosenthal,IronSystems,Paid Search,2025-06-20,,IronSystems,ironsystems,ironsystems.com,False,
+LEAD-70817,c.silva@harborfinncial.com,Clara,Silva,Harbor Finncial Ltd,Paid Search,2025-06-03,,Harbor Finncial Ltd,harborfinncial,harborfinncial.com,False,
+LEAD-70818,s.quinn@redwoodholding.com,Samir,Quinn,REDWOOD HOLDINGS Ltd.,Webinar,2025-07-19,,REDWOOD HOLDINGS Ltd.,redwoodholdings,redwoodholding.com,False,
+LEAD-70819,i.okafor@brightwaterins.com,Ines,Okafor,Brightwater Insurance,Website Demo Request,2025-06-28,,Brightwater Insurance,brightwaterinsurance,brightwaterins.com,False,
+LEAD-70820,v.duarte@ironsystemsinc.com,Victor,Duarte, Iron Systems Inc  ,Webinar,2026-07-17,,Iron Systems Inc,ironsystems,ironsystemsinc.com,False,
+LEAD-70821,n.lindqvist@quillbankllc.com,Nikhil,Lindqvist,QUILL BANK LLC,Review Site,2026-03-18,2026-03-18,QUILL BANK LLC,quillbank,quillbankllc.com,False,2026-03-18
+LEAD-70822,l.bauer@dunmoreholding.com,Lena,Bauer,Dunmore Holdings,Paid Search,2025-04-23,,Dunmore Holdings,dunmoreholdings,dunmoreholding.com,False,
+LEAD-70823,s.nakamura@vertexinsuranc.com,Samir,Nakamura, Vertex Insurance  ,Review Site,2026-09-11,2026-09-17,Vertex Insurance,vertexinsurance,vertexinsuranc.com,False,2026-09-17
+LEAD-70824,v.okafor@redwoodinsuran.com,Victor,Okafor,Redwood Insurance,Website Demo Request,2026-05-01,,Redwood Insurance,redwoodinsurance,redwoodinsuran.com,False,
+LEAD-70825,n.farrell@vantagemutual.com,Nikhil,Farrell,VantageMutual,Paid Search,2026-07-21,2026-08-13,VantageMutual,vantagemutual,vantagemutual.com,False,2026-08-13
+LEAD-70826,j.ivanov@ironsytems.com,Jonas,Ivanov,IRON SYTEMS,Webinar,2026-09-02,2026-09-06,IRON SYTEMS,ironsytems,ironsytems.com,False,2026-09-06
+LEAD-70827,t.costa@blueholdings.com,Tomas,Costa,Blue Holdings,Content Download,2026-06-12,,Blue Holdings,blueholdings,blueholdings.com,False,
+LEAD-70828,e.abrams@meridianhealth.com,Eitan,Abrams,MERIDIAN HEALTH Ltd,Conference,2026-08-07,2026-09-13,MERIDIAN HEALTH Ltd,meridianhealth,meridianhealth.com,False,2026-09-13
+LEAD-70829,n.ueda@solsticeinsura.com,Nikhil,Ueda,Solstice Insurace,Conference,2025-07-19,2025-08-14,Solstice Insurace,solsticeinsurace,solsticeinsura.com,False,2025-08-14
+LEAD-70830,a.ueda@quillretailgro.com,Aisha,Ueda,Quill Retail Group,Content Download,2025-06-24,,Quill Retail Group,quillretailgroup,quillretailgro.com,False,
+LEAD-70831,n.gupta@zenithenergyin.com,Nikhil,Gupta,"zenith energy , Inc.",Review Site,2025-06-21,2025-06-30,"zenith energy , Inc.",zenithenergy,zenithenergyin.com,False,2025-06-30
+LEAD-70832,m.moreau@vantagepayment.com,Marcus,Moreau,Vantage Payments,Website Demo Request,2025-02-15,,Vantage Payments,vantagepayments,vantagepayment.com,False,
+LEAD-70833,o.ivanov@westbrooksyste.com,Omer,Ivanov,Westbrook Systems Ltd.,Outbound Reply,2025-05-13,2025-05-20,Westbrook Systems Ltd.,westbrooksystems,westbrooksyste.com,True,
+LEAD-70834,o.quinn@cobalttelecom.com,Omer,Quinn,CobaltTelecom,Review Site,2025-01-21,,CobaltTelecom,cobalttelecom,cobalttelecom.com,False,
+LEAD-70835,a.ivanov@meridianairlin.com,Aisha,Ivanov,Meridian Airlines,Review Site,2026-03-12,2026-04-13,Meridian Airlines,meridianairlines,meridianairlin.com,False,2026-04-13
+LEAD-70836,m.eriksen@cascaderetailg.com,Mei,Eriksen,Cascade Retail Group Ltd.,Website Demo Request,2025-07-03,2025-08-02,Cascade Retail Group Ltd.,cascaderetailgroup,cascaderetailg.com,False,2025-08-02
+LEAD-70837,i.nakamura@brightwaterfin.com,Ines,Nakamura, brightwater financial  ,Webinar,2025-05-11,2025-05-31,brightwater financial,brightwaterfinancial,brightwaterfin.com,False,2025-05-31
+LEAD-70838,n.nakamura@pinnacleairlin.com,Noa,Nakamura,PinnacleAirlines,Partner Referral,2025-12-07,,PinnacleAirlines,pinnacleairlines,pinnacleairlin.com,False,
+LEAD-70839,o.gupta@everlinemedial.com,Omer,Gupta,EVERLINE MEDIA Ltd.,Review Site,2025-09-20,,EVERLINE MEDIA Ltd.,everlinemedia,everlinemedial.com,False,
+LEAD-70840,s.haddad@cobaltenergllc.com,Samir,Haddad,COBALT ENERG LLC,Review Site,2026-09-10,,COBALT ENERG LLC,cobaltenerg,cobaltenergllc.com,False,
+LEAD-70841,c.petrov@vertexstores.com,Clara,Petrov,Vertex Stores,Content Download,2025-08-30,2025-09-05,Vertex Stores,vertexstores,vertexstores.com,False,2025-09-05
+LEAD-70842,h.ueda@northbankincor.com,Hugo,Ueda,North Bank Incorporated,Conference,2025-06-26,2025-08-02,North Bank Incorporated,northbank,northbankincor.com,False,2025-08-02
+LEAD-70843,o.gupta@cobaltenergy.com,Omer,Gupta,CobaltEnergy,Conference,2025-10-10,2025-10-17,CobaltEnergy,cobaltenergy,cobaltenergy.com,False,2025-10-17
+LEAD-70844,r.gupta@ironholdings.com,Ruth,Gupta, iron holdings  ,Webinar,2025-12-11,,iron holdings,ironholdings,ironholdings.com,False,
+LEAD-70845,i.haddad@bluholdings.com,Ines,Haddad,BLU HOLDINGS,Content Download,2025-02-25,2025-02-27,BLU HOLDINGS,bluholdings,bluholdings.com,False,2025-02-27
+LEAD-70846,j.gupta@westbrookhealt.com,Jonas,Gupta,WESTBROOK HEALTH,Webinar,2026-03-03,,WESTBROOK HEALTH,westbrookhealth,westbrookhealt.com,False,
+LEAD-70847,n.eriksen@quillfinancial.com,Noa,Eriksen,"QUILL FINANCIAL , Inc.",Outbound Reply,2026-07-05,2026-07-09,"QUILL FINANCIAL , Inc.",quillfinancial,quillfinancial.com,True,
+LEAD-70848,h.lindqvist@vertexretailgr.com,Hugo,Lindqvist,Vertex Retail Group LLC,Conference,2025-11-19,2025-12-09,Vertex Retail Group LLC,vertexretailgroup,vertexretailgr.com,False,2025-12-09
+LEAD-70849,p.ueda@cascaderetailg.com,Priya,Ueda,Cascade Retail Group Incorporated,Paid Search,2025-05-08,2025-06-03,Cascade Retail Group Incorporated,cascaderetailgroup,cascaderetailg.com,False,2025-06-03
+LEAD-70850,n.quinn@cobaltmedia.com,Nikhil,Quinn,Cobalt Media,Website Demo Request,2026-08-12,2026-08-27,Cobalt Media,cobaltmedia,cobaltmedia.com,False,2026-08-27
+LEAD-70851,n.bauer@ironsystemsinc.com,Noa,Bauer,Iron Systems Inc,Paid Search,2025-02-08,2025-03-16,Iron Systems Inc,ironsystems,ironsystemsinc.com,False,2025-03-16
+LEAD-70852,p.haddad@vertexstores.com,Paula,Haddad,Vertex Stores,Outbound Reply,2025-10-02,2025-10-30,Vertex Stores,vertexstores,vertexstores.com,True,
+LEAD-70853,o.abrams@thorntonlogist.com,Omer,Abrams,THORNTON LOGISTICS,Webinar,2026-03-05,2026-03-14,THORNTON LOGISTICS,thorntonlogistics,thorntonlogist.com,False,2026-03-14
+LEAD-70854,m.ivanov@graniteairline.com,Mei,Ivanov,Granite Airlines,Content Download,2025-10-24,2025-11-23,Granite Airlines,graniteairlines,graniteairline.com,False,2025-11-23
+LEAD-70855,a.rosenthal@harborsystemsi.com,Aisha,Rosenthal,"Harbor Systems , Inc.",Partner Referral,2026-04-03,,"Harbor Systems , Inc.",harborsystems,harborsystemsi.com,False,
+LEAD-70856,l.silva@cascadestoresi.com,Lena,Silva,Cascade Stores Inc.,Conference,2025-05-06,,Cascade Stores Inc.,cascadestores,cascadestoresi.com,False,
+LEAD-70857,m.ueda@ironhealthltd.com,Mei,Ueda,IronHealth Ltd.,Outbound Reply,2025-11-08,2025-11-24,IronHealth Ltd.,ironhealth,ironhealthltd.com,True,
+LEAD-70858,d.haddad@pinnacleinsura.com,Dana,Haddad,PINNACLE INSURANCE Ltd.,Paid Search,2026-06-27,,PINNACLE INSURANCE Ltd.,pinnacleinsurance,pinnacleinsura.com,False,
+LEAD-70859,s.farrell@cascadestores.com,Samir,Farrell,Cascade Stores,Conference,2026-06-12,2026-06-18,Cascade Stores,cascadestores,cascadestores.com,False,2026-06-18
+LEAD-70860,i.moreau@redwoodholding.com,Ines,Moreau,Redwood Holdings,Paid Search,2026-07-02,2026-07-03,Redwood Holdings,redwoodholdings,redwoodholding.com,False,2026-07-03
+LEAD-70861,p.haddad@unionbank.com,Priya,Haddad,UnionBank,Partner Referral,2026-06-08,,UnionBank,unionbank,unionbank.com,False,
+LEAD-70862,t.farrell@solsticeteleco.com,Tomas,Farrell,"Solstice Telecom , Inc.",Conference,2026-08-19,2026-09-06,"Solstice Telecom , Inc.",solsticetelecom,solsticeteleco.com,False,2026-09-06
+LEAD-70863,v.nakamura@cobaltpayments.com,Victor,Nakamura,Cobalt Payments,Review Site,2026-01-21,2026-02-23,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,2026-02-23
+LEAD-70864,n.kowalski@everlinestores.com,Noa,Kowalski,EVERLINE STORES Inc,Conference,2025-01-08,,EVERLINE STORES Inc,everlinestores,everlinestores.com,False,
+LEAD-70865,n.haddad@sableholdings.com,Nikhil,Haddad,Sable Holdings,Webinar,2026-09-10,,Sable Holdings,sableholdings,sableholdings.com,False,
+LEAD-70866,h.abrams@northtelecom.com,Hugo,Abrams,north telecom,Content Download,2025-04-22,,north telecom,northtelecom,northtelecom.com,False,
+LEAD-70867,h.petrov@ironmedia.com,Hugo,Petrov,Iron Media,Website Demo Request,2025-08-09,2025-08-23,Iron Media,ironmedia,ironmedia.com,False,2025-08-23
+LEAD-70868,r.moreau@northlogistics.com,Ruth,Moreau,north logistics Ltd,Conference,2026-06-13,2026-06-13,north logistics Ltd,northlogistics,northlogistics.com,False,2026-06-13
+LEAD-70869,m.bauer@redwoodholding.com,Mei,Bauer,REDWOOD HOLDINGS,Review Site,2025-10-12,,REDWOOD HOLDINGS,redwoodholdings,redwoodholding.com,False,
+LEAD-70870,s.gupta@meridianairlin.com,Samir,Gupta,Meridian Airlines Incorporated,Conference,2026-05-01,2026-05-17,Meridian Airlines Incorporated,meridianairlines,meridianairlin.com,False,2026-05-17
+LEAD-70871,a.nakamura@graniteairline.com,Aisha,Nakamura,Granite Airlines,Conference,2025-01-10,2025-01-24,Granite Airlines,graniteairlines,graniteairline.com,False,2025-01-24
+LEAD-70872,o.duarte@solsticestores.com,Omer,Duarte,Solstice Stores,Conference,2025-01-19,2025-02-27,Solstice Stores,solsticestores,solsticestores.com,False,2025-02-27
+LEAD-70873,h.rosenthal@everlineteleco.com,Hugo,Rosenthal,Everline Telecom Inc.,Partner Referral,2025-02-13,,Everline Telecom Inc.,everlinetelecom,everlineteleco.com,False,
+LEAD-70874,p.okafor@cobaltpayments.com,Paula,Okafor, Cobalt Payments  ,Paid Search,2025-04-22,,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,
+LEAD-70875,e.ivanov@pinnacleinsura.com,Eitan,Ivanov,PINNACLE INSURANCE,Partner Referral,2025-06-16,2025-06-21,PINNACLE INSURANCE,pinnacleinsurance,pinnacleinsura.com,False,2025-06-21
+LEAD-70876,i.rosenthal@solsticefinanc.com,Ines,Rosenthal, Solstice Financial  ,Outbound Reply,2025-12-18,2026-01-05,Solstice Financial,solsticefinancial,solsticefinanc.com,True,
+LEAD-70877,p.ueda@ironholdingsll.com,Paula,Ueda,Iron Holdings LLC,Review Site,2025-09-10,2025-09-20,Iron Holdings LLC,ironholdings,ironholdingsll.com,False,2025-09-20
+LEAD-70878,m.farrell@redwoodinsuran.com,Marcus,Farrell,redwood insurance,Outbound Reply,2026-02-16,2026-03-17,redwood insurance,redwoodinsurance,redwoodinsuran.com,True,
+LEAD-70879,m.duarte@northlogistics.com,Mei,Duarte,North Logistics Incorporated,Outbound Reply,2026-03-19,2026-04-01,North Logistics Incorporated,northlogistics,northlogistics.com,True,
+LEAD-70880,s.kowalski@cacaderetailgr.com,Samir,Kowalski, Cacade Retail Group  ,Conference,2026-07-18,2026-08-10,Cacade Retail Group,cacaderetailgroup,cacaderetailgr.com,False,2026-08-10
+LEAD-70881,m.ivanov@westbrookealth.com,Marcus,Ivanov,westbrook ealth,Webinar,2026-03-09,2026-03-22,westbrook ealth,westbrookealth,westbrookealth.com,False,2026-03-22
+LEAD-70882,c.duarte@dunmorepayment.com,Clara,Duarte,Dunmore Payments,Website Demo Request,2026-08-19,2026-09-13,Dunmore Payments,dunmorepayments,dunmorepayment.com,False,2026-09-13
+LEAD-70883,m.jensen@quillpayments.com,Mei,Jensen, Quill Payments  ,Paid Search,2026-04-01,2026-05-10,Quill Payments,quillpayments,quillpayments.com,False,2026-05-10
+LEAD-70884,a.rosenthal@lumenfinancial.com,Aisha,Rosenthal,Lumen Financial,Website Demo Request,2025-01-09,2025-02-04,Lumen Financial,lumenfinancial,lumenfinancial.com,False,2025-02-04
+LEAD-70885,p.farrell@ironbankllc.com,Paula,Farrell,Iron Bank LLC,Website Demo Request,2025-03-22,2025-04-05,Iron Bank LLC,ironbank,ironbankllc.com,False,2025-04-05
+LEAD-70886,r.jensen@westbrookstore.com,Ruth,Jensen,Westbrook Stores,Website Demo Request,2025-11-20,,Westbrook Stores,westbrookstores,westbrookstore.com,False,
+LEAD-70887,v.gupta@meridianenergy.com,Victor,Gupta,MeridianEnergy,Webinar,2025-07-16,,MeridianEnergy,meridianenergy,meridianenergy.com,False,
+LEAD-70888,o.duarte@cobaltpayments.com,Omer,Duarte,Cobalt Payments,Partner Referral,2025-01-01,2025-01-17,Cobalt Payments,cobaltpayments,cobaltpayments.com,False,2025-01-17
+LEAD-70889,o.duarte@ironsystems.com,Omer,Duarte,Iron Systems,Partner Referral,2025-02-02,2025-03-11,Iron Systems,ironsystems,ironsystems.com,False,2025-03-11
+LEAD-70890,v.haddad@cobalttelecom.com,Victor,Haddad,COBALT TELECOM,Webinar,2025-11-10,2025-11-20,COBALT TELECOM,cobalttelecom,cobalttelecom.com,False,2025-11-20
+LEAD-70891,j.abrams@zenithholdings.com,Jonas,Abrams,ZenithHoldings Ltd.,Conference,2025-12-03,2026-01-08,ZenithHoldings Ltd.,zenithholdings,zenithholdings.com,False,2026-01-08
+LEAD-70892,n.moreau@zenithenergy.com,Nikhil,Moreau,ZenithEnergy,Website Demo Request,2026-08-15,2026-08-16,ZenithEnergy,zenithenergy,zenithenergy.com,False,2026-08-16
+LEAD-70893,i.moreau@westbrooktelec.com,Ines,Moreau,Westbrook Telecom Ltd.,Review Site,2025-04-19,2025-05-04,Westbrook Telecom Ltd.,westbrooktelecom,westbrooktelec.com,False,2025-05-04
+LEAD-70894,a.costa@bluelogisticsl.com,Aisha,Costa,blue logistics LLC,Outbound Reply,2025-02-21,,blue logistics LLC,bluelogistics,bluelogisticsl.com,True,
+LEAD-70895,o.quinn@dunmoresystems.com,Omer,Quinn,Dunmore Systems LLC,Outbound Reply,2026-02-27,,Dunmore Systems LLC,dunmoresystems,dunmoresystems.com,True,
+LEAD-70896,i.rosenthal@sablepayments.com,Ines,Rosenthal, Sable Payments  ,Review Site,2026-06-30,2026-07-12,Sable Payments,sablepayments,sablepayments.com,False,2026-07-12
+LEAD-70897,l.jensen@granitebankltd.com,Lena,Jensen, Granite Bank Ltd.  ,Webinar,2025-08-09,2025-08-17,Granite Bank Ltd.,granitebank,granitebankltd.com,False,2025-08-17
+LEAD-70898,p.rosenthal@vantagemutual.com,Priya,Rosenthal,Vantage Mutual,Partner Referral,2026-08-21,2026-09-27,Vantage Mutual,vantagemutual,vantagemutual.com,False,2026-09-27
+LEAD-70899,n.petrov@thorntonteleco.com,Nikhil,Petrov,Thornton Telecom Incorporated,Webinar,2025-03-03,2025-04-12,Thornton Telecom Incorporated,thorntontelecom,thorntonteleco.com,False,2025-04-12
+LEAD-70900,i.okafor@northsystems.com,Ines,Okafor, North Systems  ,Webinar,2025-02-17,,North Systems,northsystems,northsystems.com,False,

@@ -1,0 +1,21 @@
+step,table,action,rows_before,rows_after,detail
+1,accounts,load,120,120,6 columns from accounts.csv
+2,opportunities,load,314,314,10 columns from salesforce_opportunities.csv
+3,leads,load,900,900,8 columns from marketing_leads.csv
+4,usage,load,1782,1782,4 columns from product_usage.csv
+5,accounts,blank tenant_id set to missing,120,120,21 accounts have no tenant (no usage can be linked)
+6,accounts,build name_key for matching,120,120,"lower case, no punctuation or legal suffix"
+7,opportunities,drop exact duplicates,314,313,dropped OPP-5314
+8,opportunities,amount to USD,313,313,"converted at USD 1.0, GBP 1.3, EUR 1.1"
+9,opportunities,flag expansion deals,313,313,55 Upsell + 14 New Business on existing customers
+10,leads,tidy company text and build name_key,900,900,98 names had stray spaces
+11,leads,ignore MQL dates on outbound leads,900,900,59 outbound leads had an MQL date; set aside
+12,usage,parse numbers and months,1782,1782,
+13,leads,match leads to accounts in code,900,900,"exact: 689, unmatched (to AI step): 150, group suffix: 61"
+14,leads,AI step: match leftover leads,150,150,"gemini-3.5-flash-lite; two answers agree on 149 of 150; no match: 82, match: 67, needs review: 1"
+15,leads,review table,1,0,"0 open, 1 decided by a person"
+16,signals,build one row per account,120,120,97 expansion; 12 contract check; 7 win-back; 19 no usage; 12 shrinking
+17,score,score and tier accounts,120,97,"Tier 1: 19, Tier 2: 29, Tier 3: 49"
+18,plays,build the Q1 plays,120,83,"contract: 12 accounts $970,630, land: 15 accounts $1,429,380, price: 10 accounts $379,632, renewal: 20 accounts $2,584,070, risk: 19 accounts $7,466,790, winback: 7 accounts $1,173,099"
+19,plays,build the Q1 plays,120,89,"contract: 12 accounts $1,566,457, land: 12 accounts $1,203,810, price: 19 accounts $1,625,405, renewal: 20 accounts $2,584,070, risk: 19 accounts $7,466,790, winback: 7 accounts $1,537,891"
+20,plays,build the Q1 plays,120,95,"contract: 12 accounts $2,671,065, land: 8 accounts $802,540, price: 29 accounts $5,028,716, renewal: 20 accounts $2,584,070, risk: 19 accounts $7,466,790, winback: 7 accounts $2,820,375"
